@@ -1,0 +1,52 @@
+/* Spacers for sticky footer, via Calc method from https://css-tricks.com/couple-takes-sticky-footer/ */
+.spacerFooter { 
+  min-height: calc(100vh - 50px);
+  /* min-height = full screen height minus height of footer */
+  /* background-color: rgb(180, 220, 180); */
+}
+
+/* from https://www.smashingmagazine.com/2019/02/css-fragmentation/ */
+.dontBreak {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+p {
+  padding-bottom: 12px;
+}
+
+li {
+  padding-bottom: 12px;
+}
+
+.activeScrollLink {
+  font-weight: 700;
+}
+
+.activeScrollLink .selectedBar {
+  width: 5px;
+  border-width: 1px;
+  border-color: rgb(38, 62, 197);
+  background-color: rgb(38, 62, 197);
+  border-radius: 9999px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+}
+
+.unselectedBar {
+  width: 3px;
+  border-width: 1px;
+  border-color: rgb(129, 142, 227);
+  background-color: rgb(129, 142, 227);
+}
+
+.shadowGray {
+  box-shadow: 3px 6px 15px #D6D6D6;
+}
+
+
+/* .noScrollBars { */
+  /* see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp  etc */
+/* } */

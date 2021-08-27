@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .orangeLink {
+    @apply text-yellow-darkish  cursor-pointer
+  }
+
+  .orangeUnderline {
+    @apply text-yellow-darkish underline  cursor-pointer
+  }
+
+  .linkPill {
+    @apply border border-yellow-darkish rounded-full hover:bg-yellow-darkish hover:text-gray-light
+  }
+
+  .linkInvPill {
+    @apply bg-yellow-darkish text-gray-light hover:bg-white hover:text-yellow-darkish  border border-yellow-darkish rounded-full
+  }
+
+  .baseFont {
+    @apply font-sans  text-16 sm:text-18  tracking-0.3 sm:tracking-0.4
+  }
+
+  .smThenBaseFont {
+    @apply font-sans  text-14 mxs:text-16 md:text-18  tracking-0.3 sm:tracking-0.4
+  }
+
+  .smFont {
+    @apply font-sans  text-14 sm:text-16  sm:tracking-0.3
+  }
+
+  .vsmFont {
+    @apply font-sans  text-12 sm:text-14  tracking-0.25 sm:tracking-0.3
+  }
+
+  .plusFont {
+    @apply font-sans  text-16 mxs:text-18 sm:text-20  tracking-0.4
+  }
+
+  .emphFont {
+    @apply font-sans font-semibold  text-20 mxs:text-22 sm:text-25 tracking-0.4 mxs:tracking-0.5
+  }
+
+  .subtitleFont {
+    @apply font-sans font-semibold text-20 text-blue-main tracking-0.5 pt-10 pb-3
+  }
+
+  .titleFont {
+    @apply font-serif font-semibold mxs:font-bold 
+  }
+
+  .titleMedium {
+    @apply text-25 sm:text-40  tracking-0.5 mxs:tracking-0.8
+  }
+
+  .titleBig {
+    @apply text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1.2
+  }
+
+}
