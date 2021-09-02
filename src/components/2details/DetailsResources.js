@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
-import Context from "../Context";
+import React from "react";
+import { useMyContext } from "../../context/Context";
+
 import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsResources = (props) => {
   const { contentID } = props;
-  const { log, log2 } = useContext(Context);
+  const { log, log2 } = useMyContext();;
 
   log && console.log("DetailsResources.js runs. contentID=", contentID);
   log2 && console.log("DetailsResources.js contentPersonas=", contentPersonas);

@@ -1,18 +1,15 @@
-import React, { useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
+import { navigate } from "gatsby";
 
-import "../../styles/hoverText.css";
-
-import Context from "../Context";
+// import "../../styles/hoverText.css";
+import { useMyContext } from "../../context/Context";
 
 const Subtopics = (props) => {
   const { branchNum, topicNum, subtopics, leftTreeMargin, rightGap } = props;
-  const { winWidth, setLocn, setNavBarOpen, log } = useContext(Context);
+  const { winWidth, setLocn, setNavBarOpen, log } = useMyContext();
 
   log && console.log("Subtopics.js runs. subtopics =", subtopics);
 
-  const history = useHistory();
-  
   const onClickSubtopic = (subtopicNum) => {
     setLocn((currLocn) => {
       const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: subtopicNum };
@@ -20,10 +17,9 @@ const Subtopics = (props) => {
       return newLocn;
     });
     setNavBarOpen(false);
-    history.push("/details/overview");
+    navigate("/details/overview");
   };
 
-  // const winWidth = window.innerWidth;
   // const leftMarginSub = winWidth < 510 ? 50 : (80 * (widthAdjRatio + 3)) / 4; // all in pixels
   const leftMarginSub = 2*leftTreeMargin;
   const subtopicStepHt = winWidth < 510 ? 6 : 12;

@@ -26,14 +26,14 @@ export const contentPersonas = {
   // BadContentID
 
   // Path names for doctor icon images:
-  //  ../images/peopleIcons/doctorBlackManBeard.svg
-  //  ../images/peopleIcons/doctorBlackWoman.svg
-  //  ../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg
-  //  ../images/peopleIcons/doctorWhiteManBlackHair.svg
-  //  ../images/peopleIcons/doctorWhiteManGoatee.svg
-  //  ../images/peopleIcons/doctorWhiteManYoung.svg
-  //  ../images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg
-  //  ../images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg
+  //  ../images/avatars/doctorBlackManBeard.svg
+  //  ../images/avatars/doctorBlackWoman.svg
+  //  ../images/avatars/doctorMuslimWomanYellowHeadCover.svg
+  //  ../images/avatars/doctorWhiteManBlackHair.svg
+  //  ../images/avatars/doctorWhiteManGoatee.svg
+  //  ../images/avatars/doctorWhiteManYoung.svg
+  //  ../images/avatars/doctorWhiteWomanBrownHairGlasses.svg
+  //  ../images/avatars/doctorWhiteWomanDarkBrownHair.svg
 
   // OLD NOTES:
   // Anything with square brackets is an 'array', holding multiple elements (all unlabeled peers).
@@ -49,8 +49,8 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        // image: "/images/peopleIcons/People-with-Hesitancy3.svg",
-        image: "/images/peopleIcons/People-with-Hesitancy3.svg",
+        // image: "/images/avatars/People-with-Hesitancy3.svg",
+        image: "/images/avatars/People-with-Hesitancy3.svg",
         content: [
           <>
             &ldquo;I don&apos;t trust it at my age. I don&apos;t know what will come down the road, what it will do to
@@ -72,7 +72,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+        image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         content: [
           <>
             <b>Don&apos;t rush into the science.</b> Consider your patient&apos;s willingness to hear, and capacity to
@@ -89,7 +89,7 @@ export const contentPersonas = {
       },
       // (ScienceConcerns)
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             As a trusted health care professional you can reassure your patient that the science behind the vaccines is
@@ -117,7 +117,7 @@ export const contentPersonas = {
               Can we compare our notes and what we’ve learned about them?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -126,7 +126,7 @@ export const contentPersonas = {
               for you today. But let’s see what we can get through now, together.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -137,11 +137,11 @@ export const contentPersonas = {
               possible.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: <>What if no vaccine had ever been created for COVID? What do the next five years look like for you?</>,
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // (ScienceConcerns)
@@ -160,7 +160,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -224,7 +224,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -357,7 +357,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -440,7 +440,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -499,7 +499,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -563,7 +563,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -616,7 +616,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -746,7 +746,7 @@ export const contentPersonas = {
       image: "",
 
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy3.svg",
+        image: "/images/avatars/People-with-Hesitancy3.svg",
         content: [
           <>&ldquo;I’ve heard that the mRNA vaccines will alter my DNA.&rdquo;</>,
           <>
@@ -757,14 +757,14 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorBlackManBeard.svg",
+        image: "/images/avatars/doctorBlackManBeard.svg",
         content: [
           <>Affirm with the patient that this concern is shared by others.</>,
           <>Use clear metaphors and straight forward analogies to explain how the mRNA vaccines work.</>,
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             The mRNA vaccines are safe and never interact with a patient&apos;s DNA. Using clear metaphors to explain
@@ -787,7 +787,7 @@ export const contentPersonas = {
               vaccine might do to you?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -797,7 +797,7 @@ export const contentPersonas = {
               we’ve had before.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -807,7 +807,7 @@ export const contentPersonas = {
               Is it okay if I share some of the vaccine science with you?
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -816,7 +816,7 @@ export const contentPersonas = {
               explore.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // (mRNAConcerns)
@@ -834,7 +834,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -885,7 +885,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -909,7 +909,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -978,7 +978,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1038,7 +1038,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1100,7 +1100,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>
             &ldquo;With all of my conditions and medications, I&apos;m not sure taking the vaccine is the right thing
@@ -1112,7 +1112,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorBlackWoman.svg",
+        image: "/images/avatars/doctorBlackWoman.svg",
         content: [
           <>
             Consider discussing your patient’s specific co-morbidities/medications with a specialist who can advise on
@@ -1129,7 +1129,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             As a trusted healthcare counsellor you can remind your medically complex patient that you are working
@@ -1147,7 +1147,7 @@ export const contentPersonas = {
         tags: [""], // Do we want tags here? I&apos;m guessing not...
         engage: {
           text: <>I know this is yet another thing, but I really hope you&apos;re not giving up on me.</>,
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -1158,7 +1158,7 @@ export const contentPersonas = {
               to protect you, get you living the best life you can.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -1168,7 +1168,7 @@ export const contentPersonas = {
               I&apos;d really much rather that you didn&apos;t have a new health problem from COVID on your hands.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         // (MedicallyComplex)
         evoke: {
@@ -1181,7 +1181,7 @@ export const contentPersonas = {
               protect you from that altogether. These vaccines do that.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
 
@@ -1194,7 +1194,7 @@ export const contentPersonas = {
               {
                 text: <>I know this is yet another thing, but I really hope you’re not giving up on me.</>,
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1263,7 +1263,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1283,7 +1283,7 @@ export const contentPersonas = {
                   <>What specifically about your condition(s) or medication(s) makes you concerned about the vaccine?</>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1337,7 +1337,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1410,7 +1410,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1476,7 +1476,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1585,7 +1585,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy2.svg",
+        image: "/images/avatars/People-with-Hesitancy2.svg",
         content: [
           <>
             &ldquo;I don&apos;t want to introduce unnecessary medications into my body if I don&apos;t need to. Why
@@ -1603,7 +1603,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+        image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
         content: [
           <>Draw attention to the fact that vaccines are a normal part of prenatal care.</>,
           <>Highlight demonstrated safety in both clinical trials and vaccine roll out in pregnant populations.</>,
@@ -1618,7 +1618,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Beyond the evidence showing that the vaccines do not interfere with reproductive health or fitness, there is
@@ -1641,7 +1641,7 @@ export const contentPersonas = {
               it harder to have children?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         affirm: {
           text: (
@@ -1652,7 +1652,7 @@ export const contentPersonas = {
               you.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         ask: {
           text: (
@@ -1662,7 +1662,7 @@ export const contentPersonas = {
               people&apos;s questions and concerns. Can I share what I&apos;ve been telling my other patients?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+          image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
         },
         evoke: {
           text: (
@@ -1672,7 +1672,7 @@ export const contentPersonas = {
               upside down, and to give those antibodies &mdash; that protection, that shield &mdash; to her baby.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
 
@@ -1690,7 +1690,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1766,7 +1766,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1791,7 +1791,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1828,7 +1828,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1861,7 +1861,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1876,7 +1876,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1916,7 +1916,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1944,7 +1944,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2019,7 +2019,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2130,7 +2130,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>&ldquo;I hear that the side effects from the second dose are really bad.&rdquo;</>,
           <>
@@ -2145,7 +2145,7 @@ export const contentPersonas = {
         ],
       },
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+        image: "/images/avatars/doctorWhiteManGoatee.svg",
         content: [
           <>Be transparent about possible side effects of the vaccines with patients.</>,
           <>
@@ -2160,7 +2160,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Beyond the evidence that major side effects from the vaccines are very rare, your patient likely needs
@@ -2183,7 +2183,7 @@ export const contentPersonas = {
               get vaccinated?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -2192,7 +2192,7 @@ export const contentPersonas = {
               thinking about all of the risks and benefits of getting the vaccine or not.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         ask: {
           text: (
@@ -2202,7 +2202,7 @@ export const contentPersonas = {
               system to do its job, right? That&apos;s not a side effect, that&apos;s THE effect.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         evoke: {
           text: (
@@ -2212,7 +2212,7 @@ export const contentPersonas = {
               than you might feel from a side effect.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+          image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
         },
       },
 
@@ -2255,7 +2255,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2292,7 +2292,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2305,7 +2305,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2318,7 +2318,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2380,7 +2380,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2473,7 +2473,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2521,7 +2521,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2549,7 +2549,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2577,7 +2577,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2666,7 +2666,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2758,7 +2758,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy3.svg",
+        image: "/images/avatars/People-with-Hesitancy3.svg",
         content: [
           <>
             &ldquo;I don&apos;t trust the government telling me what I need to do when they haven&apos;t led us down the
@@ -2781,7 +2781,7 @@ export const contentPersonas = {
         ],
       },
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorBlackManBeard.svg",
+        image: "/images/avatars/doctorBlackManBeard.svg",
         content: [
           <>Reaffirm your position as an ally and role as trusted provider of health information.</>,
           <>Pose hypothetical situations or scenarios to help show patients alternatives to their current views.</>,
@@ -2795,7 +2795,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             There’s a firehose of information out there and it can be difficult to understand. Working with your
@@ -2822,7 +2822,7 @@ export const contentPersonas = {
               in creating this whole situation. How are they winning?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -2833,7 +2833,7 @@ export const contentPersonas = {
               up to date, so I can provide the right advice to the people I really care for.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         ask: {
           text: (
@@ -2843,7 +2843,7 @@ export const contentPersonas = {
               with a different lens than what you&apos;ve heard in the media.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+          image: "/images/avatars/doctorWhiteManYoung.svg",
         },
         evoke: {
           text: (
@@ -2853,7 +2853,7 @@ export const contentPersonas = {
               way. What would you be willing to pay for that? What would you be willing to give for that?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+          image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
         },
       },
       // conspiracies
@@ -2985,7 +2985,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3022,7 +3022,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3083,7 +3083,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3098,7 +3098,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3184,7 +3184,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3235,7 +3235,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3261,7 +3261,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3333,7 +3333,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>
             &ldquo;The vaccines are unnatural. I&apos;d rather get COVID and build my immune system the natural
@@ -3360,7 +3360,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+        image: "/images/avatars/doctorWhiteManGoatee.svg",
         content: [
           <>
             Respect patient treatment choices, including preferences for complementary and alternative medicine
@@ -3377,7 +3377,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Remember that the goal for you and your patient is mutual&#58; to maximize their health and wellbeing. Help
@@ -3400,7 +3400,7 @@ export const contentPersonas = {
               me understand what you mean by natural as it relates to the vaccine.
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -3410,7 +3410,7 @@ export const contentPersonas = {
               describing yourself?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -3420,7 +3420,7 @@ export const contentPersonas = {
               your own body to make the proteins that you then make antibodies for.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -3430,7 +3430,7 @@ export const contentPersonas = {
               protect yourself than the vaccine, right?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
 
@@ -3458,7 +3458,7 @@ export const contentPersonas = {
               {
                 text: <>Can you tell me more about what you mean by &lsquo;natural immunity&rsquo;? </>,
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3495,7 +3495,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3551,7 +3551,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3575,7 +3575,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3650,7 +3650,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3669,7 +3669,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3780,7 +3780,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3864,7 +3864,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy2.svg",
+        image: "/images/avatars/People-with-Hesitancy2.svg",
         content: [
           <>&ldquo;I&apos;m not going to let the government have control over what goes into my body.&rdquo;</>,
           <>
@@ -3882,7 +3882,7 @@ export const contentPersonas = {
         ],
       },
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorBlackManBeard.svg",
+        image: "/images/avatars/doctorBlackManBeard.svg",
         content: [
           <>Emphasize patient autonomy and validate deliberations about the vaccines.</>,
           <>Situate yourself as a neutral source of truth and open to exploring their concerns.</>,
@@ -3894,7 +3894,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             After over a year of undergoing lockdowns and forced closures, it&apos;s time patients feel empowered to
@@ -3918,7 +3918,7 @@ export const contentPersonas = {
               normal lives. What are your thoughts?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -3928,7 +3928,7 @@ export const contentPersonas = {
               government and public health, is that fair?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -3941,7 +3941,7 @@ export const contentPersonas = {
               talking about right now.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -3953,7 +3953,7 @@ export const contentPersonas = {
               would you be willing to pay for that? What would you be willing to give for that?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // PoliticalSkeptic
@@ -3992,7 +3992,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4016,7 +4016,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4109,7 +4109,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4165,7 +4165,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4261,7 +4261,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy3.svg",
+        image: "/images/avatars/People-with-Hesitancy3.svg",
         content: [
           <>
             &ldquo;Taking the vaccine goes against my religious beliefs. My concern is more of a religious
@@ -4277,7 +4277,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorBlackWoman.svg",
+        image: "/images/avatars/doctorBlackWoman.svg",
         content: [
           <>Emphasize that taking a vaccination is a moral act &#40;e.g. an act of neighbourly love&#41;.</>,
           <>
@@ -4291,7 +4291,7 @@ export const contentPersonas = {
       // Moral or Religious Objections
 
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             The majority of religious leaders and organizations have come out in favour of the COVID-19 vaccines. Remind
@@ -4315,7 +4315,7 @@ export const contentPersonas = {
               relates to your health?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         affirm: {
           text: (
@@ -4325,7 +4325,7 @@ export const contentPersonas = {
               hearing from public health.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         ask: {
           text: (
@@ -4334,7 +4334,7 @@ export const contentPersonas = {
               help paint a picture about how these vaccines align with the teachings of your religion.{" "}
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         // Moral or Religious Objections
 
@@ -4346,7 +4346,7 @@ export const contentPersonas = {
               teachings from your faith.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // Moral or Religious Objections
@@ -4409,7 +4409,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4459,7 +4459,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4552,7 +4552,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4606,7 +4606,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4652,7 +4652,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4667,7 +4667,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4703,7 +4703,7 @@ export const contentPersonas = {
                 ),
 
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4800,7 +4800,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>&ldquo;Last time I went to &#91;e.g. a clinic, hospital&#93; it didn&apos;t go well.&rdquo;</>,
           <>&ldquo;Doctors and nurses haven&apos;t treated me well when I&apos;ve needed their help.&rdquo;</>,
@@ -4809,7 +4809,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+        image: "/images/avatars/doctorWhiteManYoung.svg",
         content: [
           <>Ask the patient what they would need to feel safe to get the vaccine.</>,
           <>Differentiate your role as a vaccine advocate from larger healthcare/governmental systems.</>,
@@ -4822,7 +4822,7 @@ export const contentPersonas = {
       },
 
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Remember that despite previous negative experiences with bigger healthcare systems, this patient chooses to
@@ -4841,7 +4841,7 @@ export const contentPersonas = {
         tags: [""], // Do we want tags here? I&apos;m guessing not...
         engage: {
           text: <>What do you need to feel safe about getting vaccinated?</>,
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -4851,7 +4851,7 @@ export const contentPersonas = {
               together to make this as easy a process as possible.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -4861,7 +4861,7 @@ export const contentPersonas = {
               protect you because I really would worry that if you caught COVID, you would do quite badly.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -4870,7 +4870,7 @@ export const contentPersonas = {
               day. Maybe we can find one that makes you feel more comfortable and safe.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // Personal Trauma
@@ -4896,7 +4896,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4930,7 +4930,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5013,7 +5013,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5037,7 +5037,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5125,7 +5125,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy2.svg",
+        image: "/images/avatars/People-with-Hesitancy2.svg",
         content: [
           <>
             &ldquo;I can&apos;t see how we as &#91;minorities/First Nations&#93; can rush into taking anything that was
@@ -5140,7 +5140,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+        image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
         content: [
           <>
             Acknowledge and affirm the validity of historical traumas and mistreatment that may affect willingness to
@@ -5175,7 +5175,7 @@ export const contentPersonas = {
       // Group Trauma
 
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Community, group, and historical traumas are complex matters to tease apart and address. As a trusted health
@@ -5194,7 +5194,7 @@ export const contentPersonas = {
         tags: [""], // Do we want tags here? I&apos;m guessing not...
         engage: {
           text: <>What would you need in order to feel safe about getting vaccinated?</>,
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -5204,7 +5204,7 @@ export const contentPersonas = {
               been all these years? Am I understanding that right?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -5218,7 +5218,7 @@ export const contentPersonas = {
               &rsquo;
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -5228,7 +5228,7 @@ export const contentPersonas = {
               finding the best things for your health, and the health of your family...
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // Group Trauma
@@ -5324,7 +5324,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5353,7 +5353,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5377,7 +5377,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5418,7 +5418,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5471,7 +5471,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5504,7 +5504,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5585,7 +5585,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5827,7 +5827,7 @@ export const contentPersonas = {
       tags: ["overview", "needle", "injection", "shots", "pain", "fear", "faint"],
       // Note to James: Use ../images/ path but remember that images actually need to be put in the /public/images folder
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>&ldquo;I really hate needles.&rdquo;</>,
           <>&ldquo;I&apos;m worried about getting the shot because I get really nervous when I see a needle.&rdquo;</>,
@@ -5840,7 +5840,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+        image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
         content: [
           <>Offer to deliver the vaccine to patient directly &#40;if possible&#41;.</>,
           <>Offer topical anaesthetic or sedation</>,
@@ -5856,7 +5856,7 @@ export const contentPersonas = {
       },
 
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Fears around needles can be challenging for patients in all aspects of healthcare, including with bloodwork
@@ -5883,7 +5883,7 @@ export const contentPersonas = {
               fear of needles?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
           // Note to James: Use ../images/ path but remember that images actually need to be put in the /public/images folder
         },
         affirm: {
@@ -5893,7 +5893,7 @@ export const contentPersonas = {
               doctor! But we can address this.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -5902,7 +5902,7 @@ export const contentPersonas = {
               getting a vaccine?
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
         evoke: {
           text: (
@@ -5911,7 +5911,7 @@ export const contentPersonas = {
               we could change the environment and the way the vaccine is delivered?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
       },
       // (NeedlePhobia)
@@ -5931,7 +5931,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5957,7 +5957,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5994,7 +5994,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6020,7 +6020,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6091,7 +6091,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg", // Add image path
+                image: "/images/avatars/doctorWhiteManGoatee.svg", // Add image path
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6167,7 +6167,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6211,7 +6211,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6304,7 +6304,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "/images/peopleIcons/People-with-Hesitancy.svg",
+        image: "/images/avatars/People-with-Hesitancy.svg",
         content: [
           <>&ldquo;It&apos;s been blown out of proportion, it&apos;s just a bad flu.&rdquo;</>,
           <>&ldquo;I know someone who had it and they didn&apos;t get it that bad.&rdquo;</>,
@@ -6322,7 +6322,7 @@ export const contentPersonas = {
       },
 
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+        image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         content: [
           <>
             Emphasize that as a healthcare provider in the community, you have a different perspective on the severity
@@ -6337,7 +6337,7 @@ export const contentPersonas = {
       },
 
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             For patients who have not had COVID affect them or their social groups, it can be difficult to understand
@@ -6356,7 +6356,7 @@ export const contentPersonas = {
         tags: [""], // Do we want tags here? I&apos;m guessing not...
         engage: {
           text: <>Could you tell me a little bit more about your understanding of COVID and its severity?</>,
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
         affirm: {
           text: (
@@ -6367,7 +6367,7 @@ export const contentPersonas = {
               people who have been really sick with it.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
         ask: {
           text: (
@@ -6376,7 +6376,7 @@ export const contentPersonas = {
               not necessarily align with your views of COVID. Could I share my experience&#40;s&#41; with you?
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackManBeard.svg",
+          image: "/images/avatars/doctorBlackManBeard.svg",
         },
         evoke: {
           text: (
@@ -6387,7 +6387,7 @@ export const contentPersonas = {
               vaccine? I think we do.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+          image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
         },
       },
       // (Unconcerned)
@@ -6400,7 +6400,7 @@ export const contentPersonas = {
               {
                 text: <>Could you tell me a little bit more about your understanding of COVID and its severity?</>,
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6432,7 +6432,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+                image: "/images/avatars/doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6500,7 +6500,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackManBeard.svg",
+                image: "/images/avatars/doctorBlackManBeard.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6596,7 +6596,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6678,7 +6678,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6771,7 +6771,7 @@ export const contentPersonas = {
       tags: ["", ""],
 
       theySay: {
-        image: "/images/peopleIcons/presentation.svg",
+        image: "/images/avatars/presentation.svg",
         content: [
           <>
             <p>
@@ -6810,7 +6810,7 @@ export const contentPersonas = {
       },
       // (Undifferentiated)
       thingsToConsider: {
-        image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+        image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         content: [
           <>
             Offering generic information about vaccines may not be as effective as using targeted communication to
@@ -6836,7 +6836,7 @@ export const contentPersonas = {
         ],
       },
       takeHome: {
-        image: "/images/peopleIcons/Notepad_small.svg",
+        image: "/images/avatars/Notepad_small.svg",
         content: [
           <>
             Take the time to learn about your patient&apos;s particular concerns about the COVID vaccines so that you
@@ -6861,7 +6861,7 @@ export const contentPersonas = {
               comfortable doing that?
             </>
           ),
-          image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+          image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
         },
 
         affirm: {
@@ -6873,7 +6873,7 @@ export const contentPersonas = {
               we&apos;re just having a conversation.
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManBlackHair.svg",
+          image: "/images/avatars/doctorWhiteManBlackHair.svg",
         },
 
         ask: {
@@ -6884,7 +6884,7 @@ export const contentPersonas = {
               what I know? As opposed to, maybe, what you&apos;re hearing about from other sources?
             </>
           ),
-          image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+          image: "/images/avatars/doctorWhiteManGoatee.svg",
         },
 
         evoke: {
@@ -6897,7 +6897,7 @@ export const contentPersonas = {
               year, but we can do something about that.
             </>
           ),
-          image: "/images/peopleIcons/doctorBlackWoman.svg",
+          image: "/images/avatars/doctorBlackWoman.svg",
         },
       },
       // (undifferentiated)
@@ -6944,7 +6944,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6960,7 +6960,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+                image: "/images/avatars/doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7043,7 +7043,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7090,7 +7090,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManYoung.svg",
+                image: "/images/avatars/doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7129,7 +7129,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteManGoatee.svg",
+                image: "/images/avatars/doctorWhiteManGoatee.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7205,7 +7205,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+                image: "/images/avatars/doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7322,7 +7322,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorBlackWoman.svg",
+                image: "/images/avatars/doctorBlackWoman.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7369,7 +7369,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "/images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg",
+                image: "/images/avatars/doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },

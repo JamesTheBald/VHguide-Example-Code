@@ -1,10 +1,11 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Switch, Route, useHistory } from "react-router-dom"
 import { animateScroll as scroll } from "react-scroll"
 import { contentPersonas } from "../../content/contentPersonas"
 
 import TabBarOAR from "./TabBarOAR"
-import Context from "../Context"
+import { useMyContext } from "../../context/Context";
+
 import {
   getBranchNum,
   getTopicNum,
@@ -33,7 +34,7 @@ const Details = () => {
     showContactForm,
     log,
     log2,
-  } = useContext(Context)
+  } = useMyContext();
 
   log && console.log("")
 

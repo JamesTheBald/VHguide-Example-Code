@@ -11,7 +11,7 @@ const AboutPanels = props => {
 
   log && console.log("")
   // log && console.log("AboutPanel.js runs. scrollTarget.current=", scrollTarget.current);
-  log2 && console.log("AboutPanel.js runs. contentArray=", contentArray)
+  log && console.log("AboutPanel.js runs. contentArray=", contentArray)
 
   useEffect(() => {
     if (scrollTarget.current) {

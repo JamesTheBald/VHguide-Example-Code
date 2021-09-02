@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useContext, useCallback } from "react";
-import { useHistory } from "react-router-dom";
-import Context from "../Context";
+import React, { useState, useEffect, useCallback } from "react";
+import { navigate } from "gatsby";
 
+import { useMyContext } from "../../context/Context";
 import Pill from "./Pill";
 import TopicTree from "./TopicTree";
 
 const PillsAndTrees = (props) => {
   const { maxColWidth, marginOuter, noneSelected, setNoneSelected } = props;
   const [order, setOrder] = useState([0, 1, 2]);
-  const { winWidth, branch, locn, setLocn, setNavBarOpen, setWinWidth, setWinHeight, log, log2 } = useContext(Context);
+  const { winWidth, branch, locn, setLocn, setNavBarOpen, setWinWidth, setWinHeight, log, log2 } = useMyContext();
 
   log && console.log("");
   log && console.log("PillsAndTrees.js runs. locn=", locn);
@@ -73,7 +73,7 @@ const PillsAndTrees = (props) => {
     setPillWidths((curr) => calcPillWidthArray(curr));
   }, [calcOrder, locn.branch, calcPillWidthArray]);
 
-  const history = useHistory();
+  // const history = useHistory();
   const onClickExplore = (clickedBranchNum) => {
     setOrder(calcOrder(clickedBranchNum));
     setNoneSelected(branch[clickedBranchNum].linkToDetails ? true : false);
@@ -88,12 +88,12 @@ const PillsAndTrees = (props) => {
       log && console.log("PillsAndTrees.js onClickExplore setting locn.branch to", clickedBranchNum);
       return newLocn;
     });
-    branch[clickedBranchNum].linkToDetails;
+    // branch[clickedBranchNum].linkToDetails;
     setWinWidth(window.innerWidth);
     setWinHeight(window.innerHeight);
     setPillWidths((curr) => calcPillWidthArray(curr));
     setNavBarOpen(false);
-    if (branch[clickedBranchNum].linkToDetails) history.push("/details/overview");
+    if (branch[clickedBranchNum].linkToDetails) navigate("/details/overview");
   };
 
   const PillAndTopicTree = ({ branchNum }) => {

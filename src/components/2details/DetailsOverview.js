@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import { useHistory } from "react-router-dom";
-import Context from "../Context";
+import React from "react";
+import { Link } from "gatsby";
+
+import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = (props) => {
   const { contentID } = props;
-  const { winWidth, locn, setNavBarOpen, log } = useContext(Context);
+  const { winWidth, locn, setNavBarOpen, log } = useMyContext();;
 
   log && console.log("DetailsOverview.js runs. locn=", locn);
 
-  const history = useHistory();
 
   // Validation
   const overview = contentPersonas[contentID]?.overview;
@@ -21,10 +21,10 @@ const DetailsOverview = (props) => {
   thingsToConsider = thingsToConsider?.content[0] ? thingsToConsider : template;
   takeHome = takeHome?.content[0] ? takeHome : template;
 
-  const changeTabToAdvice = () => {
-    history.push("/details/advice/eaase");
-    setNavBarOpen(false);
-  };
+  // const changeTabToAdvice = () => {
+  //   history.push("/details/advice/eaase");
+  //   setNavBarOpen(false);
+  // };
 
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
@@ -84,13 +84,13 @@ const DetailsOverview = (props) => {
                 {currItem}
               </div>
             ))}
-            <div
-              name="Link to advice tab"
+            <Link
+              to="/details/advice/eaase"
               className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill"
-              onClick={() => changeTabToAdvice()}
+              onClick={() => setNavBarOpen(false)}
             >
               {winWidth < 400 ? <>How to start the conversation</> : <>Advice on how to start the conversation</>}
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
 
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 
 const TabBarOAR = () => {
-  const { winWidth, setNavBarOpen, setWinWidth, setWinHeight, log } = useContext(Context);
+  const { winWidth, setNavBarOpen, setWinWidth, setWinHeight, log } = useMyContext();
 
   const tabWidthAdjRatio = winWidth / 720;
   const tabWidth = winWidth < 720 ? 185 * tabWidthAdjRatio : 185;

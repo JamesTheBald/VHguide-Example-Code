@@ -12,13 +12,11 @@ import Footer from "./Footer";
 
 const NavFooterLayout = ({ children }) => {
   return (
-    <>
-      <div className="flex flex-col w-full">
-        <NavBar />
-        {children}
-        <Footer />
-      </div>
-    </>
+    <div className="flex flex-col w-full text-blue-main">
+      <NavBar />
+      {children}
+      <Footer />
+    </div>
   );
 };
 

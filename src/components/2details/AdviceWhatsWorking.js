@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import Context from "../Context";
+import React from "react";
+import { useMyContext } from "../../context/Context";
 import LinkToAboutEAASE from "../../content/LinkToAboutEAASE";
 
 const AdviceWhatsWorking = () => {
-  const { log } = useContext(Context);
-  let { scrollTarget } = useContext(Context);
+  const { log } = useMyContext();
+  let { scrollTarget } = useMyContext();
 
   log && console.log("AdviceWhatsWorking.js runs. scrollTarget=", scrollTarget);
 

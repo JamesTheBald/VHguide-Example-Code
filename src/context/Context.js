@@ -1,19 +1,26 @@
 // import React, { useState, useEffect, useRef } from "react";
-import React, { useState, useRef, useContext, createContext } from "react";
+import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 import { branch } from "../content/branch";
 
 export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  const winWid = typeof window !== "undefined" ? window.innerWidth : 1000;
-  const winHt = typeof window !== "undefined" ? window.innerHeight : 800;
+  let winWid = typeof window !== "undefined" ? window.innerWidth : 1000;
+  let winHt = typeof window !== "undefined" ? window.innerHeight : 800;
   const nomScreenWidth = 1920;
+
+  const initLocn = {
+    branch: 0,
+    topic: 0,
+    subtopic: 0,
+    showSubtopic: false,
+  };
 
   const [winWidth, setWinWidth] = useState(winWid);
   const [winHeight, setWinHeight] = useState(winHt);
   const [showContactForm, setShowContactForm] = useState(false);
-  const [locn, setLocn] = useState({});
+  const [locn, setLocn] = useState(initLocn);
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWid / nomScreenWidth);
   const [fullStoryID, setFullStoryID] = useState("");
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -23,6 +30,7 @@ const MyProvider = ({ children }) => {
   const log2 = false;
 
   false && console.log(setWidthAdjRatio);
+
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
   const contextValues = {
     branch: branch,
@@ -35,12 +43,12 @@ const MyProvider = ({ children }) => {
     fullStoryID: fullStoryID,
     navBarOpen: navBarOpen,
     noneSelected: noneSelected,
+    setWinWidth: setWinWidth,
+    setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,
     setNavBarOpen: setNavBarOpen,
-    setWinWidth: setWinWidth,
-    setWinHeight: setWinHeight,
     setFullStoryID: setFullStoryID,
     scrollTarget: scrollTarget,
     log: log,

@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
+import { navigate } from "gatsby";
 // import { animateScroll } from "react-scroll";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 
-const AdviceEaaseIconAndText = (props) => {
+const AdviceEaaseIconAndText = props => {
   const { advice, tab } = props;
-  const { winWidth, setNavBarOpen } = useContext(Context);
+  const { winWidth, setNavBarOpen } = useMyContext();
 
   // log && console.log("AdviceEaaseIconAndText.js advice.eaase[tab]=", advice?.eaase[tab]);
-  // const winWidth = window.innerWidth;
 
   const adviceTabNames = {
     engage: "engage",
@@ -17,9 +16,8 @@ const AdviceEaaseIconAndText = (props) => {
     evoke: "evoke",
   };
 
-  const history = useHistory();
-  const changeAdviceTab = (tab) => {
-    history.push("/details/advice/" + tab);
+  const changeAdviceTab = tab => {
+    navigate("/details/advice/" + tab);
     setNavBarOpen(false);
   };
 
@@ -45,9 +43,13 @@ const AdviceEaaseIconAndText = (props) => {
 
   const MoreWaysPill = () => {
     return (
-      <div className="mt-2 mr-auto  px-3 pt-1  smFont orangeLink linkPill" onClick={() => changeAdviceTab(tab)}>
+      <button
+        className="mt-2 mr-auto  px-3 pt-1  smFont orangeLink linkPill"
+        onClick={() => changeAdviceTab(tab)}
+        onKeyPress={() => changeAdviceTab(tab)}
+      >
         More ways to {adviceTabNames[tab]}
-      </div>
+      </button>
     );
   };
 

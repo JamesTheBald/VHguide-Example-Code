@@ -1,14 +1,15 @@
 import React from "react";
 
+import NavFooterLayout from "../components/0nav&footer/NavFooterLayout";
 import AboutEtc from "../components/3aboutEtc/AboutEtc";
-import { noticesContent } from "../content/noticesContent";
+import { pearlsContent } from "../content/pearlsContent";
 
 const Terms = () => {
-
   return (
     <div>
-      <p> Empty for Now </p>
-      <AboutEtc pageTitle="Terms &amp; Notices" contentArray={noticesContent} />
+      <NavFooterLayout>
+        <AboutEtc pageTitle="Clinical Pearls" contentArray={pearlsContent} />
+      </NavFooterLayout>
     </div>
   );
 };

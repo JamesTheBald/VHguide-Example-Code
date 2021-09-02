@@ -1,11 +1,11 @@
 import React, { useContext} from "react";
 import { animateScroll } from "react-scroll";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
 
 const AdviceEaase = (props) => {
   const { advice } = props;
-  const { log } = useContext(Context);
+  const { log } = useMyContext();
 
   log && console.log("AdviceEaase.js runs.");
 

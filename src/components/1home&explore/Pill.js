@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import Context from "../Context";
+import React from "react";
+import { useMyContext } from "../../context/Context";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Pill = (props) => {
   const { branchNum, onClickExplore, noneSelected } = props;
-  const { winWidth, locn, branch } = useContext(Context);
-  let { log } = useContext(Context);
+  const { winWidth, locn, branch } = useMyContext();
+  let { log } = useMyContext();
 
   const branchName = branch[branchNum].branchName;
   const branchNameShort = branch[branchNum].branchNameShort;

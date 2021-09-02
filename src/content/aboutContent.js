@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "gatsby";
-import Context from "../context/Context";
+import { useMyContext } from "../context/Context";
+
 import { FiExternalLink } from "react-icons/fi";
 
 const listClass = "ml-6 sm:ml-12 list-disc list-outside";
@@ -43,8 +44,8 @@ const MotivationalInterviewing = () => {
 };
 
 const AboutContentWhatIsThis = () => {
-  const { setLocn, log } = useContext(Context);
-  let { scrollTarget } = useContext(Context);
+  const { setLocn, log } = useMyContext();
+  let { scrollTarget } = useMyContext();
   log && console.log("AboutContent.js runs scrollTarget.current=", scrollTarget.current);
 
   return (
@@ -122,7 +123,7 @@ const AboutContentWhatIsThis = () => {
 };
 
 const AboutContentHowUse = () => {
-  const { setLocn, setNoneSelected, setShowContactForm } = useContext(Context);
+  const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
 
   return (
     <>
@@ -161,9 +162,9 @@ const AboutContentHowUse = () => {
       <span>
         The advice, scripts, and resources in the Guide are being updated in response to developments in the COVID-19
         pandemic, vaccine rollout, and user feedback. If you have any comments or suggestions,
-        <a className="pl-1.5 orangeUnderline" onClick={() => setShowContactForm(true)}>
+        <button className="pl-1.5 orangeUnderline" onClick={() => setShowContactForm(true)}>
           contact us.
-        </a>
+        </button>
       </span>
     </>
   );

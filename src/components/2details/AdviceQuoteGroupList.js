@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import reactElementToJSXString from "react-element-to-jsx-string";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 
 import EaaseTopHeading from "./EaaseTopHeading";
 import QuoteGroup from "./QuoteGroup";
 
 const AdviceQuoteGroupList = (props) => {
   const { advice, setFullStoryID } = props;
-  const { log, log2 } = useContext(Context);
+  const { log, log2 } = useMyContext();
 
   const tabMatch = useRouteMatch("/details/advice/:tabSelected");
   const tabSelected = String(tabMatch.params.tabSelected);

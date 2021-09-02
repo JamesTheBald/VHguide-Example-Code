@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 import AdviceTabNavBarName from "./AdviceTabNavBarName";
 
 const AdviceTabNavBar = () => {
-  const { log, log2 } = useContext(Context);
+  const { log, log2 } = useMyContext();
 
   const adviceTabs = ["engage", "affirm", "ask", "evoke"];
   log && console.log("AdviceTabNavBar.js runs.")

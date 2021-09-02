@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import Context from "../Context";
+import React from "react";
+import { useMyContext } from "../../context/Context";
 import PillsAndTrees from "./PillsAndTrees";
 
-const Explore = (props) => {
-  const { isFixed, noneSelected, setNoneSelected } = props;
-  const { winWidth, log } = useContext(Context);
+const Explore0 = () => {
+  const { winWidth, showContactForm, noneSelected, setNoneSelected, log } = useMyContext();
 
   log && console.log("Explore.js runs.");
 
@@ -12,11 +11,11 @@ const Explore = (props) => {
   const marginOuter = winWidth < 510 ? 22 : winWidth < 720 ? 60 : winWidth < maxColWidth ? 75 : 100;
 
   return (
-    <div className={isFixed ? "fixed" : ""}>
+    <div className={showContactForm ? "fixed" : ""}>
       <div className="spacerFooter" style={{ marginLeft: marginOuter, marginRight: marginOuter, marginBottom: 1 }}>
-        {/* marginBottom=1 in above style is to force scrollbar on, to be consisten with other pages */}
+        {/* marginBottom=1 in above style is to force scrollbar on, to be consistent with other pages */}
 
-        <div name="spacer to prevent top margin collapse" className="h-36" />
+        <div name="spacer to prevent top margin collapse" className="h-16" />
         <h1 className="titleFont text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main">
           Hesitancy Types
         </h1>
@@ -35,4 +34,4 @@ const Explore = (props) => {
   );
 };
 
-export default Explore;
+export default Explore0;

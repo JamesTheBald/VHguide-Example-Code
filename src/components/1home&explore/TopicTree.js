@@ -1,32 +1,36 @@
-import React, { useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
+import { navigate } from "gatsby";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import Subtopics from "./Subtopics";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 
-const TopicTree = (props) => {
+const TopicTree = props => {
   const { branchNum } = props;
   const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, setWinWidth, setWinHeight, log } =
-    useContext(Context);
+    useMyContext();
 
-  const history = useHistory();
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
-      setLocn((currLocn) => {
+      setLocn(currLocn => {
         const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false };
         log && console.log("TopicTree.js onClickTopic() setting locn=", newLocn);
         return newLocn;
       });
-      history.push("/details/overview");
+      navigate("/details/overview");
     } else {
-      setLocn((currLocn) => {
+      setLocn(currLocn => {
         const showTheseSubtopics = locn.topic !== topicNum || !locn.showSubtopic ? true : false;
         // Show subtopics upon change in selected topic, or toggle if current topic is clicked again
         const newLocn = { ...currLocn, topic: topicNum, showSubtopic: showTheseSubtopics };
         log &&
-          console.log("TopicTree.js onClickTopic setting locn.topic=", topicNum, "& locn.showSubtopic=", showTheseSubtopics);
+          console.log(
+            "TopicTree.js onClickTopic setting locn.topic=",
+            topicNum,
+            "& locn.showSubtopic=",
+            showTheseSubtopics
+          );
         return newLocn;
       });
     }

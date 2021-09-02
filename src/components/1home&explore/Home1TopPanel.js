@@ -1,14 +1,18 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useMyContext } from "../../context/Context";
 import LandingText from "../../content/LandingText";
 import ScrollDownIndicator from "./ScrollDownIndicator";
 import wavyLineParams from "../../functions/wavyLineParams";
 
-const Home1TopPanel = (props) => {
+const Home1TopPanel = props => {
   const { outerGap, BrowseButton } = props;
   const { widthAdjRatio, winWidth, winHeight, log, log2 } = useMyContext();
 
-  log && console.log("HomeTopPanel.js runs. winHeight=", winHeight);
+  console.log("Home1TopPanel.js runs. log=", log);
+  log && console.log("Home1TopPanel.js runs. winHeight=", winHeight);
+  log && console.log("Home1TopPanel.js runs. winWidth=", winWidth);
 
   let topGap = winWidth < 1366 ? winHeight * 0.01 : winWidth < 1650 ? winHeight * 0.15 : winHeight * 0.2;
 
@@ -18,14 +22,13 @@ const Home1TopPanel = (props) => {
   let titleWidth = winWidth * widFrac;
   const contentWidth = winWidth - 2 * outerGap;
   if (titleWidth > contentWidth) {
-    console.log("trimming titleWidth from", titleWidth, "to", contentWidth);
+    log2 && console.log("trimming titleWidth from", titleWidth, "to", contentWidth);
     titleWidth = contentWidth;
   }
 
   const imageWidth = winWidth < 1366 ? 275 + 120 * widthAdjRatio : winWidth - titleWidth;
   const imageScale = winWidth < 1366 ? 100 : 95;
-  const imageSource =
-    winWidth < 1366 ? "../images/homePage/Home Page Icon Reversed.svg" : "../images/homePage/Home Page Icon.svg";
+  // const imageSource = winWidth < 1366 ? "../../images/homepage/Home Page Icon Reversed.svg" : "../../images/homepage/Home Page Icon.svg";
 
   const buttonTopGap = winWidth < 510 ? 25 : 40;
 
@@ -36,14 +39,12 @@ const Home1TopPanel = (props) => {
 
   return (
     <div className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative">
-      <div name="spacer for navbar" className="h-20 bg-blue-black" />
       <div className="lg:hidden" style={{ height: topGap }} />
 
       <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}>
-        <img
-          className=""
+        <StaticImage
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
-          src="../images/homePage/Line for Home Page.svg"
+          src="../../images/homepage/Line for Home Page.svg"
           alt="wavy line"
         />
       </div>
@@ -64,7 +65,19 @@ const Home1TopPanel = (props) => {
         </div>
 
         <div className="mt-10 flex flex-col justify-center items-center" style={{ width: imageWidth }}>
-          <img className="" style={{ width: imageScale + "%" }} src={imageSource} alt="Vaccine hesitancy guide graphic" />
+          {winWidth < 1366 ? (
+            <StaticImage
+              style={{ width: imageScale + "%" }}
+              src="../../images/homepage/Home Page Icon Reversed.svg"
+              alt="Vaccine hesitancy guide graphic"
+            />
+          ) : (
+            <StaticImage
+              style={{ width: imageScale + "%" }}
+              src="../../images/homepage/Home Page Icon.svg"
+              alt="Vaccine hesitancy guide graphic"
+            />
+          )}
         </div>
       </div>
 

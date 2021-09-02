@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
+import { navigate } from "gatsby";
+
 import { useHistory } from "react-router-dom";
-import Context from "../Context";
+import { useMyContext } from "../../context/Context";
 import { contentFullStories } from "../../content/contentFullStories";
 
 const AdviceFullStory = (props) => {
   const { fullStoryID } = props;
-  const { winWidth, log } = useContext(Context);
+  const { winWidth, log } = useMyContext();
 
   const history = useHistory();
   let story = {};
@@ -17,13 +19,13 @@ const AdviceFullStory = (props) => {
   } else {
     log && console.log("AdviceFullStory.js - content for fullStoryID", fullStoryID, "not found.");
     // setFullStoryID("");
-    history.push("/explore");
+    navigate("/explore");
     validData = false;
   }
 
   return (
     <>
-      <div className="orangeLink" onClick={() => history.goBack()}>
+      <div className="orangeLink" onClick={() => navigate(-1)}>
         &#60; back
       </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";

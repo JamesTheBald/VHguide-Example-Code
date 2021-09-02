@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import Context from "../Context";
+import React from "react";
+import { useMyContext } from "../../context/Context";
 
 const EaaseTopHeading = (props) => {
   const { tabSelected, askAdviceExists } = props;
-  const { winWidth, log } = useContext(Context);
+  const { winWidth, log } = useMyContext();;
 
   log && console.log("EaaseHeading runs. tab=", tabSelected);
   log && console.log("EaaseHeading askAdviceExists=", askAdviceExists);
