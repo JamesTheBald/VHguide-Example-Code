@@ -2,13 +2,13 @@
 @font-face {
   font-family: 'Acumin Pro';
   font-weight: 500;
-  src: url('../fonts/Acumin-RPro.woff') 
+  src: url('../styles/fonts/Acumin-RPro.woff') 
 }
 
 @font-face {
   font-family: 'Acumin Pro';
   font-weight: 700;
-  src: url('../fonts/Acumin-BdPro.woff') 
+  src: url('../styles/fonts/Acumin-BdPro.woff') 
 }
 
 
@@ -17,28 +17,28 @@
   font-family: 'Caslin Pro';
   /* font-style: 'normal'; */
   font-weight: 400;
-  src: url('../fonts/Adobe-Caslon-Pro-Regular.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Regular.ttf') 
 }
 
 @font-face {
   font-family: 'Caslin Pro';
   /* font-style: 'normal'; */
   font-weight: 600;
-  src: url('../fonts/Adobe-Caslon-Pro-Semibold.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Semibold.ttf') 
 }
 
 @font-face {
   font-family: 'Caslin Pro';
   /* font-style: 'normal'; */
   font-weight: 700;
-  src: url('../fonts/Adobe-Caslon-Pro-Bold.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Bold.ttf') 
 }
 
 @font-face {
   font-family: 'Caslin Pro Italic';
   /* font-style: 'italic'; */
   font-weight: 600;
-  src: url('../fonts/Adobe-Caslon-Pro-Semibold-Italic.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Semibold-Italic.ttf') 
 }
 
 @font-face {

@@ -2,13 +2,14 @@
 
 module.exports = {
   important: true,
+  darkMode: false, // or 'media' or 'class'
 
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
 
-  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
+  purge: ["./src/**/*.{js,jsx,ts,tsx,vue}"],
 
   theme: {
     screens: {

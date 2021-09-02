@@ -1,0 +1,77 @@
+import React from "react";
+import ReactPlayer from "react-player/file";
+import { AiFillPlayCircle } from "react-icons/ai";
+
+import { useMyContext } from "../../context/Context";
+
+const Home2HesTypes = (props) => {
+  const { outerGap, topGap, BrowseButton } = props;
+  const { winWidth, widthAdjRatio } = useMyContext();
+
+  const VideoSnapshot = () => {
+    return (
+      <div className="w-full grid justify-items-center items-center" style={{ gridTemplateAreas: "area1" }}>
+        <img style={{ gridArea: "area1" }} src="/videos/video starting snapshot.png" alt="Video snapshot" />
+        <div className="opacity-100 text-gray-medium" style={{ gridArea: "area1" }}>
+          <AiFillPlayCircle size={(120 * (widthAdjRatio + 2)) / 3} />
+        </div>
+      </div>
+    );
+  };
+
+  const HesTypesPanel = (props) => {
+    const { posnClass } = props;
+    return (
+      <div
+        className={`${posnClass} mxs:w-5/6 sm:w-3/4 xl:w-140  px-5 mxs:px-8 sm:px-10 md:px-14  py-5 mxs:py-7 sm:py-9 md:py-12  bg-blue-black rounded-2xl mxs:rounded-3xl sm:rounded-4xl  xl:rounded-l-none  smThenBaseFont`}
+        // className="absolute xl:relative xl:h-full right-0 xl:top-8 ...
+        style={{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }}
+      >
+        <div className="titleFont titleBig">Hesitancy Types</div>
+        <div className="pt-3">
+          Browse the ‘types’ of COVID-19 vaccine hesitancies that primary care teams are encountering to access advice,
+          tips, conversational strategies, and other resources to improve conversations with patients.
+        </div>
+        <div className="pt-3">
+          Following the Guide’s EAASE steps can help you change the conversation from being about vaccine acceptance to
+          focusing on allyship and your patient’s motivations. The literature says this is an important change to make
+          if you want to improve the conversation.
+        </div>
+        <div className="h-8" />
+        <BrowseButton colors="text-blue-dark hover:text-gray-light  bg-gray-light hover:bg-opacity-0" />
+      </div>
+    );
+  };
+
+  return (
+    <>
+      <div className={`w-full text-gray-light`} style={{ paddingLeft: outerGap, paddingRight: outerGap }}>
+        <div style={{ height: topGap }} />
+        <div className="w-full relative xl:flex justify-center">
+          <div
+            className="w-full mxs:w-5/6 xl:w-300 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black  border-3 border-gray-black 
+                          rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
+          >
+            <ReactPlayer
+              url="videos/Video for Home Page - processed.mp4"
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+              muted={true}
+              playing={true}
+              controls={true}
+              light={true}
+              playIcon={<VideoSnapshot />}
+              width="98%"
+              height="98%"
+            />
+          </div>
+
+          <HesTypesPanel posnClass="absolute right-0  xl:relative xl:h-full xl:top-8" />
+        </div>
+        {/* Spacer for positioning subsequent content */}
+        <HesTypesPanel posnClass="invisible xl:hidden relative -top-5" />
+      </div>
+    </>
+  );
+};
+
+export default Home2HesTypes;

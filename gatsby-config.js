@@ -8,6 +8,7 @@ module.exports = {
     flags: { PRESERVE_WEBPACK_CACHE: true },
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -64,18 +65,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
-      }
-    },
-    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false,
         develop: false,
         tailwind: true,
       },
-    }
+    },
   ],
-}
+};
