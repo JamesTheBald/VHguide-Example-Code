@@ -5,7 +5,6 @@ import "../../styles/fonts.css";
 import "../../styles/hoverText.css";
 import "../../styles/styles.css";
 import "../../styles/tailwindStyles.css";
-// import { useMyContext } from "../../context/Context";
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";

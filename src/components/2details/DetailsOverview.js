@@ -4,12 +4,10 @@ import { Link } from "gatsby";
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
-const DetailsOverview = (props) => {
-  const { contentID } = props;
-  const { winWidth, locn, setNavBarOpen, log } = useMyContext();;
+const DetailsOverview = ({ contentID }) => {
+  const { winWidth, locn, setNavBarOpen, log } = useMyContext();
 
   log && console.log("DetailsOverview.js runs. locn=", locn);
-
 
   // Validation
   const overview = contentPersonas[contentID]?.overview;
@@ -20,11 +18,6 @@ const DetailsOverview = (props) => {
   theySay = theySay?.content[0] ? theySay : template;
   thingsToConsider = thingsToConsider?.content[0] ? thingsToConsider : template;
   takeHome = takeHome?.content[0] ? takeHome : template;
-
-  // const changeTabToAdvice = () => {
-  //   history.push("/details/advice/eaase");
-  //   setNavBarOpen(false);
-  // };
 
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";

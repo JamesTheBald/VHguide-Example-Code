@@ -1,17 +1,13 @@
 import React from "react";
 
-import NavFooterLayout from "../components/0nav&footer/NavFooterLayout";
+import Layout from "../components/0nav&footer/NavFooterLayout";
 import AboutEtc from "../components/3aboutEtc/AboutEtc";
 import { pearlsContent } from "../content/pearlsContent";
 
-const Terms = () => {
-  return (
-    <div>
-      <NavFooterLayout>
-        <AboutEtc pageTitle="Clinical Pearls" contentArray={pearlsContent} />
-      </NavFooterLayout>
-    </div>
-  );
+const Pearls = () => {
+  return <AboutEtc pageTitle="Clinical Pearls" contentArray={pearlsContent} />;
 };
 
-export default Terms;
+Pearls.Layout = Layout;
+
+export default Pearls;

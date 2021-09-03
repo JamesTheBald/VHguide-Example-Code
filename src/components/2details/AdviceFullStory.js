@@ -1,7 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
 
-import { useHistory } from "react-router-dom";
 import { useMyContext } from "../../context/Context";
 import { contentFullStories } from "../../content/contentFullStories";
 
@@ -9,7 +8,6 @@ const AdviceFullStory = (props) => {
   const { fullStoryID } = props;
   const { winWidth, log } = useMyContext();
 
-  const history = useHistory();
   let story = {};
 
   let validData = true;
