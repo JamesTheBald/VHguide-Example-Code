@@ -91,6 +91,7 @@ module.exports = {
     borderWidth: {
       DEFAULT: "1px",
       0: "0",
+      1.5: "1.5px",
       2: "2px",
       3: "3px",
       4: "4px",
@@ -169,6 +170,7 @@ module.exports = {
           lightish: "#E0E3FC",
           medium: "#C0C5E8",
           mid: "#B2B7D3",
+          line: "#D6D6D6",
           black: "#03050F"
         },
 

@@ -2,21 +2,18 @@ import React from "react";
 import { navigate } from "gatsby";
 import { useMatch } from "@reach/router"
 
-// import { useRouteMatch } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 
 const AdviceTabNavBarName = (props) => {
   const { currTab } = props;
-  const { winWidth, setNavBarOpen, setWinWidth, setWinHeight, log2 } = useMyContext();;
+  const { winWidth, setNavBarOpen, log2 } = useMyContext();;
 
   log2 && console.log("AdviceTabNavBarName.js runs. currTab=", currTab);
 
   const changeTab = (tabName) => {
     navigate("/details/advice/" + tabName);
     scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
-    setWinWidth(window.innerWidth);
-    setWinHeight(window.innerHeight);
     setNavBarOpen(false);
   };
 
@@ -24,7 +21,7 @@ const AdviceTabNavBarName = (props) => {
   const adviceTabs = ["engage", "affirm", "ask", "evoke"];
   const tabMatch = useMatch("/details/advice/:tabSelected");
 
-  typeof window !== "undefined" && window.location.pathname === "/pearls"
+  // typeof window !== "undefined" && window.location.pathname === "/pearls"
 
   let tabSelected = "";
   if (tabMatch?.params && adviceTabs.includes(tabMatch.params.tabSelected)) {
@@ -56,7 +53,7 @@ const AdviceTabNavBarName = (props) => {
   const subNameClass = "hidden sm:block  text-16 tracking-0.3";
 
   return (
-    <div className="relative" onClick={() => changeTab(currTab)}>
+    <button className="relative" onClick={() => changeTab(currTab)}>
       {tabSelected === currTab ? (
         <>
           <div name="Selected Tab" className={`${flexBoxClass}`} style={{ maxWidth: 240 }}>
@@ -76,7 +73,7 @@ const AdviceTabNavBarName = (props) => {
           <div className={`invisible ${subNameClass}`}>{subName}</div>
         </div>
       )}
-    </div>
+    </button>
   );
 };
 

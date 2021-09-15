@@ -4,13 +4,16 @@ import { useMyContext } from "../context/Context";
 
 import { FiExternalLink } from "react-icons/fi";
 
+import CoverageGridList from "../components/3aboutEtc/CoverageGridList";
+import CoverageWebinars from "../components/3aboutEtc/CoverageWebinars";
+
+const panelTitleClass = "pb-6  font-semibold text-blue-main text-20 sm:text-25 tracking-0.4 sm:tracking-0.5";
 const listClass = "ml-6 sm:ml-12 list-disc list-outside";
 
-// Note: need to put Tailwind class 'relative' on a suitably wide parent element for this to size & position properly
 const TypesPopup = props => {
   const { text } = props;
-
   return (
+    // Note: need to put Tailwind class 'relative' on a suitably wide parent element for this to size & position properly
     <span className="hoverRevealTrigger">
       <span className="orangeLink">&lsquo;{text}&rsquo;</span>
 
@@ -50,6 +53,7 @@ const AboutContentWhatIsThis = () => {
 
   return (
     <>
+      <div className={panelTitleClass}>What is this guide?</div>
       <div className="pb-3">
         The Guide presents advice, scripts, and resources to help navigate conversations about COVID-19 vaccines with
         hesitant patients. These have been developed with clinicians from across Canada. In the Guide you&apos;ll
@@ -127,6 +131,8 @@ const AboutContentHowUse = () => {
 
   return (
     <>
+      <div className={panelTitleClass}>How do I use the guide?</div>
+
       <div className="pb-3">
         The Guide can be used either during an appointment with a vaccine hesitant patient, or outside of patient
         contact hours. As the Guide includes potentially sensitive scripts, you will want to familiarize yourself with
@@ -171,9 +177,10 @@ const AboutContentHowUse = () => {
 };
 
 const AboutContentEaaseSteps = () => {
-
   return (
     <>
+      <div className={panelTitleClass}>EAASE Steps</div>
+
       <div>
         <span>Using the principles of</span>
         <MotivationalInterviewing />
@@ -279,6 +286,24 @@ const AboutContentEaaseSteps = () => {
   );
 };
 
+const AboutContentMediaCoverage = () => {
+  // console.log("aboutContent.js AboutContentMediaCoverage() coverage=", coverage);
+
+  return (
+    <>
+      <div className="pb-8  titleFont titleMedium text-blue-main">Media Coverage</div>
+      <div className={panelTitleClass}>Publications</div>
+      <CoverageGridList type="publications" className="pb-20" />
+
+      <div className={panelTitleClass}>News Media</div>
+      <CoverageGridList type="newsmedia" className="pb-20" />
+
+      <div className={panelTitleClass}>Webinars</div>
+      <CoverageWebinars className="" />
+    </>
+  );
+};
+
 export const aboutContent = [
   {
     title: "What is the Vaccine Hesitancy Guide?",
@@ -293,5 +318,9 @@ export const aboutContent = [
   {
     title: "EAASE Steps",
     content: <AboutContentEaaseSteps />,
+  },
+  {
+    title: "Media Coverage",
+    content: <AboutContentMediaCoverage />,
   },
 ];

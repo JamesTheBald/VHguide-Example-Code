@@ -23,9 +23,9 @@ const AdviceFullStory = (props) => {
 
   return (
     <>
-      <div className="orangeLink" onClick={() => navigate(-1)}>
+      <button className="orangeLink" onClick={() => navigate(-1)}>
         &#60; back
-      </div>
+      </button>
 
       <div className="pt-6 text-25">{story.title}</div>
 
@@ -35,7 +35,7 @@ const AdviceFullStory = (props) => {
       >
         {validData && (
           <>
-            <img src={story.image} alt="Icon image" className="mr-6 mb-2  w-30 h-30 float-left" />
+            <img src={story.image} alt="Icon" className="mr-6 mb-2  w-30 h-30 float-left" />
             {story.text}
           </>
         )}

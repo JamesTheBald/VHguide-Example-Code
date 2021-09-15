@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
-const DetailsOverview = ({ contentID }) => {
-  const { winWidth, locn, setNavBarOpen, log } = useMyContext();
+const DetailsOverview = props => {
+  const { contentID } = props;
+  const { winWidth, setNavBarOpen, log } = useMyContext();
 
-  log && console.log("DetailsOverview.js runs. locn=", locn);
+  let overview = contentPersonas[contentID]?.overview;
 
-  // Validation
-  const overview = contentPersonas[contentID]?.overview;
-  const template = { image: "", content: ["", "", ""] };
-  let theySay = overview?.theySay;
-  let thingsToConsider = overview?.thingsToConsider;
-  let takeHome = overview?.takeHome;
-  theySay = theySay?.content[0] ? theySay : template;
-  thingsToConsider = thingsToConsider?.content[0] ? thingsToConsider : template;
-  takeHome = takeHome?.content[0] ? takeHome : template;
+  log && console.log("");
+  log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+
+  const theySay = overview?.theySay;
+  const thingsToConsider = overview?.thingsToConsider;
+  const takeHome = overview?.takeHome;
+  log && console.log("DetailsOverview.js theySay=", theySay);
+  log && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log && console.log("DetailsOverview.js takeHome=", takeHome);
 
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
@@ -31,7 +32,7 @@ const DetailsOverview = ({ contentID }) => {
       <div name="Bounding Container for positioning the link to advice page" className="w-full h-full relative">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
           <div className={blockClass}>
-            <img src={theySay.image} alt="Icon image" className={imageClass} />
+            <img src={theySay.image} alt="Icon" className={imageClass} />
             {contentID === "Undifferentiated" ? (
               <>
                 <div className={titleClass}>Considerations for vaccine hesitant patients:</div>
@@ -58,7 +59,7 @@ const DetailsOverview = ({ contentID }) => {
           </div>
 
           <div className={blockClass}>
-            <img src={thingsToConsider.image} alt="Icon image" className={imageClass} />
+            <img src={thingsToConsider.image} alt="Icon" className={imageClass} />
             <div className={titleClass}>Things to consider...</div>
             <ul className={listClass}>
               {thingsToConsider.content.map((currItem, index) => (
@@ -70,7 +71,7 @@ const DetailsOverview = ({ contentID }) => {
           </div>
 
           <div className={blockClass}>
-            <img src={takeHome.image} alt="Icon image" className={imageClass} />
+            <img src={takeHome.image} alt="Icon" className={imageClass} />
             <div className={titleClass}>Take Home:</div>
             {takeHome.content.map((currItem, index) => (
               <div key={index} className="mt-2  baseFont text-blue-black">
@@ -92,3 +93,50 @@ const DetailsOverview = ({ contentID }) => {
 };
 
 export default DetailsOverview;
+
+
+ // const theySay = useRef();
+  // const thingsToConsider = useRef();
+  // const takeHome = useRef();
+
+   // const establishContent = () => {
+  //   log && console.log("DetailsOverview.js establishContent() Check overview=", overview);
+
+    // without useRefs
+    // theySay = overview?.theySay
+    // thingsToConsider = overview?.thingsToConsider
+    // takeHome =  overview?.takeHome
+    // theySay = overview?.theySay?.content[0] ? overview.theySay : template;
+    // thingsToConsider = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
+    // takeHome =  overview?.takeHome?.content[0] ? overview.takeHome : template;
+    // log && console.log("DetailsOverview.js establishContent theySay=", theySay);
+    // log && console.log("DetailsOverview.js establishContent thingsToConsider=", thingsToConsider);
+    // log && console.log("DetailsOverview.js establishContent takeHome=", takeHome);
+
+    // with useRefs
+    // theySay = overview.theySay;
+    // thingsToConsider = overview.thingsToConsider;
+    // takeHome = overview.takeHome;
+    // theySay.current = overview.theySay;
+    // thingsToConsider.current = overview.thingsToConsider;
+    // takeHome.current = overview.takeHome;
+
+    // theySay.current = overview?.theySay?.content[0] ? overview.theySay : template;
+    // thingsToConsider.current = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
+    // takeHome.current = overview?.takeHome?.content[0] ? overview.takeHome : template;
+    // log && console.log("DetailsOverview.js establishContent theySay.current=", theySay.current);
+    // log && console.log("DetailsOverview.js establishContent thingsToConsider.current=", thingsToConsider.current);
+    // log && console.log("DetailsOverview.js establishContent takeHome.current=", takeHome.current);
+  // };
+
+  // if (overview) {
+  //   establishContent();
+  // }
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log('DetailsOverview.js useEffect runs')
+  //     establishContent()
+  //   }, 200);
+  //   return () => clearTimeout(timer);
+  // }, []);

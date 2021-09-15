@@ -1,4 +1,4 @@
-import React, { useContext} from "react";
+import React from "react";
 import { animateScroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";

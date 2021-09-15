@@ -5,10 +5,10 @@ import { useMyContext } from "../../context/Context";
 import Pill from "./Pill";
 import TopicTree from "./TopicTree";
 
-const PillsAndTrees = (props) => {
+const PillsAndTrees = props => {
   const { maxColWidth, marginOuter, noneSelected, setNoneSelected } = props;
   const [order, setOrder] = useState([0, 1, 2]);
-  const { winWidth, branch, locn, setLocn, setNavBarOpen, setWinWidth, setWinHeight, log, log2 } = useMyContext();
+  const { winWidth, branch, locn, setLocn, setNavBarOpen, log, log2 } = useMyContext();
 
   log && console.log("");
   log && console.log("PillsAndTrees.js runs. locn=", locn);
@@ -41,7 +41,7 @@ const PillsAndTrees = (props) => {
   const [pillWidths, setPillWidths] = useState([pillWidthMedium, pillWidthMedium, pillWidthMedium]);
 
   const calcOrder = useCallback(
-    (branchNum) => {
+    branchNum => {
       let newOrder = [0, 1, 2];
       if (winWidth < minRowWidth) {
         newOrder = noneSelected || branchNum === 0 ? [0, 1, 2] : branchNum === 1 ? [1, 0, 2] : [1, 2, 0];
@@ -53,7 +53,7 @@ const PillsAndTrees = (props) => {
   );
 
   const calcPillWidthArray = useCallback(
-    (currWidths) => {
+    currWidths => {
       const newWidthArray = [...currWidths];
       newWidthArray.fill(pillWidthNarrow);
 
@@ -70,14 +70,13 @@ const PillsAndTrees = (props) => {
 
   useEffect(() => {
     setOrder(calcOrder(locn.branch));
-    setPillWidths((curr) => calcPillWidthArray(curr));
+    setPillWidths(curr => calcPillWidthArray(curr));
   }, [calcOrder, locn.branch, calcPillWidthArray]);
 
-  // const history = useHistory();
-  const onClickExplore = (clickedBranchNum) => {
+  const onClickExplore = clickedBranchNum => {
     setOrder(calcOrder(clickedBranchNum));
     setNoneSelected(branch[clickedBranchNum].linkToDetails ? true : false);
-    setLocn((currLocn) => {
+    setLocn(currLocn => {
       const newLocn = {
         ...currLocn,
         branch: clickedBranchNum,
@@ -89,14 +88,14 @@ const PillsAndTrees = (props) => {
       return newLocn;
     });
     // branch[clickedBranchNum].linkToDetails;
-    setWinWidth(window.innerWidth);
-    setWinHeight(window.innerHeight);
-    setPillWidths((curr) => calcPillWidthArray(curr));
+    setPillWidths(curr => calcPillWidthArray(curr));
     setNavBarOpen(false);
     if (branch[clickedBranchNum].linkToDetails) navigate("/details/overview");
   };
 
   const PillAndTopicTree = ({ branchNum }) => {
+    console.log("");
+    console.log("PillAndTrees.js PillAndTopicTree() brancNum=", branchNum);
     return (
       <div
         className={`flex flex-col  ${order[branchNum] !== 2 ? "mr-12" : ""}
@@ -111,7 +110,9 @@ const PillsAndTrees = (props) => {
     );
   };
 
-  const PillGroup = () => {
+  const PillGroup = branchNum => {
+    console.log("");
+    console.log("PillAndTrees.js PillGroup() brancNum=", branchNum);
     return (
       <>
         <PillAndTopicTree branchNum={0} />
@@ -121,7 +122,9 @@ const PillsAndTrees = (props) => {
     );
   };
 
-  const PillGroupConditional = () => {
+  const PillGroupConditional = branchNum => {
+    console.log("");
+    console.log("PillAndTrees.js PillGroupConditional() brancNum=", branchNum);
     return (
       <>
         {locn.branch !== 0 && <PillAndTopicTree branchNum={0} />}
@@ -143,12 +146,12 @@ const PillsAndTrees = (props) => {
         winWidth < mixedStackBreakPt ? (
           noneSelected ? (
             <div className="flex flex-col">
-              <PillGroup />
+              <PillGroup branchNum={locn.branch} />
             </div>
           ) : (
             <div className="flex flex-col">
               <PillAndTopicTree branchNum={locn.branch} />
-              <PillGroupConditional />
+              <PillGroupConditional branchNum={locn.branch} />
             </div>
           )
         ) : noneSelected ? (
@@ -159,14 +162,14 @@ const PillsAndTrees = (props) => {
           <div className="flex flex-row">
             <PillAndTopicTree branchNum={locn.branch} />
             <div className="flex flex-col">
-              <PillGroupConditional />
+              <PillGroupConditional branchNum={locn.branch} />
             </div>
           </div>
         )
       ) : (
         // Wide screen case
         <div className="flex flex-row">
-          <PillGroup />
+          <PillGroup branchNum={locn.branch} />
         </div>
       )}
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { useMyContext } from "../../context/Context";
+import { useMyContext } from "../context/Context";
 
 const LinkToAboutEAASE = (props) => {
   const { text } = props;

@@ -1,25 +1,13 @@
 import React from "react";
 import ReactPlayer from "react-player/file";
-import { AiFillPlayCircle } from "react-icons/ai";
-
+import VideoSnapshotHome from "./VideoSnapshotHome";
 import { useMyContext } from "../../context/Context";
 
-const Home2HesTypes = (props) => {
+const Home2HesTypes = props => {
   const { outerGap, topGap, BrowseButton } = props;
-  const { winWidth, widthAdjRatio } = useMyContext();
+  const { winWidth } = useMyContext();
 
-  const VideoSnapshot = () => {
-    return (
-      <div className="w-full grid justify-items-center items-center" style={{ gridTemplateAreas: "area1" }}>
-        <img style={{ gridArea: "area1" }} src="/videos/video starting snapshot.png" alt="Video snapshot" />
-        <div className="opacity-100 text-gray-medium" style={{ gridArea: "area1" }}>
-          <AiFillPlayCircle size={(120 * (widthAdjRatio + 2)) / 3} />
-        </div>
-      </div>
-    );
-  };
-
-  const HesTypesPanel = (props) => {
+  const HesTypesPanel = props => {
     const { posnClass } = props;
     return (
       <div
@@ -49,17 +37,17 @@ const Home2HesTypes = (props) => {
         <div style={{ height: topGap }} />
         <div className="w-full relative xl:flex justify-center">
           <div
-            className="w-full mxs:w-5/6 xl:w-300 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black  border-3 border-gray-black 
-                          rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
+            className="w-full sm:w-5/6 xl:w-300 pt-1 mxs:pt-3 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black  border-3
+                        border-gray-black  rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
           >
             <ReactPlayer
-              url="videos/Video for Home Page - processed.mp4"
+              url="/videos/Video for Home Page - processed.mp4"
               style={{ marginLeft: "auto", marginRight: "auto" }}
               muted={true}
               playing={true}
               controls={true}
               light={true}
-              playIcon={<VideoSnapshot />}
+              playIcon={<VideoSnapshotHome />}
               width="98%"
               height="98%"
             />

@@ -1,6 +1,6 @@
 import React from "react";
-import { useMyContext } from "../../context/Context";
 
+import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsResources = (props) => {

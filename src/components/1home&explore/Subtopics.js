@@ -28,7 +28,7 @@ const Subtopics = (props) => {
     return (
       <>
         <div
-          className="border-b border-gray-mid"
+          className="border-b-1.5 border-gray-line"
           style={{
             marginLeft: leftTreeMargin,
             marginRight: rightGap,
@@ -40,17 +40,17 @@ const Subtopics = (props) => {
         {subtopics.map((currSubtopic, subtopicNum) => {
           return (
             <div key={subtopicNum}>
-              <div
+              <button
                 key={subtopicNum}
-                className="baseFont tracking-0.4 sm:tracking-0.5  cursor-pointer text-blue-dark hover:text-blue-main"
+                className="mt-1.5  baseFontWide  cursor-pointer text-blue-dark hover:text-blue-main"
                 style={{ marginLeft: leftMarginSub }}
                 onClick={() => onClickSubtopic(subtopicNum)}
               >
                 {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
-              </div>
+              </button>
 
               <div
-                className="border-b border-gray-mid"
+                className="border-b-1.5 border-gray-line"
                 style={{
                   marginLeft: leftMarginSub,
                   marginRight: rightGap,

@@ -7,7 +7,7 @@ import Credits from "./Credits"
 
 const AboutPanels = props => {
   const { contentArray } = props
-  const { winWidth, scrollTarget, log, log2 } = useMyContext()
+  const { winWidth, scrollTarget, log } = useMyContext()
 
   log && console.log("")
   // log && console.log("AboutPanel.js runs. scrollTarget.current=", scrollTarget.current);
@@ -67,7 +67,6 @@ const AboutPanels = props => {
                   </>
                 ) : (
                   <>
-                    <div className={panelTitleClass}>{currPanel.title}</div>
                     <div className={panelTextClass}>{currPanel.content}</div>
                   </>
                 )}

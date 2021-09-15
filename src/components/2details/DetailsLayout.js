@@ -2,43 +2,25 @@ import React from "react";
 import { navigate } from "gatsby";
 import { animateScroll as scroll } from "react-scroll";
 
-import { useMyContext } from "../../context/Context"; 
+import { useMyContext } from "../../context/Context";
 import Layout from "../0nav&footer/NavFooterLayout";
-import TabBarOAR from "./TabBarOAR";
-import { getContentIDandName } from "../../functions/getContentIDandName";
-import { getRelatedContentIDs } from "../../functions/getRelatedContentIDs";
+import TabBarOAR from "../../components/2details/TabBarOAR";
 import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
 
-import DetailsResources from "./DetailsResources";
-import AdviceEaase from "./AdviceEaase";
-import AdviceTabNavBar from "./AdviceTabNavBar";
-import AdviceQuoteGroupList from "./AdviceQuoteGroupList";
-import AdviceFullStory from "./AdviceFullStory";
-import AdviceWhatsWorking from "./AdviceWhatsWorking";
-
-const DetailsLayout = ({ children }) => {
-  const {
-    widthAdjRatio,
-    setLocn,
-    setNavBarOpen,
-    setFullStoryID,
-    setWinWidth,
-    setWinHeight,
-    showContactForm,
-    log,
-  } = useMyContext();
+const DetailsLayout = props => {
+  const { hesitTypeName, related } = props;
+  const { widthAdjRatio, locn, setLocn, setNavBarOpen, setFullStoryID, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
+  log2 && console.log("DetailsLayout.js locn=", locn);
+  log2 && console.log("DetailsLayout.js widthAdjRatio=", widthAdjRatio);
 
-  const { contentID, hesitancyTypeName } = getContentIDandName();
-  const { related } = getRelatedContentIDs(contentID);
-
-  const onClickRelated = contID => {
-    const branchNum = getBranchNum(contID);
-    const topNum = getTopicNum(contID, branchNum);
-    const subtopNum = getSubtopicNum(contID, branchNum, topNum);
-    log && console.log("Details.js onClickRelated() runs. contID=", contID);
-    log && console.log("Details.js .. branchNum=", branchNum, "topicNum=", topNum, "subtopicNum=", subtopNum);
+  const onClickRelated = contentID => {
+    const branchNum = getBranchNum(contentID);
+    const topNum = getTopicNum(contentID, branchNum);
+    const subtopNum = getSubtopicNum(contentID, branchNum, topNum);
+    log && console.log("DetailsLayout.js onClickRelated() runs. contID=", contentID);
+    log && console.log("DetailsLayout.js .. branchNum=", branchNum, "topicNum=", topNum, "subtopicNum=", subtopNum);
 
     setLocn(currLocn => {
       const newLocn = {
@@ -47,47 +29,32 @@ const DetailsLayout = ({ children }) => {
         topic: topNum,
         subtopic: subtopNum,
       };
-      log && console.log("Details.js onClickRelated() Setting locn branch, topic, subtopic numbers.");
+      log && console.log("DetailsLayout.js onClickRelated() Setting locn branch, topic, subtopic numbers.");
       return newLocn;
     });
     navigate("/details/overview");
     setNavBarOpen(false);
   };
 
-  const onClickBackButton = () => {
-    history.goBack();
-    // instead of  history.goBack() can use navigate("/explore/")
-    setWinWidth(window.innerWidth);
-    setWinHeight(window.innerHeight);
-  };
-
   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
 
-  const navbarHeight = 80;
   const yPosnPanel = 24;
   const marginLeft = 100 * widthAdjRatio;
   const panelWidth = window.innerWidth - 190 * widthAdjRatio - 10;
   const tabHeight = 50;
   const relatedPill = "px-3 pt-1 mr-5 mb-3  vsmFont italic orangeLink  linkPill";
 
-  // const otherLegitAdviceTabPaths = [
-  //   "/details/advice/engage",
-  //   "/details/advice/affirm",
-  //   "/details/advice/ask",
-  //   "/details/advice/evoke",
-  // ];
-
   const panelPadding = "p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
 
   return (
     <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>
-      <div className="text-blue-main" style={{ marginLeft: marginLeft, marginTop: navbarHeight }}>
-        <div className="mt-25 mxs:mt-28 sm:mt-30 orangeLink" onClick={() => onClickBackButton()}>
+      <div className="text-blue-main" style={{ marginLeft: marginLeft }}>
+        <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
-        </div>
+        </button>
 
         <h1 className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</h1>
-        <div className="titleFont titleMedium">{hesitancyTypeName}</div>
+        <div className="titleFont titleMedium">{hesitTypeName}</div>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
@@ -99,26 +66,7 @@ const DetailsLayout = ({ children }) => {
                       overflow-x-hidden`}
             style={{ top: tabHeight - 100, width: panelWidth }}
           >
-            {children}
-
-            {/* <Switch>
-
-              <Route exact path="/details/advice/fullstory">
-                <AdviceFullStory fullStoryID={fullStoryID} />
-              </Route>
-
-              <Route exact path="/details/advice/eaase">
-                <AdviceWhatsWorking />
-                <AdviceEaase advice={advice} />
-              </Route>
-
-              
-              <Route exact path={otherLegitAdviceTabPaths}>
-                <AdviceWhatsWorking />
-                <AdviceTabNavBar />
-                <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} />
-              </Route>
-            </Switch> */}
+            {props.children}
           </div>
 
           {related[0] ? (
@@ -128,9 +76,9 @@ const DetailsLayout = ({ children }) => {
                 <div className="ml-6  flex flex-wrap">
                   {related.map((contID, index) => {
                     return (
-                      <div key={index} className={relatedPill} onClick={() => onClickRelated(contID)}>
+                      <button key={index} className={relatedPill} onClick={() => onClickRelated(contID)}>
                         {getSubtopicName(contID)}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
@@ -145,10 +93,13 @@ const DetailsLayout = ({ children }) => {
   );
 };
 
-DetailsLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 DetailsLayout.Layout = Layout;
 
 export default DetailsLayout;
+
+// const otherLegitAdviceTabPaths = [
+//   "/details/advice/engage",
+//   "/details/advice/affirm",
+//   "/details/advice/ask",
+//   "/details/advice/evoke",
+// ];

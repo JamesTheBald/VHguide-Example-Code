@@ -8,7 +8,7 @@ import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
   const { branchNum } = props;
-  const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, setWinWidth, setWinHeight, log } =
+  const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, log } =
     useMyContext();
 
   const onClickTopic = (currTopic, topicNum) => {
@@ -34,8 +34,6 @@ const TopicTree = props => {
         return newLocn;
       });
     }
-    setWinWidth(window.innerWidth);
-    setWinHeight(window.innerHeight);
     setNavBarOpen(false);
   };
 
@@ -57,7 +55,7 @@ const TopicTree = props => {
       <>
         <div
           name="rounded outer border"
-          className="mb-6  flex flex-col  font-sans font-normal border-3 border-t-0 border-blue-main"
+          className="mb-6  flex flex-col  border-3 border-t-0 border-blue-main"
           style={{
             marginLeft: treeBorderMargin,
             marginRight: treeBorderMargin,
@@ -70,7 +68,7 @@ const TopicTree = props => {
 
             return (
               <div key={topicNum}>
-                <div
+                <button
                   name="TopicName line"
                   className={`flex items-center cursor-pointer text-blue-dark hover:text-blue-main tracking-0.5 hoverSelector`}
                   style={{
@@ -78,8 +76,9 @@ const TopicTree = props => {
                     marginTop: topicStepHt,
                   }}
                   onClick={() => onClickTopic(currTopic, topicNum)}
+                  onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <div className={`flex-shrink-0 text-16 sm:text-22  tracking-0.5 sm:tracking-0.6`}>
+                  <div className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.5 sm:tracking-0.6`}>
                     {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
                   </div>
 
@@ -98,7 +97,7 @@ const TopicTree = props => {
                       <IoIosArrowForward size="30" />
                     </div>
                   )}
-                </div>
+                </button>
 
                 {showSubtopics && (
                   <Subtopics

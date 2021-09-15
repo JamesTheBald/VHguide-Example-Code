@@ -1,5 +1,4 @@
 import React from "react"
-// import { useHistory } from "react-router-dom";
 import { Link } from "gatsby"
 
 import { useMyContext } from "../../context/Context";
@@ -13,8 +12,6 @@ const QuoteBoxes = props => {
 
   log && console.log("QuoteBoxes.js runs.")
   log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray)
-
-  // const history = useHistory()
 
   // const onClickFullStoryLink = fullStoryID => {
   //   log &&

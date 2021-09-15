@@ -1,14 +1,11 @@
-// import React, { useState, useEffect, useRef } from "react";
-import React, { useState, useEffect, useRef, useContext, createContext } from "react";
+import React, { useState, useRef, useContext, createContext } from "react";
 import { branch } from "../content/branch";
+import useWindowSize from "../functions/useWindowSize";
 
 export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  let winWid = typeof window !== "undefined" ? window.innerWidth : 1000;
-  let winHt = typeof window !== "undefined" ? window.innerHeight : 800;
-  const nomScreenWidth = 1920;
 
   const initLocn = {
     branch: 0,
@@ -17,11 +14,12 @@ const MyProvider = ({ children }) => {
     showSubtopic: false,
   };
 
-  const [winWidth, setWinWidth] = useState(winWid);
-  const [winHeight, setWinHeight] = useState(winHt);
+  const nomScreenWidth = 1200;
+
+  const { winWidth, winHeight } = useWindowSize();
   const [showContactForm, setShowContactForm] = useState(false);
   const [locn, setLocn] = useState(initLocn);
-  const [widthAdjRatio, setWidthAdjRatio] = useState(winWid / nomScreenWidth);
+  const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);
   const [fullStoryID, setFullStoryID] = useState("");
   const [navBarOpen, setNavBarOpen] = useState(false);
   const [noneSelected, setNoneSelected] = useState(true);
@@ -43,8 +41,6 @@ const MyProvider = ({ children }) => {
     fullStoryID: fullStoryID,
     navBarOpen: navBarOpen,
     noneSelected: noneSelected,
-    setWinWidth: setWinWidth,
-    setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,

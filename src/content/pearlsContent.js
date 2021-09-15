@@ -4,14 +4,14 @@ export const pearlsContent = [
   //LOWERING THE TEMPERATURE
 
   // Path names for doctor icon images:
-  //   ../images/avatars/doctorBlackManBeard.svg
-  //   ../images/avatars/doctorBlackWoman.svg
-  //   ../images/avatars/doctorMuslimWomanYellowHeadCover.svg
-  //   ../images/avatars/doctorWhiteManBlackHair.svg
-  //   ../images/avatars/doctorWhiteManGoatee.svg
-  //   ../images/avatars/doctorWhiteManYoung.svg
-  //   ../images/avatars/doctorWhiteWomanBrownHairGlasses.svg
-  //   ../images/avatars/doctorWhiteWomanDarkBrownHair.svg
+  //   ../images/peopleIcons/doctorBlackManBeard.svg
+  //   ../images/peopleIcons/doctorBlackWoman.svg
+  //   ../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg
+  //   ../images/peopleIcons/doctorWhiteManBlackHair.svg
+  //   ../images/peopleIcons/doctorWhiteManGoatee.svg
+  //   ../images/peopleIcons/doctorWhiteManYoung.svg
+  //   ../images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg
+  //   ../images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg
 
   // Sections:
   //   Affirming You're An Ally
@@ -38,7 +38,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/avatars/doctorBlackManBeard.svg",
+            image: "/images/peopleIcons/doctorBlackManBeard.svg",
             // The code is not (yet) in place for "full story" links to work from quote boxes on the Clinical Pearls page
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
@@ -284,7 +284,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/avatars/doctorMuslimWomanYellowHeadCover.svg",
+            image: "../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -346,7 +346,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/avatars/doctorBlackWoman.svg",
+            image: "../images/peopleIcons/doctorBlackWoman.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -372,7 +372,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/avatars/doctorBlackManBeard.svg",
+            image: "../images/peopleIcons/doctorBlackManBeard.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -402,7 +402,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/avatars/doctorWhiteManBlackHair.svg",
+            image: "../images/peopleIcons/doctorWhiteManBlackHair.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },

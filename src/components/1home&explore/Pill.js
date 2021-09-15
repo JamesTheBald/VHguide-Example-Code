@@ -10,7 +10,7 @@ const Pill = (props) => {
   let { log } = useMyContext();
 
   const branchName = branch[branchNum].branchName;
-  const branchNameShort = branch[branchNum].branchNameShort;
+  const branchNameShortest = branch[branchNum].branchNameShortest;
 
   const pillHeight = winWidth < 510 ? 48 : 72;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
@@ -25,29 +25,29 @@ const Pill = (props) => {
   const textClass =
     locn.branch === branchNum && !noneSelected
       ? "ml-5 mxs:ml-8 md:ml-9  font-serif font-normal  text-18 mxs:text-22 qsm:text-25 sm:text-30  tracking-0.4 mxs:tracking-0.6"
-      : "ml-5 mxs:ml-7 md:ml-8   text-16 mxs:text-18  tracking-0.1";
+      : "ml-5 mxs:ml-7 md:ml-8   text-14 mxs:text-18  tracking-0.1";
 
   const pillShapeClass = "flex flex-row justify-between items-center  rounded-full relative";
   let shadowClass = "shadowGray border border-gray-lightish";
 
   return (
-    <div
+    <button
       className={`cursor-pointer text-${pillTextColor} bg-${pillColor} ${pillShapeClass} ${
         !(locn.branch === branchNum) ? shadowClass : ""
       }`}
       style={{ height: pillHeight }}
       onClick={() => onClickExplore(branchNum)}
     >
-      <div className={`pt-1 ${textClass}`}>{winWidth < 510 ? branchNameShort : branchName}</div>
+      <div className={`pt-1 ${textClass}`}>{winWidth < 510 ? branchNameShortest : branchName}</div>
 
       <div className="mr-2">
-        {locn.branch === branchNum && !branch[branchNum].linkToDetails ? (
+        {locn.branch === branchNum && !branch[branchNum].linkToDetails && !noneSelected ? (
           <IoIosArrowDown size={arrowSize} />
         ) : (
           <IoIosArrowForward size={arrowSize} />
         )}
       </div>
-    </div>
+    </button>
   );
 };
 
