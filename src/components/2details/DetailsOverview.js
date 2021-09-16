@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
@@ -6,19 +6,17 @@ import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = props => {
   const { contentID } = props;
-  const { winWidth, setNavBarOpen, log } = useMyContext();
+  const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
 
   let overview = contentPersonas[contentID]?.overview;
-
-  log && console.log("");
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
 
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
-  log && console.log("DetailsOverview.js theySay=", theySay);
-  log && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
-  log && console.log("DetailsOverview.js takeHome=", takeHome);
+  log2 && console.log("DetailsOverview.js theySay=", theySay);
+  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
 
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";

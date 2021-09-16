@@ -3,10 +3,10 @@ import { useMyContext } from "../../context/Context";
 
 const EaaseTopHeading = (props) => {
   const { tabSelected, askAdviceExists } = props;
-  const { winWidth, log } = useMyContext();;
+  const { winWidth, log2 } = useMyContext();;
 
-  log && console.log("EaaseHeading runs. tab=", tabSelected);
-  log && console.log("EaaseHeading askAdviceExists=", askAdviceExists);
+  log2 && console.log("EaaseHeading.js runs. tab=", tabSelected);
+  log2 && console.log("EaaseHeading.js askAdviceExists=", askAdviceExists);
 
   const QuotesTitle = (props) => {
     const { bigText, smText } = props;

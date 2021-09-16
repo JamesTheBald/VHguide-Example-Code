@@ -24,8 +24,8 @@ const AdviceTabNavBarName = (props) => {
   // typeof window !== "undefined" && window.location.pathname === "/pearls"
 
   let tabSelected = "";
-  if (tabMatch?.params && adviceTabs.includes(tabMatch.params.tabSelected)) {
-    tabSelected = tabMatch.params.tabSelected;
+  if (tabMatch && adviceTabs.includes(tabMatch.tabSelected)) {
+    tabSelected = tabMatch.tabSelected;
     log2 && console.log("AdviceTabNavBarName.js tabSelected=", tabSelected);
   } else {
     tabSelected = "engage";

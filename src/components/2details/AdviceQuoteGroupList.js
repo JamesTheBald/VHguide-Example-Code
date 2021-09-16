@@ -11,8 +11,8 @@ const AdviceQuoteGroupList = (props) => {
   const { log, log2 } = useMyContext();
 
   const tabMatch = useMatch("/details/advice/:tabSelected");
-  const tabSelected = String(tabMatch.params.tabSelected);
-  log && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
+  const tabSelected = String(tabMatch.tabSelected);
+  log2 && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
   log && console.log("AdviceQuoteGroupList.js tabSelected=", tabSelected);
 
   const contentArray = advice[tabSelected].content;
@@ -23,7 +23,7 @@ const AdviceQuoteGroupList = (props) => {
   const askAdviceExists = firstAskAdviceStringLength > 14;
   log2 && console.log("AdviceQuoteGroupList.js runs. askAdvice=", firstAskAdviceQuote);
   log2 && console.log("AdviceQuoteGroupList.js runs. JSX string length of askAdvice=", firstAskAdviceStringLength);
-  log && console.log("AdviceQuoteGroupList.js runs. askAdviceExists=", askAdviceExists);
+  log2 && console.log("AdviceQuoteGroupList.js runs. askAdviceExists=", askAdviceExists);
 
   return (
     <>

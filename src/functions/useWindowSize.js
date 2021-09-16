@@ -3,13 +3,16 @@ import React from "react";
 
 export default function useWindowSize() {
   const isSSR = typeof window !== "undefined";
-  
-  
-  
+
   const [windowSize, setWindowSize] = React.useState({
     winWidth: isSSR ? 1200 : window.innerWidth,
     winHeight: isSSR ? 800 : window.innerHeight,
   });
+
+  const log2 = false;
+  log2 && console.log("useWindowSize.js runs. isSSR=", isSSR);
+  log2 && console.log("useWindowSize.js runs. winWidth=", windowSize.winWidth);
+  log2 && console.log("useWindowSize.js runs. winHeight=", windowSize.winHeight);
 
   function changeWindowSize() {
     setWindowSize({ winWidth: window.innerWidth, winHeight: window.innerHeight });

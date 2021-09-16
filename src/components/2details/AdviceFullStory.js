@@ -8,15 +8,15 @@ const AdviceFullStory = (props) => {
   const { fullStoryID } = props;
   const { winWidth, log } = useMyContext();
 
-  let story = {};
+  log && console.log("AdviceFullStory.js runs. fullStoryID=", fullStoryID);
 
+  let story = {};
   let validData = true;
   if (contentFullStories[fullStoryID]?.text) {
     story = contentFullStories[fullStoryID];
-    log && console.log("AdviceFullStory.js runs. fullStoryID=", fullStoryID);
+    log && console.log("AdviceFullStory.js story=", story);
   } else {
     log && console.log("AdviceFullStory.js - content for fullStoryID", fullStoryID, "not found.");
-    // setFullStoryID("");
     navigate("/explore");
     validData = false;
   }

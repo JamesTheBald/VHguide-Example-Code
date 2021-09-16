@@ -1,17 +1,22 @@
 import React from "react";
-import { useMatch } from "@reach/router";
+// import { useMatch } from "@reach/router";
 import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const TabBarOAR = () => {
-  // const { location } = props;
-  const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
+  const { winWidth, marginOuter, setNavBarOpen, log, log2 } = useMyContext();
 
-  const tabWidthAdjRatio = winWidth / 720;
-  const tabWidth = winWidth < 720 ? 185 * tabWidthAdjRatio : 185;
+  log2 && console.log("");
+  log && console.log("TabBarOAR.js runs. winWidth=", winWidth);
+
+  const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
+  const tabWidth = winWidth < 510 ? 195 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
   const tabGap = winWidth < 720 ? 25 * tabWidthAdjRatio : 25;
   const tabTall = winWidth < 510 ? 92 : 100;
   const titleTopMargin = 12;
+
+  log && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
+  log && console.log("TabBarOAR.js tabWidth=", tabWidth);
 
   const capitalizeFirstLetter = str => {
     if (typeof str !== "string") return "";
@@ -32,11 +37,9 @@ const TabBarOAR = () => {
   const lastSegment = urlAsArray.pop();
   const secondLastSegment = urlAsArray.pop();
 
-  log2 && console.log("TabBarOAR.js url=", url);
-  log2 && console.log("TabBarOAR.js lastSegment=", lastSegment);
-  log2 && console.log("TabBarOAR.js secondLastSegment=", secondLastSegment);
-
-  const oarTabs = ["overview", "advice", "resources"];
+  log && console.log("TabBarOAR.js url=", url);
+  log && console.log("TabBarOAR.js lastSegment=", lastSegment);
+  log && console.log("TabBarOAR.js secondLastSegment=", secondLastSegment);
 
   let tabName;
   if (lastSegment === "overview" || lastSegment === "resources") {
@@ -47,8 +50,9 @@ const TabBarOAR = () => {
     tabName = "overview";
     log && console.log("TabBarOAR.js No match to URL param so setting tabName=", tabName);
   }
-
   log && console.log("TabBarOAR.js OAR tabName=", tabName);
+
+  const oarTabs = ["overview", "advice", "resources"];
 
   return (
     <div>

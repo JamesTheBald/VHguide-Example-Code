@@ -20,7 +20,7 @@ const CarouselFeaturedOn = () => {
   }, [winWidth]);
 
   const timeOnEach = 2500;
-  const carouselRefFeaturedOn = useRef(null);
+  const carouselRefFeaturedOn = useRef();
   // const numPages = Math.ceil(featuredOnLogoPaths.length/itemsPerPage);
   let timer;
 

@@ -5,12 +5,11 @@ import Layout from "../components/0nav&footer/NavFooterLayout";
 import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 
 const Explore = () => {
-  const { winWidth, showContactForm, noneSelected, setNoneSelected, log } = useMyContext();
+  const { marginOuter, showContactForm, log } = useMyContext();
 
   log && console.log("Explore.js runs.");
 
-  const maxColWidth = 720;
-  const marginOuter = winWidth < 510 ? 22 : winWidth < 720 ? 60 : winWidth < maxColWidth ? 75 : 100;
+  const maxStackedWidth = 720;
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
@@ -23,12 +22,7 @@ const Explore = () => {
         </h1>
         <div className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  text-14 mxs:text-20 sm:text-25 italic">My patient has...</div>
 
-        <PillsAndTrees
-          maxColWidth={maxColWidth}
-          marginOuter={marginOuter}
-          noneSelected={noneSelected}
-          setNoneSelected={setNoneSelected}
-        />
+        <PillsAndTrees maxStackedWidth={maxStackedWidth} />
 
         <div className="h-10" />
       </div>

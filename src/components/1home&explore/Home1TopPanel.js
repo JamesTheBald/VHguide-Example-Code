@@ -7,20 +7,18 @@ import ScrollDownIndicator from "./ScrollDownIndicator";
 import wavyLineParams from "../../functions/wavyLineParams";
 
 const Home1TopPanel = props => {
-  const { outerGap, BrowseButton } = props;
-  const { widthAdjRatio, winWidth, winHeight, log, log2 } = useMyContext();
+  const { BrowseButton } = props;
+  const { widthAdjRatio, winWidth, winHeight, marginOuter, log, log2 } = useMyContext();
 
-  console.log("Home1TopPanel.js runs. log=", log);
-  log && console.log("Home1TopPanel.js runs. winHeight=", winHeight);
-  log && console.log("Home1TopPanel.js runs. winWidth=", winWidth);
-
+  log && console.log("Home1TopPanel.js runs. winWidth=", winWidth, " and winHeight=", winHeight);
+  
   let topGap = winWidth < 1366 ? winHeight * 0.01 : winWidth < 1650 ? winHeight * 0.15 : winHeight * 0.2;
 
   const wid = winWidth;
   const widFrac =
     wid < 720 ? 0.85 : wid < 1024 ? 0.78 : wid < 1200 ? 0.72 : wid < 1366 ? 0.65 : wid < 1600 ? 0.445 : 0.4;
   let titleWidth = winWidth * widFrac;
-  const contentWidth = winWidth - 2 * outerGap;
+  const contentWidth = winWidth - 2 * marginOuter;
   if (titleWidth > contentWidth) {
     log2 && console.log("trimming titleWidth from", titleWidth, "to", contentWidth);
     titleWidth = contentWidth;
@@ -28,6 +26,8 @@ const Home1TopPanel = props => {
 
   const imageWidth = winWidth < 1366 ? 275 + 120 * widthAdjRatio : winWidth - titleWidth;
   const imageScale = winWidth < 1366 ? 100 : 95;
+  log && console.log("Home1TopPanel.js imageWidth=", imageWidth, " & imageScale=", imageScale);
+
   // const imageSource = winWidth < 1366 ? "../../images/homepage/Home Page Icon Reversed.svg" : "../../images/homepage/Home Page Icon.svg";
 
   const buttonTopGap = winWidth < 510 ? 25 : 40;
@@ -51,7 +51,7 @@ const Home1TopPanel = props => {
 
       <div
         className="w-screen  flex flex-col lg:flex-row z-20 relative"
-        style={{ paddingLeft: outerGap, paddingRight: outerGap, zIndex: 20 }}
+        style={{ paddingLeft: marginOuter, paddingRight: marginOuter, zIndex: 20 }}
       >
         <div className="order-last lg:order-first">
           <div style={{ height: winWidth < 1366 ? 15 : topGap }} />

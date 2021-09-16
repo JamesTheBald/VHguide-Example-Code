@@ -11,7 +11,6 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 const Home = () => {
   const { winWidth, setNoneSelected, showContactForm } = useMyContext();
 
-  const outerGap = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 50 : winWidth < 1600 ? 100 : 150;
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
   const buttonWidth = winWidth < 510 ? 210 : 322;
   const buttonHeight = winWidth < 510 ? 36 : 50;
@@ -36,10 +35,10 @@ const Home = () => {
 
   return (
     <div className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
-      <Home1TopPage outerGap={outerGap} BrowseButton={BrowseButton} />
-      <Home2HesTypes outerGap={outerGap} topGap={topGap} BrowseButton={BrowseButton} />
-      <Home3WhoWeAre outerGap={outerGap} topGap={topGap} />
-      <Home4TestimonialsEtc outerGap={outerGap} topGap={topGap} />
+      <Home1TopPage BrowseButton={BrowseButton} />
+      <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
+      <Home3WhoWeAre topGap={topGap} />
+      <Home4TestimonialsEtc topGap={topGap} />
       <div className="w-full h-30 md:h-40 xl:h-50"></div>
     </div>
   );

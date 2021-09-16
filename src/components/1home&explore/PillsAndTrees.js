@@ -6,13 +6,13 @@ import Pill from "./Pill";
 import TopicTree from "./TopicTree";
 
 const PillsAndTrees = props => {
-  const { maxColWidth, marginOuter, noneSelected, setNoneSelected } = props;
+  const { maxStackedWidth } = props;
   const [order, setOrder] = useState([0, 1, 2]);
-  const { winWidth, branch, locn, setLocn, setNavBarOpen, log, log2 } = useMyContext();
+  const { winWidth, marginOuter, branch, locn, setLocn, setNavBarOpen, noneSelected, setNoneSelected, log, log2 } =
+    useMyContext();
 
-  log && console.log("");
-  log && console.log("PillsAndTrees.js runs. locn=", locn);
-  log && console.log("PillsAndTrees.js noneSelected=", noneSelected);
+  log2 && console.log("PillsAndTrees.js runs. locn=", locn);
+  log2 && console.log("PillsAndTrees.js noneSelected=", noneSelected);
 
   const mixedStackBreakPt = 1444;
   const minRowWidth = 1800;
@@ -21,7 +21,7 @@ const PillsAndTrees = props => {
   let pillWidthNarrow;
   let pillWidthMedium;
 
-  if (winWidth < maxColWidth) {
+  if (winWidth < maxStackedWidth) {
     // Narrow screen case
     pillWidthWide = winWidth - 2 * marginOuter;
     pillWidthNarrow = pillWidthWide;
@@ -87,15 +87,13 @@ const PillsAndTrees = props => {
       log && console.log("PillsAndTrees.js onClickExplore setting locn.branch to", clickedBranchNum);
       return newLocn;
     });
-    // branch[clickedBranchNum].linkToDetails;
     setPillWidths(curr => calcPillWidthArray(curr));
     setNavBarOpen(false);
     if (branch[clickedBranchNum].linkToDetails) navigate("/details/overview");
   };
 
   const PillAndTopicTree = ({ branchNum }) => {
-    console.log("");
-    console.log("PillAndTrees.js PillAndTopicTree() brancNum=", branchNum);
+    log2 && console.log("PillAndTrees.js PillAndTopicTree() brancNum=", branchNum);
     return (
       <div
         className={`flex flex-col  ${order[branchNum] !== 2 ? "mr-12" : ""}
@@ -111,8 +109,7 @@ const PillsAndTrees = props => {
   };
 
   const PillGroup = branchNum => {
-    console.log("");
-    console.log("PillAndTrees.js PillGroup() brancNum=", branchNum);
+    log2 && console.log("PillAndTrees.js PillGroup() brancNum=", branchNum);
     return (
       <>
         <PillAndTopicTree branchNum={0} />
@@ -123,8 +120,7 @@ const PillsAndTrees = props => {
   };
 
   const PillGroupConditional = branchNum => {
-    console.log("");
-    console.log("PillAndTrees.js PillGroupConditional() brancNum=", branchNum);
+    log2 && console.log("PillAndTrees.js PillGroupConditional() brancNum=", branchNum);
     return (
       <>
         {locn.branch !== 0 && <PillAndTopicTree branchNum={0} />}
@@ -136,7 +132,7 @@ const PillsAndTrees = props => {
 
   return (
     <>
-      {winWidth < maxColWidth ? (
+      {winWidth < maxStackedWidth ? (
         // Narrow screen case
         <div className="flex flex-col">
           <PillGroup />

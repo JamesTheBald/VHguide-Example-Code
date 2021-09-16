@@ -9,7 +9,7 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 
 const DetailsLayout = props => {
   const { hesitTypeName, related } = props;
-  const { widthAdjRatio, locn, setLocn, setNavBarOpen, setFullStoryID, showContactForm, log, log2 } = useMyContext();
+  const { widthAdjRatio, marginOuter, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
@@ -19,7 +19,7 @@ const DetailsLayout = props => {
     const branchNum = getBranchNum(contentID);
     const topNum = getTopicNum(contentID, branchNum);
     const subtopNum = getSubtopicNum(contentID, branchNum, topNum);
-    log && console.log("DetailsLayout.js onClickRelated() runs. contID=", contentID);
+    log && console.log("DetailsLayout.js onClickRelated() runs. contentID=", contentID);
     log && console.log("DetailsLayout.js .. branchNum=", branchNum, "topicNum=", topNum, "subtopicNum=", subtopNum);
 
     setLocn(currLocn => {
@@ -29,7 +29,7 @@ const DetailsLayout = props => {
         topic: topNum,
         subtopic: subtopNum,
       };
-      log && console.log("DetailsLayout.js onClickRelated() Setting locn branch, topic, subtopic numbers.");
+      log && console.log("DetailsLayout.js onClickRelated() Setting locn object.");
       return newLocn;
     });
     navigate("/details/overview");
@@ -39,8 +39,6 @@ const DetailsLayout = props => {
   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
 
   const yPosnPanel = 24;
-  const marginLeft = 100 * widthAdjRatio;
-  const panelWidth = window.innerWidth - 190 * widthAdjRatio - 10;
   const tabHeight = 50;
   const relatedPill = "px-3 pt-1 mr-5 mb-3  vsmFont italic orangeLink  linkPill";
 
@@ -48,7 +46,7 @@ const DetailsLayout = props => {
 
   return (
     <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>
-      <div className="text-blue-main" style={{ marginLeft: marginLeft }}>
+      <div className="text-blue-main" style={{ marginLeft: marginOuter, marginRight: marginOuter }}>
         <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
         </button>
@@ -58,13 +56,13 @@ const DetailsLayout = props => {
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
-            <TabBarOAR setFullStoryID={setFullStoryID} />
+            <TabBarOAR />
           </div>
 
           <div // Panel
             className={`${panelPadding} bg-gray-light border border-gray-lightish rounded-3xl shadowGray  relative z-30
                       overflow-x-hidden`}
-            style={{ top: tabHeight - 100, width: panelWidth }}
+            style={{ top: tabHeight - 100 }}
           >
             {props.children}
           </div>

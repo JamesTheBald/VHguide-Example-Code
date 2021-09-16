@@ -3,10 +3,10 @@ import { useMyContext } from "../../context/Context";
 import LinkToAboutEAASE from "../../content/LinkToAboutEAASE";
 
 const AdviceWhatsWorking = () => {
-  const { log } = useMyContext();
+  const { log2 } = useMyContext();
   let { scrollTarget } = useMyContext();
 
-  log && console.log("AdviceWhatsWorking.js runs. scrollTarget=", scrollTarget);
+  log2 && console.log("AdviceWhatsWorking.js runs. scrollTarget=", scrollTarget);
 
   return (
     <div>

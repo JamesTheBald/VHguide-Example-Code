@@ -5,8 +5,8 @@ import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
 const Home3WhoWeAre = (props) => {
-  const { outerGap, topGap } = props;
-  const { winWidth } = useMyContext();
+  const { topGap } = props;
+  const { winWidth, marginOuter } = useMyContext();
 
   const bioWidth =
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
@@ -15,7 +15,7 @@ const Home3WhoWeAre = (props) => {
     <>
       <div
         className={`w-full flex flex-col items-center  text-blue-black`}
-        style={{ paddingLeft: outerGap, paddingRight: outerGap }}
+        style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}
       >
         <div style={{ height: topGap - 20 }} />
         <div className="titleFont titleBig">Who We Are</div>

@@ -1,26 +1,20 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import CarouselTestimonials from "./CarouselTestimonials";
 import CarouselFeaturedOn from "./CarouselFeaturedOn";
-import testimonials from "../../content/testimonials";
 import CollabLogos from "../3aboutEtc/CollabLogos";
-
 import LinkToPathSection from "../LinkToPathSection";
-// import { useMyContext } from "../../context/Context";
+import { useMyContext } from "../../context/Context";
 
 const Home4TestimonialsEtc = (props) => {
-  const { outerGap, topGap } = props;
-  // const { winWidth } = useMyContext();
-
-  const timeOnEach = 10000;
-  const carouselRef = useRef(null);
-  const numPages = Math.ceil(testimonials.length);
+  const { topGap } = props;
+  const { marginOuter } = useMyContext();
 
   return (
     <>
       <div
         className={`w-full flex flex-col items-center  text-blue-black`}
-        style={{ paddingLeft: outerGap, paddingRight: outerGap }}
+        style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}
       >
         <div style={{ height: topGap }} />
         <div className="titleFont titleBig">Testimonials</div>

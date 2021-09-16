@@ -4,10 +4,10 @@ import React from "react";
 
 export const branch = [
   {
-    branchName: "Concerned about the vaccines",
-    branchNameShort: "Concerned about vaccines",
+    branchName: "Specific vaccine hesitancies",
+    branchNameShort: "Specific vaccine hesitancies",
     // branchNameShort is for narrower screens (<510px in width)
-    branchNameShortest: "Concerned about vaccines",
+    branchNameShortest: "Specific vaccine hesitancies",
     // branchNameShortest is for the navbar pull-down menus
     linkToDetails: false,
     topic: [
@@ -104,7 +104,7 @@ export const branch = [
           },
           {
             subtopicName: <>Politics and government involvement with vaccines</>,
-            subtopicNameShort: <>Politics and government involvement</>,
+            subtopicNameShort: <>Politics and govt involvement</>,
             subtopicNameAsTitle: <>Politics and Government Involvement with Vaccines</>,
             contentID: "PoliticalSkeptic",
           },
@@ -175,32 +175,9 @@ export const branch = [
   },
 
   {
-    branchName: "Unconcerned about the pandemic",
-    branchNameShort: "Unconcerned about the pandemic",
-    branchNameShortest: "Unconcerned about pandemic",
-    linkToDetails: true,
-    topic: [
-      {
-        topicName: <></>,
-        topicNameShort: <></>,
-        topicNameAsTitle: <></>,
-        linkToDetails: false,
-        subtopic: [
-          {
-            subtopicName: <>No concerns about the pandemic</>,
-            subtopicNameShort: <>No concerns about COVID</>,
-            subtopicNameAsTitle: <>No Concerns About the Pandemic</>,
-            contentID: "Unconcerned",
-          },
-        ],
-      },
-    ],
-  },
-
-  {
     branchName: "Undifferentiated vaccine hesitancies",
-    branchNameShort: "Undifferentiated hesitancy",
-    branchNameShortest: "Undifferentiated hesitancy",
+    branchNameShort: "Undifferentiated hesitancies",
+    branchNameShortest: "Undifferentiated hesitancies",
     linkToDetails: true,
     topic: [
       {
@@ -220,4 +197,26 @@ export const branch = [
     ],
   },
 
+  {
+    branchName: "No concerns about the pandemic",
+    branchNameShort: "No concerns about the pandemic",
+    branchNameShortest: "No concerns about the pandemic",
+    linkToDetails: true,
+    topic: [
+      {
+        topicName: <></>,
+        topicNameShort: <></>,
+        topicNameAsTitle: <></>,
+        linkToDetails: false,
+        subtopic: [
+          {
+            subtopicName: <>No concerns about the pandemic</>,
+            subtopicNameShort: <>No concerns about COVID</>,
+            subtopicNameAsTitle: <>No Concerns About the Pandemic</>,
+            contentID: "Unconcerned",
+          },
+        ],
+      },
+    ],
+  },
 ];

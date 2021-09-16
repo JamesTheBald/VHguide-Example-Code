@@ -4,14 +4,14 @@ import { navigate } from "gatsby";
 // import "../../styles/hoverText.css";
 import { useMyContext } from "../../context/Context";
 
-const Subtopics = (props) => {
-  const { branchNum, topicNum, subtopics, leftTreeMargin, rightGap } = props;
+const Subtopics = props => {
+  const { branchNum, topicNum, subtopics, insideMargin } = props;
   const { winWidth, setLocn, setNavBarOpen, log } = useMyContext();
 
   log && console.log("Subtopics.js runs. subtopics =", subtopics);
 
-  const onClickSubtopic = (subtopicNum) => {
-    setLocn((currLocn) => {
+  const onClickSubtopic = subtopicNum => {
+    setLocn(currLocn => {
       const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: subtopicNum };
       log && console.log("Subtopics.js onClickSubtopic setting locn=", branchNum, topicNum, subtopicNum);
       return newLocn;
@@ -21,7 +21,7 @@ const Subtopics = (props) => {
   };
 
   // const leftMarginSub = winWidth < 510 ? 50 : (80 * (widthAdjRatio + 3)) / 4; // all in pixels
-  const leftMarginSub = 2*leftTreeMargin;
+  // const insideMargin = 2*insideMargin;
   const subtopicStepHt = winWidth < 510 ? 6 : 12;
 
   if (subtopics?.[0]) {
@@ -30,8 +30,8 @@ const Subtopics = (props) => {
         <div
           className="border-b-1.5 border-gray-line"
           style={{
-            marginLeft: leftTreeMargin,
-            marginRight: rightGap,
+            marginLeft: insideMargin * 2,
+            marginRight: insideMargin,
             height: subtopicStepHt - 3,
             marginBottom: subtopicStepHt,
           }}
@@ -43,7 +43,7 @@ const Subtopics = (props) => {
               <button
                 key={subtopicNum}
                 className="mt-1.5  baseFontWide  cursor-pointer text-blue-dark hover:text-blue-main"
-                style={{ marginLeft: leftMarginSub }}
+                style={{ marginLeft: insideMargin*2 }}
                 onClick={() => onClickSubtopic(subtopicNum)}
               >
                 {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
@@ -52,8 +52,8 @@ const Subtopics = (props) => {
               <div
                 className="border-b-1.5 border-gray-line"
                 style={{
-                  marginLeft: leftMarginSub,
-                  marginRight: rightGap,
+                  marginLeft: insideMargin*2,
+                  marginRight: insideMargin,
                   height: subtopicStepHt,
                   marginBottom: subtopicStepHt,
                 }}

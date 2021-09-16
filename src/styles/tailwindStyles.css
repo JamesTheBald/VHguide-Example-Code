@@ -25,7 +25,7 @@
   }
 
   .baseFontWide {
-    @apply font-sans  text-18 sm:text-20  tracking-0.4 sm:tracking-0.5
+    @apply font-sans  text-16 sm:text-18  tracking-0.4 sm:tracking-0.5
   }
 
   .smThenBaseFont {

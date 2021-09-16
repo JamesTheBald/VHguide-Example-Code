@@ -4,8 +4,8 @@ import VideoSnapshotHome from "./VideoSnapshotHome";
 import { useMyContext } from "../../context/Context";
 
 const Home2HesTypes = props => {
-  const { outerGap, topGap, BrowseButton } = props;
-  const { winWidth } = useMyContext();
+  const { topGap, BrowseButton } = props;
+  const { winWidth, marginOuter } = useMyContext();
 
   const HesTypesPanel = props => {
     const { posnClass } = props;
@@ -33,7 +33,7 @@ const Home2HesTypes = props => {
 
   return (
     <>
-      <div className={`w-full text-gray-light`} style={{ paddingLeft: outerGap, paddingRight: outerGap }}>
+      <div className={`w-full text-gray-light`} style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}>
         <div style={{ height: topGap }} />
         <div className="w-full relative xl:flex justify-center">
           <div

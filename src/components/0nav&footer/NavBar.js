@@ -62,12 +62,13 @@ const NavBar = () => {
 
           <div
             name="Dropdown menu for Hesitancy Types on bigger screens"
-            className={`hidden sm:inline  absolute ${pathname === "/explore" ? "top-0 z-40" : "-top-9 z-20"}`}
+            className="hidden sm:inline  absolute"
+            style={pathname === "/explore" ? { top: 1 + "px", zIndex: 40 } : { top: -2.25 + "rem", zIndex: 20 }}
           >
             <div
               name="Panel to cover border, hold down-chevron"
               className={`hiddenTillHover absolute flex justify-center items-start ${bgColor} z-30`}
-              style={{ left: 7, top: 60, width: 169, height: 32 }}
+              style={{ left: 7, top: 60, width: 160, height: 32 }}
             >
               <IoIosArrowDown size={24} />
             </div>
@@ -82,8 +83,12 @@ const NavBar = () => {
                   <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 0)}>
                     {branch[0].branchNameShortest}
                   </button>
-                  <div className={`pl-6 ${hesitancyDropDownClass}`}>{branch[1].branchNameShortest}</div>
-                  <div className="pl-6 py-3  w-full text-left">{branch[2].branchNameShortest}</div>
+                  <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 1)}>
+                    {branch[1].branchNameShortest}
+                  </button>
+                  <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 2)}>
+                    {branch[2].branchNameShortest}
+                  </button>
                 </div>
               </div>
             </>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext, createContext } from "react";
+import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 import { branch } from "../content/branch";
 import useWindowSize from "../functions/useWindowSize";
 
@@ -6,7 +6,6 @@ export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-
   const initLocn = {
     branch: 0,
     topic: 0,
@@ -20,20 +19,30 @@ const MyProvider = ({ children }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [locn, setLocn] = useState(initLocn);
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);
+  // The following line is just so setWidthAdjRation is utilized, so no warning is issued.
+  false && console.log(setWidthAdjRatio);
   const [fullStoryID, setFullStoryID] = useState("");
   const [navBarOpen, setNavBarOpen] = useState(false);
   const [noneSelected, setNoneSelected] = useState(true);
   const scrollTarget = useRef("");
   const log = true;
   const log2 = false;
+  log && console.log("Context.js runs.");
 
-  false && console.log(setWidthAdjRatio);
+  useEffect(() => {
+    setWidthAdjRatio(winWidth / nomScreenWidth);
+    log && console.log("Context.js useEffect runs. Setting WidthAdjRatio=", winWidth / nomScreenWidth);
+  }, [winWidth, log]);
+
+  const marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 50 : winWidth < 1600 ? 100 : 150;
+  log && console.log("Context.js marginOuter=", marginOuter);
 
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
   const contextValues = {
     branch: branch,
     winWidth: winWidth,
     winHeight: winHeight,
+    marginOuter: marginOuter,
     nomScreenWidth: nomScreenWidth,
     showContactForm: showContactForm,
     locn: locn,

@@ -8,8 +8,11 @@ import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
   const { branchNum } = props;
-  const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, log } =
-    useMyContext();
+  const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, log, log2 } = useMyContext();
+
+  log2 && console.log("");
+  log && console.log("TopicTree.js runs. branch=", branch);
+  log && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
 
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
@@ -37,16 +40,14 @@ const TopicTree = props => {
     setNavBarOpen(false);
   };
 
-  // const winWidth = window.innerWidth;
-  const treeBorderMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
-  const borderRad = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
-  const leftTreeMargin = (50 * (widthAdjRatio + 0.2)) / 1.2;
-  const rightGap = (30 * (widthAdjRatio + 1)) / 2;
+  const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
+  const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
+  const insideMargin = 50 * widthAdjRatio;
+  // const rightPadding = insideMargin;
+  // const rightPadding = (30 * (widthAdjRatio + 1)) / 2;
   const bottomPadding = winWidth < 510 ? 40 : 58;
   const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
   const leftGapToLine = winWidth < 510 ? 10 * widthAdjRatio : (15 * (widthAdjRatio + 1)) / 2;
-
-  // console.log("TopicTree.js runs. branch=", branch);
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;
@@ -54,13 +55,14 @@ const TopicTree = props => {
     return (
       <>
         <div
-          name="rounded outer border"
-          className="mb-6  flex flex-col  border-3 border-t-0 border-blue-main"
+          name="Rounded Outer Border"
+          className="mb-3  flex flex-col  border-3 border-t-0 border-blue-main relative -top-1"
           style={{
-            marginLeft: treeBorderMargin,
-            marginRight: treeBorderMargin,
+            marginLeft: outsideMargin,
+            marginRight: outsideMargin,
+            paddingTop: 10,
             paddingBottom: bottomPadding,
-            borderRadius: borderRad,
+            borderRadius: borderRadius,
           }}
         >
           {topics.map((currTopic, topicNum) => {
@@ -72,8 +74,8 @@ const TopicTree = props => {
                   name="TopicName line"
                   className={`flex items-center cursor-pointer text-blue-dark hover:text-blue-main tracking-0.5 hoverSelector`}
                   style={{
-                    marginLeft: leftTreeMargin,
-                    marginTop: topicStepHt,
+                    paddingLeft: insideMargin,
+                    paddingTop: topicStepHt,
                   }}
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
@@ -89,11 +91,11 @@ const TopicTree = props => {
                   />
 
                   {showSubtopics ? (
-                    <div className="flex-shrink-0" style={{ marginRight: rightGap }}>
+                    <div className="flex-shrink-0" style={{ marginRight: insideMargin }}>
                       <IoIosArrowDown size="30" />
                     </div>
                   ) : (
-                    <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: rightGap }}>
+                    <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: insideMargin }}>
                       <IoIosArrowForward size="30" />
                     </div>
                   )}
@@ -104,8 +106,7 @@ const TopicTree = props => {
                     branchNum={branchNum}
                     topicNum={topicNum}
                     subtopics={currTopic.subtopic}
-                    leftTreeMargin={leftTreeMargin}
-                    rightGap={rightGap}
+                    insideMargin={insideMargin}
                   />
                 )}
               </div>
