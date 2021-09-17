@@ -46,7 +46,7 @@ const NavBar = () => {
   const bgColor = "bg-blue-black";
   const bord = pathname === "/" ? "border-b-2" : "";
   const marginLeftIcon = 38 * widthAdjRatio;
-  const hesitancyDropDownClass = "py-3  text-left  border-b border-gray-light  text-14 tracking-0.4 cursor-pointer";
+  const hesitancyDropDownClass = "py-3  text-left  border-gray-light  text-14 tracking-0.4 cursor-pointer";
 
   const NavBarItemsAndDropDowns = () => {
     return (
@@ -75,15 +75,15 @@ const NavBar = () => {
 
             <>
               <div
-                className={`hiddenTillHover absolute   rounded-b-xl ${bgColor}
+                className={`pt-1.5  hiddenTillHover absolute   rounded-b-xl ${bgColor}
                 ${pathname === "/" ? "border border-gray-light" : ""}`}
                 style={{ left: 6, top: 87, width: 290 }}
               >
                 <div className="flex flex-col">
-                  <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 0)}>
+                  <button className={`pl-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 0)}>
                     {branch[0].branchNameShortest}
                   </button>
-                  <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 1)}>
+                  <button className={`pl-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 1)}>
                     {branch[1].branchNameShortest}
                   </button>
                   <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 2)}>
@@ -96,16 +96,16 @@ const NavBar = () => {
 
           <div name="Dropdown menu for Hesitancy Types on small screens" className="sm:hidden">
             <div
-              className="hidden group-hover:flex pr-6 w-full flex-col  border-t border-gray-light"
+              className="pt-1.5 hidden group-hover:flex pr-6 w-full flex-col  border-t border-gray-light"
               style={{ width: 270 }}
             >
-              <button className={`ml-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 0)}>
+              <button className={`ml-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 0)}>
                 {branch[0].branchNameShortest}
               </button>
-              <button className={`ml-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 1)}>
+              <button className={`ml-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 1)}>
                 {branch[1].branchNameShortest}
               </button>
-              <button className={`ml-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 2)}>
+              <button className={`ml-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 2)}>
                 {branch[2].branchNameShortest}
               </button>
             </div>

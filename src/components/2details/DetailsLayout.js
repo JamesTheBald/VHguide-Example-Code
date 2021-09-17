@@ -52,7 +52,7 @@ const DetailsLayout = props => {
         </button>
 
         <h1 className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</h1>
-        <div className="titleFont titleMedium">{hesitTypeName}</div>
+        <div className="mt-0.5  titleFont titleMedium">{hesitTypeName}</div>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">

@@ -30,7 +30,7 @@ const QuoteBoxes = props => {
           ? { padding: "40px 36px 36px 56px" } // padding for featured box (narrow screen)
           : quote.image === ""
           ? { padding: "36px 30px 28px 52px" } // padding for plain quote
-          : { padding: "30px 30px 28px 56px", marginLeft: 42 } // padding for quote with icon
+          : { padding: "30px 25px 28px 50px", marginLeft: 42 } // padding for quote with icon
         : quote.featured === true
         ? { padding: "44px 44px 40px 72px" }
         : quote.image === ""
@@ -45,7 +45,7 @@ const QuoteBoxes = props => {
     return quoteLen < 100 ? -20 : quoteLen < 140 ? -10 : 0;
   };
 
-  const iconLeftPosn = winWidth < 510 ? -100 : -110;
+  const iconLeftPosn = winWidth < 510 ? -93 : -110;
 
   return (
     <>

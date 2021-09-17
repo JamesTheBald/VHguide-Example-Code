@@ -7197,7 +7197,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    so, one of the things that we&apos;re seeing is more and more young people even previously healthy
+                    So, one of the things that we&apos;re seeing is more and more young people even previously healthy
                     people, getting severely ill from this disease. And so that&apos;s why when I&apos;m speaking to
                     somebody like you, that&apos;s why I wanted to bring it up because I can&apos;t imagine how I would
                     feel if I didn&apos;t do my best to protect somebody like you.

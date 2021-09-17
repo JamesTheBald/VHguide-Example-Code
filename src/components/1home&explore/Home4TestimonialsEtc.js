@@ -28,7 +28,7 @@ const Home4TestimonialsEtc = (props) => {
         
         <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
           <LinkToPathSection
-            className="sm:mt-4 lg:mt-8  w-70 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
+            className="sm:mt-4 lg:mt-8  w-70 pt-1 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
             style={{ height: "43px" }}
             targetPath="/about"
             targetSection="Media Coverage"

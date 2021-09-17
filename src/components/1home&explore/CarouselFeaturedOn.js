@@ -24,11 +24,11 @@ const CarouselFeaturedOn = () => {
   // const numPages = Math.ceil(featuredOnLogoPaths.length/itemsPerPage);
   let timer;
 
-  const CarouselDotsNone = (props) => {
+  const CarouselDotsNone = props => {
     const { pages } = props;
     return (
       <div className="hidden">
-        {pages.map((page) => {
+        {pages.map(page => {
           return <div key={page} />;
         })}
       </div>
@@ -86,10 +86,13 @@ const CarouselFeaturedOn = () => {
         }}
       >
         {featuredOnLogoPaths.map((currLogo, indx) => {
+          log2 && console.log("CarouselFeaturedOn.js .map currLogo=", currLogo);
+
           return (
             <button
               key={indx}
-              className={`mx-6 flex items-center ${currLogo.URL && "cursor-pointer"} `}
+              className={`mx-6 flex items-center`}
+              // ${currLogo.URL === '' ? "" : "cursor-pointer"}
               onClick={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
               onKeyPress={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
             >

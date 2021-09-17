@@ -10,8 +10,8 @@ const TabBarOAR = () => {
   log && console.log("TabBarOAR.js runs. winWidth=", winWidth);
 
   const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
-  const tabWidth = winWidth < 510 ? 195 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
-  const tabGap = winWidth < 720 ? 25 * tabWidthAdjRatio : 25;
+  const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
+  const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 22;
   const tabTall = winWidth < 510 ? 92 : 100;
   const titleTopMargin = 12;
 

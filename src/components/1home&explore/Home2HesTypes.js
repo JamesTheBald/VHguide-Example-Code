@@ -7,6 +7,9 @@ const Home2HesTypes = props => {
   const { topGap, BrowseButton } = props;
   const { winWidth, marginOuter } = useMyContext();
 
+  const buttonWidthMax = winWidth < 510 ? 220 : 322;
+  const buttonHeight = winWidth < 510 ? 36 : 50;
+
   const HesTypesPanel = props => {
     const { posnClass } = props;
     return (
@@ -26,7 +29,10 @@ const Home2HesTypes = props => {
           if you want to improve the conversation.
         </div>
         <div className="h-8" />
-        <BrowseButton colors="text-blue-dark hover:text-gray-light  bg-gray-light hover:bg-opacity-0" />
+        <BrowseButton
+          colors="text-blue-dark hover:text-gray-light  bg-gray-light hover:bg-opacity-0"
+          style={{ maxWidth: buttonWidthMax, height: buttonHeight }}
+        />
       </div>
     );
   };

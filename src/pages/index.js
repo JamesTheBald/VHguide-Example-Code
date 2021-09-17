@@ -9,15 +9,9 @@ import Home3WhoWeAre from "../components/1home&explore/Home3WhoWeAre";
 import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsEtc";
 
 const Home = () => {
-  const { winWidth, setNoneSelected, showContactForm } = useMyContext();
+  const { winWidth, setNavBarOpen, setNoneSelected, showContactForm } = useMyContext();
 
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
-  const buttonWidth = winWidth < 510 ? 210 : 322;
-  const buttonHeight = winWidth < 510 ? 36 : 50;
-
-  // const onClickGoToExplore = () => {
-  //   setNoneSelected(true);
-  // };
 
   const BrowseButton = props => {
     const { colors } = props;
@@ -25,8 +19,12 @@ const Home = () => {
       <Link
         to="/explore"
         className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  border-2 ${colors}`}
-        style={{ width: buttonWidth, height: buttonHeight }}
-        onClick={() => setNoneSelected(true)}
+        style={props.style}
+        // style={{ width: buttonWidth, height: buttonHeight }}
+        onClick={() => {
+          setNoneSelected(true);
+          setNavBarOpen(false);
+        }}
       >
         <h2>Browse Hesitancy Types</h2>
       </Link>

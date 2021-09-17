@@ -15,16 +15,19 @@ const AboutEtc = props => {
 
   log2 && console.log("AboutEtc.js widthAdjRatioAbout=", widthAdjRatioAbout);
 
-  const yDistTitleFromTop = winWidth < 510 ? 130 : 150;
-  const gapBelowTitle = 20;
+  const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
+  const gapBelowTitle = winWidth < 510 ? 25 : 40;
   const outerMargin = winWidth < 510 ? 25 : winWidth < 1024 ? 50 : 100;
-  const yDistPanelFromTop = winWidth >= 1920 ? yDistTitleFromTop + gapBelowTitle + 60 : winWidth >= 720 ? 20 : 15;
+  const yDistPanelFromTop = winWidth >= 1920 ? yDistTitleFromTop + gapBelowTitle + 60 : winWidth <= 720 ? 12 : 20;
+
+  log2 && console.log("AboutEtc.js yDistTitleFromTop=", yDistTitleFromTop);
+
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
       <div className={`xl:flex xl:flex-row relative}`}>
-        {/* Title & Sticky Scroll Locator for narrower screens (<1920px) */}
         <div
+          name="Title and Scroll Locator for Non-Wide Screens (<1920px)"
           className="xl:hidden  w-full"
           style={{
             paddingLeft: outerMargin,
@@ -47,10 +50,13 @@ const AboutEtc = props => {
           <ScrollLocator contentArray={contentArray} />
         </div>
 
-        {/* Title & Scroll Locator for wide screens (1920px and wider) */}
-        <div className="hidden xl:flex xl:flex-col flex-shrink-0" style={{ marginLeft: outerMargin }}>
+        <div
+          name="Title and Scroll Locator for WIDE Screens (1920px and wider)"
+          className="hidden xl:flex xl:flex-col flex-shrink-0"
+          style={{ marginLeft: outerMargin }}
+        >
           <div
-            name="Invisible horizontal spacer, for positioning panel, because title and scroll locator are fixed"
+            name="INVISIBLE horizontal spacer, for positioning panel, because title and scroll locator are fixed"
             className="invisible font-semibold"
             style={{ paddingTop: yDistTitleFromTop, paddingBottom: 36 }}
           >
@@ -61,11 +67,11 @@ const AboutEtc = props => {
           </div>
 
           {/* Page Title */}
-          <h1 className="fixed titleFont titleMedium z-30" style={{ top: yDistTitleFromTop }}>
+          <h1 className="fixed titleFont titleMedium z-30" style={{ marginTop: yDistTitleFromTop }}>
             {pageTitle}
           </h1>
 
-          <div className="fixed" style={{ top: yDistPanelFromTop }}>
+          <div className="fixed" style={{ top: yDistTitleFromTop + yDistPanelFromTop }}>
             <ScrollLocator contentArray={contentArray} />
           </div>
 

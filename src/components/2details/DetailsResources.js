@@ -33,7 +33,7 @@ const DetailsResources = (props) => {
         {/* Panel height independent of winWidth will look tall if there's little content */}
 
         <div
-          className="p-4  grid grid-cols-1 md:grid-cols-2 mxl:grid-cols-3 grid-flow-row  
+          className="px-2 pt-3 pb-4  grid grid-cols-1 md:grid-cols-2 mxl:grid-cols-3 grid-flow-row  
                         sm:gap-x-16 lg:gap-x-20  gap-y-10 sm:gap-y-16 lg:gap-y-20"
         >
           {resources.map((currResource, index) => {
