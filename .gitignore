@@ -69,3 +69,5 @@ yarn-error.log
 .yarn-integrity
 
 /old-components/
+# Local Netlify folder
+.netlify
