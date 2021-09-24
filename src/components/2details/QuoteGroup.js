@@ -16,9 +16,9 @@ const QuoteGroup = props => {
             <div key={index} className="flex flex-col">
               {index > 0 && <div name="dividing line" className="mt-11 w-full  border-gray-medium border-b-3" />}
 
-              <div className="my-8 sm:my-11  font-semibold  text-18 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5">
+              <h3 className="my-8 sm:my-11  font-semibold  text-18 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5">
                 {currContent.subheading}
-              </div>
+              </h3>
             </div>
           </div>
         ) : (

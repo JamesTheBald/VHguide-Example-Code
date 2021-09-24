@@ -1,6 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {

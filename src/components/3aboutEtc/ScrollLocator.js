@@ -2,29 +2,27 @@ import React from "react";
 import { useMyContext } from "../../context/Context";
 import { Link } from "react-scroll";
 
-const ScrollLocator = (props) => {
-  const { contentArray } = props;
-  const { winWidth } = useMyContext();
+const ScrollLocator = props => {
+  const { path, contentArray } = props;
+  const { winWidth, log2 } = useMyContext();
 
-  const scrollLocatorLineHeight = winWidth < 510 ? 28 : 35; // px
+  log2 && console.log("ScrollLocator.js path=", path);
 
   const offsetCalc = () => {
     let scrollOffset = -300;
-    // if (location.pathname === "/pearls") {
-    //   scrollOffset = winWidth < 1024 ? -750 : winWidth < 1920 ? -650 : -250;
-    //   // scrollOffset = winWidth < 1920 ? (indx === 0 ? -700 : -300) : indx === 0 ? -400 : -200;
-    //   // Different offset for first panel vs subsequent panels
-    // // } else if (location.pathname === "/terms") {
-    // //   scrollOffset = winWidth < 510 ? -350 : winWidth < 1920 ? -450 : -250;
-    //   // scrollOffset = winWidth < 1920 ? (indx === 0 ? -700 : -300) : indx === 0 ? -400 : -300;
-    // } else {
-      scrollOffset = winWidth < 510 ? -350 : winWidth < 1920 ? -450 : -250;
-      // scrollOffset = winWidth < 1920 ? (indx === 0 ? -450 : -450) : indx === 0 ? -400 : -200;
-    // }
+    if (path === "/pearls") {
+      scrollOffset = winWidth < 510 ? -450 : winWidth < 1024 ? -450 : winWidth < 1920 ? -500 : -250;
+    } else if (path === "/terms") {
+      scrollOffset = winWidth < 510 ? -350 : winWidth < 1200 ? -450 : winWidth < 1920 ? -450 : -300;
+    } else {
+      scrollOffset = winWidth < 510 ? -300 : winWidth < 1024 ? -450 : winWidth < 1920 ? -480 : -250;
+    }
     return scrollOffset;
   };
 
-  const LinkBody = (props) => {
+  const scrollLocatorLineHeight = winWidth < 510 ? 28 : 35; // px
+
+  const LinkBody = props => {
     const { label } = props;
     return (
       <div className="flex flex-row cursor-pointer">
@@ -45,7 +43,7 @@ const ScrollLocator = (props) => {
 
   return (
     <>
-      <div className="flex flex-col  text-16 sm:text-20 font-sans tracking-0.3 sm:tracking-0.4">
+      <div className="pb-6  flex flex-col  text-16 sm:text-20 font-sans tracking-0.3 sm:tracking-0.4">
         {contentArray.map((currPanel, index) => {
           return (
             <div key={index}>
@@ -63,19 +61,20 @@ const ScrollLocator = (props) => {
           );
         })}
 
-        {/* {location.pathname === "/about" && (
-          <Link
-            activeClass="activeScrollLink"
-            to={"Credits"}
-            offset={offsetCalc()}
-            // offset={winWidth < 510 ? -300 : winWidth < 1920 ? -450 : -200}
-            spy={true}
-            smooth={true}
-            duration={600}
-          >
-            <LinkBody label={"Credits & Collaborators"} />
-          </Link>
-        )} */}
+        {path === "/about" && (
+          <div>
+            <Link
+              activeClass="activeScrollLink"
+              to="Credits"
+              offset={offsetCalc()}
+              spy={true}
+              smooth={true}
+              duration={600}
+            >
+              <LinkBody label="Credits" />
+            </Link>
+          </div>
+        )}
       </div>
     </>
   );

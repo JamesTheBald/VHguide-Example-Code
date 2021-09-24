@@ -6,6 +6,8 @@ const PrivacyPolicy = () => {
 
   return (
     <>
+      <h2 className="panelTitleClass">Privacy Policy</h2>
+
       <div className="italic">Last update: May 17, 2021</div>
       <div className="pt-4">
         Our team at the University of Calgary’s School of Public Policy operate the Vaccine Hesitancy Guide
@@ -112,6 +114,8 @@ const CopyrightNotice = () => {
 
   return (
     <>
+      <h2 className="panelTitleClass">Copyright Notice</h2>
+
       <div>
         This website and its content are protected under Canadian copyright law. Except as otherwise provided for under
         the copyright law of Canada, this website and its content may not be copied, distributed, published, downloaded
@@ -145,14 +149,18 @@ export const noticesContent = [
     title: "Content Disclaimer",
     content: (
       <>
-        All of the information on this website is provided for informational purposes only. It is not endorsed, nor does
-        it represent the opinions of any professional medical association or organization. Reliance on any information
-        appearing on, or provided in relation to the Vaccine Hesitancy Guide, is solely at your own risk. Neither the
-        Guide’s authors, nor the University of Calgary, nor any of its affiliates assume any responsibility or liability
-        for any damages, claims, costs or obligations arising from the use of the Guide or any other website to which
-        the Guide is linked. We assume no responsibility for the content provided by any third-party websites linked to,
-        or referenced in, the Guide. Their use is at your own risk and subject to the terms and conditions of use for
-        such sites. The content of the Guide is for personal and non-commercial use and reference only.
+        <h2 className="panelTitleClass">Content Disclaimer</h2>
+        <div>
+          All of the information on this website is provided for informational purposes only. It is not endorsed, nor
+          does it represent the opinions of any professional medical association or organization. Reliance on any
+          information appearing on, or provided in relation to the Vaccine Hesitancy Guide, is solely at your own risk.
+          Neither the Guide’s authors, nor the University of Calgary, nor any of its affiliates assume any
+          responsibility or liability for any damages, claims, costs or obligations arising from the use of the Guide or
+          any other website to which the Guide is linked. We assume no responsibility for the content provided by any
+          third-party websites linked to, or referenced in, the Guide. Their use is at your own risk and subject to the
+          terms and conditions of use for such sites. The content of the Guide is for personal and non-commercial use
+          and reference only.
+        </div>
       </>
     ),
   },
@@ -161,18 +169,16 @@ export const noticesContent = [
     title: "Land Acknowledgement",
     content: (
       <>
-        The VH Guide was developed in Calgary, Alberta, Canada. The authors acknowledge that this work was done in
-        Treaty 7 territory—the ancestral and traditional territory of the Blackfoot Confederacy: Kainai, Piikani and
-        Siksika as well as the Tsuu T’ina First Nation and Stoney Nakoda First Nation. We acknowledge the many First
-        Nations, Métis and Inuit who have lived in these lands for generations. We are grateful for the traditional
-        Knowledge Keepers and Elders who are still with us today and those who have gone before us. We recognize the
-        land as an act of reconciliation and gratitude to those whose territory we reside on or are visiting.
+        <h2 className="panelTitleClass">Land Acknowledgement</h2>
+        <div>
+          The VH Guide was developed in Calgary, Alberta, Canada. The authors acknowledge that this work was done in
+          Treaty 7 territory—the ancestral and traditional territory of the Blackfoot Confederacy: Kainai, Piikani and
+          Siksika as well as the Tsuu T’ina First Nation and Stoney Nakoda First Nation. We acknowledge the many First
+          Nations, Métis and Inuit who have lived in these lands for generations. We are grateful for the traditional
+          Knowledge Keepers and Elders who are still with us today and those who have gone before us. We recognize the
+          land as an act of reconciliation and gratitude to those whose territory we reside on or are visiting.
+        </div>
       </>
     ),
   },
-
-  // {
-  //   title: "Credits",
-  //   content: <Credits />,
-  // },
 ];

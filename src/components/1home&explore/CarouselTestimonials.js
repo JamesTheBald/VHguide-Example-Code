@@ -19,11 +19,11 @@ const CarouselTestimonials = () => {
         {pages.map((page) => {
           const isActivePage = activePage === page;
           return (
-            <button key={page} className="mt-3 cursor-pointer" onClick={() => onClick(page)}>
+            <button key={page} className="mt-3 mx-1 cursor-pointer" onClick={() => onClick(page)}>
               {isActivePage ? (
-                <div className="m-1.5  bg-blue-black rounded-full" style={{ width: 10, height: 10 }} />
+                <div className="m-2  bg-blue-black rounded-full" style={{ width: 12, height: 12 }} />
               ) : (
-                <div className="m-1.5  border-2 border-blue-black rounded-full" style={{ width: 10, height: 10 }} />
+                <div className="m-2  border-2 border-blue-black rounded-full" style={{ width: 12, height: 12 }} />
               )}
             </button>
           );

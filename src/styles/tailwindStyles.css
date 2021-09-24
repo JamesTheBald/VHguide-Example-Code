@@ -64,4 +64,12 @@
     @apply text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1.2
   }
 
+  .panelTitleClass {
+    @apply pb-6  font-semibold text-blue-main text-20 sm:text-25 tracking-0.4 sm:tracking-0.5
+  }
+
+  .panelTextClass {
+    @apply text-16 sm:text-18 text-blue-black tracking-0.3 sm:tracking-0.4
+  }
+  
 }

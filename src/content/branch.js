@@ -14,12 +14,12 @@ export const branch = [
       {
         topicName: (
           <>
-            <b>Safety and science</b> concerns
+            <strong>Safety and science</strong> concerns
           </>
         ),
         topicNameShort: (
           <>
-            <b>Safety and science</b> concerns
+            <strong>Safety and science</strong> concerns
           </>
         ),
         topicNameAsTitle: <>Safety and Science Concerns</>,
@@ -62,12 +62,12 @@ export const branch = [
       {
         topicName: (
           <>
-            Influenced by <b>rumours, conspiracies, or misinformation</b>
+            Influenced by <strong>rumours, conspiracies, or misinformation</strong>
           </>
         ),
         topicNameShort: (
           <>
-            Influenced by <b>conspiracies</b>
+            Influenced by <strong>conspiracies</strong>
           </>
         ),
         topicNameAsTitle: <>Influenced by Rumours, Conspiracies, or Misinformation</>,
@@ -85,12 +85,12 @@ export const branch = [
       {
         topicName: (
           <>
-            Conflict with <b>personal or political values</b>
+            Conflict with <strong>personal or political values</strong>
           </>
         ),
         topicNameShort: (
           <>
-            Conflict with <b>values or politics</b>
+            Conflict with <strong>values or politics</strong>
           </>
         ),
         topicNameAsTitle: <>Conflict with Personal or Political Values</>,
@@ -114,12 +114,12 @@ export const branch = [
       {
         topicName: (
           <>
-            <b>Religious or moral</b> objections to the vaccines
+            <strong>Religious or moral</strong> objections to the vaccines
           </>
         ),
         topicNameShort: (
           <>
-            <b>Religious or moral</b> objections
+            <strong>Religious or moral</strong> objections
           </>
         ),
         topicNameAsTitle: <>Religious or Moral Objections to the Vaccines</>,
@@ -130,12 +130,12 @@ export const branch = [
       {
         topicName: (
           <>
-            <b>Traumatized</b> by previous healthcare experiences
+            <strong>Traumatized</strong> by previous healthcare experiences
           </>
         ),
         topicNameShort: (
           <>
-            <b>Traumatized</b> by health system
+            <strong>Traumatized</strong> by health system
           </>
         ),
         topicNameAsTitle: <>Traumatized by Previous Healthcare Experiences</>,
@@ -159,12 +159,12 @@ export const branch = [
       {
         topicName: (
           <>
-            Afraid of <b>needles</b>
+            Afraid of <strong>needles</strong>
           </>
         ),
         topicNameShort: (
           <>
-            Afraid of <b>needles</b>
+            Afraid of <strong>needles</strong>
           </>
         ),
         topicNameAsTitle: <>Afraid of Needles</>,

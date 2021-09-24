@@ -1,16 +1,15 @@
 import React from "react";
 import CollabLogos from "./CollabLogos";
 
-const Credits = (props) => {
-  const { panelTitle: panelTitleClass, panelText: panelTextClass } = props;
+const Credits = () => {
 
   const lineClass = "flex flex-col sm:flex-row";
   const roleClass = "w-48 sm:w-56 flex-shrink-0";
   const nameClass = "ml-3 mb-3 font-semibold";
 
   return (
-    <div className={`${panelTextClass}`}>
-      <div className={panelTitleClass}>Credits</div>
+    <article className="panelTextClass">
+      <h2 className="panelTitleClass">Credits</h2>
 
       <div className="flex flex-col lg:flex-row">
         <div className="mt-3">
@@ -44,10 +43,10 @@ const Credits = (props) => {
       </div>
 
       <div className="mt-24">
-        <div className={panelTitleClass}>Collaborators</div>
+        <div className="panelTitleClass">Collaborators</div>
         <CollabLogos size={"big"} />
       </div>
-    </div>
+    </article>
   );
 };
 

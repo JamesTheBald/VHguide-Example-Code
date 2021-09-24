@@ -25,11 +25,11 @@ const LandingText = props => {
         <ScrollDownIndicator additionalClass={"mxs:hidden"} />
 
         <div className={subtitleFont}>
-          <h2>
+          <header>
             This Guide supports better clinical conversations about vaccines. It differentiates common types of vaccine
             hesitancy that primary care clinicians may see. Browse through these types to help identify the sources of
             your patients’ hesitancy, and find advice and resources on how to address them.
-          </h2>
+          </header>
           <div className={`mt-6  ${subtitleFont} font-vlight italic`}>
             <span>For an overview of how to use this guide, visit the</span>
             <Link to="/about" className="px-1.5  underline cursor-pointer">

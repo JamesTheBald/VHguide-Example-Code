@@ -13,12 +13,12 @@ const Home2HesTypes = props => {
   const HesTypesPanel = props => {
     const { posnClass } = props;
     return (
-      <div
+      <section
         className={`${posnClass} mxs:w-5/6 sm:w-3/4 xl:w-140  px-5 mxs:px-8 sm:px-10 md:px-14  py-5 mxs:py-7 sm:py-9 md:py-12  bg-blue-black rounded-2xl mxs:rounded-3xl sm:rounded-4xl  xl:rounded-l-none  smThenBaseFont`}
         // className="absolute xl:relative xl:h-full right-0 xl:top-8 ...
         style={{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }}
       >
-        <div className="titleFont titleBig">Hesitancy Types</div>
+        <h2 className="titleFont titleBig">Hesitancy Types</h2>
         <div className="pt-3">
           Browse the ‘types’ of COVID-19 vaccine hesitancies that primary care teams are encountering to access advice,
           tips, conversational strategies, and other resources to improve conversations with patients.
@@ -33,7 +33,7 @@ const Home2HesTypes = props => {
           colors="text-blue-dark hover:text-gray-light  bg-gray-light hover:bg-opacity-0"
           style={{ maxWidth: buttonWidthMax, height: buttonHeight }}
         />
-      </div>
+      </section>
     );
   };
 

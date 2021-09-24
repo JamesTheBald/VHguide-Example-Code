@@ -10,7 +10,7 @@ const AdviceWhatsWorking = () => {
 
   return (
     <div>
-      <div className="titleFont titleMedium">What’s Working for Other Clinicians</div>
+      <h3 className="titleFont titleMedium">What’s Working for Other Clinicians</h3>
 
       <div className="mt-6  text-16 sm:text-18 tracking-0.4 text-blue-black  relative">
         <span>Approach the conversation through the</span>

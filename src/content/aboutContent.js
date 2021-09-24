@@ -7,7 +7,7 @@ import { FiExternalLink } from "react-icons/fi";
 import CoverageGridList from "../components/3aboutEtc/CoverageGridList";
 import CoverageWebinars from "../components/3aboutEtc/CoverageWebinars";
 
-const panelTitleClass = "pb-6  font-semibold text-blue-main text-20 sm:text-25 tracking-0.4 sm:tracking-0.5";
+// const panelTitleClass = "pb-6  font-semibold text-blue-main text-20 sm:text-25 tracking-0.4 sm:tracking-0.5";
 const listClass = "ml-6 sm:ml-12 list-disc list-outside";
 
 const TypesPopup = props => {
@@ -52,8 +52,8 @@ const AboutContentWhatIsThis = () => {
   log && console.log("AboutContent.js runs scrollTarget.current=", scrollTarget.current);
 
   return (
-    <>
-      <div className={panelTitleClass}>What is this guide?</div>
+    <article>
+      <h2 className="panelTitleClass">What is this guide?</h2>
       <div className="pb-3">
         The Guide presents advice, scripts, and resources to help navigate conversations about COVID-19 vaccines with
         hesitant patients. These have been developed with clinicians from across Canada. In the Guide you&apos;ll
@@ -104,7 +104,7 @@ const AboutContentWhatIsThis = () => {
         <span>The advice, general principles, and scripts in the guide are grounded in the techniques of</span>
         <MotivationalInterviewing />
         <span>. Motivational Interviewing encourages both the clinician and the patient to</span>
-        <b className="px-1.5">identify positive motivations for vaccination.</b>
+        <strong className="px-1.5">identify positive motivations for vaccination.</strong>
         <span>This happens in the course of </span>
         <Link
           to="/about"
@@ -122,7 +122,7 @@ const AboutContentWhatIsThis = () => {
         </Link>
         <span> about options rather than closed, judgmental, pronouncements of expertise.</span>
       </div>
-    </>
+    </article>
   );
 };
 
@@ -130,8 +130,8 @@ const AboutContentHowUse = () => {
   const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
 
   return (
-    <>
-      <div className={panelTitleClass}>How do I use the guide?</div>
+    <article>
+      <h2 className="panelTitleClass">How do I use the guide?</h2>
 
       <div className="pb-3">
         The Guide can be used either during an appointment with a vaccine hesitant patient, or outside of patient
@@ -172,14 +172,14 @@ const AboutContentHowUse = () => {
           contact us.
         </button>
       </span>
-    </>
+    </article>
   );
 };
 
 const AboutContentEaaseSteps = () => {
   return (
-    <>
-      <div className={panelTitleClass}>EAASE Steps</div>
+    <article>
+      <h2 className="panelTitleClass">EAASE Steps</h2>
 
       <div>
         <span>Using the principles of</span>
@@ -198,9 +198,9 @@ const AboutContentEaaseSteps = () => {
       <br />
       <ul className={listClass}>
         <li>
-          <i>
-            <b>Engage</b> with open questions:
-          </i>
+          <em>
+            <strong>Engage</strong> with open questions:
+          </em>
           {/* <span className="pl-1.5"></span> */}
           <a
             className="px-1.5 orangeUnderline"
@@ -215,9 +215,9 @@ const AboutContentEaaseSteps = () => {
         </li>
         <li>
           <span>
-            <i>
-              <b>Affirm</b> and reflectively listen:
-            </i>
+            <em>
+              <strong>Affirm</strong> and reflectively listen:
+            </em>
           </span>
           <span className="pl-1.5">
             Affirm your patient’s worldview, and situate yourself as an ally. You can do this by:
@@ -237,7 +237,7 @@ const AboutContentEaaseSteps = () => {
         </li>
         <li>
           <span className="pr-1.5 italic">
-            <b>Ask</b> for permission, then <b>Share</b> information:
+            <strong>Ask</strong> for permission, then <strong>Share</strong> information:
           </span>
           <span>
             Check that you understand where your patient is coming from, then ask permission to share your knowledge and
@@ -282,7 +282,7 @@ const AboutContentEaaseSteps = () => {
           patient&apos;s decision-making, rather than convincing them to get a vaccine.
         </div>
       </div>
-    </>
+    </article>
   );
 };
 
@@ -290,28 +290,28 @@ const AboutContentMediaCoverage = () => {
   // console.log("aboutContent.js AboutContentMediaCoverage() coverage=", coverage);
 
   return (
-    <>
-      <div className="pb-8  titleFont titleMedium text-blue-main">Media Coverage</div>
-      <div className={panelTitleClass}>Publications</div>
+    <article>
+      <h2 className="pb-8  titleFont titleMedium text-blue-main">Media Coverage</h2>
+      <h3 className="panelTitleClass">Publications</h3>
       <CoverageGridList type="publications" className="pb-20" />
 
-      <div className={panelTitleClass}>News Media</div>
+      <h3 className="panelTitleClass">News Media</h3>
       <CoverageGridList type="newsmedia" className="pb-20" />
 
-      <div className={panelTitleClass}>Webinars</div>
+      <h3 className="panelTitleClass">Webinars</h3>
       <CoverageWebinars className="" />
-    </>
+    </article>
   );
 };
 
 export const aboutContent = [
   {
-    title: "What is the Vaccine Hesitancy Guide?",
+    title: "What is this guide?",
     content: <AboutContentWhatIsThis />,
   },
 
   {
-    title: "How do I use the Guide?",
+    title: "How do I use this guide?",
     content: <AboutContentHowUse />,
   },
 

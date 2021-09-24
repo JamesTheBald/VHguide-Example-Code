@@ -1,5 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
+import { animateScroll } from "react-scroll";
 
 import { IoIosMenu } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -9,8 +10,16 @@ import { useMyContext } from "../../context/Context";
 import { VscClose } from "react-icons/vsc";
 
 const NavBar = () => {
-  const { branch, widthAdjRatio, navBarOpen, setLocn, setNoneSelected, setNavBarOpen, setShowContactForm } =
-    useMyContext();
+  const {
+    branch,
+    navBarHeight,
+    widthAdjRatio,
+    navBarOpen,
+    setLocn,
+    setNoneSelected,
+    setNavBarOpen,
+    setShowContactForm,
+  } = useMyContext();
 
   const onClickGo = (evnt, destn) => {
     if (destn === "/explore") {
@@ -18,6 +27,9 @@ const NavBar = () => {
       setNoneSelected(true);
     }
     navigate(destn);
+    if (typeof window !== `undefined`) {
+      animateScroll.scrollToTop({ duration: 0 }); // time in ms
+    }
     setNavBarOpen(false);
     setShowContactForm(false);
   };
@@ -31,6 +43,9 @@ const NavBar = () => {
     } else {
       navigate("/explore");
     }
+    if (typeof window !== `undefined`) {
+      animateScroll.scrollToTop({ duration: 0 }); // time in ms
+    }
     setNavBarOpen(false);
     setShowContactForm(false);
   };
@@ -41,9 +56,10 @@ const NavBar = () => {
     setNavBarOpen(!navBarOpen);
   };
 
-  const navBarHeight = 20; // in Tailwind spacing units, i.e. in pixels = 4x this
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
+
   const bgColor = "bg-blue-black";
+
   const bord = pathname === "/" ? "border-b-2" : "";
   const marginLeftIcon = 38 * widthAdjRatio;
   const hesitancyDropDownClass = "py-3  text-left  border-gray-light  text-14 tracking-0.4 cursor-pointer";
@@ -80,10 +96,16 @@ const NavBar = () => {
                 style={{ left: 6, top: 87, width: 290 }}
               >
                 <div className="flex flex-col">
-                  <button className={`pl-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 0)}>
+                  <button
+                    className={`pl-6 ${hesitancyDropDownClass} border-b`}
+                    onClick={evnt => onClickToBranch(evnt, 0)}
+                  >
                     {branch[0].branchNameShortest}
                   </button>
-                  <button className={`pl-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 1)}>
+                  <button
+                    className={`pl-6 ${hesitancyDropDownClass} border-b`}
+                    onClick={evnt => onClickToBranch(evnt, 1)}
+                  >
                     {branch[1].branchNameShortest}
                   </button>
                   <button className={`pl-6 ${hesitancyDropDownClass}`} onClick={evnt => onClickToBranch(evnt, 2)}>
@@ -126,8 +148,9 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`fixed h-${navBarHeight} w-full  flex justify-between items-center   
-                    text-16  tracking-0.3 text-gray-light font-sans  ${bgColor} ${bord} z-50`}
+        className={`fixed w-full  flex justify-between items-center   ${bgColor} ${bord} z-50
+                    text-16 tracking-0.3 text-gray-light font-sans`}
+        style={{ height: navBarHeight }}
         onClick={() => setNavBarOpen(false)}
         aria-hidden="true"
       >
@@ -137,8 +160,10 @@ const NavBar = () => {
           style={{ marginLeft: marginLeftIcon }}
           onClick={evnt => onClickGo(evnt, "/")}
         >
-          <div className="text-25 mxs:text-30 tracking-0.6">VH</div>
-          <div className="text-10 mxs:text-12 tracking-0.5">GUIDE</div>
+          <nav>
+            <div className="text-25 mxs:text-30 tracking-0.6">VH</div>
+            <div className="text-10 mxs:text-12 tracking-0.5">GUIDE</div>
+          </nav>
         </button>
 
         <div
@@ -174,7 +199,7 @@ const NavBar = () => {
           )}
         </div>
       </div>
-      <div name="spacer, because navbar is fixed" className={`h-${navBarHeight}`} />
+      <div name="spacer, because navbar is fixed" style={{ height: navBarHeight }} />
     </>
   );
 };

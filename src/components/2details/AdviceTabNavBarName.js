@@ -13,7 +13,10 @@ const AdviceTabNavBarName = (props) => {
 
   const changeTab = (tabName) => {
     navigate("/details/advice/" + tabName);
-    scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+
+    if (typeof window !== `undefined`) {
+      scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+    }
     setNavBarOpen(false);
   };
 

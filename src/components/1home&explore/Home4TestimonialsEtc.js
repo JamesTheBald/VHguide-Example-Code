@@ -17,12 +17,12 @@ const Home4TestimonialsEtc = (props) => {
         style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}
       >
         <div style={{ height: topGap }} />
-        <div className="titleFont titleBig">Testimonials</div>
+        <h2 className="titleFont titleBig">Testimonials</h2>
         <div className="w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
         <CarouselTestimonials />
 
         <div style={{ height: topGap }} />
-        <div className="titleFont titleBig">Featured On</div>
+        <h2 className="titleFont titleBig">Featured On</h2>
         <div className="lg:mb-4 w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
         <CarouselFeaturedOn />
         
@@ -37,7 +37,7 @@ const Home4TestimonialsEtc = (props) => {
         </div>
 
         <div style={{ height: topGap }} />
-        <div className="titleFont titleBig">Collaborators</div>
+        <h2 className="titleFont titleBig">Collaborators</h2>
         <div className="mb-1 mxs:mb-4  w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
 
         <CollabLogos size={"small"} />

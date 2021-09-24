@@ -12,7 +12,14 @@ const ScrollDownIndicator = props => {
 
   return (
     <div className={`mb-10 w-full  flex flex-col  justify-center items-center  text-14 ${additionalClass}`}>
-      <button className="px-10 cursor-pointer" onClick={() => scroll.scrollMore(scrollDist, { duration: 500 })}>
+      <button
+        className="px-10 cursor-pointer"
+        onClick={() => {
+          if (typeof window !== `undefined`) {
+            scroll.scrollMore(scrollDist, { duration: 500 });
+          }
+        }}
+      >
         <BsChevronDown size={36} />
         <div>scroll</div>
       </button>

@@ -1,10 +1,11 @@
 import React from "react";
+// import { StaticImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
-const Home3WhoWeAre = (props) => {
+const Home3WhoWeAre = props => {
   const { topGap } = props;
   const { winWidth, marginOuter } = useMyContext();
 
@@ -13,7 +14,7 @@ const Home3WhoWeAre = (props) => {
 
   return (
     <>
-      <div
+      <section
         className={`w-full flex flex-col items-center  text-blue-black`}
         style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}
       >
@@ -31,13 +32,19 @@ const Home3WhoWeAre = (props) => {
                         items-center sm:items-start justify-between md:justify-around  text-center"
         >
           {landingBioContent.map((currBio, indx) => {
+            console.log("Home3WhoWeAre.js .map() currBio.image=", currBio.image);
+
             return (
               <div key={indx} style={{ width: bioWidth }}>
-                <img
-                  src={currBio.image}
-                  alt={`${currBio.name} profile`}
+                {/* <picture>
+                  <source srcSet={currBio.image} type="image/webp" alt={`${currBio.name} portrait`} /> */}
+                  <img
+                  src={currBio.image2}
+                  alt={`${currBio.name} portrait`}
                   className="mx-auto w-2/3 mxs:w-1/2 sm:w-5/6 lg:w-3/4 xl:w-3/4 rounded-full"
                 />
+                {/* </picture> */}
+
                 <div className="mt-5 mxs:mt-6 lg:mt-8 titleFont emphFont text-center">{currBio.name}</div>
                 <div className="mt-4 mb-12 sm:mb-0  smThenBaseFont">{currBio.info}</div>
               </div>
@@ -53,7 +60,7 @@ const Home3WhoWeAre = (props) => {
             <LinkToAboutCredits text={"Learn more about our team"} />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

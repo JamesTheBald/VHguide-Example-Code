@@ -72,14 +72,14 @@ const TabBarOAR = () => {
                   }}
                   onClick={() => changeTab(currTabName)}
                 >
-                  <div
+                  <h2
                     name="text locating box"
                     className={`absolute  text-18 mxs:text-22 sm:text-25 font-serif font-semibold tracking-0.5 
                                 ${oarTabs[index] === tabName ? "text-blue-main" : "text-blue-pale"}`}
                     style={{ top: titleTopMargin }}
                   >
                     {capitalizeFirstLetter(currTabName)}
-                  </div>
+                  </h2>
                 </button>
                 <div className="h-12" style={{ width: `${tabGap}px` }} />
               </div>

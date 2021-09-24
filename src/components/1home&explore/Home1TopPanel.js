@@ -1,5 +1,7 @@
 import React from "react";
-// import { StaticImage } from "gatsby-plugin-image";
+// import { graphql } from "gatsby"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"; // Odd blackout during loading. Is this just during development?
 
 import { useMyContext } from "../../context/Context";
 import LandingText from "../../content/LandingText";
@@ -8,9 +10,9 @@ import wavyLineParams from "../../functions/wavyLineParams";
 
 const Home1TopPanel = props => {
   const { BrowseButton } = props;
-  const { widthAdjRatio, winWidth, winHeight, marginOuter, log, log2 } = useMyContext();
+  const { widthAdjRatio, winWidth, winHeight, marginOuter, log2 } = useMyContext();
 
-  log && console.log("Home1TopPanel.js runs. winWidth=", winWidth, " and winHeight=", winHeight);
+  log2 && console.log("Home1TopPanel.js runs. winWidth=", winWidth, " and winHeight=", winHeight);
 
   let topGap = winWidth < 1366 ? winHeight * 0.01 : winWidth < 1650 ? winHeight * 0.15 : winHeight * 0.2;
 
@@ -26,9 +28,7 @@ const Home1TopPanel = props => {
 
   const imageWidth = winWidth < 1366 ? 275 + 120 * widthAdjRatio : winWidth - titleWidth;
   const imageScale = winWidth < 1366 ? 100 : 95;
-  log && console.log("Home1TopPanel.js imageWidth=", imageWidth, " & imageScale=", imageScale);
-
-  // const imageSource = winWidth < 1366 ? "../../images/homepage/Home Page Icon Reversed.svg" : "../../images/homepage/Home Page Icon.svg";
+  log2 && console.log("Home1TopPanel.js imageWidth=", imageWidth, " & imageScale=", imageScale);
 
   const buttonTopGap = winWidth < 510 ? 25 : 40;
   const buttonWidth = winWidth < 510 ? 220 : 322;
@@ -44,8 +44,7 @@ const Home1TopPanel = props => {
       <div className="lg:hidden" style={{ height: topGap }} />
 
       <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}>
-        <img
-          // <StaticImage
+        <StaticImage
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
           src="../../images/homepage/Line for Home Page.svg"
           alt="wavy line"
@@ -72,13 +71,13 @@ const Home1TopPanel = props => {
 
         <div className="mt-10 flex flex-col justify-center items-center" style={{ width: imageWidth }}>
           {winWidth < 1366 ? (
-            <img
+            <StaticImage
               style={{ width: imageScale + "%" }}
               src="../../images/homepage/Home Page Icon Reversed.svg"
               alt="Vaccine hesitancy guide graphic"
             />
           ) : (
-            <img
+            <StaticImage
               style={{ width: imageScale + "%" }}
               src="../../images/homepage/Home Page Icon.svg"
               alt="Vaccine hesitancy guide graphic"

@@ -38,7 +38,7 @@ const Pill = (props) => {
       style={{ height: pillHeight }}
       onClick={() => onClickExplore(branchNum)}
     >
-      <div className={`pt-1 ${textClass}`}>{winWidth < 510 ? branchNameShortest : branchName}</div>
+      <h2 className={`pt-1 ${textClass}`}>{winWidth < 510 ? branchNameShortest : branchName}</h2>
 
       <div className="mr-2">
         {locn.branch === branchNum && !branch[branchNum].linkToDetails && !noneSelected ? (

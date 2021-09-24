@@ -22,25 +22,25 @@ const AdviceFullStory = (props) => {
   }
 
   return (
-    <>
+    <section>
       <button className="orangeLink" onClick={() => navigate(-1)}>
         &#60; back
       </button>
 
-      <div className="pt-6 text-25">{story.title}</div>
+      <h3 className="pt-6 text-25">{story.title}</h3>
 
       <div
         className={`mt-7 baseFont text-blue-black`}
         style={{ columnCount: winWidth < 1024 ? 1 : winWidth < 1919 ? 2 : 3, columnGap: 60 }}
       >
         {validData && (
-          <>
+          <p>
             <img src={story.image} alt="Icon" className="mr-6 mb-2  w-30 h-30 float-left" />
             {story.text}
-          </>
+          </p>
         )}
       </div>
-    </>
+    </section>
   );
 };
 

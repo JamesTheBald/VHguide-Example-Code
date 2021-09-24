@@ -20,7 +20,7 @@ const NavItem = (props) => {
         <div className="flex-shrink-0" style={{ paddingBottom: iconOffset }}>
           {children}
         </div>
-        <div className="ml-1 sm:flex-shrink-0">{text}</div>
+        <nav className="ml-1 sm:flex-shrink-0">{text}</nav>
       </button>
     </>
   );

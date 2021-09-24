@@ -80,9 +80,9 @@ const TopicTree = props => {
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <div className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.5 sm:tracking-0.6`}>
+                  <h3 className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.5 sm:tracking-0.6`}>
                     {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
-                  </div>
+                  </h3>
 
                   <div
                     name="hover line"

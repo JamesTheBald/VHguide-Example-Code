@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import Carousel, { consts } from "react-elastic-carousel";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
@@ -10,14 +10,13 @@ import { useMyContext } from "../../context/Context";
 const CarouselFeaturedOn = () => {
   const { winWidth, log2 } = useMyContext();
 
-  const itemsPerPage = useRef();
-  const numPages = useRef();
+  const [ itemsPerPage, setItemsPerPage ] = useState(1);
+  const [ numPages, setNumPages ] = useState(1);
 
   useEffect(() => {
-    itemsPerPage.current =
-      winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6;
-    numPages.current = featuredOnLogoPaths.length - itemsPerPage.current;
-  }, [winWidth]);
+    setItemsPerPage (winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6);
+    setNumPages (featuredOnLogoPaths.length - itemsPerPage);
+  }, [winWidth, itemsPerPage]);
 
   const timeOnEach = 2500;
   const carouselRefFeaturedOn = useRef();
@@ -67,7 +66,7 @@ const CarouselFeaturedOn = () => {
       <Carousel
         ref={carouselRefFeaturedOn}
         className="w-full sm:mx-40  mt-4"
-        itemsToShow={itemsPerPage.current}
+        itemsToShow={itemsPerPage}
         showArrows={true}
         enableAutoPlay={true}
         autoPlaySpeed={timeOnEach}
@@ -78,7 +77,7 @@ const CarouselFeaturedOn = () => {
           // from cristo-pr at https://github.com/sag1v/react-elastic-carousel/issues/9
           log2 && console.log("CarouselFeaturedOn.js onNextEnd() runs");
           clearTimeout(timer);
-          if (index >= numPages.current) {
+          if (index >= numPages) {
             timer = setTimeout(() => {
               carouselRefFeaturedOn.current.goTo(0);
             }, timeOnEach);
@@ -86,13 +85,12 @@ const CarouselFeaturedOn = () => {
         }}
       >
         {featuredOnLogoPaths.map((currLogo, indx) => {
-          log2 && console.log("CarouselFeaturedOn.js .map currLogo=", currLogo);
+          log2 && console.log("CarouselFeaturedOn.js .map currLogo.URL=", currLogo.URL);
 
           return (
             <button
               key={indx}
-              className={`mx-6 flex items-center`}
-              // ${currLogo.URL === '' ? "" : "cursor-pointer"}
+              className={`mx-6 flex items-center ${currLogo.URL && "cursor-pointer"}`}
               onClick={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
               onKeyPress={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
             >

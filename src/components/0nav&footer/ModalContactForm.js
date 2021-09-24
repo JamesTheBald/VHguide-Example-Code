@@ -7,7 +7,9 @@ import { VscClose } from "react-icons/vsc";
 function ModalContactForm(props) {
   const { showContactForm, onHide, width, height, formSource } = props;
 
-  scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+  if (typeof window !== `undefined`) {
+    scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+  }
 
   return (
     <ReactModal

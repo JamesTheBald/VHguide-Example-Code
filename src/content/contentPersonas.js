@@ -41,7 +41,6 @@ export const contentPersonas = {
   // Note that blank lines or extra spaces between items have no effect.
   // Please break up any long strings with zero-width spaces (&#8203;) for better word wrapping
 
-
   ScienceConcerns: {
     // location: [0, 0, 0],  // branch number, topic number, subtopic number - per branch.js
     tags: ["", ""],
@@ -74,14 +73,14 @@ export const contentPersonas = {
         image: "/images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
         content: [
           <>
-            <b>Don&apos;t rush into the science.</b> Consider your patient&apos;s willingness to hear, and capacity to
+            <strong>Don&apos;t rush into the science.</strong> Consider your patient&apos;s willingness to hear, and capacity to
             understand, statistics and data.
           </>,
           <>
-            <b>Ask permission to share</b> the science before jumping into the facts.
+            <strong>Ask permission to share</strong> the science before jumping into the facts.
           </>,
           <>
-            <b>Consider using simple, relatable metaphors to explain</b> the vaccine development process and the
+            <strong>Consider using simple, relatable metaphors to explain</strong> the vaccine development process and the
             vaccines&apos; mechanisms of action.
           </>,
         ],
@@ -96,7 +95,7 @@ export const contentPersonas = {
             vaccine.
           </>,
           <>
-            <b>Ask permission to share</b> the science before jumping into the facts!
+            <strong>Ask permission to share</strong> the science before jumping into the facts!
           </>,
         ],
       },
@@ -669,7 +668,12 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>mRNA vaccine myths factsheet for patients</>,
           link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
-          description: <>A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA vaccines. (2021)</>,
+          description: (
+            <>
+              A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA
+              vaccines. (2021)
+            </>
+          ),
         },
 
         {
@@ -1060,7 +1064,12 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>mRNA vaccine myths factsheet for patients</>,
           link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
-          description: <>A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA vaccines. (2021)</>,
+          description: (
+            <>
+              A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA
+              vaccines. (2021)
+            </>
+          ),
         },
 
         {
@@ -1500,26 +1509,34 @@ export const contentPersonas = {
       // (MedicallyComplex Resources)
       resources: [
         {
-          label: <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>,
+          label: (
+            <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>
+          ),
           image: "",
-          linkTitle: <>Interim Information for Health Care Providers Completing Risk
-          Assessments</>,
+          linkTitle: <>Interim Information for Health Care Providers Completing Risk Assessments</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-counselling-immunocompromised-individuals-mrna.pdf",
           description: (
             <>
-              An informational guide for health professionals on how to discuss the mRNA vaccines with immunocompromised patients. (February 2021)
+              An informational guide for health professionals on how to discuss the mRNA vaccines with immunocompromised
+              patients. (February 2021)
             </>
           ),
         },
 
         {
-          label: <>Canadian Rheumatology Association&apos;s Recommendation on Covid-19 Vaccination in Persons with Autoimmune Rheumatic Disease</>,
+          label: (
+            <>
+              Canadian Rheumatology Association&apos;s Recommendation on Covid-19 Vaccination in Persons with Autoimmune
+              Rheumatic Disease
+            </>
+          ),
           image: "",
           linkTitle: <>Interim Recommendations for Healthcare Providers from the CRA</>,
           link: "https://rheum.ca/wp-content/uploads/2021/05/FINAL-V2-CRA-Recommendation-on-COVID-19-Vaccination_May-2021.pdf",
           description: (
             <>
-              Advisory and recommendations from the CRA on COVID-19 vaccination in persons with autoimmune rheumatic disease (Updated May 2021)
+              Advisory and recommendations from the CRA on COVID-19 vaccination in persons with autoimmune rheumatic
+              disease (Updated May 2021)
             </>
           ),
         },
@@ -1531,7 +1548,9 @@ export const contentPersonas = {
           link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
           description: (
             <>
-              The Crohn’s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and justifications for why the COVID-19 vaccines should be administered to patients with IBD at the earliest available opportunity. (Updated May 2021)
+              The Crohn’s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and
+              justifications for why the COVID-19 vaccines should be administered to patients with IBD at the earliest
+              available opportunity. (Updated May 2021)
             </>
           ),
         },
@@ -1543,11 +1562,12 @@ export const contentPersonas = {
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-cancer-treatment-info-pf.pdf",
           description: (
             <>
-              Information on COVID-19 and COVID-19 vaccination for patients undergoing cancer treatments. (Updated April 2021)
+              Information on COVID-19 and COVID-19 vaccination for patients undergoing cancer treatments. (Updated April
+              2021)
             </>
           ),
         },
-        
+
         {
           label: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
           image: "",
@@ -2063,12 +2083,12 @@ export const contentPersonas = {
           link: "https://www.youtube.com/watch?v=aFZ757WXNRE",
           description: (
             <>
-             5 minute video with an OBGYN and a public health expert discussing the vaccines, fertility, and menstruation. (June 2021)
+              5 minute video with an OBGYN and a public health expert discussing the vaccines, fertility, and
+              menstruation. (June 2021)
             </>
           ),
         },
-        
-        
+
         {
           label: <>COVID-19 Vaccines While Pregnant or Breastfeeding</>,
           image: "",
@@ -2712,7 +2732,10 @@ export const contentPersonas = {
           linkTitle: <>Medical advisory from Alberta Health for Medical Professionals</>,
           link: "https://www.alberta.ca/assets/documents/health-QA-myocarditis-and-pericarditis-following-covid.pdf",
           description: (
-            <>Alberta Health compiled information on myocarditis and pericarditis following COVID vaccination. Targeted for medical professionals. (Updated, July 2021)</>
+            <>
+              Alberta Health compiled information on myocarditis and pericarditis following COVID vaccination. Targeted
+              for medical professionals. (Updated, July 2021)
+            </>
           ),
         },
 
@@ -2721,9 +2744,7 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>Information about side effects and care after COVID-19 vaccination</>,
           link: "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=custom.ab_imm_covid19vaccine_ac",
-          description: (
-            <> (Updated, July 2021)</>
-          ),
+          description: <> (Updated, July 2021)</>,
         },
 
         {
@@ -6654,9 +6675,9 @@ export const contentPersonas = {
                     Let me paint a different picture for you. What if you &#91;and your social group&#93; all got
                     together to hang out and then you went home Sunday. All of you have taken the decision to Thelma and
                     Louise it over the cliff and not get vaccinated. What if you found out on the Monday that &#91;your
-                    friend/&#8203;family member&#93; got admitted to hospital for COVID pneumonia and had exposed all of you to
-                    COVID? And if you didn&apos;t know where he got it from, how would you feel not knowing if you maybe
-                    passed it on to them? How would you feel knowing you could have prevented that?
+                    friend/&#8203;family member&#93; got admitted to hospital for COVID pneumonia and had exposed all of
+                    you to COVID? And if you didn&apos;t know where he got it from, how would you feel not knowing if
+                    you maybe passed it on to them? How would you feel knowing you could have prevented that?
                   </>
                 ),
 
@@ -6687,9 +6708,9 @@ export const contentPersonas = {
                   <>
                     For me, it&apos;s important to get vaccinated, not just to keep yourself safe, but also to keep
                     people around you safe. I&apos;m sure you want to visit with your
-                    &#91;children/&#8203;grandchildren/&#8203;parents/&#8203;friends&#93;. That community, that&apos;s a pretty good reason
-                    to do it, no? It&apos;s just not our own responsibility to our own health. It&apos;s also about our
-                    responsibility to our families and the community around us.
+                    &#91;children/&#8203;grandchildren/&#8203;parents/&#8203;friends&#93;. That community, that&apos;s a
+                    pretty good reason to do it, no? It&apos;s just not our own responsibility to our own health.
+                    It&apos;s also about our responsibility to our families and the community around us.
                   </>
                 ),
 
@@ -6779,19 +6800,19 @@ export const contentPersonas = {
             </p>
             <div className="ml-5 mxs:ml-10">
               <p>
-                <b>Resetting</b> your expectations for the conversation
+                <strong>Resetting</strong> your expectations for the conversation
               </p>
               <p>
-                <b>Engaging</b> openly
+                <strong>Engaging</strong> openly
               </p>
               <p>
-                <b>Affirming</b> your patient’s concerns and starting points{" "}
+                <strong>Affirming</strong> your patient’s concerns and starting points{" "}
               </p>
               <p>
-                <b>Asking</b> permission, then <b>sharing</b> your own information or perspectives
+                <strong>Asking</strong> permission, then <strong>sharing</strong> your own information or perspectives
               </p>
               <p>
-                <b>Evoking</b> positive visions of the future, and co-planning to find a common goal
+                <strong>Evoking</strong> positive visions of the future, and co-planning to find a common goal
               </p>
             </div>
           </>,
@@ -6839,8 +6860,8 @@ export const contentPersonas = {
         content: [
           <>
             Take the time to learn about your patient&apos;s particular concerns about the COVID vaccines so that you
-            can have a better conversation. The goal of these conversations is to <b>&#40;re&#41;affirm</b> that you are
-            an ally; <b>validate</b> your patients&apos; experiences; and aim for <b>contemplation</b> rather than
+            can have a better conversation. The goal of these conversations is to <strong>&#40;re&#41;affirm</strong> that you are
+            an ally; <strong>validate</strong> your patients&apos; experiences; and aim for <strong>contemplation</strong> rather than
             vaccine acceptance. Your status as a trusted healthcare advisor can make the difference.{" "}
           </>,
         ],
@@ -6890,10 +6911,10 @@ export const contentPersonas = {
           text: (
             <>
               If you look around the world at the countries that have managed to get these vaccines into people&apos;s
-              arms: they&apos;re getting back to normal life. They&apos;re able to &#91;worship/&#8203;socialize/&#8203;visit/be&#93;
-              together. They&apos;re able to do those things. I know that not being able to
-              &#91;worship/socialize/visit&#93; with the rest of your community has been really hard on you this last
-              year, but we can do something about that.
+              arms: they&apos;re getting back to normal life. They&apos;re able to
+              &#91;worship/&#8203;socialize/&#8203;visit/be&#93; together. They&apos;re able to do those things. I know
+              that not being able to &#91;worship/socialize/visit&#93; with the rest of your community has been really
+              hard on you this last year, but we can do something about that.
             </>
           ),
           image: "/images/peopleIcons/doctorBlackWoman.svg",
@@ -7416,10 +7437,14 @@ export const contentPersonas = {
           linkTitle: <>Conversation tools for discussing vaccines with patients.</>,
           link: "https://www.albertadoctors.org/about/COVID-19/vaccine-positive-clinic-toolkit/addressing-vaccine-hesitancy",
           description: (
-            <>The Alberta Medical Association&apos;s &ldquo;Be A Vaccine Positive Clinic&rdquo; Toolkit includes proactive outreach resources, scripts, and other helpful guides for physicians to have vaccination conversations with their patients.</>
+            <>
+              The Alberta Medical Association&apos;s &ldquo;Be A Vaccine Positive Clinic&rdquo; Toolkit includes
+              proactive outreach resources, scripts, and other helpful guides for physicians to have vaccination
+              conversations with their patients.
+            </>
           ),
         },
-        
+
         {
           label: <>Centre for Effective Practice: ProTCT Framework</>,
           image: "",
@@ -7435,9 +7460,11 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>CEP Resources for Supporting Patient Confidence in Vaccines</>,
           link: "https://tools.cep.health/tool/covid-19-vaccines/#ensuring-patient-confidence-in-vaccines",
-          description: <>A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.</>,
+          description: (
+            <>A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.</>
+          ),
         },
-        
+
         {
           label: <>CEP: COVID-19 Resource Centre</>,
           image: "",

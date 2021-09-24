@@ -1,31 +1,47 @@
 // from https://dev.to/reedbarger/how-to-create-a-usewindowsize-react-hook-2bcm
-import React from "react";
+// and https://spectrum.chat/gatsby-js/general/error-window-is-not-available-during-server-side-rendering~4e299fae-8d72-4ceb-bd14-ec9954f04e62
+import { useState, useEffect } from "react";
 
 export default function useWindowSize() {
-  const isSSR = typeof window !== "undefined";
 
-  const [windowSize, setWindowSize] = React.useState({
-    winWidth: isSSR ? 1200 : window.innerWidth,
-    winHeight: isSSR ? 800 : window.innerHeight,
-  });
+  const log2 = true;
 
-  const log2 = false;
-  log2 && console.log("useWindowSize.js runs. isSSR=", isSSR);
-  log2 && console.log("useWindowSize.js runs. winWidth=", windowSize.winWidth);
-  log2 && console.log("useWindowSize.js runs. winHeight=", windowSize.winHeight);
+  let height;
+  let width;
 
-  function changeWindowSize() {
-    setWindowSize({ winWidth: window.innerWidth, winHeight: window.innerHeight });
+  if (typeof window !== `undefined`) {
+    height = window.innerHeight;
+    width = window.innerWidth;
   }
 
-  React.useEffect(() => {
-    changeWindowSize();
-    window.addEventListener("resize", changeWindowSize);
+  const [windowSize, setWindowSize] = useState({
+    winWidth: width,
+    winHeight: height,
+  });
 
-    return () => {
-      window.removeEventListener("resize", changeWindowSize);
+  const debounce = (func, timeout) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, args);
+      }, timeout);
     };
-  }, []);
+  };
+
+  useEffect(() => {
+    // Debounce function to check window resizing every n=300 milliseconds
+    const debouncedHandleResize = debounce(function handleResize() {
+      setWindowSize({
+        winHeight: window.innerHeight,
+        winWidth: window.innerWidth,
+      });
+      log2 && console.log("useWindowSize.js Setting winWidth=", window.innerWidth);
+      log2 && console.log("useWindowSize.js Setting winHeight=", window.innerHeight);
+    }, 300);
+    window.addEventListener(`resize`, debouncedHandleResize);
+    return () => window.removeEventListener(`resize`, debouncedHandleResize);
+  }, [log2]);
 
   return windowSize;
 }

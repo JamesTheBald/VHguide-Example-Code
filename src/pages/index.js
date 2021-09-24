@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
+import { animateScroll } from "react-scroll";
 
+import Seo from "../components/Seo"
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import Home1TopPage from "../components/1home&explore/Home1TopPanel";
@@ -20,25 +22,30 @@ const Home = () => {
         to="/explore"
         className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  border-2 ${colors}`}
         style={props.style}
-        // style={{ width: buttonWidth, height: buttonHeight }}
         onClick={() => {
           setNoneSelected(true);
           setNavBarOpen(false);
+          if (typeof window !== `undefined`) {      // react-scroll uses window global variable 
+            animateScroll.scrollToTop({ duration: 0 }); // time in ms
+          }
         }}
       >
-        <h2>Browse Hesitancy Types</h2>
+        <button>Browse Hesitancy Types</button>
       </Link>
     );
   };
 
   return (
-    <div className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
-      <Home1TopPage BrowseButton={BrowseButton} />
-      <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
-      <Home3WhoWeAre topGap={topGap} />
-      <Home4TestimonialsEtc topGap={topGap} />
-      <div className="w-full h-30 md:h-40 xl:h-50"></div>
-    </div>
+    <>
+      <Seo />
+      <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
+        <Home1TopPage BrowseButton={BrowseButton} />
+        <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
+        <Home3WhoWeAre topGap={topGap} />
+        <Home4TestimonialsEtc topGap={topGap} />
+        <div className="w-full h-30 md:h-40 xl:h-50"></div>
+      </main>
+    </>
   );
 };
 

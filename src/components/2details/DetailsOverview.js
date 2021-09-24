@@ -23,17 +23,19 @@ const DetailsOverview = props => {
   const titleClass = "mt-4 sm:mt-7  font-semibold text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4";
   const listClass = "ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc";
 
-  // scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
+  // if (typeof window !== `undefined`) {
+  //   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
+  // }
 
   return (
     <>
       <div name="Bounding Container for positioning the link to advice page" className="w-full h-full relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
-          <div className={blockClass}>
+        <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
+          <section className={blockClass}>
             <img src={theySay.image} alt="Icon" className={imageClass} />
             {contentID === "Undifferentiated" ? (
-              <>
-                <div className={titleClass}>Considerations for vaccine hesitant patients:</div>
+              <div>
+                <h3 className={titleClass}>Considerations for vaccine hesitant patients:</h3>
                 <div className="mt-2  baseFont text-blue-black">
                   {theySay.content.map((currItem, index) => (
                     <div key={index} className="pb-4 baseFont">
@@ -41,10 +43,10 @@ const DetailsOverview = props => {
                     </div>
                   ))}
                 </div>
-              </>
+              </div>
             ) : (
-              <>
-                <div className={titleClass}>People with this hesitancy type say...</div>
+              <div>
+                <h3 className={titleClass}>People with this hesitancy type say...</h3>
                 <ul className={listClass}>
                   {theySay.content.map((currItem, index) => (
                     <li key={index} className="pb-4">
@@ -52,13 +54,13 @@ const DetailsOverview = props => {
                     </li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
-          </div>
+          </section>
 
-          <div className={blockClass}>
+          <section className={blockClass}>
             <img src={thingsToConsider.image} alt="Icon" className={imageClass} />
-            <div className={titleClass}>Things to consider...</div>
+            <h3 className={titleClass}>Things to consider...</h3>
             <ul className={listClass}>
               {thingsToConsider.content.map((currItem, index) => (
                 <li key={index} className="pb-4">
@@ -66,11 +68,11 @@ const DetailsOverview = props => {
                 </li>
               ))}
             </ul>
-          </div>
+          </section>
 
-          <div className={blockClass}>
+          <section className={blockClass}>
             <img src={takeHome.image} alt="Icon" className={imageClass} />
-            <div className={titleClass}>Take Home:</div>
+            <h3 className={titleClass}>Take Home:</h3>
             {takeHome.content.map((currItem, index) => (
               <div key={index} className="mt-2  baseFont text-blue-black">
                 {currItem}
@@ -83,8 +85,8 @@ const DetailsOverview = props => {
             >
               {winWidth < 400 ? <>How to start the conversation</> : <>Advice on how to start the conversation</>}
             </Link>
-          </div>
-        </div>
+          </section>
+        </main>
       </div>
     </>
   );

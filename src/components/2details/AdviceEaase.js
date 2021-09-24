@@ -3,7 +3,7 @@ import { animateScroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
 
-const AdviceEaase = (props) => {
+const AdviceEaase = props => {
   const { advice } = props;
   const { log } = useMyContext();
 
@@ -14,7 +14,9 @@ const AdviceEaase = (props) => {
   const dropCapClass = "font-serif text-35 mxs:text-45 sm:text-55";
   const restOfTitle = "font-sans text-20 sm:text-25";
 
-  animateScroll.scrollToTop({ duration: 0 }); // time in ms
+  if (typeof window !== `undefined`) {
+    animateScroll.scrollToTop({ duration: 0 }); // time in ms
+  }
 
   return (
     <>
@@ -25,40 +27,40 @@ const AdviceEaase = (props) => {
                    gap-x-15 gap-y-6 mxs:gap-y-8 sm:gap-y-10  "
       >
         {/* The 3rd block below is irregular, so it's not worth using a component or .map */}
-        <div className={blockContainer}>
-          <div className={titleWrapperClass} style={{ lineHeight: 1 }}>
+        <section className={blockContainer}>
+          <h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
             <span className={dropCapClass}>E</span>
             <span className={restOfTitle}>ngage with open questions</span>
-          </div>
+          </h4>
           <AdviceEaaseIconAndText advice={advice} tab={"engage"} />
-        </div>
+        </section>
 
-        <div className={blockContainer}>
-          <div className={titleWrapperClass} style={{ lineHeight: 1 }}>
+        <section className={blockContainer}>
+          <h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
             <span className={dropCapClass}>A</span>
             <span className={restOfTitle}>ffirm and reflectively listen</span>
-          </div>
+          </h4>
           <AdviceEaaseIconAndText advice={advice} tab={"affirm"} />
-        </div>
+        </section>
 
         {/* <div className={`{blockContainer} lg:order-4`}> */}
-        <div className={blockContainer}>
-          <div className={titleWrapperClass} style={{ lineHeight: 1 }}>
+        <section className={blockContainer}>
+          <h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
             <span className={dropCapClass}>A</span>
             <span className={restOfTitle}>sk for permission then</span>
             <span className={`ml-1.5 ${dropCapClass}`}>S</span>
             <span className={restOfTitle}>hare information</span>
-          </div>
+          </h4>
           <AdviceEaaseIconAndText advice={advice} tab={"ask"} />
-        </div>
+        </section>
 
-        <div className={blockContainer}>
-          <div className={titleWrapperClass} style={{ lineHeight: 1 }}>
+        <section className={blockContainer}>
+          <h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
             <span className={dropCapClass}>E</span>
             <span className={restOfTitle}>voke and evaluate options</span>
-          </div>
+          </h4>
           <AdviceEaaseIconAndText advice={advice} tab={"evoke"} />
-        </div>
+        </section>
       </div>
     </>
   );

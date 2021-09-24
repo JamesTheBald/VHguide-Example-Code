@@ -5,17 +5,21 @@ import "../../styles/fonts.css";
 import "../../styles/hoverText.css";
 import "../../styles/styles.css";
 import "../../styles/tailwindStyles.css";
+import Seo from "../Seo";
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 const NavFooterLayout = ({ children }) => {
   return (
-    <div className="flex flex-col w-full text-blue-main">
-      <NavBar />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <Seo/>
+      <div className="flex flex-col w-full text-blue-main">
+        <NavBar />
+        {children}
+        <Footer />
+      </div>
+    </>
   );
 };
 

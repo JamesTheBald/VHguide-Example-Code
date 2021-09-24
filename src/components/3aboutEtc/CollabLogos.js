@@ -41,7 +41,6 @@ const CollabLogos = (props) => {
             <img
               key={indx}
               className={logoClass}
-              // style={{ transform: `scale(${(scale, scale)})`}}
               style={{
                 transform: `scale(${(scale, scale)})`,
                 paddingBottom: yCompensation,

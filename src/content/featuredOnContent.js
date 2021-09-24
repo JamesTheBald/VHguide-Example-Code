@@ -87,7 +87,7 @@ const coverage = {
   ],
   webinars: [
     {
-      snapshot: "../images/featuredOn/snapshots/CanCOVID webinar snapshot.png",
+      snapshot: "../images/featuredOn/snapshots/CanCOVID webinar snapshot.jpg",
       outlet: "CanCOVID",
       title: "A Guide to Vaccine Hesitancy Conversations: Building Confidence in Primary Care",
       // date: "",
@@ -96,7 +96,7 @@ const coverage = {
     },
 
     {
-      snapshot: "../images/featuredOn/snapshots/NCCID webinar snapshot.png",
+      snapshot: "../images/featuredOn/snapshots/NCCID webinar snapshot.jpg",
       outlet: "National Collaborating Centre for Infectious Diseases (NCCID)",
       title: "COVID-19 Vaccine Hesitance: Conversations with Primary Care",
       // date: "July 22, 2021",

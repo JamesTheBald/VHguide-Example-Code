@@ -36,7 +36,9 @@ const DetailsLayout = props => {
     setNavBarOpen(false);
   };
 
-  scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
+  if (typeof window !== `undefined`) {
+    scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
+  }
 
   const yPosnPanel = 24;
   const tabHeight = 50;
@@ -51,8 +53,8 @@ const DetailsLayout = props => {
           &#60; back
         </button>
 
-        <h1 className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</h1>
-        <div className="mt-0.5  titleFont titleMedium">{hesitTypeName}</div>
+        <div className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+        <h1 className="mt-0.5  titleFont titleMedium">{hesitTypeName}</h1>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
@@ -70,7 +72,7 @@ const DetailsLayout = props => {
           {related[0] ? (
             <>
               <div className="mb-10 mxs:mb-16  flex flex-wrap items-baseline">
-                <div className="mb-2.5 text-14 tracking-0.3 font-semibold">Related hesitancy types:</div>
+                <h4 className="mb-2.5 text-14 tracking-0.3 font-semibold">Related hesitancy types:</h4>
                 <div className="ml-6  flex flex-wrap">
                   {related.map((contID, index) => {
                     return (

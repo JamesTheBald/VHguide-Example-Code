@@ -1,15 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby TailwindCSS Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter with TailwindCSS and common dev tools. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@kosvrouvas`,
+    title: `Vaccine Hesitancy Guide`,
+    author: "Dr Myles Leslie's team",
+    description:
+      "A guide to help primary care clinicians identify types of COVID-19 vaccine hesitancy. Advice and resources for addressing them.",
+    url: "https://www.vhguide.ca", // No trailing slash allowed!
+    keywords: `vaccine, vaccination, hesitancy, covid, COVID-10, anti-vax, conversations, misinformation, clinician, advice`,
+    image: "/images/homePage/Home Page Icon.svg", // Path to your image you placed in the 'static' folder
   },
+
   flags: {
     flags: { PRESERVE_WEBPACK_CACHE: true },
   },
+
   plugins: [
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,56 +21,42 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-google-gtag`,   // See https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-SYE6NNWMLJ", // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // The following object gets passed directly to the gtag config command.This will be shared across all trackingIds
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // The following object is used for configuration specific to this plugin
+        pluginConfig: {
+          head: false,            // Put tracking script in the head instead of the body
+          // respectDNT: true,    // ""..using Google Global Site Tag does not necessarily constitute Tracking..."
+          // exclude: ["/preview/**", "/do-not-track/me/too/"],     // Avoids sending pageview hits from custom paths
+        },
       },
     },
+    
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/details/*`] },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Defers execution of google analytics script after page load
-        defer: false,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-purgecss`,

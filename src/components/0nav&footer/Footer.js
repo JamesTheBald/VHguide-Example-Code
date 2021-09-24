@@ -38,7 +38,7 @@ const Footer = () => {
 
       {/* Footer */}
       <div className={`z-40 mxs:z-50 ${showContactForm ? "fixed w-full bottom-0" : "relative"}`}>
-        <div
+        <footer
           className="pl-5 md:pl-7 lg:pl-16  w-full flex justify-between items-center  bg-gray-light border-t border-gray-lightish text-10 mxs:text-12 text-blue-black"
           style={{ height: 50 }}
           onClick={event => {
@@ -77,7 +77,7 @@ const Footer = () => {
             height={heightFormModal}
             formSource={formSource}
           />
-        </div>
+        </footer>
       </div>
     </div>
   );
