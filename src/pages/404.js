@@ -3,7 +3,6 @@ import { navigate } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-// import Seo from "../components/seo"
 
 const NotFoundPage = () => {
   const { winWidth } = useMyContext();
@@ -21,7 +20,6 @@ const NotFoundPage = () => {
 
   return (
     <>
-      {/* <Seo title="404: Not found" /> */}
       <div className="text-blue-dark" style={{ marginLeft: outerMargin, marginRight: outerMargin }}>
         <h1
           className="mt-40 mb-20  titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60   whitespace-normal

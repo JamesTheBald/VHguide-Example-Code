@@ -5,7 +5,7 @@ import "../../styles/fonts.css";
 import "../../styles/hoverText.css";
 import "../../styles/styles.css";
 import "../../styles/tailwindStyles.css";
-import Seo from "../Seo";
+import Seo from "./Seo";
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";

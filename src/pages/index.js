@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import { animateScroll } from "react-scroll";
 
-import Seo from "../components/Seo"
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import Home1TopPage from "../components/1home&explore/Home1TopPanel";
@@ -37,7 +36,6 @@ const Home = () => {
 
   return (
     <>
-      <Seo />
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
