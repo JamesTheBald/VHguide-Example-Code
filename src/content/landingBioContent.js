@@ -3,8 +3,9 @@ import React from "react";
 export const landingBioContent = [
   {
     name: "Myles Leslie",
-    // image: "../images/homePage/Leslie-portrait-trimmed.webp",
-    image2: "../images/homePage/Leslie-portrait-trimmed.jpg",
+    // directory for images is set in plugin config in gatsby-config.js
+    image: "Leslie-portrait 500px.jpg",
+    // image: "Leslie-portrait-trimmed.jpg",
     info: (
       <>
         Dr. Myles Leslie, PhD is an Associate Professor at the School of Public Policy. He is a qualitative action
@@ -17,8 +18,7 @@ export const landingBioContent = [
 
   {
     name: "Raad Fadaak",
-    // image: "../images/homePage/Raad-portrait-trimmed.webp",
-    image2: "../images/homePage/Raad-portrait-trimmed.jpg",
+    image: "Raad-portrait 500px.jpg",
     info: (
       <>
         Dr. Raad Fadaak, PhD is a Research Associate at the School of Public Policy. He has an extensive background in
@@ -30,8 +30,7 @@ export const landingBioContent = [
 
   {
     name: "Nicole Pinto",
-    // image: "../images/homePage/Nicole-portrait-trimmed.webp",
-    image2: "../images/homePage/Nicole-portrait-trimmed.jpg",
+    image: "Nicole-portrait 500px.jpg",
     info: (
       <>
         Nicole Pinto, MPH is a Research Associate at the School of Public Policy. She received her master’s degree in

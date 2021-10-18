@@ -1,4 +1,6 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
 import CollabLogos from "./CollabLogos";
 
 const Credits = () => {
@@ -38,7 +40,7 @@ const Credits = () => {
         </div>
 
         <div className="mt-5 sm:mt-8 lg:mt-0 lg:ml-30  w-full axs:w-75 mxs:w-85 sm:w-100 lg:w-120">
-          <img src="../images/logos/UofC_SPPLogo-Updated-Transparent.png" alt="UofC School of Public Policy logo" />
+          <StaticImage src="../../images/logos/UofC_SPPLogo-Updated-Transparent.png" alt="UofC School of Public Policy logo" />
         </div>
       </div>
 

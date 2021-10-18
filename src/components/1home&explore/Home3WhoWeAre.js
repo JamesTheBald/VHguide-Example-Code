@@ -1,16 +1,20 @@
 import React from "react";
 // import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
 const Home3WhoWeAre = props => {
-  const { topGap } = props;
+  const { imageData, topGap } = props;
   const { winWidth, marginOuter } = useMyContext();
 
   const bioWidth =
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
+
+  // console.log ("Home3WhoWeAre.js imageData=", imageData);
+  console.log("Home3WhoWeAre.js imageData.allFile.edges=", imageData.allFile.edges);
 
   return (
     <>
@@ -32,18 +36,26 @@ const Home3WhoWeAre = props => {
                         items-center sm:items-start justify-between md:justify-around  text-center"
         >
           {landingBioContent.map((currBio, indx) => {
-            console.log("Home3WhoWeAre.js .map() currBio.image=", currBio.image);
+            console.log("Home3WhoWeAre.js .map() currBio=", currBio);
 
             return (
               <div key={indx} style={{ width: bioWidth }}>
-                {/* <picture>
-                  <source srcSet={currBio.image} type="image/webp" alt={`${currBio.name} portrait`} /> */}
-                  <img
-                  src={currBio.image2}
-                  alt={`${currBio.name} portrait`}
-                  className="mx-auto w-2/3 mxs:w-1/2 sm:w-5/6 lg:w-3/4 xl:w-3/4 rounded-full"
-                />
-                {/* </picture> */}
+
+                {imageData.allFile.edges.map((item, index) => {
+                  if (item.node.relativePath === currBio.image) {
+                    return (
+                      <div key={index}>
+                        <GatsbyImage
+                          image={item.node.childImageSharp.gatsbyImageData}
+                          alt={`${currBio.name} portrait`}
+                          className="mx-auto w-2/3 mxs:w-1/2 sm:w-5/6 lg:w-3/4 xl:w-3/4 rounded-full"
+                        />
+                      </div>
+                    );
+                  } else {
+                    return null
+                  }
+                })}
 
                 <div className="mt-5 mxs:mt-6 lg:mt-8 titleFont emphFont text-center">{currBio.name}</div>
                 <div className="mt-4 mb-12 sm:mb-0  smThenBaseFont">{currBio.info}</div>

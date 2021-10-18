@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { animateScroll } from "react-scroll";
 
 import { useMyContext } from "../context/Context";
@@ -9,7 +9,8 @@ import Home2HesTypes from "../components/1home&explore/Home2HesTypes";
 import Home3WhoWeAre from "../components/1home&explore/Home3WhoWeAre";
 import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsEtc";
 
-const Home = () => {
+const Home = props => {
+  const { data } = props;
   const { winWidth, setNavBarOpen, setNoneSelected, showContactForm } = useMyContext();
 
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
@@ -24,7 +25,8 @@ const Home = () => {
         onClick={() => {
           setNoneSelected(true);
           setNavBarOpen(false);
-          if (typeof window !== `undefined`) {      // react-scroll uses window global variable 
+          if (typeof window !== `undefined`) {
+            // react-scroll uses window global variable
             animateScroll.scrollToTop({ duration: 0 }); // time in ms
           }
         }}
@@ -39,13 +41,29 @@ const Home = () => {
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
-        <Home3WhoWeAre topGap={topGap} />
+        <Home3WhoWeAre topGap={topGap} imageData={data} />
         <Home4TestimonialsEtc topGap={topGap} />
         <div className="w-full h-30 md:h-40 xl:h-50"></div>
       </main>
     </>
   );
 };
+
+export const query = graphql`
+  query ImageQuery {
+    allFile(filter: { dir: { eq: "/Users/jmm/0Code/0-vaccine-gatsby/src/images/homepage" }, ext: { eq: ".jpg" } }) {
+      edges {
+        node {
+          relativePath
+          dir
+          childImageSharp {
+            gatsbyImageData(formats: JPG, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+  }
+`;
 
 Home.Layout = Layout;
 // Above Layout assigning follows https://dev.to/milescrighton/keeping-persistent-ui-across-routes-with-gatsby-s-wrappageelement-4o22

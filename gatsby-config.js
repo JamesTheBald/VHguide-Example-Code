@@ -15,13 +15,21 @@ module.exports = {
 
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "images",
+        path: `${__dirname}/src/images/homepage/`,
       },
+      // __key: "images",
     },
-
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images/peopleIcons/`,
+      },
+      // __key: "images",
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,   // See https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
       options: {
@@ -50,7 +58,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-create-client-paths`,

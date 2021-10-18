@@ -1,6 +1,4 @@
 import React from "react";
-// import { graphql } from "gatsby"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"; // Odd blackout during loading. Is this just during development?
 
 import { useMyContext } from "../../context/Context";
@@ -8,7 +6,7 @@ import LandingText from "../../content/LandingText";
 import ScrollDownIndicator from "./ScrollDownIndicator";
 import wavyLineParams from "../../functions/wavyLineParams";
 
-const Home1TopPanel = props => {
+const Home1TopPanel = (props) => {
   const { BrowseButton } = props;
   const { widthAdjRatio, winWidth, winHeight, marginOuter, log2 } = useMyContext();
 

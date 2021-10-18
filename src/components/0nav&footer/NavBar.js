@@ -1,5 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image"; 
 import { animateScroll } from "react-scroll";
 
 import { IoIosMenu } from "react-icons/io";
@@ -68,12 +69,12 @@ const NavBar = () => {
     return (
       <>
         <NavItem classNom="mt-3 sm:mt-0" iconOffset={5} text="Home" onClickGo={onClickGo} destn="/">
-          <img src="/images/navbar/homeIcon.svg" alt="Home icon" style={{ width: 20 }} />
+          <StaticImage src="../../images/navbar/homeIcon.svg" alt="Home icon" style={{ width: 20 }} />
         </NavItem>
 
         <div className="hoverRevealTrigger group relative  flex flex-col items-start">
           <NavItem iconOffset={5} text="Hesitancy Types" onClickGo={onClickGo} destn="/explore">
-            <img src="/images/navbar/personIcon.svg" alt="Person icon" style={{ width: 22 }} />
+            <StaticImage src="../../images/navbar/personIcon.svg" alt="Person icon" style={{ width: 22 }} />
           </NavItem>
 
           <div
@@ -135,11 +136,11 @@ const NavBar = () => {
         </div>
 
         <NavItem iconOffset={5} text="Clinical Pearls" onClickGo={onClickGo} destn="/pearls">
-          <img src="/images/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 24 }} />
+          <StaticImage src="../../images/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 24 }} />
         </NavItem>
 
         <NavItem iconOffset={5} text="About" onClickGo={onClickGo} destn="/about">
-          <img src="/images/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 24 }} />
+          <StaticImage src="../../images/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 24 }} />
         </NavItem>
       </>
     );

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useMyContext } from "../context/Context";
 
 import { FiExternalLink } from "react-icons/fi";
@@ -262,11 +264,13 @@ const AboutContentEaaseSteps = () => {
       <div>
         <div>Across the rest of the Guide we use the EAASE steps to organize advice for each type of hesitancy.</div>
         {/* Make sure the breakpoints for the image below line up with those in the columnStyle class in in AboutPanels.js*/}
-        <img
-          className="mx-auto mxs:mx-0 md:mx-auto  mxs:pl-5 sm:pl-10 md:pl-0 py-3 md:pt-6  mxs:float-right md:float-none  w-5/6 mxs:w-3/5 sm:w-1/2 md:w-5/6 lg:w-3/4 xl:w-full"
-          src={"../images/screenshots/Overview-Undifferentiated-Hesitancy.png"}
-          alt="Screenshot of Undifferentiated Hesitancy overview page"
-        />
+        <div className="m-3 md:mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
+          <StaticImage
+            // className="pl-12 py-3 pt-4"
+            src={"../images/screenshots/Overview-Undifferentiated-Hesitancy.png"}
+            alt="Screenshot of Undifferentiated Hesitancy overview page"
+          />
+        </div>
         <br />
         <div>
           For tips from fellow clinicians on how to conduct these conversations, head over to the
