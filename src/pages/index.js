@@ -51,11 +51,12 @@ const Home = props => {
 
 export const query = graphql`
   query ImageQuery {
-    allFile(filter: { dir: { eq: "/Users/jmm/0Code/0-vaccine-gatsby/src/images/homepage" }, ext: { eq: ".jpg" } }) {
+    allFile(filter: {sourceInstanceName: {eq: "homepage"}}) {
       edges {
         node {
-          relativePath
           dir
+          relativePath
+          sourceInstanceName
           childImageSharp {
             gatsbyImageData(formats: JPG, placeholder: BLURRED)
           }
