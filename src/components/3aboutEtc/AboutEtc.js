@@ -6,7 +6,7 @@ import AboutPanels from "./AboutPanels";
 import PearlsPreface from "./PearlsPreface";
 
 const AboutEtc = props => {
-  const { path, pageTitle, contentArray } = props;
+  const { path, pageTitle, contentArray, logosData } = props;
   const { showContactForm, navBarHeight, winWidth, log, log2 } = useMyContext();
 
   // const invariantWidth = 400; // 400px is an estimate!
@@ -95,6 +95,7 @@ const AboutEtc = props => {
             contentArray={contentArray}
             yPosnPanel={yPosnPanel}
             yDistTitleFromTop={yDistTitleFromTop}
+            logosData={logosData}
           />
         </div>
       </div>

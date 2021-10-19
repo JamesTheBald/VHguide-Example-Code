@@ -70,7 +70,20 @@ export const query = graphql`
           relativePath
           sourceInstanceName
           childImageSharp {
-            gatsbyImageData(formats: [JPG, WEBP, PNG], placeholder: BLURRED, height: 212 )
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 210)
+          }
+          publicURL
+        }
+      }
+    }
+    collabLogos: allFile(filter: { sourceInstanceName: { eq: "collabLogos" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 64)
           }
           publicURL
         }

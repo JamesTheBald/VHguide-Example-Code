@@ -33,6 +33,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "collabLogos",
+        path: `${__dirname}/src/images/collabLogos/`,
+      },
+      // __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "peopleIcons",
         path: `${__dirname}/src/images/peopleIcons/`,
       },

@@ -1,10 +1,11 @@
-// import React from "react";
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
+
 import { useMyContext } from "../../context/Context";
 import logoContent from "../../content/logoContent";
 
-const CollabLogos = (props) => {
-  const { size } = props;
+const CollabLogos = props => {
+  const { size, logosData } = props;
   let { widthAdjRatio } = useMyContext();
 
   // For Flex layout
@@ -18,6 +19,8 @@ const CollabLogos = (props) => {
   // For Grid layout
   // const collabLogo = "max-h-14 mxs:max-h-16 sm:max-h-18 md:max-h-22 lg:max-h-25";
 
+  console.log("CollabLogos.js logosData.collabLogos.edges=", logosData.collabLogos.edges);
+
   return (
     <div>
       <div
@@ -29,28 +32,79 @@ const CollabLogos = (props) => {
       >
         {logoContent.map((currLogo, indx) => {
           const scale = currLogo.scale ? currLogo.scale : 1;
-          const xCompensation = scale !== 1 ? scale * 12 * (widthAdjRatio+1)/2 : 0;
+          const xCompensation = scale !== 1 ? (scale * 12 * (widthAdjRatio + 1)) / 2 : 0;
           const yCompensation = scale !== 1 ? scale * 3.33 * widthAdjRatio : 0;
-
 
           return currLogo.useDivWrapper ? (
             <div key={indx} className={logoClass}>
-              <img className="" src={currLogo.path} alt={currLogo.alt} />
+              {/* <img className="" src={currLogo.fileName} alt={currLogo.alt} /> */}
+
+              {logosData.collabLogos.edges.map((item, index) => {
+                if (item.node.relativePath === currLogo.fileName) {
+                  return (
+                    <div key={index}>
+                      {item.node.childImageSharp !== null ? (
+                        <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt={currLogo.alt} />
+                      ) : (
+                        // <img src={item.node.publicURL} alt={currLogo.alt} />
+                        <img
+                        src={item.node.publicURL}
+                        alt={currLogo.alt}
+                        className={logoClass}
+                        style={{
+                          transform: `scale(${(scale, scale)})`,
+                          paddingBottom: yCompensation,
+                          marginTop: yCompensation,
+                          marginLeft: xCompensation,
+                          marginRight: xCompensation,
+                        }}
+                      />
+                      )}
+                    </div>
+                  );
+                } else {
+                  return null;
+                }
+              })}
             </div>
           ) : (
-            <img
-              key={indx}
-              className={logoClass}
-              style={{
-                transform: `scale(${(scale, scale)})`,
-                paddingBottom: yCompensation,
-                marginTop: yCompensation,
-                marginLeft: xCompensation,
-                marginRight: xCompensation,
-              }}
-              src={currLogo.path}
-              alt={currLogo.alt}
-            />
+            logosData.collabLogos.edges.map((item, index) => {
+              if (item.node.relativePath === currLogo.fileName) {
+                return (
+                  <div key={index}>
+                    {item.node.childImageSharp !== null ? (
+                      <GatsbyImage
+                        image={item.node.childImageSharp.gatsbyImageData}
+                        alt={currLogo.alt}
+                        className={logoClass}
+                        style={{
+                          transform: `scale(${(scale, scale)})`,
+                          paddingBottom: yCompensation,
+                          marginTop: yCompensation,
+                          marginLeft: xCompensation,
+                          marginRight: xCompensation,
+                        }}
+                      />
+                    ) : (
+                      <img
+                        src={item.node.publicURL}
+                        alt={currLogo.alt}
+                        className={logoClass}
+                        style={{
+                          transform: `scale(${(scale, scale)})`,
+                          paddingBottom: yCompensation,
+                          marginTop: yCompensation,
+                          marginLeft: xCompensation,
+                          marginRight: xCompensation,
+                        }}
+                      />
+                    )}
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })
           );
         })}
       </div>

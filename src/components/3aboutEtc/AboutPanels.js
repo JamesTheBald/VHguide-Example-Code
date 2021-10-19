@@ -6,7 +6,7 @@ import QuoteGroup from "../2details/QuoteGroup";
 import Credits from "./Credits";
 
 const AboutPanels = props => {
-  const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
+  const { path, contentArray, yPosnPanel, yDistTitleFromTop, logosData } = props;
   const { winWidth, scrollTarget, log2 } = useMyContext();
 
   log2 && console.log("");
@@ -67,7 +67,7 @@ const AboutPanels = props => {
         <div>
           <Element name="Credits">
             <div className={panelBaseClass}>
-              <Credits />
+              <Credits logosData={logosData} />
             </div>
           </Element>
           <div style={{ height: 100 }} />

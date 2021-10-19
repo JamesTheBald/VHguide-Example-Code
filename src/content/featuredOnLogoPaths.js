@@ -32,7 +32,7 @@ const featuredOnLogoPaths = [
   },
 
   {
-    imageName: "The National.png",
+    imageName: "The National original.png",
     alt: "The National",
     URL: "",
   },

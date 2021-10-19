@@ -6,11 +6,11 @@ import CollabLogos from "../3aboutEtc/CollabLogos";
 import LinkToPathSection from "../LinkToPathSection";
 import { useMyContext } from "../../context/Context";
 
-const Home4TestimonialsEtc = (props) => {
+const Home4TestimonialsEtc = props => {
   const { topGap, imageData } = props;
   const { marginOuter, log2 } = useMyContext();
 
-  // log2 && 
+  // log2 &&
   console.log("Home4TestimonialsEtc.js imageData.featuredOnLogos.edges=", imageData.featuredOnLogos.edges);
 
   return (
@@ -28,7 +28,7 @@ const Home4TestimonialsEtc = (props) => {
         <h2 className="titleFont titleBig">Featured On</h2>
         <div className="lg:mb-4 w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
         <CarouselFeaturedOn imageData={imageData} />
-        
+
         <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
           <LinkToPathSection
             className="sm:mt-4 lg:mt-8  w-70 pt-1 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
@@ -43,7 +43,7 @@ const Home4TestimonialsEtc = (props) => {
         <h2 className="titleFont titleBig">Collaborators</h2>
         <div className="mb-1 mxs:mb-4  w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
 
-        <CollabLogos size={"small"} />
+        <CollabLogos size={"small"} logosData={imageData} />
       </div>
     </>
   );
