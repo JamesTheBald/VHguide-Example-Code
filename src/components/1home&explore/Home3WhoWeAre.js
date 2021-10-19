@@ -14,7 +14,7 @@ const Home3WhoWeAre = props => {
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
 
   // console.log ("Home3WhoWeAre.js imageData=", imageData);
-  console.log("Home3WhoWeAre.js imageData.allFile.edges=", imageData.allFile.edges);
+  console.log("Home3WhoWeAre.js imageData.homepagePics.edges=", imageData.homepagePics.edges);
 
   return (
     <>
@@ -41,7 +41,7 @@ const Home3WhoWeAre = props => {
             return (
               <div key={indx} style={{ width: bioWidth }}>
 
-                {imageData.allFile.edges.map((item, index) => {
+                {imageData.homepagePics.edges.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
                       <div key={index}>

@@ -42,7 +42,7 @@ const Home = props => {
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
         <Home3WhoWeAre topGap={topGap} imageData={data} />
-        <Home4TestimonialsEtc topGap={topGap} />
+        <Home4TestimonialsEtc topGap={topGap} imageData={data} />
         <div className="w-full h-30 md:h-40 xl:h-50"></div>
       </main>
     </>
@@ -51,7 +51,7 @@ const Home = props => {
 
 export const query = graphql`
   query ImageQuery {
-    allFile(filter: {sourceInstanceName: {eq: "homepage"}}) {
+    homepagePics: allFile(filter: { sourceInstanceName: { eq: "homepagePics" }, extension: { eq: "jpg" } }) {
       edges {
         node {
           dir
@@ -60,6 +60,19 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(formats: JPG, placeholder: BLURRED)
           }
+        }
+      }
+    }
+    featuredOnLogos: allFile(filter: { sourceInstanceName: { eq: "featuredOnLogos" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: [JPG, WEBP, PNG], placeholder: BLURRED, height: 212 )
+          }
+          publicURL
         }
       }
     }

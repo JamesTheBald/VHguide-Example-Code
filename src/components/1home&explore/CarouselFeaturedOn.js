@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Carousel, { consts } from "react-elastic-carousel";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
@@ -7,15 +8,18 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import featuredOnLogoPaths from "../../content/featuredOnLogoPaths";
 import { useMyContext } from "../../context/Context";
 
-const CarouselFeaturedOn = () => {
+const CarouselFeaturedOn = props => {
+  const { imageData } = props;
   const { winWidth, log2 } = useMyContext();
 
-  const [ itemsPerPage, setItemsPerPage ] = useState(1);
-  const [ numPages, setNumPages ] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+  const [numPages, setNumPages] = useState(1);
 
   useEffect(() => {
-    setItemsPerPage (winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6);
-    setNumPages (featuredOnLogoPaths.length - itemsPerPage);
+    setItemsPerPage(
+      winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6
+    );
+    setNumPages(featuredOnLogoPaths.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
 
   const timeOnEach = 2500;
@@ -60,6 +64,7 @@ const CarouselFeaturedOn = () => {
   };
 
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
+  console.log("CarouselFeaturedOn.js imageData.featuredOnLogos.edges=", imageData.featuredOnLogos.edges);
 
   return (
     <>
@@ -94,7 +99,21 @@ const CarouselFeaturedOn = () => {
               onClick={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
               onKeyPress={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
             >
-              <img src={currLogo.imagePath} alt={currLogo.alt} />
+              {imageData.featuredOnLogos.edges.map((item, index) => {
+                if (item.node.relativePath === currLogo.imageName) {
+                  return (
+                    <div key={index}>
+                      {item.node.childImageSharp !== null ? (
+                        <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt={currLogo.alt} />
+                      ) : (
+                        <img src={item.node.publicURL} alt={currLogo.alt} />
+                      )}
+                    </div>
+                  );
+                } else {
+                  return null;
+                }
+              })}
             </button>
           );
         })}

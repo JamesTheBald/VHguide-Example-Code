@@ -7,8 +7,11 @@ import LinkToPathSection from "../LinkToPathSection";
 import { useMyContext } from "../../context/Context";
 
 const Home4TestimonialsEtc = (props) => {
-  const { topGap } = props;
-  const { marginOuter } = useMyContext();
+  const { topGap, imageData } = props;
+  const { marginOuter, log2 } = useMyContext();
+
+  // log2 && 
+  console.log("Home4TestimonialsEtc.js imageData.featuredOnLogos.edges=", imageData.featuredOnLogos.edges);
 
   return (
     <>
@@ -24,7 +27,7 @@ const Home4TestimonialsEtc = (props) => {
         <div style={{ height: topGap }} />
         <h2 className="titleFont titleBig">Featured On</h2>
         <div className="lg:mb-4 w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
-        <CarouselFeaturedOn />
+        <CarouselFeaturedOn imageData={imageData} />
         
         <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
           <LinkToPathSection
