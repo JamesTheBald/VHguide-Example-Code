@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
+import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
@@ -14,7 +15,9 @@ import AdviceWhatsWorking from "../components/2details/AdviceWhatsWorking";
 import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
-const Details = () => {
+const Details = props => {
+  const { data } = props;
+  const pplIconsData = data;
   const { locn, fullStoryID, setFullStoryID, setNavBarOpen, log, log2 } = useMyContext();
 
   const [contentID, setContentID] = useState();
@@ -41,7 +44,7 @@ const Details = () => {
     return (
       <>
         <AdviceWhatsWorking />
-        <AdviceEaase advice={advice} />
+        <AdviceEaase advice={advice} pplIconsData={pplIconsData} />
       </>
     );
   };
@@ -51,7 +54,7 @@ const Details = () => {
       <>
         <AdviceWhatsWorking />
         <AdviceTabNavBar />
-        <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} />
+        <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} pplIconsData={pplIconsData} />
       </>
     );
   };
@@ -60,20 +63,41 @@ const Details = () => {
     return (
       <DetailsLayout hesitTypeName={hesitTypeName} related={related}>
         <Router basepath="/details">
-          <DetailsOverview path="/overview" contentID={contentID} />
+          <DetailsOverview path="/overview" contentID={contentID} pplIconsData={pplIconsData} />
           <DetailsResources path="/resources" contentID={contentID} />
           <AdviceFullStory path="/advice/fullstory" fullStoryID={fullStoryID} />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
-            <EaasePages key={idx} path={page} advice={advice} setFullStoryID={setFullStoryID} />
+            <EaasePages
+              key={idx}
+              path={page}
+              advice={advice}
+              setFullStoryID={setFullStoryID}
+              pplIconsData={pplIconsData}
+            />
           ))}
         </Router>
       </DetailsLayout>
     );
   } else {
-    return <></>
+    return <></>;
   }
 };
+
+export const query = graphql`
+  query peopleIconQuery {
+    pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          publicURL
+        }
+      }
+    }
+  }
+`;
 
 Details.Layout = Layout;
 

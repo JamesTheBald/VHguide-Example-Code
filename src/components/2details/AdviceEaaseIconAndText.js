@@ -4,10 +4,11 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {
-  const { advice, tab } = props;
-  const { winWidth, setNavBarOpen, log2 } = useMyContext();
+  const { advice, tab, pplIconsData } = props;
+  const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
 
-  log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab]=", advice?.eaase[tab]);
+  log && console.log("AdviceEaaseIconAndText.js advice.eaase[tab]=", advice?.eaase[tab]);
+  log && console.log("AdviceEaaseIconAndText.js pplIconsData.pplIcons.edges=", pplIconsData.pplIcons.edges);
 
   const adviceTabNames = {
     engage: "engage",
@@ -24,11 +25,23 @@ const AdviceEaaseIconAndText = props => {
   const IconImage = () => {
     log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice.eaase[tab].image);
     return (
-      <img
-        src={advice.eaase[tab].image}
-        alt="Icon"
-        className="float-left mr-3 sm:mr-4 mb-2  w-10 h-10 mxs:w-16 mxs:h-16  sm:w-22 sm:h-22"
-      />
+      <>
+        {pplIconsData.pplIcons.edges.map((item, index) => {
+          if (item.node.relativePath === advice.eaase[tab].image) {
+            return (
+              <div key={index}>
+                <img
+                  src={item.node.publicURL}
+                  alt="Doctor Icon"
+                  className="float-left mr-3 sm:mr-4 mb-2  w-10 h-10 mxs:w-16 mxs:h-16  sm:w-22 sm:h-22"
+                />
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
+      </>
     );
   };
 

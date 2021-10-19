@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = props => {
-  const { contentID } = props;
+  const { contentID, pplIconsData } = props;
   const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
 
   let overview = contentPersonas[contentID]?.overview;
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+  log && console.log("DetailsOverview.js pplIconsData.pplIcons.edges=", pplIconsData.pplIcons.edges);
 
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
-  log2 && console.log("DetailsOverview.js theySay=", theySay);
-  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
-  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
 
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
@@ -27,12 +26,27 @@ const DetailsOverview = props => {
   //   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
   // }
 
+  log && console.log("DetailsOverview.js theySay=", theySay);
+  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
+
   return (
     <>
       <div name="Bounding Container for positioning the link to advice page" className="w-full h-full relative">
         <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
           <section className={blockClass}>
-            <img src={theySay.image} alt="Icon" className={imageClass} />
+            {pplIconsData.pplIcons.edges.map((item, index) => {
+              if (item.node.relativePath === theySay.image) {
+                return (
+                  <div key={index}>
+                    <img src={item.node.publicURL} alt="Group of People" className={imageClass} />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+
             {contentID === "Undifferentiated" ? (
               <div>
                 <h3 className={titleClass}>Considerations for vaccine hesitant patients:</h3>
@@ -59,7 +73,18 @@ const DetailsOverview = props => {
           </section>
 
           <section className={blockClass}>
-            <img src={thingsToConsider.image} alt="Icon" className={imageClass} />
+            {pplIconsData.pplIcons.edges.map((item, index) => {
+              if (item.node.relativePath === thingsToConsider.image) {
+                return (
+                  <div key={index}>
+                    <img src={item.node.publicURL} alt="Doctor Icon" className={imageClass} />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+
             <h3 className={titleClass}>Things to consider...</h3>
             <ul className={listClass}>
               {thingsToConsider.content.map((currItem, index) => (
@@ -71,7 +96,17 @@ const DetailsOverview = props => {
           </section>
 
           <section className={blockClass}>
-            <img src={takeHome.image} alt="Icon" className={imageClass} />
+            {pplIconsData.pplIcons.edges.map((item, index) => {
+              if (item.node.relativePath === takeHome.image) {
+                return (
+                  <div key={index}>
+                    <img src={item.node.publicURL} alt="Notepad" className={imageClass} />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
             <h3 className={titleClass}>Take Home:</h3>
             {takeHome.content.map((currItem, index) => (
               <div key={index} className="mt-2  baseFont text-blue-black">
@@ -94,49 +129,48 @@ const DetailsOverview = props => {
 
 export default DetailsOverview;
 
+// const theySay = useRef();
+// const thingsToConsider = useRef();
+// const takeHome = useRef();
 
- // const theySay = useRef();
-  // const thingsToConsider = useRef();
-  // const takeHome = useRef();
+// const establishContent = () => {
+//   log && console.log("DetailsOverview.js establishContent() Check overview=", overview);
 
-   // const establishContent = () => {
-  //   log && console.log("DetailsOverview.js establishContent() Check overview=", overview);
+// without useRefs
+// theySay = overview?.theySay
+// thingsToConsider = overview?.thingsToConsider
+// takeHome =  overview?.takeHome
+// theySay = overview?.theySay?.content[0] ? overview.theySay : template;
+// thingsToConsider = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
+// takeHome =  overview?.takeHome?.content[0] ? overview.takeHome : template;
+// log && console.log("DetailsOverview.js establishContent theySay=", theySay);
+// log && console.log("DetailsOverview.js establishContent thingsToConsider=", thingsToConsider);
+// log && console.log("DetailsOverview.js establishContent takeHome=", takeHome);
 
-    // without useRefs
-    // theySay = overview?.theySay
-    // thingsToConsider = overview?.thingsToConsider
-    // takeHome =  overview?.takeHome
-    // theySay = overview?.theySay?.content[0] ? overview.theySay : template;
-    // thingsToConsider = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
-    // takeHome =  overview?.takeHome?.content[0] ? overview.takeHome : template;
-    // log && console.log("DetailsOverview.js establishContent theySay=", theySay);
-    // log && console.log("DetailsOverview.js establishContent thingsToConsider=", thingsToConsider);
-    // log && console.log("DetailsOverview.js establishContent takeHome=", takeHome);
+// with useRefs
+// theySay = overview.theySay;
+// thingsToConsider = overview.thingsToConsider;
+// takeHome = overview.takeHome;
+// theySay.current = overview.theySay;
+// thingsToConsider.current = overview.thingsToConsider;
+// takeHome.current = overview.takeHome;
 
-    // with useRefs
-    // theySay = overview.theySay;
-    // thingsToConsider = overview.thingsToConsider;
-    // takeHome = overview.takeHome;
-    // theySay.current = overview.theySay;
-    // thingsToConsider.current = overview.thingsToConsider;
-    // takeHome.current = overview.takeHome;
+// theySay.current = overview?.theySay?.content[0] ? overview.theySay : template;
+// thingsToConsider.current = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
+// takeHome.current = overview?.takeHome?.content[0] ? overview.takeHome : template;
+// log && console.log("DetailsOverview.js establishContent theySay.current=", theySay.current);
+// log && console.log("DetailsOverview.js establishContent thingsToConsider.current=", thingsToConsider.current);
+// log && console.log("DetailsOverview.js establishContent takeHome.current=", takeHome.current);
+// };
 
-    // theySay.current = overview?.theySay?.content[0] ? overview.theySay : template;
-    // thingsToConsider.current = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
-    // takeHome.current = overview?.takeHome?.content[0] ? overview.takeHome : template;
-    // log && console.log("DetailsOverview.js establishContent theySay.current=", theySay.current);
-    // log && console.log("DetailsOverview.js establishContent thingsToConsider.current=", thingsToConsider.current);
-    // log && console.log("DetailsOverview.js establishContent takeHome.current=", takeHome.current);
-  // };
+// if (overview) {
+//   establishContent();
+// }
 
-  // if (overview) {
-  //   establishContent();
-  // }
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log('DetailsOverview.js useEffect runs')
-  //     establishContent()
-  //   }, 200);
-  //   return () => clearTimeout(timer);
-  // }, []);
+// useEffect(() => {
+//   const timer = setTimeout(() => {
+//     console.log('DetailsOverview.js useEffect runs')
+//     establishContent()
+//   }, 200);
+//   return () => clearTimeout(timer);
+// }, []);

@@ -4,7 +4,7 @@ import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
 
 const AdviceEaase = props => {
-  const { advice } = props;
+  const { advice, pplIconsData } = props;
   const { log } = useMyContext();
 
   log && console.log("AdviceEaase.js runs.");
@@ -32,7 +32,7 @@ const AdviceEaase = props => {
             <span className={dropCapClass}>E</span>
             <span className={restOfTitle}>ngage with open questions</span>
           </h4>
-          <AdviceEaaseIconAndText advice={advice} tab={"engage"} />
+          <AdviceEaaseIconAndText advice={advice} tab={"engage"} pplIconsData={pplIconsData} />
         </section>
 
         <section className={blockContainer}>
@@ -40,7 +40,7 @@ const AdviceEaase = props => {
             <span className={dropCapClass}>A</span>
             <span className={restOfTitle}>ffirm and reflectively listen</span>
           </h4>
-          <AdviceEaaseIconAndText advice={advice} tab={"affirm"} />
+          <AdviceEaaseIconAndText advice={advice} tab={"affirm"} pplIconsData={pplIconsData} />
         </section>
 
         {/* <div className={`{blockContainer} lg:order-4`}> */}
@@ -51,7 +51,7 @@ const AdviceEaase = props => {
             <span className={`ml-1.5 ${dropCapClass}`}>S</span>
             <span className={restOfTitle}>hare information</span>
           </h4>
-          <AdviceEaaseIconAndText advice={advice} tab={"ask"} />
+          <AdviceEaaseIconAndText advice={advice} tab={"ask"} pplIconsData={pplIconsData} />
         </section>
 
         <section className={blockContainer}>
@@ -59,7 +59,7 @@ const AdviceEaase = props => {
             <span className={dropCapClass}>E</span>
             <span className={restOfTitle}>voke and evaluate options</span>
           </h4>
-          <AdviceEaaseIconAndText advice={advice} tab={"evoke"} />
+          <AdviceEaaseIconAndText advice={advice} tab={"evoke"} pplIconsData={pplIconsData} />
         </section>
       </div>
     </>
