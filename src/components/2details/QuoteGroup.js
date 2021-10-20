@@ -3,21 +3,21 @@ import { useMyContext } from "../../context/Context";
 import QuoteBoxes from "./QuoteBoxes";
 
 const QuoteGroup = props => {
-  const { contentArray } = props;
+  const { quoteGroup } = props;
   const { winWidth, setFullStoryID, log2 } = useMyContext();
 
-  log2 && console.log("QuoteGroup.js runs. contentArray=", contentArray);
+  log2 && console.log("QuoteGroup.js runs. quotes=", quoteGroup);
 
   return (
     <>
-      {contentArray.map((currContent, index) => {
-        return currContent.subheading ? (
+      {quoteGroup.map((currQuote, index) => {
+        return currQuote.subheading ? (
           <div key={index}>
             <div key={index} className="flex flex-col">
               {index > 0 && <div name="dividing line" className="mt-11 w-full  border-gray-medium border-b-3" />}
 
               <h3 className="my-8 sm:my-11  font-semibold  text-18 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5">
-                {currContent.subheading}
+                {currQuote.subheading}
               </h3>
             </div>
           </div>
@@ -29,7 +29,7 @@ const QuoteGroup = props => {
               columnGap: winWidth < 1600 ? 50 : 60,
             }}
           >
-            <QuoteBoxes quoteArray={currContent.quotes} setFullStoryID={setFullStoryID} />
+            <QuoteBoxes quoteArray={currQuote.quotes} setFullStoryID={setFullStoryID} />
           </div>
         );
       })}

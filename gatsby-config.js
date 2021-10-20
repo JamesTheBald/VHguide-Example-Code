@@ -46,6 +46,17 @@ module.exports = {
       },
       // __key: "images",
     },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "webinarShots",
+        path: `${__dirname}/src/images/featuredOn/snapshots/`,
+      },
+      // __key: "images",
+    },
+
+
     {
       resolve: `gatsby-plugin-google-gtag`,   // See https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
       options: {

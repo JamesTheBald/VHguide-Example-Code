@@ -6,12 +6,12 @@ import QuoteGroup from "../2details/QuoteGroup";
 import Credits from "./Credits";
 
 const AboutPanels = props => {
-  const { path, contentArray, yPosnPanel, yDistTitleFromTop, logosData } = props;
-  const { winWidth, scrollTarget, log2 } = useMyContext();
+  const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
+  const { winWidth, scrollTarget, log,log2 } = useMyContext();
 
   log2 && console.log("");
-  // log && console.log("AboutPanel.js runs. contentArray=", contentArray);
   log2 && console.log("AboutPanels.js runs. path=", path);
+  log && console.log("AboutPanel.js contentArray=", contentArray);
 
   useEffect(() => {
     if (scrollTarget.current) {
@@ -52,10 +52,11 @@ const AboutPanels = props => {
                     <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
                       {currPanel.title}
                     </h2>
-                    <QuoteGroup contentArray={currPanel.content} />
+                    <QuoteGroup quoteGroup={currPanel.content} />
                   </>
                 )}
                 {(path === "/about" || path === "/terms") && <div className="panelTextClass">{currPanel.content}</div>}
+
               </div>
               <div style={{ height: yGapBetweenPanels }} />
             </Element>
@@ -67,7 +68,7 @@ const AboutPanels = props => {
         <div>
           <Element name="Credits">
             <div className={panelBaseClass}>
-              <Credits logosData={logosData} />
+              <Credits />
             </div>
           </Element>
           <div style={{ height: 100 }} />

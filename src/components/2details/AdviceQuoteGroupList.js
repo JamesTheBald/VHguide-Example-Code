@@ -1,12 +1,12 @@
 import React from "react";
-import { useMatch } from "@reach/router"
+import { useMatch } from "@reach/router";
 import reactElementToJSXString from "react-element-to-jsx-string";
 
 import { useMyContext } from "../../context/Context";
 import EaaseTopHeading from "./EaaseTopHeading";
 import QuoteGroup from "./QuoteGroup";
 
-const AdviceQuoteGroupList = (props) => {
+const AdviceQuoteGroupList = props => {
   const { advice, setFullStoryID } = props;
   const { log, log2 } = useMyContext();
 
@@ -31,16 +31,16 @@ const AdviceQuoteGroupList = (props) => {
         <EaaseTopHeading tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
       </div>
 
-      <QuoteGroup contentArray={contentArray} setFullStoryID={setFullStoryID} />
+      <QuoteGroup quoteGroup={contentArray} setFullStoryID={setFullStoryID} />
       {tabSelected === "ask" && (
         <>
-          {askAdviceExists && <div style={{height: 30}} />}
+          {askAdviceExists && <div style={{ height: 30 }} />}
           {askAdviceExists && <div className="mb-9  w-full  border-gray-medium border-b-3" />}
           <span className="plusFont">then</span>
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>
           <div className="h-10 mxs:h-12" />
-          <QuoteGroup contentArray={advice.share.content} setFullStoryID={setFullStoryID} />
+          <QuoteGroup quoteGroup={advice.share.content} setFullStoryID={setFullStoryID} />
         </>
       )}
     </>

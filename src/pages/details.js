@@ -15,9 +15,7 @@ import AdviceWhatsWorking from "../components/2details/AdviceWhatsWorking";
 import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
-const Details = props => {
-  const { data } = props;
-  const pplIconsData = data;
+const Details = () => {
   const { locn, fullStoryID, setFullStoryID, setNavBarOpen, log, log2 } = useMyContext();
 
   const [contentID, setContentID] = useState();
@@ -44,17 +42,17 @@ const Details = props => {
     return (
       <>
         <AdviceWhatsWorking />
-        <AdviceEaase advice={advice} pplIconsData={pplIconsData} />
+        <AdviceEaase advice={advice} />
       </>
     );
   };
 
-  const EaasePages = ({ advice, setFullStoryID }) => {
+  const EaasePages = () => {
     return (
       <>
         <AdviceWhatsWorking />
         <AdviceTabNavBar />
-        <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} pplIconsData={pplIconsData} />
+        <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} />
       </>
     );
   };
@@ -63,18 +61,12 @@ const Details = props => {
     return (
       <DetailsLayout hesitTypeName={hesitTypeName} related={related}>
         <Router basepath="/details">
-          <DetailsOverview path="/overview" contentID={contentID} pplIconsData={pplIconsData} />
+          <DetailsOverview path="/overview" contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
           <AdviceFullStory path="/advice/fullstory" fullStoryID={fullStoryID} />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
-            <EaasePages
-              key={idx}
-              path={page}
-              advice={advice}
-              setFullStoryID={setFullStoryID}
-              pplIconsData={pplIconsData}
-            />
+            <EaasePages key={idx} path={page} />
           ))}
         </Router>
       </DetailsLayout>
@@ -86,12 +78,63 @@ const Details = props => {
 
 export const query = graphql`
   query peopleIconQuery {
+    homepagePics: allFile(filter: { sourceInstanceName: { eq: "homepagePics" }, extension: { eq: "jpg" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: JPG, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+    featuredOnLogos: allFile(filter: { sourceInstanceName: { eq: "featuredOnLogos" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 210)
+          }
+          publicURL
+        }
+      }
+    }
+    collabLogos: allFile(filter: { sourceInstanceName: { eq: "collabLogos" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 64)
+          }
+          publicURL
+        }
+      }
+    }
     pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
       edges {
         node {
           dir
           relativePath
           sourceInstanceName
+          publicURL
+        }
+      }
+    }
+    webinarShots: allFile(filter: { sourceInstanceName: { eq: "webinarShots" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 300)
+          }
           publicURL
         }
       }

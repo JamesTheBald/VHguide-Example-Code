@@ -11,7 +11,8 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { winWidth, setNavBarOpen, setNoneSelected, showContactForm } = useMyContext();
+  const { winWidth, setNavBarOpen, setNoneSelected, showContactForm, queryData } = useMyContext();
+  queryData.current = data;
 
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
 
@@ -41,8 +42,8 @@ const Home = props => {
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
-        <Home3WhoWeAre topGap={topGap} imageData={data} />
-        <Home4TestimonialsEtc topGap={topGap} imageData={data} />
+        <Home3WhoWeAre topGap={topGap} />
+        <Home4TestimonialsEtc topGap={topGap} />
         <div className="w-full h-30 md:h-40 xl:h-50"></div>
       </main>
     </>
@@ -50,7 +51,7 @@ const Home = props => {
 };
 
 export const query = graphql`
-  query ImageQuery {
+  query ImagesQuery {
     homepagePics: allFile(filter: { sourceInstanceName: { eq: "homepagePics" }, extension: { eq: "jpg" } }) {
       edges {
         node {
@@ -84,6 +85,29 @@ export const query = graphql`
           sourceInstanceName
           childImageSharp {
             gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 64)
+          }
+          publicURL
+        }
+      }
+    }
+    pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          publicURL
+        }
+      }
+    }
+    webinarShots: allFile(filter: { sourceInstanceName: { eq: "webinarShots" } }) {
+      edges {
+        node {
+          dir
+          relativePath
+          sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 300)
           }
           publicURL
         }

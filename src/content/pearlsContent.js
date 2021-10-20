@@ -4,14 +4,14 @@ export const pearlsContent = [
   //LOWERING THE TEMPERATURE
 
   // Path names for doctor icon images:
-  //   ../images/peopleIcons/doctorBlackManBeard.svg
-  //   ../images/peopleIcons/doctorBlackWoman.svg
-  //   ../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg
-  //   ../images/peopleIcons/doctorWhiteManBlackHair.svg
-  //   ../images/peopleIcons/doctorWhiteManGoatee.svg
-  //   ../images/peopleIcons/doctorWhiteManYoung.svg
-  //   ../images/peopleIcons/doctorWhiteWomanBrownHairGlasses.svg
-  //   ../images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg
+  //   doctorBlackManBeard.svg
+  //   doctorBlackWoman.svg
+  //   doctorMuslimWomanYellowHeadCover.svg
+  //   doctorWhiteManBlackHair.svg
+  //   doctorWhiteManGoatee.svg
+  //   doctorWhiteManYoung.svg
+  //   doctorWhiteWomanBrownHairGlasses.svg
+  //   doctorWhiteWomanDarkBrownHair.svg
 
   // Sections:
   //   Affirming You're An Ally
@@ -38,7 +38,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "/images/peopleIcons/doctorBlackManBeard.svg",
+            image: "doctorBlackManBeard.svg",
             // The code is not (yet) in place for "full story" links to work from quote boxes on the Clinical Pearls page
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
@@ -284,7 +284,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg",
+            image: "doctorMuslimWomanYellowHeadCover.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -346,7 +346,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/peopleIcons/doctorBlackWoman.svg",
+            image: "doctorBlackWoman.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -372,7 +372,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/peopleIcons/doctorBlackManBeard.svg",
+            image: "doctorBlackManBeard.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },
@@ -402,7 +402,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "../images/peopleIcons/doctorWhiteManBlackHair.svg",
+            image: "doctorWhiteManBlackHair.svg",
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
           },

@@ -5,8 +5,11 @@ import { useMyContext } from "../../context/Context";
 import logoContent from "../../content/logoContent";
 
 const CollabLogos = props => {
-  const { size, logosData } = props;
-  let { widthAdjRatio } = useMyContext();
+  const { size } = props;
+  let { widthAdjRatio, queryData } = useMyContext();
+
+  const collabLogos = queryData.current.collabLogos.edges;
+  console.log("CollabLogos.js collabLogos=", collabLogos);
 
   // For Flex layout
   const margins = "mr-auto axs:mr-10 mxs:mr-16 sm:mr-20 md:mr-24  mb-10 mxs:mb-14";
@@ -19,7 +22,6 @@ const CollabLogos = props => {
   // For Grid layout
   // const collabLogo = "max-h-14 mxs:max-h-16 sm:max-h-18 md:max-h-22 lg:max-h-25";
 
-  console.log("CollabLogos.js logosData.collabLogos.edges=", logosData.collabLogos.edges);
 
   return (
     <div>
@@ -39,7 +41,7 @@ const CollabLogos = props => {
             <div key={indx} className={logoClass}>
               {/* <img className="" src={currLogo.fileName} alt={currLogo.alt} /> */}
 
-              {logosData.collabLogos.edges.map((item, index) => {
+              {collabLogos.map((item, index) => {
                 if (item.node.relativePath === currLogo.fileName) {
                   return (
                     <div key={index}>
@@ -68,7 +70,7 @@ const CollabLogos = props => {
               })}
             </div>
           ) : (
-            logosData.collabLogos.edges.map((item, index) => {
+            collabLogos.map((item, index) => {
               if (item.node.relativePath === currLogo.fileName) {
                 return (
                   <div key={index}>

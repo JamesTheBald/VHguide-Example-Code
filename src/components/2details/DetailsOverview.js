@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = props => {
-  const { contentID, pplIconsData } = props;
-  const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
+  const { contentID } = props;
+  const { winWidth, setNavBarOpen, queryData, log, log2 } = useMyContext();
 
   let overview = contentPersonas[contentID]?.overview;
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
-  log && console.log("DetailsOverview.js pplIconsData.pplIcons.edges=", pplIconsData.pplIcons.edges);
+  
+  const pplIcons = queryData.current.pplIcons.edges;
+  log && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
@@ -35,16 +36,12 @@ const DetailsOverview = props => {
       <div name="Bounding Container for positioning the link to advice page" className="w-full h-full relative">
         <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
           <section className={blockClass}>
-            {pplIconsData.pplIcons.edges.map((item, index) => {
-              if (item.node.relativePath === theySay.image) {
-                return (
-                  <div key={index}>
-                    <img src={item.node.publicURL} alt="Group of People" className={imageClass} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
+            {pplIcons.map((item, index) => {
+              return (
+                item.node.relativePath === theySay.image && (
+                  <img key={index} src={item.node.publicURL} alt="Group of People" className={imageClass} />
+                )
+              );
             })}
 
             {contentID === "Undifferentiated" ? (
@@ -73,16 +70,12 @@ const DetailsOverview = props => {
           </section>
 
           <section className={blockClass}>
-            {pplIconsData.pplIcons.edges.map((item, index) => {
-              if (item.node.relativePath === thingsToConsider.image) {
-                return (
-                  <div key={index}>
-                    <img src={item.node.publicURL} alt="Doctor Icon" className={imageClass} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
+            {pplIcons.map((item, index) => {
+              return (
+                item.node.relativePath === thingsToConsider.image && (
+                  <img key={index} src={item.node.publicURL} alt="Doctor Icon" className={imageClass} />
+                )
+              );
             })}
 
             <h3 className={titleClass}>Things to consider...</h3>
@@ -96,17 +89,14 @@ const DetailsOverview = props => {
           </section>
 
           <section className={blockClass}>
-            {pplIconsData.pplIcons.edges.map((item, index) => {
-              if (item.node.relativePath === takeHome.image) {
-                return (
-                  <div key={index}>
-                    <img src={item.node.publicURL} alt="Notepad" className={imageClass} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
+            {pplIcons.map((item, index) => {
+              return (
+                item.node.relativePath === takeHome.image && (
+                  <img key={index} src={item.node.publicURL} alt="Notepad" className={imageClass} />
+                )
+              );
             })}
+
             <h3 className={titleClass}>Take Home:</h3>
             {takeHome.content.map((currItem, index) => (
               <div key={index} className="mt-2  baseFont text-blue-black">

@@ -5,7 +5,7 @@ export const contentFullStories = {
     // The above line is the 'fullStoryID'
     tags: ["", ""],
     title: <>The Chef mRNA Analogy</>,
-    image: "../../images/peopleIcons/doctorBlackWoman.svg",
+    image: "doctorBlackWoman.svg",
     text: (
       <>
         Imagine if the chef from your favorite restaurant could come over to your house and make your favorite dish -
@@ -33,7 +33,7 @@ export const contentFullStories = {
   redTapemRNA: {
     tags: ["", ""],
     title: <>One way to tell the mRNA development story.</>,
-    image: "../../images/peopleIcons/doctorWhiteWomanDarkBrownHair.svg",
+    image: "doctorWhiteWomanDarkBrownHair.svg",
     text: (
       <>
         Okay. So do you remember Ebola and another virus called &mdash; its acronym is MERS, M&ndash;E&ndash;R&ndash;S.
@@ -73,7 +73,7 @@ export const contentFullStories = {
   quickDevelopment: {
     tags: ["", ""],
     title: <>A Running Start For Vaccine Development</>,
-    image: "../../images/peopleIcons/doctorBlackManBeard.svg", 
+    image: "doctorBlackManBeard.svg", 
     text: (
       <>
         The reason they were able to go faster, is that they&apos;ve invested more than they&apos;ve ever invested
@@ -95,7 +95,7 @@ export const contentFullStories = {
   spikyVaccines: {
     tags: ["", ""],
     title: <>A simple explanation of how the mRNA vaccines work.</>,
-    image: "../../images/peopleIcons/doctorMuslimWomanYellowHeadCover.svg", 
+    image: "doctorMuslimWomanYellowHeadCover.svg", 
     text: (
       <>
         What&apos;s really cool about these mRNA vaccines that makes them even better than other vaccines is that they
@@ -117,7 +117,7 @@ export const contentFullStories = {
   sideEffectsStory: {
     tags: ["", ""],
     title: <>Everyone produces different antibodies.</>,
-    image: "../../images/peopleIcons/doctorWhiteManGoatee.svg",
+    image: "doctorWhiteManGoatee.svg",
     text: (
       <>
         The side effects are actually a sign that your immune system has caught on and is fired up. So that&apos;s not

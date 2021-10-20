@@ -134,7 +134,7 @@ const CopyrightNotice = () => {
   );
 };
 
-export const noticesContent = [
+const termsContent = [
   {
     title: "Privacy Policy",
     content: <PrivacyPolicy />,
@@ -182,3 +182,5 @@ export const noticesContent = [
     ),
   },
 ];
+
+export default termsContent;

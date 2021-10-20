@@ -8,12 +8,14 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import featuredOnLogoPaths from "../../content/featuredOnLogoPaths";
 import { useMyContext } from "../../context/Context";
 
-const CarouselFeaturedOn = props => {
-  const { imageData } = props;
-  const { winWidth, log2 } = useMyContext();
+const CarouselFeaturedOn = () => {
+  const { winWidth, queryData, log2 } = useMyContext();
 
   const [itemsPerPage, setItemsPerPage] = useState(1);
   const [numPages, setNumPages] = useState(1);
+
+  const featuredOnLogos = queryData.current.featuredOnLogos.edges;
+  console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
 
   useEffect(() => {
     setItemsPerPage(
@@ -64,7 +66,6 @@ const CarouselFeaturedOn = props => {
   };
 
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
-  console.log("CarouselFeaturedOn.js imageData.featuredOnLogos.edges=", imageData.featuredOnLogos.edges);
 
   return (
     <>
@@ -99,7 +100,7 @@ const CarouselFeaturedOn = props => {
               onClick={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
               onKeyPress={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
             >
-              {imageData.featuredOnLogos.edges.map((item, index) => {
+              {featuredOnLogos.map((item, index) => {
                 if (item.node.relativePath === currLogo.imageName) {
                   return (
                     <div key={index}>

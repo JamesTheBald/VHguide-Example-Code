@@ -6,14 +6,11 @@ import AboutPanels from "./AboutPanels";
 import PearlsPreface from "./PearlsPreface";
 
 const AboutEtc = props => {
-  const { path, pageTitle, contentArray, logosData } = props;
+  const { path, pageTitle, contentArray } = props;
   const { showContactForm, navBarHeight, winWidth, log, log2 } = useMyContext();
 
-  // const invariantWidth = 400; // 400px is an estimate!
-  // const widthAdjRatioAbout =
-  //   winWidth > 1365 ? (winWidth - invariantWidth) / (nomScreenWidth - invariantWidth) : winWidth / nomScreenWidth;
-
   log && console.log("AboutEtc.js path=", path);
+  log && console.log("AboutEtc.js contentArray=", contentArray);
 
   const outerMargin = winWidth < 510 ? 25 : winWidth < 1024 ? 50 : 100;
   const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
@@ -95,7 +92,6 @@ const AboutEtc = props => {
             contentArray={contentArray}
             yPosnPanel={yPosnPanel}
             yDistTitleFromTop={yDistTitleFromTop}
-            logosData={logosData}
           />
         </div>
       </div>

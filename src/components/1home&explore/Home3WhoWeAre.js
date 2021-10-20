@@ -1,5 +1,4 @@
 import React from "react";
-// import { StaticImage } from "gatsby-plugin-image";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
@@ -7,14 +6,14 @@ import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
 const Home3WhoWeAre = props => {
-  const { imageData, topGap } = props;
-  const { winWidth, marginOuter } = useMyContext();
+  const { topGap } = props;
+  const { winWidth, marginOuter, queryData } = useMyContext();
+
+  const homepagePics = queryData.current.homepagePics.edges;
+  console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
 
   const bioWidth =
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
-
-  // console.log ("Home3WhoWeAre.js imageData=", imageData);
-  console.log("Home3WhoWeAre.js imageData.homepagePics.edges=", imageData.homepagePics.edges);
 
   return (
     <>
@@ -41,7 +40,7 @@ const Home3WhoWeAre = props => {
             return (
               <div key={indx} style={{ width: bioWidth }}>
 
-                {imageData.homepagePics.edges.map((item, index) => {
+                {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
                       <div key={index}>

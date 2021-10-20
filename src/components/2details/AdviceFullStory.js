@@ -4,11 +4,15 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 import { contentFullStories } from "../../content/contentFullStories";
 
-const AdviceFullStory = (props) => {
+const AdviceFullStory = props => {
   const { fullStoryID } = props;
-  const { winWidth, log } = useMyContext();
+  const { winWidth, queryData, log } = useMyContext();
 
   log && console.log("AdviceFullStory.js runs. fullStoryID=", fullStoryID);
+
+  const pplIcons = queryData.current.pplIcons.edges;
+  log && console.log("AdviceFullStory.js pplIconsData=", pplIcons);
+  log && console.log("AdviceFullStory.js story=", story);
 
   let story = {};
   let validData = true;
@@ -35,7 +39,16 @@ const AdviceFullStory = (props) => {
       >
         {validData && (
           <p>
-            <img src={story.image} alt="Icon" className="mr-6 mb-2  w-30 h-30 float-left" />
+            {/* <img src={story.image} alt="Icon" className="mr-6 mb-2  w-30 h-30 float-left" /> */}
+
+            {pplIcons.map((item, index) => {
+              return (
+                item.node.relativePath === story.image && (
+                  <img key={index} src={item.node.publicURL} alt="Icon" className="mr-6 mb-2  w-30 h-30 float-left" />
+                )
+              );
+            })}
+
             {story.text}
           </p>
         )}

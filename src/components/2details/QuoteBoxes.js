@@ -8,10 +8,13 @@ import BigDoubleQuotes from "./BigDoubleQuotes";
 
 const QuoteBoxes = props => {
   const { quoteArray, setFullStoryID } = props;
-  const { winWidth, setNavBarOpen, log, log2 } = useMyContext();
+  const { winWidth, setNavBarOpen, queryData, log, log2 } = useMyContext();
 
-  log2 && console.log("QuoteBoxes.js runs.");
-  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  const pplIcons = queryData.current.pplIcons.edges;
+
+  log && console.log("QuoteBoxes.js runs.");
+  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
   const quoteColorsAndText = quote => {
     const css =
@@ -73,7 +76,18 @@ const QuoteBoxes = props => {
                           top: iconDistFromTop(quote),
                         }}
                       >
-                        <img src={quote.image} alt="Icon" className="w-20 mxs:w-22 h-20 mxs:h-22" />
+                        {pplIcons.map((item, index) => {
+                          return (
+                            item.node.relativePath === quote.image && (
+                              <img
+                                key={index}
+                                src={item.node.publicURL}
+                                alt="Icon"
+                                className="w-20 mxs:w-22 h-20 mxs:h-22"
+                              />
+                            )
+                          );
+                        })}
                       </div>
                     )}
                     {quote.text}

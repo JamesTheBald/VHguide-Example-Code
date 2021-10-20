@@ -37,8 +37,7 @@ const MyProvider = ({ children }) => {
   const [navBarOpen, setNavBarOpen] = useState(false);
   const [noneSelected, setNoneSelected] = useState(true);
   const scrollTarget = useRef("");
-
-
+  const queryData = useRef({});
 
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
   const contextValues = {
@@ -61,6 +60,7 @@ const MyProvider = ({ children }) => {
     setNavBarOpen: setNavBarOpen,
     setFullStoryID: setFullStoryID,
     scrollTarget: scrollTarget,
+    queryData: queryData,
     log: log,
     log2: log2,
   };

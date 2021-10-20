@@ -1,25 +1,15 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
+import { useMyContext } from "../../context/Context";
 import coverage from "../../content/featuredOnContent";
 
 const CoverageWebinars = ({ className }) => {
-  // const WatchOnYoutubePopup = (props) => {
-  //   const { text } = props;
-  //   return (
-  //     // Note: need to put Tailwind class 'relative' on a suitably wide parent element for this to size & position properly
-  //     <span className="hoverRevealTrigger">
-  //       <div
-  //         className="hiddenTillHover absolute  sm:left-10 md:left-1/4  z-50
-  //                p-7  baseFont bg-white rounded-2xl shadowGray"
-  //         //  above class had "-translate-x-1/2" but this doesn't do anything with "transform" utility
-  //         style={{ bottom: "100%" }}
-  //       >
-  //         <div>{text}</div>
-  //       </div>
-  //     </span>
-  //   );
-  // };
+  let { queryData } = useMyContext();
+
+  const webinarShots = queryData.current.webinarShots.edges;
+  console.log("CoverageWebinars.js webinarShots=", webinarShots);
 
   return (
     <div
@@ -37,18 +27,28 @@ const CoverageWebinars = ({ className }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                src={currCoverage.snapshot}
-                alt="Video snapshot"
-                className="object-contain"
-                style={{ gridArea: "area1" }}
-              />
+              {webinarShots.map((item, index) => {
+                return (
+                  <>
+                    {item.node.relativePath === currCoverage.snapshot && (
+                      <GatsbyImage
+                        key={index}
+                        image={item.node.childImageSharp.gatsbyImageData}
+                        alt="Video snapshot"
+                        className="object-contain"
+                        style={{ gridArea: "area1" }}
+                      />
+                    )}
+                  </>
+                );
+              })}
+
               <div
                 className="p-4 w-40  hiddenTillHover z-50
                            baseFont bg-white rounded-2xl shadowGray opacity-80  text-center"
                 style={{ gridArea: "area1" }}
               >
-                Click to watch on Youtube
+                Click to watch on external site
               </div>
             </a>
 
@@ -74,3 +74,20 @@ const CoverageWebinars = ({ className }) => {
 };
 
 export default CoverageWebinars;
+
+// const WatchOnYoutubePopup = (props) => {
+//   const { text } = props;
+//   return (
+//     // Note: need to put Tailwind class 'relative' on a suitably wide parent element for this to size & position properly
+//     <span className="hoverRevealTrigger">
+//       <div
+//         className="hiddenTillHover absolute  sm:left-10 md:left-1/4  z-50
+//                p-7  baseFont bg-white rounded-2xl shadowGray"
+//         //  above class had "-translate-x-1/2" but this doesn't do anything with "transform" utility
+//         style={{ bottom: "100%" }}
+//       >
+//         <div>{text}</div>
+//       </div>
+//     </span>
+//   );
+// };
