@@ -27,7 +27,6 @@ const Home = props => {
           setNoneSelected(true);
           setNavBarOpen(false);
           if (typeof window !== `undefined`) {
-            // react-scroll uses window global variable
             animateScroll.scrollToTop({ duration: 0 }); // time in ms
           }
         }}

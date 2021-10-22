@@ -15,8 +15,10 @@ import AdviceWhatsWorking from "../components/2details/AdviceWhatsWorking";
 import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
-const Details = () => {
-  const { locn, fullStoryID, setFullStoryID, setNavBarOpen, log, log2 } = useMyContext();
+const Details = props => {
+  const { data } = props;
+  const { locn, fullStoryID, setFullStoryID, setNavBarOpen, queryData, log, log2 } = useMyContext();
+  queryData.current = data;
 
   const [contentID, setContentID] = useState();
   const [hesitTypeName, setHesitTypeName] = useState();

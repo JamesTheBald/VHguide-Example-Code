@@ -18,8 +18,10 @@ const CoverageWebinars = ({ className }) => {
                         baseFont text-blue-black  ${className}`}
     >
       {coverage.webinars.map((currCoverage, index) => {
+        console.log("CoverageWebinars.js currCoverage key for index", index, "=", currCoverage.title);
+
         return (
-          <div key={index} className="">
+          <div key={currCoverage.title} className="">
             <a
               className="mb-4  w-full grid justify-items-center items-center  cursor-pointer hoverRevealTrigger"
               style={{ gridTemplateAreas: "area1" }}
@@ -27,12 +29,14 @@ const CoverageWebinars = ({ className }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              {webinarShots.map((item, index) => {
+              {webinarShots.map((item, indx) => {
+                console.log("CoverageWebinars.js webinarShots key for index", indx, "=", item.node.relativePath+index);
+
                 return (
                   <>
                     {item.node.relativePath === currCoverage.snapshot && (
                       <GatsbyImage
-                        key={index}
+                        key={item.node.relativePath+index}
                         image={item.node.childImageSharp.gatsbyImageData}
                         alt="Video snapshot"
                         className="object-contain"

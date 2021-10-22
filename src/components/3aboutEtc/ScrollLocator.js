@@ -11,7 +11,7 @@ const ScrollLocator = props => {
   const offsetCalc = () => {
     let scrollOffset = -300;
     if (path === "/pearls") {
-      scrollOffset = winWidth < 510 ? -450 : winWidth < 1024 ? -450 : winWidth < 1920 ? -500 : -250;
+      scrollOffset = winWidth < 510 ? -450 : winWidth < 1024 ? -500 : winWidth < 1920 ? -500 : -250;
     } else if (path === "/terms") {
       scrollOffset = winWidth < 510 ? -350 : winWidth < 1200 ? -450 : winWidth < 1920 ? -450 : -300;
     } else {
@@ -71,7 +71,7 @@ const ScrollLocator = props => {
               smooth={true}
               duration={600}
             >
-              <LinkBody label="Credits" />
+              <LinkBody label="Credits and Collaborator" />
             </Link>
           </div>
         )}

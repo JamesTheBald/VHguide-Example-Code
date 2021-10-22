@@ -310,17 +310,17 @@ const AboutContentMediaCoverage = () => {
 
 export const aboutContent = [
   {
-    title: "What is this guide?",
+    title: "What is the VH Guide?",
     content: <AboutContentWhatIsThis />,
   },
 
   {
-    title: "How do I use this guide?",
+    title: "How do I use the VH Guide?",
     content: <AboutContentHowUse />,
   },
 
   {
-    title: "EAASE Steps",
+    title: "The EAASE Steps Explained",
     content: <AboutContentEaaseSteps />,
   },
   {

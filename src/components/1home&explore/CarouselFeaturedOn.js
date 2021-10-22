@@ -24,7 +24,8 @@ const CarouselFeaturedOn = () => {
     setNumPages(featuredOnLogoPaths.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
 
-  const timeOnEach = 2500;
+  const timeOnEach = 1800;
+  const timeTransition = 1000;
   const carouselRefFeaturedOn = useRef();
   // const numPages = Math.ceil(featuredOnLogoPaths.length/itemsPerPage);
   let timer;
@@ -76,7 +77,7 @@ const CarouselFeaturedOn = () => {
         showArrows={true}
         enableAutoPlay={true}
         autoPlaySpeed={timeOnEach}
-        transitionMs={1500}
+        transitionMs={timeTransition}
         renderPagination={({ pages, activePage, onClick }) => CarouselDotsNone({ pages, activePage, onClick })}
         renderArrow={({ type, onClick, isEdge }) => MyArrow({ type, onClick, isEdge })}
         onNextEnd={({ index }) => {

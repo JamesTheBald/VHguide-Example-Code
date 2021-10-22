@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"; 
+import { StaticImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import ModalContactForm from "./ModalContactForm";
@@ -25,17 +25,18 @@ const Footer = () => {
   return (
     // "Contact Us Pill"
     <div className="relative">
-      {pathname !== "/" && (
-        <button
-          className="px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-gray-light 
-                tracking-0.3 bg-blue-black rounded-full  z-50 mxs:z-40  cursor-pointer"
-          style={{ top: winHeight - 45 }}
-          onClick={() => toggleContactForm()}
-        >
-          <StaticImage src="../../images/navbar/speechBubble.svg" alt="Speech bubble" style={{ width: 28 }} />
-          <div className="hidden mxs:block  pl-1.5 pt-1">Contact Us</div>
-        </button>
-      )}
+      {/* {pathname !== "/" && ( */}
+      <button
+        className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-gray-light tracking-0.3 
+                  bg-blue-black rounded-full  z-50 mxs:z-40  cursor-pointer`}
+                  //  ${pathname === "/" ? "bg-blue-black" : "bg-blue-black"}
+        style={{ top: winHeight - 45, boxShadow: "0px 0px 3px #D6D6D6" }} // pill sits higher on homepage
+        onClick={() => toggleContactForm()}
+      >
+        <StaticImage src="../../images/navbar/speechBubble.svg" alt="Speech bubble" style={{ width: 28 }} />
+        <div className="hidden mxs:block  pl-1.5 pt-1">Contact Us</div>
+      </button>
+      {/* )} */}
 
       {/* Footer */}
       <div className={`z-40 mxs:z-50 ${showContactForm ? "fixed w-full bottom-0" : "relative"}`}>
