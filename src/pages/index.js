@@ -17,19 +17,15 @@ const Home = props => {
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
 
   useEffect(() => {
-    // if (typeof window !== `undefined`) 
-    setNoneSelected(true);  // force a refresh
+    if (typeof window === `undefined`) {
+    const timer = setTimeout(() => {
+      console.log("index.js useEffect refresh runs");
+    }, 500);
+    clearTimeout(timer);
+    }
+    setNoneSelected(true); // force a refresh
   }, [setNoneSelected]);
 
-// useEffect(() => {
-//   const timer = setTimeout(() => {
-//     console.log('DetailsOverview.js useEffect runs')
-//     establishContent()
-//   }, 200);
-//   return () => clearTimeout(timer);
-// }, []);
-
-  
   const BrowseButton = props => {
     const { colors } = props;
     return (
