@@ -6,34 +6,34 @@ import LandingText from "../../content/LandingText";
 import ScrollDownIndicator from "./ScrollDownIndicator";
 import wavyLineParams from "../../functions/wavyLineParams";
 
-const Home1TopPanel = (props) => {
+const Home1TopPanel = props => {
   const { BrowseButton } = props;
-  const { widthAdjRatio, winWidth, winHeight, marginOuter, log2 } = useMyContext();
+  const { widthAdjRatio, winHeight, marginOuter, log, log2 } = useMyContext();
+  
+  // Use locally-calculated wid instead of winWidth, so page loads properly 1st time
+  const wid = typeof window !== `undefined` ? window.innerWidth : 1200;
+  log && console.log("Home1TopPanel.js runs. winWidth=", wid, " and winHeight=", winHeight);
 
-  log2 && console.log("Home1TopPanel.js runs. winWidth=", winWidth, " and winHeight=", winHeight);
-
-  let topGap = winWidth < 1366 ? winHeight * 0.01 : winWidth < 1650 ? winHeight * 0.15 : winHeight * 0.2;
-
-  const wid = winWidth;
-  const widFrac =
+  let topGap = wid < 1366 ? winHeight * 0.01 : wid < 1650 ? winHeight * 0.15 : winHeight * 0.2;
+  const widFraction =
     wid < 720 ? 0.85 : wid < 1024 ? 0.78 : wid < 1200 ? 0.72 : wid < 1366 ? 0.65 : wid < 1600 ? 0.445 : 0.4;
-  let titleWidth = winWidth * widFrac;
-  const contentWidth = winWidth - 2 * marginOuter;
+  let titleWidth = wid * widFraction;
+  const contentWidth = wid - 2 * marginOuter;
   if (titleWidth > contentWidth) {
     log2 && console.log("trimming titleWidth from", titleWidth, "to", contentWidth);
     titleWidth = contentWidth;
   }
 
-  const imageWidth = winWidth < 1366 ? 275 + 120 * widthAdjRatio : winWidth - titleWidth;
-  const imageScale = winWidth < 1366 ? 100 : 95;
+  const imageWidth = wid < 1366 ? 275 + 120 * widthAdjRatio : wid - titleWidth;
+  const imageScale = wid < 1366 ? 100 : 95;
   log2 && console.log("Home1TopPanel.js imageWidth=", imageWidth, " & imageScale=", imageScale);
 
-  const buttonTopGap = winWidth < 510 ? 25 : 40;
-  const buttonWidth = winWidth < 510 ? 220 : 322;
-  const buttonHeight = winWidth < 510 ? 36 : 50;
+  const buttonTopGap = wid < 510 ? 25 : 40;
+  const buttonWidth = wid < 510 ? 220 : 322;
+  const buttonHeight = wid < 510 ? 36 : 50;
 
-  const wavyLinePanelHt = winWidth < 1366 ? winHeight - 80 + widthAdjRatio * 40 : winHeight + 20 - 60 / widthAdjRatio;
-  const [xTrans, yTrans, xScale, yScale] = wavyLineParams(widthAdjRatio, winWidth);
+  const wavyLinePanelHt = wid < 1366 ? winHeight - 80 + widthAdjRatio * 40 : winHeight + 20 - 60 / widthAdjRatio;
+  const [xTrans, yTrans, xScale, yScale] = wavyLineParams(widthAdjRatio, wid);
   log2 && console.log("Home1TopPanel.js xTrans=", xTrans, ", yTrans=", yTrans);
   log2 && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
 
@@ -54,7 +54,7 @@ const Home1TopPanel = (props) => {
         style={{ paddingLeft: marginOuter, paddingRight: marginOuter, zIndex: 20 }}
       >
         <div className="order-last lg:order-first">
-          <div style={{ height: winWidth < 1366 ? 15 : topGap }} />
+          <div style={{ height: wid < 1366 ? 15 : topGap }} />
 
           <LandingText titleWidth={titleWidth} />
 
@@ -68,7 +68,7 @@ const Home1TopPanel = (props) => {
         </div>
 
         <div className="mt-10 flex flex-col justify-center items-center" style={{ width: imageWidth }}>
-          {winWidth < 1366 ? (
+          {wid < 1366 ? (
             <StaticImage
               style={{ width: imageScale + "%" }}
               src="../../images/homepage/Home Page Icon Reversed.svg"

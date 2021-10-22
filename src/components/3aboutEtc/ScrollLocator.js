@@ -71,7 +71,7 @@ const ScrollLocator = props => {
               smooth={true}
               duration={600}
             >
-              <LinkBody label="Credits and Collaborator" />
+              <LinkBody label="Credits and Collaborators" />
             </Link>
           </div>
         )}

@@ -19,7 +19,8 @@ const CarouselFeaturedOn = () => {
 
   useEffect(() => {
     setItemsPerPage(
-      winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6
+      // winWidth < 600 ? 1 : winWidth < 800 ? 2 : winWidth < 1024 ? 3 : winWidth < 1400 ? 4 : winWidth < 1700 ? 5 : 6
+      winWidth < 600 ? 1 : winWidth < 900 ? 2 : winWidth < 1366 ? 3 : winWidth < 1920 ? 4 : winWidth < 2500 ? 5 : 6
     );
     setNumPages(featuredOnLogoPaths.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
@@ -66,13 +67,18 @@ const CarouselFeaturedOn = () => {
     );
   };
 
+  // const logoOffset = offsetPercent => {
+  //   return offsetPercent < 100 ? offsetPercent : 0;
+  // };
+
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
 
   return (
     <>
       <Carousel
         ref={carouselRefFeaturedOn}
-        className="w-full sm:mx-40  mt-4"
+        className="w-full  mt-10 mb-6"
+        // className="w-full sm:mx-40  mt-4"
         itemsToShow={itemsPerPage}
         showArrows={true}
         enableAutoPlay={true}
@@ -95,9 +101,11 @@ const CarouselFeaturedOn = () => {
           log2 && console.log("CarouselFeaturedOn.js .map currLogo.URL=", currLogo.URL);
 
           return (
-            <button
+            <div
               key={indx}
-              className={`mx-6 flex items-center ${currLogo.URL && "cursor-pointer"}`}
+              className={`mx-3 flex items-center h-30  ${currLogo.URL === "" ? "" : "cursor-pointer"}`}
+              role="link"
+              tabIndex={indx}
               onClick={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
               onKeyPress={() => currLogo.URL && window.open(currLogo.URL, "_blank")}
             >
@@ -106,9 +114,23 @@ const CarouselFeaturedOn = () => {
                   return (
                     <div key={index}>
                       {item.node.childImageSharp !== null ? (
-                        <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt={currLogo.alt} />
+                        <GatsbyImage
+                          image={item.node.childImageSharp.gatsbyImageData}
+                          alt={currLogo.alt}
+                          style={{
+                            width: currLogo.scalePercent + "%",
+                            transform: `translate(${currLogo.offsetPercent}%, 0%)`,
+                          }}
+                        />
                       ) : (
-                        <img src={item.node.publicURL} alt={currLogo.alt} />
+                        <img
+                          src={item.node.publicURL}
+                          alt={currLogo.alt}
+                          style={{
+                            width: currLogo.scalePercent + "%",
+                            transform: `translate(${currLogo.offsetPercent}%, 0%)`,
+                          }}
+                        />
                       )}
                     </div>
                   );
@@ -116,7 +138,7 @@ const CarouselFeaturedOn = () => {
                   return null;
                 }
               })}
-            </button>
+            </div>
           );
         })}
       </Carousel>

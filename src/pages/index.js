@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import { animateScroll } from "react-scroll";
 
@@ -16,6 +16,20 @@ const Home = props => {
 
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
 
+  useEffect(() => {
+    // if (typeof window !== `undefined`) 
+    setNoneSelected(true);  // force a refresh
+  }, [setNoneSelected]);
+
+// useEffect(() => {
+//   const timer = setTimeout(() => {
+//     console.log('DetailsOverview.js useEffect runs')
+//     establishContent()
+//   }, 200);
+//   return () => clearTimeout(timer);
+// }, []);
+
+  
   const BrowseButton = props => {
     const { colors } = props;
     return (
@@ -70,7 +84,7 @@ export const query = graphql`
           relativePath
           sourceInstanceName
           childImageSharp {
-            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 210)
+            gatsbyImageData(formats: AUTO, quality: 90, placeholder: BLURRED, layout: CONSTRAINED, height: 120)
           }
           publicURL
         }
@@ -83,7 +97,7 @@ export const query = graphql`
           relativePath
           sourceInstanceName
           childImageSharp {
-            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 64)
+            gatsbyImageData(formats: AUTO, placeholder: BLURRED)
           }
           publicURL
         }
