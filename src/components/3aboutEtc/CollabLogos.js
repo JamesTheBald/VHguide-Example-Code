@@ -6,10 +6,10 @@ import logoContent from "../../content/logoContent";
 
 const CollabLogos = props => {
   const { size } = props;
-  let { widthAdjRatio, queryData } = useMyContext();
+  let { widthAdjRatio, queryData, log2 } = useMyContext();
 
   const collabLogos = queryData.current.collabLogos.edges;
-  console.log("CollabLogos.js collabLogos=", collabLogos);
+  log2 && console.log("CollabLogos.js collabLogos=", collabLogos);
 
   // For Flex layout
   const margins = "mr-auto axs:mr-10 mxs:mr-16 sm:mr-20 md:mr-24  mb-10 mxs:mb-14";

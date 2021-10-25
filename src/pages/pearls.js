@@ -8,11 +8,11 @@ import { pearlsContent } from "../content/pearlsContent";
 
 const Pearls = props => {
   const { location, data } = props;
-  const { queryData } = useMyContext();
+  const { queryData, log } = useMyContext();
   queryData.current = data;
 
   const path = location.pathname;
-  console.log("pearls.js runs. path=", path);
+  log && console.log("pearls.js runs. path=", path);
 
   return (
     <AboutEtc

@@ -12,7 +12,6 @@ const AdviceFullStory = props => {
 
   const pplIcons = queryData.current.pplIcons.edges;
   log && console.log("AdviceFullStory.js pplIconsData=", pplIcons);
-  log && console.log("AdviceFullStory.js story=", story);
 
   let story = {};
   let validData = true;

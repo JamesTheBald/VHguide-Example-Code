@@ -1,5 +1,4 @@
 const wavyLineParams = (widthAdjRatio, winWidth) => {
-
   // console.log("wavyLineParams.js widthAdjRatio=", widthAdjRatio, ",winWidth=", winWidth);
 
   let xTrans;
@@ -28,19 +27,22 @@ const wavyLineParams = (widthAdjRatio, winWidth) => {
     xScale = -1.2;
     yScale = 1.25;
   } else if (winWidth < 1920) {
-    xTrans = 30;
-    yTrans = 460 - 500 * widthAdjRatio;
-    xScale = 1.1;
-    yScale = 0.95;
+    xTrans = 0;
+    yTrans = 200 + 444*1.15 - 444 * widthAdjRatio;
+    // want yTrans = 200 at 1380px (widthAdjRatio = 1.15)
+    // want yTrans = 0   at 1900px (widthAdjRatio = 1.6)
+    // So multiplier is 200/(1.6-1.15) = 444
+    xScale = 1;
+    yScale = 1;
   } else if (winWidth < 2300) {
-    xTrans = 120;
-    yTrans = -20;
-    xScale = 1.3;
+    xTrans = 50;
+    yTrans = 0;
+    xScale = 1.25;
     yScale = 1;
   } else {
     xTrans = 160;
     yTrans = 0;
-    xScale = 1.6;
+    xScale = 1.4;
     yScale = 1;
   }
 

@@ -7,7 +7,7 @@ export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
 
-  const log = true;
+  const log = false;
   const log2 = false;
   log && console.log("Context.js runs.");
   
@@ -17,7 +17,7 @@ const MyProvider = ({ children }) => {
 
   const { winWidth, winHeight } = useWindowSize();
 
-  const marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 50 : winWidth < 1600 ? 100 : 150;
+  const marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
   log && console.log("Context.js marginOuter=", marginOuter);
 
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);

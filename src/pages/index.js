@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, graphql } from "gatsby";
 import { animateScroll } from "react-scroll";
 
@@ -16,15 +16,15 @@ const Home = props => {
 
   const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
 
-  useEffect(() => {
-    if (typeof window === `undefined`) {
-    const timer = setTimeout(() => {
-      console.log("index.js useEffect refresh runs");
-    }, 500);
-    clearTimeout(timer);
-    }
-    setNoneSelected(true); // force a refresh
-  }, [setNoneSelected]);
+  // useEffect(() => {
+  //   while (typeof window === `undefined`) {
+  //     const timer = setTimeout(() => {
+  //       console.log("index.js useEffect - waiting for window var to be defined");
+  //     }, 200);
+  //     clearTimeout(timer);
+  //     setNoneSelected(true); // force a refresh
+  //   }
+  // }, [setNoneSelected]);
 
   const BrowseButton = props => {
     const { colors } = props;

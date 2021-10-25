@@ -7,10 +7,10 @@ import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
 const Home3WhoWeAre = props => {
   const { topGap } = props;
-  const { winWidth, marginOuter, queryData } = useMyContext();
+  const { winWidth, marginOuter, queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
-  console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
+  log && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
 
   const bioWidth =
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
@@ -35,7 +35,7 @@ const Home3WhoWeAre = props => {
                         items-center sm:items-start justify-between md:justify-around  text-center"
         >
           {landingBioContent.map((currBio, indx) => {
-            console.log("Home3WhoWeAre.js .map() currBio=", currBio);
+            log2 && console.log("Home3WhoWeAre.js .map() currBio=", currBio);
 
             return (
               <div key={indx} style={{ width: bioWidth }}>

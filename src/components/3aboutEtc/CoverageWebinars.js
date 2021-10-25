@@ -6,10 +6,10 @@ import { useMyContext } from "../../context/Context";
 import coverage from "../../content/featuredOnContent";
 
 const CoverageWebinars = ({ className }) => {
-  let { queryData } = useMyContext();
+  let { queryData, log2 } = useMyContext();
 
   const webinarShots = queryData.current.webinarShots.edges;
-  console.log("CoverageWebinars.js webinarShots=", webinarShots);
+  log2 && console.log("CoverageWebinars.js webinarShots=", webinarShots);
 
   return (
     <div
@@ -18,8 +18,6 @@ const CoverageWebinars = ({ className }) => {
                         baseFont text-blue-black  ${className}`}
     >
       {coverage.webinars.map((currCoverage, index) => {
-        console.log("CoverageWebinars.js currCoverage key for index", index, "=", currCoverage.title);
-
         return (
           <div key={currCoverage.title} className="">
             <a
@@ -30,20 +28,18 @@ const CoverageWebinars = ({ className }) => {
               target="_blank"
             >
               {webinarShots.map((item, indx) => {
-                console.log("CoverageWebinars.js webinarShots key for index", indx, "=", item.node.relativePath+index);
-
                 return (
-                  <>
+                  <div key={item.node.relativePath}>
+                  {/* <div key={item.node.relativePath + index}> */}
                     {item.node.relativePath === currCoverage.snapshot && (
                       <GatsbyImage
-                        key={item.node.relativePath+index}
                         image={item.node.childImageSharp.gatsbyImageData}
                         alt="Video snapshot"
                         className="object-contain"
                         style={{ gridArea: "area1" }}
                       />
                     )}
-                  </>
+                  </div>
                 );
               })}
 

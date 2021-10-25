@@ -9,7 +9,7 @@ import { RiCopyrightLine } from "react-icons/ri";
 const Footer = () => {
   const { showContactForm, winWidth, winHeight, widthAdjRatio, setNavBarOpen, setShowContactForm } = useMyContext();
 
-  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  // const pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
   const rightGap = 100 * widthAdjRatio;
   const widthFormModal = winWidth > 800 ? 500 : 400;

@@ -6,7 +6,7 @@ module.exports = {
       "A guide to help primary care clinicians identify types of COVID-19 vaccine hesitancy. Advice and resources for addressing them.",
     url: "https://www.vhguide.ca", // No trailing slash allowed!
     keywords: `vaccine, vaccination, hesitancy, covid, COVID-10, anti-vax, conversations, misinformation, clinician, advice`,
-    image: "/images/homePage/Home Page Icon.svg", // Path to your image you placed in the 'static' folder
+    image: "/images/homePage/Home Page graphic.svg", // Path to your image you placed in the 'static' folder
   },
 
   flags: {

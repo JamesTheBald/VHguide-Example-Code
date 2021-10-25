@@ -15,7 +15,6 @@ const CarouselFeaturedOn = () => {
   const [numPages, setNumPages] = useState(1);
 
   const featuredOnLogos = queryData.current.featuredOnLogos.edges;
-  console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
 
   useEffect(() => {
     setItemsPerPage(
@@ -71,6 +70,7 @@ const CarouselFeaturedOn = () => {
   //   return offsetPercent < 100 ? offsetPercent : 0;
   // };
 
+  log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
 
   return (
