@@ -8,12 +8,12 @@ export default function useWindowSize() {
   let height;
   let width;
 
-  while (typeof window === `undefined`) {
-    const timer = setTimeout(() => {
-      log2 && console.log("useWindowSize.js - waiting to set window width.");
-    }, 200);
-    clearTimeout(timer);
-  }
+  // while (typeof window === `undefined`) {
+  //   const timer = setTimeout(() => {
+  //     log2 && console.log("useWindowSize.js - waiting to set window width.");
+  //   }, 200);
+  //   clearTimeout(timer);
+  // }
 
   if (typeof window !== `undefined`) {
     height = window.innerHeight;

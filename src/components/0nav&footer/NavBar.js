@@ -1,5 +1,5 @@
-import React from "react";
-// import React, { useState, useEffect } from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import { navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
@@ -25,19 +25,19 @@ const NavBar = () => {
     log2
   } = useMyContext();
 
-  // const [refresher, setRefresher] = useState(false);
-  // false && console.log(refresher);
+  const [refresher, setRefresher] = useState(false);
+  false && console.log(refresher);
 
-  // useEffect(() => {
-  //   while (typeof window === `undefined`) {
-  //     const timer = setTimeout(() => {
-  //       log && console.log("NavBar.js useEffect - waiting to refresh.");
-  //     }, 200);
-  //     clearTimeout(timer);
-  //     setRefresher(true); // force a refresh
-  //     setRefresher(false);
-  //   }
-  // }, [log, setNoneSelected]);
+  useEffect(() => {
+    while (typeof window === `undefined`) {
+      const timer = setTimeout(() => {
+        log && console.log("NavBar.js useEffect - waiting to refresh.");
+      }, 200);
+      clearTimeout(timer);
+      setRefresher(true); // force a refresh
+      setRefresher(false);
+    }
+  }, [log, setNoneSelected]);
 
   const onClickGo = (evnt, destn) => {
     if (destn === "/explore") {
