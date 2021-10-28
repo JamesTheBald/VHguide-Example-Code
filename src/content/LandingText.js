@@ -1,11 +1,14 @@
 import React from "react";
-// import { useMyContext } from "../../context/Context";
+
+import { useMyContext } from "../context/Context";
 import { Link } from "gatsby";
 import ScrollDownIndicator from "../components/1home&explore/ScrollDownIndicator";
 
 const LandingText = props => {
   const { titleWidth } = props;
-  // const { winWidth } = useMyContext();
+  const { log } = useMyContext();
+
+  log && console.log("LandingText.js titleWidth=", titleWidth);
 
   const gapTitleToSubtitle = 25;
   const subtitleFont = "text-14 mxs:text-16 md:text-18  tracking-0.3 md:tracking-0.4";
@@ -16,7 +19,7 @@ const LandingText = props => {
         <h1
           className="titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-70  whitespace-normal
                      tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4"
-          style={{ width: 1.0 * titleWidth }}
+          style={{ width: titleWidth }}
         >
           Are your patients hesitant about getting a COVID-19 vaccine?
         </h1>
@@ -25,7 +28,7 @@ const LandingText = props => {
 
         <ScrollDownIndicator additionalClass={"mxs:hidden"} />
 
-        <div className={subtitleFont} style={{ width: titleWidth }} >
+        <div className={subtitleFont} style={{ width: titleWidth }}>
           <header>
             The Vaccine Hesitancy Guide was built to support better conversations about vaccines. It differentiates
             common types of vaccine hesitancy that primary care clinicians may see. Browse through these types to help

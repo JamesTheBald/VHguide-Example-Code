@@ -9,22 +9,22 @@ const wavyLineParams = (widthAdjRatio, winWidth) => {
   if (winWidth < 510) {
     xTrans = 0;
     yTrans = 80;
-    xScale = -1.5;
+    xScale = 1.5;
     yScale = 2.2;
   } else if (winWidth < 720) {
     xTrans = 0;
     yTrans = 80;
-    xScale = -1.5;
+    xScale = 1.5;
     yScale = 2;
   } else if (winWidth < 1024) {
     xTrans = 0;
     yTrans = 80;
-    xScale = -1.2;
+    xScale = 1.2;
     yScale = 1.4;
   } else if (winWidth < 1366) {
     xTrans = -80;
     yTrans = -40;
-    xScale = -1.2;
+    xScale = 1.2;
     yScale = 1.25;
   } else if (winWidth < 1920) {
     xTrans = 0;

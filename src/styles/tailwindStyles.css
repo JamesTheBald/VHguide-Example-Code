@@ -4,6 +4,14 @@
 
 @layer components {
 
+  .stdMargins {
+    @apply px-6 mxs:px-12 sm:px-18 md:px-28 mxl:px-36
+  }
+
+  .divider { 
+    @apply mb-4 mxs:mb-4  w-25 mxs:w-32 sm:w-40  h-6 mxs:h-7  border-solid border-b-2 border-blue-black
+  }
+
   .orangeLink {
     @apply text-yellow-darkish  cursor-pointer
   }

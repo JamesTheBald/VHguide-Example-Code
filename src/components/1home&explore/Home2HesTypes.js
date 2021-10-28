@@ -4,8 +4,9 @@ import VideoSnapshotHome from "./VideoSnapshotHome";
 import { useMyContext } from "../../context/Context";
 
 const Home2HesTypes = props => {
-  const { topGap, BrowseButton } = props;
-  const { winWidth, marginOuter } = useMyContext();
+  const { topGap2, BrowseButton } = props;
+  const { winWidth } = useMyContext();
+  // const { winWidth, marginOuter } = useMyContext();
 
   const buttonWidthMax = winWidth < 510 ? 220 : 322;
   const buttonHeight = winWidth < 510 ? 36 : 50;
@@ -39,8 +40,8 @@ const Home2HesTypes = props => {
 
   return (
     <>
-      <div className={`w-full text-gray-light`} style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}>
-        <div style={{ height: topGap }} />
+      <div className={`w-full stdMargins text-gray-light`}>
+        <div style={{ height: topGap2 }} />
         <div className="w-full relative xl:flex justify-center">
           <div
             className="w-full sm:w-5/6 xl:w-300 pt-1 mxs:pt-3 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black  border-3

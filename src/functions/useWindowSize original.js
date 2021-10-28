@@ -8,13 +8,6 @@ export default function useWindowSize() {
   let height;
   let width;
 
-  // while (typeof window === `undefined`) {
-  //   const timer = setTimeout(() => {
-  //     log2 && console.log("useWindowSize.js - waiting to set window width.");
-  //   }, 200);
-  //   clearTimeout(timer);
-  // }
-
   if (typeof window !== `undefined`) {
     height = window.innerHeight;
     width = window.innerWidth;
@@ -47,7 +40,7 @@ export default function useWindowSize() {
     }, 300);
     window.addEventListener(`resize`, debouncedHandleResize);
     return () => window.removeEventListener(`resize`, debouncedHandleResize);
-  }, [log2]);
+  }, [log2, setWindowSize]);
 
   return windowSize;
 }

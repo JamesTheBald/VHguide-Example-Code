@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import CollabLogos from "./CollabLogos";
 
 const Credits = () => {
-
   const lineClass = "flex flex-col sm:flex-row";
   const roleClass = "w-48 sm:w-56 flex-shrink-0";
   const nameClass = "ml-3 mb-3 font-semibold";
@@ -47,10 +46,8 @@ const Credits = () => {
         </div>
       </div>
 
-      <div className="mt-24">
-        <div className="panelTitleClass">Collaborators</div>
-        <CollabLogos size={"big"} />
-      </div>
+      <div className="mt-24 panelTitleClass">Collaborators</div>
+      <CollabLogos />
     </article>
   );
 };

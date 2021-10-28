@@ -37,9 +37,9 @@ const TabBarOAR = () => {
   const lastSegment = urlAsArray.pop();
   const secondLastSegment = urlAsArray.pop();
 
-  log && console.log("TabBarOAR.js url=", url);
-  log && console.log("TabBarOAR.js lastSegment=", lastSegment);
-  log && console.log("TabBarOAR.js secondLastSegment=", secondLastSegment);
+  log2 && console.log("TabBarOAR.js url=", url);
+  log2 && console.log("TabBarOAR.js lastSegment=", lastSegment);
+  log2 && console.log("TabBarOAR.js secondLastSegment=", secondLastSegment);
 
   let tabName;
   if (lastSegment === "overview" || lastSegment === "resources") {
@@ -50,7 +50,7 @@ const TabBarOAR = () => {
     tabName = "overview";
     log && console.log("TabBarOAR.js No match to URL param so setting tabName=", tabName);
   }
-  log && console.log("TabBarOAR.js OAR tabName=", tabName);
+  log2 && console.log("TabBarOAR.js OAR tabName=", tabName);
 
   const oarTabs = ["overview", "advice", "resources"];
 

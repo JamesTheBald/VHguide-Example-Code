@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import { animateScroll } from "react-scroll";
 
@@ -11,20 +11,28 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { winWidth, setNavBarOpen, setNoneSelected, showContactForm, queryData } = useMyContext();
+  const { winWidth, setWinWidth, setWinHeight, setNavBarOpen, setNoneSelected, showContactForm, queryData } =
+    useMyContext();
   queryData.current = data;
 
-  const topGap = winWidth < 510 ? 110 : winWidth < 720 ? 130 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200;
+  const [topGap2, setTopGap2] = useState(
+    winWidth < 510 ? 110 : winWidth < 720 ? 180 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200
+  );
 
-  // useEffect(() => {
-  //   while (typeof window === `undefined`) {
-  //     const timer = setTimeout(() => {
-  //       console.log("index.js useEffect - waiting for window var to be defined");
-  //     }, 200);
-  //     clearTimeout(timer);
-  //     setNoneSelected(true); // force a refresh
-  //   }
-  // }, [setNoneSelected]);
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      const wid = window.innerWidth;
+      console.log("index.js useEffect has mounted, window var is defined. Setting winWidth, winHeight & topGap2.");
+      setWinWidth(wid);
+      setWinHeight(window.innerHeight);
+      setTopGap2(wid < 510 ? 130 : wid < 720 ? 140 : wid < 1024 ? 150 : wid < 1366 ? 180 : 200);
+    } else {
+      console.log("index.js HAS MOUNTED BUT WINDOW VAR IS STILL UNDEFINED!! Trying again after delay.");
+      const timer = setTimeout(setWinWidth(window.innerWidth), 500);
+      // The above use of window.innerWidth will kick an error if window var is STILL undefined after timeout
+      clearTimeout(timer);
+    }
+  }, [setWinWidth, setWinHeight]);
 
   const BrowseButton = props => {
     const { colors } = props;
@@ -50,9 +58,9 @@ const Home = props => {
     <>
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
-        <Home2HesTypes topGap={topGap} BrowseButton={BrowseButton} />
-        <Home3WhoWeAre topGap={topGap} />
-        <Home4TestimonialsEtc topGap={topGap} />
+        <Home2HesTypes topGap2={topGap2} BrowseButton={BrowseButton} />
+        <Home3WhoWeAre topGap2={topGap2} />
+        <Home4TestimonialsEtc topGap2={topGap2} />
         <div className="w-full h-30 md:h-40 xl:h-50"></div>
       </main>
     </>
@@ -92,9 +100,6 @@ export const query = graphql`
           dir
           relativePath
           sourceInstanceName
-          childImageSharp {
-            gatsbyImageData(formats: AUTO, placeholder: BLURRED)
-          }
           publicURL
         }
       }

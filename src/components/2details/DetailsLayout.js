@@ -9,7 +9,8 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 
 const DetailsLayout = props => {
   const { hesitTypeName, related } = props;
-  const { widthAdjRatio, marginOuter, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
+  const { widthAdjRatio, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
+  // const { widthAdjRatio, marginOuter, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
@@ -48,7 +49,9 @@ const DetailsLayout = props => {
 
   return (
     <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>
-      <div className="text-blue-main" style={{ marginLeft: marginOuter, marginRight: marginOuter }}>
+      <div className="text-blue-main stdMargins" 
+      // style={{ marginLeft: marginOuter, marginRight: marginOuter }}
+      >
         <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
         </button>

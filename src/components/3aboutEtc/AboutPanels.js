@@ -7,10 +7,10 @@ import Credits from "./Credits";
 
 const AboutPanels = props => {
   const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
-  const { winWidth, scrollTarget, log,log2 } = useMyContext();
+  const { winWidth, scrollTarget, log, log2 } = useMyContext();
 
   log2 && console.log("");
-  log2 && console.log("AboutPanels.js runs. path=", path);
+  log && console.log("AboutPanels.js runs. path=", path);
   log && console.log("AboutPanel.js contentArray=", contentArray);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const AboutPanels = props => {
               {index === 0 && <div className="w-full" style={{ height: yPosnPanel - 24 }} />}
               {index === 0 && winWidth > 1920 && <div className="w-full" style={{ height: yDistTitleFromTop }} />}
               <div className={panelBaseClass} style={{ columnStyle }}>
-                {path === "/pearls" && (
+                {path.match(/pearls/i) && (
                   <>
                     <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
                       {currPanel.title}
@@ -55,8 +55,8 @@ const AboutPanels = props => {
                     <QuoteGroup quoteGroup={currPanel.content} />
                   </>
                 )}
-                {(path === "/about" || path === "/terms") && <div className="panelTextClass">{currPanel.content}</div>}
-
+                {!path.match(/pearls/i) && <div className="panelTextClass">{currPanel.content}</div>}
+                {/* {(path === "/about" || path === "/terms") && <div className="panelTextClass">{currPanel.content}</div>} */}
               </div>
               <div style={{ height: yGapBetweenPanels }} />
             </Element>
@@ -64,7 +64,7 @@ const AboutPanels = props => {
         );
       })}
 
-      {path === "/about" && (
+      {path.match(/about/i) && (
         <div>
           <Element name="Credits">
             <div className={panelBaseClass}>
@@ -75,7 +75,7 @@ const AboutPanels = props => {
         </div>
       )}
 
-      <div style={{ height: 600 }} />
+      {path.match(/terms/i) ? <div style={{ height: 700 }} /> : <div style={{ height: 300 }} />}
     </>
   );
 };

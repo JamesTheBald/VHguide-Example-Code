@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import AboutEtc from "../components/3aboutEtc/AboutEtc";
@@ -7,7 +7,14 @@ import { useMyContext } from "../context/Context";
 
 const Terms = props => {
   const { location } = props;
-  const { log, log2 } = useMyContext();
+  const { setWinWidth, setWinHeight, log, log2 } = useMyContext();
+
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setWinWidth(window.innerWidth);
+      setWinHeight(window.innerHeight);
+    }
+  }, [setWinWidth, setWinHeight]);
 
   const path = location.pathname;
   log && console.log("terms.js runs. path=", path);

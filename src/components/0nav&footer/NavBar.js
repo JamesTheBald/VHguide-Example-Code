@@ -1,5 +1,6 @@
 // import React from "react";
-import React, { useState, useEffect } from "react";
+import React from "react";
+// import React, { useState, useEffect } from "react";
 import { navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
@@ -22,22 +23,7 @@ const NavBar = () => {
     setNavBarOpen,
     setShowContactForm,
     log,
-    log2
   } = useMyContext();
-
-  const [refresher, setRefresher] = useState(false);
-  false && console.log(refresher);
-
-  useEffect(() => {
-    while (typeof window === `undefined`) {
-      const timer = setTimeout(() => {
-        log && console.log("NavBar.js useEffect - waiting to refresh.");
-      }, 200);
-      clearTimeout(timer);
-      setRefresher(true); // force a refresh
-      setRefresher(false);
-    }
-  }, [log, setNoneSelected]);
 
   const onClickGo = (evnt, destn) => {
     if (destn === "/explore") {
@@ -76,14 +62,8 @@ const NavBar = () => {
 
   const bgColor = "bg-blue-black";
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-
-  let bord = "border-b-2";
-  if (pathname !== "/") {
-    bord = "";
-  }
-  // bord = pathname !== "/" ? "" : "border-b-2";
-
-  log2 && console.log("NavBar.js pathname=", pathname, " so border= ", bord);
+  const bord = pathname !== "/" ? "" : "border-b-2";
+  log && console.log("NavBar.js pathname=", pathname, " so border= ", bord);
 
   const marginLeftIcon = 38 * widthAdjRatio;
   const hesitancyDropDownClass = "py-3  text-left  border-gray-light  text-14 tracking-0.4 cursor-pointer";

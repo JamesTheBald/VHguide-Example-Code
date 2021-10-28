@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
@@ -7,20 +7,21 @@ import AboutEtc from "../components/3aboutEtc/AboutEtc";
 import { pearlsContent } from "../content/pearlsContent";
 
 const Pearls = props => {
-  const { location, data } = props;
-  const { queryData, log } = useMyContext();
-  queryData.current = data;
+  const { location, data } = props; // Gatsby pages receive a location object upon loading
+  const { setWinWidth, setWinHeight, queryData, log } = useMyContext();
 
+  queryData.current = data;
   const path = location.pathname;
   log && console.log("pearls.js runs. path=", path);
 
-  return (
-    <AboutEtc
-      pageTitle="Clinical Pearls"
-      path={path}
-      contentArray={pearlsContent}
-    />
-  );
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setWinWidth(window.innerWidth);
+      setWinHeight(window.innerHeight);
+    }
+  }, [setWinWidth, setWinHeight]);
+
+  return <AboutEtc pageTitle="Clinical Pearls" path={path} contentArray={pearlsContent} />;
 };
 
 export const query = graphql`

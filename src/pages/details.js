@@ -17,18 +17,16 @@ import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
 const Details = props => {
   const { data } = props;
-  const { locn, fullStoryID, setFullStoryID, setNavBarOpen, queryData, log, log2 } = useMyContext();
+  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, setNavBarOpen, queryData, log, log2 } =
+    useMyContext();
   queryData.current = data;
 
-  // useEffect(() => {
-  //   while (typeof window === `undefined`) {
-  //     const timer = setTimeout(() => {
-  //       console.log("details.js useEffect - waiting for window var to be defined");
-  //     }, 200);
-  //     clearTimeout(timer);
-  //     setNoneSelected(true); // force a refresh
-  //   }
-  // }, [setNoneSelected]);
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setWinWidth(window.innerWidth);
+      setWinHeight(window.innerHeight);
+    }
+  }, [setWinWidth, setWinHeight]);
 
   const [contentID, setContentID] = useState();
   const [hesitTypeName, setHesitTypeName] = useState();

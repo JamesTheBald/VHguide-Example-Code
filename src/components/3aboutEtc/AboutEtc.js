@@ -12,49 +12,35 @@ const AboutEtc = props => {
   log && console.log("AboutEtc.js path=", path);
   log && console.log("AboutEtc.js contentArray=", contentArray);
 
-  const outerMargin = winWidth < 510 ? 25 : winWidth < 1024 ? 50 : 100;
   const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
-  const gapBelowTitle = winWidth < 720 ? 25 : 40;
+  const paddingBelowTitle = winWidth < 720 ? 25 : 32;
   const heightOfTitle = 60 - 15; // height of single line spacing at 40pt font, less 15px of 'apparent' bottom padding (there to accommodate descending letters)
-  const yPosnScrollLocator =
-    winWidth <= 720 ? 12 : winWidth < 1920 ? 8 : navBarHeight + yDistTitleFromTop + heightOfTitle + gapBelowTitle;
 
+  const yPosnScrollLocator =
+    winWidth <= 720 ? 12 : winWidth < 1920 ? 8 : navBarHeight + yDistTitleFromTop + heightOfTitle + paddingBelowTitle;
   const yPosnPanel =
-    winWidth <= 720 ? gapBelowTitle + 10 : winWidth < 1920 ? gapBelowTitle + 20 : heightOfTitle + gapBelowTitle;
-  // Spacing of yDistTitleFromTop moved to top of first panel. (See AboutPanels.js)
+    winWidth <= 720 ? paddingBelowTitle + 10 : winWidth < 1920 ? paddingBelowTitle + 20 : heightOfTitle + paddingBelowTitle;
 
   log2 && console.log("AboutEtc.js yDistTitleFromTop=", yDistTitleFromTop);
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
       <div className={`xl:flex xl:flex-row relative}`}>
-        {/* Narrower screens */}
-        <div
-          name="Title and Scroll Locator for Non-Wide Screens (<1920px)"
-          className="xl:hidden  w-full"
-          style={{ marginTop: yDistTitleFromTop, paddingLeft: outerMargin, paddingRight: outerMargin }}
-        >
+        {/* Title and Scroll Locator for Narrower Screens (<1920px) */}
+        <div className="xl:hidden stdMargins w-full" style={{ marginTop: yDistTitleFromTop }}>
           <h1 className="titleFont titleMedium">{pageTitle}</h1>
           {path === "/pearls" && <PearlsPreface />}
         </div>
 
         <div
-          className="xl:hidden  sticky  top-18  w-full bg-white  z-30"
-          style={{
-            paddingTop: gapBelowTitle,
-            paddingLeft: outerMargin, // Need padding specified here so panels are covered properly when scrolling
-            paddingRight: outerMargin,
-          }}
+          className="xl:hidden stdMargins  sticky top-18 w-full bg-white  z-30"
+          style={{ paddingTop: paddingBelowTitle }}
         >
           <ScrollLocator path={path} contentArray={contentArray} />
         </div>
 
-        {/* WIDE Screens (1920px and wider) */}
-        <div
-          name="Title and Scroll Locator for WIDE Screens (1920px and wider)"
-          className="hidden xl:flex xl:flex-col flex-shrink-0"
-          style={{ marginLeft: outerMargin }}
-        >
+        {/* Title and Scroll Locator for WIDE Screens (1920px and wider) */}
+        <div className="hidden stdMargins pr-0  xl:flex xl:flex-col flex-shrink-0">
           <h1 className="fixed titleFont titleMedium z-30" style={{ marginTop: yDistTitleFromTop }}>
             {pageTitle}
           </h1>
@@ -78,15 +64,7 @@ const AboutEtc = props => {
         </div>
 
         {/* Panel */}
-        <div
-          name="Panel bounding container"
-          id={pageTitle}
-          className="spacerFooter relative z-10"
-          style={{
-            marginLeft: outerMargin,
-            marginRight: outerMargin,
-          }}
-        >
+        <div id={pageTitle} className="stdMargins spacerFooter relative z-10">
           <AboutPanels
             path={path}
             contentArray={contentArray}

@@ -15,7 +15,7 @@ const PillsAndTrees = props => {
   log2 && console.log("PillsAndTrees.js noneSelected=", noneSelected);
 
   const mixedStackBreakPt = 1444;
-  const minRowWidth = 1800;
+  const minRowWidth = 1920;
   const xGap = 50;
   let pillWidthWide;
   let pillWidthNarrow;

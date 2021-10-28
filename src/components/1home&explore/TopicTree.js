@@ -42,12 +42,12 @@ const TopicTree = props => {
 
   const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
   const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
-  const insideMargin = 50 * widthAdjRatio;
-  // const rightPadding = insideMargin;
-  // const rightPadding = (30 * (widthAdjRatio + 1)) / 2;
+  const insideMargin = 15 + 20 * (widthAdjRatio - 0.3125);
   const bottomPadding = winWidth < 510 ? 40 : 58;
   const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
   const leftGapToLine = winWidth < 510 ? 10 * widthAdjRatio : (15 * (widthAdjRatio + 1)) / 2;
+
+  log2 && console.log("TopicTree.js insideMargin=", insideMargin);
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;

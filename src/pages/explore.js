@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 
 const Explore = () => {
-  const { marginOuter, showContactForm, log } = useMyContext();
+  const { setWinWidth, setWinHeight, showContactForm, log } = useMyContext();
 
   log && console.log("Explore.js runs.");
+
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setWinWidth(window.innerWidth);
+      setWinHeight(window.innerHeight);
+    }
+  }, [setWinWidth, setWinHeight]);
 
   const maxStackedWidth = 720;
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
-      <main className="spacerFooter" style={{ marginLeft: marginOuter, marginRight: marginOuter, marginBottom: 1 }}>
+      <main
+        className="spacerFooter stdMargins"
+        style={{ marginBottom: 1 }}
+        // style={{ marginLeft: marginOuter, marginRight: marginOuter, marginBottom: 1 }}
+      >
         {/* marginBottom=1 in above style is to force scrollbar on, to be consistent with other pages */}
 
         <div name="spacer to prevent top margin collapse" className="h-16" />

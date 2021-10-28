@@ -1,23 +1,26 @@
 import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 import { branch } from "../content/branch";
-import useWindowSize from "../functions/useWindowSize";
+import WindowSizeListener from "./WindowSizeListener";
 
 export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-
-  const log = false;
+  const log = true;
   const log2 = false;
   log && console.log("Context.js runs.");
-  
-  // const pathname = typeof window !== "undefined" && window.location.pathname;
-  const nomScreenWidth = 1200;
+
+  const nomScreenWidth = 720;
   const navBarHeight = 80; // in pixels
 
-  const { winWidth, winHeight } = useWindowSize();
-
-  const marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
+  const [winWidth, setWinWidth] = useState(nomScreenWidth);
+  const [winHeight, setWinHeight] = useState(nomScreenWidth*9/16);
+  WindowSizeListener(setWinWidth, setWinHeight);
+  
+  let marginOuter = 50;
+  if (typeof window !== `undefined` && winWidth > 100)
+    marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
+  // Be sure that values for marginOuter correspond with those of stdMargins in /styles/tailwindStyles.css
   log && console.log("Context.js marginOuter=", marginOuter);
 
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);
@@ -25,6 +28,7 @@ const MyProvider = ({ children }) => {
     setWidthAdjRatio(winWidth / nomScreenWidth);
     log && console.log("Context.js useEffect runs. Setting WidthAdjRatio=", winWidth / nomScreenWidth);
   }, [winWidth, log]);
+
   const [showContactForm, setShowContactForm] = useState(false);
 
   const [locn, setLocn] = useState({
@@ -41,7 +45,6 @@ const MyProvider = ({ children }) => {
 
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
   const contextValues = {
-    // pathname: pathname,
     winWidth: winWidth,
     winHeight: winHeight,
     widthAdjRatio: widthAdjRatio,
@@ -54,6 +57,8 @@ const MyProvider = ({ children }) => {
     fullStoryID: fullStoryID,
     navBarOpen: navBarOpen,
     noneSelected: noneSelected,
+    setWinWidth: setWinWidth,
+    setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,

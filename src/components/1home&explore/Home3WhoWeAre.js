@@ -6,8 +6,8 @@ import { landingBioContent } from "../../content/landingBioContent";
 import LinkToAboutCredits from "../../content/LinkToAboutCredits";
 
 const Home3WhoWeAre = props => {
-  const { topGap } = props;
-  const { winWidth, marginOuter, queryData, log, log2 } = useMyContext();
+  const { topGap2 } = props;
+  const { winWidth, queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
   log && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
@@ -17,13 +17,10 @@ const Home3WhoWeAre = props => {
 
   return (
     <>
-      <section
-        className={`w-full flex flex-col items-center  text-blue-black`}
-        style={{ paddingLeft: marginOuter, paddingRight: marginOuter }}
-      >
-        <div style={{ height: topGap - 20 }} />
+      <section className={`w-full stdMargins  flex flex-col items-center  text-blue-black`}>
+        <div style={{ height: topGap2 - 20 }} />
         <div className="titleFont titleBig">Who We Are</div>
-        <div className="w-25 mxs:w-32 sm:w-40  h-5 mxs:h-6  border-blue-black border-0 border-b-3" />
+        <div className="divider" />
         <div className="mt-9 max-w-220  smThenBaseFont xl:text-20 text-center">
           The Vaccine Hesitancy Guide was developed by a team of researchers out of the University of Calgary’s School
           of Public Policy. We assembled the Guide’s content out of interviews and conversations with primary care
@@ -39,7 +36,6 @@ const Home3WhoWeAre = props => {
 
             return (
               <div key={indx} style={{ width: bioWidth }}>
-
                 {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
@@ -52,7 +48,7 @@ const Home3WhoWeAre = props => {
                       </div>
                     );
                   } else {
-                    return null
+                    return null;
                   }
                 })}
 

@@ -1,45 +1,44 @@
 const logoContent = [
   {
     name: "Alberta College of Family Physicians", // the name field here is just for our quick reference; it's not used in the code
-    fileName: "ACFP_Logo.png",
+    fileName: "AB College Family Physicians.svg",
     alt: "AB College of Family Physicians",
-    useDivWrapper: true,
+    scale: 1,
   },
 
   {
     name: "UBC Innovation Support Unit (ISU)",
-    fileName: "ISULogoColour.png",
+    fileName: "UBC ISU.svg",
     alt: "UBC Innovation Support Unit logo",
-    useDivWrapper: true,
+    scale: 1,
   },
 
   {
     name: "Alberta Medical Association (AMA) ACTT",
-    fileName: "AMA ACTT SECONDARY CMYK.jpeg",
+    fileName: "AMA ACTT.svg",
     alt: "Alberta Medical Association ACTT logo",
-    useDivWrapper: true,
+    scale: 1,
   },
 
   {
     name: "19 to Zero",
-    fileName: "19 to ZERO-logo_white-website.jpg",
+    fileName: "19toZero.svg",
     alt: "19 to Zero logo",
-    useDivWrapper: true,
+    scale: 1,
   },
 
   {
-    name: "Doctors of Manitoba",
-    fileName: "DoctorsManitoba.png",
-    alt: "Doctors of Manitoba logo",
-    useDivWrapper: true,
+    name: "Doctors Manitoba",
+    fileName: "Doctors Manitoba.svg",
+    alt: "Doctors Manitoba logo",
+    scale: 1,
   },
 
   {
-    name: "University of Manitoba",
-    fileName: "University of Manitoba.svg",
-    alt: "U. Manitoba logo",
-    useDivWrapper: true,
-    scale: 2.4,
+    name: "University of Manitoba Rady Faculty Health Sciences",
+    fileName: "UM Rady Faculty Health Sciences.svg",
+    alt: "UM Rady Faculty Health Sciences logo",
+    scale: 1,
   },
 
   // {
