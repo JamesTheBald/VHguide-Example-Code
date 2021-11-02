@@ -49,7 +49,7 @@ const PearlsPreface = () => {
           </ul>
         </div> */}
       </div>
-      <div name="dividing line" className="xl:hidden mt-6 mb-4 w-full  border-gray-medium border-b-3" />
+      <div name="dividing line" className="xl:hidden mt-6 mb-4 w-full  border-gray-medium border-solid border-b-3" />
     </div>
   );
 };

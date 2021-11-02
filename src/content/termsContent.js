@@ -137,16 +137,19 @@ const CopyrightNotice = () => {
 const termsContent = [
   {
     title: "Privacy Policy",
+    panelID: "privacy",
     content: <PrivacyPolicy />,
   },
 
   {
     title: "Copyright Notice",
+    panelID: "copyright",
     content: <CopyrightNotice />,
   },
 
   {
     title: "Content Disclaimer",
+    panelID: "disclaimer",
     content: (
       <>
         <h2 className="panelTitleClass">Content Disclaimer</h2>
@@ -167,6 +170,7 @@ const termsContent = [
 
   {
     title: "Land Acknowledgement",
+    panelID: "land",
     content: (
       <>
         <h2 className="panelTitleClass">Land Acknowledgement</h2>

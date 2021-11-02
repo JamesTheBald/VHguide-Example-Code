@@ -35,7 +35,7 @@ const AdviceQuoteGroupList = props => {
       {tabSelected === "ask" && (
         <>
           {askAdviceExists && <div style={{ height: 30 }} />}
-          {askAdviceExists && <div className="mb-9  w-full  border-gray-medium border-b-3" />}
+          {askAdviceExists && <div className="mb-9  w-full  border-gray-medium border-solid border-b-3" />}
           <span className="plusFont">then</span>
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import { animateScroll } from "react-scroll";
 
@@ -11,21 +11,16 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { winWidth, setWinWidth, setWinHeight, setNavBarOpen, setNoneSelected, showContactForm, queryData } =
+  const { setWinWidth, setWinHeight, setNoneSelected, showContactForm, queryData } =
     useMyContext();
   queryData.current = data;
-
-  const [topGap2, setTopGap2] = useState(
-    winWidth < 510 ? 110 : winWidth < 720 ? 180 : winWidth < 1024 ? 150 : winWidth < 1600 ? 180 : 200
-  );
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
       const wid = window.innerWidth;
-      console.log("index.js useEffect has mounted, window var is defined. Setting winWidth, winHeight & topGap2.");
+      console.log("index.js useEffect has mounted, window var is defined. Setting winWidth & winHeight");
       setWinWidth(wid);
       setWinHeight(window.innerHeight);
-      setTopGap2(wid < 510 ? 130 : wid < 720 ? 140 : wid < 1024 ? 150 : wid < 1366 ? 180 : 200);
     } else {
       console.log("index.js HAS MOUNTED BUT WINDOW VAR IS STILL UNDEFINED!! Trying again after delay.");
       const timer = setTimeout(setWinWidth(window.innerWidth), 500);
@@ -35,15 +30,15 @@ const Home = props => {
   }, [setWinWidth, setWinHeight]);
 
   const BrowseButton = props => {
-    const { colors } = props;
+    const { classExt } = props;
     return (
       <Link
         to="/explore"
-        className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  border-2 ${colors}`}
+        className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
+                    border-2 border-solid ${classExt} bg-gray-light hover:bg-opacity-0`}
         style={props.style}
         onClick={() => {
           setNoneSelected(true);
-          setNavBarOpen(false);
           if (typeof window !== `undefined`) {
             animateScroll.scrollToTop({ duration: 0 }); // time in ms
           }
@@ -58,9 +53,9 @@ const Home = props => {
     <>
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
-        <Home2HesTypes topGap2={topGap2} BrowseButton={BrowseButton} />
-        <Home3WhoWeAre topGap2={topGap2} />
-        <Home4TestimonialsEtc topGap2={topGap2} />
+        <Home2HesTypes BrowseButton={BrowseButton} />
+        <Home3WhoWeAre />
+        <Home4TestimonialsEtc />
         <div className="w-full h-30 md:h-40 xl:h-50"></div>
       </main>
     </>
@@ -100,6 +95,9 @@ export const query = graphql`
           dir
           relativePath
           sourceInstanceName
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, quality: 90, placeholder: BLURRED)
+          }
           publicURL
         }
       }

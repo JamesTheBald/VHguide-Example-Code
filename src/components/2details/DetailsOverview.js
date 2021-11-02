@@ -6,11 +6,11 @@ import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = props => {
   const { contentID } = props;
-  const { winWidth, setNavBarOpen, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, log, log2 } = useMyContext();
 
   let overview = contentPersonas[contentID]?.overview;
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
-  
+
   const pplIcons = queryData.current.pplIcons.edges;
   log && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
@@ -103,11 +103,7 @@ const DetailsOverview = props => {
                 {currItem}
               </div>
             ))}
-            <Link
-              to="/details/advice/eaase"
-              className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill"
-              onClick={() => setNavBarOpen(false)}
-            >
+            <Link to="/details/advice/eaase" className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill">
               {winWidth < 400 ? <>How to start the conversation</> : <>Advice on how to start the conversation</>}
             </Link>
           </section>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useContext, createContext } from "react";
+
 import { branch } from "../content/branch";
 import WindowSizeListener from "./WindowSizeListener";
 
@@ -14,9 +15,9 @@ const MyProvider = ({ children }) => {
   const navBarHeight = 80; // in pixels
 
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
-  const [winHeight, setWinHeight] = useState(nomScreenWidth*9/16);
+  const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
   WindowSizeListener(setWinWidth, setWinHeight);
-  
+
   let marginOuter = 50;
   if (typeof window !== `undefined` && winWidth > 100)
     marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
@@ -38,7 +39,7 @@ const MyProvider = ({ children }) => {
     showSubtopic: false,
   });
   const [fullStoryID, setFullStoryID] = useState("");
-  const [navBarOpen, setNavBarOpen] = useState(false);
+  // const [navBarOpen, setNavBarOpen] = useState(false);
   const [noneSelected, setNoneSelected] = useState(true);
   const scrollTarget = useRef("");
   const queryData = useRef({});
@@ -55,14 +56,14 @@ const MyProvider = ({ children }) => {
     branch: branch,
     locn: locn,
     fullStoryID: fullStoryID,
-    navBarOpen: navBarOpen,
+    // navBarOpen: navBarOpen,
     noneSelected: noneSelected,
     setWinWidth: setWinWidth,
     setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,
-    setNavBarOpen: setNavBarOpen,
+    // setNavBarOpen: setNavBarOpen,
     setFullStoryID: setFullStoryID,
     scrollTarget: scrollTarget,
     queryData: queryData,

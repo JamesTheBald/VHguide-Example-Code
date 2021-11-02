@@ -8,6 +8,10 @@
     @apply px-6 mxs:px-12 sm:px-18 md:px-28 mxl:px-36
   }
 
+  .sectionGapHomePage {
+    @apply h-28 mxs:h-44 sm:h-36 md:h-44 mxl:h-50
+  }
+
   .divider { 
     @apply mb-4 mxs:mb-4  w-25 mxs:w-32 sm:w-40  h-6 mxs:h-7  border-solid border-b-2 border-blue-black
   }
@@ -21,11 +25,11 @@
   }
 
   .linkPill {
-    @apply border border-yellow-darkish rounded-full hover:bg-yellow-darkish hover:text-gray-light
+    @apply border border-solid border-yellow-darkish rounded-full hover:bg-yellow-darkish hover:text-gray-light
   }
 
   .linkInvPill {
-    @apply bg-yellow-darkish text-gray-light hover:bg-white hover:text-yellow-darkish  border border-yellow-darkish rounded-full
+    @apply bg-yellow-darkish text-gray-light hover:bg-white hover:text-yellow-darkish  border border-solid border-yellow-darkish rounded-full
   }
 
   .baseFont {

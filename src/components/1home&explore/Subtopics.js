@@ -6,7 +6,7 @@ import { useMyContext } from "../../context/Context";
 
 const Subtopics = props => {
   const { branchNum, topicNum, subtopics, insideMargin } = props;
-  const { winWidth, setLocn, setNavBarOpen, log } = useMyContext();
+  const { winWidth, setLocn, log } = useMyContext();
 
   log && console.log("Subtopics.js runs. subtopics =", subtopics);
 
@@ -16,7 +16,6 @@ const Subtopics = props => {
       log && console.log("Subtopics.js onClickSubtopic setting locn=", branchNum, topicNum, subtopicNum);
       return newLocn;
     });
-    setNavBarOpen(false);
     navigate("/details/overview");
   };
 
@@ -28,7 +27,7 @@ const Subtopics = props => {
     return (
       <>
         <div
-          className="border-b-1.5 border-gray-line"
+          className="border-b-1.5 border-solid border-gray-line"
           style={{
             marginLeft: insideMargin * 2,
             marginRight: insideMargin,
@@ -50,7 +49,7 @@ const Subtopics = props => {
               </button>
 
               <div
-                className="border-b-1.5 border-gray-line"
+                className="border-b-1.5 border-solid border-gray-line"
                 style={{
                   marginLeft: insideMargin*2,
                   marginRight: insideMargin,

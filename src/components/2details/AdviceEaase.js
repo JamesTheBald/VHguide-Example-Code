@@ -20,7 +20,7 @@ const AdviceEaase = props => {
 
   return (
     <>
-      <div className="h-4 mb-12  border-gray-medium border-b-3"> </div>
+      <div className="h-4 mb-12  border-gray-medium border-solid border-b-3"> </div>
 
       <div
         className="md:px-4 lg:px-7  pb-4  grid grid-cols-1 lg:grid-cols-2 grid-flow-row

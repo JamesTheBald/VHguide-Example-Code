@@ -8,7 +8,7 @@ import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
   const { branchNum } = props;
-  const { winWidth, locn, setLocn, branch, widthAdjRatio, setNavBarOpen, log, log2 } = useMyContext();
+  const { winWidth, locn, setLocn, branch, widthAdjRatio, log, log2 } = useMyContext();
 
   log2 && console.log("");
   log && console.log("TopicTree.js runs. branch=", branch);
@@ -37,7 +37,6 @@ const TopicTree = props => {
         return newLocn;
       });
     }
-    setNavBarOpen(false);
   };
 
   const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
@@ -56,7 +55,7 @@ const TopicTree = props => {
       <>
         <div
           name="Rounded Outer Border"
-          className="mb-3  flex flex-col  border-3 border-t-0 border-blue-main relative -top-1"
+          className="mb-3  flex flex-col  border-3 border-solid border-t-0 border-blue-main relative -top-1"
           style={{
             marginLeft: outsideMargin,
             marginRight: outsideMargin,
@@ -86,7 +85,7 @@ const TopicTree = props => {
 
                   <div
                     name="hover line"
-                    className="hiddenTillHover flex-grow border-blue-main border-b-3"
+                    className="hiddenTillHover flex-grow border-blue-main border-solid border-b-3"
                     style={{ marginLeft: leftGapToLine }}
                   />
 

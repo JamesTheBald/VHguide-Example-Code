@@ -28,7 +28,7 @@ const Pill = (props) => {
       : "ml-5 mxs:ml-7 md:ml-8   text-14 mxs:text-18  tracking-0.1";
 
   const pillShapeClass = "flex flex-row justify-between items-center  rounded-full relative";
-  let shadowClass = "shadowGray border border-gray-lightish";
+  let shadowClass = "shadowGray border border-solid border-gray-lightish";
 
   return (
     <button

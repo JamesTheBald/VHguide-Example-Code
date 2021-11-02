@@ -3,14 +3,16 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
-import LinkToAboutCredits from "../../content/LinkToAboutCredits";
+// import LinkToAboutCredits from "../../content/LinkToAboutCredits";
+import LinkToPathAndSection from "../LinkToPathAndSection";
 
-const Home3WhoWeAre = props => {
-  const { topGap2 } = props;
+const Home3WhoWeAre = () => {
+  // const { topGap2 } = props;
   const { winWidth, queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
-  log && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
+  false & log && console.log();
+  log2 && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
 
   const bioWidth =
     winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
@@ -18,7 +20,8 @@ const Home3WhoWeAre = props => {
   return (
     <>
       <section className={`w-full stdMargins  flex flex-col items-center  text-blue-black`}>
-        <div style={{ height: topGap2 - 20 }} />
+        <div className="sectionGapHomePage -my-5" />
+
         <div className="titleFont titleBig">Who We Are</div>
         <div className="divider" />
         <div className="mt-9 max-w-220  smThenBaseFont xl:text-20 text-center">
@@ -44,6 +47,7 @@ const Home3WhoWeAre = props => {
                           image={item.node.childImageSharp.gatsbyImageData}
                           alt={`${currBio.name} portrait`}
                           className="mx-auto w-2/3 mxs:w-1/2 sm:w-5/6 lg:w-3/4 xl:w-3/4 rounded-full"
+                          quality={80}
                         />
                       </div>
                     );
@@ -59,13 +63,14 @@ const Home3WhoWeAre = props => {
           })}
         </div>
 
-        <div
-          className="sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
-          style={{ height: "43px" }}
-        >
-          <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
-            <LinkToAboutCredits text={"Learn more about our team"} />
-          </div>
+        <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
+          <LinkToPathAndSection
+            className="sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
+            style={{ height: "43px" }}
+            targetPath="/about"
+            targetPanel="credits"
+            text="Learn more about our team"
+          />
         </div>
       </section>
     </>

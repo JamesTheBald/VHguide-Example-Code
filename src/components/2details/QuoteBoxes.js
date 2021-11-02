@@ -8,13 +8,13 @@ import BigDoubleQuotes from "./BigDoubleQuotes";
 
 const QuoteBoxes = props => {
   const { quoteArray, setFullStoryID } = props;
-  const { winWidth, setNavBarOpen, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, log, log2 } = useMyContext();
 
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log && console.log("QuoteBoxes.js runs.");
-  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
-  log && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
+  log2 && console.log("QuoteBoxes.js runs.");
+  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
   const quoteColorsAndText = quote => {
     const css =
@@ -22,7 +22,7 @@ const QuoteBoxes = props => {
         ? typeof window !== "undefined" && window.location.pathname === "/pearls"
           ? "bg-blue-main text-gray-light  leading-relaxed  text-18 tracking-0.4" // featured on Pearls
           : "bg-blue-main text-gray-light  leading-relaxed  text-18 mxs:text-22 sm:text-25  tracking-0.4 mxs:tracking-0.5 sm:tracking-0.6"
-        : "bg-gray-light text-blue-black border-3 border-blue-black tracking-0.5 leading-7";
+        : "bg-gray-light text-blue-black border-3 border-solid border-blue-black tracking-0.5 leading-7";
     return css;
   };
 
@@ -100,7 +100,6 @@ const QuoteBoxes = props => {
                       onClick={() => {
                         log && console.log("QuoteBoxes.js onClick fullStoryID=", quote.fullStoryID);
                         setFullStoryID(quote.fullStoryID);
-                        setNavBarOpen(false);
                       }}
                     >
                       {quote.fullStoryLinkText}

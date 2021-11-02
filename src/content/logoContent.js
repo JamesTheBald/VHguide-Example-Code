@@ -1,44 +1,62 @@
 const logoContent = [
   {
+    name: "University of Calgary School of Public Policy",
+    fileName: "U of C SPP.jpg",
+    alt: "University of Calgary School of Public Policy",
+  },
+
+  {
     name: "Alberta College of Family Physicians", // the name field here is just for our quick reference; it's not used in the code
-    fileName: "AB College Family Physicians.svg",
+    fileName: "AB College Family Physicians.jpg",
     alt: "AB College of Family Physicians",
-    scale: 1,
   },
 
   {
     name: "UBC Innovation Support Unit (ISU)",
-    fileName: "UBC ISU.svg",
+    fileName: "UBC ISU.jpg",
     alt: "UBC Innovation Support Unit logo",
-    scale: 1,
   },
 
   {
     name: "Alberta Medical Association (AMA) ACTT",
-    fileName: "AMA ACTT.svg",
+    fileName: "AMA ACTT.jpg",
     alt: "Alberta Medical Association ACTT logo",
-    scale: 1,
   },
 
   {
     name: "19 to Zero",
-    fileName: "19toZero.svg",
+    fileName: "19toZero.jpg",
     alt: "19 to Zero logo",
-    scale: 1,
   },
 
   {
     name: "Doctors Manitoba",
-    fileName: "Doctors Manitoba.svg",
+    fileName: "Doctors Manitoba.jpg",
     alt: "Doctors Manitoba logo",
-    scale: 1,
   },
 
   {
     name: "University of Manitoba Rady Faculty Health Sciences",
-    fileName: "UM Rady Faculty Health Sciences.svg",
+    fileName: "UM Rady Faculty Health Sciences.jpg",
     alt: "UM Rady Faculty Health Sciences logo",
-    scale: 1,
+  },
+
+  {
+    name: "the rounds",
+    fileName: "the rounds.jpg",
+    alt: "the rounds",
+  },
+
+  {
+    name: "QID",
+    fileName: "QID.jpg",
+    alt: "QID",
+  },
+  
+  {
+    name: "Center for Effective Practice",
+    fileName: "Center for Effective Practice.jpg",
+    alt: "Center for Effective Practice",
   },
 
   // {

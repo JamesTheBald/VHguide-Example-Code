@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { useMyContext } from "../../context/Context";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Element, scroller } from "react-scroll";
 
+import { useMyContext } from "../../context/Context";
 import QuoteGroup from "../2details/QuoteGroup";
 import Credits from "./Credits";
 
@@ -9,54 +9,63 @@ const AboutPanels = props => {
   const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
   const { winWidth, scrollTarget, log, log2 } = useMyContext();
 
+  const scrollOffset = -300;
+  // const scrollOffset = winWidth < 510 ? -150 : winWidth < 1024 ? -170 : winWidth < 1920 ? -150 : -150;
+
   log2 && console.log("");
-  log && console.log("AboutPanels.js runs. path=", path);
-  log && console.log("AboutPanel.js contentArray=", contentArray);
+  log2 && console.log("AboutPanels.js runs. path=", path);
+  log2 && console.log("AboutPanel.js contentArray=", contentArray);
+  log && console.log("AboutPanel.js scrollTarget.current=", scrollTarget.current);
+  log && console.log("AboutPanel.js scrollOffset=", scrollOffset);
 
-  useEffect(() => {
+  // Bug in react-scroll means scrollTo animation may not complete.
+  useLayoutEffect(() => {
     if (scrollTarget.current) {
-      log2 && console.log("AboutPanels.js scrollTarget.current=", scrollTarget.current);
-      if (typeof window !== `undefined`) {
-        scroller.scrollTo(String(scrollTarget.current), {
-          duration: 1000,
-          smooth: true,
-          offset: winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -175,
-        });
-      }
+      log && console.log("AboutPanels.js useLayoutEffect. scrollTarget.current=", scrollTarget.current);
+      log && console.log("AboutPanels.js useLayoutEffect. scrollOffset=", scrollOffset);
+      scroller.scrollTo(scrollTarget.current, {
+        duration: 1000,
+        smooth: "linear",
+        offset: scrollOffset,
+        spy: true,
+      });
     }
-  }, [scrollTarget, winWidth, log2]);
+  }, [scrollTarget, scrollOffset, log]);
 
   useEffect(() => {
-    log2 && console.log('AboutPanels.js useEffect#2 setting scrollTarget.current=""');
+    log && console.log("AboutPanels.js useEffect: clearing scrollTarget.current");
     scrollTarget.current = "";
-  }, [scrollTarget, log2]);
+  }, [scrollTarget, log]);
 
   const yGapBetweenPanels = 65;
   const panelBaseClass = "p-5 mxs:p-9 sm:p-15 w-full bg-gray-light rounded-3xl shadowGray";
-  // const panelTextClass = "text-16 sm:text-18 text-blue-black tracking-0.3 sm:tracking-0.4";
-
   let columnStyle = { columnCount: 1, columnGap: winWidth < 1600 ? 50 : 60 };
 
   return (
     <>
       {contentArray.map((currPanel, index) => {
         return (
-          <div key={`#${currPanel.title}`}>
-            <Element name={currPanel.title}>
+          <div key={`#${currPanel.panelID}`}>
+            <Element name={currPanel.panelID}>
               {/* Extend top of first panel for better scroll positioning  */}
               {index === 0 && <div className="w-full" style={{ height: yPosnPanel - 24 }} />}
               {index === 0 && winWidth > 1920 && <div className="w-full" style={{ height: yDistTitleFromTop }} />}
               <div className={panelBaseClass} style={{ columnStyle }}>
-                {path.match(/pearls/i) && (
+                {path.match(/pearls/i) && ( // Regex matching for 'pearls'
                   <>
                     <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
                       {currPanel.title}
                     </h2>
+                    {log2 &&
+                      console.log(
+                        "AboutPanels.js just prior to QuoteGroup call. currPanel.content=",
+                        currPanel.content
+                      )}
+
                     <QuoteGroup quoteGroup={currPanel.content} />
                   </>
                 )}
                 {!path.match(/pearls/i) && <div className="panelTextClass">{currPanel.content}</div>}
-                {/* {(path === "/about" || path === "/terms") && <div className="panelTextClass">{currPanel.content}</div>} */}
               </div>
               <div style={{ height: yGapBetweenPanels }} />
             </Element>
@@ -66,7 +75,7 @@ const AboutPanels = props => {
 
       {path.match(/about/i) && (
         <div>
-          <Element name="Credits">
+          <Element name="credits">
             <div className={panelBaseClass}>
               <Credits />
             </div>

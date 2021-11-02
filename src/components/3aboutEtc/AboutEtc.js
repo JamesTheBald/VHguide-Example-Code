@@ -6,11 +6,12 @@ import AboutPanels from "./AboutPanels";
 import PearlsPreface from "./PearlsPreface";
 
 const AboutEtc = props => {
+  // contentArray has to be passed in as props, as this component is shared between /about, /pearls and /terms
   const { path, pageTitle, contentArray } = props;
   const { showContactForm, navBarHeight, winWidth, log, log2 } = useMyContext();
 
   log && console.log("AboutEtc.js path=", path);
-  log && console.log("AboutEtc.js contentArray=", contentArray);
+  log2 && console.log("AboutEtc.js contentArray=", contentArray);
 
   const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
   const paddingBelowTitle = winWidth < 720 ? 25 : 32;
@@ -29,7 +30,7 @@ const AboutEtc = props => {
         {/* Title and Scroll Locator for Narrower Screens (<1920px) */}
         <div className="xl:hidden stdMargins w-full" style={{ marginTop: yDistTitleFromTop }}>
           <h1 className="titleFont titleMedium">{pageTitle}</h1>
-          {path === "/pearls" && <PearlsPreface />}
+          {path.match(/pearls/i) && <PearlsPreface />}
         </div>
 
         <div
@@ -56,7 +57,7 @@ const AboutEtc = props => {
             <ScrollLocator path={path} contentArray={contentArray} />
           </div>
 
-          {path === "/pearls" && (
+          {path.match(/pearls/i) && (
             <div className="fixed ml-6" style={{ top: yPosnPanel + 250 }}>
               <PearlsPreface />
             </div>

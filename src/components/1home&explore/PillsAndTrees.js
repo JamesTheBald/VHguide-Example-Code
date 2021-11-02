@@ -8,7 +8,7 @@ import TopicTree from "./TopicTree";
 const PillsAndTrees = props => {
   const { maxStackedWidth } = props;
   const [order, setOrder] = useState([0, 1, 2]);
-  const { winWidth, marginOuter, branch, locn, setLocn, setNavBarOpen, noneSelected, setNoneSelected, log, log2 } =
+  const { winWidth, marginOuter, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } =
     useMyContext();
 
   log2 && console.log("PillsAndTrees.js runs. locn=", locn);
@@ -88,7 +88,6 @@ const PillsAndTrees = props => {
       return newLocn;
     });
     setPillWidths(curr => calcPillWidthArray(curr));
-    setNavBarOpen(false);
     if (branch[clickedBranchNum].linkToDetails) navigate("/details/overview");
   };
 

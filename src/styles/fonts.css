@@ -1,58 +1,46 @@
+/* Before building your application, be sure to generate a font asset map using the included gatsby-preload-fonts script, by running
+>npm run preload-fonts  
+(First run >gatsby develop, then run the preload-fonts script from another terminal window.)
+(See https://www.gatsbyjs.com/plugins/gatsby-plugin-preload-fonts/) */
+
 /* San Serif fonts */
+
 @font-face {
   font-family: 'Acumin Pro';
-  font-weight: 500;
-  src: url('../styles/fonts/Acumin-RPro.woff') 
+  font-weight: 400;
+  src: url('../styles/fonts/Acumin-RPro.woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Acumin Pro';
   font-weight: 700;
-  src: url('../styles/fonts/Acumin-BdPro.woff') 
+  src: url('../styles/fonts/Acumin-BdPro.woff');
+  font-display: swap;
 }
 
 
 /* Serif fonts */
 @font-face {
-  font-family: 'Caslin Pro';
-  /* font-style: 'normal'; */
+  font-family: 'Caslon Pro';
   font-weight: 400;
-  src: url('../styles/fonts/Adobe-Caslon-Pro-Regular.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Caslin Pro';
-  /* font-style: 'normal'; */
+  font-family: 'Caslon Pro';
   font-weight: 600;
-  src: url('../styles/fonts/Adobe-Caslon-Pro-Semibold.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Semibold.ttf');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Caslin Pro';
-  /* font-style: 'normal'; */
+  font-family: 'Caslon Pro';
   font-weight: 700;
-  src: url('../styles/fonts/Adobe-Caslon-Pro-Bold.ttf') 
+  src: url('../styles/fonts/Adobe-Caslon-Pro-Bold.ttf');
+  font-display: swap;
 }
 
-@font-face {
-  font-family: 'Caslin Pro Italic';
-  /* font-style: 'italic'; */
-  font-weight: 600;
-  src: url('../styles/fonts/Adobe-Caslon-Pro-Semibold-Italic.ttf') 
-}
 
-@font-face {
-  font-family: "acumin-pro";
-  font-weight: 300;
-  font-style: italic;
-  src:url("https://use.typekit.net/af/51b548/00000000000000003b9acaf5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/51b548/00000000000000003b9acaf5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/51b548/00000000000000003b9acaf5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
-  font-display:auto;
-  }
 
-  @font-face {
-    font-family: "acumin-pro";
-    font-style: italic;
-    font-weight: 200;
-    src:url("https://use.typekit.net/af/19e775/00000000000000003b9acaf3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"),url("https://use.typekit.net/af/19e775/00000000000000003b9acaf3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"),url("https://use.typekit.net/af/19e775/00000000000000003b9acaf3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
-    font-display:auto;
-    }

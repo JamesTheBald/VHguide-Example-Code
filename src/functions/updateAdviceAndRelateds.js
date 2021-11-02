@@ -2,7 +2,7 @@ import { navigate } from "gatsby";
 
 import { contentPersonas } from "../content/contentPersonas";
 
-const updateAdviceAndRelateds = (contentIDTemp, setAdvice, setRelated, setNavBarOpen, log, log2) => {
+const updateAdviceAndRelateds = (contentIDTemp, setAdvice, setRelated, log, log2) => {
   // NB: these params need to come in as props, because hooks (esp. useContext) don't work in regular functions
 
   log && console.log("updateAdviceAndRelated.js runs. contID=", contentIDTemp);
@@ -18,7 +18,6 @@ const updateAdviceAndRelateds = (contentIDTemp, setAdvice, setRelated, setNavBar
     log &&
       console.log("updateAdviceAndRelated.js advice content not found for contID=", contentIDTemp, ". Reverting to overview tab");
     navigate("/details/advice/overview");
-    setNavBarOpen(false);
   }
 
   setAdvice(adviceTemp);

@@ -3,18 +3,17 @@ import { Link } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 
-const LinkToAboutEAASE = (props) => {
+const LinkToAboutEAASE = props => {
   const { text } = props;
-  const { scrollTarget, setNavBarOpen, log } = useMyContext();
+  const { scrollTarget, log } = useMyContext();
 
   return (
     <Link
       to="/about"
       className="ml-1.5 orangeLink"
       onClick={() => {
-        log && console.log("LinkToAboutEAASE.js runs. Initial scrollTarget.current=", scrollTarget.current);
-        scrollTarget.current = "EAASE Steps";
-        setNavBarOpen(false);
+        scrollTarget.current = "eaaseSteps";
+        log && console.log("LinkToAboutEAASE.js runs. scrollTarget.current now=", scrollTarget.current);
       }}
     >
       {text}

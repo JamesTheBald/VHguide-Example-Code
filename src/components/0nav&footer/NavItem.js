@@ -14,7 +14,7 @@ const NavItem = (props) => {
     <>
       <button
         className={`${classNom} sm:ml-1 sm:px-3 flex items-center  cursor-pointer ${bgColor}
-       ${winWidth < 720 ? "" : selected && "h-24 border-gray-light border-2 border-t-0 rounded-b-lg z-20"}`}
+       ${winWidth < 720 ? "" : selected && "h-24 border-gray-light border-solid border-2 border-t-0 rounded-b-lg z-20"}`}
         onClick={(evnt) => onClickGo(evnt, destn)}
       >
         <div className="flex-shrink-0" style={{ paddingBottom: iconOffset }}>

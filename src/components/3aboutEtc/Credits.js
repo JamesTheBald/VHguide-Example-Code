@@ -40,14 +40,14 @@ const Credits = () => {
 
         <div className="mt-5 sm:mt-8 lg:mt-0 lg:ml-30  w-full axs:w-75 mxs:w-85 sm:w-100 lg:w-120">
           <StaticImage
-            src="../../images/collabLogos/UofC_SPPLogo-Updated-Transparent.png"
+            src="../../images/collabLogos/UofC_SPPLogo.png"
             alt="UofC School of Public Policy logo"
           />
         </div>
       </div>
 
       <div className="mt-24 panelTitleClass">Collaborators</div>
-      <CollabLogos />
+      <CollabLogos size="small" />
     </article>
   );
 };

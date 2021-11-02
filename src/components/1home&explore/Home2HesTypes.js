@@ -4,12 +4,9 @@ import VideoSnapshotHome from "./VideoSnapshotHome";
 import { useMyContext } from "../../context/Context";
 
 const Home2HesTypes = props => {
-  const { topGap2, BrowseButton } = props;
+  const { BrowseButton } = props;
   const { winWidth } = useMyContext();
   // const { winWidth, marginOuter } = useMyContext();
-
-  const buttonWidthMax = winWidth < 510 ? 220 : 322;
-  const buttonHeight = winWidth < 510 ? 36 : 50;
 
   const HesTypesPanel = props => {
     const { posnClass } = props;
@@ -30,10 +27,7 @@ const Home2HesTypes = props => {
           if you want to improve the conversation.
         </div>
         <div className="h-8" />
-        <BrowseButton
-          colors="text-blue-dark hover:text-gray-light  bg-gray-light hover:bg-opacity-0"
-          style={{ maxWidth: buttonWidthMax, height: buttonHeight }}
-        />
+        <BrowseButton classExt="max-w-56 mxs:max-w-80  h-9 mxs:h-12  text-blue-dark hover:text-gray-light" />
       </section>
     );
   };
@@ -41,11 +35,12 @@ const Home2HesTypes = props => {
   return (
     <>
       <div className={`w-full stdMargins text-gray-light`}>
-        <div style={{ height: topGap2 }} />
+        <div className="sectionGapHomePage" />
+
         <div className="w-full relative xl:flex justify-center">
           <div
-            className="w-full sm:w-5/6 xl:w-300 pt-1 mxs:pt-3 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black  border-3
-                        border-gray-black  rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
+            className="w-full sm:w-5/6 xl:w-300 pt-1 mxs:pt-3 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black 
+                       border-3 border-solid border-gray-black  rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
           >
             <ReactPlayer
               url="/videos/Video for Home Page - processed.mp4"
@@ -63,7 +58,7 @@ const Home2HesTypes = props => {
           <HesTypesPanel posnClass="absolute right-0  xl:relative xl:h-full xl:top-8" />
         </div>
         {/* Spacer for positioning subsequent content */}
-        <HesTypesPanel posnClass="invisible xl:hidden relative -top-5" />
+        <HesTypesPanel posnClass="invisible xl:hidden" />
       </div>
     </>
   );

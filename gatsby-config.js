@@ -9,9 +9,9 @@ module.exports = {
     image: "/images/homePage/Home Page graphic.svg", // Path to your image you placed in the 'static' folder
   },
 
-  flags: {
-    flags: { PRESERVE_WEBPACK_CACHE: true },
-  },
+  // flags: {
+  //   flags: { PRESERVE_WEBPACK_CACHE: true },
+  // },
 
   plugins: [
     {
@@ -100,5 +100,6 @@ module.exports = {
         tailwind: true,
       },
     },
+    // `gatsby-plugin-preload-fonts`,
   ],
 };

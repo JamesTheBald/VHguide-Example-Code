@@ -1,23 +1,22 @@
 import React from "react";
 import { navigate } from "gatsby";
-import { useMatch } from "@reach/router"
+import { useMatch } from "@reach/router";
 
 import { animateScroll as scroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 
-const AdviceTabNavBarName = (props) => {
+const AdviceTabNavBarName = props => {
   const { currTab } = props;
-  const { winWidth, setNavBarOpen, log2 } = useMyContext();;
+  const { winWidth, log2 } = useMyContext();
 
   log2 && console.log("AdviceTabNavBarName.js runs. currTab=", currTab);
 
-  const changeTab = (tabName) => {
+  const changeTab = tabName => {
     navigate("/details/advice/" + tabName);
 
     if (typeof window !== `undefined`) {
       scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
     }
-    setNavBarOpen(false);
   };
 
   // Get tab name from URL route, but guard against bad URLs

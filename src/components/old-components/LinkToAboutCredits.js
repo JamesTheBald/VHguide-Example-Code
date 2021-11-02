@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { scroller } from "react-scroll";
 
 import { useMyContext } from "../context/Context";
 
@@ -16,7 +15,6 @@ const LinkToAboutCredits = props => {
         log && console.log("LinkToAboutCredits.js runs. Initial scrollTarget.current=", scrollTarget.current);
         scrollTarget.current = "credits";
         setNavBarOpen(false);
-        scroller.scrollMore(200);
       }}
     >
       {text}

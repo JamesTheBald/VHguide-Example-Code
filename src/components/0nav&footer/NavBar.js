@@ -1,6 +1,5 @@
 // import React from "react";
-import React from "react";
-// import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
@@ -11,19 +10,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import NavItem from "./NavItem.js";
 import { useMyContext } from "../../context/Context";
 import { VscClose } from "react-icons/vsc";
+import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const {
-    branch,
-    navBarHeight,
-    widthAdjRatio,
-    navBarOpen,
-    setLocn,
-    setNoneSelected,
-    setNavBarOpen,
-    setShowContactForm,
-    log,
-  } = useMyContext();
+  const { branch, navBarHeight, widthAdjRatio, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
+
+  const dropDownRef = useRef();
+  const [navBarOpen, setNavBarOpen] = useState(false);
+  useOnClickOutside(dropDownRef, () => setNavBarOpen(false));
 
   const onClickGo = (evnt, destn) => {
     if (destn === "/explore") {
@@ -62,11 +56,11 @@ const NavBar = () => {
 
   const bgColor = "bg-blue-black";
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  const bord = pathname !== "/" ? "" : "border-b-2";
+  const bord = pathname !== "/" ? "" : "border-solid border-b-2";
   log && console.log("NavBar.js pathname=", pathname, " so border= ", bord);
 
   const marginLeftIcon = 38 * widthAdjRatio;
-  const hesitancyDropDownClass = "py-3  text-left  border-gray-light  text-14 tracking-0.4 cursor-pointer";
+  const hesitancyDropDownClass = "py-3  text-left  border-solid border-gray-light  text-14 tracking-0.4 cursor-pointer";
 
   const NavBarItemsAndDropDowns = () => {
     return (
@@ -96,7 +90,7 @@ const NavBar = () => {
             <>
               <div
                 className={`pt-1.5  hiddenTillHover absolute   rounded-b-xl ${bgColor}
-                ${pathname === "/" ? "border border-gray-light" : ""}`}
+                ${pathname === "/" ? "border border-solid border-gray-light" : ""}`}
                 style={{ left: 6, top: 87, width: 290 }}
               >
                 <div className="flex flex-col">
@@ -122,7 +116,7 @@ const NavBar = () => {
 
           <div name="Dropdown menu for Hesitancy Types on small screens" className="sm:hidden">
             <div
-              className="pt-1.5 hidden group-hover:flex pr-6 w-full flex-col  border-t border-gray-light"
+              className="pt-1.5 hidden group-hover:flex pr-6 w-full flex-col  border-solid border-t border-gray-light"
               style={{ width: 270 }}
             >
               <button className={`ml-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 0)}>
@@ -187,11 +181,12 @@ const NavBar = () => {
           </button>
 
           {navBarOpen && (
-            <>
+            // Need the wrapping fragments below
+            <>  
               <div
-                name="Dropdown list"
-                className={`px-10 py-6 absolute top-0 right-0 w-full mxs:w-85 flex flex-col gap-4 
-                            rounded-b-xl ${bgColor} border-2 border-t-0 border-gray-light`}
+                ref={dropDownRef}
+                className={`px-10 py-6 absolute top-0 right-0 w-full mxs:w-85 flex flex-col gap-4  
+                          rounded-b-xl ${bgColor} border-solid border-2 border-t-0 border-gray-light`}
               >
                 <button className="p-2 absolute top-2 right-3" onClick={event => onClickHamburger(event)}>
                   <VscClose size={30} />

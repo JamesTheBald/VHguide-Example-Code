@@ -17,7 +17,7 @@ import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
 const Details = props => {
   const { data } = props;
-  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, setNavBarOpen, queryData, log, log2 } =
+  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } =
     useMyContext();
   queryData.current = data;
 
@@ -41,10 +41,10 @@ const Details = props => {
 
   // let contIDTemp;
   useEffect(() => {
-    const contIDTemp = updateContIDandName(locn, setContentID, setHesitTypeName, setNavBarOpen, log, log2).contIDTemp;
+    const contIDTemp = updateContIDandName(locn, setContentID, setHesitTypeName, log, log2).contIDTemp;
     log2 && console.log("details.js contentIDTemp=", contIDTemp);
-    updateAdviceAndRelateds(contIDTemp, setAdvice, setRelated, setNavBarOpen, log, log2);
-  }, [locn, contentID, setNavBarOpen, log, log2]);
+    updateAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
+  }, [locn, contentID, log, log2]);
 
   const otherLegitAdviceTabPaths = ["/advice/engage", "/advice/affirm", "/advice/ask", "/advice/evoke"];
 

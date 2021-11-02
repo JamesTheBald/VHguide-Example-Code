@@ -10,7 +10,7 @@ const CarouselTestimonials = () => {
   const timeOnEach = 10000;
   const carouselRefTestimonials = useRef(null);
   const numPages = Math.ceil(testimonials.length);
-  let resetTimeout;
+  let timeout;
 
   const CarouselDots = (props) => {
     const { pages, activePage, onClick } = props;
@@ -23,7 +23,7 @@ const CarouselTestimonials = () => {
               {isActivePage ? (
                 <div className="m-2  bg-blue-black rounded-full" style={{ width: 12, height: 12 }} />
               ) : (
-                <div className="m-2  border-2 border-blue-black rounded-full" style={{ width: 12, height: 12 }} />
+                <div className="m-2  border-2 border-solid border-blue-black rounded-full" style={{ width: 12, height: 12 }} />
               )}
             </button>
           );
@@ -36,7 +36,7 @@ const CarouselTestimonials = () => {
     <>
       <Carousel
         ref={carouselRefTestimonials}
-        className="pt-10 smThenBaseFont text-center max-w-220"
+        className="pt-8 smThenBaseFont text-center max-w-220"
         showArrows={false}
         enableAutoPlay={true}
         autoPlaySpeed={timeOnEach}
@@ -44,10 +44,10 @@ const CarouselTestimonials = () => {
         renderPagination={({ pages, activePage, onClick }) => CarouselDots({ pages, activePage, onClick })}
         onNextEnd={({ index }) => {
           // from cristo-pr at https://github.com/sag1v/react-elastic-carousel/issues/9
-          clearTimeout(resetTimeout);
+          clearTimeout(timeout);
           if (index + 1 === numPages) {
-            resetTimeout = setTimeout(() => {
-              carouselRefTestimonials?.current?.goTo(0);
+            timeout = setTimeout(() => {
+              carouselRefTestimonials?.current?.goTo && carouselRefTestimonials.current.goTo(0);
             }, timeOnEach);
           }
         }}

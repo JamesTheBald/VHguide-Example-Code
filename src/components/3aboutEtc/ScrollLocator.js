@@ -8,15 +8,19 @@ const ScrollLocator = props => {
 
   log2 && console.log("ScrollLocator.js path=", path);
 
-  const offsetCalc = () => {
+  const offsetCalc = (indx) => {
     let scrollOffset = -300;
-    if (path === "/pearls") {
-      scrollOffset = winWidth < 510 ? -450 : winWidth < 1024 ? -500 : winWidth < 1920 ? -500 : -250;
-    } else if (path === "/terms") {
-      scrollOffset = winWidth < 510 ? -350 : winWidth < 1200 ? -450 : winWidth < 1920 ? -450 : -300;
+    if (indx===0) {
+      scrollOffset = -500;
+    } else if (path.match(/pearls/i)) {
+      scrollOffset = winWidth < 510 ? -250 : winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -250;
+    } else if (path.match(/terms/i)) {
+      scrollOffset = winWidth < 510 ? -320 : winWidth < 1024 ? -350 : winWidth < 1920 ? -350 : -200;
     } else {
-      scrollOffset = winWidth < 510 ? -300 : winWidth < 1024 ? -450 : winWidth < 1920 ? -480 : -250;
+      scrollOffset = winWidth < 510 ? -350 : winWidth < 1024 ? -400 : winWidth < 1920 ? -380 : -250;
     }
+    log2 && console.log("ScrollLocator.js offsetCalc() indx=", indx, ", scrollOffset=", scrollOffset);
+
     return scrollOffset;
   };
 
@@ -49,8 +53,8 @@ const ScrollLocator = props => {
             <div key={index}>
               <Link
                 activeClass="activeScrollLink"
-                to={currPanel.title} // using panel title as id; this references the name field of the section container div
-                offset={offsetCalc()}
+                to={currPanel.panelID} // using panel title as id; this references the name field of the section container div
+                offset={offsetCalc(index)}
                 spy={true}
                 smooth={true}
                 duration={600}
@@ -61,12 +65,13 @@ const ScrollLocator = props => {
           );
         })}
 
-        {path === "/about" && (
+        {path.match(/about/i) && (
+        // {path === "/about" && (
           <div>
             <Link
               activeClass="activeScrollLink"
-              to="Credits"
-              offset={offsetCalc()}
+              to="credits"
+              offset={offsetCalc(contentArray.length)}
               spy={true}
               smooth={true}
               duration={600}

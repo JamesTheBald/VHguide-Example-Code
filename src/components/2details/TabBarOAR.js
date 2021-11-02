@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const TabBarOAR = () => {
-  const { winWidth, marginOuter, setNavBarOpen, log, log2 } = useMyContext();
+  const { winWidth, marginOuter, log, log2 } = useMyContext();
 
   log2 && console.log("");
   log && console.log("TabBarOAR.js runs. winWidth=", winWidth);
@@ -29,7 +29,6 @@ const TabBarOAR = () => {
     } else {
       navigate("/details/" + selectedTabName);
     }
-    setNavBarOpen(false);
   };
 
   const url = typeof window !== "undefined" ? new URL(window.location.href) : "";
@@ -63,7 +62,7 @@ const TabBarOAR = () => {
               <div className="flex">
                 <button
                   name="rounded corner frame"
-                  className={`flex justify-center  border-b-0 border-gray-light rounded-t-3xl  cursor-pointer 
+                  className={`flex justify-center  border-b-0 border-solid border-gray-light rounded-t-3xl  cursor-pointer 
                               ${oarTabs[index] === tabName ? "bg-gray-light" : "bg-white"}`}
                   style={{
                     borderWidth: winWidth < 510 ? 3 : 4, // Need thinner at small screens

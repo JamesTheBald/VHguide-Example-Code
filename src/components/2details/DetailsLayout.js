@@ -9,8 +9,8 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 
 const DetailsLayout = props => {
   const { hesitTypeName, related } = props;
-  const { widthAdjRatio, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
-  // const { widthAdjRatio, marginOuter, locn, setLocn, setNavBarOpen, showContactForm, log, log2 } = useMyContext();
+  const { widthAdjRatio, locn, setLocn, showContactForm, log, log2 } = useMyContext();
+  // const { widthAdjRatio, marginOuter, locn, setLocn, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
@@ -34,7 +34,6 @@ const DetailsLayout = props => {
       return newLocn;
     });
     navigate("/details/overview");
-    setNavBarOpen(false);
   };
 
   if (typeof window !== `undefined`) {
@@ -65,7 +64,7 @@ const DetailsLayout = props => {
           </div>
 
           <div // Panel
-            className={`${panelPadding} bg-gray-light border border-gray-lightish rounded-3xl shadowGray  relative z-30
+            className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30
                       overflow-x-hidden`}
             style={{ top: tabHeight - 100 }}
           >

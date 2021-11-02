@@ -4,8 +4,9 @@ import QuoteBoxes from "./QuoteBoxes";
 
 const QuoteGroup = props => {
   const { quoteGroup } = props;
-  const { winWidth, setFullStoryID, log2 } = useMyContext();
+  const { winWidth, setFullStoryID, log, log2 } = useMyContext();
 
+  false && log && console.log();
   log2 && console.log("QuoteGroup.js runs. quotes=", quoteGroup);
 
   return (
@@ -14,7 +15,9 @@ const QuoteGroup = props => {
         return currQuote.subheading ? (
           <div key={index}>
             <div key={index} className="flex flex-col">
-              {index > 0 && <div name="dividing line" className="mt-11 w-full  border-gray-medium border-b-3" />}
+              {index > 0 && (
+                <div name="dividing line" className="mt-11 w-full  border-gray-medium border-solid border-b-3" />
+              )}
 
               <h3 className="my-8 sm:my-11  font-semibold  text-18 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5">
                 {currQuote.subheading}

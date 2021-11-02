@@ -3,7 +3,7 @@ import { navigate } from "gatsby";
 
 import { contentPersonas } from "../content/contentPersonas";
 
-const updateContIDandName = (locn, setContentID, setHesitTypeName, setNavBarOpen, log, log2) => {
+const updateContIDandName = (locn, setContentID, setHesitTypeName, log, log2) => {
   // NB: as a function, this fn can't use hooks, i.e. no useContext. Hence pass in as params.
 
   log && console.log("updateContIDandName.js runs.");
@@ -18,7 +18,6 @@ const updateContIDandName = (locn, setContentID, setHesitTypeName, setNavBarOpen
     log && console.log("updateContIDandName.js Using contIDTemp='", contIDTemp, "' instead");
     log && console.log("updateContIDandName.js - Returning to 'Explore' page");
     navigate("/explore");
-    setNavBarOpen(false);
   };
 
   const topicObj = branch[locn.branch]?.topic[locn.topic];

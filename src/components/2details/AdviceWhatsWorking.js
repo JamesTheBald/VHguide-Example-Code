@@ -6,7 +6,7 @@ const AdviceWhatsWorking = () => {
   const { log2 } = useMyContext();
   let { scrollTarget } = useMyContext();
 
-  log2 && console.log("AdviceWhatsWorking.js runs. scrollTarget=", scrollTarget);
+  log2 && console.log("AdviceWhatsWorking.js runs. scrollTarget.current=", scrollTarget.current);
 
   return (
     <div>

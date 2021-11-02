@@ -19,6 +19,7 @@ export const pearlsContent = [
 
   {
     title: "Affirming You're An Ally",
+    panelID: "affirmingAlly",
     content: [
       {
         subheading: "Listen closely and reflectively",
@@ -267,6 +268,7 @@ export const pearlsContent = [
 
   {
     title: "Lowering the ‘temperature’",
+    panelID: "loweringTemp",
     content: [
       {
         subheading: "Check yourself on the way into the room",

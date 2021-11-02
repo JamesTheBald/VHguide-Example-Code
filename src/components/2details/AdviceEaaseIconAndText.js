@@ -5,12 +5,12 @@ import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {
   const { advice, tab } = props;
-  const { winWidth, setNavBarOpen, queryData, log } = useMyContext();
+  const { winWidth, queryData, log2 } = useMyContext();
 
-  log && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice?.eaase[tab].image);
+  log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice?.eaase[tab].image);
 
   const pplIcons = queryData.current.pplIcons.edges;
-  log && console.log("AdviceEaaseIconAndText.js pplIcons=", pplIcons);
+  log2 && console.log("AdviceEaaseIconAndText.js pplIcons=", pplIcons);
 
   const adviceTabNames = {
     engage: "engage",
@@ -19,10 +19,7 @@ const AdviceEaaseIconAndText = props => {
     evoke: "evoke",
   };
 
-  const changeAdviceTab = tab => {
-    navigate("/details/advice/" + tab);
-    setNavBarOpen(false);
-  };
+  const changeAdviceTab = tab => navigate("/details/advice/" + tab);
 
   const IconImage = () => {
     return (

@@ -56,11 +56,9 @@ module.exports = {
     },
 
     fontWeight: {
-      // 100: "100",
-      vlight: "200",
       light: "300",
       normal: "400", // following Tailwind nomenclature
-      // medium: "500",
+      medium: "500",
       semibold: "600",
       bold: "700",
       // 800: "800",
@@ -68,9 +66,8 @@ module.exports = {
     },
 
     fontFamily: {
-      sans: ['"Acumin Pro"', "Roboto", "Tahoma", "Verdana", "system-ui", "-apple-system", "sans-serif"],
-      serif: ['"Caslin Pro"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
-      "serif-italic": ['"Caslin Pro Italic"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      sans: ['"Acumin Pro"', "Roboto", "sans-serif"],
+      serif: ['"Caslon Pro"', "Georgia", "Cambria", "serif"],
       mono: ["Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
     },
 

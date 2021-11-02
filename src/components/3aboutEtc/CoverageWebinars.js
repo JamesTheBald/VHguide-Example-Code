@@ -29,14 +29,13 @@ const CoverageWebinars = ({ className }) => {
             >
               {webinarShots.map((item, indx) => {
                 return (
-                  <div key={item.node.relativePath}>
-                  {/* <div key={item.node.relativePath + index}> */}
+                  <div key={item.node.relativePath} style={{ gridArea: "area1" }}>
+                    {/* <div key={item.node.relativePath + index}> */}
                     {item.node.relativePath === currCoverage.snapshot && (
                       <GatsbyImage
                         image={item.node.childImageSharp.gatsbyImageData}
                         alt="Video snapshot"
                         className="object-contain"
-                        style={{ gridArea: "area1" }}
                       />
                     )}
                   </div>

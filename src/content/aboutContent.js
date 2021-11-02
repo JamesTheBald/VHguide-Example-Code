@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { FiExternalLink } from "react-icons/fi";
+import { scroller } from "react-scroll";
 
 import { useMyContext } from "../context/Context";
-
-import { FiExternalLink } from "react-icons/fi";
-
 import CoverageGridList from "../components/3aboutEtc/CoverageGridList";
 import CoverageWebinars from "../components/3aboutEtc/CoverageWebinars";
 
@@ -49,9 +48,7 @@ const MotivationalInterviewing = () => {
 };
 
 const AboutContentWhatIsThis = () => {
-  const { setLocn, log } = useMyContext();
-  let { scrollTarget } = useMyContext();
-  log && console.log("AboutContent.js runs scrollTarget.current=", scrollTarget.current);
+  const { winWidth, setLocn, log } = useMyContext();
 
   return (
     <article>
@@ -64,13 +61,12 @@ const AboutContentWhatIsThis = () => {
       <ul className={`${listClass} relative`}>
         <li>
           <Link to="/pearls" className="orangeUnderline">
-            {/* <span className="orangeUnderline" onClick={() => history.push("/pearls")}> */}
             Clinician-to-clinician advice
           </Link>
           <span className="pl-1.5">on how to counsel patients about their </span>
           <TypesPopup text={"type"} />
           <span>
-            . Below you’ll find examples of dialogue from other clinicians who have address this type of hesitancy.
+            . Below you’ll find examples of dialogue from other clinicians who have addressed this type of hesitancy.
           </span>
         </li>
         <li>
@@ -79,7 +75,6 @@ const AboutContentWhatIsThis = () => {
             to="/details/overview"
             className="orangeUnderline"
             onClick={() => {
-              // history.push("/details/overview");
               setLocn({ branch: 1, topic: 0, subtopic: 0, showSubtopic: false });
             }}
           >
@@ -90,7 +85,6 @@ const AboutContentWhatIsThis = () => {
         <li className="relative">
           <span>A</span>
           <Link to="/explore" className="p-1.5 orangeUnderline">
-            {/* <span className="p-1.5 orangeUnderline" onClick={() => history.push("/explore")}> */}
             flowsheet
           </Link>
           <span>for identifying, differentiating, and addressing common </span>
@@ -108,20 +102,19 @@ const AboutContentWhatIsThis = () => {
         <span>. Motivational Interviewing encourages both the clinician and the patient to</span>
         <strong className="px-1.5">identify positive motivations for vaccination.</strong>
         <span>This happens in the course of </span>
-        <Link
-          to="/about"
+        <button
           className="orangeUnderline"
           onClick={() => {
-            scrollTarget.current = "EAASE Steps";
-            log &&
-              console.log("aboutContent.js link to EAASE section. Setting scrollTarget.current=", scrollTarget.current);
-            // history.push(
-            //   "/about/bogus URL param to force redirect to /about and hence rerender, so AboutPanels.js' useEffect is run, causing scrolling to scrollTarget, even if nothing has changed on the page"
-            // );
+            log && console.log("AboutContentWhatIsThis(): scrolling to eaaseSteps panel.");
+            scroller.scrollTo("eaaseSteps", {
+              duration: 1000,
+              smooth: true,
+              offset: winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -175,
+            });
           }}
         >
           open, affirming, conversations
-        </Link>
+        </button>
         <span> about options rather than closed, judgmental, pronouncements of expertise.</span>
       </div>
     </article>
@@ -148,7 +141,6 @@ const AboutContentHowUse = () => {
           to="/explore"
           className="orangeUnderline"
           onClick={() => {
-            // history.push("/explore");
             setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
             setNoneSelected(true);
           }}
@@ -216,14 +208,10 @@ const AboutContentEaaseSteps = () => {
           safe space for them to share real concerns.
         </li>
         <li>
-          <span>
-            <em>
-              <strong>Affirm</strong> and reflectively listen:
-            </em>
+          <span className="pr-1.5 italic">
+            <strong>Affirm</strong> and reflectively listen:
           </span>
-          <span className="pl-1.5">
-            Affirm your patient’s worldview, and situate yourself as an ally. You can do this by:
-          </span>
+          <span>Affirm your patient’s worldview, and situate yourself as an ally. You can do this by:</span>
           <ul className={`pt-3 ${listClass}`}>
             <li>
               Emphasizing your patient&apos;s autonomy &mdash; they will be a good person regardless of the decision
@@ -248,7 +236,9 @@ const AboutContentEaaseSteps = () => {
           </span>
         </li>
         <li>
-          <span className="pr-1.5  font-semibold italic">Evoke</span>
+          <span className="pr-1.5 italic">
+            <strong>Evoke</strong>
+          </span>
           <span>and evaluate options:</span>
           <ul className={`pt-3 ${listClass}`}>
             <li>
@@ -260,13 +250,12 @@ const AboutContentEaaseSteps = () => {
           </ul>
         </li>
       </ul>
-      {/* <br /> */}
       <div>
         <div>Across the rest of the Guide we use the EAASE steps to organize advice for each type of hesitancy.</div>
         {/* Make sure the breakpoints for the image below line up with those in the columnStyle class in in AboutPanels.js*/}
-        <div className="m-3 md:mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
+        <div className="m-3 mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
           <StaticImage
-            // className="pl-12 py-3 pt-4"
+            className="pt-4"
             src={"../images/screenshots/Overview-Undifferentiated-Hesitancy.png"}
             alt="Screenshot of Undifferentiated Hesitancy overview page"
           />
@@ -275,7 +264,6 @@ const AboutContentEaaseSteps = () => {
         <div>
           For tips from fellow clinicians on how to conduct these conversations, head over to the
           <Link to="/pearls" className="px-1.5 orangeUnderline">
-            {/* <a className="px-1.5 orangeUnderline" onClick={() => history.push("/pearls")}> */}
             Clinical Pearls
           </Link>
           page.
@@ -311,20 +299,24 @@ const AboutContentMediaCoverage = () => {
 export const aboutContent = [
   {
     title: "What is the VH Guide?",
+    panelID: "whatIs",
     content: <AboutContentWhatIsThis />,
   },
 
   {
     title: "How do I use the VH Guide?",
+    panelID: "howUse",
     content: <AboutContentHowUse />,
   },
 
   {
     title: "The EAASE Steps Explained",
+    panelID: "eaaseSteps",
     content: <AboutContentEaaseSteps />,
   },
   {
     title: "Media Coverage",
+    panelID: "coverage",
     content: <AboutContentMediaCoverage />,
   },
 ];

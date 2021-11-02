@@ -66,10 +66,6 @@ const CarouselFeaturedOn = () => {
     );
   };
 
-  // const logoOffset = offsetPercent => {
-  //   return offsetPercent < 100 ? offsetPercent : 0;
-  // };
-
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
 
@@ -77,7 +73,7 @@ const CarouselFeaturedOn = () => {
     <>
       <Carousel
         ref={carouselRefFeaturedOn}
-        className="w-full  mt-10 mb-6"
+        className="w-full  mt-5 mb-6"
         // className="w-full sm:mx-40  mt-4"
         itemsToShow={itemsPerPage}
         showArrows={true}
@@ -92,7 +88,7 @@ const CarouselFeaturedOn = () => {
           clearTimeout(timer);
           if (index >= numPages) {
             timer = setTimeout(() => {
-              carouselRefFeaturedOn.current.goTo(0);
+              carouselRefFeaturedOn?.current?.goTo && carouselRefFeaturedOn.current.goTo(0);
             }, timeOnEach);
           }
         }}
