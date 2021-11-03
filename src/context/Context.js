@@ -39,7 +39,6 @@ const MyProvider = ({ children }) => {
     showSubtopic: false,
   });
   const [fullStoryID, setFullStoryID] = useState("");
-  // const [navBarOpen, setNavBarOpen] = useState(false);
   const [noneSelected, setNoneSelected] = useState(true);
   const scrollTarget = useRef("");
   const queryData = useRef({});
@@ -56,14 +55,12 @@ const MyProvider = ({ children }) => {
     branch: branch,
     locn: locn,
     fullStoryID: fullStoryID,
-    // navBarOpen: navBarOpen,
     noneSelected: noneSelected,
     setWinWidth: setWinWidth,
     setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,
-    // setNavBarOpen: setNavBarOpen,
     setFullStoryID: setFullStoryID,
     scrollTarget: scrollTarget,
     queryData: queryData,

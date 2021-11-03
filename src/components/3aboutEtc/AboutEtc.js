@@ -65,7 +65,8 @@ const AboutEtc = props => {
         </div>
 
         {/* Panel */}
-        <div id={pageTitle} className="stdMargins spacerFooter relative z-10">
+        <div id="AboutPanelsContainer" className="stdMargins spacerFooter relative z-10">
+        {/* <div id={pageTitle} className="stdMargins spacerFooter relative z-10"> */}
           <AboutPanels
             path={path}
             contentArray={contentArray}

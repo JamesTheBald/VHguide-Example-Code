@@ -24,6 +24,7 @@ const AboutPanels = props => {
       log && console.log("AboutPanels.js useLayoutEffect. scrollTarget.current=", scrollTarget.current);
       log && console.log("AboutPanels.js useLayoutEffect. scrollOffset=", scrollOffset);
       scroller.scrollTo(scrollTarget.current, {
+        containerID: "AboutPanelsContainer",
         duration: 1000,
         smooth: "linear",
         offset: scrollOffset,

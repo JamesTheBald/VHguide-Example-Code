@@ -107,6 +107,7 @@ const AboutContentWhatIsThis = () => {
           onClick={() => {
             log && console.log("AboutContentWhatIsThis(): scrolling to eaaseSteps panel.");
             scroller.scrollTo("eaaseSteps", {
+              containerID: "AboutPanelsContainer",
               duration: 1000,
               smooth: true,
               offset: winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -175,

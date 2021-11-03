@@ -1,6 +1,7 @@
 import React from "react";
 import { useMyContext } from "../../context/Context";
-import LinkToAboutEAASE from "../../content/LinkToAboutEAASE";
+// import LinkToAboutEAASE from "../../content/LinkToAboutEAASE";
+import LinkToPathAndSection from "../LinkToPathAndSection";
 
 const AdviceWhatsWorking = () => {
   const { log2 } = useMyContext();
@@ -16,7 +17,13 @@ const AdviceWhatsWorking = () => {
         <span>Approach the conversation through the</span>
 
         <span className="hoverRevealTrigger">
-          <LinkToAboutEAASE text={"‘EAASE’ steps"} />
+          {/* <LinkToAboutEAASE text={"‘EAASE’ steps"} /> */}
+          <LinkToPathAndSection
+            targetPath="/about"
+            targetPanel="eaaseSteps"
+            text="‘EAASE’ steps"
+            className="ml-1.5 orangeLink"
+          />
 
           <div
             className="hiddenTillHover absolute sm:left-1/4  top-12 z-50  w-full sm:w-3/4 md:w-1/2 lg:w-140

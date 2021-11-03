@@ -9,18 +9,19 @@ const useOnClickOutside = (ref, handler) => {
     () => {
       const listener = event => {
         // Do nothing if clicking the referenced element or its descendent elements. Otherwise run the handler function
-        if (!ref.current || ref.current.contains(event.target)) {
+        if (!ref.current || ref.current.contains(event.target) || null) {
           return;
         }
         handler(event);
       };
 
-      document.addEventListener("mousedown", listener);
-      document.addEventListener("touchstart", listener);
+      document.addEventListener("click", listener);
+      // document.addEventListener("mousedown", listener);
+      // document.addEventListener("touchstart", listener);
 
       return () => {
-        document.removeEventListener("mousedown", listener);
-        document.removeEventListener("touchstart", listener);
+        document.removeEventListener("click", listener);
+        // document.removeEventListener("touchstart", listener);
       };
     },
     [ref, handler]

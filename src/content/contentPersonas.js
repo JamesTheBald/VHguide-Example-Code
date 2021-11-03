@@ -1,5 +1,6 @@
 import React from "react";
-import LinkToAboutEAASE from "./LinkToAboutEAASE";
+// import LinkToAboutEAASE from "./LinkToAboutEAASE";
+import LinkToPathAndSection from "../components/LinkToPathAndSection";
 import { FiExternalLink } from "react-icons/fi";
 // import { BsArrowRight } from "react-icons/bs";
 
@@ -6838,7 +6839,15 @@ export const contentPersonas = {
           </>,
           <>
             <span>Use the</span>
-            <LinkToAboutEAASE text={"EAASE Steps"} />
+            {/* <LinkToAboutEAASE text={"EAASE Steps"} /> */}
+            <LinkToPathAndSection
+            targetPath="/about"
+            targetPanel="eaaseSteps"
+            text="EAASE Steps"
+            className="ml-1.5 orangeLink"
+          />
+
+
             <span>
               {" "}
               to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
