@@ -16,7 +16,7 @@ const MyProvider = ({ children }) => {
 
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
-  WindowSizeListener(setWinWidth, setWinHeight);
+  WindowSizeListener(winWidth, setWinWidth, setWinHeight);
 
   let marginOuter = 50;
   if (typeof window !== `undefined` && winWidth > 100)
