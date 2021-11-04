@@ -39,7 +39,8 @@ const TopicTree = props => {
     }
   };
 
-  const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
+  const outsideMargin = winWidth < 510 ? 18 : 32;
+  // const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
   const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
   const insideMargin = 15 + 20 * (widthAdjRatio - 0.3125);
   const bottomPadding = winWidth < 510 ? 40 : 58;

@@ -10,6 +10,14 @@ const featuredOnLogoPaths = [
   },
 
   {
+    imageName: "Globe and Mail.jpg",
+    alt: "The Globe and Mail",
+    URL: "https://www.theglobeandmail.com/canada/alberta/article-alberta-bc-saskatchewan-ask-ottawa-to-send-one-shot-jj-covid-19/",
+    scalePercent: 90,
+    offsetPercent: 0,
+  },
+
+  {
     imageName: "Global_News.svg",
     alt: "Global Edmonton",
     URL: "https://globalnews.ca/news/8119894/university-of-calgary-covid-19-vaccine-hesitancy-guide/",

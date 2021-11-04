@@ -110,7 +110,7 @@ const AboutContentWhatIsThis = () => {
               containerID: "AboutPanelsContainer",
               duration: 1000,
               smooth: true,
-              offset: winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -175,
+              offset: winWidth < 1024 ? -280 : winWidth < 1920 ? -320 : -175,
             });
           }}
         >

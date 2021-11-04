@@ -9,8 +9,9 @@ import featuredOnLogoPaths from "../../content/featuredOnLogoPaths";
 import { useMyContext } from "../../context/Context";
 
 const CarouselFeaturedOn = () => {
-  const { winWidth, queryData, log2 } = useMyContext();
+  const { winWidth, queryData, log, log2 } = useMyContext();
 
+  false && console.log(log, log2);
   const [itemsPerPage, setItemsPerPage] = useState(1);
   const [numPages, setNumPages] = useState(1);
 
@@ -66,8 +67,8 @@ const CarouselFeaturedOn = () => {
     );
   };
 
-  log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
-  log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
+  log && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
+  log && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
 
   return (
     <>

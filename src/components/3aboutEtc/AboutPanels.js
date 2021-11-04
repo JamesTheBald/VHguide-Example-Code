@@ -9,8 +9,9 @@ const AboutPanels = props => {
   const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
   const { winWidth, scrollTarget, log, log2 } = useMyContext();
 
-  const scrollOffset = -300;
-  // const scrollOffset = winWidth < 510 ? -150 : winWidth < 1024 ? -170 : winWidth < 1920 ? -150 : -150;
+  // const scrollOffset = winWidth < 510 ? -180 : winWidth < 1024 ? -170 : winWidth < 1920 ? -150 : -150;
+  // const scrollOffset = -150;
+  const scrollOffset= winWidth < 1024 ? -280 : winWidth < 1920 ? -320 : -175;
 
   log2 && console.log("");
   log2 && console.log("AboutPanels.js runs. path=", path);
@@ -22,12 +23,14 @@ const AboutPanels = props => {
   useLayoutEffect(() => {
     if (scrollTarget.current) {
       log && console.log("AboutPanels.js useLayoutEffect. scrollTarget.current=", scrollTarget.current);
-      log && console.log("AboutPanels.js useLayoutEffect. scrollOffset=", scrollOffset);
+      log && console.log("AboutPanels.js and scrollOffset=", scrollOffset);
+
       scroller.scrollTo(scrollTarget.current, {
         containerID: "AboutPanelsContainer",
         duration: 1000,
         smooth: "linear",
         offset: scrollOffset,
+        isDynamic: true,
         spy: true,
       });
     }

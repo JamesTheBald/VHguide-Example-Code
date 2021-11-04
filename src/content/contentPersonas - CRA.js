@@ -1,6 +1,5 @@
 import React from "react";
-// import LinkToAboutEAASE from "./LinkToAboutEAASE";
-import LinkToPathAndSection from "../components/LinkToPathAndSection";
+import LinkToPathSection from "../components/LinkToPathSection";
 import { FiExternalLink } from "react-icons/fi";
 // import { BsArrowRight } from "react-icons/bs";
 
@@ -176,7 +175,7 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
-              // (ScienceConcerns)
+
               {
                 text: (
                   <>
@@ -467,7 +466,6 @@ export const contentPersonas = {
                 fullStoryLinkText: "",
               },
 
-              // (ScienceConcerns)
               {
                 text: (
                   <>
@@ -1112,7 +1110,6 @@ export const contentPersonas = {
                 fullStoryID: "spikyVaccines",
                 fullStoryLinkText: <>Read the full story</>,
               },
-
               {
                 text: (
                   <>
@@ -7058,13 +7055,12 @@ export const contentPersonas = {
           </>,
           <>
             <span>Use the</span>
-            <LinkToPathAndSection
-              targetPath="/about"
-              targetPanel="eaaseSteps"
-              text="EAASE Steps"
+            <LinkToPathSection
               className="ml-1.5 orangeLink"
+              targetPath="/about"
+              targetSection="EAASE Steps"
+              text="EAASE Steps"
             />
-
             <span>
               {" "}
               to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
@@ -7380,6 +7376,7 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+
               {
                 text: (
                   <>
@@ -7458,7 +7455,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    So, one of the things that we&apos;re seeing is more and more young people even previously healthy
+                    so, one of the things that we&apos;re seeing is more and more young people even previously healthy
                     people, getting severely ill from this disease. And so that&apos;s why when I&apos;m speaking to
                     somebody like you, that&apos;s why I wanted to bring it up because I can&apos;t imagine how I would
                     feel if I didn&apos;t do my best to protect somebody like you.

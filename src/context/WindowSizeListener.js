@@ -18,6 +18,8 @@ const WindowSizeListener = (winWidth, setWinWidth, setWinHeight) => {
   useEffect(() => {
     // Debounce function to check window resizing every n=300 milliseconds
     const debouncedHandleResize = debounce(function handleResize() {
+      // only listen for changes in window width, to avoid 'scroll-to-top' bug on mobile. (Scrolling causes the scroll bar or browser navbar to appear/disappear, which changes the window height, which triggers a refresh (due to this listener), which causes the page to scroll to the top. 
+      // https://stackoverflow.com/questions/17328742/mobile-chrome-fires-resize-event-on-scroll
       if (winWidth !== window.innerWidth) {
         setWinHeight(window.innerHeight);
         setWinWidth(window.innerWidth);

@@ -180,7 +180,7 @@ export const pearlsContent = [
           {
             text: (
               <>
-                I try to home in on someone I know personally, outside of my patient panel. For instance, if someone is
+                I try to hone in on someone I know personally, outside of my patient panel. For instance, if someone is
                 worried about the impact on their fitness routines, I talk about my brother. I tell them how he is quite
                 athletic, and only 40, and how when he got COVID it laid him low. I tell them how he&apos;s been having
                 chest pain ever since, and how he had to go see a cardiologist. Sure, his heart was fine, but you know,
@@ -265,6 +265,44 @@ export const pearlsContent = [
       },
     ],
   },
+
+
+  {
+    subheading: "Desensitize, then Motivate",
+    quotes: [],
+  },
+
+  {
+    subheading: "",
+    quotes: [
+      {
+        text: (
+          <>
+            The whole conversation plays out in two phases: desensitize and motivate.  Phase 1: You have to help your patient desensitize.  They may have a nameless fear of the vaccine, and your job is to help them get less reactive to that fear and so become accustomed to the idea of getting the vaccine. You know it&apos;s nameless because every time the conversation comes up the fear is somewhere else.  One day it&apos;s about the rushed science.  The other day it&apos;s about gene therapy.  The other it&apos;s about liberty and government.  At root, its nameless and they&apos;re afraid. They can desensitize partially by seeing their close friends, their community members, maybe &apos;the rest of us&apos; but that&apos;s a lot less effective.  So you want to find out if there&apos;s ANYONE close to them who&apos;s gotten it, and see if they can use that to desensitize from the fear.
+
+          </>
+        ),
+        featured: false,
+        image: "",
+        // fullStoryID: "",
+        // fullStoryLinkText: <></>,
+      },
+          // Desensitize, then Motivate
+      {
+        text: (
+          <>
+            Phase 2: The question then, for these people who have this nameless fear of the vaccine, is &apos;How do you motivate them to do it?&apos;. You&apos;ve made it less scary - you&apos;ve desensitized – but how do you motivate them?  Well, YOU don&apos;t.  THEY do.  You just have to work with what makes them tick.  Some people are about serving the community; some are about serving themselves.  Well, there&apos;s their motivations, now help them see a path towards the thing they want that passes through the vaccine.  Would they feel like a better member of the community if they got it?  Would they feel freer and more like themselves if they got it and could do the things like - travel? Get into a bar? All you&apos;re doing is setting up the idea that the vaccine is the key to getting something that they want.
+
+          </>
+        ),
+        featured: false,
+        image: "",
+        // fullStoryID: "",
+        // fullStoryLinkText: <></>,
+      },
+    ],
+  },
+
 
   {
     title: "Lowering the ‘temperature’",

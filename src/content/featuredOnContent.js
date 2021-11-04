@@ -4,9 +4,19 @@ const coverage = {
   publications: [
     {
       iconType: "news",
+      outlet: "Annals of Family Medicine: COVID-19 Collections",
+      title:
+        "“Improving Conversations with COVID-19 Vaccine Hesitant Patients: Action research to support family physicians” (Preprint)",
+      date: "Myles Leslie, Raad Fadaak, Nicole Pinto - October 1, 2021",
+      URL: "https://deepblue.lib.umich.edu/handle/2027.42/170143",
+      linkText: "Read the preprint article here",
+    },
+
+    {
+      iconType: "news",
       outlet: "Canadian Family Physician",
       title: "“Better conversations about COVID-19 vaccines: A guide for primary care clinicians.”",
-      date: "Nicole Pinto, Raad Fadaak, and Myles Leslie  August 23, 2021",
+      date: "Nicole Pinto, Raad Fadaak, and Myles Leslie - August 23, 2021",
       URL: "https://www.cfp.ca/news/2021/08/23/08-23",
       linkText: "Read the blog post",
     },
@@ -37,7 +47,15 @@ const coverage = {
       date: "July 22, 2021",
       URL: "https://calgaryherald.com/news/local-news/primary-care-physicians-get-vaccine-hesitancy-roadmap",
       linkText: "Read the article",
-      
+    },
+
+    {
+      iconType: "news",
+      outlet: "The Globe and Mail",
+      title: "“Alberta, B.C., Saskatchewan ask Ottawa to send one-shot J&J COVID-19 vaccines to boost uptake”",
+      date: "September 30, 2021",
+      URL: "https://www.theglobeandmail.com/canada/alberta/article-alberta-bc-saskatchewan-ask-ottawa-to-send-one-shot-jj-covid-19/",
+      linkText: "Read the article",
     },
 
     {
