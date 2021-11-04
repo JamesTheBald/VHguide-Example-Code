@@ -18,10 +18,12 @@ const WindowSizeListener = (setWinWidth, setWinHeight) => {
   useEffect(() => {
     // Debounce function to check window resizing every n=300 milliseconds
     const debouncedHandleResize = debounce(function handleResize() {
-      setWinHeight(window.innerHeight);
-      setWinWidth(window.innerWidth);
-      log2 && console.log("WindowSizeListener.js Setting winWidth=", window.innerWidth);
-      log2 && console.log("WindowSizeListener.js Setting winHeight=", window.innerHeight);
+      if (winWidth !==window.innerWidth) {
+        setWinHeight(window.innerHeight);
+        setWinWidth(window.innerWidth);
+        log2 && console.log("WindowSizeListener.js Setting winWidth=", window.innerWidth);
+        log2 && console.log("WindowSizeListener.js Setting winHeight=", window.innerHeight);
+      }
     }, 300);
     window.addEventListener(`resize`, debouncedHandleResize);
     return () => window.removeEventListener(`resize`, debouncedHandleResize);
