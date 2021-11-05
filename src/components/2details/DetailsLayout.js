@@ -9,12 +9,11 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 
 const DetailsLayout = props => {
   const { hesitTypeName, related } = props;
-  const { widthAdjRatio, locn, setLocn, showContactForm, log, log2 } = useMyContext();
+  const { locn, setLocn, showContactForm, log, log2 } = useMyContext();
   // const { widthAdjRatio, marginOuter, locn, setLocn, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
-  log2 && console.log("DetailsLayout.js widthAdjRatio=", widthAdjRatio);
 
   const onClickRelated = contentID => {
     const branchNum = getBranchNum(contentID);

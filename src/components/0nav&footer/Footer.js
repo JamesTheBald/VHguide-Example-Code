@@ -8,9 +8,9 @@ import ModalContactForm from "./ModalContactForm";
 import { RiCopyrightLine } from "react-icons/ri";
 
 const Footer = () => {
-  const { showContactForm, winWidth, winHeight, widthAdjRatio, setShowContactForm } = useMyContext();
+  const { showContactForm, winWidth, winHeight, setShowContactForm } = useMyContext();
 
-  const rightGap = 100 * widthAdjRatio;
+  // const rightGap = 100 * widthAdjRatio;
   const widthFormModal = winWidth > 800 ? 500 : 400;
   const heightFormModal = 820;
   const formSource =
@@ -41,7 +41,9 @@ const Footer = () => {
           // onClick={event => event.stopPropagation()}
           aria-hidden="true"
         >
-          <div className="flex flex-wrap" style={{ marginRight: `${rightGap}px` }}>
+          <div className="flex flex-wrap"
+          //  style={{ marginRight: `${rightGap}px`}}  // Forces text wrapping on small screens but not necessary even at 360px
+           >
             <div className="flex items-center">
               <RiCopyrightLine size={winWidth < 510 ? "10" : "12"} />
               <div className="pl-1 pt-0.5 ">2021 Vaccine Hesitancy Guide</div>

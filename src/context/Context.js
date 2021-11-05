@@ -11,7 +11,7 @@ const MyProvider = ({ children }) => {
   const log2 = false;
   log && console.log("Context.js runs.");
 
-  const nomScreenWidth = 720;
+  const nomScreenWidth = 720;  // Key parameter - much formatting is based on this width
   const navBarHeight = 80; // in pixels
 
   const [winWidth, setWinWidth] = useState(nomScreenWidth);

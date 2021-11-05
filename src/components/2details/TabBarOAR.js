@@ -11,7 +11,7 @@ const TabBarOAR = () => {
 
   const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
   const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
-  const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 22;
+  const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 20;
   const tabTall = winWidth < 510 ? 92 : 100;
   const titleTopMargin = 12;
 

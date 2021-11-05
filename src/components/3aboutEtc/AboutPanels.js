@@ -60,9 +60,9 @@ const AboutPanels = props => {
                     <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
                       {currPanel.title}
                     </h2>
-                    {log2 &&
+                    {log &&
                       console.log(
-                        "AboutPanels.js just prior to QuoteGroup call. currPanel.content=",
+                        "AboutPanels.js (/pearls only) just prior to QuoteGroup call. currPanel.content=",
                         currPanel.content
                       )}
 

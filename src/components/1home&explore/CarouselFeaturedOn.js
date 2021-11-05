@@ -67,8 +67,8 @@ const CarouselFeaturedOn = () => {
     );
   };
 
-  log && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
-  log && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
+  log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
+  log2 && console.log("CarouselFeaturedOn.js featuredOnLogoPaths=", featuredOnLogoPaths);
 
   return (
     <>

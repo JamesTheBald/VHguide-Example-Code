@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { StaticImage } from "gatsby-plugin-image"; // Odd blackout during loading. Is this just during development?
+import { StaticImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import LandingText from "../../content/LandingText";
 import ScrollDownIndicator from "./ScrollDownIndicator";
-import wavyLineParams from "../../functions/wavyLineParams";
 
 const Home1TopPanel = props => {
   const { BrowseButton } = props;
-  const { winWidth, winHeight, widthAdjRatio, marginOuter, log, log2 } = useMyContext();
+  const { winWidth, winHeight, marginOuter, log, log2 } = useMyContext();
 
   log && console.log("Home1TopPanel.js runs. Incoming winWidth=", winWidth, " & winHeight=", winHeight);
+  false && console.log(log2);
 
-  const w = winWidth;
-  const ht = winHeight;
+  const [w, setW] = useState(winWidth);
   const [titleWidth, setTitleWidth] = useState(864);
-  const [contentWidth, setContentWidth] = useState(1000);
 
   useEffect(() => {
     const newContentWidth = w - 2 * marginOuter;
@@ -24,32 +22,38 @@ const Home1TopPanel = props => {
     let newTitleWidth = w * titleWidthFrac;
     if (newTitleWidth > newContentWidth) newTitleWidth = newContentWidth;
     setTitleWidth(newTitleWidth);
-    setContentWidth(newContentWidth);
+    setW(w);
+    log && console.log("Home1TopPanel.js useEffect titleWidth=", newTitleWidth);
+  }, [w, marginOuter, log]);
 
-    const msg = "contentWidth=" + newContentWidth + " & titleWidth=" + newTitleWidth;
-    log && console.log("Home1TopPanel.js useEffect " + msg);
-  }, [w, ht, marginOuter, log]);
+  // Wavy line parameters
+  const [xTrans, setxTrans] = useState(
+    w < 510 ? 0 : w < 720 ? 0 : w < 1024 ? 0 : w < 1366 ? -80 : w < 1640 ? 0 : w < 1920 ? 0 : w < 2300 ? 0 : 0
+  );
+  const [yTrans, setyTrans] = useState(
+    w < 510 ? 80 : w < 720 ? 80 : w < 1024 ? 100 : w < 1366 ? -40 : w < 1640 ? 50 : w < 1920 ? 40 : 0
+  );
+  const [xScale, setxScale] = useState(
+    w < 720 ? 1.5 : w < 1024 ? 1.1 : w < 1366 ? 1.35 : w < 1640 ? 1.2 : w < 1920 ? 1.1 : w < 2300 ? 1 : 1
+  );
+  const [yScale, setyScale] = useState(
+    w < 510 ? 2.2 : w < 720 ? 2 : w < 1024 ? 1.3 : w < 1366 ? 1.25 : w < 1640 ? 1.1 : w < 1920 ? 0.9 : 0.9
+  );
+  false && setxTrans() && setyTrans() && setxScale() && setyScale();
 
-  const imageWidth = winWidth < 1366 ? 275 + 120 * widthAdjRatio : contentWidth - titleWidth - 20;
-  const imageScale = 100;
-  // const imageScale = winWidth < 1366 ? 100 : 95;
-  log2 && console.log("Home1TopPanel.js imageWidth=", imageWidth, " & imageScale=", imageScale);
-
-  const wavyLinePanelHt = winWidth < 1366 ? winHeight - 80 + widthAdjRatio * 40 : winHeight + 20 - 60 / widthAdjRatio;
-
-  let xTrans = 0;
-  let yTrans = 80;
-  let xScale = 1.2;
-  let yScale = 1.4;
-  [xTrans, yTrans, xScale, yScale] = wavyLineParams(widthAdjRatio, winWidth);
-  log2 && console.log("Home1TopPanel.js xTrans=", xTrans, ", yTrans=", yTrans);
-  log2 && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
+  log && console.log("Home1TopPanel.js w=", w);
+  log && console.log("Home1TopPanel.js xTrans=", xTrans, ", yTrans=", yTrans);
+  log && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
 
   return (
     <div className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative">
       <div className="lg:hidden h-3" />
 
-      <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}>
+      <div
+        className="absolute w-full  h-224 lg:h-224 xl:h-250  overflow-hidden"
+        style={{ zIndex: 20 }}
+      >
+        {/* <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}> */}
         <StaticImage
           className="lg:hidden"
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
@@ -66,7 +70,7 @@ const Home1TopPanel = props => {
 
       <div className="w-screen stdMargins flex flex-col lg:flex-row z-20 relative" style={{ zIndex: 20 }}>
         <div className="order-last lg:order-first">
-          <div className="h-4 lg:h-50 xl:h-75" />
+          <div className="h-3 lg:h-50 xl:h-64" />
 
           <LandingText titleWidth={titleWidth} />
 
@@ -76,30 +80,30 @@ const Home1TopPanel = props => {
           <div className="h-12" />
         </div>
 
-        <div className="mt-8 lg:mt-20 lg:ml-8 mr-4 w-full flex flex-col justify-center  max-w-90 lg:max-w-250 ">
-          {/* {winWidth < 1366 ? ( */}
+        <div
+          className="mt-5 lg:mt-20 lg:ml-8 mxl:ml-12 xl:ml-16  mr-4  w-72 sm:w-80 md:w-85 lg:w-150 xl:w-210
+                        flex flex-col justify-center"
+        >
           <StaticImage
+            className="lg:hidden"
             src="../../images/homepage/Home Page Icon_Reversed.png"
             alt="Vaccine hesitancy guide graphic"
-            className="lg:hidden"
             placeholder="blurred"
             loading="eager"
             layout="constrained"
             width={360}
             quality={90}
           />
-          {/* ) : ( */}
           <StaticImage
+            className="hidden lg:block"
             src="../../images/homepage/Home Page Icon_Main Way.png"
             alt="Vaccine hesitancy guide graphic"
-            className="hidden lg:block"
             placeholder="blurred"
             loading="eager"
             layout="constrained"
             width={1000}
             quality={80}
           />
-          {/* )} */}
         </div>
       </div>
 

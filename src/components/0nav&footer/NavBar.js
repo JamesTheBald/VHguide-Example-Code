@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -13,7 +12,7 @@ import { VscClose } from "react-icons/vsc";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { branch, navBarHeight, widthAdjRatio, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
+  const { branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
 
   const dropDownRef = useRef();
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -56,10 +55,9 @@ const NavBar = () => {
 
   const bgColor = "bg-blue-black";
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  const bord = pathname !== "/" ? "" : "border-solid border-b-2";
-  log && console.log("NavBar.js pathname=", pathname, " so border= ", bord);
+  // const bord = pathname !== "/" ? "" : "border-solid border-b-2";
+  // log && console.log("NavBar.js pathname=", pathname, " so border= ", bord);
 
-  const marginLeftIcon = 38 * widthAdjRatio;
   const hesitancyDropDownClass = "py-3  text-left  border-solid border-gray-light  text-14 tracking-0.4 cursor-pointer";
 
   const NavBarItemsAndDropDowns = () => {
@@ -90,7 +88,7 @@ const NavBar = () => {
             <>
               <div
                 className={`pt-1.5  hiddenTillHover absolute   rounded-b-xl ${bgColor}
-                ${pathname === "/" ? "border border-solid border-gray-light" : ""}`}
+                ${pathname === "/" ? "border-2 border-solid border-gray-light" : ""}`}
                 style={{ left: 6, top: 87, width: 290 }}
               >
                 <div className="flex flex-col">
@@ -146,7 +144,8 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`fixed w-full  flex justify-between items-center   ${bgColor} ${bord} z-50
+        // className={`fixed w-full  flex justify-between items-center   ${bgColor} ${bord} z-50
+        className={`fixed w-full  flex justify-between items-center   ${bgColor} border-solid border-b-2 border-gray-light  z-50
                     text-16 tracking-0.3 text-gray-light font-sans`}
         style={{ height: navBarHeight }}
         onClick={() => setNavBarOpen(false)}
@@ -154,8 +153,8 @@ const NavBar = () => {
       >
         <button
           name="VH Guide logo"
-          className="ml-6 sm:ml-9 md:ml-11  pt-1 flex flex-col justify-start items-center  leading-none font-normal cursor-pointer"
-          style={{ marginLeft: marginLeftIcon }}
+          className="ml-6 mxs:ml-8 sm:ml-10 md:ml-12  pt-1 
+                     flex flex-col justify-start items-center  leading-none font-normal cursor-pointer"
           onClick={evnt => onClickGo(evnt, "/")}
         >
           <nav>
@@ -182,7 +181,7 @@ const NavBar = () => {
 
           {navBarOpen && (
             // Need the wrapping fragments below
-            <>  
+            <>
               <div
                 ref={dropDownRef}
                 className={`px-10 py-6 absolute top-0 right-0 w-full mxs:w-85 flex flex-col gap-4  

@@ -7011,7 +7011,7 @@ export const contentPersonas = {
       tags: ["", ""],
 
       theySay: {
-        image: "presentation.svg",
+        image: "Presentation.svg",
         content: [
           <>
             <p>

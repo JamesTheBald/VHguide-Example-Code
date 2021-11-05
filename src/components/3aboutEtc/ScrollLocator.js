@@ -4,16 +4,24 @@ import { Link } from "react-scroll";
 
 const ScrollLocator = props => {
   const { path, contentArray } = props;
-  const { winWidth, log2 } = useMyContext();
+  const { winWidth, log, log2 } = useMyContext();
 
+  false && console.log(log, log2);
   log2 && console.log("ScrollLocator.js path=", path);
+  log2 && console.log("ScrollLocator.js contentArray=", contentArray);
 
-  const offsetCalc = (indx) => {
+  const offsetCalc = indx => {
     let scrollOffset = -300;
-    if (indx===0) {
+
+    if (path.match(/pearls/i)) {
+      log && console.log("ScrollLocator.js Using pearls offsets");
+      if (indx === 0) {
+        scrollOffset = -750;
+      } else {
+        scrollOffset = winWidth < 510 ? -300 : winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -250;
+      }
+    } else if (indx === 0) {
       scrollOffset = -500;
-    } else if (path.match(/pearls/i)) {
-      scrollOffset = winWidth < 510 ? -250 : winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -250;
     } else if (path.match(/terms/i)) {
       scrollOffset = winWidth < 510 ? -320 : winWidth < 1024 ? -350 : winWidth < 1920 ? -350 : -200;
     } else {
@@ -49,6 +57,8 @@ const ScrollLocator = props => {
     <>
       <div className="pb-6  flex flex-col  text-16 sm:text-20 font-sans tracking-0.3 sm:tracking-0.4">
         {contentArray.map((currPanel, index) => {
+          log2 && console.log("ScrollLocator.js map function. index=", index, "& currPanel=", currPanel);
+
           return (
             <div key={index}>
               <Link
@@ -66,7 +76,7 @@ const ScrollLocator = props => {
         })}
 
         {path.match(/about/i) && (
-        // {path === "/about" && (
+          // {path === "/about" && (
           <div>
             <Link
               activeClass="activeScrollLink"

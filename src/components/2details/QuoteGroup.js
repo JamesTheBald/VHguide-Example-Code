@@ -6,8 +6,8 @@ const QuoteGroup = props => {
   const { quoteGroup } = props;
   const { winWidth, setFullStoryID, log, log2 } = useMyContext();
 
-  false && log && console.log();
-  log2 && console.log("QuoteGroup.js runs. quotes=", quoteGroup);
+  false && console.log(log, log2);
+  log2 && console.log("QuoteGroup.js runs. quoteGroup (quotes)=", quoteGroup);
 
   return (
     <>

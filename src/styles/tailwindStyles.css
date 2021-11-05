@@ -5,7 +5,7 @@
 @layer components {
 
   .stdMargins {
-    @apply px-6 mxs:px-12 sm:px-18 md:px-28 mxl:px-36
+    @apply px-6 mxs:px-9 sm:px-12 md:px-16 lg:px-20 mxl:px-24 xl:px-28
   }
 
   .sectionGapHomePage {

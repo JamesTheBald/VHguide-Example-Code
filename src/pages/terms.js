@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
+import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import AboutEtc from "../components/3aboutEtc/AboutEtc";
 import termsContent from "../content/termsContent";
-import { useMyContext } from "../context/Context";
 
 const Terms = props => {
   const { location } = props;

@@ -22,7 +22,8 @@ const TypesPopup = props => {
         className="hiddenTillHover absolute  sm:left-10 md:left-1/4  z-50  w-full sm:w-3/4 md:w-120
                p-7  baseFont bg-white rounded-2xl shadowGray"
         //  above class had "-translate-x-1/2" but this doesn't do anything with "transform" utility
-        style={{ bottom: "100%" }}
+        style={{ top: "50%" }}
+        style={{ top: 50 + "px" }}
       >
         <div className="pb-3  text-yellow-darkish font-bold">&lsquo;Type&rsquo;</div>
         <div>

@@ -19,7 +19,6 @@ const Subtopics = props => {
     navigate("/details/overview");
   };
 
-  // const leftMarginSub = winWidth < 510 ? 50 : (80 * (widthAdjRatio + 3)) / 4; // all in pixels
   // const insideMargin = 2*insideMargin;
   const subtopicStepHt = winWidth < 510 ? 6 : 12;
 
