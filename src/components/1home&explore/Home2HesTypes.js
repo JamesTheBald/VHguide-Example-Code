@@ -1,19 +1,22 @@
-import React from "react";
-import ReactPlayer from "react-player/file";
-import VideoSnapshotHome from "./VideoSnapshotHome";
+import React, { useRef, useState } from "react";
+import homePageVideo from "../../assets/homepage/Video for Home Page - processed.mp4";
+// import ReactPlayer from "react-player/file";
+import { AiFillPlayCircle } from "react-icons/ai";
+// import VideoSnapshotHome from "./VideoSnapshotHome";
 import { useMyContext } from "../../context/Context";
 
 const Home2HesTypes = props => {
   const { BrowseButton } = props;
-  const { winWidth } = useMyContext();
-  // const { winWidth, marginOuter } = useMyContext();
+  const { winWidth, widthAdjRatio } = useMyContext();
+
+  const vidRef = useRef(null);
+  const [playButtonVisible, setPlayButtonVisible] = useState(true);
 
   const HesTypesPanel = props => {
     const { posnClass } = props;
     return (
       <section
         className={`${posnClass} mxs:w-5/6 sm:w-3/4 xl:w-140  px-5 mxs:px-8 sm:px-10 md:px-14  py-5 mxs:py-7 sm:py-9 md:py-12  bg-blue-black rounded-2xl mxs:rounded-3xl sm:rounded-4xl  xl:rounded-l-none  smThenBaseFont`}
-        // className="absolute xl:relative xl:h-full right-0 xl:top-8 ...
         style={{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }}
       >
         <h2 className="titleFont titleBig">Hesitancy Types</h2>
@@ -37,12 +40,15 @@ const Home2HesTypes = props => {
       <div className={`w-full stdMargins text-gray-light`}>
         <div className="sectionGapHomePage" />
 
-        <div className="w-full relative xl:flex justify-center">
+        <div id="hesTypes" className="w-full relative xl:flex justify-center">
           <div
-            className="w-full sm:w-5/6 xl:w-300 pt-1 mxs:pt-3 xl:py-10  aspect-w-16 aspect-h-9 xl:aspect-none bg-black 
-                       border-3 border-solid border-gray-black  rounded-2xl mxs:rounded-3xl sm:rounded-4xl  relative"
+            className="px-1 py-6  w-full sm:w-5/6 xl:w-300  relative
+                      grid justify-items-center items-center 
+                     bg-black  border-3 border-solid border-gray-black  rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
+            //  aspect-w-16 aspect-h-9 xl:aspect-none
+            style={{ gridTemplateAreas: "area1" }}
           >
-            <ReactPlayer
+            {/* <ReactPlayer
               url="/videos/Video for Home Page - processed.mp4"
               style={{ marginLeft: "auto", marginRight: "auto" }}
               muted={true}
@@ -52,7 +58,23 @@ const Home2HesTypes = props => {
               playIcon={<VideoSnapshotHome />}
               width="98%"
               height="98%"
-            />
+            /> */}
+
+            <video ref={vidRef} className="focus:z-40" controls style={{ gridArea: "area1", zIndex: 20 }}>
+              <source src={homePageVideo} type="video/mp4" preload="metadata" muted={true} />
+              <track src="" kind="captions" srcLang="en" label="no audio, no captions available" />
+            </video>
+
+            <button
+              className={`opacity-100 text-gray-medium z-30 ${!playButtonVisible && "hidden"} `}
+              style={{ gridArea: "area1" }}
+              onClick={() => {
+                vidRef.current.play();
+                setPlayButtonVisible(false);
+              }}
+            >
+              <AiFillPlayCircle size={(100 * (widthAdjRatio + 2)) / 3} />
+            </button>
           </div>
 
           <HesTypesPanel posnClass="absolute right-0  xl:relative xl:h-full xl:top-8" />

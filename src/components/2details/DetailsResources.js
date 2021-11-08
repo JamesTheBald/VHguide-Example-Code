@@ -51,7 +51,7 @@ const DetailsResources = (props) => {
                       <img
                         src={currResource.image}
                         // Per https://stackoverflow.com/questions/64910839/require-function-not-working-with-image-in-react
-                        // NB: Images must be in /public/images  The alternative, with
+                        // NB: Images must be in /src/assets  The alternative, with
                         // <img src={require('./image.jpg).default}  worked but only if the image is in the components subdir
                         // Putting them elsewhere led to a webpack file-loader rabbit hole.
                         alt="Webpage screenshot"

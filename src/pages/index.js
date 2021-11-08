@@ -11,23 +11,25 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { setWinWidth, setWinHeight, setNoneSelected, showContactForm, queryData } =
+  const { setWinWidth, setWinHeight, setNoneSelected, showContactForm, queryData, log } =
     useMyContext();
   queryData.current = data;
+
+  log && console.log("index.js runs.");
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
       const wid = window.innerWidth;
-      console.log("index.js useEffect has mounted, window var is defined. Setting winWidth & winHeight");
+      log && console.log("index.js useEffect has mounted, window var is defined. Setting winWidth & winHeight");
       setWinWidth(wid);
       setWinHeight(window.innerHeight);
     } else {
-      console.log("index.js HAS MOUNTED BUT WINDOW VAR IS STILL UNDEFINED!! Trying again after delay.");
+      log && console.log("index.js HAS MOUNTED BUT WINDOW VAR IS STILL UNDEFINED!! Trying again after delay.");
       const timer = setTimeout(setWinWidth(window.innerWidth), 500);
       // The above use of window.innerWidth will kick an error if window var is STILL undefined after timeout
       clearTimeout(timer);
     }
-  }, [setWinWidth, setWinHeight]);
+  }, [setWinWidth, setWinHeight, log]);
 
   const BrowseButton = props => {
     const { classExt } = props;

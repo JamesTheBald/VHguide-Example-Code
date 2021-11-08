@@ -1,6 +1,7 @@
 import React from "react";
-import { useMyContext } from "../../context/Context";
+// import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
+import { useMyContext } from "../../context/Context";
 import ScrollLocator from "./ScrollLocator";
 import AboutPanels from "./AboutPanels";
 import PearlsPreface from "./PearlsPreface";
@@ -13,16 +14,28 @@ const AboutEtc = props => {
   log && console.log("AboutEtc.js path=", path);
   log2 && console.log("AboutEtc.js contentArray=", contentArray);
 
-  const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
   const paddingBelowTitle = winWidth < 720 ? 25 : 32;
   const heightOfTitle = 60 - 15; // height of single line spacing at 40pt font, less 15px of 'apparent' bottom padding (there to accommodate descending letters)
+  const yDistTitleFromTop = winWidth < 510 ? 35 : winWidth < 1200 ? 60 : 72;
+  log2 && console.log("AboutEtc.js yDistTitleFromTop=", yDistTitleFromTop);
 
   const yPosnScrollLocator =
     winWidth <= 720 ? 12 : winWidth < 1920 ? 8 : navBarHeight + yDistTitleFromTop + heightOfTitle + paddingBelowTitle;
   const yPosnPanel =
-    winWidth <= 720 ? paddingBelowTitle + 10 : winWidth < 1920 ? paddingBelowTitle + 20 : heightOfTitle + paddingBelowTitle;
+    winWidth <= 720
+      ? paddingBelowTitle + 10
+      : winWidth < 1920
+      ? paddingBelowTitle + 20
+      : heightOfTitle + paddingBelowTitle;
 
-  log2 && console.log("AboutEtc.js yDistTitleFromTop=", yDistTitleFromTop);
+  // Report scroll position: https://dev.to/n8tb1t/tracking-scroll-position-with-react-hooks-3bbj
+  // let params = [[], null, false, 500];
+  // useScrollPosition(({ prevPos, currPos }) => {
+  //   console.log("AboutEtc.js scroll y Position", currPos.y);
+  // }, params);
+
+  // useLayoutEffect(() => {
+  // }, [winWidth, scrollTarget, scrollOffset, log]);
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
@@ -45,6 +58,7 @@ const AboutEtc = props => {
           <h1 className="fixed titleFont titleMedium z-30" style={{ marginTop: yDistTitleFromTop }}>
             {pageTitle}
           </h1>
+
           <div className="fixed" style={{ top: yPosnScrollLocator }}>
             <ScrollLocator path={path} contentArray={contentArray} />
           </div>
@@ -65,8 +79,8 @@ const AboutEtc = props => {
         </div>
 
         {/* Panel */}
-        <div id="AboutPanelsContainer" className="stdMargins spacerFooter relative z-10">
-        {/* <div id={pageTitle} className="stdMargins spacerFooter relative z-10"> */}
+        <div className="stdMargins spacerFooter relative z-10">
+        {/* <div id="AboutPanelsContainer" className="stdMargins spacerFooter relative z-10"> */}
           <AboutPanels
             path={path}
             contentArray={contentArray}

@@ -11,25 +11,25 @@ const ScrollLocator = props => {
   log2 && console.log("ScrollLocator.js contentArray=", contentArray);
 
   const offsetCalc = indx => {
-    let scrollOffset = -300;
+    let offset = -300;
 
     if (path.match(/pearls/i)) {
       log && console.log("ScrollLocator.js Using pearls offsets");
       if (indx === 0) {
-        scrollOffset = -750;
+        offset = -750;
       } else {
-        scrollOffset = winWidth < 510 ? -300 : winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -250;
+        offset = winWidth < 510 ? -300 : winWidth < 1024 ? -300 : winWidth < 1920 ? -300 : -250;
       }
     } else if (indx === 0) {
-      scrollOffset = -500;
+      offset = -500;
     } else if (path.match(/terms/i)) {
-      scrollOffset = winWidth < 510 ? -320 : winWidth < 1024 ? -350 : winWidth < 1920 ? -350 : -200;
+      offset = winWidth < 510 ? -320 : winWidth < 1024 ? -350 : winWidth < 1920 ? -350 : -200;
     } else {
-      scrollOffset = winWidth < 510 ? -350 : winWidth < 1024 ? -400 : winWidth < 1920 ? -380 : -250;
+      offset = winWidth < 510 ? -350 : winWidth < 1024 ? -400 : winWidth < 1920 ? -380 : -250;
     }
-    log2 && console.log("ScrollLocator.js offsetCalc() indx=", indx, ", scrollOffset=", scrollOffset);
+    log2 && console.log("ScrollLocator.js offsetCalc() indx=", indx, ", scrollOffset=", offset);
 
-    return scrollOffset;
+    return offset;
   };
 
   const scrollLocatorLineHeight = winWidth < 510 ? 28 : 35; // px
@@ -67,6 +67,7 @@ const ScrollLocator = props => {
                 offset={offsetCalc(index)}
                 spy={true}
                 smooth={true}
+                isDynamic={true}
                 duration={600}
               >
                 <LinkBody label={currPanel.title} />
@@ -80,10 +81,11 @@ const ScrollLocator = props => {
           <div>
             <Link
               activeClass="activeScrollLink"
-              to="credits"
+              to="creditsPanel"
               offset={offsetCalc(contentArray.length)}
               spy={true}
               smooth={true}
+              isDynamic={true}
               duration={600}
             >
               <LinkBody label="Credits and Collaborators" />

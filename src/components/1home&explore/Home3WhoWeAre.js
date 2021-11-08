@@ -1,13 +1,11 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
-// import LinkToAboutCredits from "../../content/LinkToAboutCredits";
-import LinkToPathAndSection from "../LinkToPathAndSection";
 
 const Home3WhoWeAre = () => {
-  // const { topGap2 } = props;
   const { winWidth, queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
@@ -21,7 +19,6 @@ const Home3WhoWeAre = () => {
     <>
       <section className={`w-full stdMargins  flex flex-col items-center  text-blue-black`}>
         <div className="sectionGapHomePage -my-5" />
-
         <div className="titleFont titleBig">Who We Are</div>
         <div className="divider" />
         <div className="mt-9 max-w-220  smThenBaseFont xl:text-20 text-center">
@@ -64,12 +61,11 @@ const Home3WhoWeAre = () => {
         </div>
 
         <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
-          <LinkToPathAndSection
-            className="sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
-            style={{ height: "43px" }}
-            targetPath="/about"
-            targetPanel="credits"
-            text="Learn more about our team"
+          <AnchorLink
+            to="/about/#credits"
+            title="Learn more about our team"
+            className="sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-120 pt-1  linkInvPill flex justify-center items-center"
+            style={{ height: "47px" }}
           />
         </div>
       </section>

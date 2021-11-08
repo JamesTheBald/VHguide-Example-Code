@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
@@ -12,21 +12,27 @@ const Home1TopPanel = props => {
   log && console.log("Home1TopPanel.js runs. Incoming winWidth=", winWidth, " & winHeight=", winHeight);
   false && console.log(log2);
 
-  const [w, setW] = useState(winWidth);
-  const [titleWidth, setTitleWidth] = useState(864);
-
-  useEffect(() => {
-    const newContentWidth = w - 2 * marginOuter;
-    const titleWidthFrac =
-      w < 510 ? 0.85 : w < 720 ? 0.82 : w < 1024 ? 0.78 : w < 1200 ? 0.72 : w < 1366 ? 0.65 : w < 1600 ? 0.43 : 0.4;
-    let newTitleWidth = w * titleWidthFrac;
-    if (newTitleWidth > newContentWidth) newTitleWidth = newContentWidth;
-    setTitleWidth(newTitleWidth);
-    setW(w);
-    log && console.log("Home1TopPanel.js useEffect titleWidth=", newTitleWidth);
-  }, [w, marginOuter, log]);
+  const titleWidthFrac =
+    winWidth < 510
+      ? 0.85
+      : winWidth < 720
+      ? 0.82
+      : winWidth < 1024
+      ? 0.78
+      : winWidth < 1200
+      ? 0.72
+      : winWidth < 1366
+      ? 0.65
+      : winWidth < 1600
+      ? 0.43
+      : 0.4;
+  let titleWidth = winWidth * titleWidthFrac;
+  const newContentWidth = winWidth - 2 * marginOuter;
+  if (titleWidth > newContentWidth) titleWidth = newContentWidth;
+  log && console.log("Home1TopPanel.js useEffect titleWidth=", titleWidth);
 
   // Wavy line parameters
+  const w = winWidth;
   const [xTrans, setxTrans] = useState(
     w < 510 ? 0 : w < 720 ? 0 : w < 1024 ? 0 : w < 1366 ? -80 : w < 1640 ? 0 : w < 1920 ? 0 : w < 2300 ? 0 : 0
   );
@@ -41,29 +47,25 @@ const Home1TopPanel = props => {
   );
   false && setxTrans() && setyTrans() && setxScale() && setyScale();
 
-  log && console.log("Home1TopPanel.js w=", w);
-  log && console.log("Home1TopPanel.js xTrans=", xTrans, ", yTrans=", yTrans);
-  log && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
+  log2 && console.log("Home1TopPanel.js xTrans=", xTrans, ", yTrans=", yTrans);
+  log2 && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
 
   return (
     <div className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative">
       <div className="lg:hidden h-3" />
 
-      <div
-        className="absolute w-full  h-224 lg:h-224 xl:h-250  overflow-hidden"
-        style={{ zIndex: 20 }}
-      >
+      <div className="absolute w-full  h-224 lg:h-224 xl:h-250  overflow-hidden" style={{ zIndex: 20 }}>
         {/* <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}> */}
         <StaticImage
           className="lg:hidden"
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
-          src="../../images/homepage/Line for Home Page - reversed.svg"
+          src="../../assets/homepage/Line for Home Page - reversed.svg"
           alt="wavy line"
         />
         <StaticImage
           className="hidden lg:block"
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
-          src="../../images/homepage/Line for Home Page.svg"
+          src="../../assets/homepage/Line for Home Page.svg"
           alt="wavy line"
         />
       </div>
@@ -86,7 +88,7 @@ const Home1TopPanel = props => {
         >
           <StaticImage
             className="lg:hidden"
-            src="../../images/homepage/Home Page Icon_Reversed.png"
+            src="../../assets/homepage/Home Page Graphic.png"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
             loading="eager"
@@ -96,7 +98,7 @@ const Home1TopPanel = props => {
           />
           <StaticImage
             className="hidden lg:block"
-            src="../../images/homepage/Home Page Icon_Main Way.png"
+            src="../../assets/homepage/Home Page Graphic - reversed.png"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
             loading="eager"
@@ -108,7 +110,6 @@ const Home1TopPanel = props => {
       </div>
 
       <ScrollDownIndicator additionalClass={"hidden mxs:flex relative z-20"} />
-
       <div className="h-4" />
     </div>
   );

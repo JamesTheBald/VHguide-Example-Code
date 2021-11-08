@@ -10,7 +10,7 @@ const Credits = () => {
 
   return (
     <article className="panelTextClass">
-      <h2 className="panelTitleClass">Credits</h2>
+      <h2 id="credits" className="panelTitleClass">Credits</h2>
 
       <div className="flex flex-col lg:flex-row">
         <div className="mt-3">
@@ -40,7 +40,7 @@ const Credits = () => {
 
         <div className="mt-5 sm:mt-8 lg:mt-0 lg:ml-30  w-full axs:w-75 mxs:w-85 sm:w-100 lg:w-120">
           <StaticImage
-            src="../../images/collabLogos/UofC_SPPLogo.png"
+            src="../../assets/collabLogos/UofC_SPPLogo.png"
             alt="UofC School of Public Policy logo"
           />
         </div>

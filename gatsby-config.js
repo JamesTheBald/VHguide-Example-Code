@@ -6,19 +6,23 @@ module.exports = {
       "A guide to help primary care clinicians identify types of COVID-19 vaccine hesitancy. Advice and resources for addressing them.",
     url: "https://www.vhguide.ca", // No trailing slash allowed!
     keywords: `vaccine, vaccination, hesitancy, covid, COVID-10, anti-vax, conversations, misinformation, clinician, advice`,
-    image: "/images/homePage/Home Page graphic.svg", // Path to your image you placed in the 'static' folder
+    image: "/assets/homePage/Home Page graphic.svg", // Path to your image you placed in the 'static' folder
   },
 
-  // flags: {
-  //   flags: { PRESERVE_WEBPACK_CACHE: true },
-  // },
-
   plugins: [
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -300,
+        duration: 1000,
+      },
+    },
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "homepagePics",
-        path: `${__dirname}/src/images/homepage/`,
+        path: `${__dirname}/src/assets/homepage/`,
       },
       // __key: "images",
     },
@@ -26,7 +30,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "featuredOnLogos",
-        path: `${__dirname}/src/images/featuredOn/logos/`,
+        path: `${__dirname}/src/assets/featuredOn/logos/`,
       },
       // __key: "images",
     },
@@ -34,7 +38,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "collabLogos",
-        path: `${__dirname}/src/images/collabLogos/`,
+        path: `${__dirname}/src/assets/collabLogos/`,
       },
       // __key: "images",
     },
@@ -42,7 +46,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "peopleIcons",
-        path: `${__dirname}/src/images/peopleIcons/`,
+        path: `${__dirname}/src/assets/peopleIcons/`,
       },
       // __key: "images",
     },
@@ -51,14 +55,13 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "webinarShots",
-        path: `${__dirname}/src/images/featuredOn/snapshots/`,
+        path: `${__dirname}/src/assets/featuredOn/snapshots/`,
       },
       // __key: "images",
     },
 
-
     {
-      resolve: `gatsby-plugin-google-gtag`,   // See https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
+      resolve: `gatsby-plugin-google-gtag`, // See https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
@@ -74,13 +77,13 @@ module.exports = {
         },
         // The following object is used for configuration specific to this plugin
         pluginConfig: {
-          head: false,            // Put tracking script in the head instead of the body
+          head: false, // Put tracking script in the head instead of the body
           // respectDNT: true,    // ""..using Google Global Site Tag does not necessarily constitute Tracking..."
           // exclude: ["/preview/**", "/do-not-track/me/too/"],     // Avoids sending pageview hits from custom paths
         },
       },
     },
-    
+
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

@@ -14,7 +14,7 @@ const featuredOnLogoPaths = [
     alt: "The Globe and Mail",
     URL: "https://www.theglobeandmail.com/canada/alberta/article-alberta-bc-saskatchewan-ask-ottawa-to-send-one-shot-jj-covid-19/",
     scalePercent: 90,
-    offsetPercent: 0,
+    offsetPercent: 30,
   },
 
   {

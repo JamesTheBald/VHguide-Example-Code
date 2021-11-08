@@ -19,11 +19,11 @@ const CoverageGridList = ({ type, className }) => {
 
             <div className="mb-3  w-8 h-8 object-contain opacity-50">
               {currCoverage.iconType === "news" ? (
-                <StaticImage src="../../images/featuredOn/icons/noun_news article_3817600.svg" alt="news" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_news article_3817600.svg" alt="news" />
               ) : currCoverage.iconType === "tv" ? (
-                <StaticImage src="../../images/featuredOn/icons/noun_TV_4212884.svg" alt="TV" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_TV_4212884.svg" alt="TV" />
               ) : currCoverage.iconType === "radio" ? (
-                <StaticImage src="../../images/featuredOn/icons/noun_Radio_2527494.svg" alt="radio" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_Radio_2527494.svg" alt="radio" />
               ) : (
                 <></>
               )}

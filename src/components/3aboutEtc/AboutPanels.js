@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect } from "react";
-import { Element, scroller } from "react-scroll";
+import React from "react";
+import { Element } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
 import QuoteGroup from "../2details/QuoteGroup";
@@ -7,39 +7,11 @@ import Credits from "./Credits";
 
 const AboutPanels = props => {
   const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
-  const { winWidth, scrollTarget, log, log2 } = useMyContext();
-
-  // const scrollOffset = winWidth < 510 ? -180 : winWidth < 1024 ? -170 : winWidth < 1920 ? -150 : -150;
-  // const scrollOffset = -150;
-  const scrollOffset= winWidth < 1024 ? -280 : winWidth < 1920 ? -320 : -175;
+  const { winWidth, log, log2 } = useMyContext();
 
   log2 && console.log("");
   log2 && console.log("AboutPanels.js runs. path=", path);
   log2 && console.log("AboutPanel.js contentArray=", contentArray);
-  log && console.log("AboutPanel.js scrollTarget.current=", scrollTarget.current);
-  log && console.log("AboutPanel.js scrollOffset=", scrollOffset);
-
-  // Bug in react-scroll means scrollTo animation may not complete.
-  useLayoutEffect(() => {
-    if (scrollTarget.current) {
-      log && console.log("AboutPanels.js useLayoutEffect. scrollTarget.current=", scrollTarget.current);
-      log && console.log("AboutPanels.js and scrollOffset=", scrollOffset);
-
-      scroller.scrollTo(scrollTarget.current, {
-        containerID: "AboutPanelsContainer",
-        duration: 1000,
-        smooth: "linear",
-        offset: scrollOffset,
-        isDynamic: true,
-        spy: true,
-      });
-    }
-  }, [scrollTarget, scrollOffset, log]);
-
-  useEffect(() => {
-    log && console.log("AboutPanels.js useEffect: clearing scrollTarget.current");
-    scrollTarget.current = "";
-  }, [scrollTarget, log]);
 
   const yGapBetweenPanels = 65;
   const panelBaseClass = "p-5 mxs:p-9 sm:p-15 w-full bg-gray-light rounded-3xl shadowGray";
@@ -79,7 +51,7 @@ const AboutPanels = props => {
 
       {path.match(/about/i) && (
         <div>
-          <Element name="credits">
+          <Element name="creditsPanel">
             <div className={panelBaseClass}>
               <Credits />
             </div>

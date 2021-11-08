@@ -64,7 +64,7 @@ const DetailsLayout = props => {
 
           <div // Panel
             className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30
-                      overflow-x-hidden`}
+                      overflow-hidden`}
             style={{ top: tabHeight - 100 }}
           >
             {props.children}

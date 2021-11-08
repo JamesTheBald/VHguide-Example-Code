@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
 
 import { IoIosMenu } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
+import { BiChevronDown } from "react-icons/bi";
 
 import NavItem from "./NavItem.js";
 import { useMyContext } from "../../context/Context";
@@ -24,9 +24,9 @@ const NavBar = () => {
       setNoneSelected(true);
     }
     navigate(destn);
-    if (typeof window !== `undefined`) {
-      animateScroll.scrollToTop({ duration: 0 }); // time in ms
-    }
+    // if (typeof window !== `undefined`) {
+    //   animateScroll.scrollToTop({ duration: 0 }); // time in ms
+    // }
     setNavBarOpen(false);
     setShowContactForm(false);
   };
@@ -63,18 +63,20 @@ const NavBar = () => {
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
-        <NavItem classNom="mt-3 sm:mt-0" iconOffset={5} text="Home" onClickGo={onClickGo} destn="/">
-          <StaticImage src="../../images/navbar/homeIcon.svg" alt="Home icon" style={{ width: 20 }} />
+        <NavItem classNom="mt-3 sm:mt-1  mr-3" iconOffset={5} text="Home" onClickGo={onClickGo} destn="/">
+          {/* <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 20 }} loading="eager" /> */}
         </NavItem>
 
-        <div className="hoverRevealTrigger group relative  flex flex-col items-start">
+        <div className="mr-2  hoverRevealTrigger group relative  flex flex-col items-start">
           <NavItem iconOffset={5} text="Hesitancy Types" onClickGo={onClickGo} destn="/explore">
-            <StaticImage src="../../images/navbar/personIcon.svg" alt="Person icon" style={{ width: 22 }} />
+            <div className="pl-0.5">
+              <BiChevronDown size={24} />
+            </div>
           </NavItem>
 
           <div
             name="Dropdown menu for Hesitancy Types on bigger screens"
-            className="hidden sm:inline  absolute"
+            className="hidden md:inline  absolute"
             style={pathname === "/explore" ? { top: 1 + "px", zIndex: 40 } : { top: -2.25 + "rem", zIndex: 20 }}
           >
             <div
@@ -82,13 +84,14 @@ const NavBar = () => {
               className={`hiddenTillHover absolute flex justify-center items-start ${bgColor} z-30`}
               style={{ left: 7, top: 60, width: 160, height: 32 }}
             >
-              <IoIosArrowDown size={24} />
+              {/* <IoIosArrowDown size={24} /> */}
             </div>
 
             <>
               <div
                 className={`pt-1.5  hiddenTillHover absolute   rounded-b-xl ${bgColor}
-                ${pathname === "/" ? "border-2 border-solid border-gray-light" : ""}`}
+                
+                ${pathname === "/" ? "border border-solid border-gray-light" : ""}`}
                 style={{ left: 6, top: 87, width: 290 }}
               >
                 <div className="flex flex-col">
@@ -112,9 +115,9 @@ const NavBar = () => {
             </>
           </div>
 
-          <div name="Dropdown menu for Hesitancy Types on small screens" className="sm:hidden">
+          <div name="Dropdown menu for Hesitancy Types on smaller screens (<1024px wide)" className="md:hidden">
             <div
-              className="pt-1.5 hidden group-hover:flex pr-6 w-full flex-col  border-solid border-t border-gray-light"
+              className="mt-1 pt-1.5 hidden group-hover:flex pr-6 w-full flex-col  border-solid border-t border-gray-light"
               style={{ width: 270 }}
             >
               <button className={`ml-6 ${hesitancyDropDownClass} border-b`} onClick={evnt => onClickToBranch(evnt, 0)}>
@@ -130,12 +133,16 @@ const NavBar = () => {
           </div>
         </div>
 
-        <NavItem iconOffset={5} text="Clinical Pearls" onClickGo={onClickGo} destn="/pearls">
-          <StaticImage src="../../images/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 24 }} />
+        <NavItem iconOffset={5} text="Clinical Pearls" classNom="mr-2" onClickGo={onClickGo} destn="/pearls">
+          {/* <StaticImage src="../../assets/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 24 }} /> */}
         </NavItem>
 
         <NavItem iconOffset={5} text="About" onClickGo={onClickGo} destn="/about">
-          <StaticImage src="../../images/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 24 }} />
+          {/* <div className="pl-0.5">
+            <BiChevronDown size={24} />
+          </div> */}
+
+          {/* <StaticImage src="../../assets/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 24 }} /> */}
         </NavItem>
       </>
     );
@@ -144,7 +151,6 @@ const NavBar = () => {
   return (
     <>
       <div
-        // className={`fixed w-full  flex justify-between items-center   ${bgColor} ${bord} z-50
         className={`fixed w-full  flex justify-between items-center   ${bgColor} border-solid border-b-2 border-gray-light  z-50
                     text-16 tracking-0.3 text-gray-light font-sans`}
         style={{ height: navBarHeight }}
@@ -153,24 +159,21 @@ const NavBar = () => {
       >
         <button
           name="VH Guide logo"
-          className="ml-6 mxs:ml-8 sm:ml-10 md:ml-12  pt-1 
+          className="ml-2 mxs:ml-5 sm:ml-6 md:ml-8  w-60 mxs:w-72 sm:w-80 lg:w-85 
                      flex flex-col justify-start items-center  leading-none font-normal cursor-pointer"
           onClick={evnt => onClickGo(evnt, "/")}
         >
-          <nav>
-            <div className="text-25 mxs:text-30 tracking-0.6">VH</div>
-            <div className="text-10 mxs:text-12 tracking-0.5">GUIDE</div>
-          </nav>
+          <StaticImage src="../../assets/homepage/Logo for Website.svg" alt="VH Guide logo" />
         </button>
 
         <div
           name="Normal Navbar, Along the Top"
-          className="hidden sm:flex sm:items-center  pt-1 ml-12 mr-6 mxs:mr-8 sm:mr-10  relative"
+          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 sm:mr-10  relative "
         >
           <NavBarItemsAndDropDowns />
         </div>
 
-        <div name="Hamburger/Dropdown Navbar" className="sm:hidden">
+        <div name="Hamburger/Dropdown Navbar" className="md:hidden">
           <button
             name="Hamburger icon container"
             className="w-24 flex justify-center items-center cursor-pointer"

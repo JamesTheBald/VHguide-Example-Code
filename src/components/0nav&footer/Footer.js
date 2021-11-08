@@ -29,7 +29,7 @@ const Footer = () => {
         style={{ top: winHeight - 45, boxShadow: "0px 0px 3px #D6D6D6" }} // pill sits higher on homepage
         onClick={() => toggleContactForm()}
       >
-        <StaticImage src="../../images/navbar/speechBubble.svg" alt="Speech bubble" style={{ width: 28 }} />
+        <StaticImage src="../../assets/navbar/speechBubble.svg" alt="Speech bubble" style={{ width: 28 }} />
         <div className="hidden mxs:block  pl-1.5 pt-1">Contact Us</div>
       </button>
 
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
 
           <button className="hidden mxs:flex  cursor-pointer" onClick={() => toggleContactForm()}>
-            <StaticImage src="../../images/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 25 }} />
+            <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 25 }} />
             <div className="pt-1 pl-1.5 pr-4 sm:pr-6 md:pr-12  text-14 sm:text-16 tracking-0.3">Contact Us</div>
           </button>
 

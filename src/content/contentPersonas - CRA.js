@@ -6056,7 +6056,6 @@ export const contentPersonas = {
     related: [""],
     overview: {
       tags: ["overview", "needle", "injection", "shots", "pain", "fear", "faint"],
-      // Note to James: Use ../images/ path but remember that images actually need to be put in the /public/images folder
       theySay: {
         image: "People-with-Hesitancy.svg",
         content: [
@@ -6107,7 +6106,6 @@ export const contentPersonas = {
     // (NeedlePhobia)
 
     advice: {
-      // NB: The data structure for the advice section is not complete! Work in progress!
       tags: ["overview", "needle", "injection", "shots", "pain", "fear", "faint"],
 
       eaase: {
@@ -6121,7 +6119,6 @@ export const contentPersonas = {
             </>
           ),
           image: "doctorMuslimWomanYellowHeadCover.svg",
-          // Note to James: Use ../images/ path but remember that images actually need to be put in the /public/images folder
         },
         affirm: {
           text: (
@@ -6464,7 +6461,7 @@ export const contentPersonas = {
         {
           label: <>How patients can overcome needle phobia and get the COVID vaccine</>,
           image: "",
-          // image: "/images/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
+          // image: "/assets/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
           linkTitle: <>Article from Open Access Government</>,
           link: "https://www.openaccessgovernment.org/patients-covid-19-vaccination-needle-phobia/103163/",
           // Be sure that URLs do NOT include the https://
@@ -6480,7 +6477,7 @@ export const contentPersonas = {
         {
           label: <>NHS: Overcoming your needle phobia (fear of needles)</>,
           image: "", // path for screenshot image
-          // image: "/images/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
           linkTitle: <>Article from Guy’s and St Thomas’ NHS Foundation Trust</>,
           link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
           description: (
@@ -6494,7 +6491,7 @@ export const contentPersonas = {
         {
           label: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
           image: "", // path for screenshot image
-          // image: "/images/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
           linkTitle: <>PDF Handout for Providers</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-orientation.pdf",
           description: (
@@ -6508,7 +6505,7 @@ export const contentPersonas = {
         {
           label: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
           image: "", // path for screenshot image
-          // image: "/images/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
           linkTitle: <>PDF Handout for Patients</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-client-summary.pdf",
           description: (

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 import { StaticImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
-import { scroller } from "react-scroll";
 
 import { useMyContext } from "../context/Context";
 import CoverageGridList from "../components/3aboutEtc/CoverageGridList";
@@ -22,7 +23,7 @@ const TypesPopup = props => {
         className="hiddenTillHover absolute  sm:left-10 md:left-1/4  z-50  w-full sm:w-3/4 md:w-120
                p-7  baseFont bg-white rounded-2xl shadowGray"
         //  above class had "-translate-x-1/2" but this doesn't do anything with "transform" utility
-        style={{ top: "50%" }}
+        // style={{ top: "50%" }}
         style={{ top: 50 + "px" }}
       >
         <div className="pb-3  text-yellow-darkish font-bold">&lsquo;Type&rsquo;</div>
@@ -49,7 +50,9 @@ const MotivationalInterviewing = () => {
 };
 
 const AboutContentWhatIsThis = () => {
-  const { winWidth, setLocn, log } = useMyContext();
+  const { setLocn, log } = useMyContext();
+  // const { winWidth, setLocn, log } = useMyContext();
+  false && console.log(log);
 
   return (
     <article>
@@ -103,20 +106,11 @@ const AboutContentWhatIsThis = () => {
         <span>. Motivational Interviewing encourages both the clinician and the patient to</span>
         <strong className="px-1.5">identify positive motivations for vaccination.</strong>
         <span>This happens in the course of </span>
-        <button
-          className="orangeUnderline"
-          onClick={() => {
-            log && console.log("AboutContentWhatIsThis(): scrolling to eaaseSteps panel.");
-            scroller.scrollTo("eaaseSteps", {
-              containerID: "AboutPanelsContainer",
-              duration: 1000,
-              smooth: true,
-              offset: winWidth < 1024 ? -280 : winWidth < 1920 ? -320 : -175,
-            });
-          }}
-        >
-          open, affirming, conversations
-        </button>
+
+        <AnchorLink to="/about/#eaaseSteps" title="open, affirming, conversations" className="orangeUnderline" />
+        {/* open, affirming, conversations
+        </Link> */}
+
         <span> about options rather than closed, judgmental, pronouncements of expertise.</span>
       </div>
     </article>
@@ -175,7 +169,9 @@ const AboutContentHowUse = () => {
 const AboutContentEaaseSteps = () => {
   return (
     <article>
-      <h2 className="panelTitleClass">EAASE Steps</h2>
+      <h2 id="eaaseSteps" className="panelTitleClass">
+        EAASE Steps
+      </h2>
 
       <div>
         <span>Using the principles of</span>
@@ -258,8 +254,10 @@ const AboutContentEaaseSteps = () => {
         <div className="m-3 mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
           <StaticImage
             className="pt-4"
-            src={"../images/screenshots/Overview-Undifferentiated-Hesitancy.png"}
+            src={"../assets/screenshots/Overview-Undifferentiated-Hesitancy.png"}
             alt="Screenshot of Undifferentiated Hesitancy overview page"
+            loading="eager"
+            layout="constrained"
           />
         </div>
         <br />
@@ -285,7 +283,9 @@ const AboutContentMediaCoverage = () => {
 
   return (
     <article>
-      <h2 className="pb-8  titleFont titleMedium text-blue-main">Media Coverage</h2>
+      <h2 id="mediaCoverage" className="pb-8  titleFont titleMedium text-blue-main">
+        Media Coverage
+      </h2>
       <h3 className="panelTitleClass">Publications</h3>
       <CoverageGridList type="publications" className="pb-20" />
 
@@ -313,7 +313,7 @@ export const aboutContent = [
 
   {
     title: "The EAASE Steps Explained",
-    panelID: "eaaseSteps",
+    panelID: "eaasePanel",
     content: <AboutContentEaaseSteps />,
   },
   {

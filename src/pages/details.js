@@ -33,7 +33,6 @@ const Details = props => {
   const [advice, setAdvice] = useState();
   const [related, setRelated] = useState();
 
-  log && console.log("");
   log && console.log("details.js runs");
   log2 && console.log("details.js runs. locn=", locn);
   log2 && console.log("details.js runs. fullStoryID=", fullStoryID);

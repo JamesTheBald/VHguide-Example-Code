@@ -9,7 +9,7 @@ export const useMyContext = () => useContext(myContext);
 const MyProvider = ({ children }) => {
   const log = true;
   const log2 = false;
-  log && console.log("Context.js runs.");
+  log2 && console.log("Context.js runs.");
 
   const nomScreenWidth = 720;  // Key parameter - much formatting is based on this width
   const navBarHeight = 80; // in pixels
@@ -22,7 +22,7 @@ const MyProvider = ({ children }) => {
   if (typeof window !== `undefined` && winWidth > 100)
     marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
   // Be sure that values for marginOuter correspond with those of stdMargins in /styles/tailwindStyles.css
-  log && console.log("Context.js marginOuter=", marginOuter);
+  log && console.log("Context.js runs. marginOuter=", marginOuter);
 
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);
   useEffect(() => {
@@ -40,7 +40,8 @@ const MyProvider = ({ children }) => {
   });
   const [fullStoryID, setFullStoryID] = useState("");
   const [noneSelected, setNoneSelected] = useState(true);
-  const scrollTarget = useRef("");
+  // const scrollTarget = useRef("");
+  // const scrollOffset = useRef("");
   const queryData = useRef({});
 
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
@@ -62,7 +63,8 @@ const MyProvider = ({ children }) => {
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,
     setFullStoryID: setFullStoryID,
-    scrollTarget: scrollTarget,
+    // scrollTarget: scrollTarget,
+    // scrollOffset: scrollOffset,
     queryData: queryData,
     log: log,
     log2: log2,

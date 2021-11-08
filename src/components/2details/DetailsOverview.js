@@ -12,7 +12,7 @@ const DetailsOverview = props => {
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
 
   const pplIcons = queryData.current.pplIcons.edges;
-  log && console.log("DetailsOverview.js pplIcons=", pplIcons);
+  log2 && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
@@ -27,7 +27,7 @@ const DetailsOverview = props => {
   //   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
   // }
 
-  log && console.log("DetailsOverview.js theySay=", theySay);
+  log2 && console.log("DetailsOverview.js theySay=", theySay);
   log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
   log2 && console.log("DetailsOverview.js takeHome=", takeHome);
 

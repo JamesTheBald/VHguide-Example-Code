@@ -6,8 +6,8 @@ import { useMyContext } from "../../context/Context";
 const TabBarOAR = () => {
   const { winWidth, marginOuter, log, log2 } = useMyContext();
 
-  log2 && console.log("");
-  log && console.log("TabBarOAR.js runs. winWidth=", winWidth);
+  false && console.log(log && log2);
+  log2 && console.log("TabBarOAR.js runs. winWidth=", winWidth);
 
   const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
   const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
@@ -15,8 +15,8 @@ const TabBarOAR = () => {
   const tabTall = winWidth < 510 ? 92 : 100;
   const titleTopMargin = 12;
 
-  log && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
-  log && console.log("TabBarOAR.js tabWidth=", tabWidth);
+  log2 && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
+  log2 && console.log("TabBarOAR.js tabWidth=", tabWidth);
 
   const capitalizeFirstLetter = str => {
     if (typeof str !== "string") return "";
