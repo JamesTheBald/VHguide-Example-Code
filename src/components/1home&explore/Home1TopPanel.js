@@ -25,7 +25,7 @@ const Home1TopPanel = props => {
       ? 0.65
       : winWidth < 1600
       ? 0.43
-      : 0.4;
+      : 0.43;
   let titleWidth = winWidth * titleWidthFrac;
   const newContentWidth = winWidth - 2 * marginOuter;
   if (titleWidth > newContentWidth) titleWidth = newContentWidth;
@@ -72,7 +72,7 @@ const Home1TopPanel = props => {
 
       <div className="w-screen stdMargins flex flex-col lg:flex-row z-20 relative" style={{ zIndex: 20 }}>
         <div className="order-last lg:order-first">
-          <div className="h-3 lg:h-50 xl:h-64" />
+          <div className="h-3 lg:h-44" />
 
           <LandingText titleWidth={titleWidth} />
 
@@ -83,28 +83,28 @@ const Home1TopPanel = props => {
         </div>
 
         <div
-          className="mt-5 lg:mt-20 lg:ml-8 mxl:ml-12 xl:ml-16  mr-4  w-72 sm:w-80 md:w-85 lg:w-150 xl:w-210
+          className="mt-5  lg:ml-8 mxl:ml-12 xl:ml-16  mr-4  w-72 sm:w-80 md:w-85 lg:w-150 xl:w-200
                         flex flex-col justify-center"
         >
           <StaticImage
-            className="lg:hidden"
+            className="lg:block"
             src="../../assets/homepage/Home Page Graphic.png"
+            alt="Vaccine hesitancy guide graphic"
+            placeholder="blurred"
+            loading="eager"
+            layout="constrained"
+            width={1000}
+            quality={90}
+          />
+          <StaticImage
+            className="lg:hidden"
+            src="../../assets/homepage/Home Page Graphic - reversed.png"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
             loading="eager"
             layout="constrained"
             width={360}
             quality={90}
-          />
-          <StaticImage
-            className="hidden lg:block"
-            src="../../assets/homepage/Home Page Graphic - reversed.png"
-            alt="Vaccine hesitancy guide graphic"
-            placeholder="blurred"
-            loading="eager"
-            layout="constrained"
-            width={1000}
-            quality={80}
           />
         </div>
       </div>

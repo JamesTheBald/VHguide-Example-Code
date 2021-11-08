@@ -18,7 +18,7 @@ const LandingText = props => {
     <>
       <div className="flex flex-col text-gray-light">
         <h1
-          className="titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65  whitespace-normal
+          className="titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-70  whitespace-normal
                      tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4"
           style={{ width: titleWidth }}
         >
