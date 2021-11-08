@@ -64,8 +64,7 @@ const Home3WhoWeAre = () => {
           <AnchorLink
             to="/about/#credits"
             title="Learn more about our team"
-            className="sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-120 pt-1  linkInvPill flex justify-center items-center"
-            style={{ height: "47px" }}
+            className="pt-1  sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-110  h-10 linkInvPill flex justify-center items-center"
           />
         </div>
       </section>

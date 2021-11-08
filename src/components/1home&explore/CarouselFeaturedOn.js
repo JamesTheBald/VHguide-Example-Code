@@ -74,7 +74,7 @@ const CarouselFeaturedOn = () => {
     <>
       <Carousel
         ref={carouselRefFeaturedOn}
-        className="w-full  mt-5 mb-6"
+        className="w-full my-6"
         // className="w-full sm:mx-40  mt-4"
         itemsToShow={itemsPerPage}
         showArrows={true}

@@ -20,15 +20,15 @@ const Home4TestimonialsEtc = () => {
 
         <div className="sectionGapHomePage" />
         <h2 className="titleFont titleBig">Featured On</h2>
-        <div className="divider" />
+        <div className="divider mb-3" />
         <CarouselFeaturedOn />
 
-        <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
+        <div className="mt-5 baseFont text-15 mxs:text-16 sm:text-18">
           <AnchorLink
             to="/about/#mediaCoverage"
             title="Read, Listen, or Watch"
-            className="sm:mt-4 lg:mt-8  w-70 pt-1 mxs:w-90 sm:w-120 linkInvPill flex justify-center items-center"
-            style={{ height: "47px" }}
+            className="pt-1  lg:mt-8  w-70 mxs:w-90 sm:w-120  h-10  linkInvPill flex justify-center items-center"
+            // className="pt-1  sm:mt-10 lg:mt-8  w-70 mxs:w-90 sm:w-110  h-10 linkInvPill flex justify-center items-center"
           />
         </div>
 

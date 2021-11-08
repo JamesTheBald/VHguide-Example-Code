@@ -24,9 +24,6 @@ const NavBar = () => {
       setNoneSelected(true);
     }
     navigate(destn);
-    // if (typeof window !== `undefined`) {
-    //   animateScroll.scrollToTop({ duration: 0 }); // time in ms
-    // }
     setNavBarOpen(false);
     setShowContactForm(false);
   };
@@ -63,13 +60,17 @@ const NavBar = () => {
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
-        <NavItem classNom="mt-3 sm:mt-1  mr-3" iconOffset={5} text="Home" onClickGo={onClickGo} destn="/">
-          {/* <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 20 }} loading="eager" /> */}
+        <NavItem classNom="mr-5" iconOffset={3} text="Home" onClickGo={onClickGo} destn="/">
+          <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 21 }} loading="eager" />
         </NavItem>
 
-        <div className="mr-2  hoverRevealTrigger group relative  flex flex-col items-start">
-          <NavItem iconOffset={5} text="Hesitancy Types" onClickGo={onClickGo} destn="/explore">
-            <div className="pl-0.5">
+        <div className="mr-3  hoverRevealTrigger group relative  flex flex-col items-start">
+          <NavItem iconOffset={0} text="" onClickGo={onClickGo} destn="/explore">
+            <div className="flex flex-row">
+              <div className="mb-0">
+                <StaticImage src="../../assets/navbar/personIcon.svg" alt="Person icon" style={{ width: 21 }} />
+              </div>
+              <div className="px-1">Hesitancy Types</div>
               <BiChevronDown size={24} />
             </div>
           </NavItem>
@@ -133,16 +134,13 @@ const NavBar = () => {
           </div>
         </div>
 
-        <NavItem iconOffset={5} text="Clinical Pearls" classNom="mr-2" onClickGo={onClickGo} destn="/pearls">
-          {/* <StaticImage src="../../assets/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 24 }} /> */}
+        <NavItem iconOffset={3} text="Clinical Pearls" classNom="mr-4" onClickGo={onClickGo} destn="/pearls">
+          <StaticImage src="../../assets/navbar/pearlIcon.svg" alt="Pearl icon" style={{ width: 22 }} />
         </NavItem>
 
-        <NavItem iconOffset={5} text="About" onClickGo={onClickGo} destn="/about">
-          {/* <div className="pl-0.5">
-            <BiChevronDown size={24} />
-          </div> */}
-
-          {/* <StaticImage src="../../assets/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 24 }} /> */}
+        <NavItem iconOffset={3} classNom="" text="About" onClickGo={onClickGo} destn="/about">
+          {/* <div className="pl-0.5"><BiChevronDown size={24} /></div> */}
+          <StaticImage src="../../assets/navbar/infoSymbol.svg" alt="Info symbol" style={{ width: 22 }} />
         </NavItem>
       </>
     );
@@ -159,7 +157,7 @@ const NavBar = () => {
       >
         <button
           name="VH Guide logo"
-          className="ml-2 mxs:ml-5 sm:ml-6 md:ml-8  w-60 mxs:w-72 sm:w-80 lg:w-85 
+          className="ml-2 mxs:ml-5 sm:ml-6 md:ml-7 lg:ml-8  w-60 mxs:w-72 sm:w-80 lg:w-85 
                      flex flex-col justify-start items-center  leading-none font-normal cursor-pointer"
           onClick={evnt => onClickGo(evnt, "/")}
         >
@@ -168,7 +166,7 @@ const NavBar = () => {
 
         <div
           name="Normal Navbar, Along the Top"
-          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 sm:mr-10  relative "
+          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 lg:mr-10  relative "
         >
           <NavBarItemsAndDropDowns />
         </div>

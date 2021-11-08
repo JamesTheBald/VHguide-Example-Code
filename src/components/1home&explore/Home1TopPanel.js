@@ -23,8 +23,6 @@ const Home1TopPanel = props => {
       ? 0.72
       : winWidth < 1366
       ? 0.65
-      : winWidth < 1600
-      ? 0.43
       : 0.43;
   let titleWidth = winWidth * titleWidthFrac;
   const newContentWidth = winWidth - 2 * marginOuter;
@@ -87,7 +85,7 @@ const Home1TopPanel = props => {
                         flex flex-col justify-center"
         >
           <StaticImage
-            className="lg:block"
+            className="hidden lg:block"
             src="../../assets/homepage/Home Page Graphic.png"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
