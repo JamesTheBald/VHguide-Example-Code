@@ -9,7 +9,7 @@
   }
 
   .sectionGapHomePage {
-    @apply h-28 mxs:h-44 sm:h-36 md:h-44 mxl:h-50
+    @apply h-24 mxs:h-36 sm:h-36 md:h-40 mxl:h-44
   }
 
   .divider { 

@@ -1,11 +1,12 @@
 import React from "react";
+import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
-const DetailsResources = (props) => {
+const DetailsResources = props => {
   const { contentID } = props;
-  const { log, log2 } = useMyContext();;
+  const { log, log2 } = useMyContext();
 
   log && console.log("DetailsResources.js runs. contentID=", contentID);
   log2 && console.log("DetailsResources.js contentPersonas=", contentPersonas);
@@ -64,8 +65,11 @@ const DetailsResources = (props) => {
                   </div>
 
                   <div className="mt-2 baseFont">
-                    <span className="text-yellow-darkish">{currResource.linkTitle}</span>
-                    <span className="pl-1.5 text-blue-black">{currResource.description}</span>
+                    <span className="pr-2 orangeUnderline">
+                      <span>{currResource.linkTitle}</span>
+                      <FiExternalLink className="ml-1 inline" size={18} />
+                    </span>
+                    <span className="text-blue-black">{currResource.description}</span>
                   </div>
                 </a>
               </div>
