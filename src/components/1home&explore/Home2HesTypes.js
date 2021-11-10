@@ -57,8 +57,8 @@ const Home2HesTypes = props => {
 
   return (
     <>
-      <div className={`w-full stdMargins text-gray-light`}>
-        <div className="sectionGapHomePage" />
+      <div className={`w-full stdMargins text-gray-light  relative`}>
+        <div className="sectionGapHomePage  bg-white z-40" />
 
         <div
           id="hesTypes"
@@ -66,7 +66,7 @@ const Home2HesTypes = props => {
         >
           <HesTypesPanel
             className="sm:ml-auto  xl:ml-0 xl:my-auto xl:order-2   
-            w-full sm:w-5/6 sm:max-w-140 md:w-140 lg:w-150 xl:w-140  z-50
+            w-full sm:w-5/6 sm:max-w-140 md:w-140 lg:w-150 xl:w-140  z-40
             px-5 mxs:px-8 sm:px-10 md:px-14  py-5 mxs:py-7 sm:py-9 md:py-12
           bg-blue-black rounded-2xl mxs:rounded-3xl sm:rounded-4xl  xl:rounded-l-none  smThenBaseFont"
           />
@@ -75,7 +75,6 @@ const Home2HesTypes = props => {
             pt-2 sm:pt-6 pb-2  border-3 border-solid border-gray-black  bg-black   overflow-hidden
             rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
           />
-          {/* px-1 py-6  bg-black  */}
         </div>
       </div>
     </>

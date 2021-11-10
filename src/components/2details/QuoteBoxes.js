@@ -18,11 +18,15 @@ const QuoteBoxes = props => {
 
   const quoteColorsAndText = quote => {
     const css =
-      quote.featured === true
-        ? typeof window !== "undefined" && window.location.pathname === "/pearls"
+      // REVERSE THE ORDER OF THESE BOOLEAN TESTS
+      typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
+        ? quote.featured === true
           ? "bg-blue-main text-gray-light  leading-relaxed  text-18 tracking-0.4" // featured on Pearls
-          : "bg-blue-main text-gray-light  leading-relaxed  text-18 mxs:text-22 sm:text-25  tracking-0.4 mxs:tracking-0.5 sm:tracking-0.6"
-        : "bg-gray-light text-blue-black border-3 border-solid border-blue-black tracking-0.5 leading-7";
+          : "bg-gray-light text-blue-black  border-3 border-solid border-gray-mid  tracking-0.5 leading-7"
+        : quote.featured === true
+        ? "bg-blue-main text-gray-light  leading-relaxed  text-18 tracking-0.4" // featured on details-advice
+        : // "bg-blue-main text-gray-light  leading-relaxed  text-18 mxs:text-22 sm:text-25  tracking-0.4 mxs:tracking-0.5 sm:tracking-0.6"
+          "bg-gray-light text-blue-black  border-3 border-solid border-blue-black  tracking-0.5 leading-7";
     return css;
   };
 

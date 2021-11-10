@@ -43,7 +43,7 @@ const Seo = ({ title, description, image, article }) => {
       <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta name="icon" href="/src/assets/favicon.png" />
+      <meta name="icon" href="/src/assets/other/favicon.png" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}

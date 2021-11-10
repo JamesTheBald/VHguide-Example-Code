@@ -50,10 +50,7 @@ const Home1TopPanel = props => {
 
   return (
     <div className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative">
-      <div className="lg:hidden h-3" />
-
-      <div className="absolute w-full  h-224 lg:h-224 xl:h-250  overflow-hidden" style={{ zIndex: 20 }}>
-        {/* <div className="absolute w-full overflow-hidden" style={{ height: wavyLinePanelHt, zIndex: 20 }}> */}
+      <div className="absolute w-full  h-200 md:h-210 lg:h-190 mxl:h-190 xl:h-210  overflow-hidden  z-20">
         <StaticImage
           className="lg:hidden"
           style={{ transform: `translate(${xTrans}px, ${yTrans}px) scale(${xScale}, ${yScale}) ` }}
@@ -70,7 +67,8 @@ const Home1TopPanel = props => {
 
       <div className="w-screen stdMargins flex flex-col lg:flex-row z-20 relative" style={{ zIndex: 20 }}>
         <div className="order-last lg:order-first">
-          <div className="h-3 lg:h-44" />
+          <div className="hidden lg:block" style={{ height: winHeight * 0.14 }} />
+          {/* <div className="h-3 lg:h-44" /> */}
 
           <LandingText titleWidth={titleWidth} />
 
@@ -107,8 +105,11 @@ const Home1TopPanel = props => {
         </div>
       </div>
 
-      <ScrollDownIndicator additionalClass={"hidden mxs:flex relative z-20"} />
-      <div className="h-4" />
+      <div className="h-2 mxs:h-14 md:h-6" />
+
+      <div className="hidden mxs:block  absolute left-1/2 z-20 bottom-0">
+        <ScrollDownIndicator additionalClass={"transform -translate-x-1/2"} />
+      </div>
     </div>
   );
 };

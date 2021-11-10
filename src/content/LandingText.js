@@ -11,23 +11,25 @@ const LandingText = props => {
   false && console.log(log);
   log2 && console.log("LandingText.js titleWidth=", titleWidth);
 
-  const gapTitleToSubtitle = 25;
-  const subtitleFont = "text-14 mxs:text-16 md:text-18  tracking-0.3 md:tracking-0.4";
+  // const gapTitleToSubtitle = 25;
+  const subtitleFont = "text-14 mxs:text-16 md:text-18  tracking-0.3 mxs:tracking-0.4";
 
   return (
     <>
       <div className="flex flex-col text-gray-light">
         <h1
-          className="titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-70  whitespace-normal
+          className="mxs:mb-4  titleFont text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-70  whitespace-normal
                      tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4"
           style={{ width: titleWidth }}
         >
           Are your patients hesitant about getting a COVID-19 vaccine?
         </h1>
 
-        <div style={{ height: `${gapTitleToSubtitle}px` }} />
+        {/* <div className="hidden mxs:block" style={{ height: `${gapTitleToSubtitle}px` }} /> */}
 
-        <ScrollDownIndicator additionalClass={"mxs:hidden"} />
+        <div className="mxs:hidden  w-full flex justify-center z-20">
+          <ScrollDownIndicator additionalClass={""} />
+        </div>
 
         <div className={subtitleFont} style={{ width: titleWidth }}>
           <header>
