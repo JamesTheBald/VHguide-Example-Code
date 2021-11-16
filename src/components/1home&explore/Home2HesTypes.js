@@ -1,7 +1,10 @@
 import React, { useRef, useState } from "react";
+
 import homePageVideo from "../../assets/homepage/Video for Home Page - processed.mp4";
 import { AiFillPlayCircle } from "react-icons/ai";
 // import VideoSnapshotHome from "./VideoSnapshotHome";
+
+import EaaseHoverPopup from "../2details/EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
 
 const Home2HesTypes = props => {
@@ -13,17 +16,24 @@ const Home2HesTypes = props => {
 
   const HesTypesPanel = ({ className }) => {
     return (
-      <section className={className}>
+      <section className={`${className}`}>
         {/* {{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }} */}
         <h2 className="titleFont titleBig">Hesitancy Types</h2>
         <div className="pt-3">
           Browse the ‘types’ of COVID-19 vaccine hesitancies that primary care teams are encountering to access advice,
           tips, conversational strategies, and other resources to improve conversations with patients.
         </div>
-        <div className="pt-3">
-          Following the Guide’s EAASE steps can help you change the conversation from being about vaccine acceptance to
-          focusing on allyship and your patient’s motivations. The literature says this is an important change to make
-          if you want to improve the conversation.
+        <div className="relative">
+          <span className="pt-3">Following the Guide’s</span>
+          <EaaseHoverPopup
+            eaaseTextClass="px-1 underline"
+            eaaseBoxClass="absolute top-10  w-full sm:w-120 md:w-130 lg:w-140  shadowDark text-blue-black"
+          />
+          <span>
+            can help you change the conversation from being about vaccine acceptance to focusing on allyship and your
+            patient’s motivations. The literature says this is an important change to make if you want to improve the
+            conversation.
+          </span>
         </div>
         <div className="h-8" />
         <BrowseButton classExt="max-w-56 mxs:max-w-80  h-9 mxs:h-12  text-blue-dark hover:text-gray-light" />

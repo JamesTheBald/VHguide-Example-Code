@@ -43,7 +43,7 @@ const DetailsLayout = props => {
   const tabHeight = 50;
   const relatedPill = "px-3 pt-1 mr-5 mb-3  vsmFont italic orangeLink  linkPill";
 
-  const panelPadding = "p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
+  const panelPadding = "p-7 mxs:p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
 
   return (
     <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>

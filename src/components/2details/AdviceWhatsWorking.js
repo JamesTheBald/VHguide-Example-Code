@@ -1,7 +1,8 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+// import { StaticImage } from "gatsby-plugin-image";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+import EaaseHoverPopup from "./EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
 
 const AdviceWhatsWorking = () => {
@@ -16,7 +17,13 @@ const AdviceWhatsWorking = () => {
       <div className="mt-6  text-16 sm:text-18 tracking-0.4 text-blue-black  relative">
         <span>Approach the conversation through the</span>
 
-        <span className="hoverRevealTrigger">
+        <EaaseHoverPopup
+          eaaseTextClass="ml-1.5 orangeLink"
+          eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-10  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"
+        />
+        {/* <EaaseHoverPopup eaaseTextClass="ml-1.5 orangeLink" eaaseBoxClass="shadow-gray  sm:left-1/4  top-12" /> */}
+
+        {/* <span className="hoverRevealTrigger">
           <AnchorLink to="/about/#eaaseSteps" title="‘EAASE’ steps" className="ml-1.5 orangeLink" />
 
           <div
@@ -43,7 +50,7 @@ const AdviceWhatsWorking = () => {
               />
             </div>
           </div>
-        </span>
+        </span> */}
 
         <span>
           . Below you’ll find examples of dialogue from other clinicians who have address this type of hesitancy.

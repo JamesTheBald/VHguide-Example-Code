@@ -50,6 +50,11 @@ li {
   box-shadow: 3px 6px 15px #D6D6D6;
 }
 
+.shadowDark {
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.29);
+}
+
+
 
 /* .noScrollBars { */
   /* see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp  etc */
