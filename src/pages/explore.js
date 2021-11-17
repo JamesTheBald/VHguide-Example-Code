@@ -20,11 +20,7 @@ const Explore = () => {
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
-      <main
-        className="spacerFooter stdMargins"
-        style={{ marginBottom: 1 }}
-        // style={{ marginLeft: marginOuter, marginRight: marginOuter, marginBottom: 1 }}
-      >
+      <main className="spacerFooter stdMargins" style={{ marginBottom: 1 }}>
         {/* marginBottom=1 in above style is to force scrollbar on, to be consistent with other pages */}
 
         <div name="spacer to prevent top margin collapse" className="h-16" />
