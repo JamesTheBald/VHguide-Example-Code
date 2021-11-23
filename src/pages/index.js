@@ -32,12 +32,14 @@ const Home = props => {
   }, [setWinWidth, setWinHeight, log]);
 
   const BrowseButton = props => {
-    const { classExt } = props;
+    const { className } = props;
     return (
       <Link
         to="/explore"
         className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
-                    border-2 border-solid ${classExt} bg-gray-light hover:bg-opacity-0`}
+                    border-2 border-solid ${className} bg-gray-light hover:bg-opacity-0`}
+    //             px-8  h-9 mxs:h-12  text-blue-main hover:text-gray-light
+
         style={props.style}
         onClick={() => {
           setNoneSelected(true);

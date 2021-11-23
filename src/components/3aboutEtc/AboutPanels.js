@@ -1,14 +1,14 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
-import QuoteGroup from "../2details/QuoteGroup";
+import QuoteGroups from "../2details/QuoteGroups";
 import Credits from "./Credits";
 
 const AboutPanels = props => {
-  const { path, contentArray, yPosnPanel, yDistTitleFromTop } = props;
+  const { path, contentArray } = props;
   const { winWidth, log, log2 } = useMyContext();
 
+  log && log2 && console.log();
   log2 && console.log("");
   log2 && console.log("AboutPanels.js runs. path=", path);
   log2 && console.log("AboutPanel.js contentArray=", contentArray);
@@ -22,45 +22,23 @@ const AboutPanels = props => {
       {contentArray.map((currPanel, index) => {
         return (
           <div key={`#${currPanel.panelID}`}>
-            <Element name={currPanel.panelID}>
-              {/* Extend top of first panel for better scroll positioning  */}
-              {index === 0 && <div className="w-full" style={{ height: yPosnPanel - 24 }} />}
-              {index === 0 && winWidth > 1920 && <div className="w-full" style={{ height: yDistTitleFromTop }} />}
-              <div className={panelBaseClass} style={{ columnStyle }}>
-                {path.match(/pearls/i) && ( // Regex matching for 'pearls'
-                  <>
-                    <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
-                      {currPanel.title}
-                    </h2>
-                    {log &&
-                      console.log(
-                        "AboutPanels.js (/pearls only) just prior to QuoteGroup call. currPanel.content=",
-                        currPanel.content
-                      )}
-
-                    <QuoteGroup quoteGroup={currPanel.content} />
-                  </>
-                )}
-                {!path.match(/pearls/i) && <div className="panelTextClass">{currPanel.content}</div>}
-              </div>
-              <div style={{ height: yGapBetweenPanels }} />
-            </Element>
+            <div className={panelBaseClass} style={{ columnStyle }}>
+              {path.match(/pearls/i) && ( // Regex matching for 'pearls'
+                <>
+                  <h2 className="font-serif font-bold text-22 mxs:text-32 sm:text-40 tracking-0.4 mxs:tracking-0.6 sm:tracking-0.8">
+                    {currPanel.title}
+                  </h2>
+                  <QuoteGroups quoteGroups={currPanel.content} />
+                </>
+              )}
+              {!path.match(/pearls/i) && <div className="panelTextClass">{currPanel.content}</div>}
+            </div>
+            <div style={{ height: yGapBetweenPanels }} />
           </div>
         );
       })}
 
-      {path.match(/about/i) && (
-        <div>
-          <Element name="creditsPanel">
-            <div className={panelBaseClass}>
-              <Credits />
-            </div>
-          </Element>
-          <div style={{ height: 100 }} />
-        </div>
-      )}
-
-      {path.match(/terms/i) ? <div style={{ height: 700 }} /> : <div style={{ height: 300 }} />}
+      {path.match(/about/i) && <Credits panelBaseClass={panelBaseClass} />}
     </>
   );
 };

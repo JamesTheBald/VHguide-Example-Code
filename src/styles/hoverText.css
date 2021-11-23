@@ -1,9 +1,3 @@
-/* .hoverSelector { position: relative } */
-.hoverSelector:hover { color: #263EC5 }
-.hoverSelector .hiddenTillHover { visibility: hidden }
-.hoverSelector:hover .hiddenTillHover { visibility: visible }
-
-
 .hoverRevealTrigger .hiddenTillHover { visibility: hidden }
-.hoverRevealTrigger:hover .hiddenTillHover { visibility: visible  }
+.hoverRevealTrigger:hover .hiddenTillHover { visibility: visible }
 

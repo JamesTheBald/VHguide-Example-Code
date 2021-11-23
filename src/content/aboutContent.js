@@ -56,6 +56,7 @@ const AboutContentWhatIsThis = () => {
 
   return (
     <article>
+      {/* Add onClick to next line to reveal/collapse following content. Also add pivoting chevron */}
       <h2 className="panelTitleClass">What is this guide?</h2>
       <div className="pb-3">
         The Guide presents advice, scripts, and resources to help navigate conversations about COVID-19 vaccines with

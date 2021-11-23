@@ -1,7 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
 
-// import "../../styles/hoverText.css";
 import { useMyContext } from "../../context/Context";
 
 const Subtopics = props => {
@@ -19,7 +18,6 @@ const Subtopics = props => {
     navigate("/details/overview");
   };
 
-  // const insideMargin = 2*insideMargin;
   const subtopicStepHt = winWidth < 510 ? 6 : 12;
 
   if (subtopics?.[0]) {

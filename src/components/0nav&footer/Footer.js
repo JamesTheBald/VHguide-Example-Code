@@ -21,15 +21,18 @@ const Footer = () => {
   const scroll = Scroll.animateScroll;
 
   return (
-    // "Contact Us Pill"
+    // "Contact Us on Footer"
     <div className="relative">
       <button
-        className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-gray-light tracking-0.3 
-                  bg-blue-black rounded-full  z-50 mxs:z-40  cursor-pointer`}
-        style={{ top: winHeight - 45, boxShadow: "0px 0px 3px #D6D6D6" }} // pill sits higher on homepage
+        className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-blue-dark tracking-0.3 
+                  bg-gray-light rounded-full  z-50 mxs:z-40  cursor-pointer border border-gray-mid`}
+        // className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-gray-light tracking-0.3 
+        //           bg-blue-black rounded-full  z-50 mxs:z-40  cursor-pointer`}
+        style={{ top: winHeight - 45 }} // pill sits higher on homepage
+        // style={{ top: winHeight - 45, boxShadow: "0px 0px 3px #D6D6D6" }} // pill sits higher on homepage
         onClick={() => toggleContactForm()}
       >
-        <StaticImage src="../../assets/navbar/speechBubble.svg" alt="Speech bubble" style={{ width: 28 }} />
+        <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />
         <div className="hidden mxs:block  pl-1.5 pt-1">Contact Us</div>
       </button>
 
@@ -61,6 +64,7 @@ const Footer = () => {
             </Link>
           </div>
 
+          {/* Contact Us on footer */}
           <button className="hidden mxs:flex  cursor-pointer" onClick={() => toggleContactForm()}>
             <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 25 }} />
             <div className="pt-1 pl-1.5 pr-4 sm:pr-6 md:pr-12  text-14 sm:text-16 tracking-0.3">Contact Us</div>

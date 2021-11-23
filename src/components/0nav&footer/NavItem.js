@@ -1,13 +1,19 @@
-// import React from "react";
 import React from "react";
 import { useMyContext } from "../../context/Context";
 
 const NavItem = props => {
   const { classNom, iconOffset, text, children, onClickGo, destn } = props;
-  const { winWidth } = useMyContext();
+  const { winWidth, log2 } = useMyContext();
 
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  const selected = pathname === destn ? true : false;
+  log2 && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
+
+  let selected = false;
+  if (destn === "/") {
+    if (pathname === "/") selected = true;
+  } else if (destn === "/explore" && pathname.includes("details")) selected = true;
+  else if (pathname.includes(destn)) selected = true;
+
   const bgColor = "bg-blue-black";
 
   return (
@@ -19,7 +25,6 @@ const NavItem = props => {
        }`}
         onClick={evnt => onClickGo(evnt, destn)}
       >
-        {/* <nav className="ml-1 sm:flex-shrink-0">{text}</nav> */}
         <div className="flex-shrink-0" style={{ paddingBottom: iconOffset }}>
           {children}
         </div>

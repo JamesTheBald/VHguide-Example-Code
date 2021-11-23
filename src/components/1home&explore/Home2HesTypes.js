@@ -36,7 +36,7 @@ const Home2HesTypes = props => {
           </span>
         </div>
         <div className="h-8" />
-        <BrowseButton classExt="max-w-56 mxs:max-w-80  h-9 mxs:h-12  text-blue-dark hover:text-gray-light" />
+        <BrowseButton className="w-max px-7  h-9 mxs:h-12  text-blue-dark hover:text-gray-light" />
       </section>
     );
   };
@@ -82,7 +82,7 @@ const Home2HesTypes = props => {
           />
           <VideoPlayerPanel
             className="xl:order-1  -top-2 sm:-top-6 xl:top-0  w-full md:w-11/12 lg:w-5/6 xl:w-300  relative grid justify-center
-            pt-2 sm:pt-6 pb-2  border-3 border-solid border-gray-black  bg-black   overflow-hidden
+            pt-2 sm:pt-6 pb-2  border-3 border-solid border-gray-black   overflow-hidden
             rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
           />
         </div>

@@ -2,6 +2,9 @@ html {
   font-size: 16px;
 }
 
+.hoverRevealTrigger .hiddenTillHover { visibility: hidden }
+.hoverRevealTrigger:hover .hiddenTillHover { visibility: visible }
+
 /* Spacers for sticky footer, via Calc method from https://css-tricks.com/couple-takes-sticky-footer/ */
 .spacerFooter { 
   min-height: calc(100vh - 50px);

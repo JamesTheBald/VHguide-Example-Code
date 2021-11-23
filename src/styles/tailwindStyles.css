@@ -9,11 +9,16 @@
   }
 
   .sectionGapHomePage {
-    @apply h-24 mxs:h-36 sm:h-36 md:h-40 mxl:h-44
+    @apply h-24 mxs:h-36 md:h-40 mxl:h-44
   }
 
+  .halfSectionGapHomePage {
+    @apply h-12 mxs:h-16 md:h-18 mxl:h-20
+  }
+
+
   .divider { 
-    @apply mb-4 mxs:mb-4  w-25 mxs:w-32 sm:w-40  h-6 mxs:h-7  border-solid border-b-2 border-blue-black
+    @apply mb-4  w-25 mxs:w-32 sm:w-40  h-2  border-solid border-b-2 border-blue-black
   }
 
   .orangeLink {

@@ -72,9 +72,7 @@ const Home1TopPanel = props => {
 
           <LandingText titleWidth={titleWidth} />
 
-          <div className="mt-6 mxs:mt-10">
-            <BrowseButton classExt="w-56 mxs:w-80  h-9 mxs:h-12  text-blue-main hover:text-gray-light" />
-          </div>
+          <BrowseButton className="mt-6 mxs:mt-10  w-max px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light" />
           <div className="h-12" />
         </div>
 

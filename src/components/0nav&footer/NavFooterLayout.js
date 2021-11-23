@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "../../styles/fonts.css";
-import "../../styles/hoverText.css";
+// import "../../styles/hoverText.css";
 import "../../styles/styles.css";
 import "../../styles/tailwindStyles.css";
 import Seo from "./Seo";

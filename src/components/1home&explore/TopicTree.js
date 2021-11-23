@@ -72,8 +72,9 @@ const TopicTree = props => {
               <div key={topicNum}>
                 <button
                   name="TopicName line"
-                  className={`flex items-center cursor-pointer text-blue-dark hover:text-blue-main tracking-0.5 hoverSelector`}
+                  className={`w-full flex items-center cursor-pointer text-blue-dark hover:text-blue-main tracking-0.5 hoverRevealTrigger`}
                   style={{
+                    color: "#263EC5",
                     paddingLeft: insideMargin,
                     paddingTop: topicStepHt,
                   }}
@@ -86,7 +87,7 @@ const TopicTree = props => {
 
                   <div
                     name="hover line"
-                    className="hiddenTillHover flex-grow border-blue-main border-solid border-b-3"
+                    className="hiddenTillHover  w-full  border-blue-main border-solid border-b-3"
                     style={{ marginLeft: leftGapToLine }}
                   />
 

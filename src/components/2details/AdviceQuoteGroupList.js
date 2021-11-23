@@ -4,7 +4,7 @@ import reactElementToJSXString from "react-element-to-jsx-string";
 
 import { useMyContext } from "../../context/Context";
 import EaaseTopHeading from "./EaaseTopHeading";
-import QuoteGroup from "./QuoteGroup";
+import QuoteGroups from "./QuoteGroups";
 
 const AdviceQuoteGroupList = props => {
   const { advice, setFullStoryID } = props;
@@ -31,7 +31,7 @@ const AdviceQuoteGroupList = props => {
         <EaaseTopHeading tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
       </div>
 
-      <QuoteGroup quoteGroup={contentArray} setFullStoryID={setFullStoryID} />
+      <QuoteGroups quoteGroups={contentArray} setFullStoryID={setFullStoryID} />
       {tabSelected === "ask" && (
         <>
           {askAdviceExists && <div style={{ height: 30 }} />}
@@ -40,7 +40,7 @@ const AdviceQuoteGroupList = props => {
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>
           <div className="h-10 mxs:h-12" />
-          <QuoteGroup quoteGroup={advice.share.content} setFullStoryID={setFullStoryID} />
+          <QuoteGroups quoteGroups={advice.share.content} setFullStoryID={setFullStoryID} />
         </>
       )}
     </>

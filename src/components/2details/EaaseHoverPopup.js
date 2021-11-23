@@ -14,7 +14,7 @@ const EaaseHoverPopup = (props) => {
         //                  p-8  baseFont bg-white rounded-2xl shadowGray"
         //  above class had "sm:-translate-x-1/2" but this doesn't do anything with "transform" utility
       >
-        <div className="pb-3  text-yellow-darkish font-bold">‘EAASE’ Steps</div>
+        <div className="pb-3  text-yellow-darkish font-bold">‘EAASE Steps’</div>
         <div className="pb-3">
           Using the principles of Motivational Interviewing, our team developed the ‘EAASE’ steps to help guide
           conversations with vaccine hesitant patients: Engage, Affirm, Ask then Share, and Evoke. We call them steps,
