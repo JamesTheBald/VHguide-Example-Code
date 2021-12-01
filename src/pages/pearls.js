@@ -3,27 +3,28 @@ import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-import AboutEtc from "../components/3aboutEtc/AboutEtc";
+import PearlsEtc from "../components/3aboutEtc/PearlsEtc";
 import { pearlsContent } from "../content/pearlsContent";
 
 const Pearls = props => {
   const { location, data } = props; // Gatsby pages receive a location object upon loading
   const { setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
-
-  false && console.log(log, log2);
   queryData.current = data;
   const path = location.pathname;
+
+  false && console.log(log, log2);
   log2 && console.log("pearls.js runs. path=", path);
   log && console.log("pearls.js runs. pearlsContent=", pearlsContent);
-
+  
   useEffect(() => {
     if (typeof window !== `undefined`) {
       setWinWidth(window.innerWidth);
       setWinHeight(window.innerHeight);
     }
   }, [setWinWidth, setWinHeight]);
-
-  return <AboutEtc pageTitle="Clinical Pearls" path={path} contentArray={pearlsContent} />;
+  
+  
+  return <PearlsEtc pageTitle="Clinical Pearls" path={path} contentArray={pearlsContent} />;
 };
 
 export const query = graphql`

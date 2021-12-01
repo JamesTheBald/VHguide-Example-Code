@@ -99,11 +99,11 @@ const PrivacyPolicy = () => {
       </div>
       <div className="subtitleFont">Contact Us</div>
       <span>
-        If you have any questions about this Privacy Policy, please
-        <button className="pl-1.5 orangeLink" onClick={() => setShowContactForm(true)}>
-          contact us
+        <span className="pr-1.5">If you have any questions about this Privacy Policy, please</span>
+        <button className="orangeLink" onClick={() => setShowContactForm(true)}>
+          contact us.
         </button>
-        .
+        
       </span>
     </>
   );

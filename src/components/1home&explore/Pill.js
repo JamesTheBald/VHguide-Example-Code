@@ -25,7 +25,7 @@ const Pill = (props) => {
   const textClass =
     locn.branch === branchNum && !noneSelected
       ? "ml-5 mxs:ml-8 md:ml-9  font-serif font-normal  text-18 mxs:text-22 qsm:text-25 sm:text-30  tracking-0.4 mxs:tracking-0.6"
-      : "ml-5 mxs:ml-7 md:ml-8   text-14 mxs:text-18  tracking-0.1";
+      : "ml-5 mxs:ml-7 md:ml-8   text-16 mxs:text-18  tracking-0.1";
 
   const pillShapeClass = "flex flex-row justify-between items-center  rounded-full relative";
   let shadowClass = "shadowGray border border-solid border-gray-lightish";

@@ -1,5 +1,6 @@
 import React from "react";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
+import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
 
 import { FiExternalLink } from "react-icons/fi";
 
@@ -7053,14 +7054,21 @@ export const contentPersonas = {
             address particular patient concerns.
           </>,
           <>
-            <span>Use the</span>
-            <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" />
+            <div className="relative">
+              <span>Use the</span>
+              {/* <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" /> */}
 
-            <span>
-              {" "}
-              to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
-              responding.
-            </span>
+              <EaaseHoverPopup
+                eaaseTextClass="ml-1.5 orangeUnderline"
+                eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
+              />
+
+              <span>
+                {" "}
+                to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
+                responding.
+              </span>
+            </div>
           </>,
           <>
             Remember to engage with your patient to better understand and identify their specific type or source of

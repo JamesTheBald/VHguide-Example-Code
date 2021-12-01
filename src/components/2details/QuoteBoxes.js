@@ -18,15 +18,13 @@ const QuoteBoxes = props => {
 
   const quoteColorsAndText = quote => {
     const css =
-      // REVERSE THE ORDER OF THESE BOOLEAN TESTS
       typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
         ? quote.featured === true
-          ? "bg-blue-main text-gray-light  leading-relaxed  text-18 tracking-0.4" // featured on Pearls
-          : "bg-gray-light text-blue-black  border-3 border-solid border-gray-mid  tracking-0.5 leading-7"
+          ? "bg-blue-main text-gray-light" // featured on Pearls.  Had: leading-relaxed
+          : "bg-gray-light text-blue-black  border-3 border-solid border-gray-mid"
         : quote.featured === true
-        ? "bg-blue-main text-gray-light  leading-relaxed  text-18 tracking-0.4" // featured on details-advice
-        : // "bg-blue-main text-gray-light  leading-relaxed  text-18 mxs:text-22 sm:text-25  tracking-0.4 mxs:tracking-0.5 sm:tracking-0.6"
-          "bg-gray-light text-blue-black  border-3 border-solid border-blue-black  tracking-0.5 leading-7";
+        ? "bg-blue-main text-gray-light" // featured on details-advice.  Had: leading-relaxed
+        : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black";
     return css;
   };
 
@@ -63,7 +61,7 @@ const QuoteBoxes = props => {
             {reactElementToJSXString(quote.text).length > 14 && (
               <div className="dontBreak" name="Quote Box. Outer box to prevent column breaking inside" key={idx}>
                 <div
-                  className={`mb-12  flex flex-col rounded-3xl relative ${quoteColorsAndText(quote)}`}
+                  className={`mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsAndText(quote)}`}
                   style={quotePaddingEtAl(quote)}
                 >
                   <div className="relative">

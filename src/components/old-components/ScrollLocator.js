@@ -77,7 +77,6 @@ const ScrollLocator = props => {
         })}
 
         {path.match(/about/i) && (
-          // {path === "/about" && (
           <div>
             <Link
               activeClass="activeScrollLink"

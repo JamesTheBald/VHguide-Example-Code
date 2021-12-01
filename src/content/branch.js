@@ -19,7 +19,7 @@ export const branch = [
         ),
         topicNameShort: (
           <>
-            <strong>Safety and science</strong> concerns
+            <strong>Safety &amp; science</strong> concerns
           </>
         ),
         topicNameAsTitle: <>Safety and Science Concerns</>,
@@ -46,7 +46,7 @@ export const branch = [
           },
           {
             subtopicName: <>Reproductive or fitness impacts from the vaccines</>,
-            subtopicNameShort: <>Reproductive or fitness impacts</>,
+            subtopicNameShort: <>Reproductive / fitness impacts</>,
             subtopicNameAsTitle: <>Reproductive or Fitness Impacts From the Vaccines</>,
             contentID: "ReproductiveEffects",
           },

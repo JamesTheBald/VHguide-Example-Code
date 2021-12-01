@@ -6,7 +6,7 @@ import { useMyContext } from "../../context/Context";
 import { landingBioContent } from "../../content/landingBioContent";
 
 const Home3WhoWeAre = () => {
-  const { winWidth, queryData, log, log2 } = useMyContext();
+  const { queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
   false & log && console.log();
@@ -68,7 +68,7 @@ const Home3WhoWeAre = () => {
 
         <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
           <AnchorLink
-            to="/about/#credits"
+            to="/about/credits"
             title="Learn more about our team"
             className="pt-1  sm:mt-10 lg:mt-8  w-max px-8 h-10 linkInvPill flex justify-center items-center"
           />

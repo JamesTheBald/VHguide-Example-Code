@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-import AboutEtc from "../components/3aboutEtc/AboutEtc";
+import PearlsEtc from "../components/3aboutEtc/PearlsEtc";
 import termsContent from "../content/termsContent";
 
 const Terms = props => {
@@ -20,7 +20,7 @@ const Terms = props => {
   log && console.log("terms.js runs. path=", path);
   log2 && console.log("terms.js runs. termsContent=", termsContent);
 
-  return <AboutEtc pageTitle="Terms &amp; Notices" path={path} contentArray={termsContent} />;
+  return <PearlsEtc pageTitle="Terms &amp; Notices" path={path} contentArray={termsContent} />;
 };
 
 Terms.Layout = Layout;

@@ -34,6 +34,7 @@ module.exports = {
       14: "0.875rem",
       15: "0.9375rem",
       16: "1rem",
+      17: "1.063rem",
       18: "1.125rem",
       20: "1.25rem",
       22: "1.375rem",
@@ -76,9 +77,11 @@ module.exports = {
       0.2: "0.2px",
       0.25: "0.25px",
       0.3: "0.3px",
+      0.35: "0.35px",
       0.4: "0.4px",
       0.5: "0.5px",
       0.6: "0.6px",
+      0.7: "0.7px",
       0.8: "0.8px",
       1: "1.0px",
       1.1: "1.1px",
@@ -163,15 +166,17 @@ module.exports = {
           900: "#2a4365",
           dark: "#1E2C80",
           black: "#162161", // halfway between #152063 and #17215F
-          blacker: "#131F63"
+          blacker: "#131F63",
+          blackest: "#040F50"
         },
 
         gray: {
           light: "#F2F3FC",
           lightish: "#E0E3FC",
+          line: "#D6D6D6",
           medium: "#C0C5E8",
           mid: "#B2B7D3",
-          line: "#D6D6D6",
+          dark: "#707070",
           black: "#03050F"
         },
 

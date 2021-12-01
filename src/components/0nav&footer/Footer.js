@@ -8,7 +8,7 @@ import ModalContactForm from "./ModalContactForm";
 import { RiCopyrightLine } from "react-icons/ri";
 
 const Footer = () => {
-  const { showContactForm, winWidth, winHeight, setShowContactForm } = useMyContext();
+  const { showContactForm, winWidth, setShowContactForm } = useMyContext();
 
   // const rightGap = 100 * widthAdjRatio;
   const widthFormModal = winWidth > 800 ? 500 : 400;
@@ -21,15 +21,11 @@ const Footer = () => {
   const scroll = Scroll.animateScroll;
 
   return (
-    // "Contact Us on Footer"
-    <div className="relative">
+    <div name="Contact Us Pill" className="relative">
       <button
-        className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-blue-dark tracking-0.3 
-                  bg-gray-light rounded-full  z-50 mxs:z-40  cursor-pointer border border-gray-mid`}
-        // className={`px-1.5 mxs:px-5 py-1.5 fixed right-5  flex items-center  text-16 text-gray-light tracking-0.3 
-        //           bg-blue-black rounded-full  z-50 mxs:z-40  cursor-pointer`}
-        style={{ top: winHeight - 45 }} // pill sits higher on homepage
-        // style={{ top: winHeight - 45, boxShadow: "0px 0px 3px #D6D6D6" }} // pill sits higher on homepage
+        className={`px-1.5 mxs:px-5 py-1.5 fixed bottom-2 right-5  flex items-center  text-16 text-blue-dark tracking-0.3 
+                  bg-gray-light rounded-full  cursor-pointer border border-gray-mid  z-50 mxs:z-40`}
+        // style={{ boxShadow: "0px 0px 3px #D6D6D6" }}
         onClick={() => toggleContactForm()}
       >
         <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />

@@ -12,14 +12,14 @@ const AdviceWhatsWorking = () => {
 
   return (
     <div>
-      <h3 className="titleFont titleMedium">What’s Working for Other Clinicians</h3>
+      <h3 className="titleFont titleMediumPlus">What’s Working for Other Clinicians</h3>
 
       <div className="mt-6  text-16 sm:text-18 tracking-0.4 text-blue-black  relative">
         <span>Approach the conversation through the</span>
 
         <EaaseHoverPopup
-          eaaseTextClass="ml-1.5 orangeLink"
-          eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-10  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"
+          eaaseTextClass="ml-1.5 orangeUnderline"
+          eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-12  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"
         />
         {/* <EaaseHoverPopup eaaseTextClass="ml-1.5 orangeLink" eaaseBoxClass="shadow-gray  sm:left-1/4  top-12" /> */}
 

@@ -45,7 +45,7 @@ const TopicTree = props => {
   const insideMargin = 15 + 20 * (widthAdjRatio - 0.3125);
   const bottomPadding = winWidth < 510 ? 40 : 58;
   const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
-  const leftGapToLine = winWidth < 510 ? 10 * widthAdjRatio : (15 * (widthAdjRatio + 1)) / 2;
+  const leftGapToLine = winWidth < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
 
   log2 && console.log("TopicTree.js insideMargin=", insideMargin);
 
@@ -81,23 +81,25 @@ const TopicTree = props => {
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <h3 className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.5 sm:tracking-0.6`}>
+                  <h3 className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.4 sm:tracking-0.6`}>
                     {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 
                   <div
                     name="hover line"
-                    className="hiddenTillHover  w-full  border-blue-main border-solid border-b-3"
+                    className="hiddenTillHover w-full  border-blue-main border-solid border-b-2 mxs:border-b-3"
                     style={{ marginLeft: leftGapToLine }}
                   />
 
                   {showSubtopics ? (
                     <div className="flex-shrink-0" style={{ marginRight: insideMargin }}>
-                      <IoIosArrowDown size="30" />
+                      <IoIosArrowDown className="hidden mxs:inline" size="28" />
+                      <IoIosArrowDown className="mxs:hidden" size="22" />
                     </div>
                   ) : (
                     <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: insideMargin }}>
-                      <IoIosArrowForward size="30" />
+                      <IoIosArrowForward className="hidden mxs:inline" size="28" />
+                      <IoIosArrowForward className="mxs:hidden" size="22" />
                     </div>
                   )}
                 </button>

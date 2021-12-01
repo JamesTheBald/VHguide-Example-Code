@@ -91,7 +91,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/details/*`] },
+      options: { prefixes: [`/details/*`, `/about/*`] },
     },
 
     `gatsby-plugin-offline`,

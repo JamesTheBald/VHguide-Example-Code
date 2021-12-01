@@ -69,6 +69,8 @@ const Details = props => {
   if (contentID) {
     return (
       <DetailsLayout hesitTypeName={hesitTypeName} related={related}>
+        {/* Note: for the following routing to work you need the prefix option set up for
+            gatsby-plugin-create-client-paths in gatsby-config.js */}
         <Router basepath="/details">
           <DetailsOverview path="/overview" contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />

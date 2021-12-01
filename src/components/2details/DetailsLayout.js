@@ -10,7 +10,6 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 const DetailsLayout = props => {
   const { hesitTypeName, related } = props;
   const { locn, setLocn, showContactForm, log, log2 } = useMyContext();
-  // const { widthAdjRatio, marginOuter, locn, setLocn, showContactForm, log, log2 } = useMyContext();
 
   log && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
@@ -47,15 +46,13 @@ const DetailsLayout = props => {
 
   return (
     <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>
-      <div className="text-blue-main stdMargins" 
-      // style={{ marginLeft: marginOuter, marginRight: marginOuter }}
-      >
+      <div className="text-blue-main stdMargins">
         <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
         </button>
 
         <div className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
-        <h1 className="mt-0.5  titleFont titleMedium">{hesitTypeName}</h1>
+        <h1 className="mt-0.5  titleFont titleMediumPlus">{hesitTypeName}</h1>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
@@ -63,8 +60,7 @@ const DetailsLayout = props => {
           </div>
 
           <div // Panel
-            className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30
-                      overflow-hidden`}
+            className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30`}
             style={{ top: tabHeight - 100 }}
           >
             {props.children}
@@ -97,10 +93,3 @@ const DetailsLayout = props => {
 DetailsLayout.Layout = Layout;
 
 export default DetailsLayout;
-
-// const otherLegitAdviceTabPaths = [
-//   "/details/advice/engage",
-//   "/details/advice/affirm",
-//   "/details/advice/ask",
-//   "/details/advice/evoke",
-// ];

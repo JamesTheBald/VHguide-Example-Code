@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-import homePageVideo from "../../assets/homepage/Video for Home Page - processed.mp4";
+import homePageVideo from "../../assets/homepage/VH Home Page Video 1920.mp4";
 import { AiFillPlayCircle } from "react-icons/ai";
 // import VideoSnapshotHome from "./VideoSnapshotHome";
 
@@ -82,8 +82,8 @@ const Home2HesTypes = props => {
           />
           <VideoPlayerPanel
             className="xl:order-1  -top-2 sm:-top-6 xl:top-0  w-full md:w-11/12 lg:w-5/6 xl:w-300  relative grid justify-center
-            pt-2 sm:pt-6 pb-2  border-3 border-solid border-gray-black   overflow-hidden
-            rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
+  bg-gray-black pt-3 sm:pt-6 pb-2  border-3 border-solid border-gray-black   overflow-hidden  rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
+            // pt-2 sm:pt-6 pb-2  
           />
         </div>
       </div>

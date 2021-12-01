@@ -10,7 +10,7 @@ const LinkToAboutCredits = props => {
   return (
     <Link
       // className="ml-1.5 orangeLink"
-      to="/about"
+      to="/about/credits"
       onClick={() => {
         log && console.log("LinkToAboutCredits.js runs. Initial scrollTarget.current=", scrollTarget.current);
         scrollTarget.current = "credits";

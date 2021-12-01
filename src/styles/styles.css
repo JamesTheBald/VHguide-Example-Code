@@ -7,7 +7,7 @@ html {
 
 /* Spacers for sticky footer, via Calc method from https://css-tricks.com/couple-takes-sticky-footer/ */
 .spacerFooter { 
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 60px);
   /* min-height = full screen height minus height of footer */
   /* background-color: rgb(180, 220, 180); */
 }
@@ -56,7 +56,6 @@ li {
 .shadowDark {
   box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.29);
 }
-
 
 
 /* .noScrollBars { */

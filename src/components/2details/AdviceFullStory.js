@@ -34,7 +34,11 @@ const AdviceFullStory = props => {
 
       <div
         className={`mt-7 baseFont text-blue-black`}
-        style={{ columnCount: winWidth < 1024 ? 1 : winWidth < 1919 ? 2 : 3, columnGap: 60 }}
+        // style={{ columnCount: winWidth < 1024 ? 1 : winWidth < 1919 ? 2 : 3, columnGap: 60 }}
+        style={{
+          columnCount: winWidth < 1024 ? 1 : winWidth < 1600 ? 2 : 3,
+          columnGap: winWidth < 1600 ? 50 : 60,
+        }}
       >
         {validData && (
           <p>

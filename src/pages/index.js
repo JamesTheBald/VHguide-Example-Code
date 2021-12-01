@@ -56,11 +56,12 @@ const Home = props => {
   return (
     <>
       <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
+      {/* <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}> */}
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes BrowseButton={BrowseButton} />
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />
-        <div className="w-full h-30 md:h-40 xl:h-50"></div>
+        <div className="w-full h-30 md:h-40"></div>
       </main>
     </>
   );

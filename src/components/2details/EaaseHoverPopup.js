@@ -2,19 +2,14 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-const EaaseHoverPopup = (props) => {
-  const {eaaseTextClass, eaaseBoxClass} = props;
+const EaaseHoverPopup = props => {
+  const { eaaseTextClass, eaaseBoxClass } = props;
   return (
     <span className="hoverRevealTrigger">
       <AnchorLink to="/about/#eaaseSteps" title="‘EAASE’ steps" className={eaaseTextClass} />
 
-      <div
-        className={`hiddenTillHover  p-6 mxs:p-8 baseFont bg-white rounded-2xl ${eaaseBoxClass} z-50`}
-        // className="hiddenTillHover absolute sm:left-1/4  top-12 z-50  w-full sm:w-3/4 md:w-1/2 lg:w-140
-        //                  p-8  baseFont bg-white rounded-2xl shadowGray"
-        //  above class had "sm:-translate-x-1/2" but this doesn't do anything with "transform" utility
-      >
-        <div className="pb-3  text-yellow-darkish font-bold">‘EAASE Steps’</div>
+      <div className={`hiddenTillHover  p-6 mxs:p-8 baseFont bg-white rounded-2xl ${eaaseBoxClass} shadowGray  z-50`}>
+        <div className="pb-3 font-bold">‘EAASE Steps’</div>
         <div className="pb-3">
           Using the principles of Motivational Interviewing, our team developed the ‘EAASE’ steps to help guide
           conversations with vaccine hesitant patients: Engage, Affirm, Ask then Share, and Evoke. We call them steps,

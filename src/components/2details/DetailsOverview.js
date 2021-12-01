@@ -21,7 +21,7 @@ const DetailsOverview = props => {
   const blockClass = "flex flex-col w-full";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
   const titleClass = "mt-4 sm:mt-7  font-semibold text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4";
-  const listClass = "ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc";
+  const listClass2 = "ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc";
 
   // if (typeof window !== `undefined`) {
   //   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
@@ -58,7 +58,7 @@ const DetailsOverview = props => {
             ) : (
               <div>
                 <h3 className={titleClass}>People with this hesitancy type say...</h3>
-                <ul className={listClass}>
+                <ul className={listClass2}>
                   {theySay.content.map((currItem, index) => (
                     <li key={index} className="pb-4">
                       {currItem}
@@ -79,7 +79,7 @@ const DetailsOverview = props => {
             })}
 
             <h3 className={titleClass}>Things to consider...</h3>
-            <ul className={listClass}>
+            <ul className={listClass2}>
               {thingsToConsider.content.map((currItem, index) => (
                 <li key={index} className="pb-4">
                   {currItem}
