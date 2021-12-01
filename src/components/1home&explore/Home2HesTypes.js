@@ -81,8 +81,9 @@ const Home2HesTypes = props => {
           bg-blue-black rounded-2xl mxs:rounded-3xl sm:rounded-4xl  xl:rounded-l-none  smThenBaseFont"
           />
           <VideoPlayerPanel
-            className="xl:order-1  -top-2 sm:-top-6 xl:top-0  w-full md:w-11/12 lg:w-5/6 xl:w-300  relative grid justify-center
-  bg-gray-black pt-3 sm:pt-6 pb-2  border-3 border-solid border-gray-black   overflow-hidden  rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
+            className="hidden mxs:grid xl:order-1  -top-2 sm:-top-6 xl:top-0  w-full md:w-11/12 lg:w-5/6 xl:w-300  relative
+             justify-center  bg-gray-black pt-3 sm:pt-6 pb-2  border-3 border-solid border-gray-black   overflow-hidden
+             rounded-2xl mxs:rounded-3xl sm:rounded-4xl"
             // pt-2 sm:pt-6 pb-2  
           />
         </div>

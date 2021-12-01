@@ -1,6 +1,3 @@
-import { useMyContext } from "../context/Context";
-
-
 const textColumns = (winWidth, firstBreak, secondBreak) => {
 
   const textColumnStyle = {

@@ -2,9 +2,7 @@ import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
-
 import { IoIosMenu } from "react-icons/io";
-import { BiChevronDown } from "react-icons/bi";
 
 import HesitancyTypesDropDown from "./HesitancyTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";

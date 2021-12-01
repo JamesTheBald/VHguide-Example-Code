@@ -36,7 +36,6 @@ const AboutDropDown = props => {
 
       {/* Dropdown menu for Hesitancy Types on bigger screens */}
       <div
-        // className="hidden md:inline z-40"
         className={`hidden md:inline ${pathname.includes("about") ? "z-40" : "z-10"}`}
         style={{ top: 1 + "px", zIndex: 40 }}
       >

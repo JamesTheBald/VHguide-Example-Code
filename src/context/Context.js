@@ -7,7 +7,7 @@ export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  const log = true;
+  const log = false;
   const log2 = false;
   log2 && console.log("Context.js runs.");
 

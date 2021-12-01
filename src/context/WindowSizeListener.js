@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 
 const WindowSizeListener = (winWidth, setWinWidth, setWinHeight) => {
-  const log2 = true;
+  const log2 = false;
 
   const debounce = (func, timeout) => {
     let timer;

@@ -45,11 +45,11 @@ const Home3WhoWeAre = () => {
                 {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
-                      <div key={index}>
+                      <div key={index} className="w-40 mxs:w-48 sm:w-52 lg:w-56 rounded-full overflow-hidden">
                         <GatsbyImage
                           image={item.node.childImageSharp.gatsbyImageData}
                           alt={`${currBio.name} portrait`}
-                          className="w-40 mxs:w-48 sm:w-52 lg:w-56  rounded-full"
+                          // className="w-40 mxs:w-48 sm:w-52 lg:w-56  rounded-full"
                           quality={80}
                         />
                       </div>
