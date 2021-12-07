@@ -45,13 +45,14 @@ const AboutCredits = () => {
         </div>
 
         <div className="mt-5 sm:mt-8 lg:mt-0 lg:ml-30  w-full axs:w-75 mxs:w-85 sm:w-100 lg:w-120">
-          <StaticImage src="../assets/collabLogos/UofC_SPPLogo.png" alt="UofC School of Public Policy logo" />
+          <StaticImage src="../assets/collabLogos/U of C SPP.jpg" alt="UofC School of Public Policy logo" />
+          {/* <StaticImage src="../assets/collabLogos/UofC_SPPLogo.png" alt="UofC School of Public Policy logo" /> */}
         </div>
       </div>
 
       <div className="mt-24 panelTitleClass">Collaborators</div>
       <CollabLogos size="small" />
-      <div className="h-20" />
+      {/* <div className="h-20" /> */}
     </>
   );
 };

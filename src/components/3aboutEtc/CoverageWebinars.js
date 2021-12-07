@@ -6,7 +6,7 @@ import { useMyContext } from "../../context/Context";
 import coverage from "../../content/featuredOnContent";
 
 const CoverageWebinars = ({ className }) => {
-  let { queryData, log2 } = useMyContext();
+  const { queryData, log2 } = useMyContext();
 
   const webinarShots = queryData.current.webinarShots.edges;
   log2 && console.log("CoverageWebinars.js webinarShots=", webinarShots);

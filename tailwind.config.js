@@ -140,6 +140,9 @@ module.exports = {
       '80': "20rem",
       '90': "22.5rem",
       '100': '25rem',
+      '110': '27.5rem',
+      '120': '30rem',
+      '140': '35rem',
       '150': '37.5rem',
       '200': '50rem',
       '220': '55rem',
@@ -250,6 +253,15 @@ module.exports = {
         z: "0.05px",
       },
     },
+    aspectRatio: {
+      1: '1',
+      2: '2',
+      3: '3',
+      4: '4',
+      36: '36',
+      37: '37',
+    }
+
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
   variants: {

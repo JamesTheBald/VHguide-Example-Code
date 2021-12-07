@@ -32,15 +32,6 @@ module.exports = {
         name: "featuredOnLogos",
         path: `${__dirname}/src/assets/featuredOn/logos/`,
       },
-      // __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "collabLogos",
-        path: `${__dirname}/src/assets/collabLogos/`,
-      },
-      // __key: "images",
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -48,7 +39,6 @@ module.exports = {
         name: "peopleIcons",
         path: `${__dirname}/src/assets/peopleIcons/`,
       },
-      // __key: "images",
     },
 
     {
@@ -57,7 +47,6 @@ module.exports = {
         name: "webinarShots",
         path: `${__dirname}/src/assets/featuredOn/snapshots/`,
       },
-      // __key: "images",
     },
 
     {

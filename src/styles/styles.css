@@ -7,8 +7,8 @@ html {
 
 /* Spacers for sticky footer, via Calc method from https://css-tricks.com/couple-takes-sticky-footer/ */
 .spacerFooter { 
-  min-height: calc(100vh - 60px);
-  /* min-height = full screen height minus height of footer */
+  min-height: calc(100vh - 130px);
+  /* min-height = full screen height minus height of navbar and footer */
   /* background-color: rgb(180, 220, 180); */
 }
 

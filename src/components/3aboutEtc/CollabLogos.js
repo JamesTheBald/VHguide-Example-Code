@@ -6,7 +6,7 @@ import logoContent from "../../content/logoContent";
 
 const CollabLogos = props => {
   const { size } = props;
-  let { queryData, log2 } = useMyContext();
+  const { queryData, log2 } = useMyContext();
 
   const collabLogos = queryData.current.collabLogos.edges;
   log2 && console.log("CollabLogos.js collabLogos=", collabLogos);
