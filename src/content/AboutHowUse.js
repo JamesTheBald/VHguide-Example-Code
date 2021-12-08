@@ -10,9 +10,10 @@ const AboutHowUse = props => {
 
   return (
     <article>
+    {/* <article className="relative"> */}
       <h2 className="aboutTitleClass">How do I use the VH Guide?</h2>
 
-      <div style={textColumnsStyle}>
+      <div className="relative" style={textColumnsStyle}>
         <div className="pb-3">
           The Guide can be used either during an appointment with a vaccine hesitant patient, or outside of patient
           contact hours. As the Guide includes potentially sensitive scripts, you will want to familiarize yourself with
@@ -20,7 +21,7 @@ const AboutHowUse = props => {
         </div>
         <div className="pb-3 relative">
           <span>The Guide is built around examples of typical presentations of vaccine hesitancy. These </span>
-          <TypesPopup />
+          <TypesPopup sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" />
           <span> of vaccine hesitancy can be browsed through an interactive </span>
           <Link
             to="/explore"

@@ -6,6 +6,8 @@ import { FiExternalLink } from "react-icons/fi";
 import coverage from "../../content/featuredOnContent";
 
 const CoverageGridList = ({ type, className }) => {
+  const imgParams = { quality: 90, layout: "constrained" };
+
   return (
     <div
       className={`w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-flow-row  
@@ -19,11 +21,11 @@ const CoverageGridList = ({ type, className }) => {
 
             <div className="mb-3  w-8 h-8 object-contain opacity-50">
               {currCoverage.iconType === "news" ? (
-                <StaticImage src="../../assets/featuredOn/icons/noun_news article_3817600.svg" alt="news" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_news article_3817600.svg" alt="news" {...imgParams} />
               ) : currCoverage.iconType === "tv" ? (
-                <StaticImage src="../../assets/featuredOn/icons/noun_TV_4212884.svg" alt="TV" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_TV_4212884.svg" alt="TV" {...imgParams} />
               ) : currCoverage.iconType === "radio" ? (
-                <StaticImage src="../../assets/featuredOn/icons/noun_Radio_2527494.svg" alt="radio" />
+                <StaticImage src="../../assets/featuredOn/icons/noun_Radio_2527494.svg" alt="radio" {...imgParams} />
               ) : (
                 <></>
               )}

@@ -51,8 +51,8 @@ const AboutCredits = () => {
       </div>
 
       <div className="mt-24 panelTitleClass">Collaborators</div>
-      <CollabLogos size="small" />
-      {/* <div className="h-20" /> */}
+      <CollabLogos />
+      <div className="h-10" />
     </>
   );
 };

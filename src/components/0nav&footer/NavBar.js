@@ -15,16 +15,23 @@ const NavBar = () => {
   const { branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
 
   const dropDownRef = useRef();
-  const [navBarOpen, setNavBarOpen] = useState(false);
-  useOnClickOutside(dropDownRef, () => setNavBarOpen(false));
+  const [showDropDown, setShowDropDown] = useState(false);
 
-  const onClickGo = (evnt, destn) => {
+  useOnClickOutside(dropDownRef, () => {
+    // log && console.log("useOnClickOutside fired but doing nothing");
+    log && console.log("useOnClickOutside fired - setting showDropDown=false");
+    setShowDropDown(false);
+  });
+
+  const onClickGo = (event, destn) => {
+    event.stopPropagation();
+    log && console.log("onClickGo() runs. Navigating to destn, closing dropdown & contact form");
     if (destn === "/explore") {
       setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
       setNoneSelected(true);
     }
     navigate(destn);
-    setNavBarOpen(false);
+    setShowDropDown(false);
     setShowContactForm(false);
   };
 
@@ -40,17 +47,22 @@ const NavBar = () => {
     if (typeof window !== `undefined`) {
       animateScroll.scrollToTop({ duration: 0 }); // time in ms
     }
-    setNavBarOpen(false);
+    setShowDropDown(false);
     setShowContactForm(false);
   };
 
-  const onClickHamburger = event => {
-    log && console.log("NavBar.js navBarOpen=", navBarOpen);
+  const onClickOpenHamburger = event => {
     event.stopPropagation();
-    setNavBarOpen(!navBarOpen);
+    setShowDropDown(true);
+  };
+
+  const onClickCloseHamburger = event => {
+    event.stopPropagation();
+    setShowDropDown(false);
   };
 
   const bgUnselected = "bg-blue-black";
+  // const bgUnselected2 = "bg-blue-600";
   const bgSelec = "bg-blue-blackest";
   const dropDownLinkClass =
     "pt-2.5 pb-2  text-left  border-solid border-gray-light  text-14 tracking-0.4 cursor-pointer";
@@ -58,9 +70,11 @@ const NavBar = () => {
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
-        <NavItem classNom="mr-5" bgSelec={bgSelec} onClickGo={onClickGo} destn="/">
-          <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 21 }} loading="eager" />
-        </NavItem>
+        <button onClick={event => onClickGo(event, "/")}>
+          <NavItem classNom="mr-5" bgSelec={bgSelec} destn="/">
+            <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 21 }} loading="eager" />
+          </NavItem>
+        </button>
 
         <HesitancyTypesDropDown
           dropDownLinkClass={dropDownLinkClass}
@@ -69,22 +83,24 @@ const NavBar = () => {
           onClickGo={onClickGo}
         />
 
-        <NavItem classNom="mr-4" bgSelec={bgSelec} onClickGo={onClickGo} destn="/pearls">
-          Clinical Pearls
-        </NavItem>
+        <button onClick={event => onClickGo(event, "/pearls")}>
+          <NavItem classNom="mr-4" bgSelec={bgSelec} destn="/pearls">
+            Clinical Pearls
+          </NavItem>
+        </button>
 
         <AboutDropDown dropDownLinkClass={dropDownLinkClass} bgSelec={bgSelec} onClickGo={onClickGo} />
       </>
     );
   };
 
+  // NavBar
   return (
     <>
       <div
         className={`fixed w-full  flex justify-between items-center  ${bgUnselected} border-solid border-b-2 border-gray-light  z-50
                     text-16 tracking-0.3 text-gray-light font-sans`}
         style={{ height: navBarHeight }}
-        onClick={() => setNavBarOpen(false)}
         aria-hidden="true"
       >
         <button
@@ -97,30 +113,30 @@ const NavBar = () => {
         </button>
 
         <div
-          name="Normal Navbar, Along the Top"
-          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 lg:mr-10  relative "
+          name="Wide screens => normal Navbar"
+          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 lg:mr-10  relative"
         >
           <NavBarItemsAndDropDowns />
         </div>
 
-        <div name="Hamburger/Dropdown Navbar" className="md:hidden">
+        <div name="Narrow screens => Hamburger Navbar" className="md:hidden">
           <button
             name="Hamburger icon container"
             className="w-24 flex justify-center items-center cursor-pointer"
-            onClick={event => onClickHamburger(event)}
+            onClick={event => onClickOpenHamburger(event)}
           >
             <IoIosMenu size={50} />
           </button>
 
-          {navBarOpen && (
+          {showDropDown && (
             // Need the wrapping fragments below
             <>
               <div
-                ref={dropDownRef}
                 className={`px-10 py-6 absolute top-0 right-0 w-full mxs:w-85 flex flex-col gap-4  
                           rounded-b-xl ${bgUnselected} border-solid border-2 border-t-0 border-gray-light`}
+                ref={dropDownRef}
               >
-                <button className="p-2 absolute top-2 right-3" onClick={event => onClickHamburger(event)}>
+                <button className="p-2 absolute top-2 right-3" onClick={event => onClickCloseHamburger(event)}>
                   <VscClose size={30} />
                 </button>
 

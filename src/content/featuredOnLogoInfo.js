@@ -1,6 +1,6 @@
 // Note: if you update the URLs below, be sure to also update them in "./featuredOnContent.js"
 
-const featuredOnLogoPaths = [
+const featuredOnLogoInfo = [
   {
     imageName: "CFP MFC FULL.png",
     alt: "CFP MFC",
@@ -106,4 +106,4 @@ const featuredOnLogoPaths = [
   },
 ];
 
-export default featuredOnLogoPaths;
+export default featuredOnLogoInfo;

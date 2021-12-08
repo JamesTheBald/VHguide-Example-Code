@@ -40,8 +40,6 @@ const MyProvider = ({ children }) => {
   });
   const [fullStoryID, setFullStoryID] = useState("");
   const [noneSelected, setNoneSelected] = useState(true);
-  // const scrollTarget = useRef("");
-  // const scrollOffset = useRef("");
   const queryData = useRef({});
 
   // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders

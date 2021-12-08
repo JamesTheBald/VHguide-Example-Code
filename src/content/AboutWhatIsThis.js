@@ -8,11 +8,11 @@ import { useMyContext } from "../context/Context";
 const AboutWhatIsThis = props => {
   const { MotivationalInterviewing, textColumnsStyle } = props;
 
-  const { setLocn, log } = useMyContext();
+  const { setLocn, setNoneSelected, log } = useMyContext();
   false && console.log(log);
 
   return (
-    <article>
+    <article className="relative">
       {/* Add onClick to next line to reveal/collapse following content. Also add pivoting chevron */}
       <h2 className="aboutTitleClass">What is the VH guide?</h2>
 
@@ -23,13 +23,14 @@ const AboutWhatIsThis = props => {
           find&#58;
         </div>
 
-        <ul className="listClass relative">
+        <ul className="listClass relative md:static">
           <li>
             <Link to="/pearls" className="orangeUnderline">
               Clinician-to-clinician advice
             </Link>
             <span className="pl-1.5">on how to counsel patients about their </span>
-            <TypesPopup />
+            {/* Note the interplay of the absolute positioning tailwind classes below and the relative / static ones above */}
+            <TypesPopup sizeAndPosnClass="left-0 sm:left-16  top-10  w-full sm:w-3/4 md:w-120" />
             <span>
               . Below you’ll find examples of dialogue from other clinicians who have addressed this type of hesitancy.
             </span>
@@ -47,13 +48,14 @@ const AboutWhatIsThis = props => {
             </Link>
             <span>; and</span>
           </li>
-          <li className="relative">
+          <li className="relative md:static">
             <span>A</span>
-            <Link to="/explore" className="p-1.5 orangeUnderline">
+            <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoneSelected(true)}>
               flowsheet
             </Link>
             <span>for identifying, differentiating, and addressing common </span>
-            <TypesPopup />
+            <TypesPopup sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
+            {/* left-0 sm:left-16  top-10 */}
             <span> of vaccine hesitancy</span>
           </li>
         </ul>

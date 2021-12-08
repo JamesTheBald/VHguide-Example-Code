@@ -59,7 +59,8 @@ const Home = props => {
         <Home2HesTypes BrowseButton={BrowseButton} />
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />
-        <div className="w-full h-30 md:h-40"></div>
+        <div className="w-full h-16 md:h-24"></div>
+        {/* <div className="w-full h-30 md:h-40"></div> */}
       </main>
     </>
   );
@@ -99,7 +100,7 @@ export const query = graphql`
           relativePath
           sourceInstanceName
           childImageSharp {
-            gatsbyImageData(formats: AUTO, quality: 100, placeholder: BLURRED)
+            gatsbyImageData(formats: AUTO, quality: 90, placeholder: BLURRED, layout: CONSTRAINED, height: 120)
           }
           publicURL
         }

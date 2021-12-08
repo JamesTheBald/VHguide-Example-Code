@@ -33,13 +33,13 @@ const LandingText = props => {
 
         <div className={subtitleFont} style={{ width: titleWidth }}>
           <header>
-            This Guide supports better clinical conversations about vaccines. It differentiates common types of vaccine
-            hesitancy that primary care clinicians may see. Browse through these types to help identify the sources of
-            your patients’ hesitancy, and find advice and resources on how to address them.
+            The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
+            types of vaccine hesitancy that primary care clinicians may see. Browse through these types to help identify
+            the sources of your patients’ hesitancy, and find advice and resources on how to address them.
           </header>
 
           <div className={`mt-6  ${subtitleFont} font-light italic`}>
-            <span>For an overview of how to use this guide, visit the</span>
+            <span>For an overview of how to use the guide, visit the</span>
             <Link to="/about" className="px-1.5  underline cursor-pointer">
               about
             </Link>

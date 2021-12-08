@@ -94,6 +94,7 @@ const AboutEaaseSteps = props => {
               src={"../assets/screenshots/Overview-Undifferentiated-Hesitancy.png"}
               alt="Screenshot of Undifferentiated Hesitancy overview page"
               loading="eager"
+              quality={90}
               layout="constrained"
             />
           </div>

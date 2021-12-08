@@ -29,6 +29,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "collabLogos",
+        path: `${__dirname}/src/assets/collabLogos/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "featuredOnLogos",
         path: `${__dirname}/src/assets/featuredOn/logos/`,
       },

@@ -2,39 +2,50 @@ import React, { useEffect, useState, useRef } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Carousel from "react-elastic-carousel";
 
+import collabContent from "../../content/collabContent";
 import CarouselDotsNone from "./CarouselDotsNone";
 import MyArrow from "./CarouselArrows";
-import featuredOnLogoInfo from "../../content/featuredOnLogoInfo";
 import { useMyContext } from "../../context/Context";
 
-const CarouselFeaturedOn = () => {
+const CarouselCollaborators = () => {
   const { winWidth, queryData, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   const [itemsPerPage, setItemsPerPage] = useState(1);
   const [numPages, setNumPages] = useState(1);
 
-  const featuredOnLogos = queryData.current.featuredOnLogos.edges;
+  const collabLogos = queryData.current.collabLogos.edges;
+  log2 && console.log("CarouselCollaborators.js collabContent=", collabContent);
+  log2 && console.log("CarouselCollaborators.js collabLogos=", collabLogos);
 
   useEffect(() => {
     setItemsPerPage(
-      winWidth < 600 ? 1 : winWidth < 900 ? 2 : winWidth < 1366 ? 3 : winWidth < 1920 ? 4 : winWidth < 2500 ? 5 : 6
+      winWidth < 600
+        ? 1
+        : winWidth < 720
+        ? 2
+        : winWidth < 1024
+        ? 3
+        : winWidth < 1366
+        ? 4
+        : winWidth < 1920
+        ? 5
+        : winWidth < 1920
+        ? 6
+        : 7
     );
-    setNumPages(featuredOnLogoInfo.length - itemsPerPage);
+    setNumPages(collabContent.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
 
   const timeOnEach = 1800;
   const timeTransition = 1000;
-  const carouselRefFeaturedOn = useRef();
+  const carouselRefCollab = useRef();
   let timer;
-
-  log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
-  log2 && console.log("CarouselFeaturedOn.js featuredOnLogoInfo=", featuredOnLogoInfo);
 
   return (
     <>
       <Carousel
-        ref={carouselRefFeaturedOn}
+        ref={carouselRefCollab}
         className="w-full my-6"
         itemsToShow={itemsPerPage}
         showArrows={true}
@@ -47,47 +58,47 @@ const CarouselFeaturedOn = () => {
         renderArrow={({ type, onClick, isEdge }) => <MyArrow type={type} onClick={onClick} isEdge={isEdge} />}
         onNextEnd={({ index }) => {
           // from cristo-pr at https://github.com/sag1v/react-elastic-carousel/issues/9
-          log2 && console.log("CarouselFeaturedOn.js onNextEnd() runs");
+          log2 && console.log("CarouselCollaborators.js onNextEnd() runs");
           clearTimeout(timer);
           if (index >= numPages) {
             timer = setTimeout(() => {
-              carouselRefFeaturedOn?.current?.goTo && carouselRefFeaturedOn.current.goTo(0);
+              carouselRefCollab?.current?.goTo && carouselRefCollab.current.goTo(0);
             }, timeOnEach);
           }
         }}
       >
-        {featuredOnLogoInfo.map((currOutlet, indx) => {
-          log2 && console.log("CarouselFeaturedOn.js .map currLogo.URL=", currOutlet.URL);
+        {collabContent.map((currCollab, indx) => {
+          log2 && console.log("CarouselCollaborators.js .map currLogo.URL=", currCollab.URL);
 
           return (
-            <div
+            <button
               key={indx}
-              className={`mx-3 flex items-center h-30  ${currOutlet.URL === "" ? "" : "cursor-pointer"}`}
-              role="link"
+              className={`mx-3 flex items-center max-h-24  ${currCollab.URL === "" ? "" : "cursor-pointer"}`}
+              // role="link"
               tabIndex={indx}
-              onClick={() => currOutlet.URL && window.open(currOutlet.URL, "_blank")}
-              onKeyPress={() => currOutlet.URL && window.open(currOutlet.URL, "_blank")}
+              onClick={() => currCollab.URL && window.open(currCollab.URL, "_blank")}
+              onKeyPress={() => currCollab.URL && window.open(currCollab.URL, "_blank")}
             >
-              {featuredOnLogos.map((currLogo, index) => {
-                if (currLogo.node.relativePath === currOutlet.imageName) {
+              {collabLogos.map((currLogo, index) => {
+                if (currLogo.node.relativePath === currCollab.imageName) {
                   return (
                     <div key={index}>
                       {currLogo.node.childImageSharp !== null ? (
                         <GatsbyImage
                           image={currLogo.node.childImageSharp.gatsbyImageData}
-                          alt={currOutlet.alt}
+                          alt={currCollab.alt}
                           style={{
-                            width: currOutlet.scalePercent + "%",
-                            transform: `translate(${currOutlet.offsetPercent}%, 0%)`,
+                            width: currCollab.scalePercent + "%",
+                            transform: `translate(${currCollab.offsetPercent}%, 0%)`,
                           }}
                         />
                       ) : (
                         <img
                           src={currLogo.node.publicURL}
-                          alt={currOutlet.alt}
+                          alt={currCollab.alt}
                           style={{
-                            width: currOutlet.scalePercent + "%",
-                            transform: `translate(${currOutlet.offsetPercent}%, 0%)`,
+                            width: currCollab.scalePercent + "%",
+                            transform: `translate(${currCollab.offsetPercent}%, 0%)`,
                           }}
                         />
                       )}
@@ -97,7 +108,7 @@ const CarouselFeaturedOn = () => {
                   return null;
                 }
               })}
-            </div>
+            </button>
           );
         })}
       </Carousel>
@@ -105,4 +116,4 @@ const CarouselFeaturedOn = () => {
   );
 };
 
-export default CarouselFeaturedOn;
+export default CarouselCollaborators;

@@ -2,7 +2,7 @@ import React from "react";
 import { useMyContext } from "../../context/Context";
 
 const NavItem = props => {
-  const { classNom, bgSelec, selecOnHover, children, onClickGo, destn } = props;
+  const { classNom, bgSelec, selecOnHover, children, destn } = props;
   const { log2 } = useMyContext();
 
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
@@ -15,26 +15,19 @@ const NavItem = props => {
   else if (pathname.includes(destn)) selected = true;
 
   return (
-    <div className={`${classNom}  cursor-pointer group  relative`}>
-      <button
-        // Narrower screens (dropdown menu from hamburger)
-        className="md:hidden"
-        onClick={evnt => onClickGo(evnt, destn)}
-      >
+    <div className={`${classNom}  flex flex-col items-start  cursor-pointer group  relative`}>
+      <div name="Narrower screens" className="md:hidden">
         {children}
-      </button>
+      </div>
 
-      <button
-        // Wider screens
-        className={`hidden md:block px-4  h-22  rounded-b-lg  border-gray-light border-solid border-2 border-t-0  relative z-30
-        ${selected ? bgSelec : "border-opacity-0"}
-        ${pathname.includes("explore")          }
-        ${selecOnHover && "group-hover:bg-blue-blackest"}
-        `}
-        onClick={evnt => onClickGo(evnt, destn)}
+      <div
+        name="Wider screens"
+        className={`hidden md:flex px-4 h-22  justify-center items-center
+        rounded-b-lg  border-gray-light border-solid border-2 border-t-0  relative z-30
+        ${selected ? bgSelec : "border-opacity-0"} ${selecOnHover && "group-hover:bg-blue-blackest"}`}
       >
         {children}
-      </button>
+      </div>
     </div>
   );
 };

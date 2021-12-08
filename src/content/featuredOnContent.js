@@ -1,4 +1,4 @@
-// Note: if you update the URLs below, be sure to also update them in "./featuredOnLogoPaths.js"
+// Note: if you update the URLs below, be sure to also update them in "./featuredOnLogoInfo.js"
 
 const coverage = {
   publications: [

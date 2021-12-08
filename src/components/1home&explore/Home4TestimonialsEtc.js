@@ -3,18 +3,22 @@ import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import CarouselTestimonials from "./CarouselTestimonials";
-import CollabLogos from "../3aboutEtc/CollabLogos";
+import CarouselCollaborators from "./CarouselCollaborators";
+import { useMyContext } from "../../context/Context";
 
 // {/* {{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }} */}
 // sm:ml-auto  xl:ml-0 xl:my-auto xl:order-2
 
 const Home4TestimonialsEtc = () => {
+  
   const imageProps = {
     className: "rounded-xl",
     placeholder: "blurred",
     loading: "eager",
     layout: "constrained",
+    quality: 90
   };
+  const { winWidth } = useMyContext();
 
   return (
     <>
@@ -36,7 +40,9 @@ const Home4TestimonialsEtc = () => {
               <br />
               <AnchorLink
                 to="/about/media"
-                title="Take a Look at Our Media Coverage"
+                // title="Take a Look at Our Media Coverage"
+                title={winWidth < 510 ? "Look at Our Media Coverage" : "Take a Look at Our Media Coverage"}
+
                 className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light
                     rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
                     border-2 border-solid bg-gray-light hover:bg-opacity-0"
@@ -70,15 +76,6 @@ const Home4TestimonialsEtc = () => {
 
         <div className="halfSectionGapHomePage mt-4" />
 
-        <section name="Featured On section" className="w-full  stdMargins  flex flex-col items-center">
-          <div className="halfSectionGapHomePage -mt-5" />
-          <h2 className="titleFont titleBig">Featured On</h2>
-          <div className="divider sm:mt-1  mb-6" />
-
-          <div className="mt-5 baseFont text-15 mxs:text-16 sm:text-18"></div>
-          <div className="halfSectionGapHomePage mt-4" />
-        </section>
-
         <div className="w-full  stdMargins  flex flex-col items-center  bg-gray-light">
           <div className="halfSectionGapHomePage -mt-4" />
           <h2 className="titleFont titleBig">Testimonials</h2>
@@ -88,10 +85,10 @@ const Home4TestimonialsEtc = () => {
         </div>
 
         <div className="w-full  stdMargins  flex flex-col items-center">
-          <div className="halfSectionGapHomePage mt-4" />
+          <div className="halfSectionGapHomePage mt-2" />
           <h2 className="titleFont titleBig">Collaborators</h2>
           <div className="divider" />
-          <CollabLogos size="large" />
+          <CarouselCollaborators size="large" />
         </div>
       </div>
     </>

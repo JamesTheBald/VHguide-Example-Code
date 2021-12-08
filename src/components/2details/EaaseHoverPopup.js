@@ -6,7 +6,7 @@ const EaaseHoverPopup = props => {
   const { eaaseTextClass, eaaseBoxClass } = props;
   return (
     <span className="hoverRevealTrigger">
-      <AnchorLink to="/about/#eaaseSteps" title="‘EAASE’ steps" className={eaaseTextClass} />
+      <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className={eaaseTextClass} />
 
       <div className={`hiddenTillHover  p-6 mxs:p-8 baseFont bg-white rounded-2xl ${eaaseBoxClass} shadowGray  z-50`}>
         <div className="pb-3 font-bold">‘EAASE Steps’</div>

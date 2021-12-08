@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 
 import homePageVideo from "../../assets/homepage/VH Home Page Video 1920.mp4";
 import { AiFillPlayCircle } from "react-icons/ai";
-// import VideoSnapshotHome from "./VideoSnapshotHome";
-
 import EaaseHoverPopup from "../2details/EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
 

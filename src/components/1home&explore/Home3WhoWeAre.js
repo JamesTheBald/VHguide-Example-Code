@@ -28,28 +28,27 @@ const Home3WhoWeAre = () => {
           </span>
           <br className="hidden lg:block" />
           <span>
-            We assembled the Guide’s content out of interviews and conversations with primary care
-            clinicians.
+            We assembled the Guide’s content out of interviews and conversations with primary care clinicians.
           </span>
         </div>
         <div className="w-full  h-8  border-solid border-b-2 border-blue-black" />
 
-        <div className="mt-10 sm:mt-16 lg:mt-20  w-full  grid sm:grid-cols-3  grid-flow-row  gap-x-10 sm:gap-x-14">
+        <div className="mt-10 sm:mt-16 lg:mt-20  w-full  grid lg:grid-cols-3  grid-flow-row  gap-x-10 lg:gap-x-16">
           {/* <div className="mt-10 sm:mt-16 lg:mt-20  w-full flex flex-col sm:flex-row  items-center sm:items-start justify-between"> */}
 
           {landingBioContent.map((currBio, indx) => {
             log2 && console.log("Home3WhoWeAre.js .map() currBio=", currBio);
             return (
-              <div key={indx} className="">
+              <div key={indx} className="flex flex-col sm:flex-row lg:flex-col sm:items-center">
                 {/* <div key={indx} style={{ width: bioWidth }}> */}
                 {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
-                      <div key={index} className="w-40 mxs:w-48 sm:w-52 lg:w-56 rounded-full overflow-hidden">
+                      <div key={index} className="sm:mt-10  w-28 mxs:w-32 sm:w-36 lg:w-56 rounded-full overflow-hidden flex-shrink-0">
                         <GatsbyImage
                           image={item.node.childImageSharp.gatsbyImageData}
                           alt={`${currBio.name} portrait`}
-                          // className="w-40 mxs:w-48 sm:w-52 lg:w-56  rounded-full"
+                          className="w-28 mxs:w-32 sm:w-36 lg:w-56  rounded-full"
                           quality={80}
                         />
                       </div>
@@ -59,14 +58,16 @@ const Home3WhoWeAre = () => {
                   }
                 })}
 
-                <div className="mt-5 mxs:mt-8 lg:mt-12 titleFont emphFont">{currBio.name}</div>
-                <div className="mt-4 mb-12 sm:mb-0  smThenBaseFont">{currBio.info}</div>
+                <div className="sm:ml-10 lg:ml-0  sm:mb-4">
+                  <div className="mt-5 sm:mt-8 lg:mt-12  titleFont emphFont">{currBio.name}</div>
+                  <div className="mt-4 mb-12 sm:mb-0  smThenBaseFont">{currBio.info}</div>
+                </div>
               </div>
             );
           })}
         </div>
 
-        <div className="mt-1 baseFont text-15 mxs:text-16 sm:text-18">
+        <div className="-mt-2 baseFont text-15 mxs:text-16 sm:text-18">
           <AnchorLink
             to="/about/credits"
             title="Learn more about our team"

@@ -49,7 +49,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy3.svg",
+        image: "Hesitancy Group 3.svg",
         content: [
           <>
             &ldquo;I don&apos;t trust it at my age. I don&apos;t know what will come down the road, what it will do to
@@ -855,7 +855,7 @@ export const contentPersonas = {
       image: "",
 
       theySay: {
-        image: "People-with-Hesitancy3.svg",
+        image: "Hesitancy Group 3.svg",
         content: [
           <>&ldquo;I’ve heard that the mRNA vaccines will alter my DNA.&rdquo;</>,
           <>
@@ -1231,7 +1231,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>
             &ldquo;With all of my conditions and medications, I&apos;m not sure taking the vaccine is the right thing
@@ -1727,7 +1727,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy2.svg",
+        image: "Hesitancy Group 2.svg",
         content: [
           <>
             &ldquo;I don&apos;t want to introduce unnecessary medications into my body if I don&apos;t need to. Why
@@ -2272,7 +2272,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>&ldquo;I hear that the side effects from the second dose are really bad.&rdquo;</>,
           <>
@@ -2901,7 +2901,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy3.svg",
+        image: "Hesitancy Group 3.svg",
         content: [
           <>
             &ldquo;I don&apos;t trust the government telling me what I need to do when they haven&apos;t led us down the
@@ -3567,7 +3567,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>
             &ldquo;The vaccines are unnatural. I&apos;d rather get COVID and build my immune system the natural
@@ -4098,7 +4098,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy2.svg",
+        image: "Hesitancy Group 2.svg",
         content: [
           <>&ldquo;I&apos;m not going to let the government have control over what goes into my body.&rdquo;</>,
           <>
@@ -4495,7 +4495,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy3.svg",
+        image: "Hesitancy Group 3.svg",
         content: [
           <>
             &ldquo;Taking the vaccine goes against my religious beliefs. My concern is more of a religious
@@ -5034,7 +5034,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>&ldquo;Last time I went to &#91;e.g. a clinic, hospital&#93; it didn&apos;t go well.&rdquo;</>,
           <>&ldquo;Doctors and nurses haven&apos;t treated me well when I&apos;ve needed their help.&rdquo;</>,
@@ -5359,7 +5359,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy2.svg",
+        image: "Hesitancy Group 2.svg",
         content: [
           <>
             &ldquo;I can&apos;t see how we as &#91;minorities/First Nations&#93; can rush into taking anything that was
@@ -6060,7 +6060,7 @@ export const contentPersonas = {
     overview: {
       tags: ["overview", "needle", "injection", "shots", "pain", "fear", "faint"],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>&ldquo;I really hate needles.&rdquo;</>,
           <>&ldquo;I&apos;m worried about getting the shot because I get really nervous when I see a needle.&rdquo;</>,
@@ -6541,7 +6541,7 @@ export const contentPersonas = {
     overview: {
       tags: ["", ""],
       theySay: {
-        image: "People-with-Hesitancy.svg",
+        image: "Hesitancy Group 1.svg",
         content: [
           <>&ldquo;It&apos;s been blown out of proportion, it&apos;s just a bad flu.&rdquo;</>,
           <>&ldquo;I know someone who had it and they didn&apos;t get it that bad.&rdquo;</>,
