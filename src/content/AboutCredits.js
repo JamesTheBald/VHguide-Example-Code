@@ -10,11 +10,11 @@ const AboutCredits = () => {
 
   return (
     <>
-      <h1 className="mt-9 mxs:mt-16 lg:mt-18 pb-8  titleFont titleBig  text-blue-main  z-30">
+      <h1 className="aboutEtcTopGap pb-5 sm:pb-8  titleFont titleBig  text-blue-main  z-30">
         Credits and Collaborators
       </h1>
 
-      <h2 id="credits" className="panelTitleClass">
+      <h2 id="credits" className="panelTitleClass pb-4">
         Credits
       </h2>
 
@@ -50,7 +50,7 @@ const AboutCredits = () => {
         </div>
       </div>
 
-      <div className="mt-24 panelTitleClass">Collaborators</div>
+      <div className="mt-24 panelTitleClass pb-4">Collaborators</div>
       <CollabLogos />
       <div className="h-10" />
     </>

@@ -6,11 +6,11 @@ html {
 .hoverRevealTrigger:hover .hiddenTillHover { visibility: visible }
 
 /* Spacers for sticky footer, via Calc method from https://css-tricks.com/couple-takes-sticky-footer/ */
-.spacerFooter { 
-  min-height: calc(100vh - 130px);
+/* .spacerFooter { 
+  min-height: calc(100vh - 130px); */
   /* min-height = full screen height minus height of navbar and footer */
   /* background-color: rgb(180, 220, 180); */
-}
+/* } */
 
 /* from https://www.smashingmagazine.com/2019/02/css-fragmentation/ */
 .dontBreak {

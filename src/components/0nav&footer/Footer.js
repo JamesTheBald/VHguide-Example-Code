@@ -18,17 +18,28 @@ const Footer = () => {
 
   const toggleContactForm = () => setShowContactForm(currShowModal => !currShowModal);
 
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
   const scroll = Scroll.animateScroll;
 
   return (
-    <div name="Contact Us Pill" className="relative">
+    <div className="relative">
       <button
-        className={`px-1.5 mxs:px-5 py-1.5 fixed bottom-2 right-5  flex items-center  text-16 text-blue-dark tracking-0.3 
-                  bg-gray-light rounded-full  cursor-pointer border border-gray-mid  z-50 mxs:z-40`}
+        name="Contact Us Pill"
+        className={`px-1.5 mxs:px-5 py-1.5 fixed bottom-2 right-5  flex items-center  text-16 tracking-0.3 
+                    rounded-full  cursor-pointer border border-gray-mid  z-50 mxs:z-40
+                    ${
+                      "text-blue-dark bg-gray-light"
+                      // pathname === "/" ? "text-gray-light bg-blue-black" : "text-blue-dark bg-gray-light"
+                    }
+                    `}
         // style={{ boxShadow: "0px 0px 3px #D6D6D6" }}
         onClick={() => toggleContactForm()}
       >
-        <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />
+        {pathname === "/" ? (
+          <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />
+        ) : (
+          <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />
+        )}
         <div className="hidden mxs:block  pl-1.5 pt-1">Contact Us</div>
       </button>
 
@@ -40,9 +51,10 @@ const Footer = () => {
           // onClick={event => event.stopPropagation()}
           aria-hidden="true"
         >
-          <div className="flex flex-wrap"
-          //  style={{ marginRight: `${rightGap}px`}}  // Forces text wrapping on small screens but not necessary even at 360px
-           >
+          <div
+            className="flex flex-wrap"
+            //  style={{ marginRight: `${rightGap}px`}}  // Forces text wrapping on small screens but not necessary even at 360px
+          >
             <div className="flex items-center">
               <RiCopyrightLine size={winWidth < 510 ? "10" : "12"} />
               <div className="pl-1 pt-0.5 ">2021 Vaccine Hesitancy Guide</div>

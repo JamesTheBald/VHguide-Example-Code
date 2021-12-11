@@ -6,9 +6,9 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <h2 className="panelTitleClass">Privacy Policy</h2>
-
-      <div className="italic">Last update: May 17, 2021</div>
+      <div className="italic" style={{ columnSpan: "all" }}>
+        Last update: May 17, 2021
+      </div>
       <div className="pt-4">
         Our team at the University of Calgary’s School of Public Policy operate the Vaccine Hesitancy Guide
         (http://www.vhguide.ca) (the &quot;Site&quot;). This page informs you of our policies regarding the collection,
@@ -103,7 +103,6 @@ const PrivacyPolicy = () => {
         <button className="orangeLink" onClick={() => setShowContactForm(true)}>
           contact us.
         </button>
-        
       </span>
     </>
   );
@@ -114,8 +113,6 @@ const CopyrightNotice = () => {
 
   return (
     <>
-      <h2 className="panelTitleClass">Copyright Notice</h2>
-
       <div>
         This website and its content are protected under Canadian copyright law. Except as otherwise provided for under
         the copyright law of Canada, this website and its content may not be copied, distributed, published, downloaded
@@ -124,8 +121,8 @@ const CopyrightNotice = () => {
       </div>
       <br />
       <div className="mt-3">
-        For further information please
-        <button className="pl-1.5 orangeLink" onClick={() => setShowContactForm(true)}>
+        <span>For further information please</span>
+        <button className="orangeLink" onClick={() => setShowContactForm(true)}>
           contact us
         </button>
         .
@@ -136,23 +133,21 @@ const CopyrightNotice = () => {
 
 const termsContent = [
   {
-    title: "Privacy Policy",
-    panelID: "privacy",
-    content: <PrivacyPolicy />,
+    subheading: "Privacy Policy",
+    // The body section below needs to be in a separate react component so useMyContext() can be run, to bring in a context var.
+    // See Rules of React
+    body: <PrivacyPolicy />,
   },
 
   {
-    title: "Copyright Notice",
-    panelID: "copyright",
-    content: <CopyrightNotice />,
+    subheading: "Copyright Notice",
+    body: <CopyrightNotice />,
   },
 
   {
-    title: "Content Disclaimer",
-    panelID: "disclaimer",
-    content: (
+    subheading: "Content Disclaimer",
+    body: (
       <>
-        <h2 className="panelTitleClass">Content Disclaimer</h2>
         <div>
           All of the information on this website is provided for informational purposes only. It is not endorsed, nor
           does it represent the opinions of any professional medical association or organization. Reliance on any
@@ -169,11 +164,9 @@ const termsContent = [
   },
 
   {
-    title: "Land Acknowledgement",
-    panelID: "land",
-    content: (
+    subheading: "Land Acknowledgement",
+    body: (
       <>
-        <h2 className="panelTitleClass">Land Acknowledgement</h2>
         <div>
           The VH Guide was developed in Calgary, Alberta, Canada. The authors acknowledge that this work was done in
           Treaty 7 territory—the ancestral and traditional territory of the Blackfoot Confederacy: Kainai, Piikani and

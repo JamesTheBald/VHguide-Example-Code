@@ -36,7 +36,7 @@ const AboutTheGuide = () => {
         <AboutHowUse textColumnsStyle={textColumnsStyle} />
         <div className={`mt-8 mb-8 ${dividingLine}`} />
         <AboutEaaseSteps MotivationalInterviewing={MotivationalInterviewing} textColumnsStyle={textColumnsStyle} />
-        <div className="h-8 w-full" />
+        <div className="h-12 w-full" />
       </div>
     </>
   );

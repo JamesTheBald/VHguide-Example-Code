@@ -19,15 +19,10 @@ export const pearlsContent = [
 
   {
     title: "Affirming You're An Ally",
-    panelID: "affirmingAlly",
+    // panelID: "affirmingAlly",
     content: [
       {
         subheading: "Listen closely and reflectively",
-        quotes: [],
-      },
-
-      {
-        subheading: "", // Leave subheading empty for quote box content
         quotes: [
           {
             text: (
@@ -56,20 +51,12 @@ export const pearlsContent = [
             ),
             featured: true,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
-
+      // Affirming You're An Ally
       {
         subheading: "Affirm their worldview",
-        quotes: [],
-      },
-      // Affirming You're An Ally
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -83,8 +70,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -101,8 +86,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
           // Affirming You're An Ally
 
@@ -116,20 +99,12 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
 
       {
         subheading: "Work with your patient as a team member",
-        quotes: [],
-      },
-      // Affirming You're An Ally
-
-      {
-        subheading: "", // Subheading must be "" for quote boxes
         quotes: [
           {
             text: (
@@ -143,8 +118,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -162,8 +135,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
@@ -171,11 +142,6 @@ export const pearlsContent = [
 
       {
         subheading: "Ground it in experience and real life",
-        quotes: [],
-      },
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -189,8 +155,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -205,8 +169,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
@@ -214,11 +176,6 @@ export const pearlsContent = [
 
       {
         subheading: "Find a common, positive goal",
-        quotes: [],
-      },
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -230,8 +187,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -243,10 +198,8 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
-      // Affirming You're An Ally
+          // Affirming You're An Ally
 
           {
             text: (
@@ -259,8 +212,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
@@ -268,11 +219,6 @@ export const pearlsContent = [
 
       {
         subheading: "Desensitize, then Motivate",
-        quotes: [],
-      },
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -290,11 +236,9 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
-            // Affirming You're An Ally
-              // Desensitize, then Motivate
+          // Affirming You're An Ally
+          // Desensitize, then Motivate
           {
             text: (
               <>
@@ -310,8 +254,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
@@ -320,15 +262,10 @@ export const pearlsContent = [
 
   {
     title: "Lowering the ‘temperature’",
-    panelID: "loweringTemp",
+    //panelID: "loweringTemp",
     content: [
       {
         subheading: "Check yourself on the way into the room",
-        quotes: [],
-      },
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -339,8 +276,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "doctorMuslimWomanYellowHeadCover.svg",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -353,19 +288,13 @@ export const pearlsContent = [
             ),
             featured: true,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
 
-      {
-        subheading: "De-escalate",
-        quotes: [],
-      },
       // Lowering the ‘temperature’
       {
-        subheading: "",
+        subheading: "De-escalate",
         quotes: [
           {
             text: (
@@ -381,8 +310,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -401,20 +328,13 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "doctorBlackWoman.svg",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },
-
+      // Lowering the ‘temperature’
+      
       {
         subheading: "Extend the conversation",
-        quotes: [],
-      },
-      // Lowering the ‘temperature’
-
-      {
-        subheading: "",
         quotes: [
           {
             text: (
@@ -427,8 +347,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "doctorBlackManBeard.svg",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -441,8 +359,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           // Lowering the ‘temperature’
@@ -457,8 +373,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "doctorWhiteManBlackHair.svg",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
 
           {
@@ -472,8 +386,6 @@ export const pearlsContent = [
             ),
             featured: true,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
           // Lowering the ‘temperature’
           {
@@ -487,8 +399,6 @@ export const pearlsContent = [
             ),
             featured: false,
             image: "",
-            // fullStoryID: "",
-            // fullStoryLinkText: <></>,
           },
         ],
       },

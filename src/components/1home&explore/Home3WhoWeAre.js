@@ -31,7 +31,7 @@ const Home3WhoWeAre = () => {
             We assembled the Guide’s content out of interviews and conversations with primary care clinicians.
           </span>
         </div>
-        <div className="w-full  h-8  border-solid border-b-2 border-blue-black" />
+        <div className="w-full  h-5 mxs:h-6 sm:h-7  border-solid border-b-2 border-gray-dark" />
 
         <div className="mt-10 sm:mt-16 lg:mt-20  w-full  grid lg:grid-cols-3  grid-flow-row  gap-x-10 lg:gap-x-16">
           {/* <div className="mt-10 sm:mt-16 lg:mt-20  w-full flex flex-col sm:flex-row  items-center sm:items-start justify-between"> */}

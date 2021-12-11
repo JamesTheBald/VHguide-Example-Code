@@ -54,7 +54,7 @@ const Home = props => {
 
   return (
     <>
-      <main className={`${showContactForm ? "fixed" : ""}  spacerFooter bg-white text-blue-black overflow-x-hidden`}>
+      <main className={`${showContactForm ? "fixed" : ""}  bg-white text-blue-black overflow-x-hidden`}>
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes BrowseButton={BrowseButton} />
         <Home3WhoWeAre />

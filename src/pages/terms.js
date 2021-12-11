@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-import PearlsEtc from "../components/3aboutEtc/PearlsEtc";
-import termsContent from "../content/termsContent";
+import TermsPanels from "../components/3aboutEtc/TermsPanels";
 
 const Terms = props => {
-  const { location } = props;
+  // const { location } = props;
   const { setWinWidth, setWinHeight, log, log2 } = useMyContext();
+
+  false && console.log(log, log2);
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
@@ -16,11 +17,10 @@ const Terms = props => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  const path = location.pathname;
-  log && console.log("terms.js runs. path=", path);
-  log2 && console.log("terms.js runs. termsContent=", termsContent);
+  // const path = location.pathname;
+  // log && console.log("terms.js runs. path=", path);
 
-  return <PearlsEtc pageTitle="Terms &amp; Notices" path={path} contentArray={termsContent} />;
+  return <TermsPanels pageTitle="Terms &amp; Notices" />;
 };
 
 Terms.Layout = Layout;

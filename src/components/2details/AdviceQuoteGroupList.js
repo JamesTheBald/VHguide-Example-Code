@@ -31,7 +31,7 @@ const AdviceQuoteGroupList = props => {
         <EaaseTopHeading tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
       </div>
 
-      <QuoteGroups quoteGroups={contentArray} setFullStoryID={setFullStoryID} />
+      <QuoteGroups panelContent={contentArray} setFullStoryID={setFullStoryID} />
       {tabSelected === "ask" && (
         <>
           {askAdviceExists && <div style={{ height: 30 }} />}
@@ -40,7 +40,7 @@ const AdviceQuoteGroupList = props => {
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>
           <div className="h-10 mxs:h-12" />
-          <QuoteGroups quoteGroups={advice.share.content} setFullStoryID={setFullStoryID} />
+          <QuoteGroups panelContent={advice.share.content} setFullStoryID={setFullStoryID} />
         </>
       )}
     </>

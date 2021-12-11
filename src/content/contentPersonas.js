@@ -612,15 +612,9 @@ export const contentPersonas = {
             ],
           },
 
-          // SUBHEADING HERE (with the quotations to show it's a patient saying it): "I already had COVID, why do I need to get the vaccine?"
           {
-            subheading: "'I already had COVID, why do I need to get the vaccine?'",
-            // subheading: <>&quot;I already had COVID, why do I need to get the vaccine?&quot;</>,
-            quotes: [],
-          },
 
-          {
-            subheading: "",
+            subheading: "'I already had COVID, why do I need to get the vaccine?'",
             quotes: [
               {
                 text: (

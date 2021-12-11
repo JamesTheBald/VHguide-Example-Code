@@ -1,6 +1,4 @@
 import React from "react";
-// import { StaticImage } from "gatsby-plugin-image";
-// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import EaaseHoverPopup from "./EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
@@ -21,7 +19,6 @@ const AdviceWhatsWorking = () => {
           eaaseTextClass="ml-1.5 orangeUnderline"
           eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-12  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"
         />
-        {/* <EaaseHoverPopup eaaseTextClass="ml-1.5 orangeLink" eaaseBoxClass="shadow-gray  sm:left-1/4  top-12" /> */}
 
         <span>
           . Below you’ll find examples of dialogue from other clinicians who have address this type of hesitancy.

@@ -16,15 +16,18 @@ const QuoteBoxes = props => {
   log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
+  // const path = typeof window !== "undefined" && window.location.pathname;
+
   const quoteColorsAndText = quote => {
-    const css =
-      typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
-        ? quote.featured === true
-          ? "bg-blue-main text-gray-light" // featured on Pearls.  Had: leading-relaxed
-          : "bg-gray-light text-blue-black  border-3 border-solid border-gray-mid"
-        : quote.featured === true
-        ? "bg-blue-main text-gray-light" // featured on details-advice.  Had: leading-relaxed
-        : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black";
+    const css = typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
+    // on Pearls
+      ? quote.featured === true
+        ? "bg-blue-main text-gray-light" // featured on Pearls.  Had: leading-relaxed
+        : "bg-gray-light text-blue-black  border-3 border-solid border-gray-neutral"
+    // else on details, etc
+      : quote.featured === true
+      ? "bg-blue-main text-gray-light" // featured on details-advice.  Had: leading-relaxed
+      : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black";
     return css;
   };
 
@@ -61,6 +64,8 @@ const QuoteBoxes = props => {
             {reactElementToJSXString(quote.text).length > 14 && (
               <div className="dontBreak" name="Quote Box. Outer box to prevent column breaking inside" key={idx}>
                 <div
+                  // Line below applies bottom margin on all except last box, for Pearls. (This is a DISUSED work-around for bottom spacing issue.)
+                  // className={`mb-12 ${path.match(/pearls/i) && idx === quoteArray.length - 1 && "-mb-12"}
                   className={`mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsAndText(quote)}`}
                   style={quotePaddingEtAl(quote)}
                 >

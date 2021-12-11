@@ -178,6 +178,7 @@ module.exports = {
           lightish: "#E0E3FC",
           line: "#D6D6D6",
           medium: "#C0C5E8",
+          neutral: "#BCBCBC",
           mid: "#B2B7D3",
           dark: "#707070",
           black: "#03050F"

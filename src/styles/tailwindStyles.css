@@ -64,6 +64,10 @@
     @apply font-sans font-semibold  text-20 mxs:text-22 sm:text-25 tracking-0.4 mxs:tracking-0.5
   }
 
+  .subHeadingFont {
+    @apply font-sans font-semibold  text-16 mxs:text-20 md:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  }
+
   .subtitleFont {
     @apply font-sans font-semibold text-20 text-blue-main tracking-0.5 pt-10 pb-3
   }
@@ -73,7 +77,7 @@
   }
 
   .titleMedium {
-    @apply text-25 mxs:text-32 sm:text-35  tracking-0.4 mxs:tracking-0.6 sm:tracking-0.7
+    @apply text-25 mxs:text-32 md:text-35  tracking-0.4 mxs:tracking-0.6 sm:tracking-0.7
   }
 
   .titleMediumPlus {
@@ -84,16 +88,24 @@
     @apply text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1.2
   }
 
+  .aboutEtcTopGap {
+    @apply mt-9 mxs:mt-12 sm:mt-16 lg:mt-18
+  }
+
   .aboutTitleClass {
     @apply pb-3  font-sans font-bold text-blue-main  text-18 mxs:text-22 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .panelTitleClass {
-    @apply pb-6  font-semibold text-blue-main text-20 sm:text-25 tracking-0.4 sm:tracking-0.5
+    @apply font-semibold text-blue-main text-20 sm:text-22 md:text-25 tracking-0.4 sm:tracking-0.5
   }
 
   .panelTextClass {
     @apply text-16 sm:text-18 text-blue-black tracking-0.3 sm:tracking-0.4
   }
   
+  .panelBaseClass {
+    @apply pt-8 mxs:pt-10 sm:pt-12  pb-0 mxs:pb-1 sm:pb-2  px-5 mxs:px-10 sm:px-15  w-full bg-gray-light rounded-xl mxs:rounded-2xl sm:rounded-3xl  border border-solid border-gray-lightish
+  }
+
 }

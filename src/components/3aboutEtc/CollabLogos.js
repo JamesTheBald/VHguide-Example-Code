@@ -5,8 +5,7 @@ import { useMyContext } from "../../context/Context";
 import logoContent from "../../content/collabContent";
 // import logoContent from "../../content/logoContent";
 
-const CollabLogos = props => {
-  const { size } = props;
+const CollabLogos = () => {
   const { queryData, log, log2 } = useMyContext();
 
   false && console.log(log, log2);

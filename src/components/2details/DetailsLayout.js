@@ -45,7 +45,7 @@ const DetailsLayout = props => {
   const panelPadding = "p-7 mxs:p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
 
   return (
-    <div className={`spacerFooter ${showContactForm ? "fixed" : ""} `}>
+    <div className={showContactForm ? "fixed" : ""}>
       <div className="text-blue-main stdMargins">
         <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
