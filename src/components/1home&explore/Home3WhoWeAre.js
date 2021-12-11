@@ -44,11 +44,17 @@ const Home3WhoWeAre = () => {
                 {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {
                     return (
-                      <div key={index} className="sm:mt-10  w-28 mxs:w-32 sm:w-36 lg:w-56 rounded-full overflow-hidden flex-shrink-0">
+                      <div
+                        key={index}
+                        className="sm:mt-10  w-28 mxs:w-32 sm:w-36 lg:w-56 rounded-full overflow-hidden flex-shrink-0 relative z-0"
+                        // "relative z-0" added as a workaround to border-radius bug, which shows up on mobile:
+                        // https://stackoverflow.com/questions/49066011/overflow-hidden-with-border-radius-not-working-on-safari
+                      >
+                        {/* -webkit-mask-image: -webkit-radial-gradient(white, black) */}
                         <GatsbyImage
                           image={item.node.childImageSharp.gatsbyImageData}
                           alt={`${currBio.name} portrait`}
-                          className="w-28 mxs:w-32 sm:w-36 lg:w-56  rounded-full"
+                          className="w-28 mxs:w-32 sm:w-36 lg:w-56  rounded-full relative z-0"
                           quality={80}
                         />
                       </div>
