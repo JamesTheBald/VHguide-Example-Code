@@ -36,7 +36,7 @@ const AboutDropDown = props => {
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
-    <div className="mr-3  hoverRevealTrigger group relative  flex flex-col items-start">
+    <div className="mr-3 w-full  hoverRevealTrigger group relative  flex flex-col items-start">
       <NavItem selecOnHover={true} bgSelec={bgSelec} destn={destn}>
         <button className="flex flex-row" onClick={event => onClickTitle(event, destn)}>
           <div className="md:pl-1 pr-0.5">About</div>
@@ -49,12 +49,12 @@ const AboutDropDown = props => {
         </button>
       </NavItem>
 
-      {/* Dropdown menu for Hesitancy Types on smaller screens (<1024px wide) */}
-      <div className="md:hidden pt-1.5">
+      {/* Dropdown menu for About pages on smaller screens (<1024px wide) */}
+      <div className="md:hidden pt-1.5  w-full">
         <div
           className={`${showAboutDropDown ? "flex" : "hidden group-hover:flex"}
             flex-col  pt-1.5 pb-4 pr-6 w-full  border-solid border-t border-gray-light`}
-          style={{ width: 270 }}
+          // style={{ width: 270 }}
         >
           <AboutLink className="ml-6 border-b" label="About the Guide" destn="/about" />
           <AboutLink className="ml-6 border-b" label="Media Coverage" destn="/about/media" />
@@ -62,9 +62,9 @@ const AboutDropDown = props => {
         </div>
       </div>
 
-      {/* Dropdown menu for Hesitancy Types on bigger screens */}
+      {/* Dropdown menu for About pages on bigger screens */}
       <div
-        className={`hidden md:inline ${pathname.includes("about") ? "z-40" : "z-10"}`}
+        className={`hidden md:inline  w-full  ${pathname.includes("about") ? "z-40" : "z-10"}`}
         style={{ top: 1 + "px", zIndex: 40 }}
       >
         <div

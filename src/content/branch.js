@@ -189,7 +189,7 @@ export const branch = [
           {
             subtopicName: <></>,
             subtopicNameShort: <></>,
-            subtopicNameAsTitle: <>Undifferentiated Vaccine Hesitancies</>,
+            subtopicNameAsTitle: <></>,
             contentID: "Undifferentiated",
           },
         ],
@@ -210,13 +210,38 @@ export const branch = [
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>No concerns about the pandemic</>,
-            subtopicNameShort: <>No concerns about COVID</>,
-            subtopicNameAsTitle: <>No Concerns About the Pandemic</>,
+            subtopicName: <></>,
+            subtopicNameShort: <></>,
+            subtopicNameAsTitle: <></>,
             contentID: "Unconcerned",
           },
         ],
       },
     ],
   },
+
+  {
+    branchName: "Pediatric Vaccine Hesitancies",
+    branchNameShort: "Pediatric Vaccine Hesitancies",
+    branchNameShortest: "Pediatric Hesitancies",
+    linkToDetails: true,
+    topic: [
+      {
+        topicName: <></>,
+        topicNameShort: <></>,
+        topicNameAsTitle: <></>,
+        linkToDetails: false,
+        subtopic: [
+          {
+            subtopicName: <></>,
+            subtopicNameShort: <></>,
+            subtopicNameAsTitle: <></>,
+            contentID: "Pediatrics",
+          },
+        ],
+      },
+    ],
+  },
+
+
 ];

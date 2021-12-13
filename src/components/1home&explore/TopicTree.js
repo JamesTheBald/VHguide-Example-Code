@@ -97,10 +97,17 @@ const TopicTree = props => {
                       <IoIosArrowDown className="mxs:hidden" size="22" />
                     </div>
                   ) : (
-                    <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: insideMargin }}>
-                      <IoIosArrowForward className="hidden mxs:inline" size="28" />
-                      <IoIosArrowForward className="mxs:hidden" size="22" />
-                    </div>
+                    <>
+                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: insideMargin }}>
+                        <IoIosArrowForward className="hidden mxs:inline" size="28" />
+                        <IoIosArrowForward className="mxs:hidden" size="22" />
+                      </div>
+
+                      <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: insideMargin }}>
+                        <IoIosArrowForward className="hidden mxs:inline" size="28" />
+                        <IoIosArrowForward className="mxs:hidden" size="22" />
+                      </div>
+                    </>
                   )}
                 </button>
 
@@ -124,12 +131,3 @@ const TopicTree = props => {
 };
 
 export default TopicTree;
-
-// console.log("TopicTree.js branch =", branch);
-// console.log("TopicTree.js branchNum=", branchNum);
-// console.log("TopicTree.js branchName =", branch[branchNum].branchName);
-// console.log("TopicTree.js topics =", topics);
-// console.log("TopicTree.js topics[0].topicName =", topics[0].topicName);
-// console.log("TopicTree.js topics[0].subtopic[0].subtopicName =", topics[0].subtopic[0].subtopicName);
-// console.log("TopicTree.js topics[0].subtopic[0].hoverText =", topics[0].subtopic[0].hoverText);
-// console.log("TopicTree.js topics[0].subtopic[0].contentID =", topics[0].subtopic[0].contentID);

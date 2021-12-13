@@ -70,9 +70,9 @@ const NavBar = () => {
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
-        <button onClick={event => onClickGo(event, "/")}>
+        <button className="pt-2 pb-2 mr-10  w-44" onClick={event => onClickGo(event, "/")}>
           <NavItem classNom="mr-5" bgSelec={bgSelec} destn="/">
-            <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 21 }} loading="eager" />
+            <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 23 }} loading="eager" />
           </NavItem>
         </button>
 
@@ -83,7 +83,7 @@ const NavBar = () => {
           onClickGo={onClickGo}
         />
 
-        <button onClick={event => onClickGo(event, "/pearls")}>
+        <button className="pb-1.5 w-56  mr-10" onClick={event => onClickGo(event, "/pearls")}>
           <NavItem classNom="mr-4" bgSelec={bgSelec} destn="/pearls">
             Clinical Pearls
           </NavItem>
@@ -132,7 +132,7 @@ const NavBar = () => {
             // Need the wrapping fragments below
             <>
               <div
-                className={`px-10 py-6 absolute top-0 right-0 w-full mxs:w-85 flex flex-col gap-4  
+                className={`px-10 pt-6 pb-8 absolute top-0 right-0  w-full mxs:w-85  flex flex-col items-start gap-4
                           rounded-b-xl ${bgUnselected} border-solid border-2 border-t-0 border-gray-light`}
                 ref={dropDownRef}
               >

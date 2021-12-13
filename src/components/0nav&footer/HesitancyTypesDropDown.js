@@ -11,7 +11,7 @@ const HesitancyTypesDropDown = props => {
 
   const [showHesDropDown, setShowHesDropDown] = useState(false);
 
-  const destn="/explore";
+  const destn = "/explore";
 
   const onClickTitle = (event, destn) => {
     event.stopPropagation();
@@ -36,7 +36,7 @@ const HesitancyTypesDropDown = props => {
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
-    <div className="mr-3  hoverRevealTrigger group relative  flex flex-col items-start">
+    <div className="mr-3 w-full  hoverRevealTrigger group relative  flex flex-col items-start">
       <NavItem selecOnHover={true} bgSelec={bgSelec} destn={destn}>
         <button className="flex flex-row" onClick={event => onClickTitle(event, destn)}>
           <div className="md:pl-0.5 pr-0.5">Hesitancy Types</div>
@@ -50,11 +50,11 @@ const HesitancyTypesDropDown = props => {
       </NavItem>
 
       {/* Dropdown menu for Hesitancy Types on smaller screens (<1024px wide) */}
-      <div className="md:hidden pt-1.5">
+      <div className="md:hidden pt-1.5  w-full">
         <div
           className={`${showHesDropDown ? "flex" : "hidden group-hover:flex"}
                       flex-col  pt-1.5 pb-4 pr-6 w-full  border-solid border-t border-gray-light`}
-          style={{ width: 270 }}
+          // style={{ width: 270 }}
         >
           <BranchLink className="ml-6 border-b" branchNum={0} />
           <BranchLink className="ml-6 border-b" branchNum={1} />
@@ -64,7 +64,7 @@ const HesitancyTypesDropDown = props => {
 
       {/* Dropdown menu for Hesitancy Types on bigger screens */}
       <div
-        className={`hidden md:inline ${pathname.includes("explore") ? "z-40" : "z-10"}`}
+        className={`hidden md:inline  w-full  ${pathname.includes("explore") ? "z-40" : "z-10"}`}
         style={pathname === "/explore" ? { top: 1 + "px" } : { top: -2.25 + "rem" }}
       >
         <div

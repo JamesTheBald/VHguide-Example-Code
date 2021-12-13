@@ -38,7 +38,6 @@ const Details = props => {
   log2 && console.log("details.js runs. fullStoryID=", fullStoryID);
   log2 && console.log("details.js Initially, contentID=", contentID);
 
-  // let contIDTemp;
   useEffect(() => {
     const contIDTemp = updateContIDandName(locn, setContentID, setHesitTypeName, log, log2).contIDTemp;
     log2 && console.log("details.js contentIDTemp=", contIDTemp);

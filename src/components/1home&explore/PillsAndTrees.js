@@ -7,7 +7,7 @@ import TopicTree from "./TopicTree";
 
 const PillsAndTrees = props => {
   const { maxStackedWidth } = props;
-  const [order, setOrder] = useState([0, 1, 2]);
+  const [order, setOrder] = useState([0, 1, 2, 3]);
   const { winWidth, marginOuter, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } =
     useMyContext();
 
@@ -38,13 +38,13 @@ const PillsAndTrees = props => {
     pillWidthMedium = (widthPillRow - 2 * xGap) / 3;
     pillWidthNarrow = (widthPillRow - 2 * xGap) / 4;
   }
-  const [pillWidths, setPillWidths] = useState([pillWidthMedium, pillWidthMedium, pillWidthMedium]);
+  const [pillWidths, setPillWidths] = useState([pillWidthMedium, pillWidthMedium, pillWidthMedium, pillWidthMedium]);
 
   const calcOrder = useCallback(
     branchNum => {
-      let newOrder = [0, 1, 2];
+      let newOrder = [0, 1, 2, 3];
       if (winWidth < minRowWidth) {
-        newOrder = noneSelected || branchNum === 0 ? [0, 1, 2] : branchNum === 1 ? [1, 0, 2] : [1, 2, 0];
+        newOrder = noneSelected || branchNum === 0 ? [0, 1, 2, 3] : branchNum === 1 ? [1, 0, 2, 3] : branchNum === 2 ? [2, 1, 2, 0, 3] : [3, 0, 1, 2];
       }
       log2 && console.log("PillsAndTrees.js calcOrder() setting order to", newOrder);
       return newOrder;

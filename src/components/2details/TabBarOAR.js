@@ -9,15 +9,6 @@ const TabBarOAR = () => {
   false && console.log(log && log2);
   log2 && console.log("TabBarOAR.js runs. winWidth=", winWidth);
 
-  const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
-  const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
-  const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 20;
-  const tabTall = winWidth < 510 ? 92 : 100;
-  const titleTopMargin = 12;
-
-  log2 && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
-  log2 && console.log("TabBarOAR.js tabWidth=", tabWidth);
-
   const capitalizeFirstLetter = str => {
     if (typeof str !== "string") return "";
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -35,7 +26,6 @@ const TabBarOAR = () => {
   let urlAsArray = url.pathname.split("/");
   const lastSegment = urlAsArray.pop();
   const secondLastSegment = urlAsArray.pop();
-
   log2 && console.log("TabBarOAR.js url=", url);
   log2 && console.log("TabBarOAR.js lastSegment=", lastSegment);
   log2 && console.log("TabBarOAR.js secondLastSegment=", secondLastSegment);
@@ -51,34 +41,33 @@ const TabBarOAR = () => {
   }
   log2 && console.log("TabBarOAR.js OAR tabName=", tabName);
 
+  const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
+  const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
+  const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 20;
+  const tabTall = winWidth < 510 ? 92 : 100;
+  log2 && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
+  log2 && console.log("TabBarOAR.js tabWidth=", tabWidth);
+
   const oarTabs = ["overview", "advice", "resources"];
 
   return (
     <div>
       <div className="flex flex-row relative">
         {oarTabs.map((currTabName, index) => {
+          const selected = oarTabs[index] === tabName ? true : false;
           return (
             <div key={index}>
               <div className="flex">
                 <button
                   name="rounded corner frame"
-                  className={`flex justify-center  border-b-0 border-solid border-gray-light rounded-t-3xl  cursor-pointer 
-                              ${oarTabs[index] === tabName ? "bg-gray-light" : "bg-white"}`}
-                  style={{
-                    borderWidth: winWidth < 510 ? 3 : 4, // Need thinner at small screens
-                    width: tabWidth,
-                    height: tabTall,
-                  }}
+                  className={`flex justify-center  oarTabClass  border-3 mxs:border-4 border-b-0 border-solid border-gray-light 
+                              text-center pt-2  rounded-t-3xl  cursor-pointer 
+                              ${selected ? "text-blue-main bg-gray-light" : "text-blue-pale bg-white"}
+                              `}
+                  style={{ width: tabWidth, height: tabTall }}
                   onClick={() => changeTab(currTabName)}
                 >
-                  <h2
-                    name="text locating box"
-                    className={`absolute  text-18 mxs:text-22 sm:text-25 font-serif font-semibold tracking-0.5 
-                                ${oarTabs[index] === tabName ? "text-blue-main" : "text-blue-pale"}`}
-                    style={{ top: titleTopMargin }}
-                  >
-                    {capitalizeFirstLetter(currTabName)}
-                  </h2>
+                  {capitalizeFirstLetter(currTabName)}
                 </button>
                 <div className="h-12" style={{ width: `${tabGap}px` }} />
               </div>

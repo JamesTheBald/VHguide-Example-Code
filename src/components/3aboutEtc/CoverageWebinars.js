@@ -21,7 +21,7 @@ const CoverageWebinars = ({ className }) => {
         return (
           <div key={currCoverage.title} className="">
             <a
-              className="mb-4  w-full grid justify-items-center items-center  cursor-pointer hoverRevealTrigger"
+              className="mb-4  w-full grid justify-start items-center  cursor-pointer hoverRevealTrigger"
               style={{ gridTemplateAreas: "area1" }}
               href={currCoverage.URL}
               rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const CoverageWebinars = ({ className }) => {
               })}
 
               <div
-                className="p-4 w-40  hiddenTillHover z-50
+                className="p-4 w-40  hiddenTillHover z-50 justify-self-center
                            baseFont bg-white rounded-2xl shadowGray opacity-80  text-center"
                 style={{ gridArea: "area1" }}
               >

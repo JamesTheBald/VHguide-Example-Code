@@ -53,7 +53,7 @@ export const contentPersonas = {
         content: [
           <>
             &ldquo;I don&apos;t trust it at my age. I don&apos;t know what will come down the road, what it will do to
-            me three to five years from now. &rdquo;
+            me three to five years from now.&rdquo;
           </>,
           <>&ldquo;Will this be a yearly vaccine? What about boosters?&rdquo;</>,
           <>&ldquo;I don&apos;t trust anyone about this. We&apos;re being treated like guinea pigs.&rdquo;</>,
@@ -613,7 +613,6 @@ export const contentPersonas = {
           },
 
           {
-
             subheading: "'I already had COVID, why do I need to get the vaccine?'",
             quotes: [
               {
@@ -6995,7 +6994,6 @@ export const contentPersonas = {
   },
 
   Undifferentiated: {
-    // edit this from ContentID to the specific name for this persona type. No duplication!
     tags: ["", ""],
     related: [""],
     overview: {
@@ -7053,12 +7051,11 @@ export const contentPersonas = {
               {/* <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" /> */}
 
               <EaaseHoverPopup
-                eaaseTextClass="ml-1.5 orangeUnderline"
+                eaaseTextClass="mx-1.5 orangeUnderline"
                 eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
               />
 
               <span>
-                {" "}
                 to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
                 responding.
               </span>
@@ -7082,7 +7079,7 @@ export const contentPersonas = {
             can have a better conversation. The goal of these conversations is to <strong>&#40;re&#41;affirm</strong>{" "}
             that you are an ally; <strong>validate</strong> your patients&apos; experiences; and aim for{" "}
             <strong>contemplation</strong> rather than vaccine acceptance. Your status as a trusted healthcare advisor
-            can make the difference.{" "}
+            can make the difference.
           </>,
         ],
       },
@@ -7796,6 +7793,74 @@ export const contentPersonas = {
         },
       ],
     },
+  },
+
+  Pediatrics: {
+    tags: ["", ""],
+    related: [""],
+    overview: {
+      tags: ["", ""],
+
+      theySay: {
+        image: "Hesitancy Group 1.svg",
+        content: [
+          <p>Long-term effects / Long-term data</p>,
+          <p>Risks of COVID vs risks of vaccine to children</p>,
+          <p>Rushed approval/authorization of vaccine for children</p>,
+          <p>Developmental/puberty concerns</p>,
+          <p>Virus &lsquo;Shedding&rsquo;</p>,
+        ],
+      },
+      // (Pediatrics)
+
+      thingsToConsider: {
+        image: "doctorMuslimWomanYellowHeadCover.svg",
+        content: [
+          <>
+            Offering generic information about vaccines may not be as effective as using targeted communication to
+            address particular patient concerns.
+          </>,
+          <>
+            <div className="relative">
+              <span>Use the</span>
+              {/* <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" /> */}
+
+              <EaaseHoverPopup
+                eaaseTextClass="mx-1.5 orangeUnderline"
+                eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
+              />
+
+              <span>
+                to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
+                responding.
+              </span>
+            </div>
+          </>,
+          <>
+            Remember to engage with your patient to better understand and identify their specific type or source of
+            vaccine hesitancy.
+          </>,
+          <>
+            Take your time, and don&apos;t aim for a &lsquo;yes&rsquo; in any single conversation. The goal is to become
+            your patients&apos; ally.
+          </>,
+        ],
+      },
+      takeHome: {
+        image: "Notepad_small.svg",
+        content: [
+          <>
+            Take the time to learn about your patient&apos;s particular concerns about the COVID vaccines so that you
+            can have a better conversation. The goal of these conversations is to <strong>&#40;re&#41;affirm</strong>{" "}
+            that you are an ally; <strong>validate</strong> your patients&apos; experiences; and aim for{" "}
+            <strong>contemplation</strong> rather than vaccine acceptance. Your status as a trusted healthcare advisor
+            can make the difference.
+          </>,
+        ],
+      },
+    },
+
+    // Add content here!
   },
 
   BadContentID: {

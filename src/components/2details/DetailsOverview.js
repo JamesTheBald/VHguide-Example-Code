@@ -18,9 +18,9 @@ const DetailsOverview = props => {
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
 
-  const blockClass = "flex flex-col w-full";
+  const blockClass = "flex flex-col w-full  baseFont text-blue-black";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
-  const titleClass = "mt-4 sm:mt-7  font-semibold text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4";
+  const titleClass = "mt-4 sm:mt-7  font-semibold text-blue-main  text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4";
   const listClass2 = "ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc";
 
   // if (typeof window !== `undefined`) {
@@ -45,18 +45,25 @@ const DetailsOverview = props => {
             })}
 
             {contentID === "Undifferentiated" ? (
-              <div>
-                <h3 className={titleClass}>Considerations for vaccine hesitant patients:</h3>
-                <div className="mt-2  baseFont text-blue-black">
-                  {theySay.content.map((currItem, index) => (
-                    <div key={index} className="pb-4 baseFont">
-                      {currItem}
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <>
+                <h3 className={`${titleClass} mb-2`}>Considerations for vaccine hesitant patients:</h3>
+                {theySay.content.map((currItem, index) => (
+                  <div key={index} className="pb-4">
+                    {currItem}
+                  </div>
+                ))}
+              </>
+            ) : contentID === "Pediatrics" ? (
+              <>
+                <h3 className={titleClass}>Patients are saying they have concerns about...</h3>
+                {theySay.content.map((currItem, index) => (
+                  <div key={index} className="pb-4">
+                    {currItem}
+                  </div>
+                ))}
+              </>
             ) : (
-              <div>
+              <>
                 <h3 className={titleClass}>People with this hesitancy type say...</h3>
                 <ul className={listClass2}>
                   {theySay.content.map((currItem, index) => (
@@ -65,7 +72,7 @@ const DetailsOverview = props => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </>
             )}
           </section>
 
@@ -114,49 +121,3 @@ const DetailsOverview = props => {
 };
 
 export default DetailsOverview;
-
-// const theySay = useRef();
-// const thingsToConsider = useRef();
-// const takeHome = useRef();
-
-// const establishContent = () => {
-//   log && console.log("DetailsOverview.js establishContent() Check overview=", overview);
-
-// without useRefs
-// theySay = overview?.theySay
-// thingsToConsider = overview?.thingsToConsider
-// takeHome =  overview?.takeHome
-// theySay = overview?.theySay?.content[0] ? overview.theySay : template;
-// thingsToConsider = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
-// takeHome =  overview?.takeHome?.content[0] ? overview.takeHome : template;
-// log && console.log("DetailsOverview.js establishContent theySay=", theySay);
-// log && console.log("DetailsOverview.js establishContent thingsToConsider=", thingsToConsider);
-// log && console.log("DetailsOverview.js establishContent takeHome=", takeHome);
-
-// with useRefs
-// theySay = overview.theySay;
-// thingsToConsider = overview.thingsToConsider;
-// takeHome = overview.takeHome;
-// theySay.current = overview.theySay;
-// thingsToConsider.current = overview.thingsToConsider;
-// takeHome.current = overview.takeHome;
-
-// theySay.current = overview?.theySay?.content[0] ? overview.theySay : template;
-// thingsToConsider.current = overview?.thingsToConsider?.content[0] ? overview.thingsToConsider : template;
-// takeHome.current = overview?.takeHome?.content[0] ? overview.takeHome : template;
-// log && console.log("DetailsOverview.js establishContent theySay.current=", theySay.current);
-// log && console.log("DetailsOverview.js establishContent thingsToConsider.current=", thingsToConsider.current);
-// log && console.log("DetailsOverview.js establishContent takeHome.current=", takeHome.current);
-// };
-
-// if (overview) {
-//   establishContent();
-// }
-
-// useEffect(() => {
-//   const timer = setTimeout(() => {
-//     console.log('DetailsOverview.js useEffect runs')
-//     establishContent()
-//   }, 200);
-//   return () => clearTimeout(timer);
-// }, []);
