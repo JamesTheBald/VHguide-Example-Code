@@ -6,16 +6,15 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Pill = (props) => {
   const { branchNum, onClickExplore, noneSelected } = props;
-  const { winWidth, locn, branch } = useMyContext();
-  let { log } = useMyContext();
-
+  const { winWidth, locn, branch, log } = useMyContext();
+  
+  false && console.log(log);
   const branchName = branch[branchNum].branchName;
   const branchNameShortest = branch[branchNum].branchNameShortest;
 
   const pillHeight = winWidth < 510 ? 48 : 72;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
 
-  log = false;
   log && console.log(" ");
   log && console.log("Pill.js branchNum=", branchNum);
   log && console.log("Pill.js locn.branch=", locn.branch);

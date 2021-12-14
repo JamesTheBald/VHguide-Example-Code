@@ -64,12 +64,12 @@
     @apply font-sans font-semibold  text-20 mxs:text-22 sm:text-25 tracking-0.4 mxs:tracking-0.5
   }
 
-  .subHeadingFont {
-    @apply font-sans font-semibold  text-16 mxs:text-20 md:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  .subSubHeadingFont {
+    @apply font-sans font-semibold  text-16 mxs:text-20 md:text-22  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main pb-3
   }
 
-  .subtitleFont {
-    @apply font-sans font-semibold text-20 text-blue-main tracking-0.5 pt-10 pb-3
+  .subHeadingFont {
+    @apply font-sans font-semibold  text-18 mxs:text-22 md:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .titleFont {

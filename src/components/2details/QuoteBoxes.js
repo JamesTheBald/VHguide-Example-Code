@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { useMyContext } from "../../context/Context";
-
 import reactElementToJSXString from "react-element-to-jsx-string";
 import BigDoubleQuotes from "./BigDoubleQuotes";
+import { useMyContext } from "../../context/Context";
 
 const QuoteBoxes = props => {
   const { quoteArray, setFullStoryID } = props;
@@ -12,26 +11,21 @@ const QuoteBoxes = props => {
 
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log2 && console.log("QuoteBoxes.js runs.");
-  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log && console.log("QuoteBoxes.js runs.");
+  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
-  // const path = typeof window !== "undefined" && window.location.pathname;
-
-  const quoteColorsAndText = quote => {
-    const css = typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
-    // on Pearls
-      ? quote.featured === true
-        ? "bg-blue-main text-gray-light" // featured on Pearls.  Had: leading-relaxed
-        : "bg-gray-light text-blue-black  border-3 border-solid border-gray-neutral"
-    // else on details, etc
-      : quote.featured === true
-      ? "bg-blue-main text-gray-light" // featured on details-advice.  Had: leading-relaxed
-      : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black";
+  const quoteColorsEtAl = quote => {
+    const css =
+      quote.featured === true
+        ? "bg-blue-main text-gray-light"
+        : typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
+        ? "bg-gray-light text-blue-black  border-3 border-solid border-gray-neutral" // not featured, on pearls
+        : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black"; // not featured, not on pearls
     return css;
   };
 
-  const quotePaddingEtAl = quote => {
+  const quotePaddingEtc = quote => {
     const style =
       winWidth < 510
         ? quote.featured === true
@@ -49,7 +43,6 @@ const QuoteBoxes = props => {
 
   const iconDistFromTop = quote => {
     const quoteLen = reactElementToJSXString(quote.text).length;
-    // log && console.log("QuoteBoxes distFromTop() quoteLen=", quoteLen);
     return quoteLen < 100 ? -20 : quoteLen < 140 ? -10 : 0;
   };
 
@@ -61,28 +54,19 @@ const QuoteBoxes = props => {
         log2 && console.log("QuoteBoxes.js quote length=", reactElementToJSXString(quote.text).length);
         return (
           <div key={idx}>
-            {reactElementToJSXString(quote.text).length > 14 && (
+            {reactElementToJSXString(quote.text).length > 12 && (
               <div className="dontBreak" name="Quote Box. Outer box to prevent column breaking inside" key={idx}>
                 <div
-                  // Line below applies bottom margin on all except last box, for Pearls. (This is a DISUSED work-around for bottom spacing issue.)
-                  // className={`mb-12 ${path.match(/pearls/i) && idx === quoteArray.length - 1 && "-mb-12"}
-                  className={`mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsAndText(quote)}`}
-                  style={quotePaddingEtAl(quote)}
+                  className={`mb-8 mxs:mb-10 sm:mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsEtAl(quote)}`}
+                  style={quotePaddingEtc(quote)}
                 >
                   <div className="relative">
-                    {/* Add big quotes or image icon */}
                     {quote.image === "" ? (
                       <div className={`absolute -left-9 -top-1.5 text-30`}>
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
                     ) : (
-                      <div
-                        className="absolute"
-                        style={{
-                          left: iconLeftPosn,
-                          top: iconDistFromTop(quote),
-                        }}
-                      >
+                      <div className="absolute" style={{ left: iconLeftPosn, top: iconDistFromTop(quote) }}>
                         {pplIcons.map((item, index) => {
                           return (
                             item.node.relativePath === quote.image && (
@@ -97,6 +81,7 @@ const QuoteBoxes = props => {
                         })}
                       </div>
                     )}
+                    {/* The quote itself */}
                     {quote.text}
                   </div>
 

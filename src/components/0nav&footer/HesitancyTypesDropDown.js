@@ -12,7 +12,6 @@ const HesitancyTypesDropDown = props => {
   const [showHesDropDown, setShowHesDropDown] = useState(false);
 
   const destn = "/explore";
-
   const onClickTitle = (event, destn) => {
     event.stopPropagation();
     winWidth < 1024
@@ -36,7 +35,7 @@ const HesitancyTypesDropDown = props => {
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
-    <div className="mr-3 w-full  hoverRevealTrigger group relative  flex flex-col items-start">
+    <div className="mr-2 w-full md:w-auto hoverRevealTrigger group relative  flex flex-col items-start">
       <NavItem selecOnHover={true} bgSelec={bgSelec} destn={destn}>
         <button className="flex flex-row" onClick={event => onClickTitle(event, destn)}>
           <div className="md:pl-0.5 pr-0.5">Hesitancy Types</div>
@@ -59,6 +58,7 @@ const HesitancyTypesDropDown = props => {
           <BranchLink className="ml-6 border-b" branchNum={0} />
           <BranchLink className="ml-6 border-b" branchNum={1} />
           <BranchLink className="ml-6 border-b" branchNum={2} />
+          <BranchLink className="ml-6 border-b" branchNum={3} />
         </div>
       </div>
 
@@ -79,7 +79,8 @@ const HesitancyTypesDropDown = props => {
         >
           <BranchLink className="pl-6 border-b" branchNum={0} />
           <BranchLink className="pl-6 border-b" branchNum={1} />
-          <BranchLink className="pl-6" branchNum={2} />
+          <BranchLink className="pl-6 border-b" branchNum={2} />
+          <BranchLink className="pl-6" branchNum={3} />
         </div>
       </div>
     </div>

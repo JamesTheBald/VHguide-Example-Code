@@ -27,7 +27,7 @@ const Explore = () => {
         <h1 className="titleFont text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main">
           Hesitancy Types
         </h1>
-        <h3 className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  text-14 mxs:text-20 sm:text-25 italic">My patient has...</h3>
+        {/* <h3 className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  text-14 mxs:text-20 sm:text-25 italic">My patient has...</h3> */}
 
         <PillsAndTrees maxStackedWidth={maxStackedWidth} />
 

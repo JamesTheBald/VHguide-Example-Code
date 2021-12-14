@@ -17,7 +17,7 @@ const updateAdviceAndRelateds = (contentIDTemp, setAdvice, setRelated, log, log2
   } else {
     log &&
       console.log("updateAdviceAndRelated.js advice content not found for contID=", contentIDTemp, ". Reverting to overview tab");
-    navigate("/details/advice/overview");
+    navigate("/details/overview");
   }
 
   setAdvice(adviceTemp);

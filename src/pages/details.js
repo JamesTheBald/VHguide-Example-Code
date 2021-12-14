@@ -12,13 +12,13 @@ import AdviceQuoteGroupList from "../components/2details/AdviceQuoteGroupList";
 import AdviceEaase from "../components/2details/AdviceEaase";
 import AdviceFullStory from "../components/2details/AdviceFullStory";
 import AdviceWhatsWorking from "../components/2details/AdviceWhatsWorking";
+import PediatricsPanels from "../components/2details/PediatricsPanels";
 import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
 const Details = props => {
   const { data } = props;
-  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } =
-    useMyContext();
+  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
   queryData.current = data;
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Details = props => {
 
   useEffect(() => {
     const contIDTemp = updateContIDandName(locn, setContentID, setHesitTypeName, log, log2).contIDTemp;
-    log2 && console.log("details.js contentIDTemp=", contIDTemp);
+    log && console.log("details.js contentIDTemp=", contIDTemp);
     updateAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
   }, [locn, contentID, log, log2]);
 
@@ -65,6 +65,10 @@ const Details = props => {
     );
   };
 
+  const AdvicePediatrics = () => {
+    return <PediatricsPanels />;
+  };
+
   if (contentID) {
     return (
       <DetailsLayout hesitTypeName={hesitTypeName} related={related}>
@@ -74,6 +78,7 @@ const Details = props => {
           <DetailsOverview path="/overview" contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
           <AdviceFullStory path="/advice/fullstory" fullStoryID={fullStoryID} />
+          <AdvicePediatrics path="/advice/pediatrics" />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
             <EaasePages key={idx} path={page} />

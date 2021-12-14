@@ -36,7 +36,7 @@ const AboutDropDown = props => {
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
-    <div className="mr-3 w-full  hoverRevealTrigger group relative  flex flex-col items-start">
+    <div className="w-full md:w-auto  pt-1 md:pt-0  hoverRevealTrigger group relative  flex flex-col items-start">
       <NavItem selecOnHover={true} bgSelec={bgSelec} destn={destn}>
         <button className="flex flex-row" onClick={event => onClickTitle(event, destn)}>
           <div className="md:pl-1 pr-0.5">About</div>

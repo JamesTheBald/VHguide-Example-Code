@@ -6,30 +6,24 @@ import { contentPersonas } from "../../content/contentPersonas";
 
 const DetailsOverview = props => {
   const { contentID } = props;
-  const { winWidth, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, locn, log, log2 } = useMyContext();
 
   let overview = contentPersonas[contentID]?.overview;
-  log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
-
-  const pplIcons = queryData.current.pplIcons.edges;
-  log2 && console.log("DetailsOverview.js pplIcons=", pplIcons);
-
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
+  const pplIcons = queryData.current.pplIcons.edges;
+
+  log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+  log2 && console.log("DetailsOverview.js theySay=", theySay);
+  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
+  log2 && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
   const blockClass = "flex flex-col w-full  baseFont text-blue-black";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
   const titleClass = "mt-4 sm:mt-7  font-semibold text-blue-main  text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4";
   const listClass2 = "ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc";
-
-  // if (typeof window !== `undefined`) {
-  //   scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
-  // }
-
-  log2 && console.log("DetailsOverview.js theySay=", theySay);
-  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
-  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
 
   return (
     <>
@@ -56,11 +50,13 @@ const DetailsOverview = props => {
             ) : contentID === "Pediatrics" ? (
               <>
                 <h3 className={titleClass}>Patients are saying they have concerns about...</h3>
-                {theySay.content.map((currItem, index) => (
-                  <div key={index} className="pb-4">
-                    {currItem}
-                  </div>
-                ))}
+                <ul className={listClass2}>
+                  {theySay.content.map((currItem, index) => (
+                    <li key={index} className="pb-1">
+                      {currItem}
+                    </li>
+                  ))}
+                </ul>
               </>
             ) : (
               <>
@@ -110,7 +106,13 @@ const DetailsOverview = props => {
                 {currItem}
               </div>
             ))}
-            <Link to="/details/advice/eaase" className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill">
+
+            {/* When locn.branch = 3, make this link go to /details/advice/pediatrics */}
+
+            <Link
+              to={` ${locn.branch === 3 ? "/details/advice/pediatrics" : "/details/advice/eaase"}`}
+              className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill"
+            >
               {winWidth < 400 ? <>How to start the conversation</> : <>Advice on how to start the conversation</>}
             </Link>
           </section>

@@ -51,18 +51,12 @@ const NavBar = () => {
     setShowContactForm(false);
   };
 
-  const onClickOpenHamburger = event => {
+  const onClickHamburger = (event, wantOpen) => {
     event.stopPropagation();
-    setShowDropDown(true);
-  };
-
-  const onClickCloseHamburger = event => {
-    event.stopPropagation();
-    setShowDropDown(false);
+    setShowDropDown(wantOpen);
   };
 
   const bgUnselected = "bg-blue-black";
-  // const bgUnselected2 = "bg-blue-600";
   const bgSelec = "bg-blue-blackest";
   const dropDownLinkClass =
     "pt-2.5 pb-2  text-left  border-solid border-gray-light  text-14 tracking-0.4 cursor-pointer";
@@ -70,9 +64,15 @@ const NavBar = () => {
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
-        <button className="pt-2 pb-2 mr-10  w-44" onClick={event => onClickGo(event, "/")}>
+        <button className="my-2.5 mr-2  pr-10 md:pr-0" onClick={event => onClickGo(event, "/")}>
           <NavItem classNom="mr-5" bgSelec={bgSelec} destn="/">
-            <StaticImage src="../../assets/navbar/homeIcon.svg" alt="Home icon" style={{ width: 23 }} loading="eager" />
+            <StaticImage
+              src="../../assets/navbar/homeIcon.svg"
+              alt="Home icon"
+              style={{ width: 23 }}
+              loading="eager"
+              className="relative md:-top-0.5"
+            />
           </NavItem>
         </button>
 
@@ -83,7 +83,7 @@ const NavBar = () => {
           onClickGo={onClickGo}
         />
 
-        <button className="pb-1.5 w-56  mr-10" onClick={event => onClickGo(event, "/pearls")}>
+        <button className="pr-10 md:pr-0 mr-2" onClick={event => onClickGo(event, "/pearls")}>
           <NavItem classNom="mr-4" bgSelec={bgSelec} destn="/pearls">
             Clinical Pearls
           </NavItem>
@@ -112,20 +112,22 @@ const NavBar = () => {
           <StaticImage src="../../assets/homepage/Logo for Website.svg" alt="VH Guide logo" />
         </button>
 
-        <div
-          name="Wide screens => normal Navbar"
-          className="hidden md:flex items-center  pt-1 ml-8 mr-6 mxs:mr-8 lg:mr-10  relative"
-        >
+        <div name="Wide screens => normal Navbar" className="hidden md:flex items-center  pt-1 mx-8 lg:mr-10  relative">
           <NavBarItemsAndDropDowns />
         </div>
 
         <div name="Narrow screens => Hamburger Navbar" className="md:hidden">
           <button
             name="Hamburger icon container"
-            className="w-24 flex justify-center items-center cursor-pointer"
-            onClick={event => onClickOpenHamburger(event)}
+            className="w-20 mxs:w-24 mxs:mr-2 sm:mr-4  flex justify-center items-center cursor-pointer"
+            onClick={event => onClickHamburger(event, true)}
           >
-            <IoIosMenu size={50} />
+            <div className="mxs:hidden">
+              <IoIosMenu size={40} />
+            </div>
+            <div className="hidden mxs:block">
+              <IoIosMenu size={50} />
+            </div>
           </button>
 
           {showDropDown && (
@@ -136,7 +138,7 @@ const NavBar = () => {
                           rounded-b-xl ${bgUnselected} border-solid border-2 border-t-0 border-gray-light`}
                 ref={dropDownRef}
               >
-                <button className="p-2 absolute top-2 right-3" onClick={event => onClickCloseHamburger(event)}>
+                <button className="p-2 absolute top-2 right-3" onClick={event => onClickHamburger(event, false)}>
                   <VscClose size={30} />
                 </button>
 

@@ -7,7 +7,6 @@ import TopicTree from "./TopicTree";
 
 const PillsAndTrees = props => {
   const { maxStackedWidth } = props;
-  const [order, setOrder] = useState([0, 1, 2, 3]);
   const { winWidth, marginOuter, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } =
     useMyContext();
 
@@ -17,9 +16,7 @@ const PillsAndTrees = props => {
   const mixedStackBreakPt = 1444;
   const minRowWidth = 1920;
   const xGap = 50;
-  let pillWidthWide;
-  let pillWidthNarrow;
-  let pillWidthMedium;
+  let pillWidthWide, pillWidthNarrow, pillWidthMedium;
 
   if (winWidth < maxStackedWidth) {
     // Narrow screen case
@@ -40,18 +37,6 @@ const PillsAndTrees = props => {
   }
   const [pillWidths, setPillWidths] = useState([pillWidthMedium, pillWidthMedium, pillWidthMedium, pillWidthMedium]);
 
-  const calcOrder = useCallback(
-    branchNum => {
-      let newOrder = [0, 1, 2, 3];
-      if (winWidth < minRowWidth) {
-        newOrder = noneSelected || branchNum === 0 ? [0, 1, 2, 3] : branchNum === 1 ? [1, 0, 2, 3] : branchNum === 2 ? [2, 1, 2, 0, 3] : [3, 0, 1, 2];
-      }
-      log2 && console.log("PillsAndTrees.js calcOrder() setting order to", newOrder);
-      return newOrder;
-    },
-    [winWidth, minRowWidth, noneSelected, log2]
-  );
-
   const calcPillWidthArray = useCallback(
     currWidths => {
       const newWidthArray = [...currWidths];
@@ -69,12 +54,10 @@ const PillsAndTrees = props => {
   );
 
   useEffect(() => {
-    setOrder(calcOrder(locn.branch));
     setPillWidths(curr => calcPillWidthArray(curr));
-  }, [calcOrder, locn.branch, calcPillWidthArray]);
+  }, [locn.branch, calcPillWidthArray]);
 
   const onClickExplore = clickedBranchNum => {
-    setOrder(calcOrder(clickedBranchNum));
     setNoneSelected(branch[clickedBranchNum].linkToDetails ? true : false);
     setLocn(currLocn => {
       const newLocn = {
@@ -95,9 +78,9 @@ const PillsAndTrees = props => {
     log2 && console.log("PillAndTrees.js PillAndTopicTree() brancNum=", branchNum);
     return (
       <div
-        className={`flex flex-col  ${order[branchNum] !== 2 ? "mr-12" : ""}
+        className={`flex flex-col  ${branchNum < 3 && "mr-12"}
                                    ${winWidth < 510 ? "mb-8" : winWidth < 720 ? "mb-10" : "mb-12"}`}
-        style={{ width: pillWidths[branchNum], order: order[branchNum] }}
+        style={{ width: pillWidths[branchNum] }}
       >
         <Pill branchNum={branchNum} onClickExplore={onClickExplore} noneSelected={noneSelected} />
         {locn.branch === branchNum && !noneSelected && !branch[branchNum].linkToDetails && (
@@ -114,6 +97,7 @@ const PillsAndTrees = props => {
         <PillAndTopicTree branchNum={0} />
         <PillAndTopicTree branchNum={1} />
         <PillAndTopicTree branchNum={2} />
+        <PillAndTopicTree branchNum={3} />
       </>
     );
   };
@@ -125,6 +109,7 @@ const PillsAndTrees = props => {
         {locn.branch !== 0 && <PillAndTopicTree branchNum={0} />}
         {locn.branch !== 1 && <PillAndTopicTree branchNum={1} />}
         {locn.branch !== 2 && <PillAndTopicTree branchNum={2} />}
+        {locn.branch !== 2 && <PillAndTopicTree branchNum={3} />}
       </>
     );
   };

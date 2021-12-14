@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const TabBarOAR = () => {
-  const { winWidth, marginOuter, log, log2 } = useMyContext();
+  const { winWidth, marginOuter, locn, log, log2 } = useMyContext();
 
   false && console.log(log && log2);
   log2 && console.log("TabBarOAR.js runs. winWidth=", winWidth);
@@ -14,11 +14,15 @@ const TabBarOAR = () => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }; // from https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
 
-  const changeTab = selectedTabName => {
-    if (selectedTabName === "advice") {
-      navigate("/details/advice/eaase");
+  const changeTab = desiredTabName => {
+    if (desiredTabName === "advice") {
+      if (locn.branch === 3) {
+        navigate("/details/advice/pediatrics");
+      } else {
+        navigate("/details/advice/eaase");
+      }
     } else {
-      navigate("/details/" + selectedTabName);
+      navigate("/details/" + desiredTabName);
     }
   };
 
@@ -44,7 +48,7 @@ const TabBarOAR = () => {
   const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
   const tabWidth = winWidth < 510 ? 200 * tabWidthAdjRatio : winWidth < 720 ? 180 * tabWidthAdjRatio : 185;
   const tabGap = winWidth < 720 ? 18 * tabWidthAdjRatio : 20;
-  const tabTall = winWidth < 510 ? 92 : 100;
+  const tabTall = winWidth < 510 ? 90 : 100;
   log2 && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
   log2 && console.log("TabBarOAR.js tabWidth=", tabWidth);
 

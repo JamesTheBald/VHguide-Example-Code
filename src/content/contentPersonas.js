@@ -7798,6 +7798,7 @@ export const contentPersonas = {
   Pediatrics: {
     tags: ["", ""],
     related: [""],
+
     overview: {
       tags: ["", ""],
 
@@ -7846,6 +7847,8 @@ export const contentPersonas = {
           </>,
         ],
       },
+      // (Pediatrics)
+
       takeHome: {
         image: "Notepad_small.svg",
         content: [
@@ -7860,7 +7863,50 @@ export const contentPersonas = {
       },
     },
 
-    // Add content here!
+    // quote content is in /2details/pediatricsContent.js
+
+    advice: {
+      resources: [
+        {
+          label: <>Vaccines for Children: Deciding to vaccinate</>,
+          image: "",  // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
+          linkTitle: <>Government of Canada - Information and considerations</>,
+          link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
+          description: (
+            <>
+              Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)
+            </>
+          ),
+        },
+
+        {
+          label: <></>,
+          image: "",
+          linkTitle: <></>,
+          link: "<enter URL here, including the https://   >",
+          description: (
+            <>
+              
+            </>
+          ),
+        },
+
+        {
+          label: <></>,
+          image: "",
+          linkTitle: <></>,
+          link: "<enter URL here, including the https://   >",
+          description: (
+            <>
+              
+            </>
+          ),
+        },
+
+      ],
+    },
+
+
   },
 
   BadContentID: {
