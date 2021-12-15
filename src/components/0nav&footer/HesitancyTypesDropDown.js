@@ -70,7 +70,7 @@ const HesitancyTypesDropDown = props => {
         <div
           name="Panel to cover border"
           className={`hiddenTillHover absolute flex justify-center items-start ${bgSelec}`}
-          style={{ right: 2, top: 55, width: 170, height: 28 }}
+          style={{ right: 2, top: 55, width: 163, height: 28 }}
         />
 
         <div

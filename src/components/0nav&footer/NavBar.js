@@ -12,7 +12,7 @@ import { VscClose } from "react-icons/vsc";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
+  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
 
   const dropDownRef = useRef();
   const [showDropDown, setShowDropDown] = useState(false);
@@ -61,6 +61,11 @@ const NavBar = () => {
   const dropDownLinkClass =
     "pt-2.5 pb-2  text-left  border-solid border-gray-light  text-14 tracking-0.4 cursor-pointer";
 
+  const padNavBarOnExplorePage =
+    winWidth > 1023 && typeof window !== "undefined" && window.location.pathname === "/explore" ? true : false;
+
+  console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
+
   const NavBarItemsAndDropDowns = () => {
     return (
       <>
@@ -90,6 +95,7 @@ const NavBar = () => {
         </button>
 
         <AboutDropDown dropDownLinkClass={dropDownLinkClass} bgSelec={bgSelec} onClickGo={onClickGo} />
+        {padNavBarOnExplorePage && <div className="h-4" style={{ width: 15 + "px" }} />}
       </>
     );
   };
@@ -112,7 +118,10 @@ const NavBar = () => {
           <StaticImage src="../../assets/homepage/Logo for Website.svg" alt="VH Guide logo" />
         </button>
 
-        <div name="Wide screens => normal Navbar" className="hidden md:flex items-center  pt-1 mx-8 lg:mr-10  relative">
+        <div
+          name="Wide screens => normal Navbar"
+          className={`hidden md:flex items-center  pt-1 mx-8 lg:mr-10  relative`}
+        >
           <NavBarItemsAndDropDowns />
         </div>
 

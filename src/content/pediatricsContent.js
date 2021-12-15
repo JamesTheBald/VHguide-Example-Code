@@ -26,13 +26,18 @@ export const pediatricsContent = [
     title: "",
     content: [
       {
-        subheading: "Long-Term Effects / Long-Term Data",
+        subheading: (
+          <>
+            <span>Long-Term Effects / </span>
+            <span className="whitespace-nowrap">Long-Term Data</span>
+          </>
+        ),
         cliniciansHearing: [
           {
             text: (
               <>
-                I&apos;m double vaccinated - I did the right thing. I&apos;m just not convinced that my 11 year old should have
-                it. I don&apos;t want to put that stuff in them just in case there are long-term effects.
+                I&apos;m double vaccinated - I did the right thing. I&apos;m just not convinced that my 11 year old
+                should have it. I don&apos;t want to put that stuff in them just in case there are long-term effects.
               </>
             ),
             featured: false,
@@ -42,9 +47,9 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I&apos;m okay with being vaccinated, but my kid&apos;s young and healthy. They&apos;ve got 25, 35 years before they
-                have to worry about diseases that come with getting old. I don&apos;t want them to get some weird reaction
-                that speeds this up.
+                I&apos;m okay with being vaccinated, but my kid&apos;s young and healthy. They&apos;ve got 25, 35 years
+                before they have to worry about diseases that come with getting old. I don&apos;t want them to get some
+                weird reaction that speeds this up.
               </>
             ),
             featured: false,
@@ -73,14 +78,14 @@ export const pediatricsContent = [
               <>
                 I hear you about the lack of long-term data on side effects. And that can give you pause. If you&apos;re
                 thinking along those lines, then you&apos;ll also want to consider the other long-term data that we
-                don&apos;t have. We <strong>don&apos;t</strong> know what happens to the development of a kid who&apos;s had
-                COVID. What are the developmental effects of getting the disease, unvaccinated? We know that we&apos;ve
-                got long-haulers &mdash; people who just can&apos;t get over COVID. They&apos;ve got headaches and focus
-                problems and all that &mdash; how does THAT affect development? We also know that people who&apos;ve had
-                COVID are more prone to blood clots and strokes and that sort of thing. We know about those risks, but
-                the bottom line is that, just like we don&apos;t know about the long-term effects of being vaccinated,
-                we can&apos;t say what the long-term effects of getting COVID are on a young body. It&apos;s a balance
-                you&apos;ve got to strike, but for me it comes back to being safer in the moment.
+                don&apos;t have. We <strong>don&apos;t</strong> know what happens to the development of a kid who&apos;s
+                had COVID. What are the developmental effects of getting the disease, unvaccinated? We know that
+                we&apos;ve got long-haulers &mdash; people who just can&apos;t get over COVID. They&apos;ve got
+                headaches and focus problems and all that &mdash; how does THAT affect development? We also know that
+                people who&apos;ve had COVID are more prone to blood clots and strokes and that sort of thing. We know
+                about those risks, but the bottom line is that, just like we don&apos;t know about the long-term effects
+                of being vaccinated, we can&apos;t say what the long-term effects of getting COVID are on a young body.
+                It&apos;s a balance you&apos;ve got to strike, but for me it comes back to being safer in the moment.
               </>
             ),
             featured: true,
@@ -90,9 +95,9 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                Whatever decision you make, you&apos;re still a good parent. What&apos;s important is that you&apos;re thinking
-                about how best to protect your kid(s). Whatever that decision is at this point, I want to continue this
-                dialogue with you and your kid(s).
+                Whatever decision you make, you&apos;re still a good parent. What&apos;s important is that you&apos;re
+                thinking about how best to protect your kid(s). Whatever that decision is at this point, I want to
+                continue this dialogue with you and your kid(s).
               </>
             ),
             featured: false,
@@ -129,8 +134,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I don&apos;t think you need to rush on making a decision about vaccinating your children. Maybe just let this
-                conversation settle down, and then, I am totally happy to book another appointment to discuss this
+                I don&apos;t think you need to rush on making a decision about vaccinating your children. Maybe just let
+                this conversation settle down, and then, I am totally happy to book another appointment to discuss this
                 decision more. If there is something that you want to read about it, please let me know, I am happy to
                 share my resources. Just think about it. Maybe just reflect on the things that we have discussed.
               </>
@@ -155,13 +160,19 @@ export const pediatricsContent = [
       },
 
       {
-        subheading: "Developmental / Puberty Concerns",
+        subheading: (
+          <>
+            <span>Developmental / </span>
+            <span className="whitespace-nowrap">Puberty Concerns</span>
+          </>
+        ),
+
         cliniciansHearing: [
           {
             text: (
               <>
-                I just don&apos;t think my kid(s) should have it at their age. They&apos;re just starting to develop, and I don&apos;t
-                want to put that stuff in them just in case it affects them.
+                I just don&apos;t think my kid(s) should have it at their age. They&apos;re just starting to develop,
+                and I don&apos;t want to put that stuff in them just in case it affects them.
               </>
             ),
             featured: false,
@@ -171,8 +182,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                You can&apos;t tell me that this isn&apos;t going to impact our kids&apos; puberty or fertility. You don&apos;t have the
-                evidence yet.
+                You can&apos;t tell me that this isn&apos;t going to impact our kids&apos; puberty or fertility. You
+                don&apos;t have the evidence yet.
               </>
             ),
             featured: false,
@@ -197,8 +208,9 @@ export const pediatricsContent = [
             text: (
               <>
                 The vaccine component only stays in the body for a relatively short period of time. So if you&apos;re
-                thinking they&apos;re going to be hitting puberty anytime in the next few years, the actual vaccine is long
-                gone. It&apos;s out of the system and it&apos;s just the memory of the antibodies that&apos;s remaining.
+                thinking they&apos;re going to be hitting puberty anytime in the next few years, the actual vaccine is
+                long gone. It&apos;s out of the system and it&apos;s just the memory of the antibodies that&apos;s
+                remaining.
               </>
             ),
             featured: false,
@@ -211,9 +223,10 @@ export const pediatricsContent = [
                 In terms of fertility, if we look at how these vaccines work and how long the actual vaccine and its
                 ingredients stay in your system, we have good data to show that it only stays in the muscle and in the
                 lymph nodes for roughly seven days. The spike protein that your body makes from this vaccine stays only
-                for a few weeks, and it&apos;s out of your system. I hear you, that there is so much misinformation saying
-                that these vaccines are going to stay in your system for years and they may accumulate in the ovaries,
-                or other organs. I&apos;ve got to say that if you look strictly at the science, this is not what we see.
+                for a few weeks, and it&apos;s out of your system. I hear you, that there is so much misinformation
+                saying that these vaccines are going to stay in your system for years and they may accumulate in the
+                ovaries, or other organs. I&apos;ve got to say that if you look strictly at the science, this is not
+                what we see.
               </>
             ),
             featured: false,
@@ -229,7 +242,8 @@ export const pediatricsContent = [
             text: (
               <>
                 I think that the risks of vaccine side effects outweigh the risks of what would happen if my kid just
-                got COVID. I don&apos;t want to inject my kid when they&apos;re going to be fine from this disease anyway.
+                got COVID. I don&apos;t want to inject my kid when they&apos;re going to be fine from this disease
+                anyway.
               </>
             ),
             featured: false,
@@ -239,8 +253,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                But I just don&apos;t see the need for kids to get vaccinated - I&apos;m pretty sure they&apos;ve all had COVID at this
-                point anyway.
+                But I just don&apos;t see the need for kids to get vaccinated - I&apos;m pretty sure they&apos;ve all
+                had COVID at this point anyway.
               </>
             ),
             featured: false,
@@ -250,8 +264,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                Why are we even bothering vaccinating kids when the death rate is so low, and they just don&apos;t get that
-                sick from it?
+                Why are we even bothering vaccinating kids when the death rate is so low, and they just don&apos;t get
+                that sick from it?
               </>
             ),
             featured: false,
@@ -277,10 +291,10 @@ export const pediatricsContent = [
               <>
                 Unfortunately, here in North America, we have just gone through another massive wave. That wave has
                 quite significantly increased the chances your kid(s) have been exposed to COVID in the community. For
-                me, it&apos;s safe to say at this point in time that it&apos;s not an &lsquo;if&rsquo;, it&apos;s a &lsquo;when&rsquo;
-                an unvaccinated child will get COVID. For me that ups the ante. If they&apos;re very likely to get COVID
-                but very unlikely to get significant side effects from the vaccines, then by all means we should be
-                vaccinating children.
+                me, it&apos;s safe to say at this point in time that it&apos;s not an &lsquo;if&rsquo;, it&apos;s a
+                &lsquo;when&rsquo; an unvaccinated child will get COVID. For me that ups the ante. If they&apos;re very
+                likely to get COVID but very unlikely to get significant side effects from the vaccines, then by all
+                means we should be vaccinating children.
               </>
             ),
             featured: false,
@@ -315,10 +329,10 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I&apos;ve heard the data that 99% or so of kids are just fine, but some of the kids aren&apos;t fine. These are
-                kids who were otherwise healthy but are ending up in the hospital, or have long COVID (or MIS-C) and are
-                unwell for weeks or months. I don&apos;t want that being my kid and I don&apos;t want it to be your kid either. We
-                can get there. With the vaccine its totally preventable.
+                I&apos;ve heard the data that 99% or so of kids are just fine, but some of the kids aren&apos;t fine.
+                These are kids who were otherwise healthy but are ending up in the hospital, or have long COVID (or
+                MIS-C) and are unwell for weeks or months. I don&apos;t want that being my kid and I don&apos;t want it
+                to be your kid either. We can get there. With the vaccine its totally preventable.
               </>
             ),
             featured: false,
@@ -328,7 +342,8 @@ export const pediatricsContent = [
             text: (
               <>
                 I think that you need to consider familial protection as well. Kids have a big impact on family. A child
-                who&apos;s not vaccinated could bring COVID into the house, could even bring it into grandma&apos;s house.
+                who&apos;s not vaccinated could bring COVID into the house, could even bring it into grandma&apos;s
+                house.
               </>
             ),
             featured: false,
@@ -366,12 +381,12 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I&apos;m very happy to share a resource with you that compares the number of kids who have died from COVID-19
-                compared to the number of kids that have died from other diseases that we vaccinate for. We vaccinate
-                for measles, right? Remember, when [your children] were 18 months old, they got their measles vaccine,
-                the MMR, and chicken pox, right? When we look at the numbers for bad stuff happening with COVID-19
-                infection compared to other things we already vaccinate our kids for, COVID-19 is the most serious of
-                all.
+                I&apos;m very happy to share a resource with you that compares the number of kids who have died from
+                COVID-19 compared to the number of kids that have died from other diseases that we vaccinate for. We
+                vaccinate for measles, right? Remember, when [your children] were 18 months old, they got their measles
+                vaccine, the MMR, and chicken pox, right? When we look at the numbers for bad stuff happening with
+                COVID-19 infection compared to other things we already vaccinate our kids for, COVID-19 is the most
+                serious of all.
               </>
             ),
             featured: false,
@@ -387,8 +402,8 @@ export const pediatricsContent = [
             text: (
               <>
                 There&apos;s just hundreds of thousands of red flags that are coming up on the Internet, you know and
-                nobody&apos;s looking into all these safety signals issues from the vaccines. There&apos;s no way I&apos;m giving that
-                to my kid.
+                nobody&apos;s looking into all these safety signals issues from the vaccines. There&apos;s no way
+                I&apos;m giving that to my kid.
               </>
             ),
             featured: false,
@@ -403,8 +418,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                This is just too new. I don&apos;t want to subject my kids to the vaccines if we don&apos;t know what&apos;s going to
-                happen to them.
+                This is just too new. I don&apos;t want to subject my kids to the vaccines if we don&apos;t know
+                what&apos;s going to happen to them.
               </>
             ),
             featured: false,
@@ -443,10 +458,10 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I&apos;m totally happy to talk about this again. I just want to leave something with you, and it&apos;s the
-                idea that there are no risk-free choices. By choosing not to be vaccinated or to get vaccinated at this
-                point, there are risks that come with both choices. And regardless of how we feel, at the end of the
-                day, whatever we choose to do, no choice in our life is risk free.
+                I&apos;m totally happy to talk about this again. I just want to leave something with you, and it&apos;s
+                the idea that there are no risk-free choices. By choosing not to be vaccinated or to get vaccinated at
+                this point, there are risks that come with both choices. And regardless of how we feel, at the end of
+                the day, whatever we choose to do, no choice in our life is risk free.
               </>
             ),
             featured: false,
@@ -480,9 +495,9 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I don&apos;t have small children now, but I had them once upon a time. Did I worry when my 17-year-old son
-                went for his vaccination? Yes! I&apos;d just spent a week reviewing all the data that was coming out,
-                and what it said was that this boy of mine was the perfect person to get myocarditis from mRNA
+                I don&apos;t have small children now, but I had them once upon a time. Did I worry when my 17-year-old
+                son went for his vaccination? Yes! I&apos;d just spent a week reviewing all the data that was coming
+                out, and what it said was that this boy of mine was the perfect person to get myocarditis from mRNA
                 vaccination. Of course I was worried. I understand why you&apos;re worried. But for me, the risk of him
                 getting COVID was worse than that worry.
               </>
@@ -505,8 +520,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                They&apos;re kind of making this stuff up. It&apos;s just happening way too quickly for me to be able to say,
-                yeah, this is a good thing for my kids.{" "}
+                They&apos;re kind of making this stuff up. It&apos;s just happening way too quickly for me to be able to
+                say, yeah, this is a good thing for my kids.{" "}
               </>
             ),
             featured: false,
@@ -518,9 +533,9 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                We certainly haven&apos;t seen any safety signals and there&apos;s been a lot of children around the world that
-                have been vaccinated ahead of us here in Canada, so we certainly haven&apos;t been thrown any surprises,
-                which is great to see.
+                We certainly haven&apos;t seen any safety signals and there&apos;s been a lot of children around the
+                world that have been vaccinated ahead of us here in Canada, so we certainly haven&apos;t been thrown any
+                surprises, which is great to see.
               </>
             ),
             featured: false,
@@ -529,12 +544,13 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                I think, in general when we&apos;re trying to make these decisions with kids, we ask ourselves: &lsquo;Do we
-                know enough? Do we know enough about the vaccine, and how the vaccine works in kids five to 11?&rsquo;.
-                You know what? I think we know enough. We know that it was tested in 3000 kids that they followed for 12
-                weeks. Every serious side effect that happens in vaccine studies throughout history comes up within six
-                weeks. The side effects we have seen in kids of this age are fewer than the side effects that older kids
-                get, and the serious side effects have not been seen in the five to nine age group.
+                I think, in general when we&apos;re trying to make these decisions with kids, we ask ourselves:
+                &lsquo;Do we know enough? Do we know enough about the vaccine, and how the vaccine works in kids five to
+                11?&rsquo;. You know what? I think we know enough. We know that it was tested in 3000 kids that they
+                followed for 12 weeks. Every serious side effect that happens in vaccine studies throughout history
+                comes up within six weeks. The side effects we have seen in kids of this age are fewer than the side
+                effects that older kids get, and the serious side effects have not been seen in the five to nine age
+                group.
               </>
             ),
             featured: false,
@@ -544,11 +560,11 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                Do we know everything that we can about this vaccine? No. But if you&apos;re asking me personally if we know
-                enough about them to move forward with protecting the five- to eleven-year-olds so they can hopefully
-                stay in school, socialize with their friends? I think we know enough. So, if you&apos;re asking for my
-                professional opinion, and my personal opinion based on my own family experience, then on both accounts,
-                I recommend it.
+                Do we know everything that we can about this vaccine? No. But if you&apos;re asking me personally if we
+                know enough about them to move forward with protecting the five- to eleven-year-olds so they can
+                hopefully stay in school, socialize with their friends? I think we know enough. So, if you&apos;re
+                asking for my professional opinion, and my personal opinion based on my own family experience, then on
+                both accounts, I recommend it.
               </>
             ),
             featured: false,
@@ -563,8 +579,8 @@ export const pediatricsContent = [
           {
             text: (
               <>
-                What about this whole virus &lsquo;shedding&rsquo; thing? I don&apos;t want my kids passing the virus to me, our family,
-                or their friends.
+                What about this whole virus &lsquo;shedding&rsquo; thing? I don&apos;t want my kids passing the virus to
+                me, our family, or their friends.
               </>
             ),
             featured: false,

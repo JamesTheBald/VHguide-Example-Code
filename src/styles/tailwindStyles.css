@@ -92,8 +92,12 @@
     @apply mt-9 mxs:mt-12 sm:mt-16 lg:mt-18
   }
 
-  .oarTabClass {
-    @apply font-serif font-semibold  text-18 mxs:text-22 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  .oarTabClassBase {
+    @apply font-serif font-semibold  text-16 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  }
+
+  .oarTabClassPedi {
+    @apply font-serif font-semibold  text-14 mxs:text-16 sm:text-20 md:text-24  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .aboutTitleClass {

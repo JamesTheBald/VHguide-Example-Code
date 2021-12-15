@@ -20,11 +20,12 @@ const Explore = () => {
 
   return (
     <div className={showContactForm ? "fixed" : ""}>
-      <main className="stdMargins" style={{ marginBottom: 1 }}>
-        {/* marginBottom=1 in above style is to force scrollbar on, to be consistent with other pages */}
-
+      <main className="stdMargins">
         <div name="spacer to prevent top margin collapse" className="h-16" />
-        <h1 className="titleFont text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main">
+        <h1
+          className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  titleFont text-28 mxs:text-40 sm:text-50
+                       tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main"
+        >
           Hesitancy Types
         </h1>
         {/* <h3 className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  text-14 mxs:text-20 sm:text-25 italic">My patient has...</h3> */}

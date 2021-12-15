@@ -6,7 +6,8 @@ import { contentPersonas } from "../content/contentPersonas";
 const updateContIDandName = (locn, setContentID, setHesitTypeName, log, log2) => {
   // NB: as a function, this fn can't use hooks, i.e. no useContext. Hence pass in as params.
 
-  log && console.log("updateContIDandName.js runs.");
+  0 && console.log(log, log2);
+  log2 && console.log("updateContIDandName.js runs.");
   log2 && console.log("updateContIDandName.js locn=", locn);
 
   let contIDTemp;

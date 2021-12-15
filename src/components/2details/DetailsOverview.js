@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
@@ -8,13 +9,14 @@ const DetailsOverview = props => {
   const { contentID } = props;
   const { winWidth, queryData, locn, log, log2 } = useMyContext();
 
+  0 && console.log(log, log2);
   let overview = contentPersonas[contentID]?.overview;
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+  log2 && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
   log2 && console.log("DetailsOverview.js theySay=", theySay);
   log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
   log2 && console.log("DetailsOverview.js takeHome=", takeHome);
@@ -110,7 +112,8 @@ const DetailsOverview = props => {
             {/* When locn.branch = 3, make this link go to /details/advice/pediatrics */}
 
             <Link
-              to={` ${locn.branch === 3 ? "/details/advice/pediatrics" : "/details/advice/eaase"}`}
+              to="/details/advice/eaase"
+              // to={` ${locn.branch === 3 ? "/details/advice/pediatrics" : "/details/advice/eaase"}`}
               className="px-3 pt-1 mr-auto my-6  smFont orangeLink linkPill"
             >
               {winWidth < 400 ? <>How to start the conversation</> : <>Advice on how to start the conversation</>}

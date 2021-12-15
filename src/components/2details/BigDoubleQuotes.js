@@ -1,6 +1,6 @@
 import React from "react";
 
-import "remixicon/fonts/remixicon.css";
+// import "remixicon/fonts/remixicon.css";
 
 const BigQuoteSymbol = (featured) => {
   // console.log("BigQuoteSymbol() runs. featured=", featured);

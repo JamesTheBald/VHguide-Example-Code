@@ -4,8 +4,8 @@ import { contentPersonas } from "../content/contentPersonas";
 
 const updateAdviceAndRelateds = (contentIDTemp, setAdvice, setRelated, log, log2) => {
   // NB: these params need to come in as props, because hooks (esp. useContext) don't work in regular functions
-
-  log && console.log("updateAdviceAndRelated.js runs. contID=", contentIDTemp);
+  0 && console.log(log, log2);
+  log2 && console.log("updateAdviceAndRelated.js runs. contID=", contentIDTemp);
   log2 && console.log("updateAdviceAndRelated.js runs. contentPersonas[contID].advice=", contentPersonas[contentIDTemp].advice);
 
   let adviceTemp = contentPersonas[contentIDTemp]?.advice;

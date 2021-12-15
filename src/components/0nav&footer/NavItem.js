@@ -9,10 +9,11 @@ const NavItem = props => {
   log2 && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
 
   let selected = false;
-  if (destn === "/") {
-    if (pathname === "/") selected = true;
-  } else if (destn === "/explore" && pathname.includes("details")) selected = true;
-  else if (pathname.includes(destn)) selected = true;
+  if (destn === "/" && pathname === "/") selected = true;
+  if (destn === "/explore" && pathname === "/explore") selected = true;
+  if (destn === "/explore" && pathname.includes("details")) selected = true;
+  if (destn === "/pearls" && pathname.includes("pearls")) selected = true;
+  if (destn === "/about" && pathname.includes("about")) selected = true;
 
   return (
     <div className={`${classNom} w-full  flex flex-col items-start  cursor-pointer group  relative`}>

@@ -11,7 +11,7 @@ const QuoteBoxes = props => {
 
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log && console.log("QuoteBoxes.js runs.");
+  log2 && console.log("QuoteBoxes.js runs.");
   log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 

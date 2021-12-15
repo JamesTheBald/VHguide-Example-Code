@@ -1,18 +1,23 @@
 import React from "react";
+import { navigate } from "gatsby";
+
 import { animateScroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
 
 const AdviceEaase = props => {
   const { advice } = props;
-  const { log } = useMyContext();
+  const { locn, log, log2 } = useMyContext();
 
-  log && console.log("AdviceEaase.js runs.");
+  0 && console.log(log, log2);
+  log2 && console.log("AdviceEaase.js runs.");
 
   const blockContainer = "mxs:pr-2 sm:pr-9 md:pr-15   flex flex-col";
   const titleWrapperClass = "-mb-0.5  text-blue-main tracking-0.5 leading-tight";
   const dropCapClass = "font-serif text-35 mxs:text-45 sm:text-55";
   const restOfTitle = "font-sans text-20 sm:text-25";
+
+  if (!(locn.branch === 0 || locn.branch === 1 || locn.branch === 2)) navigate("/details/overview");
 
   if (typeof window !== `undefined`) {
     animateScroll.scrollToTop({ duration: 0 }); // time in ms

@@ -12,14 +12,14 @@ const AdviceQuoteGroupList = props => {
 
   const tabMatch = useMatch("/details/advice/:tabSelected");
   const tabSelected = String(tabMatch.tabSelected);
-  log2 && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
+  log && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
   log && console.log("AdviceQuoteGroupList.js tabSelected=", tabSelected);
 
-  const contentArray = advice[tabSelected].content;
+  const contentArray = advice[tabSelected]?.content;
   log2 && console.log("AdviceQuoteGroupList.js So contentArray=", contentArray);
 
   const firstAskAdviceQuote = advice?.ask?.content[0]?.quotes[0]?.text;
-  const firstAskAdviceStringLength = reactElementToJSXString(firstAskAdviceQuote).length;
+  const firstAskAdviceStringLength = firstAskAdviceQuote && reactElementToJSXString(firstAskAdviceQuote).length;
   const askAdviceExists = firstAskAdviceStringLength > 14;
   log2 && console.log("AdviceQuoteGroupList.js runs. askAdvice=", firstAskAdviceQuote);
   log2 && console.log("AdviceQuoteGroupList.js runs. JSX string length of askAdvice=", firstAskAdviceStringLength);

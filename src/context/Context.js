@@ -22,13 +22,13 @@ const MyProvider = ({ children }) => {
   if (typeof window !== `undefined` && winWidth > 100)
     marginOuter = winWidth < 510 ? 25 : winWidth < 720 ? 50 : winWidth < 1024 ? 75 : winWidth < 1600 ? 100 : 150;
   // Be sure that values for marginOuter correspond with those of stdMargins in /styles/tailwindStyles.css
-  log && console.log("Context.js runs. marginOuter=", marginOuter);
+  log2 && console.log("Context.js runs. marginOuter=", marginOuter);
 
   const [widthAdjRatio, setWidthAdjRatio] = useState(winWidth / nomScreenWidth);
   useEffect(() => {
     setWidthAdjRatio(winWidth / nomScreenWidth);
-    log && console.log("Context.js useEffect runs. Setting WidthAdjRatio=", winWidth / nomScreenWidth);
-  }, [winWidth, log]);
+    log2 && console.log("Context.js useEffect runs. Setting WidthAdjRatio=", winWidth / nomScreenWidth);
+  }, [winWidth, log2]);
 
   const [showContactForm, setShowContactForm] = useState(false);
 

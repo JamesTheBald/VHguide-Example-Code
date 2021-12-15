@@ -12,9 +12,9 @@ const DetailsLayout = props => {
   const { locn, setLocn, showContactForm, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
-  log && console.log("");
-  log && console.log("DetailsLayout.js locn=", locn);
-  log && console.log("DetailsLayout.js hesitTypeName=", hesitTypeName);
+  log2 && console.log("");
+  log2 && console.log("DetailsLayout.js locn=", locn);
+  log2 && console.log("DetailsLayout.js hesitTypeName=", hesitTypeName);
 
   const onClickRelated = contentID => {
     const branchNum = getBranchNum(contentID);

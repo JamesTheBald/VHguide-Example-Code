@@ -1845,14 +1845,13 @@ export const contentPersonas = {
           },
         ],
       },
-
+      //REPRODUCTIVE
       affirm: {
         tags: ["", ""],
         content: [
           {
             subheading: "",
             quotes: [
-              //REPRODUCTIVE
               {
                 text: (
                   <>
@@ -4289,7 +4288,7 @@ export const contentPersonas = {
             subheading: "",
             quotes: [
               {
-                text: <> </>,
+                text: <></>,
                 featured: false,
                 image: "",
                 fullStoryID: "",
@@ -7847,7 +7846,7 @@ export const contentPersonas = {
           </>,
         ],
       },
-      // (Pediatrics)
+      // ACTUAL content for Pediatrics
 
       takeHome: {
         image: "Notepad_small.svg",
@@ -7863,50 +7862,71 @@ export const contentPersonas = {
       },
     },
 
-    // quote content is in /2details/pediatricsContent.js
-
     advice: {
+      tags: ["", ""],
+
+      eaase: {
+        tags: [""],
+        engage: { text: "", image: "" },
+        affirm: { text: "", image: "" },
+        ask: { text: "", image: "" },
+        evoke: { text: "", image: "" },
+      },
+      // Dummy content for Pediatrics
+      // (Quote content is in /2details/pediatricsContent.js)
+
+      engage: {
+        // tags: ["", ""],
+        content: [{ subheading: "", quotes: [{ text: <></>, featured: false, image: "", fullStoryID: "" }] }],
+      },
+      affirm: {
+        content: [{ subheading: "", quotes: [{ text: <></>, featured: false, image: "", fullStoryID: "" }] }],
+      },
+      ask: {
+        content: [{ subheading: "", quotes: [{ text: <></>, featured: false, image: "", fullStoryID: "" }] }],
+      },
+      share: {
+        content: [{ subheading: "", quotes: [{ text: <></>, featured: false, image: "", fullStoryID: "" }] }],
+      },
+      evoke: {
+        content: [{ subheading: "", quotes: [{ text: <></>, featured: false, image: "", fullStoryID: "" }] }],
+      },
+
+      // ACTUAL content for Pediatrics
       resources: [
         {
           label: <>Vaccines for Children: Deciding to vaccinate</>,
-          image: "",  // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
+          image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
           linkTitle: <>Government of Canada - Information and considerations</>,
           link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
-          description: (
-            <>
-              Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)
-            </>
-          ),
+          description: <>Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)</>,
         },
 
         {
-          label: <></>,
+          label: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
           image: "",
-          linkTitle: <></>,
-          link: "<enter URL here, including the https://   >",
-          description: (
-            <>
-              
-            </>
-          ),
+          linkTitle: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>,
+          link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
+          description: <>An information sheet from the Ontario Ministry of Health outlining considerations and preparation strategies for parents/guardians of children 5-11 (2021)</>,
         },
 
         {
-          label: <></>,
+          label: <>COVID Vaccine: What parents need to know</>,
           image: "",
-          linkTitle: <></>,
-          link: "<enter URL here, including the https://   >",
-          description: (
-            <>
-              
-            </>
-          ),
+          linkTitle: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
+          link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
+          description: <>An article written by pediatricians answering common parental/guardian questions about the COVID-19 vaccines for their children. *Please note this is a US source. In Canada, the Pfizer-BioNTech has been approved for children age 5-11, and the Pfizer-BioNTech and Moderna vaccines have been approved for children age 12 and older (2021).</>,
         },
 
+        {
+          label: <>Children and the COVID-19 Vaccine  </>,
+          image: "",
+          linkTitle: <>BC CDC - Children and COVID-19 Vaccination</>,
+          link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
+          description: <>Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a review of the vaccine approval process.  </>,
+        },
       ],
     },
-
-
   },
 
   BadContentID: {

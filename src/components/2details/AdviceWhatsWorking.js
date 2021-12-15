@@ -1,10 +1,13 @@
 import React from "react";
+import { navigate } from "gatsby";
 
 import EaaseHoverPopup from "./EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
 
 const AdviceWhatsWorking = () => {
-  const { log2 } = useMyContext();
+  const { locn, log2 } = useMyContext();
+
+  if (!(locn.branch === 0 || locn.branch === 1 || locn.branch === 2)) navigate("/details/overview");
 
   log2 && console.log("AdviceWhatsWorking.js runs.");
 

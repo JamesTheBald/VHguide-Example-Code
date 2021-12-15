@@ -22,38 +22,38 @@ export const branch = [
             <strong>Safety &amp; science</strong> concerns
           </>
         ),
-        topicNameAsTitle: <>Safety and Science Concerns</>,
+        topicNameAsTitle: "Safety and Science Concerns",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>Concerns about the science</>,
-            subtopicNameShort: <>Concerns about the science</>,
-            subtopicNameAsTitle: <>Concerns About the Science</>,
+            subtopicName: "Concerns about the science",
+            subtopicNameShort: "Concerns about the science",
+            subtopicNameAsTitle: "Concerns About the Science",
             contentID: "ScienceConcerns",
           },
           {
-            subtopicName: <>Worried that mRNA vaccines could alter their DNA</>,
-            subtopicNameShort: <>Worried about DNA/mRNA</>,
-            subtopicNameAsTitle: <>Worried That mRNA Vaccines Could Alter Their DNA</>,
+            subtopicName: "Worried that mRNA vaccines could alter their DNA",
+            subtopicNameShort: "Worried about DNA/mRNA",
+            subtopicNameAsTitle: "Worried That mRNA Vaccines Could Alter Their DNA",
             contentID: "mRNAConcerns",
           },
 
           {
-            subtopicName: <>Medically complex</>,
-            subtopicNameShort: <>Medically complex</>,
-            subtopicNameAsTitle: <>Medically Complex</>,
+            subtopicName: "Medically complex",
+            subtopicNameShort: "Medically complex",
+            subtopicNameAsTitle: "Medically Complex",
             contentID: "MedicallyComplex",
           },
           {
-            subtopicName: <>Reproductive or fitness impacts from the vaccines</>,
-            subtopicNameShort: <>Reproductive / fitness impacts</>,
-            subtopicNameAsTitle: <>Reproductive or Fitness Impacts From the Vaccines</>,
+            subtopicName: "Reproductive or fitness impacts from the vaccines",
+            subtopicNameShort: "Reproductive / fitness impacts",
+            subtopicNameAsTitle: "Reproductive or Fitness Impacts From the Vaccines",
             contentID: "ReproductiveEffects",
           },
           {
-            subtopicName: <>Side effects of the vaccines</>,
-            subtopicNameShort: <>Side effects</>,
-            subtopicNameAsTitle: <>Side Effects of the Vaccines</>,
+            subtopicName: "Side effects of the vaccines",
+            subtopicNameShort: "Side effects",
+            subtopicNameAsTitle: "Side Effects of the Vaccines",
             contentID: "SideEffects",
           },
         ],
@@ -70,7 +70,7 @@ export const branch = [
             Influenced by <strong>conspiracies</strong>
           </>
         ),
-        topicNameAsTitle: <>Influenced by Rumours, Conspiracies, or Misinformation</>,
+        topicNameAsTitle: "Influenced by Rumours, Conspiracies, or Misinformation",
         linkToDetails: true,
         subtopic: [
           {
@@ -93,19 +93,19 @@ export const branch = [
             Conflict with <strong>values or politics</strong>
           </>
         ),
-        topicNameAsTitle: <>Conflict with Personal or Political Values</>,
+        topicNameAsTitle: "Conflict with Personal or Political Values",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>Vaccines go against natural lifestyle or alternative medicine</>,
-            subtopicNameShort: <>Naturalist / alternative medicine</>,
-            subtopicNameAsTitle: <>Vaccines Go Against Natural Lifestyle or Alternative Medicine</>,
+            subtopicName: "Vaccines go against natural lifestyle or alternative medicine",
+            subtopicNameShort: "Naturalist / alternative medicine",
+            subtopicNameAsTitle: "Vaccines Go Against Natural Lifestyle or Alternative Medicine",
             contentID: "Naturalist",
           },
           {
-            subtopicName: <>Politics and government involvement with vaccines</>,
-            subtopicNameShort: <>Politics and govt involvement</>,
-            subtopicNameAsTitle: <>Politics and Government Involvement with Vaccines</>,
+            subtopicName: "Politics and government involvement with vaccines",
+            subtopicNameShort: "Politics and govt involvement",
+            subtopicNameAsTitle: "Politics and Government Involvement with Vaccines",
             contentID: "PoliticalSkeptic",
           },
         ],
@@ -122,7 +122,7 @@ export const branch = [
             <strong>Religious or moral</strong> objections
           </>
         ),
-        topicNameAsTitle: <>Religious or Moral Objections to the Vaccines</>,
+        topicNameAsTitle: "Religious or Moral Objections to the Vaccines",
         linkToDetails: true,
         subtopic: [{ subtopicName: "", subtopicNameShort: "", contentID: "Religious" }],
       },
@@ -138,19 +138,19 @@ export const branch = [
             <strong>Traumatized</strong> by health system
           </>
         ),
-        topicNameAsTitle: <>Traumatized by Previous Healthcare Experiences</>,
+        topicNameAsTitle: "Traumatized by Previous Healthcare Experiences",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>Individual or personal negative experience</>,
-            subtopicNameShort: <>Personal trauma</>,
-            subtopicNameAsTitle: <>Individual or Personal Negative Experience</>,
+            subtopicName: "Individual or personal negative experience",
+            subtopicNameShort: "Personal trauma",
+            subtopicNameAsTitle: "Individual or Personal Negative Experience",
             contentID: "PersonalTrauma",
           },
           {
-            subtopicName: <>Community, group, or historical trauma</>,
-            subtopicNameShort: <>Group historical trauma</>,
-            subtopicNameAsTitle: <>Community, Group, or Historical Trauma</>,
+            subtopicName: "Community, group, or historical trauma",
+            subtopicNameShort: "Group historical trauma",
+            subtopicNameAsTitle: "Community, Group, or Historical Trauma",
             contentID: "GroupTrauma",
           },
         ],
@@ -167,7 +167,7 @@ export const branch = [
             Afraid of <strong>needles</strong>
           </>
         ),
-        topicNameAsTitle: <>Afraid of Needles</>,
+      topicNameAsTitle:   "Afraid of Needles",
         linkToDetails: true,
         subtopic: [{ subtopicName: "", subtopicNameShort: "", contentID: "NeedlePhobia" }],
       },
@@ -181,15 +181,15 @@ export const branch = [
     linkToDetails: true,
     topic: [
       {
-        topicName: <></>,
-        topicNameShort: <></>,
-        topicNameAsTitle: <></>,
+        topicName: "",
+        topicNameShort: "",
+        topicNameAsTitle: "",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <></>,
-            subtopicNameShort: <>Undifferentiated Hesitancies</>,
-            subtopicNameAsTitle: <>Undifferentiated Vaccine Hesitancies</>,
+            subtopicName: "",
+            subtopicNameShort: "Undifferentiated Hesitancies",
+            subtopicNameAsTitle: "Undifferentiated Vaccine Hesitancies",
             contentID: "Undifferentiated",
           },
         ],
@@ -204,15 +204,15 @@ export const branch = [
     linkToDetails: true,
     topic: [
       {
-        topicName: <></>,
-        topicNameShort: <></>,
-        topicNameAsTitle: <></>,
+        topicName: "",
+        topicNameShort: "",
+        topicNameAsTitle: "",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>No concerns about the pandemic</>,
-            subtopicNameShort: <>No concerns about COVID</>,
-            subtopicNameAsTitle: <>No Concerns About the Pandemic</>,
+            subtopicName: "No concerns about the pandemic",
+            subtopicNameShort: "No concerns about COVID",
+            subtopicNameAsTitle: "No Concerns About the Pandemic",
             contentID: "Unconcerned",
           },
         ],
@@ -227,21 +227,19 @@ export const branch = [
     linkToDetails: true,
     topic: [
       {
-        topicName: <></>,
-        topicNameShort: <></>,
-        topicNameAsTitle: <></>,
+        topicName: "",
+        topicNameShort: "",
+        topicNameAsTitle: "",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: <>Pediatric Vaccine Hesitancies</>,
-            subtopicNameShort: <>Pediatric Hesitancies</>,
-            subtopicNameAsTitle: <>Pediatric Vaccine Hesitancies</>,
+            subtopicName: "Pediatric Vaccine Hesitancies",
+            subtopicNameShort: "Pediatric Hesitancies",
+            subtopicNameAsTitle: "Pediatric Vaccine Hesitancies",
             contentID: "Pediatrics",
           },
         ],
       },
     ],
   },
-
-
 ];
