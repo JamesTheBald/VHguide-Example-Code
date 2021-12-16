@@ -16,21 +16,18 @@ const Explore = () => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  const maxStackedWidth = 720;
-
   return (
     <div className={showContactForm ? "fixed" : ""}>
-      <main className="stdMargins">
-        <div name="spacer to prevent top margin collapse" className="h-16" />
+      <main className="stdMargins w-full">
+        <div name="spacer to prevent top margin collapse" className="h-18" />
         <h1
-          className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  titleFont text-28 mxs:text-40 sm:text-50
+          className="mb-5 sm:mb-8 md:mb-12 xl:mb-14  titleFont text-28 mxs:text-40 sm:text-50
                        tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main"
         >
           Hesitancy Types
         </h1>
-        {/* <h3 className="mb-5 sm:mb-8 md:mb-9 xl:mb-12  text-14 mxs:text-20 sm:text-25 italic">My patient has...</h3> */}
 
-        <PillsAndTrees maxStackedWidth={maxStackedWidth} />
+        <PillsAndTrees />
 
         <div className="h-10" />
       </main>

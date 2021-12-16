@@ -39,15 +39,16 @@ const TopicTree = props => {
     }
   };
 
-  const outsideMargin = winWidth < 510 ? 18 : 32;
-  // const outsideMargin = winWidth < 510 ? 15 : (37 * (widthAdjRatio + 1.5)) / 2.5;
+  const outsideMargin = winWidth < 510 ? 10 : 32;
   const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
-  const insideMargin = 15 + 20 * (widthAdjRatio - 0.3125);
+  const innerMarginLeft = 15 + 20 * (widthAdjRatio - 0.3125);
+  const innerMarginRight = innerMarginLeft - 8;
   const bottomPadding = winWidth < 510 ? 40 : 58;
   const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
   const leftGapToLine = winWidth < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
 
-  log2 && console.log("TopicTree.js insideMargin=", insideMargin);
+  log2 && console.log("TopicTree.js innerMarginLeft=", innerMarginLeft);
+  log2 && console.log("TopicTree.js innerMarginRight=", innerMarginRight);
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;
@@ -72,40 +73,44 @@ const TopicTree = props => {
               <div key={topicNum}>
                 <button
                   name="TopicName line"
-                  className={`w-full flex items-center cursor-pointer text-blue-dark hover:text-blue-main tracking-0.5 hoverRevealTrigger`}
+                  className={`w-full flex justify-between items-center  text-blue-dark hover:text-blue-main tracking-0.5
+                              hoverRevealTrigger cursor-pointer`}
                   style={{
                     color: "#263EC5",
-                    paddingLeft: insideMargin,
+                    paddingLeft: innerMarginLeft,
                     paddingTop: topicStepHt,
                   }}
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <h3 className={`flex-shrink-0 text-16 mxs:text-20 sm:text-22  tracking-0.4 sm:tracking-0.6`}>
+                  <h3 className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.4 sm:tracking-0.5`}>
                     {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 
                   <div
                     name="hover line"
-                    className="hiddenTillHover w-full  border-blue-main border-solid border-b-2 mxs:border-b-3"
+                    className="hiddenTillHover hidden mxs:inline w-full  border-blue-main border-solid border-b-2 mxs:border-b-3"
                     style={{ marginLeft: leftGapToLine }}
                   />
 
                   {showSubtopics ? (
-                    <div className="flex-shrink-0" style={{ marginRight: insideMargin }}>
+                    <div className="flex-shrink-0" style={{ marginRight: innerMarginRight }}>
                       <IoIosArrowDown className="hidden mxs:inline" size="28" />
-                      <IoIosArrowDown className="mxs:hidden" size="22" />
+                      <IoIosArrowDown className="mxs:hidden" size="20" />
                     </div>
                   ) : (
                     <>
-                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: insideMargin }}>
+                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: innerMarginRight - 4 }}>
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
-                        <IoIosArrowForward className="mxs:hidden" size="22" />
+                        <IoIosArrowForward className="mxs:hidden" size="20" />
                       </div>
 
-                      <div className="hiddenTillHover flex-shrink-0" style={{ marginRight: insideMargin }}>
+                      <div
+                        className="hiddenTillHover hidden mxs:inline flex-shrink-0"
+                        style={{ marginRight: innerMarginRight }}
+                      >
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
-                        <IoIosArrowForward className="mxs:hidden" size="22" />
+                        <IoIosArrowForward className="mxs:hidden" size="20" />
                       </div>
                     </>
                   )}
@@ -116,7 +121,8 @@ const TopicTree = props => {
                     branchNum={branchNum}
                     topicNum={topicNum}
                     subtopics={currTopic.subtopic}
-                    insideMargin={insideMargin}
+                    innerMarginLeft={innerMarginLeft}
+                    innerMarginRight={innerMarginRight}
                   />
                 )}
               </div>

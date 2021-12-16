@@ -12,7 +12,7 @@ const NavItem = props => {
   if (destn === "/" && pathname === "/") selected = true;
   if (destn === "/explore" && pathname === "/explore") selected = true;
   if (destn === "/explore" && pathname.includes("details")) selected = true;
-  if (destn === "/pearls" && pathname.includes("pearls")) selected = true;
+  if (destn === "/pearls" && pathname === "pearls") selected = true;
   if (destn === "/about" && pathname.includes("about")) selected = true;
 
   return (

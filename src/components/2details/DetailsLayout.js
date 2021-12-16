@@ -8,12 +8,13 @@ import TabBarOAR from "../../components/2details/TabBarOAR";
 import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
 
 const DetailsLayout = props => {
-  const { hesitTypeName, related } = props;
+  const { hesitTypeName, related, path } = props;
   const { locn, setLocn, showContactForm, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   log2 && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
+  log && console.log("DetailsLayout.js path=", path);
   log2 && console.log("DetailsLayout.js hesitTypeName=", hesitTypeName);
 
   const onClickRelated = contentID => {
@@ -53,8 +54,12 @@ const DetailsLayout = props => {
           &#60; back
         </button>
 
-        <div className="mt-5 text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
-        <h1 className="mt-0.5  titleFont titleMediumPlus">{hesitTypeName}</h1>
+        <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+
+        <h1 className="mt-0.5  titleFont titleMediumPlus">
+          {hesitTypeName}
+          {/* {path.match(/pediatrics/i) ? "Pediatric Vaccine Hesitancies" : hesitTypeName} */}
+        </h1>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
@@ -63,15 +68,20 @@ const DetailsLayout = props => {
 
           <div // Panel
             className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30`}
-            style={{ top: tabHeight - 100 }}
+            style={{ top: tabHeight - 65 }}
           >
             {props.children}
           </div>
 
-          {related[0] ? (
+          {/* { path.match(/pediatrics/i) ? ( */}
+          { locn.branch===3 ? (
+            <div className="mt-2 md:mt-4  mb-8  sm:text-right  italic smThenBaseFont text-blue-pale">
+              *The pediatric hesitancy type is evolving and will receive regular updates.
+            </div>
+          ) : related[0] ? (
             <>
               <div className="mb-10 mxs:mb-16  flex flex-wrap items-baseline">
-                <h4 className="mb-2.5 text-14 tracking-0.3 font-semibold">Related hesitancy types:</h4>
+                <h4 className="mt-6 mb-2.5  text-14 tracking-0.3 font-semibold">Related hesitancy types:</h4>
                 <div className="ml-6  flex flex-wrap">
                   {related.map((contID, index) => {
                     return (

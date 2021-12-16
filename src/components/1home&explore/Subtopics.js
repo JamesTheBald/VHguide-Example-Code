@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const Subtopics = props => {
-  const { branchNum, topicNum, subtopics, insideMargin } = props;
+  const { branchNum, topicNum, subtopics, innerMarginLeft, innerMarginRight } = props;
   const { winWidth, setLocn, log } = useMyContext();
 
   log && console.log("Subtopics.js runs. subtopics =", subtopics);
@@ -28,8 +28,8 @@ const Subtopics = props => {
         <div
           className="border-b-1.5 border-solid border-gray-line"
           style={{
-            marginLeft: insideMargin * 2,
-            marginRight: insideMargin,
+            marginLeft: innerMarginLeft * 2,
+            marginRight: innerMarginRight,
             height: subtopicStepHt - 3,
             marginBottom: subtopicStepHt,
           }}
@@ -41,7 +41,7 @@ const Subtopics = props => {
               <button
                 key={subtopicNum}
                 className={`mt-1.5  ${baseFontWide}  cursor-pointer text-blue-dark hover:text-blue-main`}
-                style={{ marginLeft: insideMargin * 2 }}
+                style={{ marginLeft: innerMarginLeft * 2 }}
                 onClick={() => onClickSubtopic(subtopicNum)}
               >
                 {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
@@ -50,8 +50,8 @@ const Subtopics = props => {
               <div
                 className="border-b-1.5 border-solid border-gray-line"
                 style={{
-                  marginLeft: insideMargin * 2,
-                  marginRight: insideMargin,
+                  marginLeft: innerMarginLeft * 2,
+                  marginRight: innerMarginRight,
                   height: subtopicStepHt,
                   marginBottom: subtopicStepHt,
                 }}

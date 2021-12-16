@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 // import { AnchorLink } from "gatsby-plugin-anchor-links";
 import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
 
@@ -113,7 +114,7 @@ export const contentPersonas = {
           text: (
             <>
               It sounds like you&apos;ve been doing a lot of research and reading about the vaccines. I have been, too.
-              Can we compare our notes and what we’ve learned about them?
+              Can we compare our notes and what we&apos;ve learned about them?
             </>
           ),
           image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -121,8 +122,8 @@ export const contentPersonas = {
         affirm: {
           text: (
             <>
-              I appreciate where you&apos;re coming from, and I don&apos;t know if I’ll be able to get all the answers
-              for you today. But let’s see what we can get through now, together.
+              I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the answers
+              for you today. But let&apos;s see what we can get through now, together.
             </>
           ),
           image: "doctorWhiteManBlackHair.svg",
@@ -204,8 +205,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I appreciate where you&apos;re coming from, and I don&apos;t know if I’ll be able to get all the
-                    answers for you today. But let’s see what we can get through now, together.
+                    I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the
+                    answers for you today. But let&apos;s see what we can get through now, together.
                   </>
                 ),
                 featured: false,
@@ -231,7 +232,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    The information changes quickly, and I can see how, for folks who aren’t as familiar with vaccines
+                    The information changes quickly, and I can see how, for folks who aren&apos;t as familiar with vaccines
                     and haven&apos;t studied diseases, it looks like we&apos;re flipping and flopping all over the place
                     and we don&apos;t know what the heck we&apos;re doing. But I think my job in working with you as a
                     patient is to think about what&apos;s in the best interest of you and your health.
@@ -348,7 +349,7 @@ export const contentPersonas = {
                   <>
                     So I guess [hearing about serious side effects from the vaccine] is like seeing a news story about
                     an airplane crash. Even though it happens incredibly rarely, the media make sure you know about it.
-                    It’s been like this with the vaccine ever since it was approved. Everybody&apos;s very interested,
+                    It&apos;s been like this with the vaccine ever since it was approved. Everybody&apos;s very interested,
                     rightfully so, in how things go, every little twist and turn. It all gets reported on. But all the
                     reporting on very rare events, combined with us being cooped up, all that makes people anxious. So
                     I&apos;m wondering whether maybe if we could find a reliable source from one of the regulatory
@@ -501,9 +502,9 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    We&apos;re learning as we go forward, and we&apos;re trying to be as safe as we can. So, we’ve
+                    We&apos;re learning as we go forward, and we&apos;re trying to be as safe as we can. So, we&apos;ve
                     learned from some very rare events. 1 in 100,000 events. So, one person out of 100,000 gets a blood
-                    clot. It’s very small numbers but we&apos;re taking it really seriously. By comparison your chances,
+                    clot. It&apos;s very small numbers but we&apos;re taking it really seriously. By comparison your chances,
                     as a Canadian, of dying in a traffic accident – which is a chance we take every time we get in a car
                     – that chance is 1 in 20,000. I hope that putting it in that context helps.
                   </>
@@ -518,7 +519,7 @@ export const contentPersonas = {
                 text: (
                   <>
                     I&apos;ve had my vaccine...[
-                    <i>Share your experience of the vaccination process and/or side effects here.</i>] I really didn’t
+                    <i>Share your experience of the vaccination process and/or side effects here.</i>] I really didn&apos;t
                     have any reservations about having the vaccine personally. I was actually quite excited to get it! I
                     know that the science sounds new and modern when they talk about this mRNA vaccine and how it works
                     in a different way compared to the previous way that vaccines have been made, but it has given us
@@ -536,7 +537,7 @@ export const contentPersonas = {
                   <>
                     If we have increased volumes of people getting sick, the other thing to think about is: do we have
                     enough space for them in hospital? We could wait to have enough people get sick and die, and enough
-                    people get sick and not die, so that we build up the ‘herd immunity’ that people talk about. But for
+                    people get sick and not die, so that we build up the &lsquo;herd immunity&rsquo; that people talk about. But for
                     me, the vaccines get us to the same end point faster, sort of like a FastPass at Disneyland. A
                     FastPass without all the hospitalizations and deaths.
                   </>
@@ -585,7 +586,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    If a large portion of the population don’t get the vaccine, this could mean working from home, our
+                    If a large portion of the population don&apos;t get the vaccine, this could mean working from home, our
                     kids in and out of school, no social activities, et cetera, for the next several years. Which feels
                     kind of gross to me.
                   </>
@@ -706,8 +707,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I hear you wondering, &lsquo;<i>oh, it&apos;s still kind of new. It&apos;s experimental.</i>’&rsquo;
-                    We have a lot of data today, but we’ll have even more as the weeks go by and more people get the
+                    I hear you wondering, &lsquo;<i>oh, it&apos;s still kind of new. It&apos;s experimental.</i>&rsquo;
+                    We have a lot of data today, but we&apos;ll have even more as the weeks go by and more people get the
                     vaccine. And I promise I will dig it up for you. And I&apos;ll tell you what I know and what I
                     don&apos;t know at that point. And maybe we&apos;ll make a decision together then.
                   </>
@@ -850,7 +851,7 @@ export const contentPersonas = {
       theySay: {
         image: "Hesitancy Group 3.svg",
         content: [
-          <>&ldquo;I’ve heard that the mRNA vaccines will alter my DNA.&rdquo;</>,
+          <>&ldquo;I&apos;ve heard that the mRNA vaccines will alter my DNA.&rdquo;</>,
           <>
             &ldquo;I am not willing to have anything injected into my body that could potentially rewrite my DNA.&rdquo;
           </>,
@@ -894,9 +895,9 @@ export const contentPersonas = {
         affirm: {
           text: (
             <>
-              I get that there’s a lot of discussion out there about how the vaccines work and some of it can be
+              I get that there&apos;s a lot of discussion out there about how the vaccines work and some of it can be
               concerning. Sometimes it can be difficult to make sense of something so new and so different from what
-              we’ve had before.
+              we&apos;ve had before.
             </>
           ),
           image: "doctorWhiteManBlackHair.svg",
@@ -967,9 +968,9 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I get that there’s a lot of discussion out there about how the vaccines work and some of it can be
+                    I get that there&apos;s a lot of discussion out there about how the vaccines work and some of it can be
                     concerning. Sometimes it can be difficult to make sense of something so new and so different from
-                    what we’ve had before.
+                    what we&apos;ve had before.
                   </>
                 ),
                 featured: false,
@@ -1239,7 +1240,7 @@ export const contentPersonas = {
         image: "doctorBlackWoman.svg",
         content: [
           <>
-            Consider discussing your patient’s specific co-morbidities/medications with a specialist who can advise on
+            Consider discussing your patient&apos;s specific co-morbidities/medications with a specialist who can advise on
             the best course of action.
           </>,
           <>
@@ -1316,7 +1317,7 @@ export const contentPersonas = {
             subheading: "",
             quotes: [
               {
-                text: <>I know this is yet another thing, but I really hope you’re not giving up on me.</>,
+                text: <>I know this is yet another thing, but I really hope you&apos;re not giving up on me.</>,
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
@@ -1325,7 +1326,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I know you have a lot on your plate, but let’s chat about why the vaccine is really important for
+                    I know you have a lot on your plate, but let&apos;s chat about why the vaccine is really important for
                     you and your health.
                   </>
                 ),
@@ -1573,7 +1574,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I mean, say, COVID kills you, okay? It’s over. But what if it doesn&apos;t? What if you catch COVID,
+                    I mean, say, COVID kills you, okay? It&apos;s over. But what if it doesn&apos;t? What if you catch COVID,
                     and you survive? I&apos;ve certainly got lots of patients in my own practice that are these
                     long-haulers that you&apos;ll have heard about on the radio and the news. The people who end up with
                     these longstanding problems. Which would mean taking what you&apos;re dealing with just now and
@@ -1609,7 +1610,7 @@ export const contentPersonas = {
                 text: (
                   <>
                     One way of thinking about it is that the vaccine is, in some ways, more important than most of your
-                    other medications really. They’re all kind of &lsquo;small print&rsquo; in comparison to this really
+                    other medications really. They&apos;re all kind of &lsquo;small print&rsquo; in comparison to this really
                     big issue. Protecting you from COVID-19 is that important.
                   </>
                 ),
@@ -1664,7 +1665,7 @@ export const contentPersonas = {
           link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
           description: (
             <>
-              The Crohn’s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and
+              The Crohn&apos;s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and
               justifications for why the COVID-19 vaccines should be administered to patients with IBD at the earliest
               available opportunity. (Updated May 2021)
             </>
@@ -2132,7 +2133,7 @@ export const contentPersonas = {
                 text: (
                   <>
                     Have you gotten any information directly from a specialist &#91;e.g. sports medicine, obstetrics,
-                    men’s health, nutrition&#93; in this area about the safety of the vaccine? They may have something
+                    men&apos;s health, nutrition&#93; in this area about the safety of the vaccine? They may have something
                     to add that would be relevant. Maybe we could connect with them?
                   </>
                 ),
@@ -2231,7 +2232,7 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Don’t Let Misinformation About Fertility and COVID-19 Vaccines Stop Teens from Getting the Shot</>,
+          label: <>Don&apos;t Let Misinformation About Fertility and COVID-19 Vaccines Stop Teens from Getting the Shot</>,
           image: "",
           linkTitle: <>Healthline fact page</>,
           link: "https://www.healthline.com/health-news/dont-let-misinformation-about-fertility-and-covid-19-vaccines-stop-teens-from-getting-the-shot#Whats-behind-the-myth?",
@@ -2545,7 +2546,7 @@ export const contentPersonas = {
                   <>
                     Sometimes people get their immune response mixed up with a side effect. We want your body to mount
                     as strong an immune response as it can to the vaccine. Does that make sense? Because we want your
-                    immune system to do its job, right? That&apos;s not a side effect, that’s <i>THE</i> effect.
+                    immune system to do its job, right? That&apos;s not a side effect, that&apos;s <i>THE</i> effect.
                   </>
                 ),
                 featured: false,
@@ -2572,8 +2573,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    We know that getting the first dose gets you some protection, but we know that protection isn’t as
-                    strong, and won’t last as long. Getting the second dose will give your immune system that kick in
+                    We know that getting the first dose gets you some protection, but we know that protection isn&apos;t as
+                    strong, and won&apos;t last as long. Getting the second dose will give your immune system that kick in
                     the backside, that reminder to know what it&apos;s actually dealing with so that it remembers, and
                     you will be protected for longer.
                   </>
@@ -2617,7 +2618,7 @@ export const contentPersonas = {
                     Honestly, the thing is, and I&apos;ve been saying this about vaccines for years, you kind of want to
                     feel crummy because it tells you that your immune system is doing its job. Your immune system&apos;s
                     paying attention. Your immune system is reacting to that vaccine the way it should. Imagine what
-                    you’d feel like if it was the real thing and not the vaccine?!
+                    you&apos;d feel like if it was the real thing and not the vaccine?!
                   </>
                 ),
 
@@ -2934,7 +2935,7 @@ export const contentPersonas = {
         image: "Notepad_small.svg",
         content: [
           <>
-            There’s a firehose of information out there and it can be difficult to understand. Working with your
+            There&apos;s a firehose of information out there and it can be difficult to understand. Working with your
             patient, as an equal, you can review that information together and come to a mutual understanding that meets
             their health goals.
           </>,
@@ -3438,7 +3439,7 @@ export const contentPersonas = {
                     like, &lsquo;
                     <i>Okay, Im going to create something that&apos;s going to make everyone&apos;s skin turn purple</i>
                     &rsquo;, and the only way to fix it is by taking a vaccine. Because no one wants to walk around
-                    looking purple and it would be really visible. I also wouldn’t have the disease kill anyone because
+                    looking purple and it would be really visible. I also wouldn&apos;t have the disease kill anyone because
                     you can&apos;t sell a vaccine to someone who is already dead. So I guess if that was their
                     &#91;e.g., pharmaceutical companies&apos;/the government&apos;s&#93; real objective, they maybe
                     didn&apos;t come up with the right disease.
@@ -5004,7 +5005,7 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Imam’s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
+          label: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
           image: "",
           linkTitle: <>YouTube video - virtual discussion</>,
           link: "https://youtu.be/wP-7tvq8P18",
@@ -6338,7 +6339,7 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    So, there are some people that do have what we call &rsquo;syncope&lsquo; in relation to a needle.
+                    So, there are some people that do have what we call &lsquo;syncope&rsquo; in relation to a needle.
                     And that&apos;s a condition where your blood pressure drops. And sometimes if that happens most
                     times for you, there are little tips and tricks that I learned along the way that I could share.
                   </>
@@ -6473,7 +6474,7 @@ export const contentPersonas = {
           label: <>NHS: Overcoming your needle phobia (fear of needles)</>,
           image: "", // path for screenshot image
           // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkTitle: <>Article from Guy’s and St Thomas’ NHS Foundation Trust</>,
+          linkTitle: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>,
           link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
           description: (
             <>
@@ -7014,7 +7015,7 @@ export const contentPersonas = {
                 <strong>Engaging</strong> openly
               </p>
               <p>
-                <strong>Affirming</strong> your patient’s concerns and starting points{" "}
+                <strong>Affirming</strong> your patient&apos;s concerns and starting points
               </p>
               <p>
                 <strong>Asking</strong> permission, then <strong>sharing</strong> your own information or perspectives
@@ -7162,8 +7163,8 @@ export const contentPersonas = {
                   <>
                     Let me make sure I understand you clearly. Are you saying, &lsquo;
                     <i>No, not ever, no matter what.</i>
-                    &lsquo; Or are you more someone who&apos;s maybe on the fence and you want to kind of wait and see.
-                    So more of a &lsquo;<i>maybe</i>&lsquo;, or &lsquo;<i>later</i>&lsquo;?
+                    &rsquo; Or are you more someone who&apos;s maybe on the fence and you want to kind of wait and see.
+                    So more of a &lsquo;<i>maybe</i>&rsquo;, or &lsquo;<i>later</i>&rsquo;?
                   </>
                 ),
                 featured: true,
@@ -7804,11 +7805,31 @@ export const contentPersonas = {
       theySay: {
         image: "Hesitancy Group 1.svg",
         content: [
-          <p>Long-term effects / Long-term data</p>,
-          <p>Risks of COVID vs risks of vaccine to children</p>,
-          <p>Rushed approval/authorization of vaccine for children</p>,
-          <p>Developmental/puberty concerns</p>,
-          <p>Virus &lsquo;Shedding&rsquo;</p>,
+          <div className="pb-2">
+            <Link to="/details/advice/pediatrics" className="orangeLink">
+              Long-term effects / Long-term data
+            </Link>
+          </div>,
+          <div className="pb-2">
+            <Link to="/details/advice/pediatrics" className="orangeLink">
+              Developmental/puberty concerns
+            </Link>
+          </div>,
+          <div className="pb-2">
+            <Link to="/details/advice/pediatrics" className="orangeLink">
+              Risks of COVID vs risks of vaccine to children
+            </Link>
+          </div>,
+          <div className="pb-2">
+            <Link to="/details/advice/pediatrics" className="orangeLink">
+              Rushed approval/authorization of vaccine for children
+            </Link>
+          </div>,
+          <div className="pb-2">
+            <Link to="/details/advice/pediatrics" className="orangeLink">
+              Virus &lsquo;Shedding&rsquo;
+            </Link>
+          </div>,
         ],
       },
       // (Pediatrics)
@@ -7817,32 +7838,18 @@ export const contentPersonas = {
         image: "doctorMuslimWomanYellowHeadCover.svg",
         content: [
           <>
-            Offering generic information about vaccines may not be as effective as using targeted communication to
-            address particular patient concerns.
-          </>,
-          <>
             <div className="relative">
-              <span>Use the</span>
-              {/* <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" /> */}
-
-              <EaaseHoverPopup
-                eaaseTextClass="mx-1.5 orangeUnderline"
-                eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
-              />
-
-              <span>
-                to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
-                responding.
-              </span>
+              <div>
+                Conversations with the parents of younger children eligible for the vaccine are likely to be emotionally
+                charged, and come in a variety of forms. These include:
+              </div>
+              <ul className="pl-10 pt-3 list-disc">
+                <li key={1}>Unvaccinated parents unwilling to vaccinate their children,</li>
+                <li key={2}>Vaccinated parents hesitant to vaccinate their children, and</li>
+                <li key={3}>Unvaccinated children who want to be vaccinated contrary to parental wishes.</li>
+              </ul>
             </div>
-          </>,
-          <>
-            Remember to engage with your patient to better understand and identify their specific type or source of
-            vaccine hesitancy.
-          </>,
-          <>
-            Take your time, and don&apos;t aim for a &lsquo;yes&rsquo; in any single conversation. The goal is to become
-            your patients&apos; ally.
+            <div>Consider consulting your College&apos;s standards of practice related to vaccinating minors.</div>
           </>,
         ],
       },
@@ -7852,11 +7859,21 @@ export const contentPersonas = {
         image: "Notepad_small.svg",
         content: [
           <>
-            Take the time to learn about your patient&apos;s particular concerns about the COVID vaccines so that you
-            can have a better conversation. The goal of these conversations is to <strong>&#40;re&#41;affirm</strong>{" "}
-            that you are an ally; <strong>validate</strong> your patients&apos; experiences; and aim for{" "}
-            <strong>contemplation</strong> rather than vaccine acceptance. Your status as a trusted healthcare advisor
-            can make the difference.
+            <div className="pb-2">
+              <strong>Empathize with patients.</strong> The pandemic, and conversations about vaccines, may cause anger,
+              fear, stress, and anxiety. Meet your patient where they&apos;re at emotionally, and acknowledge and address
+              these emotions.
+            </div>
+            <div className="pb-2">
+              <strong>Extend the conversation.</strong> Talking about childhood vaccination may require multiple
+              sessions. Keep the door open for future appointments where patients and their children can have their
+              concerns heard and addressed.
+            </div>
+            <div className="pb-2">
+              <strong>Address complacency.</strong> The pandemic has tested everyone&apos;s capacity to push through this
+              challenging time and make hard decisions. By discussing the risks and benefits of not just the vaccine,
+              but those related to COVID-19 infection for children, you can help parents avoid being complacent.
+            </div>
           </>,
         ],
       },
@@ -7907,7 +7924,12 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>,
           link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
-          description: <>An information sheet from the Ontario Ministry of Health outlining considerations and preparation strategies for parents/guardians of children 5-11 (2021)</>,
+          description: (
+            <>
+              An information sheet from the Ontario Ministry of Health outlining considerations and preparation
+              strategies for parents/guardians of children 5-11 (2021)
+            </>
+          ),
         },
 
         {
@@ -7915,15 +7937,27 @@ export const contentPersonas = {
           image: "",
           linkTitle: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
           link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
-          description: <>An article written by pediatricians answering common parental/guardian questions about the COVID-19 vaccines for their children. *Please note this is a US source. In Canada, the Pfizer-BioNTech has been approved for children age 5-11, and the Pfizer-BioNTech and Moderna vaccines have been approved for children age 12 and older (2021).</>,
+          description: (
+            <>
+              An article written by pediatricians answering common parental/guardian questions about the COVID-19
+              vaccines for their children. *Please note this is a US source. In Canada, the Pfizer-BioNTech has been
+              approved for children age 5-11, and the Pfizer-BioNTech and Moderna vaccines have been approved for
+              children age 12 and older (2021).
+            </>
+          ),
         },
 
         {
-          label: <>Children and the COVID-19 Vaccine  </>,
+          label: <>Children and the COVID-19 Vaccine </>,
           image: "",
           linkTitle: <>BC CDC - Children and COVID-19 Vaccination</>,
           link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
-          description: <>Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a review of the vaccine approval process.  </>,
+          description: (
+            <>
+              Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a
+              review of the vaccine approval process.{" "}
+            </>
+          ),
         },
       ],
     },

@@ -40,8 +40,8 @@ export const pediatricsContent = [
                 should have it. I don&apos;t want to put that stuff in them just in case there are long-term effects.
               </>
             ),
-            featured: false,
-            image: "doctorBlackManBeard.svg",
+            featured: true,
+            image: "",
           },
 
           {
@@ -71,7 +71,7 @@ export const pediatricsContent = [
               </>
             ),
             featured: false,
-            image: "doctorBlackManBeard.svg",
+            image: "",
           },
           {
             text: (
@@ -88,8 +88,8 @@ export const pediatricsContent = [
                 It&apos;s a balance you&apos;ve got to strike, but for me it comes back to being safer in the moment.
               </>
             ),
-            featured: true,
-            image: "",
+            featured: false,
+            image: "doctorWhiteManBlackHair.svg",
           },
           // Long-term effects / Long-term data
           {
@@ -112,7 +112,7 @@ export const pediatricsContent = [
                 isn&apos;t as deadly in children, doesn&apos;t mean that we shouldn&apos;t vaccinate them against it.
               </>
             ),
-            featured: false,
+            featured: true,
             image: "",
           },
           // Long-term effects / Long-term data
@@ -154,7 +154,7 @@ export const pediatricsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorBlackWoman.svg",
           },
         ],
       },
@@ -186,7 +186,7 @@ export const pediatricsContent = [
                 don&apos;t have the evidence yet.
               </>
             ),
-            featured: false,
+            featured: true,
             image: "",
           },
         ],
@@ -201,7 +201,7 @@ export const pediatricsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorMuslimWomanYellowHeadCover.svg",
           },
 
           {
@@ -246,7 +246,7 @@ export const pediatricsContent = [
                 anyway.
               </>
             ),
-            featured: false,
+            featured: true,
             image: "",
           },
 
@@ -269,7 +269,7 @@ export const pediatricsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorWhiteManGoatee.svg",
           },
         ],
 
@@ -298,7 +298,7 @@ export const pediatricsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorWhiteManYoung.svg",
           },
           // COVID is low-risk in children
           {

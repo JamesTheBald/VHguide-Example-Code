@@ -90,7 +90,7 @@ export const branch = [
         ),
         topicNameShort: (
           <>
-            Conflict with <strong>values or politics</strong>
+            Conflicting <strong>values or politics</strong>
           </>
         ),
         topicNameAsTitle: "Conflict with Personal or Political Values",
@@ -98,7 +98,7 @@ export const branch = [
         subtopic: [
           {
             subtopicName: "Vaccines go against natural lifestyle or alternative medicine",
-            subtopicNameShort: "Naturalist / alternative medicine",
+            subtopicNameShort: "Naturalist/alternative medicine",
             subtopicNameAsTitle: "Vaccines Go Against Natural Lifestyle or Alternative Medicine",
             contentID: "Naturalist",
           },

@@ -12,7 +12,7 @@ const QuoteBoxes = props => {
   const pplIcons = queryData.current.pplIcons.edges;
 
   log2 && console.log("QuoteBoxes.js runs.");
-  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
   const quoteColorsEtAl = quote => {
@@ -51,13 +51,19 @@ const QuoteBoxes = props => {
   return (
     <>
       {quoteArray.map((quote, idx) => {
-        log2 && console.log("QuoteBoxes.js quote length=", reactElementToJSXString(quote.text).length);
+        // log && console.log("QuoteBoxes.js quote length=", reactElementToJSXString(quote.text).length);
         return (
           <div key={idx}>
-            {reactElementToJSXString(quote.text).length > 12 && (
-              <div className="dontBreak" name="Quote Box. Outer box to prevent column breaking inside" key={idx}>
+            {reactElementToJSXString(quote.text).length > 20 && (
+              <div
+                className="mb-2 mxs:mb-3 sm:mb-12  dontBreak"
+                name="Quote Box. Outer box to prevent column breaking inside"
+                key={idx}
+              >
                 <div
-                  className={`mb-8 mxs:mb-10 sm:mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsEtAl(quote)}`}
+                  className={`mb-8 mxs:mb-10 sm:mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsEtAl(
+                    quote
+                  )}`}
                   style={quotePaddingEtc(quote)}
                 >
                   <div className="relative">

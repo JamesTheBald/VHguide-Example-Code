@@ -20,10 +20,21 @@ const TabBarOAR = () => {
   const widC = onPediatrics ? 125 : 185;
 
   const tabWidth = winWidth < 510 ? widA * tabWidthAdjRatio : winWidth < 720 ? widB * tabWidthAdjRatio : widC;
-  const tabGap =
-    winWidth < 510 ? 14 * tabWidthAdjRatio : winWidth < 720 ? 16 * tabWidthAdjRatio : 19;
+  const tabGap = winWidth < 510 ? 14 * tabWidthAdjRatio : winWidth < 720 ? 16 * tabWidthAdjRatio : 19;
   const tabTall =
-    winWidth < 510 ? (onPediatrics ? 84 : 90) : winWidth < 720 ? (onPediatrics ? 92 : 100) : onPediatrics ? 100 : 100;
+    winWidth < 510
+      ? onPediatrics
+        ? 50
+        : 55
+      : winWidth < 720
+      ? onPediatrics
+        ? 58
+        : 63
+      : winWidth < 1024
+      ? onPediatrics
+        ? 65
+        : 72
+      : 72;
   log2 && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
   log2 && console.log("TabBarOAR.js tabWidth=", tabWidth);
 

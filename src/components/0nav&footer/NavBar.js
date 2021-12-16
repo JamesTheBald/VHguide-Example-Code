@@ -64,7 +64,7 @@ const NavBar = () => {
   const padNavBarOnExplorePage =
     winWidth > 1023 && typeof window !== "undefined" && window.location.pathname === "/explore" ? true : false;
 
-  console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
+  log && console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
 
   const NavBarItemsAndDropDowns = () => {
     return (

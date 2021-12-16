@@ -11,8 +11,8 @@ const Footer = () => {
   const { showContactForm, winWidth, setShowContactForm } = useMyContext();
 
   // const rightGap = 100 * widthAdjRatio;
-  const widthFormModal = winWidth > 800 ? 500 : 400;
-  const heightFormModal = 820;
+  const widthModal = winWidth > 800 ? 500 : 350;
+  const heightModal = winWidth > 800 ? 840 : 880;
   const formSource =
     "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true";
 
@@ -25,7 +25,7 @@ const Footer = () => {
     <div className="relative">
       <button
         name="Contact Us Pill"
-        className={`px-1.5 mxs:px-5 py-1.5 fixed bottom-2 right-5  flex items-center  text-16 tracking-0.3 
+        className={`px-1.5 mxs:px-5 py-1.5 fixed bottom-1 right-5  flex items-center  text-16 tracking-0.3 
                     rounded-full  cursor-pointer border border-gray-mid  z-50 mxs:z-40
                     ${
                       "text-blue-dark bg-gray-light"
@@ -81,8 +81,8 @@ const Footer = () => {
           <ModalContactForm
             showContactForm={showContactForm}
             onHide={() => setShowContactForm(false)}
-            width={widthFormModal}
-            height={heightFormModal}
+            widthModal={widthModal}
+            heightModal={heightModal}
             formSource={formSource}
           />
         </footer>

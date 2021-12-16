@@ -119,9 +119,8 @@ const CopyrightNotice = () => {
         or otherwise stored in a retrieval system, transmitted or converted, in any form or by any means (electronic or
         otherwise) without the prior written permission of the copyright owner.
       </div>
-      <br />
       <div className="mt-3">
-        <span>For further information please</span>
+        <span>For further information please</span>{" "}
         <button className="orangeLink" onClick={() => setShowContactForm(true)}>
           contact us
         </button>

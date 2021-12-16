@@ -19,9 +19,10 @@ import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
 const Details = props => {
-  const { data } = props;
+  const { data, location } = props;
   const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
   queryData.current = data;
+  const path = location.pathname;
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
@@ -69,7 +70,7 @@ const Details = props => {
 
   if (contentID) {
     return (
-      <DetailsLayout hesitTypeName={hesitTypeName} related={related}>
+      <DetailsLayout hesitTypeName={hesitTypeName} related={related} path={path}>
         {/* Note: for the following routing to work you need the prefix option set up for
             gatsby-plugin-create-client-paths in gatsby-config.js */}
         <Router basepath="/details">

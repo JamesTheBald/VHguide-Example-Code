@@ -39,7 +39,7 @@ const Pill = (props) => {
     >
       <h2 className={`pt-1 ${textClass}`}>{winWidth < 510 ? branchNameShortest : branchName}</h2>
 
-      <div className="mr-2">
+      <div className="mr-2 sm:mr-4">
         {locn.branch === branchNum && !branch[branchNum].linkToDetails && !noneSelected ? (
           <IoIosArrowDown size={arrowSize} />
         ) : (
