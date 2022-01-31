@@ -38,8 +38,10 @@ const Home3WhoWeAre = () => {
 
           {landingBioContent.map((currBio, indx) => {
             log2 && console.log("Home3WhoWeAre.js .map() currBio=", currBio);
+            if (indx >= 3) return <div key={indx} />;
+
             return (
-              <div key={indx} className="flex flex-col sm:flex-row lg:flex-col sm:items-center">
+              <div key={indx} className="flex flex-col sm:flex-row lg:flex-col">
                 {/* <div key={indx} style={{ width: bioWidth }}> */}
                 {homepagePics.map((item, index) => {
                   if (item.node.relativePath === currBio.image) {

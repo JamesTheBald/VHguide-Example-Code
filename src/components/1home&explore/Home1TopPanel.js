@@ -49,7 +49,11 @@ const Home1TopPanel = props => {
   log2 && console.log("Home1TopPanel.js xScale=", xScale, ", yScale=", yScale);
 
   return (
-    <div className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative">
+    <div
+      className="w-screen bg-gradient-to-b from-blue-black to-blue-main  text-gray-light relative"
+      // The following line can cause a large blue blank region on the lower part of the screen!!! 
+      // style={{ height: winHeight - 80 }}
+    >
       <div className="absolute w-full  h-200 md:h-210 lg:h-190 mxl:h-190 xl:h-210  overflow-hidden  z-20">
         <StaticImage
           className="lg:hidden"
@@ -82,7 +86,7 @@ const Home1TopPanel = props => {
         >
           <StaticImage
             className="hidden lg:block"
-            src="../../assets/homepage/Home Page Graphic.png"
+            src="../../assets/homepage/Home Illustration - Main Way.svg"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
             loading="eager"
@@ -92,7 +96,7 @@ const Home1TopPanel = props => {
           />
           <StaticImage
             className="lg:hidden"
-            src="../../assets/homepage/Home Page Graphic - reversed.png"
+            src="../../assets/homepage/Home Illustration - Reverse Way.svg"
             alt="Vaccine hesitancy guide graphic"
             placeholder="blurred"
             loading="eager"

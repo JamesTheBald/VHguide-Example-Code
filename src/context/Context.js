@@ -11,7 +11,7 @@ const MyProvider = ({ children }) => {
   const log2 = false;
   log2 && console.log("Context.js runs.");
 
-  const nomScreenWidth = 720;  // Key parameter - much formatting is based on this width
+  const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
   const navBarHeight = 80; // in pixels
 
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
@@ -31,6 +31,8 @@ const MyProvider = ({ children }) => {
   }, [winWidth, log2]);
 
   const [showContactForm, setShowContactForm] = useState(false);
+  // const [showSlideIn, setShowSlideIn] = useState(true);
+  const [fixedBackdrop, setFixedBackdrop] = useState(false);
 
   const [locn, setLocn] = useState({
     branch: 0,
@@ -39,10 +41,14 @@ const MyProvider = ({ children }) => {
     showSubtopic: false,
   });
   const [fullStoryID, setFullStoryID] = useState("");
+
+  const pedQuoteGroupInitOpen = useRef(Array(10).fill(false));
+  log && console.log("Context.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
+
   const [noneSelected, setNoneSelected] = useState(true);
   const queryData = useRef({});
 
-  // Refactor: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
+  // One day: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
   const contextValues = {
     winWidth: winWidth,
     winHeight: winHeight,
@@ -51,18 +57,21 @@ const MyProvider = ({ children }) => {
     marginOuter: marginOuter,
     nomScreenWidth: nomScreenWidth,
     showContactForm: showContactForm,
+    // showSlideIn: showSlideIn,
+    fixedBackdrop: fixedBackdrop,
     branch: branch,
     locn: locn,
     fullStoryID: fullStoryID,
     noneSelected: noneSelected,
+    pedQuoteGroupInitOpen: pedQuoteGroupInitOpen,
     setWinWidth: setWinWidth,
     setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
+    // setShowSlideIn: setShowSlideIn,
+    setFixedBackdrop: setFixedBackdrop,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,
     setFullStoryID: setFullStoryID,
-    // scrollTarget: scrollTarget,
-    // scrollOffset: scrollOffset,
     queryData: queryData,
     log: log,
     log2: log2,

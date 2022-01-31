@@ -3,17 +3,20 @@ import { useMyContext } from "../../context/Context";
 
 const NavItem = props => {
   const { classNom, bgSelec, selecOnHover, children, destn } = props;
-  const { log2 } = useMyContext();
+  const { log } = useMyContext();
 
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  log2 && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
+  log && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
 
   let selected = false;
   if (destn === "/" && pathname === "/") selected = true;
   if (destn === "/explore" && pathname === "/explore") selected = true;
   if (destn === "/explore" && pathname.includes("details")) selected = true;
-  if (destn === "/pearls" && pathname === "pearls") selected = true;
+  if (destn === "/pearls" && pathname === "/pearls") selected = true;
   if (destn === "/about" && pathname.includes("about")) selected = true;
+
+  log && console.log("NavItem.js so selected=", selected);
+
 
   return (
     <div className={`${classNom} w-full  flex flex-col items-start  cursor-pointer group  relative`}>

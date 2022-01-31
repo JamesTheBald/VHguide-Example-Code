@@ -5,7 +5,7 @@ import Layout from "../components/0nav&footer/NavFooterLayout";
 import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 
 const Explore = () => {
-  const { setWinWidth, setWinHeight, showContactForm, log } = useMyContext();
+  const { setWinWidth, setWinHeight, fixedBackdrop, log } = useMyContext();
 
   log && console.log("Explore.js runs.");
 
@@ -17,21 +17,20 @@ const Explore = () => {
   }, [setWinWidth, setWinHeight]);
 
   return (
-    <div className={showContactForm ? "fixed" : ""}>
-      <main className="stdMargins w-full">
-        <div name="spacer to prevent top margin collapse" className="h-18" />
-        <h1
-          className="mb-5 sm:mb-8 md:mb-12 xl:mb-14  titleFont text-28 mxs:text-40 sm:text-50
+    // <div className={fixedBackdrop ? "fixed" : ""}>
+    <main className="stdMargins w-full">
+      <div name="spacer to prevent top margin collapse" className="h-18" />
+      <h1
+        className="mb-5 sm:mb-8 md:mb-12 xl:mb-14  titleFont text-28 mxs:text-40 sm:text-50
                        tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main"
-        >
-          Hesitancy Types
-        </h1>
+      >
+        Hesitancy Types
+      </h1>
 
-        <PillsAndTrees />
+      <PillsAndTrees />
 
-        <div className="h-10" />
-      </main>
-    </div>
+      <div className="h-10" />
+    </main>
   );
 };
 

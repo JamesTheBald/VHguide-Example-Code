@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
-// import { AnchorLink } from "gatsby-plugin-anchor-links";
-import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
-
 import { FiExternalLink } from "react-icons/fi";
+
+import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
+// import PediatricsOverviewTheySay from "./PediatricsOverviewTheySay";
 
 export const contentPersonas = {
   // Put copy content inside <> and </> instead of double quotes (except for LinkText).
@@ -122,8 +121,8 @@ export const contentPersonas = {
         affirm: {
           text: (
             <>
-              I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the answers
-              for you today. But let&apos;s see what we can get through now, together.
+              I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the
+              answers for you today. But let&apos;s see what we can get through now, together.
             </>
           ),
           image: "doctorWhiteManBlackHair.svg",
@@ -205,8 +204,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the
-                    answers for you today. But let&apos;s see what we can get through now, together.
+                    I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all
+                    the answers for you today. But let&apos;s see what we can get through now, together.
                   </>
                 ),
                 featured: false,
@@ -232,10 +231,10 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    The information changes quickly, and I can see how, for folks who aren&apos;t as familiar with vaccines
-                    and haven&apos;t studied diseases, it looks like we&apos;re flipping and flopping all over the place
-                    and we don&apos;t know what the heck we&apos;re doing. But I think my job in working with you as a
-                    patient is to think about what&apos;s in the best interest of you and your health.
+                    The information changes quickly, and I can see how, for folks who aren&apos;t as familiar with
+                    vaccines and haven&apos;t studied diseases, it looks like we&apos;re flipping and flopping all over
+                    the place and we don&apos;t know what the heck we&apos;re doing. But I think my job in working with
+                    you as a patient is to think about what&apos;s in the best interest of you and your health.
                   </>
                 ),
                 featured: false,
@@ -349,11 +348,11 @@ export const contentPersonas = {
                   <>
                     So I guess [hearing about serious side effects from the vaccine] is like seeing a news story about
                     an airplane crash. Even though it happens incredibly rarely, the media make sure you know about it.
-                    It&apos;s been like this with the vaccine ever since it was approved. Everybody&apos;s very interested,
-                    rightfully so, in how things go, every little twist and turn. It all gets reported on. But all the
-                    reporting on very rare events, combined with us being cooped up, all that makes people anxious. So
-                    I&apos;m wondering whether maybe if we could find a reliable source from one of the regulatory
-                    agencies or something to talk about safety. It might be worthwhile thinking about that.
+                    It&apos;s been like this with the vaccine ever since it was approved. Everybody&apos;s very
+                    interested, rightfully so, in how things go, every little twist and turn. It all gets reported on.
+                    But all the reporting on very rare events, combined with us being cooped up, all that makes people
+                    anxious. So I&apos;m wondering whether maybe if we could find a reliable source from one of the
+                    regulatory agencies or something to talk about safety. It might be worthwhile thinking about that.
                   </>
                 ),
                 featured: false,
@@ -504,9 +503,9 @@ export const contentPersonas = {
                   <>
                     We&apos;re learning as we go forward, and we&apos;re trying to be as safe as we can. So, we&apos;ve
                     learned from some very rare events. 1 in 100,000 events. So, one person out of 100,000 gets a blood
-                    clot. It&apos;s very small numbers but we&apos;re taking it really seriously. By comparison your chances,
-                    as a Canadian, of dying in a traffic accident – which is a chance we take every time we get in a car
-                    – that chance is 1 in 20,000. I hope that putting it in that context helps.
+                    clot. It&apos;s very small numbers but we&apos;re taking it really seriously. By comparison your
+                    chances, as a Canadian, of dying in a traffic accident – which is a chance we take every time we get
+                    in a car – that chance is 1 in 20,000. I hope that putting it in that context helps.
                   </>
                 ),
                 featured: false,
@@ -519,11 +518,11 @@ export const contentPersonas = {
                 text: (
                   <>
                     I&apos;ve had my vaccine...[
-                    <i>Share your experience of the vaccination process and/or side effects here.</i>] I really didn&apos;t
-                    have any reservations about having the vaccine personally. I was actually quite excited to get it! I
-                    know that the science sounds new and modern when they talk about this mRNA vaccine and how it works
-                    in a different way compared to the previous way that vaccines have been made, but it has given us
-                    some real advantages.
+                    <i>Share your experience of the vaccination process and/or side effects here.</i>] I really
+                    didn&apos;t have any reservations about having the vaccine personally. I was actually quite excited
+                    to get it! I know that the science sounds new and modern when they talk about this mRNA vaccine and
+                    how it works in a different way compared to the previous way that vaccines have been made, but it
+                    has given us some real advantages.
                   </>
                 ),
                 featured: false,
@@ -537,9 +536,9 @@ export const contentPersonas = {
                   <>
                     If we have increased volumes of people getting sick, the other thing to think about is: do we have
                     enough space for them in hospital? We could wait to have enough people get sick and die, and enough
-                    people get sick and not die, so that we build up the &lsquo;herd immunity&rsquo; that people talk about. But for
-                    me, the vaccines get us to the same end point faster, sort of like a FastPass at Disneyland. A
-                    FastPass without all the hospitalizations and deaths.
+                    people get sick and not die, so that we build up the &lsquo;herd immunity&rsquo; that people talk
+                    about. But for me, the vaccines get us to the same end point faster, sort of like a FastPass at
+                    Disneyland. A FastPass without all the hospitalizations and deaths.
                   </>
                 ),
                 featured: false,
@@ -586,9 +585,9 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    If a large portion of the population don&apos;t get the vaccine, this could mean working from home, our
-                    kids in and out of school, no social activities, et cetera, for the next several years. Which feels
-                    kind of gross to me.
+                    If a large portion of the population don&apos;t get the vaccine, this could mean working from home,
+                    our kids in and out of school, no social activities, et cetera, for the next several years. Which
+                    feels kind of gross to me.
                   </>
                 ),
                 featured: false,
@@ -708,8 +707,8 @@ export const contentPersonas = {
                 text: (
                   <>
                     I hear you wondering, &lsquo;<i>oh, it&apos;s still kind of new. It&apos;s experimental.</i>&rsquo;
-                    We have a lot of data today, but we&apos;ll have even more as the weeks go by and more people get the
-                    vaccine. And I promise I will dig it up for you. And I&apos;ll tell you what I know and what I
+                    We have a lot of data today, but we&apos;ll have even more as the weeks go by and more people get
+                    the vaccine. And I promise I will dig it up for you. And I&apos;ll tell you what I know and what I
                     don&apos;t know at that point. And maybe we&apos;ll make a decision together then.
                   </>
                 ),
@@ -968,8 +967,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I get that there&apos;s a lot of discussion out there about how the vaccines work and some of it can be
-                    concerning. Sometimes it can be difficult to make sense of something so new and so different from
+                    I get that there&apos;s a lot of discussion out there about how the vaccines work and some of it can
+                    be concerning. Sometimes it can be difficult to make sense of something so new and so different from
                     what we&apos;ve had before.
                   </>
                 ),
@@ -1240,8 +1239,8 @@ export const contentPersonas = {
         image: "doctorBlackWoman.svg",
         content: [
           <>
-            Consider discussing your patient&apos;s specific co-morbidities/medications with a specialist who can advise on
-            the best course of action.
+            Consider discussing your patient&apos;s specific co-morbidities/medications with a specialist who can advise
+            on the best course of action.
           </>,
           <>
             Encourage patients to see that not taking the vaccine could make current conditions even worse or more
@@ -1326,8 +1325,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I know you have a lot on your plate, but let&apos;s chat about why the vaccine is really important for
-                    you and your health.
+                    I know you have a lot on your plate, but let&apos;s chat about why the vaccine is really important
+                    for you and your health.
                   </>
                 ),
                 // (MedicallyComplex)
@@ -1574,8 +1573,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I mean, say, COVID kills you, okay? It&apos;s over. But what if it doesn&apos;t? What if you catch COVID,
-                    and you survive? I&apos;ve certainly got lots of patients in my own practice that are these
+                    I mean, say, COVID kills you, okay? It&apos;s over. But what if it doesn&apos;t? What if you catch
+                    COVID, and you survive? I&apos;ve certainly got lots of patients in my own practice that are these
                     long-haulers that you&apos;ll have heard about on the radio and the news. The people who end up with
                     these longstanding problems. Which would mean taking what you&apos;re dealing with just now and
                     making it even worse. Even harder for you to get through day-to-day stuff because of fatigue, and
@@ -1610,8 +1609,8 @@ export const contentPersonas = {
                 text: (
                   <>
                     One way of thinking about it is that the vaccine is, in some ways, more important than most of your
-                    other medications really. They&apos;re all kind of &lsquo;small print&rsquo; in comparison to this really
-                    big issue. Protecting you from COVID-19 is that important.
+                    other medications really. They&apos;re all kind of &lsquo;small print&rsquo; in comparison to this
+                    really big issue. Protecting you from COVID-19 is that important.
                   </>
                 ),
                 featured: false,
@@ -2133,8 +2132,8 @@ export const contentPersonas = {
                 text: (
                   <>
                     Have you gotten any information directly from a specialist &#91;e.g. sports medicine, obstetrics,
-                    men&apos;s health, nutrition&#93; in this area about the safety of the vaccine? They may have something
-                    to add that would be relevant. Maybe we could connect with them?
+                    men&apos;s health, nutrition&#93; in this area about the safety of the vaccine? They may have
+                    something to add that would be relevant. Maybe we could connect with them?
                   </>
                 ),
 
@@ -2232,7 +2231,9 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Don&apos;t Let Misinformation About Fertility and COVID-19 Vaccines Stop Teens from Getting the Shot</>,
+          label: (
+            <>Don&apos;t Let Misinformation About Fertility and COVID-19 Vaccines Stop Teens from Getting the Shot</>
+          ),
           image: "",
           linkTitle: <>Healthline fact page</>,
           link: "https://www.healthline.com/health-news/dont-let-misinformation-about-fertility-and-covid-19-vaccines-stop-teens-from-getting-the-shot#Whats-behind-the-myth?",
@@ -2573,10 +2574,10 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    We know that getting the first dose gets you some protection, but we know that protection isn&apos;t as
-                    strong, and won&apos;t last as long. Getting the second dose will give your immune system that kick in
-                    the backside, that reminder to know what it&apos;s actually dealing with so that it remembers, and
-                    you will be protected for longer.
+                    We know that getting the first dose gets you some protection, but we know that protection isn&apos;t
+                    as strong, and won&apos;t last as long. Getting the second dose will give your immune system that
+                    kick in the backside, that reminder to know what it&apos;s actually dealing with so that it
+                    remembers, and you will be protected for longer.
                   </>
                 ),
                 featured: false,
@@ -3439,8 +3440,8 @@ export const contentPersonas = {
                     like, &lsquo;
                     <i>Okay, Im going to create something that&apos;s going to make everyone&apos;s skin turn purple</i>
                     &rsquo;, and the only way to fix it is by taking a vaccine. Because no one wants to walk around
-                    looking purple and it would be really visible. I also wouldn&apos;t have the disease kill anyone because
-                    you can&apos;t sell a vaccine to someone who is already dead. So I guess if that was their
+                    looking purple and it would be really visible. I also wouldn&apos;t have the disease kill anyone
+                    because you can&apos;t sell a vaccine to someone who is already dead. So I guess if that was their
                     &#91;e.g., pharmaceutical companies&apos;/the government&apos;s&#93; real objective, they maybe
                     didn&apos;t come up with the right disease.
                   </>
@@ -7804,54 +7805,31 @@ export const contentPersonas = {
 
       theySay: {
         image: "Hesitancy Group 1.svg",
-        content: [
-          <div className="pb-2">
-            <Link to="/details/advice/pediatrics" className="orangeLink">
-              Long-term effects / Long-term data
-            </Link>
-          </div>,
-          <div className="pb-2">
-            <Link to="/details/advice/pediatrics" className="orangeLink">
-              Developmental/puberty concerns
-            </Link>
-          </div>,
-          <div className="pb-2">
-            <Link to="/details/advice/pediatrics" className="orangeLink">
-              Risks of COVID vs risks of vaccine to children
-            </Link>
-          </div>,
-          <div className="pb-2">
-            <Link to="/details/advice/pediatrics" className="orangeLink">
-              Rushed approval/authorization of vaccine for children
-            </Link>
-          </div>,
-          <div className="pb-2">
-            <Link to="/details/advice/pediatrics" className="orangeLink">
-              Virus &lsquo;Shedding&rsquo;
-            </Link>
-          </div>,
-        ],
+        content: "",
+        // content: <PediatricsOverviewTheySay />,
+        // Overview-TheySay content is in a (separate) React component so useContext can be used. (See Rules of React)
       },
-      // (Pediatrics)
+      // ACTUAL content for Pediatrics
 
       thingsToConsider: {
         image: "doctorMuslimWomanYellowHeadCover.svg",
-        content: [
-          <>
+        content: (
+          <div key={123}>
+            {/* Need a key here because the thingsToConsider.content.map may be run upon first load  */}
             <div className="relative">
               <div>
                 Conversations with the parents of younger children eligible for the vaccine are likely to be emotionally
                 charged, and come in a variety of forms. These include:
               </div>
               <ul className="pl-10 pt-3 list-disc">
-                <li key={1}>Unvaccinated parents unwilling to vaccinate their children,</li>
-                <li key={2}>Vaccinated parents hesitant to vaccinate their children, and</li>
-                <li key={3}>Unvaccinated children who want to be vaccinated contrary to parental wishes.</li>
+                <li key={0}>Unvaccinated parents unwilling to vaccinate their children,</li>
+                <li key={1}>Vaccinated parents hesitant to vaccinate their children, and</li>
+                <li key={2}>Unvaccinated children who want to be vaccinated contrary to parental wishes.</li>
               </ul>
             </div>
             <div>Consider consulting your College&apos;s standards of practice related to vaccinating minors.</div>
-          </>,
-        ],
+          </div>
+        ),
       },
       // ACTUAL content for Pediatrics
 
@@ -7861,8 +7839,8 @@ export const contentPersonas = {
           <>
             <div className="pb-2">
               <strong>Empathize with patients.</strong> The pandemic, and conversations about vaccines, may cause anger,
-              fear, stress, and anxiety. Meet your patient where they&apos;re at emotionally, and acknowledge and address
-              these emotions.
+              fear, stress, and anxiety. Meet your patient where they&apos;re at emotionally, and acknowledge and
+              address these emotions.
             </div>
             <div className="pb-2">
               <strong>Extend the conversation.</strong> Talking about childhood vaccination may require multiple
@@ -7870,9 +7848,10 @@ export const contentPersonas = {
               concerns heard and addressed.
             </div>
             <div className="pb-2">
-              <strong>Address complacency.</strong> The pandemic has tested everyone&apos;s capacity to push through this
-              challenging time and make hard decisions. By discussing the risks and benefits of not just the vaccine,
-              but those related to COVID-19 infection for children, you can help parents avoid being complacent.
+              <strong>Address complacency.</strong> The pandemic has tested everyone&apos;s capacity to push through
+              this challenging time and make hard decisions. By discussing the risks and benefits of not just the
+              vaccine, but those related to COVID-19 infection for children, you can help parents avoid being
+              complacent.
             </div>
           </>,
         ],

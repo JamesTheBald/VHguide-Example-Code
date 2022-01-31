@@ -20,6 +20,18 @@
     @apply ml-6 sm:ml-12 list-disc list-outside
   }
 
+  .listClass2 {
+    @apply ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc
+  }
+  
+  .listClassPopup {
+    @apply ml-5 baseFont list-disc list-outside
+  }
+
+  .listTitleClass {
+    @apply mt-4 sm:mt-7  font-semibold text-blue-main  text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4
+  }
+
   .divider { 
     @apply mb-4  w-25 mxs:w-32 sm:w-40  h-2  border-solid border-b-2 border-blue-black
   }
@@ -106,6 +118,10 @@
 
   .panelTitleClass {
     @apply font-semibold text-blue-main text-20 sm:text-22 md:text-25 tracking-0.4 sm:tracking-0.5
+  }
+
+  .popupTitleClass {
+    @apply font-semibold  text-25 mxs:text-28 sm:text-30  tracking-0.5 sm:tracking-0.6
   }
 
   .panelTextClass {

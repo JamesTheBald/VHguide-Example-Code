@@ -1,0 +1,9 @@
+
+
+.CustomTriggerCSS--open .hideWhenOpen {
+  display: none
+}
+
+.CustomTriggerCSS--closed .hideWhenClosed {
+  display: none
+}

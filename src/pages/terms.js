@@ -5,7 +5,6 @@ import Layout from "../components/0nav&footer/NavFooterLayout";
 import TermsPanels from "../components/3aboutEtc/TermsPanels";
 
 const Terms = props => {
-  // const { location } = props;
   const { setWinWidth, setWinHeight, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
@@ -16,9 +15,6 @@ const Terms = props => {
       setWinHeight(window.innerHeight);
     }
   }, [setWinWidth, setWinHeight]);
-
-  // const path = location.pathname;
-  // log && console.log("terms.js runs. path=", path);
 
   return <TermsPanels pageTitle="Terms &amp; Notices" />;
 };

@@ -11,7 +11,8 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { setWinWidth, setWinHeight, setNoneSelected, showContactForm, queryData, log } = useMyContext();
+  const { setWinWidth, setWinHeight, setNoneSelected, fixedBackdrop, queryData, log } =
+    useMyContext();
   queryData.current = data;
 
   log && console.log("index.js runs.");
@@ -37,8 +38,6 @@ const Home = props => {
         to="/explore"
         className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
                     border-2 border-solid ${className} bg-gray-light hover:bg-opacity-0`}
-        //             px-8  h-9 mxs:h-12  text-blue-main hover:text-gray-light
-
         style={props.style}
         onClick={() => {
           setNoneSelected(true);
@@ -54,7 +53,8 @@ const Home = props => {
 
   return (
     <>
-      <main className={`${showContactForm ? "fixed" : ""}  bg-white text-blue-black overflow-x-hidden`}>
+      <main className="bg-white text-blue-black overflow-x-hidden">
+      {/* <main className={`${fixedBackdrop ? "fixed" : ""} bg-white text-blue-black overflow-x-hidden`}> */}
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes BrowseButton={BrowseButton} />
         <Home3WhoWeAre />

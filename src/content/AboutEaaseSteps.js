@@ -87,11 +87,10 @@ const AboutEaaseSteps = props => {
         </ul>
         <div>
           <div>Across the rest of the Guide we use the EAASE steps to organize advice for each type of hesitancy.</div>
-          {/* Make sure the breakpoints for the image below line up with those in the columnStyle class in in AboutPanels.js*/}
           <div className="m-3 mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
             <StaticImage
               className="pt-4"
-              src={"../assets/screenshots/Overview-Undifferentiated-Hesitancy.png"}
+              src={"../assets/screenshots/About the Guide EAASE Example Image.png"}
               alt="Screenshot of Undifferentiated Hesitancy overview page"
               loading="eager"
               quality={90}

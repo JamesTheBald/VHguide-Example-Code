@@ -13,14 +13,13 @@ import DetailsLayout from "../components/2details/DetailsLayout";
 import DetailsOverview from "../components/2details/DetailsOverview";
 import DetailsResources from "../components/2details/DetailsResources";
 import PediatricsPanels from "../components/2details/PediatricsPanels";
-import DetailsPearls from "../components/2details/DetailsPearls";
-
+import DetailsPediatricPearls from "../components/2details/DetailsPediatricPearls";
 import updateContIDandName from "../functions/updateContIDandName";
 import updateAdviceAndRelateds from "../functions/updateAdviceAndRelateds";
 
 const Details = props => {
   const { data, location } = props;
-  const { locn, fullStoryID, setFullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
+  const { locn, fullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
   queryData.current = data;
   const path = location.pathname;
 
@@ -63,7 +62,7 @@ const Details = props => {
       <>
         <AdviceWhatsWorking />
         <AdviceTabNavBar />
-        <AdviceQuoteGroupList advice={advice} setFullStoryID={setFullStoryID} />
+        <AdviceQuoteGroupList advice={advice} />
       </>
     );
   };
@@ -76,7 +75,7 @@ const Details = props => {
         <Router basepath="/details">
           <DetailsOverview path="/overview" contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
-          <DetailsPearls path="/pearls" />
+          <DetailsPediatricPearls path="/pearls" />
           <AdviceFullStory path="/advice/fullstory" fullStoryID={fullStoryID} />
           <PediatricsPanels path="/advice/pediatrics" />
           <EaaseIntro path="/advice/eaase" advice={advice} />

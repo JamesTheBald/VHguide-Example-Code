@@ -11,7 +11,7 @@ const PediatricsPanels = () => {
   false && log && log2 && console.log();
   log && console.log("PediatricsPanels.js pediatricsContent=", pediatricsContent);
 
-  if (locn.branch!==3) navigate("/details/overview");
+  if (locn.branch !== 3) navigate("/details/overview");
 
   return (
     <div className="flex flex-col">
@@ -20,7 +20,6 @@ const PediatricsPanels = () => {
       </div>
 
       {pediatricsContent.map((currPanel, panelNum) => {
-        log && console.log("PediatricsPanel.js panel#", panelNum, "is", currPanel);
         return (
           <div key={panelNum}>
             <QuoteGroupsPediatrics panelContent={currPanel.content} />

@@ -221,9 +221,9 @@ export const branch = [
   },
 
   {
-    branchName: "Pediatric Vaccine Hesitancies",
-    branchNameShort: "Pediatric Vaccine Hesitancies",
-    branchNameShortest: "Pediatric Hesitancies",
+    branchName: "Pediatric vaccine hesitancies",
+    branchNameShort: "Pediatric vaccine hesitancies",
+    branchNameShortest: "Pediatric hesitancies",
     linkToDetails: true,
     topic: [
       {

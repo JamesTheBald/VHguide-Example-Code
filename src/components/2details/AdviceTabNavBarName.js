@@ -51,8 +51,8 @@ const AdviceTabNavBarName = props => {
   const subName = adviceTabSubNames[currTab];
 
   const flexBoxClass = "pr-6 mxs:pr-12 sm:pr-14 md:pr-10  flex flex-col";
-  const tabNameBaseClass = "mt-5  text-16 mxs:text-18 sm:text-20 md:text-25 tracking-0.5";
-  const subNameClass = "hidden sm:block  text-16 tracking-0.3";
+  const tabNameBaseClass = "mt-5  text-16 mxs:text-18 sm:text-20 md:text-25 tracking-0.5  text-left";
+  const subNameClass = "hidden sm:block  text-16 tracking-0.3  text-left";
 
   return (
     <button className="relative" onClick={() => changeTab(currTab)}>

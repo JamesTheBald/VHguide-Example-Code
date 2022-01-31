@@ -12,17 +12,18 @@ import { VscClose } from "react-icons/vsc";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, log } = useMyContext();
+  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log } =
+    useMyContext();
 
   const dropDownRef = useRef();
   const [showDropDown, setShowDropDown] = useState(false);
 
   useOnClickOutside(dropDownRef, () => {
-    // log && console.log("useOnClickOutside fired but doing nothing");
     log && console.log("useOnClickOutside fired - setting showDropDown=false");
     setShowDropDown(false);
   });
 
+  // For main (wide) navbar selections
   const onClickGo = (event, destn) => {
     event.stopPropagation();
     log && console.log("onClickGo() runs. Navigating to destn, closing dropdown & contact form");
@@ -33,9 +34,10 @@ const NavBar = () => {
     navigate(destn);
     setShowDropDown(false);
     setShowContactForm(false);
+    setFixedBackdrop(false);
   };
 
-  // For pull-down menu selections only
+  // For pull-down menu (narrow screen) selections only
   const onClickToBranch = (evnt, branchNum) => {
     setLocn({ branch: branchNum, topic: 0, subtopic: 0, showSubtopic: false });
     setNoneSelected(false);
@@ -49,6 +51,7 @@ const NavBar = () => {
     }
     setShowDropDown(false);
     setShowContactForm(false);
+    setFixedBackdrop(false);
   };
 
   const onClickHamburger = (event, wantOpen) => {

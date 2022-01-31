@@ -5,7 +5,7 @@ import { useMyContext } from "../../context/Context";
 import QuoteGroups from "../2details/QuoteGroups";
 
 const PearlsPanels = () => {
-  const { showContactForm, winWidth, log, log2 } = useMyContext();
+  const { fixedBackdrop, winWidth, log, log2 } = useMyContext();
 
   false && log && log2 && console.log();
   log2 && console.log("PearlsPanel.js pearlsContent=", pearlsContent);
@@ -14,7 +14,7 @@ const PearlsPanels = () => {
   let columnStyle = { columnCount: 1, columnGap: winWidth < 1600 ? 50 : 60 };
 
   return (
-    <div className={showContactForm ? "fixed" : ""}>
+    <div className={fixedBackdrop ? "fixed" : ""}>
       <div className="stdMargins flex flex-col">
         <h1 className="aboutEtcTopGap  titleFont titleMediumPlus z-30">
           Clinical Pearls

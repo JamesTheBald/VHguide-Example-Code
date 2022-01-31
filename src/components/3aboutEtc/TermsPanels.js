@@ -10,7 +10,7 @@ import DivLine from "../DivLine";
 
 const TermsPanels = props => {
   const { pageTitle } = props;
-  const { showContactForm, winWidth, log, log2 } = useMyContext();
+  const { fixedBackdrop, winWidth, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   log2 && console.log("TermsPanels.js termsContent=", termsContent);
@@ -47,7 +47,7 @@ const TermsPanels = props => {
   };
 
   return (
-    <div className={showContactForm ? "fixed" : ""}>
+    <div className={`${fixedBackdrop ? "fixed" : ""} w-full`}>
       <div className="mb-20  stdMargins  flex flex-col">
         <h1 className="aboutEtcTopGap  titleFont titleMediumPlus z-30">{pageTitle}</h1>
 

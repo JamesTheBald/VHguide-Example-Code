@@ -39,4 +39,27 @@ export const landingBioContent = [
       </>
     ),
   },
+
+  {
+    name: "Elise Martinoski",
+    image: "Elise Photo - cropped, 1000px.jpg",
+    info: (
+      <>
+        Elise Martinoski is a freelance Information Designer. She has a background working with non-profits, start-ups,
+        and local organizations to transform their visions into brand identities and websites.
+      </>
+    ),
+  },
+
+  {
+    name: "James Murphy",
+    image: "James smiling - square, 1000px.jpg",
+    info: (
+      <>
+        James Murphy, M.Eng. M.Sc. is a full-stack web developer who uses React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He has a background in mechanical and chemical engineering and sustainability.
+      </>
+    ),
+  },
+
+  
 ];

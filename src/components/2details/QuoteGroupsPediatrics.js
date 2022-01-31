@@ -1,5 +1,5 @@
 import React from "react";
-import useCollapse from "react-collapsed";
+import Collapsible from "react-collapsible";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -8,13 +8,9 @@ import { useMyContext } from "../../context/Context";
 import DivLine from "../DivLine";
 import QuoteBoxes from "./QuoteBoxes";
 
-const QuoteGroups = props => {
+const QuoteGroupsPediatrics = props => {
   const { panelContent } = props;
-  const { winWidth, setFullStoryID, log, log2 } = useMyContext();
-
-  // const path = typeof window !== "undefined" ? window.location.pathname : "";
-  // const onDetailsPage = false;
-  // const onDetailsPage = path.match(/details/i) && !path.match(/pediatrics/i) ? true : false;
+  const { winWidth, setFullStoryID, pedQuoteGroupInitOpen, log, log2 } = useMyContext();
 
   const columnNum = winWidth < 950 ? 1 : winWidth < 1600 ? 2 : 3;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
@@ -22,30 +18,35 @@ const QuoteGroups = props => {
 
   false && console.log(log, log2);
   log2 && console.log("QuoteGroupsPediatrics.js panelContent=", panelContent);
+  log && console.log("QuoteGroupsPediatrics.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
 
-  const CollapsibleQuotes = props => {
-    const { currGroup } = props;
-
-    // const [isExpanded, setExpanded] = React.useState(true);
-    const [isExpanded, setExpanded] = React.useState(false);
-    const { getToggleProps, getCollapseProps } = useCollapse({ isExpanded });
-
+  const TriggerComponent = currGroup => {
+    if (!currGroup.subheading) return <></>;
     return (
-      <div className="flex flex-col">
-        {currGroup.subheading && (
-          <>
-            <button
-              className="w-full flex justify-between"
-              {...getToggleProps({ onClick: () => setExpanded(x => !x) })}
-            >
-              <div className="text-left subHeadingFont">{currGroup.subheading}</div>
-              {isExpanded ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
-            </button>
-            <DivLine className="mb-8 mxs:mb-10 sm:mb-12" />
-          </>
-        )}
+      <>
+        <button
+          className="w-full flex justify-between  triggerClassName"
+          onClick={() => pedQuoteGroupInitOpen.current.fill(false)}
+        >
+          <div className="text-left subHeadingFont">{currGroup.subheading}</div>
+          <IoIosArrowDown className="CustomTriggerCSS hideWhenClosed" size={arrowSize} />
+          <IoIosArrowForward className="CustomTriggerCSS hideWhenOpen" size={arrowSize} />
+        </button>
+        <DivLine className="mb-8 mxs:mb-10 sm:mb-12" />
+      </>
+    );
+  };
 
-        <div {...getCollapseProps()}>
+  return panelContent.map((currGroup, groupNum) => {
+    return (
+      <Collapsible
+        key={groupNum}
+        trigger={TriggerComponent(currGroup)}
+        triggerClassName="CustomTriggerCSS--closed"
+        triggerOpenedClassName="CustomTriggerCSS--open"
+        open={pedQuoteGroupInitOpen.current[groupNum]}
+      >
+        <div className="flex flex-col">
           <div className="subSubHeadingFont mb-3 mxs:mb-5">What Clinicians Are Hearing</div>
           <div className="mb-2 mxs:mb-3 sm:mb-12" style={columnStyle}>
             <QuoteBoxes quoteArray={currGroup.cliniciansHearing} setFullStoryID={setFullStoryID} />
@@ -58,18 +59,9 @@ const QuoteGroups = props => {
 
           <DivLine className="mb-8 mxs:mb-10 sm:mb-12" />
         </div>
-      </div>
-    );
-  };
-
-  return panelContent.map((currGroup, groupNum) => {
-    return (
-      <div key={groupNum}>
-        {/* CollapsibleQuotes has to be its own component so hooks can be called within it */}
-        <CollapsibleQuotes currGroup={currGroup} />
-      </div>
+      </Collapsible>
     );
   });
 };
 
-export default QuoteGroups;
+export default QuoteGroupsPediatrics;

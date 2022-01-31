@@ -1,0 +1,14 @@
+
+.slideIn {
+  animation-name: slideFromBottom;
+  animation-delay: 45s;
+  animation-fill-mode: forward;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes slideFromBottom {
+  0%   {transform: translate(0px, 220px);}
+  100% {transform: translate(0px, 0px);}
+}
