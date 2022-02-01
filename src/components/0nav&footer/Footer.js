@@ -50,25 +50,8 @@ const Footer = () => {
           style={{ height: 70 }}
           aria-hidden="true"
         >
-          <div className="flex flex-wrap">
-            <div className="flex items-center">
-              <RiCopyrightLine size={winWidth < 510 ? "10" : "12"} />
-              <div className="pl-1 mxs:pt-0.5 ">2021 Vaccine Hesitancy Guide</div>
-            </div>
-
-            <Link
-              to="/terms"
-              className="mx-6 mxs:mx-12  mxs:pt-0.5  underline cursor-pointer"
-              // className="ml-6 mxs:ml-10 sm:ml-12  pt-0.5  underline cursor-pointer"
-              onClick={() => {
-                scroll.scrollToTop();
-                setShowContactForm(false);
-              }}
-            >
-              Terms &amp; Notices
-            </Link>
-
-            <div className="pt-1.5 mxs:pt-0.5 mr-16  flex  text-yellow-dark">
+          <div className="flex flex-wrap flex-row-reverse justify-end  gap-y-1.5 mxs:gap-y-1">
+            <div className="mr-12  flex  text-yellow-dark">
               <div>Thoughts on the site?</div>
               <a
                 className={`ml-1 underline cursor-pointer`}
@@ -78,6 +61,25 @@ const Footer = () => {
               >
                 <div className="">Take our survey!</div>
               </a>
+            </div>
+
+            <div className="flex mr-12">
+              <div className="flex items-center">
+                <RiCopyrightLine size={winWidth < 510 ? "10" : "12"} />
+                <div className="pl-1">2021 Vaccine Hesitancy Guide</div>
+              </div>
+
+              <Link
+                to="/terms"
+                className="ml-6 mxs:ml-12  underline cursor-pointer"
+                // className="ml-6 mxs:ml-10 sm:ml-12  pt-0.5  underline cursor-pointer"
+                onClick={() => {
+                  scroll.scrollToTop();
+                  setShowContactForm(false);
+                }}
+              >
+                Terms &amp; Notices
+              </Link>
             </div>
           </div>
 

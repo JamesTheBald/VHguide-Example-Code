@@ -12,7 +12,9 @@ const HesitancyTypesDropDown = props => {
   const [showHesDropDown, setShowHesDropDown] = useState(false);
 
   const destn = "/explore";
+
   const onClickTitle = (event, destn) => {
+    log && console.log("HesitancyTypesDropDown.js onClickTitle runs")
     event.stopPropagation();
     winWidth < 1024
       ? setShowHesDropDown(() => {
