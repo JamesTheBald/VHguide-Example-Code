@@ -11,8 +11,7 @@ import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsE
 
 const Home = props => {
   const { data } = props;
-  const { setWinWidth, setWinHeight, setNoneSelected, fixedBackdrop, queryData, log } =
-    useMyContext();
+  const { setWinWidth, setWinHeight, setNoneSelected, queryData, log } = useMyContext();
   queryData.current = data;
 
   log && console.log("index.js runs.");
@@ -54,7 +53,6 @@ const Home = props => {
   return (
     <>
       <main className="bg-white text-blue-black overflow-x-hidden">
-      {/* <main className={`${fixedBackdrop ? "fixed" : ""} bg-white text-blue-black overflow-x-hidden`}> */}
         <Home1TopPage BrowseButton={BrowseButton} />
         <Home2HesTypes BrowseButton={BrowseButton} />
         <Home3WhoWeAre />

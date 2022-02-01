@@ -16,13 +16,6 @@ import { useMyContext } from "../../context/Context";
 const NavFooterLayout = ({ children }) => {
   const { fixedBackdrop } = useMyContext();
 
-  // const [showSlideIn, setShowSlideIn] = useState(true);
-
-  // useEffect(() => {
-  //     const timer = setTimeout(() => setShowSlideIn(true), 2000);
-  //     return () => clearTimeout(timer);
-  // }, [showSlideIn]);
-
   return (
     <>
       <Seo />
@@ -38,8 +31,6 @@ const NavFooterLayout = ({ children }) => {
         </div>
         <Footer />
         <SurveySlideIn />
-        {/* <Footer setShowSlideIn={setShowSlideIn} /> */}
-        {/* <SurveySlideIn showSlideIn={showSlideIn} setShowSlideIn={setShowSlideIn} /> */}
       </div>
     </>
   );

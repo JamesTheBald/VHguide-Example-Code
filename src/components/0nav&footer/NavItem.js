@@ -3,10 +3,10 @@ import { useMyContext } from "../../context/Context";
 
 const NavItem = props => {
   const { classNom, bgSelec, selecOnHover, children, destn } = props;
-  const { log } = useMyContext();
+  const { log2 } = useMyContext();
 
   const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  log && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
+  log2 && console.log("NavItem.js destn=", destn, ", pathname=", pathname);
 
   let selected = false;
   if (destn === "/" && pathname === "/") selected = true;
@@ -15,7 +15,7 @@ const NavItem = props => {
   if (destn === "/pearls" && pathname === "/pearls") selected = true;
   if (destn === "/about" && pathname.includes("about")) selected = true;
 
-  log && console.log("NavItem.js so selected=", selected);
+  log2 && console.log("NavItem.js so selected=", selected);
 
 
   return (

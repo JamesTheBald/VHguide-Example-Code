@@ -31,7 +31,6 @@ const MyProvider = ({ children }) => {
   }, [winWidth, log2]);
 
   const [showContactForm, setShowContactForm] = useState(false);
-  // const [showSlideIn, setShowSlideIn] = useState(true);
   const [fixedBackdrop, setFixedBackdrop] = useState(false);
 
   const [locn, setLocn] = useState({
@@ -57,7 +56,6 @@ const MyProvider = ({ children }) => {
     marginOuter: marginOuter,
     nomScreenWidth: nomScreenWidth,
     showContactForm: showContactForm,
-    // showSlideIn: showSlideIn,
     fixedBackdrop: fixedBackdrop,
     branch: branch,
     locn: locn,
@@ -67,7 +65,6 @@ const MyProvider = ({ children }) => {
     setWinWidth: setWinWidth,
     setWinHeight: setWinHeight,
     setShowContactForm: setShowContactForm,
-    // setShowSlideIn: setShowSlideIn,
     setFixedBackdrop: setFixedBackdrop,
     setLocn: setLocn,
     setNoneSelected: setNoneSelected,

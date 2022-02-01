@@ -6,7 +6,7 @@ import { VscClose } from "react-icons/vsc";
 import { useMyContext } from "../../context/Context";
 
 const ModalContactForm = () => {
-  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth, log } = useMyContext();
+  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth } = useMyContext();
 
   const formSource =
     "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true";

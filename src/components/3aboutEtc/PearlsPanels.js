@@ -26,7 +26,7 @@ const PearlsPanels = () => {
 
         <div className="mt-8 sm:mt-10  relative z-10">
           {pearlsContent.map((currPanel, panelNum) => {
-            log && console.log("PearlsPanels.js panel#", panelNum, "is", currPanel);
+            log2 && console.log("PearlsPanels.js panel#", panelNum, "is", currPanel);
             return (
               <div key={panelNum}>
                 <div className="panelBaseClass" style={{ columnStyle }}>

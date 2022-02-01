@@ -12,9 +12,10 @@ import { VscClose } from "react-icons/vsc";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log } =
+  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } =
     useMyContext();
 
+  false && console.log(log, log2);
   const dropDownRef = useRef();
   const [showDropDown, setShowDropDown] = useState(false);
 
@@ -67,7 +68,7 @@ const NavBar = () => {
   const padNavBarOnExplorePage =
     winWidth > 1023 && typeof window !== "undefined" && window.location.pathname === "/explore" ? true : false;
 
-  log && console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
+  log2 && console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
 
   const NavBarItemsAndDropDowns = () => {
     return (

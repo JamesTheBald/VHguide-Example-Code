@@ -5,7 +5,7 @@ import Layout from "../components/0nav&footer/NavFooterLayout";
 import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 
 const Explore = () => {
-  const { setWinWidth, setWinHeight, fixedBackdrop, log } = useMyContext();
+  const { setWinWidth, setWinHeight, log } = useMyContext();
 
   log && console.log("Explore.js runs.");
 
@@ -17,7 +17,6 @@ const Explore = () => {
   }, [setWinWidth, setWinHeight]);
 
   return (
-    // <div className={fixedBackdrop ? "fixed" : ""}>
     <main className="stdMargins w-full">
       <div name="spacer to prevent top margin collapse" className="h-18" />
       <h1
