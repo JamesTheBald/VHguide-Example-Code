@@ -12185,6 +12185,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-google-tagmanager@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-plugin-google-tagmanager@npm:4.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    web-vitals: ^1.1.2
+  peerDependencies:
+    gatsby: ^4.0.0-next
+    react: ^16.9.0 || ^17.0.0
+    react-dom: ^16.9.0 || ^17.0.0
+  checksum: 40b51c2819f735ed192cb7d40af148e1733bb9fd40309f363195d854a9f8a8a6a7ceb074d2421384be62dca70dbaa603e311012fa456ad09a37f3ad72e98238e
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-image@npm:^1.7.1":
   version: 1.14.2
   resolution: "gatsby-plugin-image@npm:1.14.2"
@@ -26361,6 +26375,7 @@ __metadata:
     gatsby-plugin-anchor-links: ^1.2.1
     gatsby-plugin-create-client-paths: ^3.13.0
     gatsby-plugin-google-gtag: ^3.14.0
+    gatsby-plugin-google-tagmanager: ^4.6.0
     gatsby-plugin-image: ^1.7.1
     gatsby-plugin-netlify: ^3.13.0
     gatsby-plugin-offline: ^4.7.1
@@ -26592,6 +26607,13 @@ __metadata:
   dependencies:
     defaults: ^1.0.3
   checksum: 814e9d1ddcc9798f7377ffa448a5a3892232b9275ebb30a41b529607691c0491de47cba426e917a4d08ded3ee7e9ba2f3fe32e62ee3cd9c7d3bafb7754bd553c
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "web-vitals@npm:1.1.2"
+  checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
   languageName: node
   linkType: hard
 
