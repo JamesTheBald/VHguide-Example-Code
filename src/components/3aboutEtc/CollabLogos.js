@@ -3,7 +3,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
 import logoContent from "../../content/collabContent";
-// import logoContent from "../../content/logoContent";
 
 const CollabLogos = () => {
   const { queryData, log, log2 } = useMyContext();
@@ -31,12 +30,7 @@ const CollabLogos = () => {
                         className="w-56 mxs:w-48 sm:w-60 md:w-60 lg:w-64"
                       />
                     ) : (
-                      <img
-                        src={item.node.publicURL}
-                        alt={currLogo.alt}
-                        // className="w-60 mxs:w-64 sm:w-64 md:w-66 lg:w-70"
-                        // className="h-22 mxs:h-25 sm:h-28 md:h-30 lg:h-32 mxl:h-35  bg-pink-100"
-                      />
+                      <img src={item.node.publicURL} alt={currLogo.alt} />
                     )}
                   </div>
                 );

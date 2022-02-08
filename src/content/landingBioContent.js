@@ -3,9 +3,10 @@ import React from "react";
 export const landingBioContent = [
   {
     name: "Myles Leslie",
+    letters: "PhD",
+    title: "Principal Investigator",
     // directory for images is set in plugin config in gatsby-config.js
     image: "Leslie-portrait 500px.jpg",
-    // image: "Leslie-portrait-trimmed.jpg",
     info: (
       <>
         Dr. Myles Leslie, PhD is an Associate Professor at the School of Public Policy. He is a qualitative action
@@ -18,6 +19,8 @@ export const landingBioContent = [
 
   {
     name: "Raad Fadaak",
+    letters: "PhD",
+    title: "Project and Content Lead",
     image: "Raad-portrait 500px.jpg",
     info: (
       <>
@@ -30,6 +33,8 @@ export const landingBioContent = [
 
   {
     name: "Nicole Pinto",
+    letters: "MPH",
+    title: "Project and Content Lead",
     image: "Nicole-portrait 500px.jpg",
     info: (
       <>
@@ -42,6 +47,8 @@ export const landingBioContent = [
 
   {
     name: "Elise Martinoski",
+    letters: "B.Comm",
+    title: "Web Design",
     image: "Elise Photo - cropped, 1000px.jpg",
     info: (
       <>
@@ -53,10 +60,12 @@ export const landingBioContent = [
 
   {
     name: "James Murphy",
+    letters: "M.Eng, M.Sc",
+    title: "Web Developer",
     image: "James smiling - square, 1000px.jpg",
     info: (
       <>
-        James Murphy, M.Eng. M.Sc. is a full-stack web developer who uses React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He has a background in mechanical and chemical engineering and sustainability.
+        James Murphy, M.Eng. M.Sc. is a full-stack web developer who is proficient with React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He enjoys learning and a good challenge.
       </>
     ),
   },

@@ -62,14 +62,13 @@ module.exports = {
         duration: 1000,
       },
     },
-
+    
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "homepagePics",
         path: `${__dirname}/src/assets/homepage/`,
       },
-      // __key: "images",
     },
     {
       resolve: "gatsby-source-filesystem",

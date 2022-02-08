@@ -35,7 +35,7 @@ const LandingText = props => {
           <header>
             The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
             types of vaccine hesitancy that primary care clinicians may see. Browse through these types to help identify
-            the sources of your patients’ hesitancy, and find advice and resources on how to address them.
+            the sources of your patients&rsquo; hesitancy, and find advice and resources on how to address them.
           </header>
 
           <div className={`mt-6  ${subtitleFont} font-light italic`}>

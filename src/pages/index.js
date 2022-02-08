@@ -104,29 +104,6 @@ export const query = graphql`
         }
       }
     }
-    pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
-      edges {
-        node {
-          dir
-          relativePath
-          sourceInstanceName
-          publicURL
-        }
-      }
-    }
-    webinarShots: allFile(filter: { sourceInstanceName: { eq: "webinarShots" } }) {
-      edges {
-        node {
-          dir
-          relativePath
-          sourceInstanceName
-          childImageSharp {
-            gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 300)
-          }
-          publicURL
-        }
-      }
-    }
   }
 `;
 
@@ -134,3 +111,28 @@ Home.Layout = Layout;
 // Above Layout assigning follows https://dev.to/milescrighton/keeping-persistent-ui-across-routes-with-gatsby-s-wrappageelement-4o22
 
 export default Home;
+
+
+// pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
+//   edges {
+//     node {
+//       dir
+//       relativePath
+//       sourceInstanceName
+//       publicURL
+//     }
+//   }
+// }
+// webinarShots: allFile(filter: { sourceInstanceName: { eq: "webinarShots" } }) {
+//   edges {
+//     node {
+//       dir
+//       relativePath
+//       sourceInstanceName
+//       childImageSharp {
+//         gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 300)
+//       }
+//       publicURL
+//     }
+//   }
+// }

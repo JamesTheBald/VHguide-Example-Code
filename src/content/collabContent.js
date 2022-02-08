@@ -1,12 +1,12 @@
 const collabContent = [
-  {
-    name: "University of Calgary School of Public Policy",
-    alt: "University of Calgary School of Public Policy",
-    URL: "https://spp.ucalgary.ca/",
-    imageName: "U of C SPP.jpg",
-    scalePercent: 100,
-    offsetPercent: 0,
-  },
+  // {
+  //   name: "University of Calgary School of Public Policy",
+  //   alt: "University of Calgary School of Public Policy",
+  //   URL: "https://spp.ucalgary.ca/",
+  //   imageName: "U of C SPP.jpg",
+  //   scalePercent: 100,
+  //   offsetPercent: 0,
+  // },
 
   {
     name: "Alberta College of Family Physicians", // the name field here is just for our quick reference; it's not used in the code
