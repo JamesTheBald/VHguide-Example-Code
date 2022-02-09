@@ -21,7 +21,7 @@ const SurveySlideInPage1 = props => {
   return (
     <>
       <div className="mt-9 pr-9 axs:pr-10 pb-5">
-        Thank you! Would you like to participate in a short user survey, with a chance to win a $100 gift card? &#42;
+        Thanks for browsing! Would you like to answer a short survey, with a chance to win a $100 gift card? &#42;
       </div>
       <div className="flex justify-between">
         <div className="flex">
@@ -40,12 +40,15 @@ const SurveySlideInPage1 = props => {
           </button>
         </div>
 
-        <button
-          className="mr-6 axs:mt-6  w-36 axs:w-40  text-12 tracking-0.25  underline self-end cursor-pointer"
-          onClick={() => toggleContestTerms()}
-        >
-          &#42;Terms and Conditions apply
-        </button>
+        <div className="flex flex-col  text-12 tracking-0.25  mr-6 axs:mt-5">
+          {/* <div>(Survey data &#8594; our future funding)</div> */}
+          <button
+            className="w-36 axs:w-40  text-12 tracking-0.25  underline self-end cursor-pointer"
+            onClick={() => toggleContestTerms()}
+          >
+            &#42;Terms and Conditions apply
+          </button>
+        </div>
         {showContestTerms && (
           <ContestTerms showContestTerms={showContestTerms} setShowContestTerms={setShowContestTerms} />
         )}

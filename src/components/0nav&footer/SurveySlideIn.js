@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-import { IoClose, IoStar, IoStarOutline } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+// import { IoClose, IoStar, IoStarOutline } from "react-icons/io5";
 
 import "../../styles/slideInAnimation.css";
-import SurveySlideInPage0 from "./SurveySlideInPage0";
+// import SurveySlideInPage0 from "./SurveySlideInPage0";
 import SurveySlideInPage1 from "./SurveySlideInPage1";
 import { useMyContext } from "../../context/Context";
 // import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const SurveySlideIn = () => {
   // const { showSlideIn, setShowSlideIn } = props;
-  const { winWidth, log } = useMyContext();
+  const { winWidth, log, log2 } = useMyContext();
+  false && console.log(log, log2);
 
   const [showSlideIn, setShowSlideIn] = useState(true);
-  const [pageNum, setPageNum] = useState(0);
-  const [tempStars, setTempStars] = useState(0);
-  const [finalStars, setFinalStars] = useState(0);
-  const [showSubmitTip, setShowSubmitTip] = useState(false);
+  // const [pageNum, setPageNum] = useState(0);
+  // const [tempStars, setTempStars] = useState(0);
+  // const [finalStars, setFinalStars] = useState(0);
+  // const [showSubmitTip, setShowSubmitTip] = useState(false);
   const [showContestTerms, setShowContestTerms] = useState(false);
 
   const onClickX = event => {
@@ -38,21 +40,21 @@ const SurveySlideIn = () => {
   const buttonLight = buttonBase + " text-blue-dark bg-gray-light";
   const buttonDark = buttonBase + " text-gray-light bg-blue-black";
 
-  const ActiveStar = ({ starNum }) => {
-    log && console.log("SurveySlideIn.js tempStars=", tempStars, " and finalStars=", finalStars);
+  // const ActiveStar = ({ starNum }) => {
+  //   log && console.log("SurveySlideIn.js tempStars=", tempStars, " and finalStars=", finalStars);
 
-    return (
-      <button
-        className="pr-2"
-        onMouseEnter={() => setTempStars(starNum)}
-        onMouseLeave={() => setTempStars(0)}
-        onClick={() => setFinalStars(starNum)}
-      >
-        {tempStars < starNum && finalStars < starNum && <IoStarOutline className="" size={30} />}
-        {(tempStars >= starNum || finalStars >= starNum) && <IoStar className="" size={30} />}
-      </button>
-    );
-  };
+  //   return (
+  //     <button
+  //       className="pr-2"
+  //       onMouseEnter={() => setTempStars(starNum)}
+  //       onMouseLeave={() => setTempStars(0)}
+  //       onClick={() => setFinalStars(starNum)}
+  //     >
+  //       {tempStars < starNum && finalStars < starNum && <IoStarOutline className="" size={30} />}
+  //       {(tempStars >= starNum || finalStars >= starNum) && <IoStar className="" size={30} />}
+  //     </button>
+  //   );
+  // };
 
   if (showSlideIn)
     return (
@@ -71,7 +73,7 @@ const SurveySlideIn = () => {
           <IoClose size={25} />
         </button>
 
-        {pageNum === 0 && (
+        {/* {pageNum === 0 && (
           <SurveySlideInPage0
             ActiveStar={ActiveStar}
             finalStars={finalStars}
@@ -80,8 +82,8 @@ const SurveySlideIn = () => {
             showSubmitTip={showSubmitTip}
             setShowSubmitTip={setShowSubmitTip}
           />
-        )}
-        {pageNum === 1 && (
+        )} */}
+        {/* {pageNum === 1 && ( */}
           <SurveySlideInPage1
             showContestTerms={showContestTerms}
             setShowContestTerms={setShowContestTerms}
@@ -89,7 +91,7 @@ const SurveySlideIn = () => {
             buttonLight={buttonLight}
             buttonDark={buttonDark}
           />
-        )}
+        {/* )} */}
       </div>
     );
   else return <></>;
