@@ -1,13 +1,12 @@
 import React from "react";
-import { navigate } from "gatsby";
-
 import { animateScroll } from "react-scroll";
+
 import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
 
 const AdviceEaase = props => {
   const { advice } = props;
-  const { locn, log, log2 } = useMyContext();
+  const { log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
   log2 && console.log("AdviceEaase.js runs.");
@@ -16,8 +15,6 @@ const AdviceEaase = props => {
   const titleWrapperClass = "-mb-0.5  text-blue-main tracking-0.5 leading-tight";
   const dropCapClass = "font-serif text-35 mxs:text-45 sm:text-55";
   const restOfTitle = "font-sans text-20 sm:text-25";
-
-  if (!(locn.branch === 0 || locn.branch === 1 || locn.branch === 2)) navigate("/details/overview");
 
   if (typeof window !== `undefined`) {
     animateScroll.scrollToTop({ duration: 0 }); // time in ms
@@ -28,7 +25,7 @@ const AdviceEaase = props => {
       <div className="h-4 mb-12  border-gray-medium border-solid border-b-3"> </div>
 
       <div
-        className="md:px-4 lg:px-7  pb-4  grid grid-cols-1 lg:grid-cols-2 grid-flow-row
+        className="md:pl-4 lg:pl-7  pb-4  grid grid-cols-1 lg:grid-cols-2 grid-flow-row
                    gap-x-15 gap-y-6 mxs:gap-y-8 sm:gap-y-10  "
       >
         {/* The 3rd block below is irregular, so it's not worth using a component or .map */}

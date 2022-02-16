@@ -14,8 +14,6 @@ const EaaseTopHeading = (props) => {
     if (winWidth < 720 || tabSelected === "ask") {
       return (
         <>
-          {/* <div className="mb-8 mxs:mb-10 sm:hidden"> */}
-          {/* <div className="mb-12 mxs:mb-24 sm:hidden"> */}
           <span className="emphFont">{bigText}</span>
           <span className="ml-1.5 plusFont">{smText}</span>
           {tabSelected !== "ask" && <div className="h-8 mxs:h-10" />}
@@ -33,7 +31,7 @@ const EaaseTopHeading = (props) => {
       ) : tabSelected === "ask" ? (
         <>
           <QuotesTitle bigText={"Ask"} smText={"for permission to share information"} />
-          {askAdviceExists ? <div className="h-10 mxs:h-12" /> : <div className="h-3 mxs:h-3" />}
+          {askAdviceExists ? <div className="h-5 axs:h-6 mxs:h-8" /> : <div className="h-3 mxs:h-3" />}
         </>
       ) : tabSelected === "evoke" ? (
         <QuotesTitle bigText={"Evoke"} smText={"and evaluate options"} />

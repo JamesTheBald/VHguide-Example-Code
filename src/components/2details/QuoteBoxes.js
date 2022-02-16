@@ -19,76 +19,80 @@ const QuoteBoxes = props => {
     const css =
       quote.featured === true
         ? "bg-blue-main text-gray-light"
-        : typeof window !== "undefined" && window.location.pathname.match(/pearls/i)
-        ? "bg-gray-light text-blue-black  border-3 border-solid border-gray-neutral" // not featured, on pearls
-        : "bg-gray-light text-blue-black  border-3 border-solid border-blue-black"; // not featured, not on pearls
+        : "text-blue-black  border-3 border-solid border-gray-neutral";
     return css;
   };
 
+  let style = "";
   const quotePaddingEtc = quote => {
-    const style =
-      winWidth < 510
-        ? quote.featured === true
-          ? { padding: "40px 36px 36px 56px" } // padding for featured box (narrow screen)
-          : quote.image === ""
-          ? { padding: "36px 30px 28px 52px" } // padding for plain quote
-          : { padding: "30px 25px 28px 50px", marginLeft: 42 } // padding for quote with icon
-        : quote.featured === true
-        ? { padding: "44px 44px 40px 72px" }
-        : quote.image === ""
-        ? { padding: "36px 30px 28px 63px" } // padding for plain quote
-        : { padding: "30px 34px 28px 65px", marginLeft: 42 }; // padding for quote with icon
+    if (quote.label) {
+      style = winWidth < 510 ? { padding: "34px 28px 26px 34px" } : { padding: "32px 32px 28px 42px" };
+    } else if (quote.image) {
+      style = winWidth < 510 ? { padding: "30px 25px 26px 50px" } : { padding: "32px 30px 28px 65px" };
+      style.marginLeft = 42;
+    } else if (quote.featured) {
+      style = winWidth < 510 ? { padding: "34px 36px 36px 56px" } : { padding: "44px 44px 38px 72px" };
+    } else {
+      // Plain quote
+      style = winWidth < 510 ? { padding: "30px 28px 24px 52px" } : { padding: "32px 32px 28px 63px" };
+    }
+    log2 && console.log("QuoteBoxes.js quotepaddingEtc style=", style);
     return style;
   };
 
   const iconDistFromTop = quote => {
     const quoteLen = reactElementToJSXString(quote.text).length;
-    return quoteLen < 100 ? -20 : quoteLen < 140 ? -10 : 0;
+    return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : 50;
   };
-
-  const iconLeftPosn = winWidth < 510 ? -93 : -110;
 
   return (
     <>
       {quoteArray.map((quote, idx) => {
-        // log && console.log("QuoteBoxes.js quote length=", reactElementToJSXString(quote.text).length);
         return (
           <div key={idx}>
             {reactElementToJSXString(quote.text).length > 20 && (
               <div
-                className="mb-2 mxs:mb-3 sm:mb-12  dontBreak"
-                name="Quote Box. Outer box to prevent column breaking inside"
+                name="Outer box to prevent column breaking inside"
+                className="pt-4 flex flex-col justify-start  dontBreak relative"
                 key={idx}
               >
+                {quote.label && (
+                  <div className="absolute left-0 top-0 px-4 pt-1.5 pb-0.5 baseFont font-bold bg-gray-neutral rounded-full  z-50">
+                    {quote.label}
+                  </div>
+                )}
+
+                {quote.image && (
+                  <div className="absolute z-50" style={{ top: iconDistFromTop(quote) }}>
+                    {pplIcons.map((item, index) => {
+                      return (
+                        item.node.relativePath === quote.image && (
+                          <img
+                            key={index}
+                            src={item.node.publicURL}
+                            alt="Icon"
+                            className="w-20 mxs:w-22 h-20 mxs:h-22"
+                          />
+                        )
+                      );
+                    })}
+                  </div>
+                )}
+
                 <div
-                  className={`mb-8 mxs:mb-10 sm:mb-12  flex flex-col rounded-3xl relative  baseFont ${quoteColorsEtAl(
-                    quote
-                  )}`}
+                  name="main visible quote box"
+                  className={`mb-8 mxs:mb-10  flex flex-col rounded-3xl relative
+                              ${quote.featured ? "quoteBoxFeatured" : "baseFontWide"}
+                              ${quoteColorsEtAl(quote)}`}
                   style={quotePaddingEtc(quote)}
                 >
-                  <div className="relative">
-                    {quote.image === "" ? (
-                      <div className={`absolute -left-9 -top-1.5 text-30`}>
+                  <div name="inner text box w decorations" className="relative">
+                    {!quote.label && !quote.image && (
+                      <div className="absolute -left-9 -top-1.5 text-30">
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
-                    ) : (
-                      <div className="absolute" style={{ left: iconLeftPosn, top: iconDistFromTop(quote) }}>
-                        {pplIcons.map((item, index) => {
-                          return (
-                            item.node.relativePath === quote.image && (
-                              <img
-                                key={index}
-                                src={item.node.publicURL}
-                                alt="Icon"
-                                className="w-20 mxs:w-22 h-20 mxs:h-22"
-                              />
-                            )
-                          );
-                        })}
-                      </div>
                     )}
-                    {/* The quote itself */}
-                    {quote.text}
+                    {quote.text} {/* The quote itself */}
                   </div>
 
                   {quote.fullStoryID && (

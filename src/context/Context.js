@@ -39,10 +39,12 @@ const MyProvider = ({ children }) => {
     subtopic: 0,
     showSubtopic: false,
   });
+  // const [contentID, setContentID] = useState();
   const [fullStoryID, setFullStoryID] = useState("");
 
+  // pedQuoteGroupInitOpen array allows the appropriate quote group on Pediatrics' Details-Advice page to be expanded upon arrival on the page, after clicking on that topic on <PediatricsOverviewTheySay />
   const pedQuoteGroupInitOpen = useRef(Array(10).fill(false));
-  log && console.log("Context.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
+  log2 && console.log("Context.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
 
   const [noneSelected, setNoneSelected] = useState(true);
   const queryData = useRef({});
@@ -59,6 +61,7 @@ const MyProvider = ({ children }) => {
     fixedBackdrop: fixedBackdrop,
     branch: branch,
     locn: locn,
+    // contentID: contentID,
     fullStoryID: fullStoryID,
     noneSelected: noneSelected,
     pedQuoteGroupInitOpen: pedQuoteGroupInitOpen,
@@ -67,6 +70,7 @@ const MyProvider = ({ children }) => {
     setShowContactForm: setShowContactForm,
     setFixedBackdrop: setFixedBackdrop,
     setLocn: setLocn,
+    // setContentID: setContentID,
     setNoneSelected: setNoneSelected,
     setFullStoryID: setFullStoryID,
     queryData: queryData,

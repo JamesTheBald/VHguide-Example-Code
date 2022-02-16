@@ -18,13 +18,13 @@ const PrivacyPolicy = () => {
         We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the
         collection and use of information in accordance with this policy.
       </div>
-      <div className="subSubHeadingFont pt-10">Information Collection And Use</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Information Collection And Use</div>
       <div>
         While using our Site, we may ask you to provide us with certain personally identifiable information that can be
         used to contact or identify you. Personally identifiable information may include, but is not limited to your
         name and contact information, including your email address (&quot;Personal Information&quot;).
       </div>
-      <div className="subSubHeadingFont pt-10">Log Data</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Log Data</div>
       <div>
         Like many site operators, we collect information that your browser sends whenever you visit our Site ( &quot;Log
         Data&quot;).
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
         browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time
         spent on those pages and other statistics.
       </div>
-      <div className="subSubHeadingFont pt-10">How we collect your information</div>
+      <div className="subSubHeadingFont pb-3 pt-10">How we collect your information</div>
       <div>
         We collect Personal Information when a user signs up to our website and/or fills in a form to receive updates or
         contact us. We collect Log Data when your browser visits our site, including on mobile devices.
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
       {/* <div className="pb-1.5" style={{ breakInside: "avoid" }}> */}
       <div className="pb-1.5">
         {/* <div className="pb-1.5 dontBreak"> */}
-        <div className="subSubHeadingFont pt-10">Why we collect your information</div>
+        <div className="subSubHeadingFont pb-3 pt-10">Why we collect your information</div>
         <div>We collect this information for the following purposes:</div>
         <div className="pt-5 ml-4">&bull; To provide and operate the services on our website;</div>
         <div className="pt-3 ml-4">
@@ -57,11 +57,11 @@ const PrivacyPolicy = () => {
         <div className="pt-3 ml-4">&bull; To comply with any applicable laws and regulations.</div>
       </div>
 
-      <div className="subSubHeadingFont pt-10">Cookies</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Cookies</div>
       <div>
         Our site does not use cookies to track your browsing behaviour or use of the guide. <br />
       </div>
-      <div className="subSubHeadingFont pt-10">How we use, share, and disclose your information</div>
+      <div className="subSubHeadingFont pb-3 pt-10">How we use, share, and disclose your information</div>
       <div>
         Our website is hosted on the Netlify platform. Netlify provides us with the online platform that allows us to
         deliver the guide to you. No personal information will be stored on Netlify’s servers. <br />
@@ -70,8 +70,8 @@ const PrivacyPolicy = () => {
         Users may voluntarily submit Personal Information when prompted in Google Forms. This information is stored on
         secured servers behind a firewall and will not be shared with any additional third parties. <br />
       </div>
-      {/* <div className="subSubHeadingFont pt-10 mb-6" style={{ breakInside: "avoid" }}> */}
-      <div className="subSubHeadingFont pt-10 mb-6  dontBreak">Withdrawal of consent and/or personal information</div>
+      {/* <div className="subSubHeadingFont pb-3 pt-10 mb-6" style={{ breakInside: "avoid" }}> */}
+      <div className="subSubHeadingFont pb-3 pt-10 mb-6  dontBreak">Withdrawal of consent and/or personal information</div>
       <div>
         If you do not want us to retain your Personal Information after submission, please
         <button className="pl-1.5 orangeLink" onClick={() => setShowContactForm(true)}>
@@ -80,13 +80,13 @@ const PrivacyPolicy = () => {
         . Additionally, if you would like to access, correct, amend, or delete any personal information we have about
         you, please contact us to do so.
       </div>
-      <div className="subSubHeadingFont pt-10">Security</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Security</div>
       <div>
         The security of your Personal Information is important to us, but remember that no method of transmission over
         the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable
         means to protect your Personal Information, we cannot guarantee its absolute security.
       </div>
-      <div className="subSubHeadingFont pt-10">Changes To This Privacy Policy</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Changes To This Privacy Policy</div>
       <div>
         This Privacy Policy is effective as of 17 May 2021 and will remain in effect except with respect to any changes
         in its provisions in the future, which will be in effect immediately after being posted on this page.
@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
         page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the
         modified Privacy Policy.
       </div>
-      <div className="subSubHeadingFont pt-10">Contact Us</div>
+      <div className="subSubHeadingFont pb-3 pt-10">Contact Us</div>
       <span>
         <span className="pr-1.5">If you have any questions about this Privacy Policy, please</span>
         <button className="orangeLink" onClick={() => setShowContactForm(true)}>

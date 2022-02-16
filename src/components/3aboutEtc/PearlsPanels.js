@@ -15,7 +15,7 @@ const PearlsPanels = () => {
 
   return (
     <div className={fixedBackdrop ? "fixed" : ""}>
-      <div className="stdMargins flex flex-col">
+      <div className="panelMargins flex flex-col">
         <h1 className="aboutEtcTopGap  titleFont titleMediumPlus z-30">
           Clinical Pearls
         </h1>

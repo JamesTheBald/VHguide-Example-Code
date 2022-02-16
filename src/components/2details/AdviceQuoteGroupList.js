@@ -27,11 +27,12 @@ const AdviceQuoteGroupList = props => {
 
   return (
     <>
-      <div className="mxs:mt-6">
+      <div className="mt-10 axs:mt-14">
         <EaaseTopHeading tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
       </div>
 
       <QuoteGroups panelContent={contentArray} />
+      
       {tabSelected === "ask" && (
         <>
           {askAdviceExists && <div style={{ height: 30 }} />}
@@ -39,7 +40,7 @@ const AdviceQuoteGroupList = props => {
           <span className="plusFont">then</span>
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>
-          <div className="h-10 mxs:h-12" />
+          <div className="h-5 axs:h-6 mxs:h-8" />
           <QuoteGroups panelContent={advice.share.content} />
         </>
       )}

@@ -8,14 +8,14 @@ import TabBarOAR from "../../components/2details/TabBarOAR";
 import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
 
 const DetailsLayout = props => {
-  const { hesitTypeName, related, path } = props;
+  const { hesTypeName, related, path } = props;
   const { locn, setLocn, fixedBackdrop, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   log2 && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
   log && console.log("DetailsLayout.js path=", path);
-  log2 && console.log("DetailsLayout.js hesitTypeName=", hesitTypeName);
+  log2 && console.log("DetailsLayout.js hesTypeName=", hesTypeName);
 
   const onClickRelated = contentID => {
     const branchNum = getBranchNum(contentID);
@@ -45,36 +45,37 @@ const DetailsLayout = props => {
   const tabHeight = 50;
   const relatedPill = "px-3 pt-1 mr-5 mb-3  vsmFont italic orangeLink  linkPill";
 
-  const panelPadding = "p-7 mxs:p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
+  const panelPadding = "p-5 axs:p-7 mxs:p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
 
   return (
     <div className={fixedBackdrop ? "fixed" : ""}>
-      <div className="text-blue-main stdMargins">
+      <div className="text-blue-main panelMargins">
         <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
           &#60; back
         </button>
 
-        <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+        {locn.branch < 4 ? (
+          <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+        ) : (
+          <div className="h-6" />
+        )}
 
-        <h1 className="mt-0.5  titleFont titleMediumPlus">
-          {hesitTypeName}
-          {/* {path.match(/pediatrics/i) ? "Pediatric Vaccine Hesitancies" : hesitTypeName} */}
-        </h1>
+        <h1 className="mt-0.5 mb-1  titleFont titleMediumPlus">{hesTypeName}</h1>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
             <TabBarOAR />
           </div>
 
-          <div // Panel
+          <div // Main Details Panel
             className={`${panelPadding} bg-gray-light border border-solid border-gray-lightish rounded-3xl shadowGray  relative z-30`}
             style={{ top: tabHeight - 65 }}
           >
-            {props.children}
+            {props.children} {/* Panel Content */}
           </div>
 
-          {/* { path.match(/pediatrics/i) ? ( */}
-          { locn.branch===3 ? (
+          {/* Items below main panel */}
+          {locn.branch === 3 ? (
             <div className="mt-2 md:mt-4  mb-8  sm:text-right  italic smThenBaseFont text-blue-pale">
               *The pediatric hesitancy type is evolving and will receive regular updates.
             </div>

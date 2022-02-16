@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { useMyContext } from "../../context/Context";
-import { landingBioContent } from "../../content/landingBioContent";
+import { biosContent } from "../../content/biosContent";
 
 const Home3WhoWeAre = () => {
   const { queryData, log, log2 } = useMyContext();
@@ -36,7 +36,7 @@ const Home3WhoWeAre = () => {
         <div className="mt-10 sm:mt-16 lg:mt-20  w-full  grid lg:grid-cols-3  grid-flow-row  gap-x-10 lg:gap-x-16">
           {/* <div className="mt-10 sm:mt-16 lg:mt-20  w-full flex flex-col sm:flex-row  items-center sm:items-start justify-between"> */}
 
-          {landingBioContent.map((currBio, indx) => {
+          {biosContent.map((currBio, indx) => {
             log2 && console.log("Home3WhoWeAre.js .map() currBio=", currBio);
             if (indx >= 3) return <div key={indx} />;
 

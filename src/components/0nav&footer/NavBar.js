@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
 import { IoIosMenu } from "react-icons/io";
 
-import HesitancyTypesDropDown from "./HesitancyTypesDropDown.js";
+import HesTypesDropDown from "./HesTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";
 import NavItem from "./NavItem.js";
 import { useMyContext } from "../../context/Context";
@@ -12,26 +12,44 @@ import { VscClose } from "react-icons/vsc";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { winWidth, branch, navBarHeight, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } =
-    useMyContext();
+  const {
+    winWidth,
+    branch,
+    navBarHeight,
+    setLocn,
+    // setContentID,
+    setNoneSelected,
+    setShowContactForm,
+    setFixedBackdrop,
+    log,
+    log2,
+  } = useMyContext();
 
   false && console.log(log, log2);
   const dropDownRef = useRef();
   const [showDropDown, setShowDropDown] = useState(false);
 
   useOnClickOutside(dropDownRef, () => {
-    log && console.log("useOnClickOutside fired - setting showDropDown=false");
+    log && console.log("NavBar.js useOnClickOutside fired - setting showDropDown=false");
     setShowDropDown(false);
   });
 
   // For main (wide) navbar selections
   const onClickGo = (event, destn) => {
     event.stopPropagation();
-    log && console.log("onClickGo() runs. Navigating to destn, closing dropdown & contact form");
+    log && console.log("NavBar.js onClickGo() runs. Navigating to destn, closing dropdown & contact form");
     if (destn === "/explore") {
       setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
       setNoneSelected(true);
+    } else if (destn === "/details/overview") {
+      setLocn({ branch: 4, topic: 0, subtopic: 0, showSubtopic: false });
     }
+    // setContentID(curr => {
+    //   const newContentID = destn === "/details/overview" ? "MedicalExemptions" : curr;
+    //   log && console.log("NavBar.js onClickGo setContentID to", newContentID);
+    //   return newContentID
+    // });
+
     navigate(destn);
     setShowDropDown(false);
     setShowContactForm(false);
@@ -85,12 +103,18 @@ const NavBar = () => {
           </NavItem>
         </button>
 
-        <HesitancyTypesDropDown
+        <HesTypesDropDown
           dropDownLinkClass={dropDownLinkClass}
           bgSelec={bgSelec}
           onClickToBranch={onClickToBranch}
           onClickGo={onClickGo}
         />
+
+        <button className="pr-10 md:pr-0 mr-2" onClick={event => onClickGo(event, "/details/overview")}>
+          <NavItem classNom="mr-4" bgSelec={bgSelec} destn="/details/overview">
+            Medical Exemptions
+          </NavItem>
+        </button>
 
         <button className="pr-10 md:pr-0 mr-2" onClick={event => onClickGo(event, "/pearls")}>
           <NavItem classNom="mr-4" bgSelec={bgSelec} destn="/pearls">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const landingBioContent = [
+export const biosContent = [
   {
     name: "Myles Leslie",
     letters: "PhD",
@@ -65,7 +65,7 @@ export const landingBioContent = [
     image: "James smiling - square, 1000px.jpg",
     info: (
       <>
-        James Murphy, M.Eng. M.Sc. is a full-stack web developer who is proficient with React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He enjoys learning and a good challenge.
+        James is a full-stack web developer, proficient with React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He enjoys learning and a good challenge.
       </>
     ),
   },

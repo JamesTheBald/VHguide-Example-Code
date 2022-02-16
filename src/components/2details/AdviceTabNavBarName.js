@@ -23,8 +23,6 @@ const AdviceTabNavBarName = props => {
   const adviceTabs = ["engage", "affirm", "ask", "evoke"];
   const tabMatch = useMatch("/details/advice/:tabSelected");
 
-  // typeof window !== "undefined" && window.location.pathname === "/pearls"
-
   let tabSelected = "";
   if (tabMatch && adviceTabs.includes(tabMatch.tabSelected)) {
     tabSelected = tabMatch.tabSelected;
@@ -50,8 +48,8 @@ const AdviceTabNavBarName = props => {
   };
   const subName = adviceTabSubNames[currTab];
 
-  const flexBoxClass = "pr-6 mxs:pr-12 sm:pr-14 md:pr-10  flex flex-col";
-  const tabNameBaseClass = "mt-5  text-16 mxs:text-18 sm:text-20 md:text-25 tracking-0.5  text-left";
+  const flexBoxClass = "pr-5 axs:pr-6 mxs:pr-12 sm:pr-14 md:pr-10  flex flex-col";
+  const tabNameBaseClass = "mt-5  text-15 axs:text-16 mxs:text-18 sm:text-20 md:text-25 tracking-0.5  text-left";
   const subNameClass = "hidden sm:block  text-16 tracking-0.3  text-left";
 
   return (
@@ -72,7 +70,7 @@ const AdviceTabNavBarName = props => {
       ) : (
         <div name="Unselected" className={`${flexBoxClass}`} style={{ maxWidth: 240 }}>
           <div className={`${tabNameBaseClass}`}>{tabName}</div>
-          <div className={`invisible ${subNameClass}`}>{subName}</div>
+          <div className={`invisible max-h-2 overflow-y-hidden ${subNameClass}`}>{subName}</div>
         </div>
       )}
     </button>

@@ -1,5 +1,6 @@
 import React from "react";
 import useCollapse from "react-collapsed";
+// To-do: Convert this to using react-collapsible, like QuoteGroup.js
 
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -21,7 +22,6 @@ const TermsPanels = props => {
   const CollapsibleTerm = props => {
     const { currPanel } = props;
 
-    // const [isExpanded, setExpanded] = React.useState(true);
     const [isExpanded, setExpanded] = React.useState(false);
     const { getToggleProps, getCollapseProps } = useCollapse({ isExpanded });
 
@@ -35,12 +35,12 @@ const TermsPanels = props => {
             <div className="text-left">{currPanel.subheading}</div>
             {isExpanded ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
           </button>
-          <DivLine className="mb-4 mxs:mb-5 md:mb-6" />
+          <DivLine className="mt-2 mb-4 mxs:mb-5 md:mb-6" />
         </div>
 
         <div className="panelTextClass" {...getCollapseProps()}>
           <div style={{ columnCount: columnNum, columnGap: winWidth < 1600 ? 50 : 60 }}>{currPanel.body}</div>
-          <DivLine className="mt-3 md:mt-4 xl:mt-5  mb-14 sm:mb-16 lg:mb-18" />
+          <DivLine className="mt-5 md:mt-6 xl:mt-7  mb-14 sm:mb-16 lg:mb-18" />
         </div>
       </>
     );
@@ -55,7 +55,7 @@ const TermsPanels = props => {
           {termsContent.map((currPanel, panelNum) => {
             log && console.log("TermsPanels.js panelNum#", panelNum, "is", currPanel);
             return (
-              <div key={panelNum} className="mb-10">
+              <div key={panelNum} className="mb-6">
                 <CollapsibleTerm currPanel={currPanel} />
               </div>
             );

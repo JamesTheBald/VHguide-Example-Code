@@ -21,7 +21,7 @@ const Footer = () => {
   const onIndexPage = pathname.length > 2 ? false : true;
 
   log2 && console.log("Footer.js pathname=", pathname);
-  log && console.log("Footer.js onIndexPage=", onIndexPage);
+  log2 && console.log("Footer.js onIndexPage=", onIndexPage);
 
   const scroll = Scroll.animateScroll;
 
@@ -65,8 +65,12 @@ const Footer = () => {
 
             <div className="flex mr-12">
               <div className="flex items-center">
-                <RiCopyrightLine size={winWidth < 510 ? "10" : "12"} />
-                <div className="pl-1">2021 Vaccine Hesitancy Guide</div>
+                <RiCopyrightLine
+                  className="relative"
+                  style={winWidth < 510 ? { bottom: "2px" } : { bottom: "1px" }}
+                  size={winWidth < 510 ? "10" : "12"}
+                />
+                <div className="pl-1">2022 Vaccine Hesitancy Guide</div>
               </div>
 
               <Link

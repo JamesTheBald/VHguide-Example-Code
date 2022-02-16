@@ -242,4 +242,28 @@ export const branch = [
       },
     ],
   },
+
+  {
+    branchName: "Medical Exemptions",
+    branchNameShort: "Medical Exemptions",
+    branchNameShortest: "Medical Exemptions",
+    linkToDetails: false,
+    topic: [
+      {
+        topicName: "",
+        topicNameShort: "",
+        topicNameAsTitle: "",
+        linkToDetails: false,
+        subtopic: [
+          {
+            subtopicName: "Medical Exemptions",
+            subtopicNameShort: "Medical Exemptions",
+            subtopicNameAsTitle: "Medical Exemptions",
+            contentID: "MedicalExemptions",
+          },
+        ],
+      },
+    ],
+  },
+
 ];

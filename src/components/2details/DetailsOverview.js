@@ -5,11 +5,10 @@ import { Link } from "gatsby";
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 import PediatricsOverviewTheySay from "../../content/PediatricsOverviewTheySay";
+import MedExemptOverviewTheySay from "./MedExemptOverviewTheySay";
 
-
-const DetailsOverview = props => {
+const DetailsOverview = (props) => {
   const { contentID } = props;
-  // const { contentID, setContentID } = props;
   const { winWidth, queryData, locn, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
@@ -20,6 +19,7 @@ const DetailsOverview = props => {
   const pplIcons = queryData.current.pplIcons.edges;
 
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+  log && console.log("DetailsOverview.js locn=", locn);
   log2 && console.log("DetailsOverview.js theySay=", theySay);
   log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
   log2 && console.log("DetailsOverview.js takeHome=", takeHome);
@@ -52,8 +52,9 @@ const DetailsOverview = props => {
               ))}
             </>
           ) : contentID === "Pediatrics" ? (
-            // <>{theySay.content}</>
             <PediatricsOverviewTheySay />
+          ) : contentID === "MedicalExemptions" ? (
+            <MedExemptOverviewTheySay />
           ) : (
             <>
               <h3 className="listTitleClass">People with this hesitancy type say...</h3>
@@ -78,7 +79,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass">Things to consider...</h3>
+          <h3 className="listTitleClass mb-1">Things to consider...</h3>
 
           {contentID === "Pediatrics" ? (
             <>{thingsToConsider.content}</>
@@ -103,7 +104,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass">Take Home:</h3>
+          <h3 className="listTitleClass mb-1">Take Home:</h3>
           {takeHome.content.map((currItem, index) => (
             <div key={index} className="mt-2  baseFont text-blue-black">
               {currItem}

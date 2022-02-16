@@ -34,7 +34,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "doctorBlackManBeard.svg",
+            image: "doctorWhiteWomanDarkBrownHair.svg",
             // The code is not (yet) in place for "full story" links to work from quote boxes on the Clinical Pearls page
             // fullStoryID: "",
             // fullStoryLinkText: <></>,
@@ -98,7 +98,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorWhiteManYoung.svg",
           },
         ],
       },
@@ -154,7 +154,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorWhiteWomanDarkBrownHair.svg",
           },
 
           {
@@ -197,7 +197,7 @@ export const pearlsContent = [
               </>
             ),
             featured: false,
-            image: "",
+            image: "doctorBlackManBeard.svg",
           },
           // Affirming You're An Ally
 

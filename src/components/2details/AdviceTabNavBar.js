@@ -9,11 +9,10 @@ const AdviceTabNavBar = () => {
   log && console.log("AdviceTabNavBar.js runs.")
 
   return (
-    <div className="sm:-mb-6 md:mb-0">
-      <div className="w-full h-6 md:h-8 lg:h-10" />
-      <div className="w-full bg-blue-pale rounded-full" style={{height: 3}} />
+    <>
+      <div className="mt-6 md:mt-8 lg:mt-10  w-full bg-blue-pale rounded-full" style={{height: 3}} />
 
-      <div className="mb-10 mxs:mb-12  flex">
+      <div className="flex -mb-2">
         {adviceTabs.map((currTab, tabNum) => {
           log2 && console.log("AdviceTabNavBar.js currTab=", currTab);
           return (
@@ -23,7 +22,7 @@ const AdviceTabNavBar = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

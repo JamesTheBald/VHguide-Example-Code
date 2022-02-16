@@ -1,13 +1,11 @@
 import React from "react";
-import { navigate } from "gatsby";
 
 import EaaseHoverPopup from "./EaaseHoverPopup";
 import { useMyContext } from "../../context/Context";
 
 const AdviceWhatsWorking = () => {
-  const { locn, log2 } = useMyContext();
-
-  if (!(locn.branch === 0 || locn.branch === 1 || locn.branch === 2)) navigate("/details/overview");
+  const { log, log2 } = useMyContext();
+  0 && console.log(log, log2);
 
   log2 && console.log("AdviceWhatsWorking.js runs.");
 
@@ -24,7 +22,7 @@ const AdviceWhatsWorking = () => {
         />
 
         <span>
-          . Below you’ll find examples of dialogue from other clinicians who have address this type of hesitancy.
+          . Below you'll find examples of dialogue from other clinicians who have address this type of hesitancy.
         </span>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { BiChevronRight } from "react-icons/bi";
 import NavItem from "./NavItem.js";
 import { useMyContext } from "../../context/Context";
 
-const HesitancyTypesDropDown = props => {
+const HesTypesDropDown = props => {
   const { dropDownLinkClass, bgSelec, onClickGo, onClickToBranch } = props;
   const { winWidth, branch, log } = useMyContext();
 
@@ -14,12 +14,12 @@ const HesitancyTypesDropDown = props => {
   const destn = "/explore";
 
   const onClickTitle = (event, destn) => {
-    log && console.log("HesitancyTypesDropDown.js onClickTitle runs")
+    log && console.log("HesTypesDropDown.js onClickTitle runs")
     event.stopPropagation();
     winWidth < 1024
       ? setShowHesDropDown(() => {
           const newShowDropDown = !showHesDropDown;
-          log && console.log("HesitancyTypesDropDown.js setting showHesDropDown=", newShowDropDown);
+          log && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
           return newShowDropDown;
         })
       : onClickGo(event, destn);
@@ -89,4 +89,4 @@ const HesitancyTypesDropDown = props => {
   );
 };
 
-export default HesitancyTypesDropDown;
+export default HesTypesDropDown;

@@ -2,14 +2,12 @@ import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
 import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
-// import PediatricsOverviewTheySay from "./PediatricsOverviewTheySay";
 
 export const contentPersonas = {
   // Put copy content inside <> and </> instead of double quotes (except for LinkText).
   // Be sure to put double quotes around all URL addresses. e.g. href="https://www.cdc.gov/"
 
-  // Catalog of contentIDs (note that some now start with a capital letter):
-
+  // Catalog of contentIDs:
   // ScienceConcerns
   // mRNAConcerns
   // MedicallyComplex
@@ -24,6 +22,8 @@ export const contentPersonas = {
   // NeedlePhobia
   // Unconcerned
   // Undifferentiated
+  // Pediatrics
+  // MedicalExemptions
   // BadContentID
 
   // Path names for doctor icon images:
@@ -404,12 +404,12 @@ export const contentPersonas = {
                     Regular vaccines work by showing your immune system one kind of spike and it learns to make
                     antibodies against THAT kind of spike. But if you show it a spike that&apos;s a little different,
                     your immune system has to think harder about it. But the mRNA uses a different approach to vaccines.
-                    It doesn&apos;t show your immune system one view of the virus and say &apos;good luck.&apos; It
-                    gives your immune system the tools to be able to figure out that what it&apos;s seeing is LIKE the
-                    old one, but not exactly the old one. Instead of being handed a hammer that hammers down a single
-                    kind of nail, the mRNA vaccines give you more of a tool belt. Your immune system can say, &apos;Okay
-                    well it&apos;s like that old one, but it&apos;s not the same.&apos; It helps your immune system
-                    attack the newer stuff too.
+                    It doesnapos;t show your immune system one view of the virus and say &apos;good luck.&apos; It gives
+                    your immune system the tools to be able to figure out that what it&apos;s seeing is LIKE the old
+                    one, but not exactly the old one. Instead of being handed a hammer that hammers down a single kind
+                    of nail, the mRNA vaccines give you more of a tool belt. Your immune system can say, &apos;Okay well
+                    it&apos;s like that old one, but it&apos;s not the same.&apos; It helps your immune system attack
+                    the newer stuff too.
                   </>
                 ),
                 featured: false,
@@ -4827,9 +4827,9 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    So, what if we did have an option that was not at all connected this important issue for you. What
-                    if that was no longer a concern? Would you be interested in getting a vaccine if we had one that
-                    would be okay by your &#91;e.g. faith/community&#93;?
+                    So, what if we did have an option that was not at all connected to this important issue for you?
+                    What if that was no longer a concern? Would you be interested in getting a vaccine if we had one
+                    that would be okay by your &#91;e.g. faith/community&#93;?
                   </>
                 ),
 
@@ -7198,7 +7198,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorMuslimWomanYellowHeadCover.svg",
+                image: "",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7212,7 +7212,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "",
+                image: "doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7328,7 +7328,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorWhiteManYoung.svg",
+                image: "doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7534,7 +7534,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorWhiteManBlackHair.svg",
+                image: "",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7544,13 +7544,13 @@ export const contentPersonas = {
                   <>
                     If you look around the world at the countries that have managed to get these vaccines into
                     people&apos;s arms: they&apos;re getting back to normal life. They&apos;re able to
-                    &#91;worship/socialize/visit/be&#93; together. They&apos;re able to do those things. I know that not
-                    being able to &#91;worship/socialize/visit&#93; with the rest of your community has been really hard
-                    on you this last year, but we can do something about that.
+                    &#91;worship/&#8203;socialize/&#8203;visit/&#8203;be&#93; together. They&apos;re able to do those
+                    things. I know that not being able to &#91;worship/&#8203;socialize/&#8203;visit&#93; with the rest
+                    of your community has been really hard on you this last year, but we can do something about that.
                   </>
                 ),
                 featured: false,
-                image: "",
+                image: "doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -7806,17 +7806,16 @@ export const contentPersonas = {
       theySay: {
         image: "Hesitancy Group 1.svg",
         content: "",
-        // content: <PediatricsOverviewTheySay />,
-        // Overview-TheySay content is in a (separate) React component so useContext can be used. (See Rules of React)
+        // The content for Overview-TheySay is in its own component <PediatricsOverviewTheySay /> so useContext can be used.
       },
-      // ACTUAL content for Pediatrics
 
+      // ACTUAL content for Pediatrics:
       thingsToConsider: {
         image: "doctorMuslimWomanYellowHeadCover.svg",
         content: (
           <div key={123}>
             {/* Need a key here because the thingsToConsider.content.map may be run upon first load  */}
-            <div className="relative">
+            <div className="mt-3 relative">
               <div>
                 Conversations with the parents of younger children eligible for the vaccine are likely to be emotionally
                 charged, and come in a variety of forms. These include:
@@ -7858,9 +7857,11 @@ export const contentPersonas = {
       },
     },
 
+    // Dummy content for Pediatrics.
     advice: {
       tags: ["", ""],
 
+      // (The next sections are replaced by pediatricsPanels.js, which draws content from /2details/pediatricsContent.js)
       eaase: {
         tags: [""],
         engage: { text: "", image: "" },
@@ -7868,8 +7869,6 @@ export const contentPersonas = {
         ask: { text: "", image: "" },
         evoke: { text: "", image: "" },
       },
-      // Dummy content for Pediatrics
-      // (Quote content is in /2details/pediatricsContent.js)
 
       engage: {
         // tags: ["", ""],
@@ -7935,6 +7934,553 @@ export const contentPersonas = {
             <>
               Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a
               review of the vaccine approval process.{" "}
+            </>
+          ),
+        },
+      ],
+    },
+  },
+
+  MedicalExemptions: {
+    tags: ["", ""],
+    related: [""],
+
+    overview: {
+      tags: ["", ""],
+
+      theySay: {
+        image: "Hesitancy Group 2.svg",
+        content: [
+          // This section is custom, and is in medExemptOverviewTheySayContent.js
+          <></>,
+        ],
+      },
+
+      // MedicalExemptions:
+      thingsToConsider: {
+        image: "doctorMuslimWomanYellowHeadCover.svg",
+        content: [
+          <div>
+            With exemption discussions, <strong>be upfront with what you are willing to offer to patients.</strong>{" "}
+            Don&apos;t build expectations when an exemption isn't warranted.
+          </div>,
+          <div>
+            Try to <strong>avoid opening a space for negotiations</strong> &mdash; don't get into a debate about facts.
+            Focus the conversation on your responsibility to your patient's health and your professional standards.
+          </div>,
+          <div>
+            Patients who request exemptions most likely have other sources of hesitancy or fears, and{" "}
+            <strong>these conversations are good opportunities to explore these concerns</strong>.
+          </div>,
+        ],
+      },
+      // MedicalExemptions
+
+      takeHome: {
+        image: "Notepad_small.svg",
+        content: [
+          <>
+            <ul className="pl-5 list-disc">
+              <li className="">
+                <strong>Clearly outline the criteria for medical exemptions</strong>, and then move the conversation to
+                other potential sources of the patient's hesitancy.
+              </li>
+              <li className="">
+                <strong>Affirm and support patients' fears</strong>, particularly if they have had a bad experience with
+                previous doses of the vaccine.
+              </li>
+              <li className="">
+                As with all other hesitancy conversations,{" "}
+                <strong>trust is at the foundation of these conversations</strong>.
+              </li>
+              <li className="">
+                If you need to reject a request for an exemption,{" "}
+                <strong>move very quickly to discuss what you can do for your patient</strong>.
+              </li>
+            </ul>
+          </>,
+        ],
+      },
+    },
+
+    // MedicalExemptions
+
+    advice: {
+      tags: ["", ""],
+
+      eaase: {
+        tags: [""],
+        engage: {
+          text: (
+            <>
+              Aside from what the medical criteria are, and why you think you need an exemption, what’s going on in the
+              back of your mind in terms of vaccination?
+            </>
+          ),
+          image: "",
+        },
+        affirm: {
+          text: (
+            <>
+              I get that you want some more time to think about whether or not they’re right for you. That makes good
+              sense to me. That sounds like a very natural and human thing, and very understandable.
+            </>
+          ),
+          image: "",
+        },
+        // MedicalExemptions
+        ask: {
+          text: (
+            <>
+              Can I share the general criteria of medical exemptions with you, so we can review whether or not these
+              apply to your situation?
+            </>
+          ),
+          image: "",
+        },
+        evoke: {
+          text: (
+            <>
+              I think the relationship we have is built on the trust and respect that we have for each other. I always
+              try to work in good conscience and follow scientific principles and recommendations. So, for me to write
+              something that I don't believe is correct, and that violates my professional standards, that’s not
+              something I’m willing to do.
+            </>
+          ),
+          image: "",
+        },
+      },
+      // MedicalExemptions Advice Content
+
+      engage: {
+        // tags: ["", ""],
+        content: [
+          {
+            subheading: "",
+            quotes: [
+              {
+                text: (
+                  <>
+                    &ldquo;Okay, so which vaccine component were you concerned that you might be allergic to? This
+                    allergy is news to me. So, what I think I'm hearing is that you really don't want the vaccine and
+                    you'd like me to sign an exemption for you? Do you believe that there's a medical reason for that,
+                    or is there actually something else going on? I'd like to explore your worries a little bit further
+                    so that we can understand if there’s something that really would impact your ability to get the
+                    vaccine. Aside from what the medical criteria are, and why you think you need an exemption, what's
+                    going on in the back of your mind in terms of vaccination? The next bit is for us to unpack each of
+                    your concerns, and then I would propose that we spend some time going through them just to make sure
+                    that I fully understand your perspective on those concerns . I really do care about you and I want
+                    to understand where you're coming from.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Allergy",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;So, what I think I'm hearing is that you really don't want the vaccine and you'd like me to
+                    sign an exemption for you? Do you believe that there's a medical reason for that, or is there
+                    actually something else going on? I'd like to explore your worries a little bit further so that we
+                    can understand if there’s something that really would impact your ability to get the vaccine.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    Aside from what the medical criteria are, and why you think you need an exemption, what's going on
+                    in the back of your mind in terms of vaccination? The next bit is for us to unpack each of your
+                    concerns, and then I would propose that we spend some time going through them just to make sure that
+                    I fully understand your perspective on those concerns . I really do care about you and I want to
+                    understand where you're coming from.
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
+                fullStoryID: "",
+                label: "",
+              },
+              {
+                text: (
+                  <>
+                    The next bit is for us to unpack each of your concerns, and then I would propose that we spend some
+                    time going through them just to make sure that I fully understand your perspective on those
+                    concerns. I really do care about you and I want to understand where you're coming from.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "",
+              },
+            ],
+          },
+        ],
+      },
+      // MedicalExemptions
+
+      affirm: {
+        content: [
+          {
+            subheading: "",
+            quotes: [
+              {
+                text: (
+                  <>
+                    &ldquo;I’m concerned about how you're coping and how you're doing, and I want to talk more about
+                    that. But what I can't do is write a letter describing a medical exemption because you have stress
+                    or anxiety related to vaccination.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Mental Health",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;I can understand that you are feeling a ton of mental distress around getting vaccinated.
+                    However, mental distress about having the vaccine doesn't actually qualify you for an exemption.
+                    Exemptions are in place to say “if I have this vaccine, it will cause my physical health to
+                    deteriorate” and so there are very few things that fit in that category.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Mental Health",
+              },
+              // MedicalExemptions
+
+              {
+                text: (
+                  <>
+                    &ldquo;It must feel really scary if you feel that the government is trying to use vaccination to
+                    control people, or if you believe that the science is not valid. Let's talk about those feelings of
+                    fear now.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Politics",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;[If patient had a bad experience with previous doses] I can understand that you would be
+                    worried about getting another dose of the vaccine. I get that you want some more time to think about
+                    whether or not they’re right for you. That makes good sense to me. That sounds a natural and very
+                    human thing, and very understandable.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Allergy",
+              },
+            ],
+          },
+        ],
+      },
+
+      // MedicalExemptions
+      ask: {
+        content: [
+          {
+            subheading: "",
+            quotes: [
+              {
+                text: (
+                  <>
+                    &ldquo;I wonder if you're more concerned about other aspects of the vaccine, apart from the allergy
+                    issue that you’ve raised. Is there anything in particular that you've heard that you're worried
+                    about?&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Allergy",
+              },
+              {
+                text: (
+                  <>
+                    Can I share the general criteria of medical exemptions with you, so we can review whether or not
+                    these apply to your situation?
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "",
+              },
+            ],
+          },
+        ],
+      },
+
+      // MedicalExemptions
+      share: {
+        content: [
+          {
+            subheading: "",
+            quotes: [
+              {
+                text: (
+                  <>
+                    For me it's really hard to put my stamp on something that's not 100% true. It's not in keeping with
+                    my professional duties. The College has been really clear to me and other physicians that if we are
+                    writing something that's inaccurate, that's an offense. I could lose my license, and I want to be
+                    able to be here for you and all of my other patients in the future. So that's not something that I
+                    am able to do at all. I just want to be super clear about how the medical exemptions work and my
+                    position on them.
+                  </>
+                ),
+                featured: false,
+                image: "doctorBlackWoman.svg",
+                fullStoryID: "",
+                label: "",
+              },
+              {
+                text: (
+                  <>
+                    If you take a look at what has been approved by Health Canada, the provincial government, and by our
+                    College of Physicians and Surgeons, you see that there have to be valid reasons for an exemption.
+                    It's not as simple as you tell me you need an exemption and then I just comply with that.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    When I sign off on an exemption, I'm actually taking legal liability for the outcome of that
+                    exemption letter, and I think a lot of patients don't understand that. They might think ‘it only
+                    took two seconds for a doc to sign something,’ but there's a lot that goes behind that, and so I
+                    just want to give you some clarity there.
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteManYoung.svg",
+                fullStoryID: "",
+                label: "",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;Generally, people who have allergies to the vaccine ingredients (e.g., PEG) would know this
+                    already, because those ingredients are very commonly used in a whole bunch of other products we see
+                    everyday. If you think you have one of these allergies, I would like to refer you to an
+                    allergist.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Allergy",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    &ldquo;I've been seeing people like yourself, who see vaccine mandates as an infringement on rights,
+                    but I have also seen people who are angry that that they can't go to work because they're vulnerable
+                    with medical conditions, and I’ve seen people who are depressed because they can't leave their
+                    houses because of restrictions and COVID. I see a lot of healthcare workers who are really upset
+                    because they’re dealing with a large amount of stress at work. So I’m seeing your side, and a lot of
+                    the other sides of the issue.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Politics",
+              },
+            ],
+          },
+        ],
+      },
+
+      // MedicalExemptions
+      evoke: {
+        content: [
+          {
+            subheading: "",
+            quotes: [
+              {
+                text: (
+                  <>
+                    &ldquo;I understand that you're frustrated with me because I’m not giving you what you think you
+                    want or need right now. But I would really appreciate if you could just take a moment and reflect on
+                    the last 20 years of your medical care that we have managed together as a team. Do you feel like I
+                    have acted in your best interest for the last 20 years? Rather than thinking that I’ve somehow
+                    changed – who I am or how I practice medicine – I’m hoping you can see that I always have your best
+                    interests at heart, and I’m always going to give you the best health advice I can.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Do me a favour",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;I think the relationship we have is built on the trust and respect that we have for each
+                    other. I always try to work in good conscience and follow scientific principles and recommendations.
+                    So, for me to write something that I don't believe is correct, and that violates my professional
+                    standards, that’s not something I’m willing to do.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Do me a favour",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    &ldquo;I can see why you feel that a vaccine mandate is an infringement on your rights. From my
+                    perspective as a healthcare provider, I see it very differently. I have seen very sick patients and
+                    very sick family members, and believe the vaccines can help protect these people. And that’s why I
+                    agree with making medical exemptions only available for very specific reasons.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Politics",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;Whether you choose to get the vaccine or not, I can still help you with the anxiety aspects
+                    of the social isolation you’re feeling. I still want to talk about how you can get back some of
+                    those social connections that might help with your anxiety. We can start strategizing about getting
+                    some of that social connection that will help you with your mood, even with the restrictions that
+                    are in place today. I think that's ultimately what we need to look for, instead of a medical
+                    exemption.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Mental Health",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    &ldquo;But let's talk a little bit about where you're at from a mental health perspective and think
+                    about setting up a consult with a mental health specialist who can offer good support for you. Who
+                    can sit with you and work you through some of this anxiety and stress and potentially help you make
+                    a plan towards vaccinations. So, we're not talking about an exemption, but instead a bit of a window
+                    of opportunity to help you be calmer and feel better about getting the vaccine.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Mental Health",
+              },
+              {
+                text: (
+                  <>
+                    &ldquo;Only if there's a true allergy can I write an exemption. And the only way we would know if
+                    you have any true allergies is if you've had testing for one of the two products in the vaccines. I
+                    will need to refer you out to an allergist to get that testing done.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Allergy",
+              },
+              // MedicalExemptions
+              {
+                text: (
+                  <>
+                    &ldquo;I know that you have strong religious convictions, and you're diametrically opposed to
+                    anything that you believe has been researched in a way that conflicts with your faith. I appreciate
+                    that you're a person of conviction. Given what you are suggesting then, will you research everything
+                    that we talk about when it comes to your healthcare with the same level of rigor? Because I need to
+                    understand this as we plan options for your future care.&rdquo;
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                label: "Religion",
+              },
+            ],
+          },
+        ],
+      },
+
+      // MedicalExemptions
+      resources: [
+        {
+          label: <>College of Physicians and Surgeons of Alberta</>,
+          image: "",
+          linkTitle: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>,
+          link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
+          description: (
+            <>
+              Guidance document outlining using professional judgement when writing exemptions, managing challenging
+              interactions, and setting up exemption expectations with patients
+            </>
+          ),
+        },
+        {
+          label: <>CPSA</>,
+          image: "",
+          linkTitle: <>Exemption Requests: Patient FAQs</>,
+          link: "https://cpsa.ca/wp-content/uploads/2021/09/Vaccine-exemption-public-FAQ.pdf",
+          description: (
+            <>
+              FAQ for patients on exemption eligibility, and the role of physicians in using professional discretion to
+              provide exemptions
+            </>
+          ),
+        },
+        {
+          label: <>College of Physicians and Surgeons BC</>,
+          image: "",
+          linkTitle: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>,
+          link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
+          description: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
+        },
+        {
+          label: <>Ontario Ministry of Health</>,
+          image: "",
+          linkTitle: <>Medical Exemptions to COVID-19 Vaccination</>,
+          link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
+          description: <>Offers guidance to medical staff on when a medical exemption is warranted</>,
+        },
+        {
+          label: <>National Advisory Committee on Immunization (NACI)</>,
+          image: "",
+          linkTitle: <>Recommendations on COVID-19</>,
+          link: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
+          description: (
+            <>
+              Information about NACI COVID vaccine recommendations for healthcare providers. (Current as of January
+              2022)
             </>
           ),
         },

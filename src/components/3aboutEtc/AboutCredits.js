@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import CollabLogos from "./CollabLogos";
-import { landingBioContent } from "../../content/landingBioContent";
+import { biosContent } from "../../content/biosContent";
 import { useMyContext } from "../../context/Context";
 
 const AboutCredits = () => {
@@ -22,7 +22,7 @@ const AboutCredits = () => {
       </h2>
 
       <div className="flex flex-row flex-wrap  w-full">
-        {landingBioContent.map((currBio, indx) => {
+        {biosContent.map((currBio, indx) => {
           log2 && console.log("AboutCredits.js .map() currBio=", currBio);
 
           return (

@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
-const DetailsResources = props => {
+const DetailsResources = (props) => {
   const { contentID } = props;
   const { log, log2 } = useMyContext();
 
