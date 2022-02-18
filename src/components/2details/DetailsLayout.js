@@ -14,7 +14,7 @@ const DetailsLayout = props => {
   false && console.log(log, log2);
   log2 && console.log("");
   log2 && console.log("DetailsLayout.js locn=", locn);
-  log && console.log("DetailsLayout.js path=", path);
+  log2 && console.log("DetailsLayout.js path=", path);
   log2 && console.log("DetailsLayout.js hesTypeName=", hesTypeName);
 
   const onClickRelated = contentID => {
@@ -50,14 +50,15 @@ const DetailsLayout = props => {
   return (
     <div className={fixedBackdrop ? "fixed" : ""}>
       <div className="text-blue-main panelMargins">
-        <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
-          &#60; back
-        </button>
-
         {locn.branch < 4 ? (
-          <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+          <>
+            <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
+              &#60; back
+            </button>
+            <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+          </>
         ) : (
-          <div className="h-6" />
+          <div className="h-16" />
         )}
 
         <h1 className="mt-0.5 mb-1  titleFont titleMediumPlus">{hesTypeName}</h1>

@@ -27,7 +27,7 @@ const Home1TopPanel = props => {
   let titleWidth = winWidth * titleWidthFrac;
   const newContentWidth = winWidth - 2 * marginOuter;
   if (titleWidth > newContentWidth) titleWidth = newContentWidth;
-  log && console.log("Home1TopPanel.js useEffect titleWidth=", titleWidth);
+  log2 && console.log("Home1TopPanel.js useEffect titleWidth=", titleWidth);
 
   // Wavy line parameters
   const w = winWidth;

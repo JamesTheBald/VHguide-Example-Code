@@ -4,6 +4,14 @@
 
 @layer components {
 
+  .bgSelec {
+    @apply bg-blue-blackest
+  } 
+
+  .bgUnselec {
+    @apply bg-blue-black
+  } 
+  
   .stdMargins {
     @apply px-6 mxs:px-10 sm:px-12 md:px-16 lg:px-20 mxl:px-24 xl:px-28
   }

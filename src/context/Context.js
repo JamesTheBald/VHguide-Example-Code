@@ -7,13 +7,12 @@ export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  const log = false;
+  const log = true;
   const log2 = false;
   log2 && console.log("Context.js runs.");
 
   const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
-  const navBarHeight = 80; // in pixels
-
+  
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
   WindowSizeListener(winWidth, setWinWidth, setWinHeight);
@@ -54,7 +53,6 @@ const MyProvider = ({ children }) => {
     winWidth: winWidth,
     winHeight: winHeight,
     widthAdjRatio: widthAdjRatio,
-    navBarHeight: navBarHeight,
     marginOuter: marginOuter,
     nomScreenWidth: nomScreenWidth,
     showContactForm: showContactForm,
