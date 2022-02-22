@@ -14,13 +14,13 @@ const AboutDropDown = props => {
 
   const onClickAbout = event => {
     event.stopPropagation();
-    winWidth < 720 &&
+    if (winWidth < 1366) {
       setShowAboutDropDown(() => {
         const newShowDropDown = !showAboutDropDown;
         log && console.log("AboutTypesDropDown.js setting showAboutDropDown=", newShowDropDown);
         return newShowDropDown;
       });
-    onClickGo(event, "/about");
+    } else onClickGo(event, "/about");
   };
 
   const AboutLink = props => {

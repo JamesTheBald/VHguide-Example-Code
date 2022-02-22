@@ -15,14 +15,15 @@ const HesTypesDropDown = props => {
   const onClickExplore = event => {
     log && console.log("HesTypesDropDown.js onClickExplore runs");
     event.stopPropagation();
-    winWidth < 720
-      ? setShowHesDropDown(() => {
-          const newShowDropDown = !showHesDropDown;
-          log && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
-          return newShowDropDown;
-        })
-      : onClickGo(event, "/explore");
-    onClickToBranch(event, 0);
+    if (winWidth < 1366) {
+      setShowHesDropDown(() => {
+        const newShowDropDown = !showHesDropDown;
+        log && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
+        return newShowDropDown;
+      });
+      } else {
+      onClickGo(event, "/explore");
+    }
   };
 
   const HesTypeLink = props => {
