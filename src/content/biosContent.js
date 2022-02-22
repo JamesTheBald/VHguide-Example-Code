@@ -65,7 +65,7 @@ export const biosContent = [
     image: "James smiling - square, 1000px.jpg",
     info: (
       <>
-        James is a full-stack web developer, proficient with React, Gatsby and Tailwind on the front end, and Node.js, Express and MongoDB on the back-end. He enjoys learning and a good challenge.
+        James is a full-stack web developer who creates fast, responsive, SEO-friendly custom websites using React, Gatsby and Tailwind CSS. On the back-end he is proficient with Node.js, Express and MongoDB. He has an eye for detail, writes clean code, and enjoys learning and a good challenge.
       </>
     ),
   },

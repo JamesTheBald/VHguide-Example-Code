@@ -12,6 +12,9 @@ const Pearls = props => {
 
   queryData.current = data;
 
+  log && console.log("");
+  log && console.log("pearls.js runs.");
+
   useEffect(() => {
     if (typeof window !== `undefined`) {
       setWinWidth(window.innerWidth);

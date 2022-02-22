@@ -10,12 +10,11 @@ const AdviceQuoteGroupList = props => {
   const { advice } = props;
   const { log, log2 } = useMyContext();
 
-  const tabMatch = useMatch("/details/advice/:tabSelected");
-  const tabSelected = String(tabMatch.tabSelected);
-  log2 && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
-  log && console.log("AdviceQuoteGroupList.js tabSelected=", tabSelected);
-
+  const tabMatch = useMatch("/details/advice/:tabSelec");
+  const tabSelected = String(tabMatch.tabSelec);
   const contentArray = advice[tabSelected]?.content;
+  log && console.log("AdviceQuoteGroupList.js runs. tabSelected=", tabSelected);
+  log2 && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
   log2 && console.log("AdviceQuoteGroupList.js So contentArray=", contentArray);
 
   const firstAskAdviceQuote = advice?.ask?.content[0]?.quotes[0]?.text;

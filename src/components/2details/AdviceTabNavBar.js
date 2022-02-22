@@ -5,8 +5,9 @@ import AdviceTabNavBarName from "./AdviceTabNavBarName";
 const AdviceTabNavBar = () => {
   const { log, log2 } = useMyContext();
 
+  0 && console.log(log, log2);
   const adviceTabs = ["engage", "affirm", "ask", "evoke"];
-  log && console.log("AdviceTabNavBar.js runs.")
+  log2 && console.log("AdviceTabNavBar.js runs.")
 
   return (
     <>

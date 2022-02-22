@@ -159,4 +159,14 @@
     @apply pt-8 mxs:pt-10 sm:pt-12  pb-0 mxs:pb-1 sm:pb-2  px-5 mxs:px-10 sm:px-15  w-full bg-gray-light rounded-xl mxs:rounded-2xl sm:rounded-3xl  border border-solid border-gray-lightish
   }
 
+
+  .subMenuYBorders {
+    @apply border-t border-b border-gray-light
+  }
+
+  .chevPosn {
+    @apply relative sm:-left-0.5 bottom-1 sm:bottom-0
+  } 
+
+
 }

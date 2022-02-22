@@ -20,6 +20,7 @@ import setAdviceAndRelateds from "../functions/setAdviceAndRelateds";
 const Details = props => {
   const { data, location } = props;
   const { locn, fullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
+  0 && console.log(log, log2);
   queryData.current = data;
   const path = location.pathname;
 
@@ -35,14 +36,15 @@ const Details = props => {
   const [advice, setAdvice] = useState();
   const [related, setRelated] = useState();
 
+  log && console.log("");
   log2 && console.log("details.js runs. locn=", locn);
   log2 && console.log("details.js runs. fullStoryID=", fullStoryID);
-  log && console.log("details.js Initially, contentID=", contentID);
+  log && console.log("details.js contentID=", contentID);
 
   useEffect(() => {
     const { contIDTemp, hesTypeTemp } = getContIDandName(locn, setContentID, setHesTypeName, log, log2);
-    log && console.log("details.js contentIDTemp=", contIDTemp);
-    log && console.log("details.js hesTypeTemp=", hesTypeTemp);
+    log2 && console.log("details.js contentIDTemp=", contIDTemp);
+    log2 && console.log("details.js hesTypeTemp=", hesTypeTemp);
     setAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
   }, [locn, contentID, log, log2]);
 
@@ -80,6 +82,7 @@ const Details = props => {
           <PediatricsPanels path="/advice/pediatrics" />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
+            // For Details-Advice-Engage, Affirm, Ask, Evoke
             <EaasePages key={idx} path={page} />
           ))}
         </Router>

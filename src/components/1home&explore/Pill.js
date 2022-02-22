@@ -7,16 +7,16 @@ import { useMyContext } from "../../context/Context";
 
 const Pill = props => {
   const { branchNum, onClickExplore, noneSelected } = props;
-  const { winWidth, locn, branch, log } = useMyContext();
+  const { winWidth, locn, branch, log, log2 } = useMyContext();
 
-  false && console.log(log);
+  0 && console.log(log, log2);
   const branchName = branch[branchNum].branchName;
   const branchNameShortest = branch[branchNum].branchNameShortest;
 
   const pillHeight = winWidth < 510 ? 48 : 72;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
 
-  log && console.log("Pill.js branchNum=", branchNum);
+  log2 && console.log("Pill.js branchNum=", branchNum);
 
   const pillColor = noneSelected ? "blue-main" : locn.branch === branchNum ? "blue-main" : "gray-light";
   const pillTextColor = noneSelected ? "gray-light" : locn.branch === branchNum ? "gray-light" : "blue-main";

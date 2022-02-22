@@ -8017,7 +8017,7 @@ export const contentPersonas = {
               back of your mind in terms of vaccination?
             </>
           ),
-          image: "",
+          image: "doctorWhiteWomanDarkBrownHair.svg",
         },
         affirm: {
           text: (
@@ -8026,7 +8026,7 @@ export const contentPersonas = {
               sense to me. That sounds like a very natural and human thing, and very understandable.
             </>
           ),
-          image: "",
+          image: "doctorWhiteManGoatee.svg",
         },
         // MedicalExemptions
         ask: {
@@ -8036,7 +8036,7 @@ export const contentPersonas = {
               apply to your situation?
             </>
           ),
-          image: "",
+          image: "doctorWhiteManYoung.svg",
         },
         evoke: {
           text: (
@@ -8047,7 +8047,7 @@ export const contentPersonas = {
               something I’m willing to do.
             </>
           ),
-          image: "",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
       },
       // MedicalExemptions Advice Content

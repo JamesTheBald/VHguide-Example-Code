@@ -8,7 +8,7 @@ import TopicTree from "./TopicTree";
 const PillsAndTrees = () => {
   const { winWidth, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } = useMyContext();
 
-  log2 && console.log("PillsAndTrees.js runs. locn=", locn);
+  0 && console.log(log, log2);
   log2 && console.log("PillsAndTrees.js noneSelected=", noneSelected);
 
   const sideBySideWidth = 1320;
@@ -32,7 +32,8 @@ const PillsAndTrees = () => {
 
   const PillAndTopicTree = ({ branchNum }) => {
     const selected = locn.branch === branchNum ? true : false;
-    log && console.log("PillsAndTrees.js PillAndTopicTree() branchNum=", branchNum, "& selected=", selected);
+    log2 && console.log("PillsAndTrees.js PillAndTopicTree() locn.branch=", locn.branch);
+    log2 && console.log("PillsAndTrees.js PillAndTopicTree() branchNum=", branchNum, "& selected=", selected);
     return (
       <div
         name="pill container"
@@ -62,14 +63,14 @@ const PillsAndTrees = () => {
   return (
     <>
       {winWidth < sideBySideWidth ? (
-        // Narrow screens
+        // Narrow screens (stacked pills)
         <div className="flex flex-col">
           <PillAndTopicTree branchNum={0} />
           <PillAndTopicTree branchNum={1} />
           <PillAndTopicTree branchNum={2} />
           <PillAndTopicTree branchNum={3} />
         </div>
-      ) : // Wider screens
+      ) : // Wider screens (pills in columns)
       noneSelected ? (
         <div className="flex flex-col  w-full">
           <div className="flex flex-row gap-14 xl:gap-20">

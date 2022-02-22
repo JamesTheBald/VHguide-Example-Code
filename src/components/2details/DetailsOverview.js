@@ -19,7 +19,7 @@ const DetailsOverview = (props) => {
   const pplIcons = queryData.current.pplIcons.edges;
 
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
-  log && console.log("DetailsOverview.js locn=", locn);
+  log && console.log("DetailsOverview.js locn.branch=", locn.branch);
   log2 && console.log("DetailsOverview.js theySay=", theySay);
   log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
   log2 && console.log("DetailsOverview.js takeHome=", takeHome);

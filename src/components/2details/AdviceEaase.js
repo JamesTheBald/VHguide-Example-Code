@@ -9,7 +9,7 @@ const AdviceEaase = props => {
   const { log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
-  log2 && console.log("AdviceEaase.js runs.");
+  log && console.log("AdviceEaase.js runs.");
 
   const blockContainer = "mxs:pr-2 sm:pr-9 md:pr-15   flex flex-col";
   const titleWrapperClass = "-mb-0.5  text-blue-main tracking-0.5 leading-tight";

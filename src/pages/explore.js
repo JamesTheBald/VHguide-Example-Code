@@ -7,6 +7,7 @@ import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 const Explore = () => {
   const { setWinWidth, setWinHeight, log } = useMyContext();
 
+  log && console.log("");
   log && console.log("Explore.js runs.");
 
   useEffect(() => {

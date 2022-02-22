@@ -11,15 +11,15 @@ const NavItem = props => {
   const selected = isNavItemSelected(destn, locn);
 
   return (
-    <div className={`${classNom} w-full  flex flex-col items-start  cursor-pointer group `}>
+    <div className={`${classNom} w-full  flex flex-col items-start  cursor-pointer group  relative`}>
       <div name="Narrow screens" className="sm:hidden w-full  text-left">
         {children}
       </div>
 
       <div
-        name="Border for when selected - Wider screens"
+        name="'Shield' border for when selected - Wider screens"
         className={`hidden sm:flex px-3 h-22  w-full  justify-center items-center  relative
-                    rounded-b-lg  border-2 sm:border-t-0 border-gray-light border-solid  z-30
+                    rounded-b-lg  border-2 sm:border-t-0 border-gray-light border-solid  z-20
         ${selected ? "bgSelec" : "border-opacity-0"}
         ${selected && selecOnHover && "group-hover:bg-selec"}
         ${!selected && selecOnHover && "group-hover:bgUnselec"}

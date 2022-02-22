@@ -14,6 +14,7 @@ const Home = props => {
   const { setWinWidth, setWinHeight, setNoneSelected, queryData, log } = useMyContext();
   queryData.current = data;
 
+  log && console.log("");
   log && console.log("index.js runs.");
 
   useEffect(() => {

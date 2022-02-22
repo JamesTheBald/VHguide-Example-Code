@@ -11,8 +11,8 @@ const TopicTree = props => {
   const { winWidth, locn, setLocn, branch, widthAdjRatio, log, log2 } = useMyContext();
 
   log2 && console.log("");
-  log && console.log("TopicTree.js runs. branch=", branch);
-  log && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
+  log2 && console.log("TopicTree.js runs. branch=", branch);
+  log2 && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
 
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
