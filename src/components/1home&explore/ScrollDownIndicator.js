@@ -12,8 +12,7 @@ const ScrollDownIndicator = props => {
     <AnchorLink
       to="/#hesTypes"
       title="Scroll down to hesitancy types"
-      className={`px-10 py-5 md:py-8 mb-5 mxs:mb-0  flex flex-col  justify-center items-center  text-12 mxs:text-14 ${additionalClass} cursor-pointer `}
-      // className={`px-10 mb-10 w-full  flex flex-col  justify-center items-center  text-14 ${additionalClass} cursor-pointer bg-blue-600`}
+      className={`px-10 py-5 md:py-8 mb-5 mxs:mb-0  flex flex-col  justify-center items-center  text-12 mxs:text-14 ${additionalClass} cursor-pointer`}
       onAnchorLinkClick={() => console.log("index.js Scroll link clicked")}
     >
       <BsChevronDown size={winWidth < 510 ? 24 : 36} />

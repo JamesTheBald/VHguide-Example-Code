@@ -104,6 +104,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/details/*`, `/about/*`] },

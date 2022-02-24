@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { useMyContext } from "../../context/Context";
-import DivLine from "../DivLine";
+import DivLine from "../4general/DivLine";
 import QuoteBoxes from "./QuoteBoxes";
 
 const QuoteGroupsPediatrics = props => {

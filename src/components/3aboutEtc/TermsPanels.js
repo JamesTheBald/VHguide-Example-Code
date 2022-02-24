@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useMyContext } from "../../context/Context";
 import termsContent from "../../content/termsContent";
-import DivLine from "../DivLine";
+import DivLine from "../4general/DivLine";
 
 const TermsPanels = props => {
   const { pageTitle } = props;

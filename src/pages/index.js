@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import { Link, graphql } from "gatsby";
-import { animateScroll } from "react-scroll";
+import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import Home1TopPage from "../components/1home&explore/Home1TopPanel";
-import Home2HesTypes from "../components/1home&explore/Home2HesTypes";
+// import Home2HesTypes from "../components/1home&explore/Home2HesTypes";
 import Home3WhoWeAre from "../components/1home&explore/Home3WhoWeAre";
 import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsEtc";
 
 const Home = props => {
   const { data } = props;
-  const { setWinWidth, setWinHeight, setNoneSelected, queryData, log } = useMyContext();
+  const { setWinWidth, setWinHeight, queryData, log } = useMyContext();
   queryData.current = data;
 
   log && console.log("");
@@ -31,54 +30,37 @@ const Home = props => {
     }
   }, [setWinWidth, setWinHeight, log]);
 
-  const BrowseButton = props => {
-    const { className } = props;
-    return (
-      <Link
-        to="/explore"
-        className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
-                    border-2 border-solid ${className} bg-gray-light hover:bg-opacity-0`}
-        style={props.style}
-        onClick={() => {
-          setNoneSelected(true);
-          if (typeof window !== `undefined`) {
-            animateScroll.scrollToTop({ duration: 0 }); // time in ms
-          }
-        }}
-      >
-        <button>Browse Hesitancy Types</button>
-      </Link>
-    );
-  };
-
   return (
     <>
       <main className="bg-white text-blue-black overflow-x-hidden">
-        <Home1TopPage BrowseButton={BrowseButton} />
-        <Home2HesTypes BrowseButton={BrowseButton} />
+        <Home1TopPage />
+        {/* <Home2HesTypes /> */}
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />
         <div className="w-full h-16 md:h-24"></div>
-        {/* <div className="w-full h-30 md:h-40"></div> */}
       </main>
     </>
   );
 };
 
+// From GraphiQL, accessed at http://localhost:8000/___graphql
 export const query = graphql`
   query ImagesQuery {
-    homepagePics: allFile(filter: { sourceInstanceName: { eq: "homepagePics" }, extension: { eq: "jpg" } }) {
+    homepagePics:   allFile(filter: {sourceInstanceName: {eq: "homepagePics"}}) {
       edges {
         node {
           dir
           relativePath
           sourceInstanceName
           childImageSharp {
-            gatsbyImageData(formats: JPG, placeholder: BLURRED)
+            gatsbyImageData(formats: AUTO, quality: 90, placeholder: BLURRED, layout: CONSTRAINED)
           }
+          ext
+          publicURL
         }
       }
     }
+
     featuredOnLogos: allFile(filter: { sourceInstanceName: { eq: "featuredOnLogos" } }) {
       edges {
         node {
@@ -112,7 +94,6 @@ Home.Layout = Layout;
 // Above Layout assigning follows https://dev.to/milescrighton/keeping-persistent-ui-across-routes-with-gatsby-s-wrappageelement-4o22
 
 export default Home;
-
 
 // pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
 //   edges {

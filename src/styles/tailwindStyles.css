@@ -69,6 +69,10 @@
     @apply font-sans font-semibold  text-16 mxs:text-20 md:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
+  .subtitleFont {
+    @apply text-14 mxs:text-16 md:text-18  tracking-0.3 mxs:tracking-0.4
+  } 
+
   .titleFont {
     @apply font-serif font-semibold mxs:font-bold 
   }
@@ -85,6 +89,11 @@
     @apply text-28 mxs:text-40 sm:text-50  tracking-0.6 mxs:tracking-0.8 sm:tracking-1.2
   }
 
+
+  .titleLanding {
+    @apply text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65
+           tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4
+  }
 
   .listClass {
     @apply ml-6 sm:ml-12 list-disc list-outside

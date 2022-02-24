@@ -9,7 +9,7 @@ const Home3WhoWeAre = () => {
   const { queryData, log, log2 } = useMyContext();
 
   const homepagePics = queryData.current.homepagePics.edges;
-  false & log && console.log();
+  0 && console.log(log, log2);
   log2 && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
 
   // const bioWidth =

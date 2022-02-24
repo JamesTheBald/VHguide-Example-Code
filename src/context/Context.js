@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef, useContext, createContext } from "r
 import { branch } from "../content/branch";
 import WindowSizeListener from "./WindowSizeListener";
 
-export const myContext = createContext();
+const myContext = createContext();
+// export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
