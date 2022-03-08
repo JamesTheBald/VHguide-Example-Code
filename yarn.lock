@@ -3907,6 +3907,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@splidejs/react-splide@npm:^0.6.20":
+  version: 0.6.20
+  resolution: "@splidejs/react-splide@npm:0.6.20"
+  dependencies:
+    "@splidejs/splide": ^3.6.12
+  checksum: 1976c4fe38481f2275f8c93d693def3ac6e46b1d9382963e915208581c09ab3cbb16256df97be285fe87d05d255f03bb247b003cf0304e3de39c8d799838b8ee
+  languageName: node
+  linkType: hard
+
+"@splidejs/splide@npm:^3.6.12":
+  version: 3.6.12
+  resolution: "@splidejs/splide@npm:3.6.12"
+  checksum: 2257a63a3adea8693492875b8e742eddf777ff2dfca3bc4e0197f74773aa75d0dd6888197219b755b64c3b511239dc29ace0a0bb1465704b3e8e6bc35760b8f2
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^1.1.1":
   version: 1.4.2
   resolution: "@surma/rollup-plugin-off-main-thread@npm:1.4.2"
@@ -26368,6 +26384,7 @@ __metadata:
   resolution: "vaccine-hesitancy-guide@workspace:."
   dependencies:
     "@n8tb1t/use-scroll-position": ^2.0.3
+    "@splidejs/react-splide": ^0.6.20
     "@tailwindcss/aspect-ratio": ^0.2.1
     autoprefixer: ^10.3.3
     gatsby: ^3.14.0

@@ -10,13 +10,12 @@ import { useMyContext } from "../../context/Context";
 // sm:ml-auto  xl:ml-0 xl:my-auto xl:order-2
 
 const Home4TestimonialsEtc = () => {
-  
   const imageProps = {
     className: "rounded-xl",
     placeholder: "blurred",
     loading: "eager",
     layout: "constrained",
-    quality: 90
+    quality: 90,
   };
   const { winWidth } = useMyContext();
 
@@ -42,15 +41,16 @@ const Home4TestimonialsEtc = () => {
                 to="/about/media"
                 // title="Take a Look at Our Media Coverage"
                 title={winWidth < 510 ? "Look at Our Media Coverage" : "Take a Look at Our Media Coverage"}
-
                 className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light
                     rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
                     border-2 border-solid bg-gray-light hover:bg-opacity-0"
               />
             </div>
 
-            <div className="mt-6 mxs:mt-8 sm:mt-12 mb-4 mxs:mb-5 md:mb-6 lg:my-auto  w-full
-                    grid grid-cols-2 mxs:grid-cols-3 gap-x-4 sm:gap-x-6 md:gap-x-8">
+            <div
+              className="mt-6 mxs:mt-8 sm:mt-12 mb-4 mxs:mb-5 md:mb-6 lg:my-auto  w-full
+                    grid grid-cols-2 mxs:grid-cols-3 gap-x-4 sm:gap-x-6 md:gap-x-8"
+            >
               <div className="object-contain">
                 <StaticImage
                   src="../../assets/mediaScreenshots/Global News.jpg"

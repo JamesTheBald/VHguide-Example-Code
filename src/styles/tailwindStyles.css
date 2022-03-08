@@ -70,11 +70,15 @@
   }
 
   .subtitleFont {
-    @apply text-14 mxs:text-16 md:text-18  tracking-0.3 mxs:tracking-0.4
+    @apply text-14 mxs:text-16 sm:text-18  tracking-0.3 mxs:tracking-0.4
   } 
 
   .titleFont {
     @apply font-serif font-semibold mxs:font-bold 
+  }
+
+  .titleSmall {
+    @apply text-16 mxs:text-25 md:text-30  tracking-0.3 mxs:tracking-0.5 sm:tracking-0.6
   }
 
   .titleMedium {

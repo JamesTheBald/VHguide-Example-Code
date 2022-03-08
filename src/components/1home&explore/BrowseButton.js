@@ -6,12 +6,12 @@ import { useMyContext } from "../../context/Context";
 
 const BrowseButton = props => {
   const { setNoneSelected } = useMyContext();
-  const { className } = props;
+  const { className, children } = props;
 
   return (
     <Link
       to="/explore"
-      className={`pt-1  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
+      className={`pt-1.5  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
                     border-2 border-solid ${className} bg-gray-light hover:bg-opacity-0`}
       style={props.style}
       onClick={() => {
@@ -21,7 +21,7 @@ const BrowseButton = props => {
         }
       }}
     >
-      <button>Browse Hesitancy Types</button>
+      <button>{children}</button>
     </Link>
   );
 };

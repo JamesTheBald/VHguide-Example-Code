@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 
 import testimonials from "../../content/testimonials";
+import CarouselDots from "./CarouselDotsTestimonials";
 // import { useMyContext } from "../../context/Context";
 
 const CarouselTestimonials = () => {
@@ -11,26 +12,6 @@ const CarouselTestimonials = () => {
   const carouselRefTestimonials = useRef(null);
   const numPages = Math.ceil(testimonials.length);
   let timeout;
-
-  const CarouselDots = (props) => {
-    const { pages, activePage, onClick } = props;
-    return (
-      <div className="flex">
-        {pages.map((page) => {
-          const isActivePage = activePage === page;
-          return (
-            <button key={page} className="mt-3 mx-1 cursor-pointer" onClick={() => onClick(page)}>
-              {isActivePage ? (
-                <div className="m-2  bg-blue-black rounded-full" style={{ width: 12, height: 12 }} />
-              ) : (
-                <div className="m-2  border-2 border-solid border-blue-black rounded-full" style={{ width: 12, height: 12 }} />
-              )}
-            </button>
-          );
-        })}
-      </div>
-    );
-  };
 
   return (
     <>

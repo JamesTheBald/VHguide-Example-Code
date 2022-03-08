@@ -3,8 +3,7 @@ import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-import Home1TopPage from "../components/1home&explore/Home1TopPanel";
-// import Home2HesTypes from "../components/1home&explore/Home2HesTypes";
+import Home1TopCarousel from "../components/1home&explore/Home1TopCarousel";
 import Home3WhoWeAre from "../components/1home&explore/Home3WhoWeAre";
 import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsEtc";
 
@@ -32,9 +31,8 @@ const Home = props => {
 
   return (
     <>
-      <main className="bg-white text-blue-black overflow-x-hidden">
-        <Home1TopPage />
-        {/* <Home2HesTypes /> */}
+      <main className="w-screen bg-white text-blue-black overflow-x-hidden">
+        <Home1TopCarousel />
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />
         <div className="w-full h-16 md:h-24"></div>
@@ -94,27 +92,3 @@ Home.Layout = Layout;
 // Above Layout assigning follows https://dev.to/milescrighton/keeping-persistent-ui-across-routes-with-gatsby-s-wrappageelement-4o22
 
 export default Home;
-
-// pplIcons: allFile(filter: { sourceInstanceName: { eq: "peopleIcons" }, extension: { eq: "svg" } }) {
-//   edges {
-//     node {
-//       dir
-//       relativePath
-//       sourceInstanceName
-//       publicURL
-//     }
-//   }
-// }
-// webinarShots: allFile(filter: { sourceInstanceName: { eq: "webinarShots" } }) {
-//   edges {
-//     node {
-//       dir
-//       relativePath
-//       sourceInstanceName
-//       childImageSharp {
-//         gatsbyImageData(formats: AUTO, placeholder: BLURRED, height: 300)
-//       }
-//       publicURL
-//     }
-//   }
-// }

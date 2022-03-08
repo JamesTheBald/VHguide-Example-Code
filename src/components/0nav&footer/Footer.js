@@ -51,7 +51,7 @@ const Footer = () => {
           aria-hidden="true"
         >
           <div className="flex flex-wrap flex-row-reverse justify-end  gap-y-1.5 mxs:gap-y-1">
-            <div className="mr-12  flex  text-yellow-dark">
+            <div className="mr-12  flex  text-yellow-darker">
               <div>Thoughts on the site?</div>
               <a
                 className={`ml-1 underline cursor-pointer`}

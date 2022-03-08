@@ -53,13 +53,13 @@ const Pill = props => {
           <StaticImage
             className={`absolute ${noneSelected && "hidden"} w-20 mxs:w-25 sm:w-28`}
             style={{ top: pillHeight - 1, left: 32 }}
-            src="../../assets/homepage/New Banner - Faded Blue.jpg"
+            src="../../assets/homepage/'New' Banner - Faded Blue.jpg"
             alt="'New' banner"
           />
           <StaticImage
             className={`absolute ${!noneSelected && "hidden"} w-20 mxs:w-25 sm:w-28`}
             style={{ top: pillHeight - 1, left: 32 }}
-            src="../../assets/homepage/New Banner - Navy.jpg"
+            src="../../assets/homepage/'New' Banner - Navy.jpg"
             alt="'New' banner"
           />
         </>

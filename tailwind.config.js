@@ -101,55 +101,55 @@ module.exports = {
     },
 
     borderRadius: {
-      'none': '0',
-      'sm': '0.125rem',
-      DEFAULT: '0.25rem',
-      'md': '0.375rem',
-      'lg': '0.5rem',
-      'xl': '0.75rem',
-      '2xl': '1rem',
-      '3xl': '1.5rem',
-      '4xl': '2rem',
-      '5xl': '2.75rem',
-      'full': '9999px',
+      none: "0",
+      sm: "0.125rem",
+      DEFAULT: "0.25rem",
+      md: "0.375rem",
+      lg: "0.5rem",
+      xl: "0.75rem",
+      "2xl": "1rem",
+      "3xl": "1.5rem",
+      "4xl": "2rem",
+      "5xl": "2.75rem",
+      full: "9999px",
     },
 
     maxWidth: {
-      '14': "3.5rem",
-      '15': "3.75rem",
-      '16': "4rem",
-      '18': "4.5rem",
-      '22': "5.5rem",
-      '24': "6rem",
-      '25': "6.25rem",
-      '28': "7rem",
-      '30': "7.5rem",
-      '32': "8rem",
-      '35': "8.75rem",
-      '36': "9rem",
-      '40': "10rem",
-      '44': "11rem",
-      '48': "12rem",
-      '52': "13rem",
-      '56': "14rem",
-      '60': "15rem",
-      '64': "16rem",
-      '66': "16.5rem",
-      '70': "17.5rem",
-      '75': "18.75rem",
-      '80': "20rem",
-      '90': "22.5rem",
-      '95': "23.75rem",
-      '100': '25rem',
-      '110': '27.5rem',
-      '120': '30rem',
-      '140': '35rem',
-      '150': '37.5rem',
-      '200': '50rem',
-      '220': '55rem',
-      '250': '62.5rem',
-      '300': '75rem',
-      '400': '100rem',
+      14: "3.5rem",
+      15: "3.75rem",
+      16: "4rem",
+      18: "4.5rem",
+      22: "5.5rem",
+      24: "6rem",
+      25: "6.25rem",
+      28: "7rem",
+      30: "7.5rem",
+      32: "8rem",
+      35: "8.75rem",
+      36: "9rem",
+      40: "10rem",
+      44: "11rem",
+      48: "12rem",
+      52: "13rem",
+      56: "14rem",
+      60: "15rem",
+      64: "16rem",
+      66: "16.5rem",
+      70: "17.5rem",
+      75: "18.75rem",
+      80: "20rem",
+      90: "22.5rem",
+      95: "23.75rem",
+      100: "25rem",
+      110: "27.5rem",
+      120: "30rem",
+      140: "35rem",
+      150: "37.5rem",
+      200: "50rem",
+      220: "55rem",
+      250: "62.5rem",
+      300: "75rem",
+      400: "100rem",
     },
 
     extend: {
@@ -171,7 +171,7 @@ module.exports = {
           dark: "#1E2C80",
           black: "#162161", // halfway between #152063 and #17215F
           blacker: "#131F63",
-          blackest: "#040F50"
+          blackest: "#040F50",
         },
 
         gray: {
@@ -182,12 +182,18 @@ module.exports = {
           neutral: "#BCBCBC",
           mid: "#B2B7D3",
           dark: "#707070",
-          black: "#03050F"
+          black: "#03050F",
         },
 
         yellow: {
           darkish: "#B1770C",
-          dark: "hsl(39, 86%, 31%)"
+          dark: "#AC740C",
+          darker: "hsl(39, 86%, 31%)",
+        },
+
+        lilac: {
+          medium: "#E0E3FC",
+          darkish: "#A2ADF5",
         },
       },
 
@@ -229,12 +235,15 @@ module.exports = {
         150: "37.5rem",
         160: "40rem",
         170: "42.5rem",
-        180: "45rem",  //720px
-        190: "47.5rem",//720px
-        200: "50rem",  //800px
-        210: "52.5rem",//840px
-        220: "55rem",  //880px
-        240: "60rem",  //960px
+        175: "43.75rem", //700px
+        180: "45rem", //720px
+        190: "47.5rem", //720px
+        195: "48.75rem", //720px
+        200: "50rem", //800px
+        210: "52.5rem", //840px
+        220: "55rem", //880px
+        225: "56.25rem", //900px
+        240: "60rem", //960px
         250: "62.5rem",
         260: "65rem",
         280: "70rem",
@@ -258,19 +267,18 @@ module.exports = {
       },
     },
     aspectRatio: {
-      1: '1',
-      2: '2',
-      3: '3',
-      4: '4',
-      36: '36',
-      37: '37',
-    }
-
+      1: "1",
+      2: "2",
+      3: "3",
+      4: "4",
+      36: "36",
+      37: "37",
+    },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
   variants: {
     extend: {
-      display: ['hover', "group-hover"],
+      display: ["hover", "group-hover"],
     },
   },
 };

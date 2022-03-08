@@ -6,7 +6,7 @@ export const biosContent = [
     letters: "PhD",
     title: "Principal Investigator",
     // directory for images is set in plugin config in gatsby-config.js
-    image: "Leslie-portrait 500px.jpg",
+    image: "Portrait - Leslie - 500px.jpg",
     info: (
       <>
         Dr. Myles Leslie, PhD is an Associate Professor at the School of Public Policy. He is a qualitative action
@@ -21,7 +21,7 @@ export const biosContent = [
     name: "Raad Fadaak",
     letters: "PhD",
     title: "Project and Content Lead",
-    image: "Raad-portrait 500px.jpg",
+    image: "Portrait - Raad - 500px.jpg",
     info: (
       <>
         Dr. Raad Fadaak, PhD is a Research Associate at the School of Public Policy. He has an extensive background in
@@ -35,7 +35,7 @@ export const biosContent = [
     name: "Nicole Pinto",
     letters: "MPH",
     title: "Project and Content Lead",
-    image: "Nicole-portrait 500px.jpg",
+    image: "Portrait - Nicole - 500px.jpg",
     info: (
       <>
         Nicole Pinto, MPH is a Research Associate at the School of Public Policy. She received her master’s degree in
@@ -49,7 +49,7 @@ export const biosContent = [
     name: "Elise Martinoski",
     letters: "B.Comm",
     title: "Web Design",
-    image: "Elise Photo - cropped, 1000px.jpg",
+    image: "Portrait - Elise - cropped, 1000px.jpg",
     info: (
       <>
         Elise Martinoski is a freelance Information Designer. She has a background working with non-profits, start-ups,
@@ -62,7 +62,7 @@ export const biosContent = [
     name: "James Murphy",
     letters: "M.Eng, M.Sc",
     title: "Web Developer",
-    image: "James smiling - square, 1000px.jpg",
+    image: "Portrait - James smiling - square, 1000px.jpg",
     info: (
       <>
         James is a full-stack web developer who creates fast, responsive, SEO-friendly custom websites using React, Gatsby and Tailwind CSS. On the back-end he is proficient with Node.js, Express and MongoDB. He has an eye for detail, writes clean code, and enjoys learning and a good challenge.

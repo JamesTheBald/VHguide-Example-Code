@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapperClass, wrapperStyle, imageClass, altText, quality }) => {
+const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapClass, wrapStyle, imgClass, altText, quality }) => {
   // further image settings in page query (e.g. index.js, at bottom). e.g.
   //    childImageSharp {
   //      gatsbyImageData(formats: AUTO, placeholder: BLURRED, layout: CONSTRAINED)
@@ -16,15 +16,15 @@ const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapperClass, wrapperStyl
           // if filename in queryResultsArray matches filename in content file...
 
           return (
-            <div key={index} className={wrapperClass} style={wrapperStyle}>
+            <div key={index} className={wrapClass} style={wrapStyle}>
               {item.node.ext === ".svg" ? (
-                <img src={item.node.publicURL} alt={altText} className={imageClass} />
+                <img src={item.node.publicURL} alt={altText} className={imgClass} />
               ) : (
                 item.node.childImageSharp.gatsbyImageData && (
                   <GatsbyImage
                     image={item.node.childImageSharp.gatsbyImageData}
                     alt={altText}
-                    className={imageClass}
+                    className={imgClass}
                     quality={quality}
                   />
                 )
