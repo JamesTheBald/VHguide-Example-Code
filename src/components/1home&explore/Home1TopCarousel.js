@@ -22,13 +22,13 @@ const Home1TopCarousel = () => {
           options={{
             gap: 40,
             speed: 1200,  // slide-across time in ms
-            autoplay: false, // default=true
+            autoplay: true, // default=true
             interval: 10000,
             rewind: true, // default=false
             rewindSpeed: 2000,
             pauseOnHover: true,
             pauseOnFocus: false,
-            lazyLoad: "nearby",
+            lazyLoad: "sequential",
             arrows: false,  // default=true
             drag: true, // default=true
           }}
