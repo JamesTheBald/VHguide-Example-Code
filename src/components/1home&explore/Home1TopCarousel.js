@@ -20,17 +20,19 @@ const Home1TopCarousel = () => {
       <div className="w-screen overflow-hidden">
         <Splide
           options={{
+            type: "slide",
             gap: 40,
             speed: 1200,  // slide-across time in ms
             autoplay: true, // default=true
-            interval: 10000,
+            interval: 15000,
             rewind: true, // default=false
             rewindSpeed: 2000,
-            pauseOnHover: true,
+            pauseOnHover: false,
             pauseOnFocus: false,
-            lazyLoad: "sequential",
+            lazyLoad: false, // default = false
             arrows: false,  // default=true
             drag: true, // default=true
+            updateOnMove: true,  // default=false
           }}
         >
           {landingContent.map((currContent, index) => {
