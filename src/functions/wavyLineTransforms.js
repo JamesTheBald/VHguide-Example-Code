@@ -1,5 +1,5 @@
 const wavyLineTransforms = w => {
-  console.log("wavyLineTransforms.js w=", w);
+  // console.log("wavyLineTransforms.js w=", w);
   const xTr =
               w < 510 ? 0 : w < 720 ? 0 : w < 1024 ? 0 : w < 1366 ? -80 : w < 1640 ? 0 : w < 1920 ? 0 : w < 2300 ? 100 : 250;
   const yTr = w < 510 ? 80 : w < 720 ? 80 : w < 1024 ? 100 : w < 1366 ? -40 : w < 1640 ? 90 : w < 1920 ? 0 : w < 2300 ? 0 : -50;

@@ -175,6 +175,8 @@ module.exports = {
         },
 
         gray: {
+          lightest: "#fbfbfe",
+          lighter: "#f7f7fd",
           light: "#F2F3FC",
           lightish: "#E0E3FC",
           line: "#D6D6D6",

@@ -7,11 +7,14 @@ const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapClass, wrapStyle, img
   //      gatsbyImageData(formats: AUTO, placeholder: BLURRED, layout: CONSTRAINED)
   //    }
 
-  // console.log("DisplayGatsbyDynImage.js queryResultsArray=", queryResultsArray);
+  const log = false;
+  log && console.log("DisplayGatsbyDynImage.js queryArray=", queryArray);
+  log && console.log("DisplayGatsbyDynImage.js filename=", fileName);
 
   return (
     <>
       {queryArray.map((item, index) => {
+        log && console.log("For index ", index,", item.node.relativePath=", item.node.relativePath)
         if (item.node.relativePath === fileName) {
           // if filename in queryResultsArray matches filename in content file...
 

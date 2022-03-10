@@ -5,16 +5,17 @@ import { animateScroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 
 const BrowseButton = props => {
-  const { setNoneSelected } = useMyContext();
-  const { className, children } = props;
+  const { setNoneSelected, setLocn } = useMyContext();
+  const { className, buttonDestn, newLocn, children } = props;
 
   return (
     <Link
-      to="/explore"
-      className={`pt-1.5  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
-                    border-2 border-solid ${className} bg-gray-light hover:bg-opacity-0`}
+      to={buttonDestn}
+      className={`pt-1 mxs:pt-1.5  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
+                  border-2 border-solid ${className} hover:bg-opacity-0`}
       style={props.style}
       onClick={() => {
+        setLocn(newLocn);
         setNoneSelected(true);
         if (typeof window !== `undefined`) {
           animateScroll.scrollToTop({ duration: 0 }); // time in ms

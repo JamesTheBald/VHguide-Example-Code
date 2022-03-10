@@ -1,7 +1,16 @@
-/* Formatting for Splide's pagination / 'dots' */
+/* Formatting for Splide's pagination markers('dots') and arrows */
+
+.splide__arrow {
+  /* margin-left: 0px; */
+  margin-right: 13px;
+  position: absolute;
+  top: 38%;
+  opacity: 80%;
+}
 
 .splide__pagination__page {
   background: none;
+  opacity: 100;
   /* setting background:none is necessary to overwrite the default */
 
   margin: 6px;
@@ -12,10 +21,20 @@
   border-style: solid;
   border-width: 2px;
   border-color: #f2f3fc;
+  /* border-color: #f7f7fd; */
+}
+
+@media (min-width: 510px) {
+  .splide__pagination__page {
+    width: 17px;
+    height: 17px;
+    margin-bottom: 25px;
+  }
 }
 
 .splide__pagination__page.is-active {
   background: #f2f3fc;
+  /* background: #f7f7fd; */
   transform: scale(1);
   /* setting transform: scale(1) is necessary to overwrite the default */
 }
