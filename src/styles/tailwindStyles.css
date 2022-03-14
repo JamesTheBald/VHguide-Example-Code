@@ -112,7 +112,7 @@
   }
 
   .listTitleClass {
-    @apply mt-4 sm:mt-7  font-semibold text-blue-main  text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4
+    @apply mt-5 sm:mt-7  font-semibold text-blue-main  text-16 mxs:text-20 tracking-0.3 mxs:tracking-0.4
   }
 
   .divider { 

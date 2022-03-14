@@ -9,6 +9,7 @@ const TabBarOAR = () => {
 
   false && console.log(log && log2);
   log2 && console.log("TabBarOAR.js runs. winWidth=", winWidth);
+  log2 && console.log("TabBarOAR.js runs. locn=", locn);
 
   // To convert to title case, per KevBot: https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
   const titleCase = str => {
@@ -36,7 +37,7 @@ const TabBarOAR = () => {
   }
 
   const oarTabs = ["Overview", "Advice", "Resources", "Clinical Pearls"];
-  const hasPearlsTab = locn.branch >= 3 ? true : false;
+  const hasPearlsTab = locn.branch >= 3 || (locn.branch === 0 && locn.subtopic === 3) ? true : false;
   const numTabs = hasPearlsTab ? 4 : 3;
 
   const tabWidthAdjRatio = (winWidth - 2 * marginOuter) / (720 - 2 * marginOuter);
@@ -68,7 +69,7 @@ const TabBarOAR = () => {
       {oarTabs.map((currTabName, index) => {
         const isSelected = oarTabs[index] === selecTabName ? true : false;
         log2 && console.log("TabBarOAR.js index=", index, "currTabName=", currTabName, ", selected=", isSelected);
-        
+
         const onPediatrics = locn.branch === 3 ? true : false;
 
         return (

@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 
-const DetailsResources = (props) => {
+const DetailsResources = props => {
   const { contentID } = props;
   const { log, log2 } = useMyContext();
 
@@ -46,27 +46,13 @@ const DetailsResources = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  {/* Screenshot for Resources link */}
-                  {/* <div className="h-44 md:h-50 lg:h-56  bg-gray-300 flex justify-center   aspect-w-16 aspect-h-9">
-                    <div className="flex justify-center object-contain">
-                      <img
-                        src={currResource.image}
-                        // Per https://stackoverflow.com/questions/64910839/require-function-not-working-with-image-in-react
-                        // NB: Images must be in /src/assets  The alternative, with
-                        // <img src={require('./image.jpg).default}  worked but only if the image is in the components subdir
-                        // Putting them elsewhere led to a webpack file-loader rabbit hole.
-                        alt="Webpage screenshot"
-                      />
-                    </div>
-                  </div> */}
-
                   <div className="text-16 sm:text-20  tracking-0.3 sm:tracking-0.4  font-semibold">
-                    {currResource.label}
+                    {currResource.title}
                   </div>
 
                   <div className="mt-2 baseFont">
                     <span className="pr-2 orangeUnderline">
-                      <span>{currResource.linkTitle}</span>
+                      <span>{currResource.linkText}</span>
                       <FiExternalLink className="ml-1 inline" size={18} />
                     </span>
                     <span className="text-blue-black">{currResource.description}</span>

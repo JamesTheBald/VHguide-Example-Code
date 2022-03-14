@@ -5,9 +5,10 @@ import { Link } from "gatsby";
 import { useMyContext } from "../../context/Context";
 import { contentPersonas } from "../../content/contentPersonas";
 import PediatricsOverviewTheySay from "../../content/PediatricsOverviewTheySay";
+import ReproductiveOverviewTheySay from "../../content/ReproductiveOverviewTheySay";
 import MedExemptOverviewTheySay from "./MedExemptOverviewTheySay";
 
-const DetailsOverview = (props) => {
+const DetailsOverview = props => {
   const { contentID } = props;
   const { winWidth, queryData, locn, log, log2 } = useMyContext();
 
@@ -31,9 +32,13 @@ const DetailsOverview = (props) => {
   const linkDestn = locn.branch === 3 ? "/details/advice/pediatrics" : "/details/advice/eaase";
 
   return (
-    <div className="w-full h-full  flex flex-col  justify-start relative">
+    <div
+      className="pt-3 sm:pt-2 md:pt-0  w-full h-full  flex flex-col  justify-start relative"
+      // Primary panel padding is set on DetailsLayout.js by const panelPadding
+    >
       <main className="grid grid-cols-1  lg:grid-cols-3 grid-flow-row gap-x-12 gap-y-6 mxs:gap-y-10  justify-items-center">
         <section className={blockClass}>
+          {/* First Panel */}
           {pplIcons.map((item, index) => {
             return (
               item.node.relativePath === theySay.image && (
@@ -41,7 +46,6 @@ const DetailsOverview = (props) => {
               )
             );
           })}
-          {/* First Panel */}
           {contentID === "Undifferentiated" ? (
             <>
               <h3 className="listTitleClass mb-2">Considerations for vaccine hesitant patients:</h3>
@@ -53,6 +57,8 @@ const DetailsOverview = (props) => {
             </>
           ) : contentID === "Pediatrics" ? (
             <PediatricsOverviewTheySay />
+          ) : contentID === "ReproductiveEffects" ? (
+            <ReproductiveOverviewTheySay />
           ) : contentID === "MedicalExemptions" ? (
             <MedExemptOverviewTheySay />
           ) : (
@@ -114,9 +120,9 @@ const DetailsOverview = (props) => {
       </main>
       <Link
         to={linkDestn}
-        className={`mt-4 mxs:mt-6 ${
+        className={`mt-6 mxs:mt-10  mb-5 mr-auto  pt-2.5 pb-2  px-4  ${
           contentID === "Pediatrics" ? "lg:-mt-8" : "lg:mt-4"
-        }  mb-4 mr-auto  px-4 pt-1  smFont orangeLink linkInvPill`}
+        }  smFont orangeLink linkInvPill`}
       >
         {winWidth < 450 ? <>How to start the conversation</> : <>Read advice on how to start the conversation</>}
       </Link>

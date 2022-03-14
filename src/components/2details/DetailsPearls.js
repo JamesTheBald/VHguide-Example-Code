@@ -1,6 +1,7 @@
 import React from "react";
 
 import { pediatricsPearls } from "../../content/pediatricsPearls";
+import { reproductivePearls } from "../../content/reproductivePearls";
 import { medExemptPearls } from "../../content/medExemptPearls";
 import { useMyContext } from "../../context/Context";
 import QuoteGroups from "../2details/QuoteGroups";
@@ -8,8 +9,15 @@ import QuoteGroups from "../2details/QuoteGroups";
 const DetailsPearls = () => {
   const { locn, log, log2 } = useMyContext();
   false && log && log2 && console.log();
-  
-  const detailsPearlsContent = locn.branch === 3 ? pediatricsPearls : medExemptPearls;
+  log && console.log("DetailsPearls.js locn=", locn);
+
+  const detailsPearlsContent =
+    locn.branch === 3
+      ? pediatricsPearls
+      : locn.branch === 0 && locn.subtopic === 3
+      ? reproductivePearls
+      : medExemptPearls;
+
   log && console.log("DetailsPearls.js detailsPearlsContent=", detailsPearlsContent);
 
   return (
@@ -19,6 +27,11 @@ const DetailsPearls = () => {
           <>
             Here you will find peer-to-peer advice on how to approach and conduct vaccine hesitancy conversations,
             particularly about vaccinating children and adolescents.
+          </>
+        ) : locn.branch === 0 && locn.subtopic === 3 ? (
+          <>
+            Here you will find peer-to-peer advice on how to approach conversations about pregnancy, fertility, or
+            reproductive concerns.
           </>
         ) : (
           <>Here you will find peer-to-peer advice on how to approach conversations about medical exemptions.</>

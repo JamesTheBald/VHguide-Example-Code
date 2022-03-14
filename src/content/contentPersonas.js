@@ -26,15 +26,16 @@ export const contentPersonas = {
   // MedicalExemptions
   // BadContentID
 
-  // Path names for doctor icon images:
-  //  ..doctorBlackManBeard.svg
-  //  ..doctorBlackWoman.svg
-  //  ..doctorMuslimWomanYellowHeadCover.svg
-  //  ..doctorWhiteManBlackHair.svg
-  //  ..doctorWhiteManGoatee.svg
-  //  ..doctorWhiteManYoung.svg
-  //  ..doctorWhiteWomanBrownHairGlasses.svg
-  //  ..doctorWhiteWomanDarkBrownHair.svg
+  // File names for doctor icon images, with approximate total site usage count:
+  //  ..doctorBlackManBeard.svg     28
+  //  ..doctorBlackWoman.svg        29
+  //  ..doctorMuslimWomanYellowHeadCover.svg 32
+  //  ..doctorWhiteManBlackHair.svg 26
+  //  ..doctorWhiteManGoatee.svg    25
+  //  ..doctorWhiteManYoung.svg     21
+  //  ..doctorWhiteWomanBrownHairGlasses.svg  24
+  //  ..doctorWhiteWomanDarkBrownHair.svg 25
+  // TO-DO: balance the number of these, ensure their distribution is random
 
   // OLD NOTES:
   // Anything with square brackets is an 'array', holding multiple elements (all unlabeled peers).
@@ -755,17 +756,15 @@ export const contentPersonas = {
 
       resources: [
         {
-          label: <>CanVax - How do the mRNA vaccines work?</>,
-          image: "",
-          linkTitle: <>Educational video from CanVax</>,
+          title: <>CanVax - How do the mRNA vaccines work?</>,
+          linkText: <>Educational video from CanVax</>,
           link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
           description: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
         },
 
         {
-          label: <>University of Waterloo - mRNA vaccine myths factsheet</>,
-          image: "",
-          linkTitle: <>mRNA vaccine myths factsheet for patients</>,
+          title: <>University of Waterloo - mRNA vaccine myths factsheet</>,
+          linkText: <>mRNA vaccine myths factsheet for patients</>,
           link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
           description: (
             <>
@@ -776,16 +775,14 @@ export const contentPersonas = {
         },
 
         {
-          label: <>The Long Road to the mRNA vaccines</>,
-          image: "",
-          linkTitle: <>CIHR Website and Timeline</>,
+          title: <>The Long Road to the mRNA vaccines</>,
+          linkText: <>CIHR Website and Timeline</>,
           link: "https://cihr-irsc.gc.ca/e/52424.html",
           description: <>CIHR&apos;s overview and timeline of the development of the mRNA vaccines. (April 2021)</>,
         },
         {
-          label: <>Safety of the COVID-19 Vaccines</>,
-          image: "",
-          linkTitle: <>WHO website and infographics</>,
+          title: <>Safety of the COVID-19 Vaccines</>,
+          linkText: <>WHO website and infographics</>,
           link: "https://www.who.int/news-room/feature-stories/detail/safety-of-covid-19-vaccines",
           description: (
             <>
@@ -795,9 +792,8 @@ export const contentPersonas = {
           ),
         },
         {
-          label: <>COVID-19 Vaccine Frequently Asked Questions</>,
-          image: "",
-          linkTitle: <>ImmunizeBC Vaccine FAQ Page</>,
+          title: <>COVID-19 Vaccine Frequently Asked Questions</>,
+          linkText: <>ImmunizeBC Vaccine FAQ Page</>,
           link: "https://immunizebc.ca/covid-19-vaccine-frequently-asked-questions",
           description: (
             <>
@@ -807,27 +803,24 @@ export const contentPersonas = {
           ),
         },
         {
-          label: <>How Pfizer Makes Its Covid-19 Vaccine</>,
-          image: "",
-          linkTitle: <>New York Times news article</>,
+          title: <>How Pfizer Makes Its Covid-19 Vaccine</>,
+          linkText: <>New York Times news article</>,
           link: "https://www.nytimes.com/interactive/2021/health/pfizer-coronavirus-vaccine.html",
           description: (
             <>Detailed examination of how Pfizer produces the mRNA vaccines. New York Times article. (April 2021).</>
           ),
         },
         {
-          label: <>Is the COVID-19 vaccine safe?</>,
-          image: "",
-          linkTitle: <>Johns Hopkins Medicine web resource</>,
+          title: <>Is the COVID-19 vaccine safe?</>,
+          linkText: <>Johns Hopkins Medicine web resource</>,
           link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/is-the-covid19-vaccine-safe",
           description: (
             <>Hopkins Medicine fact page and resources for exploring the safety of the COVID-19 vaccines. (May 2021).</>
           ),
         },
         {
-          label: <>How did you convince others? (Twitter)</>,
-          image: "",
-          linkTitle: <>Twitter thread</>,
+          title: <>How did you convince others? (Twitter)</>,
+          linkText: <>Twitter thread</>,
           link: "https://twitter.com/DoYouEvenLif/status/1405265498166595585?s=20",
           description: (
             <>
@@ -1168,17 +1161,15 @@ export const contentPersonas = {
       // (mRNAConcerns Resources)
       resources: [
         {
-          label: <>CanVax - How do the mRNA vaccines work?</>,
-          image: "",
-          linkTitle: <>Educational video from CanVax</>,
+          title: <>CanVax - How do the mRNA vaccines work?</>,
+          linkText: <>Educational video from CanVax</>,
           link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
           description: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
         },
 
         {
-          label: <>University of Waterloo - mRNA vaccine myths factsheet</>,
-          image: "",
-          linkTitle: <>mRNA vaccine myths factsheet for patients</>,
+          title: <>University of Waterloo - mRNA vaccine myths factsheet</>,
+          linkText: <>mRNA vaccine myths factsheet for patients</>,
           link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
           description: (
             <>
@@ -1189,16 +1180,14 @@ export const contentPersonas = {
         },
 
         {
-          label: <>The Long Road to the mRNA vaccines</>,
-          image: "",
-          linkTitle: <>CIHR Website and Timeline</>,
+          title: <>The Long Road to the mRNA vaccines</>,
+          linkText: <>CIHR Website and Timeline</>,
           link: "https://cihr-irsc.gc.ca/e/52424.html",
           description: <>CIHR&apos;s overview and timeline of the development of the mRNA vaccines. (April 2021)</>,
         },
         {
-          label: <>Understanding the mRNA vaccines</>,
-          image: "",
-          linkTitle: <>US CDC website and infographics</>,
+          title: <>Understanding the mRNA vaccines</>,
+          linkText: <>US CDC website and infographics</>,
           link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html",
           description: (
             <>
@@ -1208,9 +1197,8 @@ export const contentPersonas = {
           ),
         },
         {
-          label: <>How the COVID vaccine can save your life (comic)</>,
-          image: "",
-          linkTitle: <>Interactive comic looking at COVID vaccines</>,
+          title: <>How the COVID vaccine can save your life (comic)</>,
+          linkText: <>Interactive comic looking at COVID vaccines</>,
           link: "https://projects.nj.com/vaccine-comic/",
           description: <>A graphic novel/comic strip looking at the mRNA vaccines. (February 2021)</>,
         },
@@ -1305,7 +1293,7 @@ export const contentPersonas = {
               protect you from that altogether. These vaccines do that.
             </>
           ),
-          image: "doctorWhiteManGoatee.svg",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
       },
 
@@ -1625,11 +1613,10 @@ export const contentPersonas = {
       // (MedicallyComplex Resources)
       resources: [
         {
-          label: (
+          title: (
             <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>
           ),
-          image: "",
-          linkTitle: <>Interim Information for Health Care Providers Completing Risk Assessments</>,
+          linkText: <>Interim Information for Health Care Providers Completing Risk Assessments</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-counselling-immunocompromised-individuals-mrna.pdf",
           description: (
             <>
@@ -1640,14 +1627,13 @@ export const contentPersonas = {
         },
 
         {
-          label: (
+          title: (
             <>
               Canadian Rheumatology Association&apos;s Recommendation on Covid-19 Vaccination in Persons with Autoimmune
               Rheumatic Disease
             </>
           ),
-          image: "",
-          linkTitle: <>Interim Recommendations for Healthcare Providers from the CRA</>,
+          linkText: <>Interim Recommendations for Healthcare Providers from the CRA</>,
           link: "https://rheum.ca/wp-content/uploads/2021/05/FINAL-V2-CRA-Recommendation-on-COVID-19-Vaccination_May-2021.pdf",
           description: (
             <>
@@ -1656,11 +1642,10 @@ export const contentPersonas = {
             </>
           ),
         },
-
+        // (MedicallyComplex Resources)
         {
-          label: <>Crohn&apos;s and Colitis Canada: COVID-19 Vaccines and IBD</>,
-          image: "",
-          linkTitle: <>Recommendations on the use of COVID-19 vaccines in individuals with IBD/Crohn&apos;s/Colitis</>,
+          title: <>Crohn&apos;s and Colitis Canada: COVID-19 Vaccines and IBD</>,
+          linkText: <>Recommendations on the use of COVID-19 vaccines in individuals with IBD/Crohn&apos;s/Colitis</>,
           link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
           description: (
             <>
@@ -1672,9 +1657,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
-          image: "",
-          linkTitle: <>Information for Patients and Families</>,
+          title: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
+          linkText: <>Information for Patients and Families</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-cancer-treatment-info-pf.pdf",
           description: (
             <>
@@ -1685,9 +1669,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
-          image: "",
-          linkTitle: <>Video from the Ontario Hospital Association</>,
+          title: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
+          linkText: <>Video from the Ontario Hospital Association</>,
           link: "https://www.youtube.com/watch?v=eWbaME_F750&list=PL2zzFmCbIz4eE5JUlT2ODFU2KnjCVG7D6",
           description: (
             <>
@@ -1698,9 +1681,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
-          image: "",
-          linkTitle: <>US CDC website and factsheet</>,
+          title: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
+          linkText: <>US CDC website and factsheet</>,
           link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/underlying-conditions.html",
           description: (
             <>
@@ -1721,70 +1703,91 @@ export const contentPersonas = {
       tags: ["", ""],
       theySay: {
         image: "Hesitancy Group 2.svg",
-        content: [
-          <>
-            &ldquo;I don&apos;t want to introduce unnecessary medications into my body if I don&apos;t need to. Why
-            would I do that?&rdquo;
-          </>,
-          <>
-            &ldquo;It&apos;s too early to know what the effects of the vaccine will be on my baby/chances of
-            conceiving.&rdquo;
-          </>,
-          <>
-            &ldquo;I don&apos;t want to get the vaccine because I&apos;m worried the side effects will interrupt my
-            training/fitness performance.&rdquo;
-          </>,
-        ],
+        content: "",
+        // The content for Overview-TheySay is in its own component <PediatricsOverviewTheySay /> so useContext can be used.
       },
 
       thingsToConsider: {
         image: "doctorWhiteWomanBrownHairGlasses.svg",
         content: [
-          <>Draw attention to the fact that vaccines are a normal part of prenatal care.</>,
-          <>Highlight demonstrated safety in both clinical trials and vaccine roll out in pregnant populations.</>,
           <>
-            Draw attention to the benefits of vaccination shared between mother and unborn child &#40;e.g. passive
-            immunity&#41;.
+            Draw attention to the fact that <b>vaccines are a normal part of prenatal care</b>.
           </>,
           <>
-            Discuss possibility of a COVID infection and its symptoms&apos; effects on training and fitness versus the
-            vaccine side effects.
+            Emphasize that the <b>safety of the vaccines has been demonstrated</b> in both clinical trials and vaccine
+            roll out in pregnant populations.
+          </>,
+          <>
+            <b>Draw attention to the benefits of vaccination shared</b> between mother and unborn child (e.g. passive
+            immunity).
+          </>,
+          <>
+            Emphasize that
+            <a
+              className="ml-1.5 orangeUnderline"
+              href="https://www.ajog.org/article/S0002-9378(21)00991-1/fulltext"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              pregnant patients <FiExternalLink className="inline" size={18} />
+            </a>{" "}
+            and very
+            <a
+              className="ml-1.5 orangeUnderline"
+              href="https://www.publications.aap.org/neoreviews/article/22/5/e284/180665/Perinatal-SARS-CoV-2-Infection-and-Neonatal-COVID"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              young children <FiExternalLink className="inline" size={18} />
+            </a>{" "}
+            are at particularly high risk for COVID-19 complications.
           </>,
         ],
       },
+      // Reproductive
       takeHome: {
         image: "Notepad_small.svg",
         content: [
-          <>
-            Beyond the evidence showing that the vaccines do not interfere with reproductive health or fitness, there is
-            likely a need for personal reassurance here. Your recommendation as a trusted health counsellor can carry
-            significant weight in a patient&apos;s decision to get vaccinated.
-          </>,
+          <ul>
+            <li className="listClass">
+              With pregnant patients, place extra emphasis on the patient’s autonomy and self-determination over their
+              bodies. Take time to validate their concerns, and prioritize having the patient return to you for care
+              throughout the course of their pregnancy.
+            </li>
+            <li className="listClass">
+              As a clinician, you are a key part of your patient’s support network. Emphasize your role during their
+              pregnancy, and your interest in protecting the health of them and their child in the best way possible.
+            </li>
+            <li className="listClass">
+              Avoid taking a ‘presumptive’ approach about vaccination. Be prepared to have multiple conversations, and
+              take the time to understand and validate your patients’ concerns. Especially with pregnant patients,
+              prioritize the development of your long-term patient-provider relationship.
+            </li>
+          </ul>,
         ],
       },
     },
 
     advice: {
       tags: ["", ""],
-
+      // Reproductive
       eaase: {
         tags: [""], // Do we want tags here? I&apos;m guessing not...
         engage: {
           text: (
             <>
-              What have you heard or read about the vaccines and fertility? Are you thinking that the vaccine would make
-              it harder to have children?
+              It’s completely normal to have worries or concerns at this time. You (and your partner) want to make sure
+              you have a healthy pregnancy and baby. Let’s chat some more about your concerns around the vaccines.
             </>
           ),
-          image: "doctorWhiteManBlackHair.svg",
+          image: "doctorWhiteManYoung.svg",
         },
         affirm: {
           text: (
             <>
-              I know we&apos;ve talked before about your plans to ensure fertility, and that&apos;s informed other kinds
-              of decisions we&apos;ve made along the way &#91;e.g. birth control, sexual performance&#93;, and stuff
-              like that, right? So I get where you&apos;re coming from in that regard, and that&apos;s very important to
-              you.
+              I just want to underline that this is your body and your choice and completely respect whatever decision
+              you make. I want to highlight that I absolutely respect this as your decision. On my end, my job is to
+              help you make an informed decision, and to support you through this pregnancy.{" "}
             </>
           ),
           image: "doctorBlackWoman.svg",
@@ -1792,9 +1795,9 @@ export const contentPersonas = {
         ask: {
           text: (
             <>
-              Fertility concerns are something I&apos;ve been hearing quite a bit from my other patients. And because of
-              that, I&apos;ve done a fair bit of research in this space to make sure that I could effectively answer
-              people&apos;s questions and concerns. Can I share what I&apos;ve been telling my other patients?
+              Fertility concerns are something I've been hearing quite a bit from my other patients. And because of
+              that, I've done a fair bit of research in this space to make sure that I could effectively answer people's
+              questions and concerns. Can I share what I've been telling my other patients?
             </>
           ),
           image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -1802,15 +1805,17 @@ export const contentPersonas = {
         evoke: {
           text: (
             <>
-              I would like to make it really clear to you that the way we make sure that we have healthy babies, is that
-              we keep moms healthy. And we help get mom to make antibodies against COVID, which has turned our world
-              upside down, and to give those antibodies &mdash; that protection, that shield &mdash; to her baby.
+              I’m happy to have this conversation again about the vaccines. It's not something you have to decide this
+              minute, but while you're making a decision and throughout the pregnancy, you want to make sure that you
+              have all those extra layers of protection. You and your baby won't have that extra layer of protection if
+              you don’t get vaccinated, and I think that's really important. But I obviously I respect the choices that
+              you make.
             </>
           ),
           image: "doctorWhiteManGoatee.svg",
         },
       },
-
+      // Reproductive
       engage: {
         tags: ["", ""],
         content: [
@@ -1820,8 +1825,9 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    What have you heard or read about the vaccines and fertility? Are you thinking that the vaccine
-                    would make it harder to have children?
+                    Do you, or your partner have any specific concerns [about vaccination] that I can try to address? We
+                    can also have your partner come in with you for your next appointment, so that we can discuss it
+                    together.
                   </>
                 ),
                 featured: false,
@@ -1829,11 +1835,27 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+
               {
                 text: (
                   <>
-                    Are you thinking that the vaccine would give you problems in maintaining an active or athletic
-                    lifestyle?
+                    It’s completely normal to have worries or concerns at this time. You (and your partner) want to make
+                    sure you have a healthy pregnancy and baby. Let’s chat some more about your concerns around the
+                    vaccines.
+                  </>
+                ),
+                featured: true,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    We hear a lot of information from our friends and family, especially when it comes to pregnancy and
+                    babies. But a lot of this can be misinformation too. Was there something specific you were told that
+                    made you concerned about the vaccines?
                   </>
                 ),
                 featured: false,
@@ -1845,7 +1867,7 @@ export const contentPersonas = {
           },
         ],
       },
-      //REPRODUCTIVE
+      // Reproductive
       affirm: {
         tags: ["", ""],
         content: [
@@ -1855,10 +1877,8 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    I know we&apos;ve talked before about your plans to ensure fertility, and that&apos;s informed other
-                    kinds of decisions we&apos;ve made along the way &#91;e.g. birth control, sexual performance&#93;,
-                    and stuff like that, right? So I get where you&apos;re coming from in that regard, and that&apos;s
-                    very important to you.
+                    These are really common concerns that most of our pregnant patients have. We're trying to make a
+                    decision, not only for ourselves, but for our babies to whom we feel a huge responsibility.
                   </>
                 ),
                 featured: false,
@@ -1866,37 +1886,41 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    I think we are on the same page that wanting healthy babies, it&apos;s a shared goal for me and you,
-                    right?
+                    I know as a parent myself that the most important thing is protecting our kids. That's what life
+                    becomes all about. So yeah, I can see how that would make you nervous, but, honestly, what I can
+                    tell you is that I'm really worried about you and your baby remaining unvaccinated and unprotected.
                   </>
                 ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
 
+              {
+                text: (
+                  <>
+                    I just want to underline that this is your body and your choice and completely respect whatever
+                    decision you make. I want to highlight that I absolutely respect this as your decision. On my end,
+                    my job is to help you make an informed decision, and to support you through this pregnancy.
+                  </>
+                ),
                 featured: true,
                 image: "",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    I can see it&apos;s very important for you to know if there is any chance that getting a vaccine
-                    could affect your ability to have children.
-                  </>
-                ),
-                featured: false,
-                image: "",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-              //FITNESS
-              {
-                text: (
-                  <>
-                    I know maintaining an active lifestyle is really important to you and we want to make sure we keep
-                    you as active as possible for as long as possible.
+                    I know we've talked before about your plans to ensure fertility, and that's informed other kinds of
+                    decisions we've made along the way [e.g. birth control, sexual performance], and stuff like that,
+                    right? So I get where you're coming from in that regard, and that's very important to you.
                   </>
                 ),
                 featured: false,
@@ -1918,26 +1942,27 @@ export const contentPersonas = {
               {
                 text: (
                   <>
-                    Fertility concerns are something I&apos;ve been hearing quite a bit from my other patients. And
-                    because of that, I&apos;ve done a fair bit of research in this space to make sure that I could
-                    effectively answer people&apos;s questions and concerns. Can I share what I&apos;ve been telling my
-                    other patients?
-                  </>
-                ),
-                featured: false,
-                image: "doctorWhiteWomanDarkBrownHair.svg",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-              {
-                text: (
-                  <>
-                    Keeping up your healthy lifestyle is important to me as well. I want to see you living as healthy as
-                    possible. Can I share why I think a COVID vaccine may help you do that?
+                    We have good data now [on pregnancy, COVID-19, and vaccinations]. We actually have studies about
+                    these things. Do you want me to go through those and tell you what the researchers found? Or I can
+                    send them to you and we can talk through them when I see you again in a few weeks?
                   </>
                 ),
                 featured: false,
                 image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    Fertility concerns are something I've been hearing quite a bit from my other patients. And because
+                    of that, I've done a fair bit of research in this space to make sure that I could effectively answer
+                    people's questions and concerns. Can I share what I've been telling my other patients?
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -1950,79 +1975,29 @@ export const contentPersonas = {
         tags: ["", ""],
         content: [
           {
-            subheading: "",
+            subheading: "Safety in Pregnancy, Miscarriage Concerns, & Side Effects",
             quotes: [
               {
                 text: (
                   <>
-                    The vaccine doesn&apos;t stay in your body forever. It&apos;s just like any kind of medication you
-                    take, a pill you take by mouth. It doesn&apos;t stay in your body forever. Quite naturally, it gets
-                    flushed out of your body in a few days. Because you&apos;re so healthy, this natural process will
-                    probably happen even faster for you.
+                    I do think we have to correctly analyze the data that's there, and so far there is no evidence that
+                    miscarriage rates are increased at all in people who are vaccinated.
                   </>
                 ),
-                featured: false,
-                image: "doctorMuslimWomanYellowHeadCover.svg",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-              //REPODUCTIVE
-              {
-                text: (
-                  <>
-                    It&apos;s been standard practice to vaccinate moms-to-be for the flu, and whooping cough as well.
-                    The idea is that the mom can pass along her protection to the newborn. And so we think the rationale
-                    is really similar for COVID. What we see in the research is that the vaccine itself does not cross
-                    the placenta. So the baby is not affected by the vaccine, but mom can give her protection to the
-                    baby. So mom is doing this incredible thing for the baby, which is using her immune system to
-                    protect the newborn. And I can&apos;t imagine any sort of mom-to-be who wouldn&apos;t want to hand
-                    off a shield to her baby.
-                  </>
-                ),
-
-                featured: true,
-                image: "",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-              {
-                text: (
-                  <>
-                    The fertility piece is obviously a really important piece for women in particular. What&apos;s
-                    interesting is as much as the COVID vaccines are a new, we&apos;ve been dealing with vaccines for
-                    years and years. And the whole picture from vaccine science tells us that this is something we can
-                    be super comfortable about.
-                  </>
-                ),
-                featured: false,
-                image: "doctorMuslimWomanYellowHeadCover.svg",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-              {
-                text: (
-                  <>
-                    During the pandemic we&apos;ve actually seen a whole bunch of unvaccinated, pregnant moms ending up
-                    very, very sick. This has actually become a big priority in my practice to make sure that moms who
-                    are expecting are definitely getting vaccinated. Because of course, if we can protect them, then
-                    we&apos;re protecting two lives, aren&apos;t we?
-                  </>
-                ),
-
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    In terms of your particular concern around the fertility, this is something that has come up quite a
-                    bit in my practice. And in my digging, what I have found is that a lot of these concerns have been
-                    spurred on by a group actually funded out of &#91;other countries&#93;. A group that is trying to
-                    spread disinformation to frighten people. Is it okay if I share some scientifically sound
-                    information that&apos;s not designed to frighten you, just to give you a better sense of how this
-                    works?
+                    If you're worried about miscarriage in particular, we’re starting to look at more long term data
+                    now, and there are a couple of things that we are quite sure about. The data have not shown any
+                    increase in miscarriage rates. And if we look at the numbers, there have been hundreds of millions
+                    of COVID-19 vaccinations given around the world, and lots of those people have had healthy
+                    pregnancies or gotten pregnant shortly thereafter.
                   </>
                 ),
                 featured: false,
@@ -2030,7 +2005,37 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
-              //This next one needs a link, using HREF
+
+              {
+                text: (
+                  <>
+                    Although there are still some unknowns, there's a lot that is known about the vaccines, in terms of
+                    how they work and their safety, even in pregnant patients. So you're right that we haven't had these
+                    vaccines as long as some others, but there is a lot that we do know about how these vaccines work
+                    and some of their potential side effects. I have to say, some of these side effects that people are
+                    bringing up on social media are just not plausible. Like, scientifically, it's not possible for them
+                    to happen.
+                  </>
+                ),
+                featured: true,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    The side effects that we are noticing in pregnant women are no different or more severe than in the
+                    rest of the population. They are self-limiting, so they go away on their own, and are not dangerous
+                    to the baby or to you.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
               {
                 text: (
                   <>
@@ -2040,13 +2045,30 @@ export const contentPersonas = {
                     early on, that it wasn&apos;t stopping fertility, but now we have 100,000 plus people in{" "}
                     <a
                       href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafepregnancyregistry.html"
-                      className="orangeLink"
+                      className="orangeLink underline"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       a registry in the US being followed
+                      <FiExternalLink className="ml-1 inline" size={18} />
                     </a>
                     . And we don&apos;t see any signals whatsoever of concern for mom or baby.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    These vaccines have been studied in pregnant people, and millions of pregnant people worldwide have
+                    been vaccinated. We do have good safety data about the vaccines in pregnant populations – we know
+                    there's no increased risk of fetal malformations, and they don't cause premature delivery or
+                    miscarriage. The side effects that you might get would be the same as if you weren't pregnant, so
+                    the typical flu-like side effects in the first 48 hours after the vaccine.
                   </>
                 ),
                 featured: false,
@@ -2054,27 +2076,38 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+            ],
+          },
+
+          {
+            subheading: "Passive Immunity",
+            quotes: [
               {
                 text: (
                   <>
-                    Around the world, medical professionals have given these vaccines to billions of people now. This is
-                    probably the most watched, most followed medical intervention in the history of humanity. We know
-                    the side effects inside and out, and I can promise you that impotence affecting sexual function is
-                    absolutely not a side effect at all.
+                    This is not new; we've been using non-live vaccines in pregnant patients for decades. The safety has
+                    been demonstrated, and outcomes for the mothers and babies are good. From my perspective, and what
+                    we've seen from the science, is that getting the vaccine and having a stronger immune system will be
+                    a huge benefit, because you will transfer your antibodies to your child for months, even after
+                    they're born.
                   </>
                 ),
-                featured: false,
+                featured: true,
                 image: "",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    In my world, I see guys every day that need Viagra, but they don&apos;t need Viagra because they
-                    took a vaccine. They need Viagra because they have other problems. Maybe they have high blood
-                    pressure or they have diabetes and those sort of things, but that&apos;s got nothing to do with the
-                    vaccine.
+                    It's been standard practice to vaccinate moms-to-be for the flu, and whooping cough as well. The
+                    idea is that the mom can pass along her protection to the newborn. And so we think the rationale is
+                    really similar for COVID. What we see in the research is that the vaccine itself does not cross the
+                    placenta. So the baby is not affected by the vaccine, but mom can give her protection to the baby.
+                    So mom is doing this incredible thing for the baby, which is using her immune system to protect the
+                    newborn. And I can't imagine any sort of mom-to-be who wouldn't want to hand off a shield to her
+                    baby.
                   </>
                 ),
                 featured: false,
@@ -2082,22 +2115,117 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
-
-              //FITNESS
+              // Reproductive
               {
                 text: (
                   <>
-                    My &#91;e.g. relative/friend/colleague&#93; is quite athletic, he&apos;s only 40, and - this is a
-                    true story - he got COVID and it laid him low. And he&apos;s been having chest pain ever since, and
-                    he had to actually go see a cardiologist. And they said his heart was fine, but you know, he
-                    wasn&apos;t really able to get back to biking for weeks and weeks. So just seeing that in my own
-                    &#91;e.g. relative/friend/colleague&#93; I was like, oof, I just don&apos;t want anyone to risk
-                    that.
+                    The important thing to remember is that this is going to help you provide ongoing protection as your
+                    baby’s immune system develops. You're going to be giving your immune system to your baby for their
+                    first year of life, so they have this passive immunity they’ll get from you. So you want to have
+                    your immune system be as strong as it can be. And you do that by eating well, sleeping well, and by
+                    making sure you've been vaccinated.
                   </>
                 ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
 
+              {
+                text: (
+                  <>
+                    The vaccine itself won’t pass through the placenta or in your breastmilk. Only the antibodies will,
+                    and it will be very much the same as any other illness you've had where you’ve produced antibodies
+                    to fight it off. All those antibodies go through your breast milk and to the placenta as well. So
+                    it’s a really amazing immune function that our own bodies provide for your baby and for you as a new
+                    mom.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+            ],
+          },
+          // Reproductive
+          {
+            subheading: "High-Risk Population",
+            quotes: [
+              {
+                text: (
+                  <>
+                    Your risk as a pregnant person of getting really ill – ill enough to go to the hospital –is really
+                    high. Like one in 10 people in hospital [during 2022 Omicron wave] are pregnant women. And the risk
+                    of you ending up on a breathing tube in the ICU fighting for your and your baby's life is actually a
+                    number between one and 3%, so that's very high as well. I want to share these risks with you because
+                    you are considered a very vulnerable part of the population at this point.
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteWomanDarkBrownHair.svg",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              {
+                text: (
+                  <>
+                    With pregnancy specifically, you have an increased risk of having severe illness [from COVID
+                    infection], so you have about a 10 to 15% chance of hospitalization – a much higher risk of
+                    intensive care unit stay. If you were to get very sick and be in the hospital, you have a
+                    significantly higher chance of having a preterm delivery, where your baby would have to be born
+                    early. You would have to have a prolonged stay in the hospital. Most patients with COVID will get
+                    milder illnesses and do just fine, but for you, it carries an increased risk to both you and your
+                    pregnancy.
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+
+              // Reproductive
+              {
+                text: (
+                  <>
+                    So the vaccine specifically is recommended in pregnancy, because we know that it reduces your chance
+                    of getting COVID, reduces your chance of hospitalization, and thereby protects your baby from having
+                    growth difficulties and being born early.
+                  </>
+                ),
                 featured: true,
                 image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+
+              {
+                text: (
+                  <>
+                    During the pandemic we've actually seen a whole bunch of unvaccinated, pregnant moms ending up very,
+                    very sick. This has actually become a big priority in my practice to make sure that moms who are
+                    expecting are definitely getting vaccinated. Because of course, if we can protect them, then we're
+                    protecting two lives, aren't we?
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    I do need to underline that there are actually risks to not being vaccinated. Real risks that I’d
+                    like you to take into account as you make your decision. If I can help you be clear on those risks
+                    as well, then you’ll be making the best decision possible.
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -2112,44 +2240,43 @@ export const contentPersonas = {
           {
             subheading: "",
             quotes: [
-              //Add REPRODUCTIVE subheading here
               {
                 text: (
                   <>
-                    I would like to make it really clear to you that the way we make sure that we have healthy babies,
-                    is that we keep moms healthy. And we help get mom to make antibodies against COVID, which has turned
-                    our world upside down, and to give those antibodies - that protection, that shield - to her baby.
+                    I’m happy to have this conversation again about the vaccines. It's not something you have to decide
+                    this minute, but while you're making a decision and throughout the pregnancy, you want to make sure
+                    that you have all those extra layers of protection. You and your baby won't have that extra layer of
+                    protection if you don’t get vaccinated, and I think that's really important. But I obviously I
+                    respect the choices that you make.
                   </>
                 ),
-                featured: false,
-                image: "",
-                fullStoryID: "",
-                fullStoryLinkText: "",
-              },
-
-              //ADD FITNESS Subheading here
-              {
-                text: (
-                  <>
-                    Have you gotten any information directly from a specialist &#91;e.g. sports medicine, obstetrics,
-                    men&apos;s health, nutrition&#93; in this area about the safety of the vaccine? They may have
-                    something to add that would be relevant. Maybe we could connect with them?
-                  </>
-                ),
-
                 featured: true,
                 image: "",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    So you&apos;re good with supplements to body build, so I&apos;m going to suggest you also take this
-                    thing that&apos;s proven to be safe, tested as widely as anything has been tested, and it may
-                    protect your life, your family, and stop you from getting really sick, and allow you to go back to
-                    freedom and the gym. I&apos;m thinking that it might be in your best interest to consider taking
-                    that.
+                    Are you applying the same scrutiny that you're applying now to these vaccines to [other health
+                    products or medications] that you are using? Because I hear what you're saying – you've clearly done
+                    your research. But what I'm also hearing you say is that you've shifted gears in how you do your own
+                    research in this instance. Why the difference with these vaccines in particular?
+                  </>
+                ),
+
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              {
+                text: (
+                  <>
+                    I've got my point of view and you've got yours, so how about we walk away from this, and when you
+                    come back in two or four weeks for your next prenatal exam, why don't we each think about it and
+                    we'll pick this back up again?
                   </>
                 ),
                 featured: false,
@@ -2157,13 +2284,15 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+              // Reproductive
               {
                 text: (
                   <>
-                    My &#91;e.g. relative/friend/colleague&#93; had COVID a couple of weeks ago, and she can barely get
-                    out of her bed at the moment she&apos;s so fatigued. She&apos;s a keen runner, and the concept of
-                    going for a run at the moment is just not something she can even contend with. From your
-                    perspective, if that happened to you, how would that affect your training/performance?
+                    Well, I'm totally happy to talk about this again. I just want to leave something for you. And it's
+                    the concept of there are no risk free choices. By choosing not to be vaccinated, or to get
+                    vaccinated, at this point, there are risks that come with either choice. Regardless of how we feel,
+                    at the end of the day, it’s important to acknowledge that whatever we choose to do, neither choice
+                    is risk free.
                   </>
                 ),
                 featured: false,
@@ -2171,13 +2300,43 @@ export const contentPersonas = {
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
+
               {
                 text: (
                   <>
-                    If you wanted to protect yourself against getting COVID and also have a lower risk of losing some
-                    training time, you could get the first vaccine because that usually doesn&apos;t cause people
-                    problems, and then you&apos;d be largely protected against it and so that would be like maybe a good
-                    middle ground.
+                    I appreciate that you are extra concerned about getting vaccinated at this stage in your pregnancy.
+                    So bundle up, mask up, stay at home as much as you can. And then come back and see me at the next
+                    trimester and we’ll discuss it again then.
+                  </>
+                ),
+                featured: false,
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+              // Reproductive
+              {
+                text: (
+                  <>
+                    What more could a mother want than to pass on immunity to their baby who is helpless in every way,
+                    and so you have a chance to help protect them by getting immunized?
+                  </>
+                ),
+                featured: false,
+                image: "",
+                fullStoryID: "",
+                fullStoryLinkText: "",
+              },
+
+              {
+                text: (
+                  <>
+                    I mean one thing that perhaps I can help you with a little bit is in understanding how things [e.g.,
+                    adverse vaccine events] are reported scientifically. This tends to be something that non-medical
+                    people have some challenges with. I certainly haven't seen any good evidence that suggests the kinds
+                    of outcomes you’re describing, but I'd be happy to look at the sources you’re working with, and tell
+                    you how I would interpret things. I’d also be able to share evidence-based statements from
+                    scientific bodies that I can find for you, if you'd like.
                   </>
                 ),
                 featured: false,
@@ -2189,72 +2348,87 @@ export const contentPersonas = {
           },
         ],
       },
-      //REPRODUCTIVE Resources & FITNESS Resources
+      //REPRODUCTIVE Resources
       resources: [
         {
-          label: <>19-to-Zero: COVID-19 Vaccines, Fertility, and Menstruation (Video)</>,
-          image: "",
-          linkTitle: <>Short video discussion about the vaccines and fertility/menstruation</>,
+          title: <>Pregnancy, fertility and the COVID-19 vaccine</>,
+          linkText: <>FAQ page from Sunnybrook Hospital</>,
+          link: "https://health.sunnybrook.ca/babies-newborns/pregnancy-fertility-covid-19-vaccine-faq/",
+          description: <>FAQ from Sunnybrook Hospital obstetrics and fertility specialists about the COVID vaccines</>,
+        },
+
+        {
+          // Preliminary Findings of ...
+          title: <>mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
+          linkText: <>NEJM peer-reviewed publication (2021)</>,
+          link: "https://www.nejm.org/doi/full/10.1056/nejmoa2104983",
+          description: (
+            <>
+              2021 NEJM peer-reviewed publication examining preliminary safety findings of COVID-19 vaccines in
+              pregnancy populations.
+            </>
+          ),
+        },
+        {
+          title: <>Correspondence - Receipt of mRNA Covid-19 Vaccines and Risk of Spontaneous Abortion</>,
+          linkText: <>NEJM correspondence article (2021)</>,
+          link: "https://www.nejm.org/doi/full/10.1056/NEJMc2113891",
+          description: (
+            <>
+              New England Journal of Medicine correspondence about miscarraige risk after mRNA vaccination against
+              COVID-19
+            </>
+          ),
+        },
+
+        {
+          title: <>Spontaneous Abortion Following COVID-19 Vaccination During Pregnancy</>,
+          linkText: <>JAMA letter, published 2021</>,
+          link: "https://jamanetwork.com/journals/jama/fullarticle/2784193",
+          description: <>Journal of the American Medical Association letter about miscarriage and COVID-19 vaccines</>,
+        },
+
+        {
+          title: <>COVID-19 Vaccines, Fertility and Menstruation</>,
+          linkText: <>19 to Zero video</>,
           link: "https://www.youtube.com/watch?v=aFZ757WXNRE",
           description: (
             <>
-              5 minute video with an OBGYN and a public health expert discussing the vaccines, fertility, and
-              menstruation. (June 2021)
+              Dr. Stephanie Elliott and Dr. Fiona Mattatall talk COVID-19 vaccines and what it means for fertility and
+              menstruation.
             </>
           ),
         },
 
         {
-          label: <>COVID-19 Vaccines While Pregnant or Breastfeeding</>,
-          image: "",
-          linkTitle: <>US CDC overview and factsheets</>,
-          link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/pregnancy.html",
+          title: <>Vaccines, pregnancy and fertility telephone town hall</>,
+          linkText: <>Archived audio recording of Townhall conversation</>,
+          link: "https://www.alberta.ca/article-vaccines-pregnancy-and-fertility-telephone-town-hall.aspx",
           description: (
             <>
-              US CDC overview and considerations for COVID-19 vaccines for those who are pregnant or breastfeeding.
-              (Updated, June 2021)
+              Dr. Deena Hinshaw held a conversation about COVID-19 vaccines, pregnancy, and both female and male
+              fertility on October 27, 2021. This is an archived recording of this event.
             </>
           ),
         },
 
         {
-          label: <>V-safe COVID-19 Vaccine Pregnancy Registry</>,
-          image: "",
-          linkTitle: <>US CDC vaccine pregnancy registry</>,
+          title: <>Calgary Health Foundation: Live Q&amp;A, COVID-19 vaccine</>,
+          linkText: <>Video archive of Q&amp;A</>,
+          link: "https://www.calgaryhealthfoundation.ca/events/live-qa-covid-19-vaccine/",
+          description: (
+            <>
+              Q&amp;A video from Live session with public health and obstetrics health specialists about the COVID
+              vaccines and fertility/pregnancy
+            </>
+          ),
+        },
+
+        {
+          title: <>US CDC: V-safe COVID-19 Vaccine Pregnancy Registry</>,
+          linkText: <>Link</>,
           link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafepregnancyregistry.html",
-          description: (
-            <>
-              Main page for US CDC&apos;s V-Safe pregnancy vaccination registry for the US. Provides updated counts of
-              vaccinated individuals who become pregnant. (Updated, June 2021)
-            </>
-          ),
-        },
-
-        {
-          label: (
-            <>Don&apos;t Let Misinformation About Fertility and COVID-19 Vaccines Stop Teens from Getting the Shot</>
-          ),
-          image: "",
-          linkTitle: <>Healthline fact page</>,
-          link: "https://www.healthline.com/health-news/dont-let-misinformation-about-fertility-and-covid-19-vaccines-stop-teens-from-getting-the-shot#Whats-behind-the-myth?",
-          description: (
-            <>
-              Healthline overview of the misinformation regarding fertility, and consolidated resources to counter it.
-              (January 2021)
-            </>
-          ),
-        },
-        {
-          label: <>Exercise and COVID-19 Vaccination: What You Should Know</>,
-          image: "",
-          linkTitle: <>University of California Fact Page</>,
-          link: "https://www.newswise.com/coronavirus/exercise-and-covid-19-vaccination-what-you-should-know",
-          description: (
-            <>
-              UC San Diego sports medicine specialists discuss issues related to exercise before and after vaccination.
-              (April 2021)
-            </>
-          ),
+          description: <>US CDC’s V-safe COVID-19 Vaccine Pregnancy Registry.</>,
         },
       ],
     },
@@ -2281,7 +2455,7 @@ export const contentPersonas = {
         ],
       },
       thingsToConsider: {
-        image: "doctorWhiteManGoatee.svg",
+        image: "doctorWhiteWomanBrownHairGlasses.svg",
         content: [
           <>Be transparent about possible side effects of the vaccines with patients.</>,
           <>
@@ -2813,17 +2987,15 @@ export const contentPersonas = {
       //SIDEEFFECTS RESOURCES
       resources: [
         {
-          label: <>How to explain side effects without scaring patients</>,
-          image: "",
-          linkTitle: <>General advice to clinicians</>,
+          title: <>How to explain side effects without scaring patients</>,
+          linkText: <>General advice to clinicians</>,
           link: "https://www.singlecare.com/blog/explain-side-effects/",
           description: <>Advice to clinicians on how to discuss side effects with patients. (Feb 2020)</>,
         },
 
         {
-          label: <>Five Ways to Communicate Risk So That Patients Understand</>,
-          image: "",
-          linkTitle: <>AAFP Article</>,
+          title: <>Five Ways to Communicate Risk So That Patients Understand</>,
+          linkText: <>AAFP Article</>,
           link: "https://www.aafp.org/fpm/2018/1100/p28.html",
           description: (
             <>
@@ -2834,9 +3006,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
-          image: "",
-          linkTitle: <>FAQ page from ImmunizeBC</>,
+          title: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
+          linkText: <>FAQ page from ImmunizeBC</>,
           link: "https://immunizebc.ca/ask-us/questions/are-there-long-term-side-effects-caused-mrna-covid-19-vaccines-how-do-we-know",
           description: (
             <>ImmunizeBC examines the question of long-term side effects from COVID-19 vaccines. (Updated, June 2021)</>
@@ -2844,9 +3015,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
-          image: "",
-          linkTitle: <>Medical advisory from Alberta Health for Medical Professionals</>,
+          title: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
+          linkText: <>Medical advisory from Alberta Health for Medical Professionals</>,
           link: "https://www.alberta.ca/assets/documents/health-QA-myocarditis-and-pericarditis-following-covid.pdf",
           description: (
             <>
@@ -2857,17 +3027,15 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
-          image: "",
-          linkTitle: <>Information about side effects and care after COVID-19 vaccination</>,
+          title: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
+          linkText: <>Information about side effects and care after COVID-19 vaccination</>,
           link: "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=custom.ab_imm_covid19vaccine_ac",
           description: <> (Updated, July 2021)</>,
         },
 
         {
-          label: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
-          image: "",
-          linkTitle: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>,
+          title: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
+          linkText: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>,
           link: "https://www.nytimes.com/2021/06/28/health/mixing-pfizer-astrazeneca-results.html",
           description: (
             <>
@@ -2879,9 +3047,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>MayoClinic - COVID-19: Long-term effects</>,
-          image: "",
-          linkTitle: <>MayoClinic Info on Long-COVID</>,
+          title: <>MayoClinic - COVID-19: Long-term effects</>,
+          linkText: <>MayoClinic Info on Long-COVID</>,
           link: "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-long-term-effects/art-20490351",
           description: <>MayoClinic&apos;s infopage on the long-term effects of COVID and long-COVID. (May 2021)</>,
         },
@@ -3512,9 +3679,8 @@ export const contentPersonas = {
       // (Conspiracies)
       resources: [
         {
-          label: <>How to take on COVID conspiracy theories</>,
-          image: "",
-          linkTitle: <>Financial Times news article</>,
+          title: <>How to take on COVID conspiracy theories</>,
+          linkText: <>Financial Times news article</>,
           link: "https://www.ft.com/content/6660cb80-8c11-476a-b107-e0193fa975f9",
           description: (
             <>News article examining the spread of misinformation, and some advice on how to counter it. (Feb 2021)</>
@@ -3522,9 +3688,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Winning Hearts and Minds</>,
-          image: "",
-          linkTitle: <>Johns Hopkins University interview</>,
+          title: <>Winning Hearts and Minds</>,
+          linkText: <>Johns Hopkins University interview</>,
           link: "https://hub.jhu.edu/2021/06/30/winning-hearts-and-minds/",
           description: (
             <>
@@ -3535,9 +3700,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>To counter conspiracy theories, boost well-being</>,
-          image: "",
-          linkTitle: <>Nature journal blog article</>,
+          title: <>To counter conspiracy theories, boost well-being</>,
+          linkText: <>Nature journal blog article</>,
           link: "https://www.nature.com/articles/d41586-020-03130-6",
           description: (
             <>Expert on countering misinformation looks at various approaches to these conversations. (November 2020)</>
@@ -3545,9 +3709,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Six rules of engagement</>,
-          image: "",
-          linkTitle: <>The Conversation news article</>,
+          title: <>Six rules of engagement</>,
+          linkText: <>The Conversation news article</>,
           link: "https://theconversation.com/ive-been-talking-to-conspiracy-theorists-for-20-years-here-are-my-six-rules-of-engagement-143132",
           description: <>Discussion looking at how to engage with misinformation and conspiracies. (July 2020)</>,
         },
@@ -3638,7 +3801,7 @@ export const contentPersonas = {
               describing yourself?
             </>
           ),
-          image: "doctorWhiteManBlackHair.svg",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
         ask: {
           text: (
@@ -3686,7 +3849,7 @@ export const contentPersonas = {
               {
                 text: <>Can you tell me more about what you mean by &lsquo;natural immunity&rsquo;? </>,
                 featured: false,
-                image: "doctorWhiteManBlackHair.svg",
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -3878,7 +4041,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorWhiteManGoatee.svg",
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -4035,9 +4198,8 @@ export const contentPersonas = {
       // (Naturalist)
       resources: [
         {
-          label: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
-          image: "",
-          linkTitle: <>Link to AANMC statement</>,
+          title: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
+          linkText: <>Link to AANMC statement</>,
           link: "https://aanmc.org/featured-articles/aanmc-statement-on-covid-19-vaccination/",
           description: (
             <>AANMC issued a strong statement that all community members receive COVID vaccines. (January 2021)</>
@@ -4045,9 +4207,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>The COVID Choice</>,
-          image: "",
-          linkTitle: <>NDs for Vaccines article</>,
+          title: <>The COVID Choice</>,
+          linkText: <>NDs for Vaccines article</>,
           link: "https://ndsforvaccines.com/the-covid-choice/",
           description: (
             <>
@@ -4058,9 +4219,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Holistic Vaccine Support</>,
-          image: "",
-          linkTitle: <>Blog article from an ND</>,
+          title: <>Holistic Vaccine Support</>,
+          linkText: <>Blog article from an ND</>,
           link: "https://www.drdianaquinn.com/blog/4ltwwd8s9657e93wr37xcx7ma7tj2w",
           description: (
             <>
@@ -4071,9 +4231,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
-          image: "",
-          linkTitle: <>Op-Ed in The Globe and Mail</>,
+          title: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
+          linkText: <>Op-Ed in The Globe and Mail</>,
           link: "https://www.theglobeandmail.com/opinion/article-healthy-skepticism-doesnt-necessarily-mean-rejecting-mainstream/",
           description: (
             <>
@@ -4146,7 +4305,7 @@ export const contentPersonas = {
               normal lives. What are your thoughts?
             </>
           ),
-          image: "doctorMuslimWomanYellowHeadCover.svg",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
         affirm: {
           text: (
@@ -4439,9 +4598,8 @@ export const contentPersonas = {
       // (PoliticalSkeptic)
       resources: [
         {
-          label: <>A Guide to Global COVID-19 Vaccine Efforts</>,
-          image: "",
-          linkTitle: <>Council on Foreign Relations Backgrounder</>,
+          title: <>A Guide to Global COVID-19 Vaccine Efforts</>,
+          linkText: <>Council on Foreign Relations Backgrounder</>,
           link: "https://www.cfr.org/backgrounder/guide-global-covid-19-vaccine-efforts",
           description: (
             <>CFR backgrounder looking at the development of the vaccines and who was involved. (Updated, June 2021)</>
@@ -4449,14 +4607,13 @@ export const contentPersonas = {
         },
 
         {
-          label: (
+          title: (
             <>
               Organization for Economic Co-operation and Development (OECD): Enhancing public trust in COVID-19
               vaccination: The role of governments
             </>
           ),
-          image: "",
-          linkTitle: <>OECD Policy Responses to COVID-19</>,
+          linkText: <>OECD Policy Responses to COVID-19</>,
           link: "https://www.oecd.org/coronavirus/policy-responses/enhancing-public-trust-in-covid-19-vaccination-the-role-of-governments-eae0ec5a/",
           description: (
             <>
@@ -4467,9 +4624,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Focus Group: Vaccine hesitancy conversation</>,
-          image: "",
-          linkTitle: <>YouTube video</>,
+          title: <>Focus Group: Vaccine hesitancy conversation</>,
+          linkText: <>YouTube video</>,
           link: "https://youtu.be/lSD_dSAFFwU",
           description: (
             <>
@@ -4543,7 +4699,7 @@ export const contentPersonas = {
               relates to your health?
             </>
           ),
-          image: "doctorWhiteManBlackHair.svg",
+          image: "doctorWhiteWomanDarkBrownHair.svg",
         },
         affirm: {
           text: (
@@ -4553,7 +4709,7 @@ export const contentPersonas = {
               hearing from public health.
             </>
           ),
-          image: "doctorBlackWoman.svg",
+          image: "doctorWhiteWomanDarkBrownHair",
         },
         ask: {
           text: (
@@ -4957,14 +5113,13 @@ export const contentPersonas = {
       // (Religious)
       resources: [
         {
-          label: (
+          title: (
             <>
               Canadian Conference of Catholic Bishops - Note on Ethical Concerns Related to Currently Approved COVID-19
               Vaccines
             </>
           ),
-          image: "",
-          linkTitle: <>CCCB Statement on COVID vaccines</>,
+          linkText: <>CCCB Statement on COVID vaccines</>,
           link: "https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf",
           description: (
             <>
@@ -4975,14 +5130,13 @@ export const contentPersonas = {
         },
 
         {
-          label: (
+          title: (
             <>
               Congregation For the Doctrine of the Faith - Vatican: Note on the morality of using some anti-Covid-19
               vaccines
             </>
           ),
-          image: "",
-          linkTitle: <>Vatican Statement Supporting COVID-19 Vaccination</>,
+          linkText: <>Vatican Statement Supporting COVID-19 Vaccination</>,
           link: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html",
           description: (
             <>
@@ -4993,9 +5147,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
-          image: "",
-          linkTitle: <>Editorial Forum with multiple perspectives</>,
+          title: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
+          linkText: <>Editorial Forum with multiple perspectives</>,
           link: "https://berkleycenter.georgetown.edu/posts/religion-bioethics-and-covid-19-vaccination",
           description: (
             <>
@@ -5006,9 +5159,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
-          image: "",
-          linkTitle: <>YouTube video - virtual discussion</>,
+          title: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
+          linkText: <>YouTube video - virtual discussion</>,
           link: "https://youtu.be/wP-7tvq8P18",
           description: (
             <>
@@ -5265,7 +5417,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorWhiteManGoatee.svg",
+                image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -5297,17 +5449,15 @@ export const contentPersonas = {
 
       resources: [
         {
-          label: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
-          image: "",
-          linkTitle: <>Fact sheet (patient-facing language)</>,
+          title: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
+          linkText: <>Fact sheet (patient-facing language)</>,
           link: "https://istss.org/ISTSS_Main/media/Documents/Public-Facing-Fact-Sheet-2.pdf",
           description: <>A public fact sheet examining medical trauma and coping advice for patients. (2020)</>,
         },
 
         {
-          label: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
-          image: "",
-          linkTitle: <>Breathe (Medical Journal): 2017 article</>,
+          title: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
+          linkText: <>Breathe (Medical Journal): 2017 article</>,
           link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467659/",
           description: (
             <>
@@ -5318,9 +5468,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
-          image: "",
-          linkTitle: <>Harvard Business Review Editorial</>,
+          title: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
+          linkText: <>Harvard Business Review Editorial</>,
           link: "https://hbr.org/2021/01/to-overcome-vaccine-hesitancy-we-need-a-better-patient-experience",
           description: (
             <>
@@ -5331,9 +5480,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
-          image: "",
-          linkTitle: <>The CARD Tool for Patients</>,
+          title: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
+          linkText: <>The CARD Tool for Patients</>,
           link: "https://www.anxietycanada.com/wp-content/uploads/2020/04/CARD-for-Individuals.pdf",
           description: (
             <>
@@ -5432,7 +5580,7 @@ export const contentPersonas = {
               been all these years? Am I understanding that right?
             </>
           ),
-          image: "doctorWhiteManBlackHair.svg",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
         ask: {
           text: (
@@ -5825,9 +5973,8 @@ export const contentPersonas = {
 
       resources: [
         {
-          label: <>BC Centres for Disease Control: Indigenous Community Resources</>,
-          image: "",
-          linkTitle: <>BC CDC Resources Page</>,
+          title: <>BC Centres for Disease Control: Indigenous Community Resources</>,
+          linkText: <>BC CDC Resources Page</>,
           link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
           description: (
             <>
@@ -5838,9 +5985,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
-          image: "",
-          linkTitle: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
+          title: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
+          linkText: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
           link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
           description: (
             <>
@@ -5852,9 +5998,8 @@ export const contentPersonas = {
         },
         // Group Trauma
         {
-          label: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
-          image: "",
-          linkTitle: <>Resources for Indigenous, Métis, and Inuit Communities Page</>,
+          title: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
+          linkText: <>Resources for Indigenous, Métis, and Inuit Communities Page</>,
           link: "https://www.womenscollegehospital.ca/research,-education-and-innovation/maadookiing-mshkiki%E2%80%94sharing-medicine",
           description: (
             <>
@@ -5865,14 +6010,13 @@ export const contentPersonas = {
         },
 
         {
-          label: (
+          title: (
             <>
               NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
               changed my mind.
             </>
           ),
-          image: "",
-          linkTitle: <>NBCNews Article</>,
+          linkText: <>NBCNews Article</>,
           link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
           description: (
             <>
@@ -5883,9 +6027,8 @@ export const contentPersonas = {
         },
         // Group Trauma
         {
-          label: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
-          image: "",
-          linkTitle: <>Resource list from the AMA</>,
+          title: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
+          linkText: <>Resource list from the AMA</>,
           link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
           description: (
             <>
@@ -5896,9 +6039,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
-          image: "",
-          linkTitle: <>WEF Article</>,
+          title: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
+          linkText: <>WEF Article</>,
           link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
           description: (
             <>
@@ -5909,13 +6051,12 @@ export const contentPersonas = {
         },
         // Group Trauma
         {
-          label: (
+          title: (
             <>
               Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis communities
             </>
           ),
-          image: "",
-          linkTitle: <>Resources Page</>,
+          linkText: <>Resources Page</>,
           link: "https://www.iphcc.ca/covid-19/",
           description: (
             <>
@@ -5926,14 +6067,13 @@ export const contentPersonas = {
         },
 
         {
-          label: (
+          title: (
             <>
               Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
               Implementation (Report)
             </>
           ),
-          image: "",
-          linkTitle: <>Online report here</>,
+          linkText: <>Online report here</>,
           link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
           description: (
             <>
@@ -5947,9 +6087,9 @@ export const contentPersonas = {
       // resources: [
 
       //   {
-      //     label: <>BC Centres for Disease Control: Indigenous Community Resources</>,
+      //     title: <>BC Centres for Disease Control: Indigenous Community Resources</>,
       //     image: "",
-      //     linkTitle: <>BC CDC Resources Page</>,
+      //     linkText: <>BC CDC Resources Page</>,
       //     link: "https://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
       //     description: (
       //       <>
@@ -5959,9 +6099,9 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
+      //     title: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
       //     image: "",
-      //     linkTitle: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
+      //     linkText: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
       //     link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
       //     description: (
       //       <>
@@ -5971,14 +6111,14 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: (
+      //     title: (
       //       <>
       //         NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
       //         changed my mind.
       //       </>
       //     ),
       //     image: "",
-      //     linkTitle: <>NBCNews Article</>,
+      //     linkText: <>NBCNews Article</>,
       //     link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
       //     description: (
       //       <>
@@ -5989,9 +6129,9 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
+      //     title: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
       //     image: "",
-      //     linkTitle: <>Resource list from the AMA</>,
+      //     linkText: <>Resource list from the AMA</>,
       //     link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
       //     description: (
       //       <>
@@ -6002,9 +6142,9 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
+      //     title: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
       //     image: "",
-      //     linkTitle: <>WEF Article</>,
+      //     linkText: <>WEF Article</>,
       //     link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
       //     description: (
       //       <>
@@ -6015,9 +6155,9 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: <>Indigenous Primary Health Care Council: COVID-19 Vaccine – Common Beliefs Explored</>,
+      //     title: <>Indigenous Primary Health Care Council: COVID-19 Vaccine – Common Beliefs Explored</>,
       //     image: "",
-      //     linkTitle: <>Appendix (PDF) here</>,
+      //     linkText: <>Appendix (PDF) here</>,
       //     link: "https://",
       //     description: (
       //       <>
@@ -6028,14 +6168,14 @@ export const contentPersonas = {
       //   },
 
       //   {
-      //     label: (
+      //     title: (
       //       <>
       //         Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
       //         Implementation (Report)
       //       </>
       //     ),
       //     image: "",
-      //     linkTitle: <>Online report here</>,
+      //     linkText: <>Online report here</>,
       //     link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
       //     description: (
       //       <>
@@ -6142,7 +6282,7 @@ export const contentPersonas = {
               we could change the environment and the way the vaccine is delivered?
             </>
           ),
-          image: "doctorWhiteManGoatee.svg",
+          image: "doctorWhiteWomanDarkBrownHair.svg",
         },
       },
       // (NeedlePhobia)
@@ -6456,10 +6596,10 @@ export const contentPersonas = {
 
       resources: [
         {
-          label: <>How patients can overcome needle phobia and get the COVID vaccine</>,
+          title: <>How patients can overcome needle phobia and get the COVID vaccine</>,
           image: "",
           // image: "/assets/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
-          linkTitle: <>Article from Open Access Government</>,
+          linkText: <>Article from Open Access Government</>,
           link: "https://www.openaccessgovernment.org/patients-covid-19-vaccination-needle-phobia/103163/",
           // Be sure that URLs do NOT include the https://
           description: (
@@ -6472,10 +6612,10 @@ export const contentPersonas = {
           // Or close enough to get them to the resources page?
         },
         {
-          label: <>NHS: Overcoming your needle phobia (fear of needles)</>,
+          title: <>NHS: Overcoming your needle phobia (fear of needles)</>,
           image: "", // path for screenshot image
           // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkTitle: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>,
+          linkText: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>,
           link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
           description: (
             <>
@@ -6486,10 +6626,10 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
+          title: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
           image: "", // path for screenshot image
           // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkTitle: <>PDF Handout for Providers</>,
+          linkText: <>PDF Handout for Providers</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-orientation.pdf",
           description: (
             <>
@@ -6500,10 +6640,10 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
+          title: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
           image: "", // path for screenshot image
           // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkTitle: <>PDF Handout for Patients</>,
+          linkText: <>PDF Handout for Patients</>,
           link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-client-summary.pdf",
           description: (
             <>A PDF summary document for patients on how to improve comfort during immunizations (March 2021)</>
@@ -6511,9 +6651,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>ImmunizeBC: Managing Needle Fears</>,
-          image: "",
-          linkTitle: <>Advice page from ImmunizeBC on needle fears</>,
+          title: <>ImmunizeBC: Managing Needle Fears</>,
+          linkText: <>Advice page from ImmunizeBC on needle fears</>,
           link: "https://immunizebc.ca/adults-managing-needle-fears",
           description: (
             <>
@@ -6663,7 +6802,7 @@ export const contentPersonas = {
                   </>
                 ),
                 featured: false,
-                image: "doctorWhiteManBlackHair.svg",
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
                 fullStoryLinkText: "",
               },
@@ -6953,9 +7092,8 @@ export const contentPersonas = {
 
       resources: [
         {
-          label: <>Understanding herd immunity</>,
-          image: "",
-          linkTitle: <>Nature: Human Behaviour (Journal) article</>,
+          title: <>Understanding herd immunity</>,
+          linkText: <>Nature: Human Behaviour (Journal) article</>,
           link: "https://www.immunize.ca/sites/default/files/resources/s41562-017-0056_0.pdf",
           description: (
             <>
@@ -6966,9 +7104,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Similarities and Differences Between COVID and the Flu</>,
-          image: "",
-          linkTitle: <>US CDC comparison between COVID and Influenza</>,
+          title: <>Similarities and Differences Between COVID and the Flu</>,
+          linkText: <>US CDC comparison between COVID and Influenza</>,
           link: "https://www.cdc.gov/flu/symptoms/flu-vs-covid19.htm ",
           description: (
             <>
@@ -6979,9 +7116,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
-          image: "",
-          linkTitle: <>Forbes Op-Ed by Infectious Diseases Doctor</>,
+          title: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
+          linkText: <>Forbes Op-Ed by Infectious Diseases Doctor</>,
           link: "https://www.forbes.com/sites/coronavirusfrontlines/2021/04/23/if-herd-immunity-is-your-plan-to-beat-covid-you-need-a-plan-b/",
           description: (
             <>
@@ -7700,9 +7836,8 @@ export const contentPersonas = {
       //UNDIFFERENTIATED RESOURCES
       resources: [
         {
-          label: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
-          image: "",
-          linkTitle: <>Conversation tools for discussing vaccines with patients.</>,
+          title: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
+          linkText: <>Conversation tools for discussing vaccines with patients.</>,
           link: "https://www.albertadoctors.org/about/COVID-19/vaccine-positive-clinic-toolkit/addressing-vaccine-hesitancy",
           description: (
             <>
@@ -7714,9 +7849,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Centre for Effective Practice: ProTCT Framework</>,
-          image: "",
-          linkTitle: <>ProTCT framework for COVID-19 vaccine discussion</>,
+          title: <>Centre for Effective Practice: ProTCT Framework</>,
+          linkText: <>ProTCT framework for COVID-19 vaccine discussion</>,
           link: "https://tools.cep.health/wp-content/uploads/2021/04/CEP_COVID-Framework_04-21_r1.pdf",
           description: (
             <>A review of the ProTCT framework to structure conversations with patients about the COVID-19 vaccines</>
@@ -7724,9 +7858,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
-          image: "",
-          linkTitle: <>CEP Resources for Supporting Patient Confidence in Vaccines</>,
+          title: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
+          linkText: <>CEP Resources for Supporting Patient Confidence in Vaccines</>,
           link: "https://tools.cep.health/tool/covid-19-vaccines/#ensuring-patient-confidence-in-vaccines",
           description: (
             <>A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.</>
@@ -7734,33 +7867,29 @@ export const contentPersonas = {
         },
 
         {
-          label: <>CEP: COVID-19 Resource Centre</>,
-          image: "",
-          linkTitle: <>CEP&apos;s resource toolkit for COVID-19 information</>,
+          title: <>CEP: COVID-19 Resource Centre</>,
+          linkText: <>CEP&apos;s resource toolkit for COVID-19 information</>,
           link: "https://cep.health/toolkit/covid-19-resource-centre/",
           description: <>A database for COVID-19 information on a variety of topics, including vaccines.</>,
         },
 
         {
-          label: <>19-to-Zero COVID-19 Resources</>,
-          image: "",
-          linkTitle: <>COVID-19 resource repository</>,
+          title: <>19-to-Zero COVID-19 Resources</>,
+          linkText: <>COVID-19 resource repository</>,
           link: "https://www.19tozero.ca/healthcare-worker-resources",
           description: <>A repository of resources for healthcare workers about COVID-19 vaccines.</>,
         },
 
         {
-          label: <>19-to-Zero YouTube Channel</>,
-          image: "",
-          linkTitle: <>COVID-19 video resources</>,
+          title: <>19-to-Zero YouTube Channel</>,
+          linkText: <>COVID-19 video resources</>,
           link: "https://www.youtube.com/channel/UC107yJWv6Hz9v4b3rPA4YZw/videos",
           description: <>A selection of video resources for both patients and providers on COVID-19 and vaccines.</>,
         },
 
         {
-          label: <>CANVax Resources on COVID-19 Immunization</>,
-          image: "",
-          linkTitle: <>Resources related to COVID-19 vaccines</>,
+          title: <>CANVax Resources on COVID-19 Immunization</>,
+          linkText: <>Resources related to COVID-19 vaccines</>,
           link: "https://canvax.ca/covid-19-resources-immunization",
           description: (
             <>A repository of resources for regional, national, and international sources on COVID-19 immunizations.</>
@@ -7768,9 +7897,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>US CDC: Vaccines for COVID-19 Information</>,
-          image: "",
-          linkTitle: <>Resources on vaccines for COVID-19 curated by the CDC</>,
+          title: <>US CDC: Vaccines for COVID-19 Information</>,
+          linkText: <>Resources on vaccines for COVID-19 curated by the CDC</>,
           link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html ",
           description: (
             <>A collection of resources on the COVID-19 vaccines for the general public and healthcare practitioners.</>
@@ -7778,17 +7906,15 @@ export const contentPersonas = {
         },
 
         {
-          label: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
-          image: "",
-          linkTitle: <>Immunize BC repository of common COVID vaccine questions and answers </>,
+          title: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
+          linkText: <>Immunize BC repository of common COVID vaccine questions and answers </>,
           link: "https://immunizebc.ca/taxonomy/term/378",
           description: <>A list of common COVID-19 vaccine questions and answers.</>,
         },
 
         {
-          label: <>Indigenous Primary Health Care Council: COVID-19 information</>,
-          image: "",
-          linkTitle: <>Indigenous Primary Care Council COVID information</>,
+          title: <>Indigenous Primary Health Care Council: COVID-19 information</>,
+          linkText: <>Indigenous Primary Care Council COVID information</>,
           link: "https://www.iphcc.ca/covid-19/",
           description: <>COVID-19 resources with an Indigenous focus.</>,
         },
@@ -7890,17 +8016,16 @@ export const contentPersonas = {
       // ACTUAL content for Pediatrics
       resources: [
         {
-          label: <>Vaccines for Children: Deciding to vaccinate</>,
+          title: <>Vaccines for Children: Deciding to vaccinate</>,
           image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
-          linkTitle: <>Government of Canada - Information and considerations</>,
+          linkText: <>Government of Canada - Information and considerations</>,
           link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
           description: <>Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)</>,
         },
 
         {
-          label: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
-          image: "",
-          linkTitle: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>,
+          title: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
+          linkText: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>,
           link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
           description: (
             <>
@@ -7911,9 +8036,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>COVID Vaccine: What parents need to know</>,
-          image: "",
-          linkTitle: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
+          title: <>COVID Vaccine: What parents need to know</>,
+          linkText: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
           link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
           description: (
             <>
@@ -7926,9 +8050,8 @@ export const contentPersonas = {
         },
 
         {
-          label: <>Children and the COVID-19 Vaccine </>,
-          image: "",
-          linkTitle: <>BC CDC - Children and COVID-19 Vaccination</>,
+          title: <>Children and the COVID-19 Vaccine </>,
+          linkText: <>BC CDC - Children and COVID-19 Vaccination</>,
           link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
           description: (
             <>
@@ -8076,7 +8199,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Allergy",
+                title: "Allergy",
               },
               {
                 text: (
@@ -8090,7 +8213,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
               // MedicalExemptions
               {
@@ -8106,7 +8229,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
               {
                 text: (
@@ -8119,7 +8242,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
             ],
           },
@@ -8143,7 +8266,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Mental Health",
+                title: "Mental Health",
               },
               {
                 text: (
@@ -8157,7 +8280,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Mental Health",
+                title: "Mental Health",
               },
               // MedicalExemptions
 
@@ -8172,7 +8295,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Politics",
+                title: "Politics",
               },
               {
                 text: (
@@ -8186,7 +8309,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Allergy",
+                title: "Allergy",
               },
             ],
           },
@@ -8210,7 +8333,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Allergy",
+                title: "Allergy",
               },
               {
                 text: (
@@ -8222,7 +8345,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
             ],
           },
@@ -8249,7 +8372,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorBlackWoman.svg",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
               {
                 text: (
@@ -8262,7 +8385,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
               // MedicalExemptions
               {
@@ -8277,7 +8400,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
-                label: "",
+                title: "",
               },
               {
                 text: (
@@ -8291,7 +8414,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Allergy",
+                title: "Allergy",
               },
               // MedicalExemptions
               {
@@ -8308,7 +8431,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Politics",
+                title: "Politics",
               },
             ],
           },
@@ -8335,7 +8458,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Do me a favour",
+                title: "Do me a favour",
               },
               {
                 text: (
@@ -8349,7 +8472,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Do me a favour",
+                title: "Do me a favour",
               },
               // MedicalExemptions
               {
@@ -8364,7 +8487,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Politics",
+                title: "Politics",
               },
               {
                 text: (
@@ -8380,7 +8503,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Mental Health",
+                title: "Mental Health",
               },
               // MedicalExemptions
               {
@@ -8396,7 +8519,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Mental Health",
+                title: "Mental Health",
               },
               {
                 text: (
@@ -8409,7 +8532,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Allergy",
+                title: "Allergy",
               },
               // MedicalExemptions
               {
@@ -8425,7 +8548,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: "Religion",
+                title: "Religion",
               },
             ],
           },
@@ -8435,9 +8558,8 @@ export const contentPersonas = {
       // MedicalExemptions
       resources: [
         {
-          label: <>College of Physicians and Surgeons of Alberta</>,
-          image: "",
-          linkTitle: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>,
+          title: <>College of Physicians and Surgeons of Alberta</>,
+          linkText: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>,
           link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
           description: (
             <>
@@ -8447,9 +8569,8 @@ export const contentPersonas = {
           ),
         },
         {
-          label: <>CPSA</>,
-          image: "",
-          linkTitle: <>Exemption Requests: Patient FAQs</>,
+          title: <>CPSA</>,
+          linkText: <>Exemption Requests: Patient FAQs</>,
           link: "https://cpsa.ca/wp-content/uploads/2021/09/Vaccine-exemption-public-FAQ.pdf",
           description: (
             <>
@@ -8459,23 +8580,20 @@ export const contentPersonas = {
           ),
         },
         {
-          label: <>College of Physicians and Surgeons BC</>,
-          image: "",
-          linkTitle: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>,
+          title: <>College of Physicians and Surgeons BC</>,
+          linkText: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>,
           link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
           description: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
         },
         {
-          label: <>Ontario Ministry of Health</>,
-          image: "",
-          linkTitle: <>Medical Exemptions to COVID-19 Vaccination</>,
+          title: <>Ontario Ministry of Health</>,
+          linkText: <>Medical Exemptions to COVID-19 Vaccination</>,
           link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
           description: <>Offers guidance to medical staff on when a medical exemption is warranted</>,
         },
         {
-          label: <>National Advisory Committee on Immunization (NACI)</>,
-          image: "",
-          linkTitle: <>Recommendations on COVID-19</>,
+          title: <>National Advisory Committee on Immunization (NACI)</>,
+          linkText: <>Recommendations on COVID-19</>,
           link: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
           description: (
             <>
@@ -8694,7 +8812,7 @@ export const contentPersonas = {
       //BadContentID
       resources: [
         {
-          label: (
+          title: (
             <>
               <div className="emphFont text-red-700">Bad Path or ContentID</div>
               <div className="mt-4 baseFont text-red-700">
@@ -8704,8 +8822,7 @@ export const contentPersonas = {
               </div>{" "}
             </>
           ),
-          image: "",
-          linkTitle: <></>,
+          linkText: <></>,
           link: "https://",
           description: <></>,
         },

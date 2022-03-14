@@ -6,28 +6,27 @@ module.exports = {
       "A guide to help primary care clinicians identify types of COVID-19 vaccine hesitancy. Advice and resources for addressing them.",
     url: "https://www.vhguide.ca", // No trailing slash allowed!
     keywords: `vaccine, vaccination, hesitancy, covid, COVID-10, anti-vax, conversations, misinformation, clinician, advice`,
-    image: "/assets/homePage/Home Page graphic.svg", // Path to your image you placed in the 'static' folder
+    image: "/assets/homeAndExplore/Panel Graphic - Landing.svg", // Path to your image you placed in the 'static' folder
   },
 
   plugins: [
-
     // {
     //   resolve: "gatsby-plugin-google-tagmanager",
     //   options: {
     //     id: "GTM-55WGF6P",
-  
+
     //     // Include GTM in development. Defaults to false meaning GTM will only be loaded in production.
     //     includeInDevelopment: false,
-  
+
     //     // datalayer to be set before GTM is loaded. Should be an object or a function that is executed in the browser
     //     // Defaults to null
     //     // defaultDataLayer: { platform: "gatsby" },
-  
+
     //     // Specify optional GTM environment details.
     //     // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
     //     // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
     //     // dataLayerName: "YOUR_DATA_LAYER_NAME",
-  
+
     //     // Name of the event that is triggered on every Gatsby route change. Defaults to gatsby-route-change
     //     // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
     //     enableWebVitalsTracking: true,
@@ -47,7 +46,7 @@ module.exports = {
         // The following object is used for configuration specific to this plugin
         pluginConfig: {
           head: true, // Put tracking script in the head instead of the body  // was false
-          respectDNT: false,  // ""..using Google Global Site Tag does not necessarily constitute Tracking..."
+          respectDNT: false, // ""..using Google Global Site Tag does not necessarily constitute Tracking..."
           // exclude: ["/preview/**", "/do-not-track/me/too/"],     // Avoids sending pageview hits from custom paths
         },
       },
@@ -62,12 +61,12 @@ module.exports = {
         duration: 1000,
       },
     },
-    
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "homepagePics",
-        path: `${__dirname}/src/assets/homepage/`,
+        name: "homeAndExplore",
+        path: `${__dirname}/src/assets/homeAndExplore/`,
       },
     },
     {
@@ -80,7 +79,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "featuredOnLogos",
+        name: "featuredOn",
         path: `${__dirname}/src/assets/featuredOn/logos/`,
       },
     },
@@ -104,7 +103,17 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    
+
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\/homeAndExplore\/svgBanners\//,
+          // Above is a regular expression literal for the path for the SVG banner files. Only put SVG files in this path
+        },
+      },
+    },
+
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/details/*`, `/about/*`] },
@@ -119,6 +128,5 @@ module.exports = {
         tailwind: true,
       },
     },
-    // `gatsby-plugin-preload-fonts`,
   ],
 };

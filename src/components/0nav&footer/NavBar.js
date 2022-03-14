@@ -81,7 +81,7 @@ const NavBar = () => {
           style={{ height: navBarHeight }}
           onClick={evnt => onClickGo(evnt, "/")}
         >
-          <StaticImage src="../../assets/homepage/Logo for Website.svg" alt="VH Guide logo" />
+          <StaticImage src="../../assets/homeAndExplore/Logo for Website.svg" alt="VH Guide logo" />
         </button>
 
         {/* WIDE screens => normal navbar, either on 1 line or split into 2 (stacked) */}

@@ -44,11 +44,12 @@ const landingContent = [
 
   {
     mainTitle: "Pregnancy and Fertility Section",
-    bgColorFromCls: "from-lilac-darkish", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-lilac-medium",
-    backgndGradientStartsAt: "left",
-    mainTextColorCls: "text-blue-blackest",
-    exclaimText: "Coming Soon!",
+    bgColorFromCls: "from-yellow-700", // use Tailwind color name (see tailwind.config.js)
+    bgColorToCls: "to-yellow-500",
+    backgndGradientStartsAt: "top",
+    mainTextColorCls: "text-gray-light",
+
+    exclaimText: "New!",
     exclaimTextColorCls: "text-gray-light",
     introPart1: (
       <span>
@@ -67,10 +68,41 @@ const landingContent = [
     buttonText: "Browse Fertility and Pregnancy Advice",
     buttonDestn: "/details/overview",
     newLocn: { branch: 0, topic: 0, subtopic: 3, showSubtopic: false },
+
+    buttonBgColorCls: "bg-gray-light",
+    buttonTextColorCls: "text-yellow-700",
+    buttonBorderColorCls: "border-gray-light",
+
+    mainImageFileName: "Panel Graphics - Pregnancy - Coming Soon.svg",
+    backgndImageFileName: "Wavy Line.svg",
+  },
+
+  {
+    mainTitle: "Pediatric Vaccine Hesitancy Section",
+    bgColorFromCls: "from-lilac-darkish", // use Tailwind color name (see tailwind.config.js)
+    bgColorToCls: "to-lilac-medium",
+    backgndGradientStartsAt: "left",
+    mainTextColorCls: "text-blue-blackest",
+    exclaimText: "New!",
+    exclaimTextColorCls: "text-blue-blackest",
+    introPart1: (
+      <span>
+        The Vaccine Hesitancy Guide has recently added content to help you navigate COVID-19 vaccine conversations with
+        parents and their children.
+      </span>
+    ),
+    introPart2: (
+      <span> See what other clinicians are saying to support better conversations about childhood vaccination!</span>
+    ),
+    introPart3: "",
+    buttonText: "Browse Pediatric Advice",
+    buttonDestn: "/details/overview",
+    newLocn: { branch: 3, topic: 0, subtopic: 0, showSubtopic: false },
+
     buttonBgColorCls: "bg-blue-black",
     buttonTextColorCls: "text-gray-light",
     buttonBorderColorCls: "border-blue-black",
-    mainImageFileName: "Panel Graphics - Pregnancy - Coming Soon.svg",
+    mainImageFileName: "Panel Graphic - Pediatrics.svg",
     backgndImageFileName: "Wavy Line - darker yet.svg",
   },
 
@@ -98,39 +130,11 @@ const landingContent = [
     introPart3: "",
     buttonText: "Browse Medical Exemption Advice",
     buttonDestn: "/details/overview",
-    newLocn: { branch: 4, topic: 0, subtopic:0, showSubtopic: false },
+    newLocn: { branch: 4, topic: 0, subtopic: 0, showSubtopic: false },
     buttonBgColorCls: "bg-gray-light",
     buttonTextColorCls: "text-yellow-700",
     buttonBorderColorCls: "border-gray-light",
     mainImageFileName: "Panel Graphics - Medical Exemptions.svg",
-    backgndImageFileName: "Wavy Line.svg",
-  },
-
-  {
-    mainTitle: "Pediatric Vaccine Hesitancy Section",
-    bgColorFromCls: "from-yellow-700", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-yellow-500",
-    backgndGradientStartsAt: "top",
-    mainTextColorCls: "text-gray-light",
-    exclaimText: "New!",
-    exclaimTextColorCls: "text-blue-blackest",
-    introPart1: (
-      <span>
-        The Vaccine Hesitancy Guide has recently added content to help you navigate COVID-19 vaccine conversations with
-        parents and their children.
-      </span>
-    ),
-    introPart2: (
-      <span> See what other clinicians are saying to support better conversations about childhood vaccination!</span>
-    ),
-    introPart3: "",
-    buttonText: "Browse Pediatric Advice",
-    buttonDestn: "/details/overview",
-    newLocn: { branch: 3, topic: 0, subtopic:0, showSubtopic: false },
-    buttonBgColorCls: "bg-gray-light",
-    buttonTextColorCls: "text-yellow-700",
-    buttonBorderColorCls: "border-gray-light",
-    mainImageFileName: "Panel Graphic - Pediatrics.svg",
     backgndImageFileName: "Wavy Line.svg",
   },
 ];

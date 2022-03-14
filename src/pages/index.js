@@ -42,9 +42,10 @@ const Home = props => {
 };
 
 // From GraphiQL, accessed at http://localhost:8000/___graphql
+// {sourceInstanceName: {eq: "<name>"} params below should match the name: fields in the "gatsby-source-filesystem" configs in gatsby-config.js
 export const query = graphql`
   query ImagesQuery {
-    homepagePics:   allFile(filter: {sourceInstanceName: {eq: "homepagePics"}}) {
+    homepagePics:   allFile(filter: {sourceInstanceName: {eq: "homeAndExplore"}}) {
       edges {
         node {
           dir
@@ -59,7 +60,7 @@ export const query = graphql`
       }
     }
 
-    featuredOnLogos: allFile(filter: { sourceInstanceName: { eq: "featuredOnLogos" } }) {
+    featuredOnLogos: allFile(filter: { sourceInstanceName: { eq: "featuredOn" } }) {
       edges {
         node {
           dir

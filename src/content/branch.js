@@ -45,9 +45,9 @@ export const branch = [
             contentID: "MedicallyComplex",
           },
           {
-            subtopicName: "Reproductive or fitness impacts from the vaccines",
-            subtopicNameShort: "Reproductive / fitness impacts",
-            subtopicNameAsTitle: "Reproductive or Fitness Impacts From the Vaccines",
+            subtopicName: "Pregnancy, fertility, or reproductive concerns",
+            subtopicNameShort: "Pregnancy / reproductive concerns",
+            subtopicNameAsTitle: "Pregnancy, Fertility, or Reproductive Concerns",
             contentID: "ReproductiveEffects",
           },
           {

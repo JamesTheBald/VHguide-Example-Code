@@ -22,7 +22,7 @@ const AdviceWhatsWorking = () => {
         />
 
         <span>
-          . Below you'll find examples of dialogue from other clinicians who have address this type of hesitancy.
+          . Below you'll find examples of dialogue from other clinicians who have addressed this type of hesitancy.
         </span>
       </div>
     </div>
