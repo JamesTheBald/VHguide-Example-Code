@@ -54,7 +54,7 @@ const Home1TopPanel = props => {
 
   return (
     <div
-      className={`w-screen h-full relative ${gradientDir} ${bgColorFromCls} ${bgColorToCls}  ${mainTextColorCls}
+      className={`w-screen h-full absolute ${gradientDir} ${bgColorFromCls} ${bgColorToCls}  ${mainTextColorCls}
                   flex flex-col justify-center  rounded-b-5xl`}
     >
       <div className="absolute w-full h-full  overflow-hidden  z-20">

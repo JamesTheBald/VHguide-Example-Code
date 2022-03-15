@@ -60,8 +60,8 @@ const landingContent = [
     introPart2: (
       <span>
         {" "}
-        vaccine during pregnancy. The next release of the Guide will include support for better communications with
-        patients who are concerned that vaccines will affect their fertility or unborn child.
+        vaccine during pregnancy. This update includes support for better communications with patients who are concerned
+        that vaccines will affect their fertility or unborn child.
       </span>
     ),
     introPart3: "",

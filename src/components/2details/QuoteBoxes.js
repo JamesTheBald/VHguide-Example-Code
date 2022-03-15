@@ -49,16 +49,22 @@ const QuoteBoxes = props => {
     <>
       {quoteArray.map((quote, idx) => {
         return (
-          <div key={idx}>
+          <div key={idx} style={{ breakInside: "avoid" }}>
+            {/* Need breakInside: "avoid" for each containing box down from the parent with the columns.
+            See: https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */}
             {reactElementToJSXString(quote.text).length > 20 && (
               <div
                 name="Outer box to prevent column breaking inside"
-                className="pt-4 flex flex-col justify-start  dontBreak relative"
+                className="pt-4 flex flex-col justify-start dontBreak  relative"
                 key={idx}
               >
                 {quote.label && (
-                  <div className="absolute left-0 top-0 px-4 pt-1.5 pb-0.5  baseFont text-blue-black font-bold 
-                                bg-gray-neutral rounded-full  z-50">
+                  <div
+                    className="absolute left-0 top-0 px-4 pt-1.5 pb-0.5  baseFont text-blue-black font-bold 
+                                bg-gray-neutral rounded-full  z-50 overflow-hidden"
+                    style="display: inline-block"
+                    // See https://stackoverflow.com/questions/7785374/how-to-prevent-column-break-within-an-element
+                  >
                     {quote.label}
                   </div>
                 )}
@@ -84,8 +90,8 @@ const QuoteBoxes = props => {
                   name="main visible quote box"
                   className={`mb-8 mxs:mb-10  flex flex-col rounded-3xl relative baseFontWide
                               ${quoteColorsEtAl(quote)}`}
-                              // ${quote.featured ? "quoteBoxFeatured" : "baseFontWide"}  // For larger font on featured boxes
-                              style={quotePaddingEtc(quote)}
+                  // ${quote.featured ? "quoteBoxFeatured" : "baseFontWide"}  // For larger font on featured boxes
+                  style={quotePaddingEtc(quote)}
                 >
                   <div name="inner text box w decorations" className="relative">
                     {!quote.label && !quote.image && (

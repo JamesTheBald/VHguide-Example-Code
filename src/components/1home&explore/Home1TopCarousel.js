@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { isMobile } from 'react-device-detect';
 
 import "../../styles/splide.css";
 import landingContent from "../../content/landingContent";
@@ -22,17 +22,18 @@ const Home1TopCarousel = () => {
           options={{
             type: "slide",
             gap: 40,
-            speed: 1200,  // slide-across time in ms
+            speed: isMobile ? 600 : 1200,  // slide-across time in ms
+            waitForTransition: false,  // default=true
             autoplay: true, // default=true
             interval: 15000,
             rewind: true, // default=false
             rewindSpeed: 2000,
             pauseOnHover: false,
             pauseOnFocus: false,
+            drag: true, // default=true
             lazyLoad: false, // default = false
             arrows: false,  // default=true
-            drag: true, // default=true
-            updateOnMove: true,  // default=false
+            // updateOnMove: true,  // default=false
           }}
         >
           {landingContent.map((currContent, index) => {
