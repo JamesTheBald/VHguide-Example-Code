@@ -15,14 +15,13 @@ const mainBlue = {
   buttonBgColorCls: "bg-gray-light",
   buttonTextColorCls: "text-blue-main",
   buttonBorderColorCls: "border-gray-light",
-  mainImageFileName: "Panel Graphic - Landing.svg",
   backgndImageFileName: "Wavy Line.svg",
 };
 
 const newOrange = {
   bgColorFromCls: "from-yellow-dark",
   bgColorToCls: "to-yellow-medium",
-  bgGradientDirMobl: "bg-gradient-to-b",
+  bgGradientDirMobl: "bg-gradient-to-t",
   bgGradientDirDesk: "bg-gradient-to-r",
   mainTextColorCls: "text-gray-light",
   exclaimText: "New!",
@@ -31,7 +30,6 @@ const newOrange = {
   buttonBgColorCls: "bg-gray-light",
   buttonTextColorCls: "text-yellow-700",
   buttonBorderColorCls: "border-gray-light",
-  mainImageFileName: "Panel Graphic - Pregnancy - for orange bg.svg",
   backgndImageFileName: "Wavy Line.svg",
 };
 
@@ -43,20 +41,18 @@ const comingSoonLilac = {
   mainTextColorCls: "text-blue-blackest",
   exclaimText: "Coming Soon!",
   exclaimTextColorClsMobl: "text-blue-blackest",
-  // exclaimTextColorClsMobl: "text-gray-light",
   exclaimTextColorClsDesk: "text-gray-light",
   buttonBgColorCls: "bg-blue-black",
   buttonTextColorCls: "text-gray-light",
   buttonBorderColorCls: "border-blue-black",
-  mainImageFileName: "Panel Graphic - Pregnancy - for lilac bg.svg",
   backgndImageFileName: "Wavy Line - darker yet.svg",
 };
 
 const landingContent = [
   {
-    // Landing panel, in 'Main Blue'
     ...mainBlue,
     mainTitle: "Are your patients hesitant about getting a COVID-19 vaccine?",
+    mainImageFileName: "Panel Graphic - Landing.svg",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
@@ -87,6 +83,7 @@ const landingContent = [
   {
     ...newOrange,
     mainTitle: "Updated Pregnancy and Fertility Section",
+    mainImageFileName: "Panel Graphic - Pregnancy - for orange bg.svg",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide team is talking with family doctors and other experts to help clinicians communicate
@@ -109,6 +106,7 @@ const landingContent = [
   {
     ...comingSoonLilac,
     mainTitle: "French Translation",
+    mainImageFileName: "Panel Graphic - French Translation.svg",
     introPart1: (
       <span>
         Prenez-vous soin des patients francophones? Une traduction complète des conseils inclus sur le Vaccine Hesitancy
@@ -125,6 +123,7 @@ const landingContent = [
   {
     ...newOrange,
     mainTitle: "Pediatric Vaccine Hesitancy Section",
+    mainImageFileName: "Panel Graphic - Pediatrics.svg",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has recently added content to help you navigate COVID-19 vaccine conversations with
@@ -143,6 +142,7 @@ const landingContent = [
   {
     ...newOrange,
     mainTitle: "Medical Exemptions Section",
+    mainImageFileName: "Panel Graphic - Medical Exemptions.svg",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has a new section to help clinicians speak with patients seeking medical exemptions
