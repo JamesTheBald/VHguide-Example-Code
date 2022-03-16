@@ -22,7 +22,7 @@ const mainBlue = {
 const newOrange = {
   bgColorFromCls: "from-yellow-dark",
   bgColorToCls: "to-yellow-medium",
-  bgGradientDirMobl: "bg-gradient-to-t",
+  bgGradientDirMobl: "bg-gradient-to-b",
   bgGradientDirDesk: "bg-gradient-to-r",
   mainTextColorCls: "text-gray-light",
   exclaimText: "New!",
