@@ -62,7 +62,7 @@ const QuoteBoxes = props => {
                   <div
                     className="absolute left-0 top-0 px-4 pt-1.5 pb-0.5  baseFont text-blue-black font-bold 
                                 bg-gray-neutral rounded-full  z-50 overflow-hidden"
-                    style="display: inline-block"
+                    // style={{ display: "inline-block" }}
                     // See https://stackoverflow.com/questions/7785374/how-to-prevent-column-break-within-an-element
                   >
                     {quote.label}
@@ -88,7 +88,7 @@ const QuoteBoxes = props => {
 
                 <div
                   name="main visible quote box"
-                  className={`mb-8 mxs:mb-10  flex flex-col rounded-3xl relative baseFontWide
+                  className={`mb-8 mxs:mb-10  flex flex-col rounded-3xl relative baseFontWide  dontBreak
                               ${quoteColorsEtAl(quote)}`}
                   // ${quote.featured ? "quoteBoxFeatured" : "baseFontWide"}  // For larger font on featured boxes
                   style={quotePaddingEtc(quote)}

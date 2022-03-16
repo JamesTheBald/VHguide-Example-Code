@@ -14,7 +14,7 @@ const QuoteGroupsPediatrics = props => {
 
   const columnNum = winWidth < 950 ? 1 : winWidth < 1600 ? 2 : 3;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
-  const columnStyle = { columnCount: columnNum, columnGap: winWidth < 1600 ? 50 : 60 };
+  const columnStyle = { columnCount: columnNum, columnGap: winWidth < 1600 ? 50 : 60, breakInside: "avoid" };
 
   false && console.log(log, log2);
   log2 && console.log("QuoteGroupsPediatrics.js panelContent=", panelContent);

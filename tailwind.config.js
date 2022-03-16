@@ -188,6 +188,7 @@ module.exports = {
         },
 
         yellow: {
+          medium: "#DB981D",
           darkish: "#B1770C",
           dark: "#AC740C",
           darker: "hsl(39, 86%, 31%)",

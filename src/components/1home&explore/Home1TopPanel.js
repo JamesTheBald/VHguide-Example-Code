@@ -11,13 +11,18 @@ const Home1TopPanel = props => {
   const { winWidth, winHeight, marginOuter, queryData, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
+  const homepagePics = queryData.current.homepagePics.edges;
+  const w = winWidth;
+
   const {
     bgColorFromCls,
     bgColorToCls,
-    backgndGradientStartsAt,
+    bgGradientDirMobl,
+    bgGradientDirDesk,
     mainTextColorCls,
     exclaimText,
-    exclaimTextColorCls,
+    exclaimTextColorClsMobl,
+    exclaimTextColorClsDesk,
     buttonText,
     buttonBgColorCls,
     buttonTextColorCls,
@@ -28,29 +33,32 @@ const Home1TopPanel = props => {
     backgndImageFileName,
   } = content;
 
-  const homepagePics = queryData.current.homepagePics.edges;
-  log && console.log("Home1TopPanel.js Incoming winWidth=", winWidth, " & winHeight=", winHeight);
+  log && console.log("Home1TopPanel.js Incoming winWidth=", w, " & winHeight=", winHeight);
   log2 && console.log("Home1TopPanel.js homepagePics=", homepagePics);
   log2 && console.log("Home1TopPanel.js content=", content);
   log2 && console.log("Home1TopPanel.js backgndImageFileName=", backgndImageFileName);
 
-  let titleWidthFrac = winWidth < 510 ? 0.85 : winWidth < 720 ? 0.82 : 0.78;
-  if (winWidth > 1024) titleWidthFrac = winWidth < 1200 ? 0.72 : winWidth < 1366 ? 0.65 : 0.43;
-  let titleWidth = winWidth * titleWidthFrac;
+  let titleWidthFrac = w < 510 ? 0.85 : w < 720 ? 0.82 : 0.78;
+  if (w > 1024) titleWidthFrac = w < 1200 ? 0.72 : w < 1366 ? 0.65 : 0.43;
+  let titleWidth = w * titleWidthFrac;
 
-  const newContentWidth = winWidth - 2 * marginOuter;
+  const newContentWidth = w - 2 * marginOuter;
   if (titleWidth > newContentWidth) titleWidth = newContentWidth;
   log2 && console.log("Home1TopPanel.js useEffect titleWidth=", titleWidth);
 
   // Set 2D transform parameters for wavy line
   const [xFm, setXFm] = useState({ xTr: 0, yTr: 0, xSx: 0, ySc: 0 });
   useEffect(() => {
-    const xfm = wavyLineTransforms(winWidth);
+    const xfm = wavyLineTransforms(w);
     log && console.log("Home1TopPanel.js Wavy Line transform object, xfm=", xfm);
     setXFm(xfm);
-  }, [winWidth, log]);
+  }, [w, log]);
 
-  const gradientDir = backgndGradientStartsAt === "left" ? "bg-gradient-to-r" : "bg-gradient-to-b";
+  // let gradientDir = "";
+  // if (winWidth < 1024) gradientDir = `bg-gradient-to-${bgGradientToMobile}`;
+  // else gradientDir = `bg-gradient-to-${bgGradientStartDesktop}`;
+
+  const gradientDir = w < 1024 ? bgGradientDirMobl : bgGradientDirDesk;
 
   return (
     <div
@@ -63,9 +71,7 @@ const Home1TopPanel = props => {
           queryArray={homepagePics}
           fileName={backgndImageFileName}
           wrapStyle={{
-            transform: `translate(${xFm.xTr}px, ${xFm.yTr}px) scale(${winWidth < 1366 ? -xFm.xSc : xFm.xSc}, ${
-              xFm.ySc
-            })`,
+            transform: `translate(${xFm.xTr}px, ${xFm.yTr}px) scale(${w < 1366 ? -xFm.xSc : xFm.xSc}, ${xFm.ySc})`,
           }} // -xScale mirrors the image
           quality={80}
         />
@@ -74,7 +80,13 @@ const Home1TopPanel = props => {
       <div className="w-full stdMargins  flex flex-col lg:flex-row  z-20 relative" style={{ zIndex: 20 }}>
         <div className="flex flex-col justify-center">
           {exclaimText && (
-            <div className={`font-serif font-semibold italic  titleSmall ${exclaimTextColorCls}`}>{exclaimText}</div>
+            <div
+              className={`font-serif font-semibold italic  titleSmall ${
+                w < 1024 ? exclaimTextColorClsMobl : exclaimTextColorClsDesk
+              }`}
+            >
+              {exclaimText}
+            </div>
           )}
 
           <LandingText
@@ -102,7 +114,7 @@ const Home1TopPanel = props => {
           wrapClass="order-first lg:order-last  mxs:mt-4
                         lg:ml-8 mxl:ml-12 xl:ml-16  mr-4  w-64 mxs:w-72 sm:w-90 md:w-110 lg:w-150 xl:w-190"
           // mxs:mt-7 sm:mt-10
-          wrapStyle={winWidth < 1366 ? { transform: "scaleX(-1)" } : { transform: "scaleX(1)" }}
+          wrapStyle={w < 1366 ? { transform: "scaleX(-1)" } : { transform: "scaleX(1)" }}
           altText="Main landing page graphic"
           quality={80}
         />

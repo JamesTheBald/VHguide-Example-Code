@@ -1,15 +1,62 @@
 import React from "react";
 import { Link } from "gatsby";
 
+// Many of the below string values are TailwindCSS utility classes that use custom colour names defined in tailwind.config.js
+
+const mainBlue = {
+  bgColorFromCls: "from-blue-black", // using Tailwind color name (see tailwind.config.js)
+  bgColorToCls: "to-blue-main",
+  bgGradientDirMobl: "bg-gradient-to-b",  // Tailwind background gradient direction class.  ..to-b means 'top to bottom'
+  bgGradientDirDesk: "bg-gradient-to-b",
+  mainTextColorCls: "text-gray-light", // determines if most of the text & graphics are light or dark
+  exclaimText: "",
+  exclaimTextColorClsMobl: "text-blue-black", // using Tailwind color name (see tailwind.config.js)
+  exclaimTextColorClsDesk: "text-blue-black",
+  buttonBgColorCls: "bg-gray-light",
+  buttonTextColorCls: "text-blue-main",
+  buttonBorderColorCls: "border-gray-light",
+  mainImageFileName: "Panel Graphic - Landing.svg",
+  backgndImageFileName: "Wavy Line.svg",
+};
+
+const newOrange = {
+  bgColorFromCls: "from-yellow-dark",
+  bgColorToCls: "to-yellow-medium",
+  bgGradientDirMobl: "bg-gradient-to-t",
+  bgGradientDirDesk: "bg-gradient-to-r",
+  mainTextColorCls: "text-gray-light",
+  exclaimText: "New!",
+  exclaimTextColorClsMobl: "text-blue-black",
+  exclaimTextColorClsDesk: "text-blue-black",
+  buttonBgColorCls: "bg-gray-light",
+  buttonTextColorCls: "text-yellow-700",
+  buttonBorderColorCls: "border-gray-light",
+  mainImageFileName: "Panel Graphic - Pregnancy - for orange bg.svg",
+  backgndImageFileName: "Wavy Line.svg",
+};
+
+const comingSoonLilac = {
+  bgColorFromCls: "from-lilac-darkish",
+  bgColorToCls: "to-lilac-medium",
+  bgGradientDirMobl: "bg-gradient-to-t",
+  bgGradientDirDesk: "bg-gradient-to-r",
+  mainTextColorCls: "text-blue-blackest",
+  exclaimText: "Coming Soon!",
+  exclaimTextColorClsMobl: "text-blue-blackest",
+  // exclaimTextColorClsMobl: "text-gray-light",
+  exclaimTextColorClsDesk: "text-gray-light",
+  buttonBgColorCls: "bg-blue-black",
+  buttonTextColorCls: "text-gray-light",
+  buttonBorderColorCls: "border-blue-black",
+  mainImageFileName: "Panel Graphic - Pregnancy - for lilac bg.svg",
+  backgndImageFileName: "Wavy Line - darker yet.svg",
+};
+
 const landingContent = [
   {
+    // Landing panel, in 'Main Blue'
+    ...mainBlue,
     mainTitle: "Are your patients hesitant about getting a COVID-19 vaccine?",
-    bgColorFromCls: "from-blue-black", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-blue-main",
-    backgndGradientStartsAt: "top",
-    mainTextColorCls: "text-gray-light", // determines if most of the text & graphics are light or dark
-    exclaimText: "",
-    exclaimTextColorCls: "text-blue-black", // use Tailwind color name (see tailwind.config.js)
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
@@ -35,22 +82,11 @@ const landingContent = [
     buttonText: "Browse Hesitancy Types",
     buttonDestn: "/explore",
     newLocn: { branch: 0, topic: 0, subtopic: 0, showSubtopic: false },
-    buttonBgColorCls: "bg-gray-light",
-    buttonTextColorCls: "text-blue-main",
-    buttonBorderColorCls: "border-gray-light",
-    mainImageFileName: "Panel Graphic - Landing.svg",
-    backgndImageFileName: "Wavy Line.svg",
   },
 
   {
-    mainTitle: "Pregnancy and Fertility Section",
-    bgColorFromCls: "from-yellow-700", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-yellow-500",
-    backgndGradientStartsAt: "top",
-    mainTextColorCls: "text-gray-light",
-
-    exclaimText: "New!",
-    exclaimTextColorCls: "text-gray-light",
+    ...newOrange,
+    mainTitle: "Updated Pregnancy and Fertility Section",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide team is talking with family doctors and other experts to help clinicians communicate
@@ -68,23 +104,27 @@ const landingContent = [
     buttonText: "Browse Fertility and Pregnancy Advice",
     buttonDestn: "/details/overview",
     newLocn: { branch: 0, topic: 0, subtopic: 3, showSubtopic: false },
-
-    buttonBgColorCls: "bg-gray-light",
-    buttonTextColorCls: "text-yellow-700",
-    buttonBorderColorCls: "border-gray-light",
-
-    mainImageFileName: "Panel Graphics - Pregnancy - Coming Soon.svg",
-    backgndImageFileName: "Wavy Line.svg",
   },
 
   {
+    ...comingSoonLilac,
+    mainTitle: "French Translation",
+    introPart1: (
+      <span>
+        Prenez-vous soin des patients francophones? Une traduction complète des conseils inclus sur le Vaccine Hesitancy
+        Guide sera bientôt disponible! A full
+      </span>
+    ),
+    introPart2: <span> translation of the advice included in the Vaccine Hesitancy Guide will be available soon!</span>,
+    introPart3: "",
+    buttonText: "Browse Hesitancy Types",
+    buttonDestn: "/explore",
+    newLocn: { branch: 0, topic: 0, subtopic: 0, showSubtopic: false },
+  },
+
+  {
+    ...newOrange,
     mainTitle: "Pediatric Vaccine Hesitancy Section",
-    bgColorFromCls: "from-lilac-darkish", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-lilac-medium",
-    backgndGradientStartsAt: "left",
-    mainTextColorCls: "text-blue-blackest",
-    exclaimText: "New!",
-    exclaimTextColorCls: "text-blue-blackest",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has recently added content to help you navigate COVID-19 vaccine conversations with
@@ -98,22 +138,11 @@ const landingContent = [
     buttonText: "Browse Pediatric Advice",
     buttonDestn: "/details/overview",
     newLocn: { branch: 3, topic: 0, subtopic: 0, showSubtopic: false },
-
-    buttonBgColorCls: "bg-blue-black",
-    buttonTextColorCls: "text-gray-light",
-    buttonBorderColorCls: "border-blue-black",
-    mainImageFileName: "Panel Graphic - Pediatrics.svg",
-    backgndImageFileName: "Wavy Line - darker yet.svg",
   },
 
   {
+    ...newOrange,
     mainTitle: "Medical Exemptions Section",
-    bgColorFromCls: "from-yellow-700", // use Tailwind color name (see tailwind.config.js)
-    bgColorToCls: "to-yellow-500",
-    backgndGradientStartsAt: "top",
-    mainTextColorCls: "text-gray-light",
-    exclaimText: "New!",
-    exclaimTextColorCls: "text-blue-blackest", // use Tailwind color name (see tailwind.config.js)
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has a new section to help clinicians speak with patients seeking medical exemptions
@@ -131,11 +160,6 @@ const landingContent = [
     buttonText: "Browse Medical Exemption Advice",
     buttonDestn: "/details/overview",
     newLocn: { branch: 4, topic: 0, subtopic: 0, showSubtopic: false },
-    buttonBgColorCls: "bg-gray-light",
-    buttonTextColorCls: "text-yellow-700",
-    buttonBorderColorCls: "border-gray-light",
-    mainImageFileName: "Panel Graphics - Medical Exemptions.svg",
-    backgndImageFileName: "Wavy Line.svg",
   },
 ];
 

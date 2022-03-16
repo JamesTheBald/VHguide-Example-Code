@@ -12,7 +12,7 @@ const BrowseButton = props => {
     <Link
       to={buttonDestn}
       className={`pt-1 mxs:pt-1.5  rounded-full cursor-pointer flex justify-center items-center  smThenBaseFont mxs:text-18  
-                  border-2 border-solid ${className} hover:bg-opacity-0`}
+                  border border-solid ${className} hover:bg-opacity-0`}
       style={props.style}
       onClick={() => {
         setLocn(newLocn);
