@@ -22,7 +22,7 @@ module.exports = {
       lg: "1366px",
       mxl: "1640px",
       xl: "1920px",
-      "2xl": "2560px",
+      xxl: "2220px",
     },
 
     fontSize: {
@@ -145,6 +145,8 @@ module.exports = {
       120: "30rem",
       140: "35rem",
       150: "37.5rem",
+      160: "40rem",
+      180: "45rem",
       200: "50rem",
       220: "55rem",
       250: "62.5rem",

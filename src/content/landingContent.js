@@ -6,10 +6,9 @@ import { Link } from "gatsby";
 const mainBlue = {
   bgColorFromCls: "from-blue-black", // using Tailwind color name (see tailwind.config.js)
   bgColorToCls: "to-blue-main",
-  bgGradientDirMobl: "bg-gradient-to-b",  // Tailwind background gradient direction class.  ..to-b means 'top to bottom'
+  bgGradientDirMobl: "bg-gradient-to-b", // Tailwind background gradient direction class.  ..to-b means 'top to bottom'
   bgGradientDirDesk: "bg-gradient-to-b",
   mainTextColorCls: "text-gray-light", // determines if most of the text & graphics are light or dark
-  exclaimText: "",
   exclaimTextColorClsMobl: "text-blue-black", // using Tailwind color name (see tailwind.config.js)
   exclaimTextColorClsDesk: "text-blue-black",
   buttonBgColorCls: "bg-gray-light",
@@ -24,7 +23,6 @@ const newOrange = {
   bgGradientDirMobl: "bg-gradient-to-t",
   bgGradientDirDesk: "bg-gradient-to-r",
   mainTextColorCls: "text-gray-light",
-  exclaimText: "New!",
   exclaimTextColorClsMobl: "text-blue-black",
   exclaimTextColorClsDesk: "text-blue-black",
   buttonBgColorCls: "bg-gray-light",
@@ -39,7 +37,6 @@ const comingSoonLilac = {
   bgGradientDirMobl: "bg-gradient-to-t",
   bgGradientDirDesk: "bg-gradient-to-r",
   mainTextColorCls: "text-blue-blackest",
-  exclaimText: "Coming Soon!",
   exclaimTextColorClsMobl: "text-blue-blackest",
   exclaimTextColorClsDesk: "text-gray-light",
   buttonBgColorCls: "bg-blue-black",
@@ -53,6 +50,7 @@ const landingContent = [
     ...mainBlue,
     mainTitle: "Are your patients hesitant about getting a COVID-19 vaccine?",
     mainImageFileName: "Panel Graphic - Landing.svg",
+    exclaimText: "",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
@@ -84,6 +82,7 @@ const landingContent = [
     ...newOrange,
     mainTitle: "Updated Pregnancy and Fertility Section",
     mainImageFileName: "Panel Graphic - Pregnancy - for orange bg.svg",
+    exclaimText: "New!",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide team is talking with family doctors and other experts to help clinicians communicate
@@ -105,8 +104,14 @@ const landingContent = [
 
   {
     ...comingSoonLilac,
-    mainTitle: "French Translation",
+    mainTitle: (
+      <>
+        <div>Traduction Français</div>
+        <div>French Translation</div>
+      </>
+    ),
     mainImageFileName: "Panel Graphic - French Translation.svg",
+    exclaimText: "Bientôt Disponible! Coming Soon!",
     introPart1: (
       <span>
         Prenez-vous soin des patients francophones? Une traduction complète des conseils inclus sur le Vaccine Hesitancy
@@ -115,7 +120,7 @@ const landingContent = [
     ),
     introPart2: <span> translation of the advice included in the Vaccine Hesitancy Guide will be available soon!</span>,
     introPart3: "",
-    buttonText: "Browse Hesitancy Types",
+    buttonText: "",
     buttonDestn: "/explore",
     newLocn: { branch: 0, topic: 0, subtopic: 0, showSubtopic: false },
   },
@@ -124,6 +129,7 @@ const landingContent = [
     ...newOrange,
     mainTitle: "Pediatric Vaccine Hesitancy Section",
     mainImageFileName: "Panel Graphic - Pediatrics.svg",
+    exclaimText: "New!",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has recently added content to help you navigate COVID-19 vaccine conversations with
@@ -143,6 +149,7 @@ const landingContent = [
     ...newOrange,
     mainTitle: "Medical Exemptions Section",
     mainImageFileName: "Panel Graphic - Medical Exemptions.svg",
+    exclaimText: "New!",
     introPart1: (
       <span>
         The Vaccine Hesitancy Guide has a new section to help clinicians speak with patients seeking medical exemptions

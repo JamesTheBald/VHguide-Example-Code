@@ -8,7 +8,7 @@ import Home1TopPanel from "./Home1TopPanel";
 import { useMyContext } from "../../context/Context";
 
 const Home1TopCarousel = () => {
-  const { log, log2 } = useMyContext();
+  const { winWidth, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   const [showFullIntro, setShowFullIntro] = useState(false);
@@ -20,14 +20,17 @@ const Home1TopCarousel = () => {
 
   return (
     <>
-      <div className="w-screen overflow-hidden">
+      <div
+        className="overflow-hidden"
+        style={{ width: winWidth - 15 }}
+      >
         <Splide
           options={{
             type: "slide",
             gap: 40,
             speed: isMobile ? 600 : 1200, // slide-across time in ms
             waitForTransition: false, // default=true
-            autoplay: false, // default=true
+            autoplay: true, // default=true
             interval: 15000,
             rewind: true, // default=false
             rewindSpeed: 2000,
@@ -36,7 +39,6 @@ const Home1TopCarousel = () => {
             drag: true, // default=true
             lazyLoad: false, // default = false
             arrows: false, // default=true
-            // updateOnMove: true,  // default=false
           }}
         >
           {landingContent.map((currContent, index) => {
