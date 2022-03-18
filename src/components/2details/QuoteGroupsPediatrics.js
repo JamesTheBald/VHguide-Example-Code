@@ -45,7 +45,7 @@ const QuoteGroupsPediatrics = props => {
         triggerClassName="CustomTriggerCSS--closed"
         triggerOpenedClassName="CustomTriggerCSS--open"
         open={pedQuoteGroupInitOpen.current[groupNum]}
-        transitionTime={200}
+        transitionTime={winWidth < 510 ? 200 : 400}
       >
         <div className="flex flex-col">
           <div className="subSubHeadingFont mb-6 md:mb-8">What Clinicians Are Hearing</div>
