@@ -1,27 +1,27 @@
-import { branch } from "../content/branch";
+// import { branch } from "../content/branch";
 
-const getBranchNum = contID => {
+const getBranchNum = (contID, branch) => {
   const branchNum = branch.findIndex(currBranch =>
     currBranch.topic.find(currTopic => currTopic.subtopic.find(currSubtopic => currSubtopic.contentID === contID))
   );
   return branchNum;
 };
 
-const getTopicNum = (contID, branchNum) => {
+const getTopicNum = (contID, branch, branchNum) => {
   const topNum = branch[branchNum].topic.findIndex(topicObj =>
     topicObj.subtopic.find(subTopObj => subTopObj.contentID === contID)
   );
   return topNum;
 };
 
-const getSubtopicNum = (contID, branchNum, topNum) => {
+const getSubtopicNum = (contID, branch, branchNum, topNum) => {
   const subtopNum = branch[branchNum].topic[topNum].subtopic.findIndex(
     subTopObj => subTopObj.contentID === contID // callback fn that returns true when === targetVal is met
   );
   return subtopNum;
 };
 
-const getSubtopicName = (contID, log) => {
+const getSubtopicName = (contID, branch, log) => {
   const branchNum = getBranchNum(contID);
   const topNum = getTopicNum(contID, branchNum);
   const subtopNum = getSubtopicNum(contID, branchNum, topNum);

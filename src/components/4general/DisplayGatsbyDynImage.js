@@ -1,8 +1,9 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapClass, wrapStyle, imgClass, altText, quality }) => {
-  // further image settings in page query (e.g. index.js, at bottom). e.g.
+const DisplayGatsbyDynImage = props => {
+  const { queryArray, fileName, wrapClass, wrapStyle, imgClass, layout, altText, quality } = props;
+  // further image settings available in page query (e.g. index.js, at bottom). e.g.
   //    childImageSharp {
   //      gatsbyImageData(formats: AUTO, placeholder: BLURRED, layout: CONSTRAINED)
   //    }
@@ -14,7 +15,7 @@ const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapClass, wrapStyle, img
   return (
     <>
       {queryArray.map((item, index) => {
-        log && console.log("For index ", index,", item.node.relativePath=", item.node.relativePath)
+        log && console.log("For index ", index, ", item.node.relativePath=", item.node.relativePath);
         if (item.node.relativePath === fileName) {
           // if filename in queryResultsArray matches filename in content file...
 
@@ -29,6 +30,7 @@ const DisplayGatsbyDynImage = ({ queryArray, fileName, wrapClass, wrapStyle, img
                     alt={altText}
                     className={imgClass}
                     quality={quality}
+                    layout={layout}
                   />
                 )
               )}

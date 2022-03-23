@@ -9,7 +9,7 @@ import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../.
 
 const DetailsLayout = props => {
   const { hesTypeName, related, path } = props;
-  const { locn, setLocn, fixedBackdrop, log, log2 } = useMyContext();
+  const { locn, branch, setLocn, fixedBackdrop, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   log2 && console.log("");
@@ -18,9 +18,9 @@ const DetailsLayout = props => {
   log2 && console.log("DetailsLayout.js hesTypeName=", hesTypeName);
 
   const onClickRelated = contentID => {
-    const branchNum = getBranchNum(contentID);
-    const topNum = getTopicNum(contentID, branchNum);
-    const subtopNum = getSubtopicNum(contentID, branchNum, topNum);
+    const branchNum = getBranchNum(contentID, branch);
+    const topNum = getTopicNum(contentID, branch, branchNum);
+    const subtopNum = getSubtopicNum(contentID, branch, branchNum, topNum);
     log && console.log("DetailsLayout.js onClickRelated() runs. contentID=", contentID);
     log && console.log("DetailsLayout.js .. branchNum=", branchNum, "topicNum=", topNum, "subtopicNum=", subtopNum);
 
@@ -88,7 +88,7 @@ const DetailsLayout = props => {
                   {related.map((contID, index) => {
                     return (
                       <button key={index} className={relatedPill} onClick={() => onClickRelated(contID)}>
-                        {getSubtopicName(contID)}
+                        {getSubtopicName(contID, branch)}
                       </button>
                     );
                   })}

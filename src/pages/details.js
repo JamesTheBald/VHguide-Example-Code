@@ -19,7 +19,7 @@ import setAdviceAndRelateds from "../functions/setAdviceAndRelateds";
 
 const Details = props => {
   const { data, location } = props;
-  const { locn, fullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
+  const { locn, branch, fullStoryID, setWinWidth, setWinHeight, queryData, log, log2 } = useMyContext();
   0 && console.log(log, log2);
   queryData.current = data;
   const path = location.pathname;
@@ -42,7 +42,7 @@ const Details = props => {
   log && console.log("details.js contentID=", contentID);
 
   useEffect(() => {
-    const { contIDTemp, hesTypeTemp } = getContIDandName(locn, setContentID, setHesTypeName, log, log2);
+    const { contIDTemp, hesTypeTemp } = getContIDandName(locn, branch, setContentID, setHesTypeName, log, log2);
     log2 && console.log("details.js contentIDTemp=", contIDTemp);
     log2 && console.log("details.js hesTypeTemp=", hesTypeTemp);
     setAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);

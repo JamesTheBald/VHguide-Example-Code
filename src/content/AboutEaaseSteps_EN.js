@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
-const AboutEaaseSteps = props => {
-  const { MotivationalInterviewing, textColumnsStyle } = props;
+const AboutEaaseSteps_EN = props => {
+  const { MotivInterview_BI, textColumnsStyle } = props;
 
   return (
     <article>
@@ -15,7 +15,7 @@ const AboutEaaseSteps = props => {
       <div style={textColumnsStyle}>
         <div>
           <span>Using the principles of</span>
-          <MotivationalInterviewing />
+          <MotivInterview_BI />
           <span>
             , our team developed the &lsquo;EAASE&rsquo; steps to help guide conversations with vaccine hesitant
             patients: Engage, Affirm, Ask then Share, and Evoke. We call them steps, but you don&apos;t need to follow
@@ -116,4 +116,4 @@ const AboutEaaseSteps = props => {
   );
 };
 
-export default AboutEaaseSteps;
+export default AboutEaaseSteps_EN;

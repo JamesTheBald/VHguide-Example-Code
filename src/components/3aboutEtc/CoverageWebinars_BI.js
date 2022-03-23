@@ -3,66 +3,69 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
+import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 import coverage from "../../content/featuredOnContent";
 
-const CoverageWebinars = ({ className }) => {
-  const { queryData, log2 } = useMyContext();
+const CoverageWebinars_BI = ({ className }) => {
+  const { queryData, lang, log2 } = useMyContext();
 
   const webinarShots = queryData.current.webinarShots.edges;
   log2 && console.log("CoverageWebinars.js webinarShots=", webinarShots);
 
   return (
-    <div
-      className={`w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-flow-row  
-                        sm:gap-x-16 lg:gap-x-20  gap-y-10 sm:gap-y-16 lg:gap-y-20  
-                        baseFont text-blue-black  ${className}`}
-    >
-      {coverage.webinars.map((currCoverage, index) => {
+    <div className={className}>
+      {coverage.webinars.map(currCoverage => {
+        const currCov = {
+          ...currCoverage,
+          source: lang === "EN" || !currCoverage.source_FR ? currCoverage.source_EN : currCoverage.source_FR,
+          title: lang === "EN" || !currCoverage.title_FR ? currCoverage.title_EN : currCoverage.title_FR,
+          date: lang === "EN" || !currCoverage.date_FR ? currCoverage.date_EN : currCoverage.date_FR,
+          linkText: lang === "EN" || !currCoverage.linkText_FR ? currCoverage.linkText_EN : currCoverage.linkText_FR,
+        };
+
         return (
-          <div key={currCoverage.title} className="">
+          <div key={currCov.title}>
             <a
-              className="mb-4  w-full grid justify-start items-center  cursor-pointer hoverRevealTrigger"
+              className="mb-4 w-full grid justify-start items-center  cursor-pointer hoverRevealTrigger"
               style={{ gridTemplateAreas: "area1" }}
-              href={currCoverage.URL}
+              href={currCov.URL}
               rel="noopener noreferrer"
               target="_blank"
             >
-              {webinarShots.map((item, indx) => {
-                return (
-                  <div key={item.node.relativePath} style={{ gridArea: "area1" }}>
-                    {item.node.relativePath === currCoverage.snapshot && (
-                      <GatsbyImage
-                        image={item.node.childImageSharp.gatsbyImageData}
-                        alt="Video snapshot"
-                        className="object-contain"
-                        // quality={90}
-                        layout="constrained"
-                      />
-                    )}
-                  </div>
-                );
-              })}
+              <DisplayGatsbyDynImage
+                queryArray={webinarShots}
+                fileName={currCov.snapshot}
+                altText="Video snapshot / Instantané vidéo"
+                wrapClass=""
+                wrapStyle={{ gridArea: "area1" }}
+                // imgClass="object-contain"
+                // layout="CONSTRAINED"
+              />
 
               <div
                 className="p-4 w-40  hiddenTillHover z-50 justify-self-center
                            baseFont bg-white rounded-2xl shadowGray opacity-80  text-center"
                 style={{ gridArea: "area1" }}
               >
-                Click to watch on external site
+                {lang === "EN" ? (
+                  <>Click to watch on external site</>
+                ) : (
+                  <>Cliquer ici pour regarder le webinaire sur un site externe</>
+                )}
               </div>
             </a>
 
-            <div className="pb-2 font-semibold">{currCoverage.outlet}</div>
-            <div className="pb-2 font-semibold">{currCoverage.title}</div>
-            {/* <div className="pb-2 italic">{currCoverage.date}</div> */}
+            <div className="pb-2 font-semibold">{currCov.source}</div>
+            <div className="pb-2 font-semibold">{currCov.title}</div>
+            {/* <div className="pb-2 italic">{currCov.date}</div> */}
             <a
               className="w-11/12 sm:w-5/6 md:w-90 lg:w-100  flex flex-col justify-center"
-              href={currCoverage.URL}
+              href={currCov.URL}
               rel="noopener noreferrer"
               target="_blank"
             >
               <span className="italic orangeUnderline">
-                {currCoverage.linkText}
+                {currCov.linkText}
                 <FiExternalLink className="pl-1.5 inline text-yellow-darkish" size={24} />
               </span>
             </a>
@@ -73,7 +76,7 @@ const CoverageWebinars = ({ className }) => {
   );
 };
 
-export default CoverageWebinars;
+export default CoverageWebinars_BI;
 
 // const WatchOnYoutubePopup = (props) => {
 //   const { text } = props;

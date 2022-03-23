@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 
-import { branch } from "../content/branch";
+import { branch_EN } from "../content/branch_EN";
+import { branch_FR } from "../content/branch_FR";
 import WindowSizeListener from "./WindowSizeListener";
 
 const myContext = createContext();
@@ -8,12 +9,12 @@ const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  const log = false;
+  const log = true;
   const log2 = false;
   log2 && console.log("Context.js runs.");
 
   const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
-  
+
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
   WindowSizeListener(winWidth, setWinWidth, setWinHeight);
@@ -39,7 +40,14 @@ const MyProvider = ({ children }) => {
     subtopic: 0,
     showSubtopic: false,
   });
-  // const [contentID, setContentID] = useState();
+
+  const [lang, setLang] = useState("FR");
+  // const [lang, setLang] = useState("EN");
+
+  const [branch, setBranch] = useState(lang==="EN" ? branch_EN : branch_FR);
+  0 && console.log("setBranch will be used for switching between English & French", setBranch);
+  // {/* {lang === "EN" ? <></> : <></>} */}
+
   const [fullStoryID, setFullStoryID] = useState("");
 
   // pedQuoteGroupInitOpen array allows the appropriate quote group on Pediatrics' Details-Advice page to be expanded upon arrival on the page, after clicking on that topic on <PediatricsOverviewTheySay />
@@ -60,7 +68,7 @@ const MyProvider = ({ children }) => {
     fixedBackdrop: fixedBackdrop,
     branch: branch,
     locn: locn,
-    // contentID: contentID,
+    lang: lang,
     fullStoryID: fullStoryID,
     noneSelected: noneSelected,
     pedQuoteGroupInitOpen: pedQuoteGroupInitOpen,
@@ -69,7 +77,7 @@ const MyProvider = ({ children }) => {
     setShowContactForm: setShowContactForm,
     setFixedBackdrop: setFixedBackdrop,
     setLocn: setLocn,
-    // setContentID: setContentID,
+    setLang: setLang,
     setNoneSelected: setNoneSelected,
     setFullStoryID: setFullStoryID,
     queryData: queryData,
