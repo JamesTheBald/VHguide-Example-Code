@@ -5,25 +5,49 @@ import { animateScroll as scroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import Layout from "../0nav&footer/NavFooterLayout";
 import TabBarOAR from "../../components/2details/TabBarOAR";
-import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
+// import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
 
 const DetailsLayout = props => {
-  const { hesTypeName, related, path } = props;
+  const { hesTypeName, related } = props;
   const { locn, branch, setLocn, fixedBackdrop, log, log2 } = useMyContext();
-
   false && console.log(log, log2);
-  log2 && console.log("");
-  log2 && console.log("DetailsLayout.js locn=", locn);
-  log2 && console.log("DetailsLayout.js path=", path);
-  log2 && console.log("DetailsLayout.js hesTypeName=", hesTypeName);
+
+  // The following four functions were in a separate file (getRelatedDetails.js) but this didn't work once branch became a state var (for French version), to be passed in from Context. branch was either undefined in the separate file, or null if passed in as a param.
+  const getBranchNum = contID => {
+    const branchNum = branch.findIndex(currBranch =>
+      currBranch.topic.find(currTopic => currTopic.subtopic.find(currSubtopic => currSubtopic.contentID === contID))
+    );
+    return branchNum;
+  };
+
+  const getTopicNum = (contID, branchNum) => {
+    const topNum = branch[branchNum].topic.findIndex(topicObj =>
+      topicObj.subtopic.find(subTopObj => subTopObj.contentID === contID)
+    );
+    return topNum;
+  };
+
+  const getSubtopicNum = (contID, branchNum, topNum) => {
+    const subtopNum = branch[branchNum].topic[topNum].subtopic.findIndex(
+      subTopObj => subTopObj.contentID === contID // callback fn that returns true when === targetVal is met
+    );
+    return subtopNum;
+  };
+
+  const getSubtopicName = (contID, log) => {
+    const branchNum = getBranchNum(contID);
+    const topNum = getTopicNum(contID, branchNum);
+    const subtopNum = getSubtopicNum(contID, branchNum, topNum);
+    const subtopicName = branch[branchNum].topic[topNum].subtopic[subtopNum].subtopicNameShort;
+    return subtopicName;
+  };
 
   const onClickRelated = contentID => {
-    const branchNum = getBranchNum(contentID, branch);
-    const topNum = getTopicNum(contentID, branch, branchNum);
-    const subtopNum = getSubtopicNum(contentID, branch, branchNum, topNum);
+    const branchNum = getBranchNum(contentID);
+    const topNum = getTopicNum(contentID, branchNum);
+    const subtopNum = getSubtopicNum(contentID, branchNum, topNum);
     log && console.log("DetailsLayout.js onClickRelated() runs. contentID=", contentID);
     log && console.log("DetailsLayout.js .. branchNum=", branchNum, "topicNum=", topNum, "subtopicNum=", subtopNum);
-
     setLocn(currLocn => {
       const newLocn = {
         ...currLocn,

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import TypesPopup_FR from "./TypesPopup_FR";
+import TypesPopupFR from "./TypesPopupFR";
 import { useMyContext } from "../context/Context";
 
-const AboutHowUse_FR = props => {
+const AboutHowUseFR = props => {
   const { textColumnsStyle } = props;
   const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
 
@@ -22,7 +22,7 @@ const AboutHowUse_FR = props => {
         </div>
         <div className="pb-3 relative">
           Le guide s’articule autour d’exemples de présentations typiques d’hésitation vaccinale. Ces{" "}
-          <TypesPopup_FR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> d’hésitation
+          <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> d’hésitation
           vaccinale figurent dans une{" "}
           <Link
             to="/explore"
@@ -36,7 +36,7 @@ const AboutHowUse_FR = props => {
           </Link>{" "}
           interactive. Les types peuvent également être divisés en sous-types, chacun décrivant une présentation plus
           précise d’hésitation vaccinale. Après avoir pris connaissance des menus et déterminé le{" "}
-          <TypesPopup_FR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> qui correspond le
+          <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> qui correspond le
           mieux à l’hésitation de votre patient, vous aurez accès à trois onglets d’information :
         </div>
         <ul className="listClass">
@@ -63,4 +63,4 @@ const AboutHowUse_FR = props => {
   );
 };
 
-export default AboutHowUse_FR;
+export default AboutHowUseFR;

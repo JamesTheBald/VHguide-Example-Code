@@ -7,7 +7,7 @@ import CollabLogos from "./CollabLogos";
 import { biosContent } from "../../content/biosContent";
 import { useMyContext } from "../../context/Context";
 
-const AboutCredits_BI = () => {
+const AboutCreditsBI = () => {
   const { queryData, lang, log, log2 } = useMyContext();
   false & log && console.log();
 
@@ -27,13 +27,13 @@ const AboutCredits_BI = () => {
 
       <div className="flex flex-row flex-wrap  w-full">
         {biosContent.map((currBioCont, indx) => {
-          log2 && console.log("AboutCredits.js .map() currBio=", currBio);
-
+          
           const currBio = {
             ...currBioCont,
             title: lang === "EN" || !currBioCont.title_FR ? currBioCont.title_EN : currBioCont.title_FR,
             info: lang === "EN" || !currBioCont.info_FR ? currBioCont.info_EN : currBioCont.info_FR,
           };
+          log2 && console.log("AboutCredits.js .map() currBio=", currBio);
 
           return (
             <div
@@ -86,4 +86,4 @@ const AboutCredits_BI = () => {
   );
 };
 
-export default AboutCredits_BI;
+export default AboutCreditsBI;

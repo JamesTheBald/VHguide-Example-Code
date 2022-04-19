@@ -42,7 +42,11 @@
   }
 
   .smFont {
-    @apply font-sans  text-14 sm:text-16  sm:tracking-0.3
+    @apply font-sans  text-14 sm:text-16  tracking-0.2 sm:tracking-0.3
+  }
+/* fsmFont is just small font (above) but with size-change breakpoint defined by fsm: instead of sm:  */
+  .fsmFont {
+    @apply font-sans  text-14 fsm:text-16  tracking-0.2 fsm:tracking-0.3
   }
 
   .vsmFont {
@@ -178,7 +182,7 @@
   }
 
   .chevPosn {
-    @apply relative sm:-left-0.5 bottom-1 sm:bottom-0
+    @apply relative fsm:-left-0.5 bottom-1 fsm:bottom-0
   } 
 
 

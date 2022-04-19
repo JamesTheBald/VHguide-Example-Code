@@ -42,7 +42,6 @@ const MedExemptOverviewTheySay = () => {
               log2 && console.log("MedExemptOverviewTheySay.js TriggerComponent: Setting mEOTSSO to ", tempMEOTSSO);
               return tempMEOTSSO;
             });
-            // goToReprodConcerns();
           }}
         >
           {sectionNum === 5 ? (

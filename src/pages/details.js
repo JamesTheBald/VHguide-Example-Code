@@ -46,7 +46,7 @@ const Details = props => {
     log2 && console.log("details.js contentIDTemp=", contIDTemp);
     log2 && console.log("details.js hesTypeTemp=", hesTypeTemp);
     setAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
-  }, [locn, contentID, log, log2]);
+  }, [locn, contentID, branch, log, log2]);
 
   const otherLegitAdviceTabPaths = ["/advice/engage", "/advice/affirm", "/advice/ask", "/advice/evoke"];
 

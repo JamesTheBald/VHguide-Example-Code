@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 
-import { branch_EN } from "../content/branch_EN";
-import { branch_FR } from "../content/branch_FR";
+import { branchEN } from "../content/branchEN";
+import { branchFR } from "../content/branchFR";
 import WindowSizeListener from "./WindowSizeListener";
 
 const myContext = createContext();
@@ -44,7 +44,7 @@ const MyProvider = ({ children }) => {
   const [lang, setLang] = useState("FR");
   // const [lang, setLang] = useState("EN");
 
-  const [branch, setBranch] = useState(lang==="EN" ? branch_EN : branch_FR);
+  const [branch, setBranch] = useState(lang==="EN" ? branchEN : branchFR);
   0 && console.log("setBranch will be used for switching between English & French", setBranch);
   // {/* {lang === "EN" ? <></> : <></>} */}
 

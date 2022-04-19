@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import TypesPopup_FR from "./TypesPopup_FR";
+import TypesPopupFR from "./TypesPopupFR";
 import { useMyContext } from "../context/Context";
 
-const AboutWhatIsThis_FR = props => {
-  const { MotivInterview_BI, textColumnsStyle } = props;
+const AboutWhatIsThisFR = props => {
+  const { MotivInterviewBI, textColumnsStyle } = props;
 
   const { setLocn, setNoneSelected, log } = useMyContext();
   false && console.log(log);
@@ -31,7 +31,7 @@ const AboutWhatIsThis_FR = props => {
             </Link>
             <span className="pl-1.5">sur la façon de conseiller les patients au sujet de leur propre </span>
             {/* Note the interplay of the absolute positioning tailwind classes below and the relative / static ones above */}
-            <TypesPopup_FR sizeAndPosnClass="left-0 sm:left-16  top-10  w-full sm:w-3/4 md:w-120" />
+            <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  top-10  w-full sm:w-3/4 md:w-120" />
             <span>
               {" "}
               d’hésitation face à la vaccination. Pour chaque type d’hésitation, vous trouverez des exemples de
@@ -57,7 +57,7 @@ const AboutWhatIsThis_FR = props => {
               feuille de route
             </Link>
             <span>pour déterminer, différencier et aborder les </span>
-            <TypesPopup_FR sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
+            <TypesPopupFR sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
             {/* left-0 sm:left-16  top-10 */}
             <span> courants d’hésitation vaccinale.</span>
           </li>
@@ -70,7 +70,7 @@ const AboutWhatIsThis_FR = props => {
           <span>
             Les conseils, les principes généraux et les scénarios présentés dans le guide sont fondés sur les techniques
           </span>
-          <MotivInterview_BI />
+          <MotivInterviewBI />
           <span>. L’entrevue motivationnelle encourage tant le clinicien que le patient à</span>
           <strong className="px-1.5">trouver les motivations positives de la vaccination.</strong>
           <span>Ce genre d’entrevue doit se faire au moyen de </span>
@@ -92,4 +92,4 @@ const AboutWhatIsThis_FR = props => {
   );
 };
 
-export default AboutWhatIsThis_FR;
+export default AboutWhatIsThisFR;

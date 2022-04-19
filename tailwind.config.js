@@ -18,6 +18,7 @@ module.exports = {
       mxs: "510px", // 'medium extra small'
       qsm: "610px", // 'quite small'
       sm: "720px",
+      fsm: "800px", // 'fairly small'
       md: "1024px",
       lg: "1366px",
       mxl: "1640px",
@@ -190,10 +191,11 @@ module.exports = {
         },
 
         yellow: {
+          light: "#E3B256",
           medium: "#DB981D",
           darkish: "#B1770C",
           dark: "#AC740C",
-          darker: "hsl(39, 86%, 31%)",
+          darker: "hsl(39, 86%, 31%)", // = #93630b
         },
 
         lilac: {

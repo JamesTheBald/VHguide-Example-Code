@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
-const AboutEaaseSteps_FR = props => {
-  const { MotivInterview_BI, textColumnsStyle } = props;
+const AboutEaaseStepsFR = props => {
+  const { MotivInterviewBI, textColumnsStyle } = props;
 
   return (
     <article>
@@ -15,7 +15,7 @@ const AboutEaaseSteps_FR = props => {
       <div style={textColumnsStyle}>
         <div>
           <span>S’appuyant sur les principes de</span>
-          <MotivInterview_BI />
+          <MotivInterviewBI />
           <span>
             , notre équipe a conçu les étapes <span className="whitespace-nowrap">« EAASE »</span> afin d’aider à
             orienter les conversations avec les patients qui hésitent à se faire vacciner : <b>e</b>ntamer, <b>a</b>
@@ -126,4 +126,4 @@ const AboutEaaseSteps_FR = props => {
   );
 };
 
-export default AboutEaaseSteps_FR;
+export default AboutEaaseStepsFR;

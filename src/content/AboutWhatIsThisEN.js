@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import TypesPopup_EN from "./TypesPopup_EN";
+import TypesPopupEN from "./TypesPopupEN";
 import { useMyContext } from "../context/Context";
 
-const AboutWhatIsThis_EN = props => {
-  const { MotivInterview_BI, textColumnsStyle } = props;
+const AboutWhatIsThisEN = props => {
+  const { MotivInterviewBI, textColumnsStyle } = props;
 
   const { setLocn, setNoneSelected, log } = useMyContext();
   false && console.log(log);
@@ -30,7 +30,7 @@ const AboutWhatIsThis_EN = props => {
             </Link>
             <span className="pl-1.5">on how to counsel patients about their </span>
             {/* Note the interplay of the absolute positioning tailwind classes below and the relative / static ones above */}
-            <TypesPopup_EN sizeAndPosnClass="left-0 sm:left-16  top-10  w-full sm:w-3/4 md:w-120" />
+            <TypesPopupEN sizeAndPosnClass="left-0 sm:left-16  top-10  w-full sm:w-3/4 md:w-120" />
             <span>
               . Below you’ll find examples of dialogue from other clinicians who have addressed this type of hesitancy.
             </span>
@@ -54,7 +54,7 @@ const AboutWhatIsThis_EN = props => {
               flowsheet
             </Link>
             <span>for identifying, differentiating, and addressing common </span>
-            <TypesPopup_EN sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
+            <TypesPopupEN sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
             {/* left-0 sm:left-16  top-10 */}
             <span> of vaccine hesitancy</span>
           </li>
@@ -65,7 +65,7 @@ const AboutWhatIsThis_EN = props => {
         </div>
         <div className="pb-3">
           <span>The advice, general principles, and scripts in the guide are grounded in the techniques of</span>
-          <MotivInterview_BI />
+          <MotivInterviewBI />
           <span>. Motivational Interviewing encourages both the clinician and the patient to</span>
           <strong className="px-1.5">identify positive motivations for vaccination.</strong>
           <span>This happens in the course of </span>
@@ -81,4 +81,4 @@ const AboutWhatIsThis_EN = props => {
   );
 };
 
-export default AboutWhatIsThis_EN;
+export default AboutWhatIsThisEN;

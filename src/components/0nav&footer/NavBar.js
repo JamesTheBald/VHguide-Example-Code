@@ -48,7 +48,7 @@ const NavBar = () => {
         className={`w-24  flex justify-center items-center cursor-pointer ${className}`}
         onClick={event => onClickHamburger(event, true)}
       >
-        <IoIosMenu size={winWidth < 720 ? 40 : 44} />
+        <IoIosMenu size={winWidth < 800 ? 40 : 44} />
       </button>
     );
   };
@@ -56,7 +56,7 @@ const NavBar = () => {
   const CloseButton = () => {
     return (
       <button
-        className="lg:hidden p-2 absolute -top-14 sm:-top-16 right-6"
+        className="lg:hidden p-2 absolute -top-14 fsm:-top-16 right-6"
         onClick={event => onClickHamburger(event, false)}
       >
         <VscClose size={30} />
@@ -64,20 +64,20 @@ const NavBar = () => {
     );
   };
 
-  const navBarHeight = winWidth < 720 ? 65 : 80;
+  const navBarHeight = winWidth < 800 ? 65 : 80;
 
   return (
     <>
       <div // Main Navbar container
         ref={dropDownRef}
-        className={`fixed w-full  flex ${showDropDown && "flex-col  border-gray-light"} sm:flex-row justify-between 
+        className={`fixed w-full  flex ${showDropDown && "flex-col  border-gray-light"} fsm:flex-row justify-between 
                     ${!showDropDown && "items-center  border-gray-light"}
                     border-solid border-b border-gray-light  bgUnselec
-                    smFont text-gray-light  z-50`}
+                    fsmFont text-gray-light  z-50`}
         style={{ height: navBarHeight + 1 }}
       >
         <button // VH Guide logo
-          className="ml-2 mxs:ml-5 sm:ml-6 md:ml-7 lg:ml-8  w-56 mxs:w-56 sm:w-80 lg:w-85  cursor-pointer"
+          className="ml-5 fsm:ml-6 md:ml-7 lg:ml-8  w-56 mxs:w-56 fsm:w-80 lg:w-85  cursor-pointer"
           style={{ height: navBarHeight }}
           onClick={evnt => onClickGo(evnt, "/")}
         >
@@ -87,21 +87,21 @@ const NavBar = () => {
         {/* WIDE screens => normal navbar, either on 1 line or split into 2 (stacked) */}
         {showDropDown || winWidth >= 1366 ? (
           <div
-            className="hidden sm:flex justify-center absolute lg:static  lg:mr-6 pt-1  w-full lg:w-auto  items-center
-                       sm:border-b lg:border-0 border-gray-light  bgUnselec  z-40"
+            className="hidden fsm:flex justify-center absolute lg:static  lg:mr-6 pt-1  w-full lg:w-auto  items-center
+                       fsm:border-b lg:border-0 border-gray-light  bgUnselec  z-40"
             style={{ top: navBarHeight + 1, height: navBarHeight }}
           >
             <NavBarItemsAndDropDowns onClickGo={onClickGo} setShowDropDown={setShowDropDown} />
             <CloseButton />
           </div>
         ) : (
-          <div className="hidden sm:inline absolute top-4 right-0">
+          <div className="hidden fsm:inline absolute top-4 right-0">
             <HamburgerIcon />
           </div>
         )}
 
         {/* NARROW screens - Dropdown Menu + Close Button or Hamburger */}
-        <div className="sm:hidden relative">
+        <div className="fsm:hidden relative">
           {showDropDown ? (
             <div
               name="Dropdown menu container"
@@ -121,7 +121,7 @@ const NavBar = () => {
       <div
         name="spacer, because navbar is fixed"
         style={
-          showDropDown && winWidth >= 720 && winWidth < 1366 ? { height: navBarHeight * 2 } : { height: navBarHeight }
+          showDropDown && winWidth >= 800 && winWidth < 1366 ? { height: navBarHeight * 2 } : { height: navBarHeight }
         }
       />
     </>

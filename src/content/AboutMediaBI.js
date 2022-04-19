@@ -1,10 +1,10 @@
 import React from "react";
 
 import { useMyContext } from "../context/Context";
-import CoverageGridList_BI from "../components/3aboutEtc/CoverageGridList_BI";
-import CoverageWebinars_BI from "../components/3aboutEtc/CoverageWebinars_BI";
+import CoverageGridListBI from "../components/3aboutEtc/CoverageGridListBI";
+import CoverageWebinarsBI from "../components/3aboutEtc/CoverageWebinarsBI";
 
-const AboutMedia_BI = () => {
+const AboutMediaBI = () => {
   const { lang } = useMyContext();
 
   const gridClass =
@@ -21,13 +21,13 @@ const AboutMedia_BI = () => {
         </h1>
 
         <h3 className="panelTitleClass pb-6">Publications</h3>
-        <CoverageGridList_BI type="publications" className={`pb-20 ${gridClass}`} />
+        <CoverageGridListBI type="publications" className={`pb-20 ${gridClass}`} />
 
         <h3 className="panelTitleClass pb-6">{lang === "EN" ? <>News Media</> : <>Médias d’information</>}</h3>
-        <CoverageGridList_BI type="newsmedia" className={`pb-20 ${gridClass}`} />
+        <CoverageGridListBI type="newsmedia" className={`pb-20 ${gridClass}`} />
 
         <h3 className="panelTitleClass pb-6">{lang === "EN" ? <>Webinars</> : <>Webinaires</>}</h3>
-        <CoverageWebinars_BI className={gridClass} />
+        <CoverageWebinarsBI className={gridClass} />
 
         <div className="h-20" />
       </article>
@@ -35,4 +35,4 @@ const AboutMedia_BI = () => {
   );
 };
 
-export default AboutMedia_BI;
+export default AboutMediaBI;

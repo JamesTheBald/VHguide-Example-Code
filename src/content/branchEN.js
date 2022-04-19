@@ -2,7 +2,7 @@ import React from "react";
 
 // Put names between <> and </> (JSX fragment tags). But set empty name values as "". (<></> is not falsy, it's a JSX constructor object)
 
-export const branch_FR = [
+export const branchEN = [
   {
     branchName: "Specific vaccine hesitancies",
     branchNameShort: "Specific vaccine hesitancies",

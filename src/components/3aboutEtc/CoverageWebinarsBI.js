@@ -1,12 +1,11 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
 import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 import coverage from "../../content/featuredOnContent";
 
-const CoverageWebinars_BI = ({ className }) => {
+const CoverageWebinarsBI = ({ className }) => {
   const { queryData, lang, log2 } = useMyContext();
 
   const webinarShots = queryData.current.webinarShots.edges;
@@ -76,7 +75,7 @@ const CoverageWebinars_BI = ({ className }) => {
   );
 };
 
-export default CoverageWebinars_BI;
+export default CoverageWebinarsBI;
 
 // const WatchOnYoutubePopup = (props) => {
 //   const { text } = props;

@@ -5,7 +5,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { useMyContext } from "../../context/Context";
 import coverage from "../../content/featuredOnContent";
 
-const CoverageGridList_BI = ({ type, className }) => {
+const CoverageGridListBI = ({ type, className }) => {
   const { lang } = useMyContext();
   const imgParams = { quality: 90, layout: "constrained" };
 
@@ -60,4 +60,4 @@ const CoverageGridList_BI = ({ type, className }) => {
   );
 };
 
-export default CoverageGridList_BI;
+export default CoverageGridListBI;

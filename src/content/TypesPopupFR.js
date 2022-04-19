@@ -1,6 +1,6 @@
 import React from "react";
 
-const TypesPopup_FR = props => {
+const TypesPopupFR = props => {
   const { sizeAndPosnClass } = props;
 
   return (
@@ -23,4 +23,4 @@ const TypesPopup_FR = props => {
   );
 };
 
-export default TypesPopup_FR;
+export default TypesPopupFR;

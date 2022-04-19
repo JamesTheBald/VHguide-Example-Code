@@ -44,15 +44,15 @@ const HesTypesDropDown = props => {
   return (
     // Title & chevron on navbar
     <div
-      className={`w-full sm:w-auto pt-0.5 pb-2 sm:py-0  hoverRevealTrigger group relative  flex flex-col items-start  z-30
-               ${!selected && "sm:border-l sm:border-r border-opacity-0 hover:border-opacity-100  border-gray-light"}
+      className={`w-full fsm:w-auto pt-0.5 pb-2 fsm:py-0  hoverRevealTrigger group relative  flex flex-col items-start  z-30
+               ${!selected && "fsm:border-l fsm:border-r border-opacity-0 hover:border-opacity-100  border-gray-light"}
               ${selected && winWidth < 720 && "pb-1 subMenuYBorders bgSelec"}`}
       style={{ top: 1 }}
     >
       {/* Hesitancy Types navbar/dropdown main entry */}
-      <NavItem classNom="pl-7 pt-3  sm:px-0 sm:py-0" selecOnHover={true} destn={"/explore"}>
+      <NavItem classNom="pl-7 pt-3  fsm:px-0 fsm:py-0" selecOnHover={true} destn={"/explore"}>
         <button className="flex flex-row  w-full" onClick={event => onClickExplore(event)}>
-          <div className="sm:pl-0.5 sm:pb-0.5 pr-0.5">Hesitancy Types</div>
+          <div className="fsm:pl-0.5 fsm:pb-0.5 pr-0.5">Hesitancy Types</div>
           <div className={`chevPosn ${showHesDropDown ? "hidden" : "group-hover:hidden"}`}>
             <BiChevronRight size={24} />
           </div>
@@ -63,7 +63,7 @@ const HesTypesDropDown = props => {
       </NavItem>
 
       {/* Dropdown (sub-)menu for Hesitancy Types on NARROW screens */}
-      <div className="sm:hidden  w-80">
+      <div className="fsm:hidden  w-80">
         <div className={`${showHesDropDown ? "flex" : "hidden group-hover:flex"} mx-5 pl-5  flex-col`}>
           <HesTypeLink className="border-b" branchNum={0} />
           <HesTypeLink className="border-b" branchNum={1} />
@@ -73,7 +73,7 @@ const HesTypesDropDown = props => {
       </div>
 
       {/* Dropdown (sub-)menu for Hesitancy Types on WIDER screens */}
-      <div className={`hidden sm:inline  w-full  ${selected ? "z-40" : "z-10"}`}>
+      <div className={`hidden fsm:inline  w-full  ${selected ? "z-40" : "z-10"}`}>
         <div
           name="Panel to cover navbar border"
           className={`hiddenTillHover absolute flex justify-center items-start z-30

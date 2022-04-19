@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import TypesPopup_EN from "./TypesPopup_EN";
+import TypesPopupEN from "./TypesPopupEN";
 import { useMyContext } from "../context/Context";
 
-const AboutHowUse_EN = props => {
+const AboutHowUseEN = props => {
   const { textColumnsStyle } = props;
   const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
 
@@ -21,7 +21,7 @@ const AboutHowUse_EN = props => {
         </div>
         <div className="pb-3 relative">
           <span>The Guide is built around examples of typical presentations of vaccine hesitancy. These </span>
-          <TypesPopup_EN sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" />
+          <TypesPopupEN sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" />
           <span> of vaccine hesitancy can be browsed through an interactive </span>
           <Link
             to="/explore"
@@ -57,4 +57,4 @@ const AboutHowUse_EN = props => {
   );
 };
 
-export default AboutHowUse_EN;
+export default AboutHowUseEN;

@@ -8,6 +8,7 @@ import isNavItemSelected from "../../functions/isNavItemSelected";
 import HesTypesDropDown from "./HesTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";
 import NavItem from "./NavItem.js";
+import LanguageSwitcher from "./LanguageSwitcher.js";
 
 const NavBarItemsAndDropDowns = props => {
   const { onClickGo, setShowDropDown } = props;
@@ -41,23 +42,24 @@ const NavBarItemsAndDropDowns = props => {
     w >= 1024 && typeof window !== "undefined" && window.location.pathname === "/explore" ? true : false;
   log2 && console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
 
-  const mainLinkClass = "sm:mr-3  w-full sm:w-auto";
+  const mainLinkClass = "fsm:mr-3  w-full fsm:w-auto";
   const subMenuLinkClass = "pt-2.5 pb-2  border-gray-light  text-14 tracking-0.4 cursor-pointer";
+  const stackedSpacing = "pl-7 pt-3 pb-2 my-2 fsm:pl-0 fsm:py-0";
 
   return (
     <>
       <button
         className={`${mainLinkClass}
-                  ${isNavItemSelected("/", locn) && w < 720 ? "subMenuYBorders bgSelec" : ""}`}
+                  ${isNavItemSelected("/", locn) && w < 800 ? "subMenuYBorders bgSelec" : ""}`}
         onClick={event => onClickGo(event, "/")}
       >
-        <NavItem classNom="pl-7 pt-2 pb-2 sm:pl-0 sm:py-0" destn="/">
+        <NavItem classNom={`${stackedSpacing}`} destn="/">
           <StaticImage
             src="../../assets/navbar/homeIcon.svg"
             alt="Home icon"
             style={{ width: 23 }}
             loading="eager"
-            className="relative sm:-top-0.5"
+            className="relative fsm:-top-0.5"
           />
         </NavItem>
       </button>
@@ -66,10 +68,10 @@ const NavBarItemsAndDropDowns = props => {
         <HesTypesDropDown subMenuLinkClass={subMenuLinkClass} onClickToBranch={onClickToBranch} onClickGo={onClickGo} />
       </div>
 
-      <button className={`${mainLinkClass} sm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
+      <button className={`${mainLinkClass} fsm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
         <NavItem
-          classNom={`pl-7 pt-3 pb-2 sm:pl-0 sm:py-0  ${
-            w < 720 && isNavItemSelected("/details/overview", locn) && w < 720 && "subMenuYBorders bgSelec"
+          classNom={`${stackedSpacing}  ${
+            w < 800 && isNavItemSelected("/details/overview", locn) && w < 800 && "subMenuYBorders bgSelec"
           }`}
           destn="/details/overview"
         >
@@ -79,8 +81,8 @@ const NavBarItemsAndDropDowns = props => {
 
       <button className={mainLinkClass} onClick={event => onClickGo(event, "/pearls")}>
         <NavItem
-          classNom={`pl-7 pt-3 pb-2 sm:pl-0 sm:py-0  ${
-            w < 720 && isNavItemSelected("/pearls", locn) && w < 720 && "subMenuYBorders bgSelec"
+          classNom={`${stackedSpacing}  ${
+            w < 800 && isNavItemSelected("/pearls", locn) && w < 800 && "subMenuYBorders bgSelec"
           }`}
           destn="/pearls"
         >
@@ -90,6 +92,10 @@ const NavBarItemsAndDropDowns = props => {
 
       <div className={mainLinkClass}>
         <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} />
+      </div>
+
+      <div className={`${stackedSpacing} pt-4`}>
+        <LanguageSwitcher size={ w < 800 ? "sm" : "lg" } />
       </div>
 
       {padNavBarOnExplorePage && <div className="h-4" style={{ width: 15 + "px" }} />}
