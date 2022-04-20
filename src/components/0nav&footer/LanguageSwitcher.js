@@ -14,14 +14,19 @@ const LanguageSwitcher = props => {
 
     const boxColorsClass = langSel === lang ? "text-yellow-darkish" : "text-blue-black bg-yellow-light";
 
+    const switchLang = () => {
+      setLang(langSel === "EN" ? "FR" : "EN");
+      log && console.log("LanguageSwitcher.js InnerBox() onClick lang=", lang);
+    };
+
     return (
       <div
         className={`${boxColorsClass} rounded-sm  flex justify-center items-baseline`}
         style={{ width: innerBoxWidth, height: innerBoxHeight, margin: 1 }}
-        onClick={() => {
-          setLang(langSel==="EN" ? "FR" : "EN");
-          log && console.log("LanguageSwitcher.js InnerBox() onClick lang=", lang);
-        }}
+        onClick={() => switchLang()}
+        onKeyPress={() => switchLang()}
+        tabIndex={0}
+        role="button"
       >
         <div style={{ position: "relative", top: 1 }}>{children}</div>
       </div>

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { detect } from "detect-browser";
 
 import "../../styles/splide.css";
 import landingContent from "../../content/landingContent";
 import Home1TopPanel from "./Home1TopPanel";
 import { useMyContext } from "../../context/Context";
+
 
 const Home1TopCarousel = () => {
   const { winWidth, log, log2 } = useMyContext();
@@ -14,9 +16,14 @@ const Home1TopCarousel = () => {
   const [showFullIntro, setShowFullIntro] = useState(false);
   const panelHtClass = `${showFullIntro ? "h-195" : "h-180"} mxs:h-220 sm:h-240 md:h-260 lg:h-210 xl:h-220`;
 
+  const browser = detect(); // from https://www.npmjs.com/package/detect-browser
+  log2 && console.log("Home1TopCarousel.js browser object=", browser);
+
   let isMobile = false;
   if (typeof window !== `undefined`) isMobile = window.matchMedia("only screen and (max-width: 1024px)").matches;
   // See Dekin88's answer on https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device
+
+  const slideSpeed = browser.name === "safari" ? 300 : isMobile ? 600 : 1200;
 
   return (
     <>
@@ -28,8 +35,8 @@ const Home1TopCarousel = () => {
           options={{
             type: "slide",
             gap: 40,
-            speed: isMobile ? 600 : 1200, // slide-across time in ms
-            waitForTransition: false, // default=true
+            speed: slideSpeed, // slide-across time in ms
+            waitForTransition: true, // default=true
             autoplay: true, // default=true
             interval: 15000,
             rewind: true, // default=false
@@ -37,7 +44,8 @@ const Home1TopCarousel = () => {
             pauseOnHover: false,
             pauseOnFocus: false,
             drag: true, // default=true
-            lazyLoad: false, // default = false
+            lazyLoad: 'nearby', // default = false
+            preloadPages: 1,
             arrows: false, // default=true
           }}
         >

@@ -94,7 +94,7 @@ const NavBarItemsAndDropDowns = props => {
         <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} />
       </div>
 
-      <div className={`${stackedSpacing} pt-4`}>
+      <div className={`${stackedSpacing} pt-4 fsm:mx-3`}>
         <LanguageSwitcher size={ w < 800 ? "sm" : "lg" } />
       </div>
 
