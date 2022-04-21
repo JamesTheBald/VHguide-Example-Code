@@ -78,6 +78,7 @@ const MyProvider = ({ children }) => {
     setFixedBackdrop: setFixedBackdrop,
     setLocn: setLocn,
     setLang: setLang,
+    setBranch: setBranch,
     setNoneSelected: setNoneSelected,
     setFullStoryID: setFullStoryID,
     queryData: queryData,

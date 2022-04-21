@@ -1,21 +1,26 @@
 import React from "react";
 
 import { useMyContext } from "../../context/Context";
+import { branchFR } from "../../content/branchFR";
+import { branchEN } from "../../content/branchEN";
 
 const LanguageSwitcher = props => {
-  const { className, size } = props; // size="sm" or "lg"
-  const { lang, setLang, log } = useMyContext();
+  const { className } = props;
+  const { winWidth, lang, setLang, setBranch, log } = useMyContext();
 
-  const innerBoxWidth = size === "sm" ? 19 : 23;
-  const innerBoxHeight = size === "sm" ? 18 : 22;
+  const widthLg = 800;  // This should match the fsm: ("fairly small") breakpoint width in tailwind.config.js
+  const innerBoxWidth = winWidth < widthLg ? 19 : 23;
+  const innerBoxHeight = winWidth < widthLg ? 18 : 22;
 
   const InnerBox = props => {
     const { children, langSel } = props;
 
-    const boxColorsClass = langSel === lang ? "text-yellow-darkish" : "text-blue-black bg-yellow-light";
+    const boxColorsClass = langSel === lang ? "text-blue-black bg-yellow-light" : "text-yellow-darkish";
 
-    const switchLang = () => {
-      setLang(langSel === "EN" ? "FR" : "EN");
+    const selectLang = () => {
+      setLang(langSel);
+      setBranch(langSel === "EN" ? branchEN : branchFR);
+
       log && console.log("LanguageSwitcher.js InnerBox() onClick lang=", lang);
     };
 
@@ -23,8 +28,8 @@ const LanguageSwitcher = props => {
       <div
         className={`${boxColorsClass} rounded-sm  flex justify-center items-baseline`}
         style={{ width: innerBoxWidth, height: innerBoxHeight, margin: 1 }}
-        onClick={() => switchLang()}
-        onKeyPress={() => switchLang()}
+        onClick={() => selectLang()}
+        onKeyPress={() => selectLang()}
         tabIndex={0}
         role="button"
       >
@@ -35,15 +40,15 @@ const LanguageSwitcher = props => {
 
   return (
     <div
-      className={`border border-yellow-darkish  flex justify-center items-center ${className}`}
-      style={{ borderRadius: 4, padding: size === "sm" ? 1 : 2 }}
+      className={`border border-yellow-darkish flex justify-center items-center ${className}`}
+      style={
+        winWidth < widthLg
+          ? { borderRadius: 4, padding: 1, fontSize: 0.875 + "rem" }
+          : { borderRadius: 4, padding: 2, fontSize: 1 + "rem" }
+      }
     >
-      <InnerBox size={size} langSel="EN">
-        En
-      </InnerBox>
-      <InnerBox size={size} langSel="FR">
-        Fr
-      </InnerBox>
+      <InnerBox langSel="EN">En</InnerBox>
+      <InnerBox langSel="FR">Fr</InnerBox>
     </div>
   );
 };

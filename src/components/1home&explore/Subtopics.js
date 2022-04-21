@@ -1,13 +1,13 @@
 import React from "react";
 import { navigate } from "gatsby";
-import NewBanner from "../../assets/homeAndExplore/svgBanners/OrangeNewBannerforExploreTree.svg";
+// import NewBanner from "../../assets/homeAndExplore/svgBanners/OrangeNewBannerforExploreTree.svg";
 // Note: the above .svg filename cannot contain spaces, as it is used as a React component name, internally
 
 import { useMyContext } from "../../context/Context";
 
 const Subtopics = props => {
   const { branchNum, topicNum, subtopics, innerMarginLeft, innerMarginRight } = props;
-  const { locn, winWidth, setLocn, log, log2 } = useMyContext();
+  const { winWidth, setLocn, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   log2 && console.log("Subtopics.js runs. subtopics =", subtopics);
@@ -50,14 +50,13 @@ const Subtopics = props => {
                 >
                   {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
                 </button>
-
-                {locn.branch === 0 && subtopicNum === 3 && (
-
+                {/* {locn.branch === 0 && subtopicNum === 3 && (
+                  // Banner for New subtopics. Need to set branch number and subtopic number, as per branch.js
                   <NewBanner
                     className="ml-1.5 mr-2.5 mxs:ml-3  mt-1 w-14 mxs:w-18"
                     alt="'New' banner"
                   />
-                )}
+                )} */}
               </div>
 
               <div

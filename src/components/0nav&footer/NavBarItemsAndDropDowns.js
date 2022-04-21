@@ -95,7 +95,7 @@ const NavBarItemsAndDropDowns = props => {
       </div>
 
       <div className={`${stackedSpacing} pt-4 fsm:mx-3`}>
-        <LanguageSwitcher size={ w < 800 ? "sm" : "lg" } />
+        <LanguageSwitcher />
       </div>
 
       {padNavBarOnExplorePage && <div className="h-4" style={{ width: 15 + "px" }} />}

@@ -4,56 +4,57 @@ import React from "react";
 
 export const branchFR = [
   {
-    branchName: "Specific vaccine hesitancies",
-    branchNameShort: "Specific vaccine hesitancies",
+    branchName: "Hésitations vaccinales particulières",
+    branchNameShort: "Hésitations particulières",
     // branchNameShort is for narrower screens (<510px in width)
-    branchNameShortest: "Specific vaccine hesitancies",
+    branchNameShortest: "Hésitations particulières",
     // branchNameShortest is for the navbar pull-down menus
     linkToDetails: false,
+
     topic: [
       {
         topicName: (
           <>
-            <strong>Safety and science</strong> concerns
+            Inquiétudes liées <strong>à la sécurité et à la science</strong>
           </>
         ),
         topicNameShort: (
           <>
-            <strong>Safety &amp; science</strong> concerns
+            Inquiétudes liées <strong>à la sécurité et à la science</strong>
           </>
         ),
-        topicNameAsTitle: "Safety and Science Concerns",
+        topicNameAsTitle: "Inquiétudes liées à la sécurité et à la science",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Concerns about the science",
-            subtopicNameShort: "Concerns about the science",
-            subtopicNameAsTitle: "Concerns About the Science",
+            subtopicName: "Inquiétudes liées à la science",
+            subtopicNameShort: "Inquiétudes liées à la science",
+            subtopicNameAsTitle: "Inquiétudes liées à la science",
             contentID: "ScienceConcerns",
           },
           {
-            subtopicName: "Worried that mRNA vaccines could alter their DNA",
-            subtopicNameShort: "Worried about DNA/mRNA",
-            subtopicNameAsTitle: "Worried That mRNA Vaccines Could Alter Their DNA",
+            subtopicName: "Inquiétudes au sujet de l’altération de l’ADN par les vaccins à base d’ARNm",
+            subtopicNameShort: "Inquiétudes au sujet de l’ADN et de l’ARNm",
+            subtopicNameAsTitle: "Inquiétudes au sujet de l’altération de l’ADN par les vaccins à base d’ARNm",
             contentID: "mRNAConcerns",
           },
 
           {
-            subtopicName: "Medically complex",
-            subtopicNameShort: "Medically complex",
-            subtopicNameAsTitle: "Medically Complex",
+            subtopicName: "Complexité médicale",
+            subtopicNameShort: "Complexité médicale",
+            subtopicNameAsTitle: "Complexité médicale",
             contentID: "MedicallyComplex",
           },
           {
-            subtopicName: "Pregnancy, fertility, or reproductive concerns",
-            subtopicNameShort: "Pregnancy / reproductive concerns",
-            subtopicNameAsTitle: "Pregnancy, Fertility, or Reproductive Concerns",
+            subtopicName: "Effets des vaccins sur la reproduction ou la forme physique",
+            subtopicNameShort: "Effets sur la reproduction ou la forme physique", // Should this have the "forme physique" part?
+            subtopicNameAsTitle: "Effets des vaccins sur la reproduction ou la forme physique",
             contentID: "ReproductiveEffects",
           },
           {
-            subtopicName: "Side effects of the vaccines",
-            subtopicNameShort: "Side effects",
-            subtopicNameAsTitle: "Side Effects of the Vaccines",
+            subtopicName: "Effets secondaires des vaccins",
+            subtopicNameShort: "Effets secondaires",
+            subtopicNameAsTitle: "Effets secondaires des vaccins",
             contentID: "SideEffects",
           },
         ],
@@ -62,21 +63,21 @@ export const branchFR = [
       {
         topicName: (
           <>
-            Influenced by <strong>rumours, conspiracies, or misinformation</strong>
+            Sous l’influence <strong>de rumeurs, de complots ou de mésinformation</strong>
           </>
         ),
         topicNameShort: (
           <>
-            Influenced by <strong>conspiracies</strong>
+            Sous l’influence <strong>de complots</strong>
           </>
         ),
-        topicNameAsTitle: "Influenced by Rumours, Conspiracies, or Misinformation",
+        topicNameAsTitle: "Sous l’influence de rumeurs, de complots ou de mésinformation",
         linkToDetails: true,
         subtopic: [
           {
-            subtopicName: "Influenced by conspiracies",
-            subtopicNameShort: "Influenced by conspiracies",
-            subtopicNameAsTitle: "Influenced by Rumours, Conspiracies, or Misinformation",
+            subtopicName: "Sous l’influence de complots",
+            subtopicNameShort: "Sous l’influence de complots",
+            subtopicNameAsTitle: "Sous l’influence de complots",
             contentID: "Conspiracies",
           },
         ],
@@ -85,27 +86,27 @@ export const branchFR = [
       {
         topicName: (
           <>
-            Conflict with <strong>personal or political values</strong>
+            Conflit avec <strong>les valeurs personnelles ou politiques</strong>
           </>
         ),
         topicNameShort: (
           <>
-            Conflicting <strong>values or politics</strong>
+            Conflit avec <strong>les valeurs ou la politique</strong>
           </>
         ),
-        topicNameAsTitle: "Conflict with Personal or Political Values",
+        topicNameAsTitle: "Conflit avec les valeurs personnelles ou politiques",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Vaccines go against natural lifestyle or alternative medicine",
-            subtopicNameShort: "Naturalist/alternative medicine",
-            subtopicNameAsTitle: "Vaccines Go Against Natural Lifestyle or Alternative Medicine",
+            subtopicName: "Vaccins à l’encontre du mode de vie naturel ou de la médecine douce",
+            subtopicNameShort: "Naturaliste, médecine douce",
+            subtopicNameAsTitle: "Vaccins à l’encontre du mode de vie naturel ou de la médecine douce",
             contentID: "Naturalist",
           },
           {
-            subtopicName: "Politics and government involvement with vaccines",
-            subtopicNameShort: "Politics and govt involvement",
-            subtopicNameAsTitle: "Politics and Government Involvement with Vaccines",
+            subtopicName: "Rôle de la politique et du gouvernement dans les vaccins",
+            subtopicNameShort: "Rôle de la politique et du gouvernement",
+            subtopicNameAsTitle: "Rôle de la politique et du gouvernement dans les vaccins",
             contentID: "PoliticalSkeptic",
           },
         ],
@@ -114,15 +115,15 @@ export const branchFR = [
       {
         topicName: (
           <>
-            <strong>Religious or moral</strong> objections to the vaccines
+            Objections <b>religieuses ou morales</b> aux vaccins
           </>
         ),
         topicNameShort: (
           <>
-            <strong>Religious or moral</strong> objections
+            Objections <b>religieuses ou morales</b>
           </>
         ),
-        topicNameAsTitle: "Religious or Moral Objections to the Vaccines",
+        topicNameAsTitle: "Objections religieuses ou morales aux vaccins",
         linkToDetails: true,
         subtopic: [{ subtopicName: "", subtopicNameShort: "", contentID: "Religious" }],
       },
@@ -130,27 +131,27 @@ export const branchFR = [
       {
         topicName: (
           <>
-            <strong>Traumatized</strong> by previous healthcare experiences
+            <b>Traumatisme</b> découlant d’anciennes expériences en soins de santé
           </>
         ),
         topicNameShort: (
           <>
-            <strong>Traumatized</strong> by health system
+            <b>Traumatisme</b> découlant du système de santé
           </>
         ),
-        topicNameAsTitle: "Traumatized by Previous Healthcare Experiences",
+        topicNameAsTitle: "Traumatisme découlant d’anciennes expériences en soins de santé",
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Individual or personal negative experience",
-            subtopicNameShort: "Personal trauma",
-            subtopicNameAsTitle: "Individual or Personal Negative Experience",
+            subtopicName: "Expérience individuelle ou personnelle négative",
+            subtopicNameShort: "Traumatisme personnel",
+            subtopicNameAsTitle: "Expérience individuelle ou personnelle négative",
             contentID: "PersonalTrauma",
           },
           {
-            subtopicName: "Community, group, or historical trauma",
-            subtopicNameShort: "Group historical trauma",
-            subtopicNameAsTitle: "Community, Group, or Historical Trauma",
+            subtopicName: "Traumatisme communautaire, collectif ou historique",
+            subtopicNameShort: "Traumatisme collectif historique",
+            subtopicNameAsTitle: "Traumatisme communautaire, collectif ou historique",
             contentID: "GroupTrauma",
           },
         ],
@@ -159,15 +160,15 @@ export const branchFR = [
       {
         topicName: (
           <>
-            Afraid of <strong>needles</strong>
+            Peur des <b>aiguilles</b>
           </>
         ),
         topicNameShort: (
           <>
-            Afraid of <strong>needles</strong>
+            Peur des <b>aiguilles</b>
           </>
         ),
-      topicNameAsTitle:   "Afraid of Needles",
+        topicNameAsTitle: "Peur des aiguilles",
         linkToDetails: true,
         subtopic: [{ subtopicName: "", subtopicNameShort: "", contentID: "NeedlePhobia" }],
       },
@@ -175,9 +176,9 @@ export const branchFR = [
   },
 
   {
-    branchName: "Undifferentiated vaccine hesitancies",
-    branchNameShort: "Undifferentiated hesitancies",
-    branchNameShortest: "Undifferentiated hesitancies",
+    branchName: "Hésitations vaccinales indifférenciées",
+    branchNameShort: "Hésitations indifférenciées",
+    branchNameShortest: "Hésitations indifférenciées",
     linkToDetails: true,
     topic: [
       {
@@ -188,8 +189,8 @@ export const branchFR = [
         subtopic: [
           {
             subtopicName: "",
-            subtopicNameShort: "Undifferentiated Hesitancies",
-            subtopicNameAsTitle: "Undifferentiated Vaccine Hesitancies",
+            subtopicNameShort: "Hésitations indifférenciées",
+            subtopicNameAsTitle: "Hésitations vaccinales indifférenciées",
             contentID: "Undifferentiated",
           },
         ],
@@ -198,9 +199,9 @@ export const branchFR = [
   },
 
   {
-    branchName: "No concerns about the pandemic",
-    branchNameShort: "No concerns about the pandemic",
-    branchNameShortest: "No concerns about the pandemic",
+    branchName: "Aucune inquiétude au sujet de la pandémie",
+    branchNameShort: "Aucune inquiétude au sujet de la pandémie",
+    branchNameShortest: "Aucune inquiétude au sujet de la pandémie",
     linkToDetails: true,
     topic: [
       {
@@ -210,9 +211,9 @@ export const branchFR = [
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "No concerns about the pandemic",
-            subtopicNameShort: "No concerns about COVID",
-            subtopicNameAsTitle: "No Concerns About the Pandemic",
+            subtopicName: "Aucune inquiétude au sujet de la pandémie",
+            subtopicNameShort: "Aucune inquiétude au sujet de la pandémie",
+            subtopicNameAsTitle: "Aucune inquiétude au sujet de la pandémie",
             contentID: "Unconcerned",
           },
         ],
@@ -221,9 +222,9 @@ export const branchFR = [
   },
 
   {
-    branchName: "Pediatric vaccine hesitancies",
-    branchNameShort: "Pediatric vaccine hesitancies",
-    branchNameShortest: "Pediatric hesitancies",
+    branchName: "Hésitations vaccinales pédiatrique",
+    branchNameShort: "Hésitations vaccinales pédiatrique",
+    branchNameShortest: "Hésitations vaccinales pédiatrique",
     linkToDetails: true,
     topic: [
       {
@@ -233,9 +234,9 @@ export const branchFR = [
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Pediatric Vaccine Hesitancies",
-            subtopicNameShort: "Pediatric Hesitancies",
-            subtopicNameAsTitle: "Pediatric Vaccine Hesitancies",
+            subtopicName: "Hésitations vaccinales pédiatrique",
+            subtopicNameShort: "Hésitations vaccinales pédiatrique",
+            subtopicNameAsTitle: "Hésitations vaccinales pédiatrique",
             contentID: "Pediatrics",
           },
         ],
@@ -244,9 +245,9 @@ export const branchFR = [
   },
 
   {
-    branchName: "Medical Exemptions",
-    branchNameShort: "Medical Exemptions",
-    branchNameShortest: "Medical Exemptions",
+    branchName: "Exemptions médicales",
+    branchNameShort: "Exemptions médicales",
+    branchNameShortest: "Exemptions médicales",
     linkToDetails: false,
     topic: [
       {
@@ -256,14 +257,13 @@ export const branchFR = [
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Medical Exemptions",
-            subtopicNameShort: "Medical Exemptions",
-            subtopicNameAsTitle: "Medical Exemptions",
+            subtopicName: "Exemptions médicales",
+            subtopicNameShort: "Exemptions médicales",
+            subtopicNameAsTitle: "Exemptions médicales",
             contentID: "MedicalExemptions",
           },
         ],
       },
     ],
   },
-
 ];

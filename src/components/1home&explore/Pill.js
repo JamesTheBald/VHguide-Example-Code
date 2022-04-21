@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -48,7 +48,8 @@ const Pill = props => {
           )}
         </div>
       </button>
-      {branchNum === 3 && (
+      {/* {branchNum === 3 && (
+        // Banner for New Topics. Need to set branch number per branch.js
         <>
           <StaticImage
             className={`absolute ${noneSelected && "hidden"} w-20 mxs:w-25 sm:w-28`}
@@ -63,7 +64,7 @@ const Pill = props => {
             alt="'New' banner"
           />
         </>
-      )}
+      )} */}
     </div>
   );
 };
