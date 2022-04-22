@@ -9,7 +9,7 @@ import NavBarItemsAndDropDowns from "./NavBarItemsAndDropDowns";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { winWidth, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } = useMyContext();
+  const { winWidth, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
   const dropDownRef = useRef();
@@ -81,7 +81,14 @@ const NavBar = () => {
           style={{ height: navBarHeight }}
           onClick={evnt => onClickGo(evnt, "/")}
         >
-          <StaticImage src="../../assets/homeAndExplore/Logo for Website.svg" alt="VH Guide logo" />
+          {lang === "EN" ? (
+            <StaticImage src="../../assets/navbar/Logo for Website EN.svg" alt="VH Guide logo" />
+          ) : (
+            <StaticImage
+              src="../../assets/navbar/Logo for Website FR.svg"
+              alt="logo du guide sur l'hésitation vaccinale"
+            />
+          )}
         </button>
 
         {/* WIDE screens => normal navbar, either on 1 line or split into 2 (stacked) */}

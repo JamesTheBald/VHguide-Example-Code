@@ -5,10 +5,11 @@ import { BiChevronRight } from "react-icons/bi";
 import NavItem from "./NavItem.js";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import { useMyContext } from "../../context/Context";
+import { navbarLabels } from "../../content/navbarLabels";
 
 const HesTypesDropDown = props => {
   const { subMenuLinkClass, onClickGo, onClickToBranch } = props;
-  const { locn, winWidth, branch, log } = useMyContext();
+  const { locn, winWidth, branch, lang, log } = useMyContext();
 
   const [showHesDropDown, setShowHesDropDown] = useState(false);
 
@@ -21,7 +22,7 @@ const HesTypesDropDown = props => {
         log && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
         return newShowDropDown;
       });
-      } else {
+    } else {
       onClickGo(event, "/explore");
     }
   };
@@ -40,6 +41,7 @@ const HesTypesDropDown = props => {
 
   const selected = isNavItemSelected("/explore", locn);
   log && console.log("HesTypesDropDown.js selected=", selected);
+  log && console.log("HesTypesDropDown.js navbarLabels.hesType[lang]=", navbarLabels.hesType[lang]);
 
   return (
     // Title & chevron on navbar
@@ -52,7 +54,7 @@ const HesTypesDropDown = props => {
       {/* Hesitancy Types navbar/dropdown main entry */}
       <NavItem classNom="pl-7 pt-3  fsm:px-0 fsm:py-0" selecOnHover={true} destn={"/explore"}>
         <button className="flex flex-row  w-full" onClick={event => onClickExplore(event)}>
-          <div className="fsm:pl-0.5 fsm:pb-0.5 pr-0.5">Hesitancy Types</div>
+          <div className="fsm:pl-0.5 fsm:pb-0.5 pr-0.5">{navbarLabels.hesType[lang]}</div>
           <div className={`chevPosn ${showHesDropDown ? "hidden" : "group-hover:hidden"}`}>
             <BiChevronRight size={24} />
           </div>

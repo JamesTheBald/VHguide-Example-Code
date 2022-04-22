@@ -5,10 +5,11 @@ import { BiChevronRight } from "react-icons/bi";
 import NavItem from "./NavItem.js";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import { useMyContext } from "../../context/Context";
+import { navbarLabels } from "../../content/navbarLabels";
 
 const AboutDropDown = props => {
   const { subMenuLinkClass, onClickGo } = props;
-  const { locn, winWidth, log } = useMyContext();
+  const { locn, winWidth, lang, log } = useMyContext();
 
   const [showAboutDropDown, setShowAboutDropDown] = useState(false);
 
@@ -44,7 +45,7 @@ const AboutDropDown = props => {
     >
       <NavItem classNom={`pl-7 pt-2 fsm:px-0 fsm:py-0`} selecOnHover={true} destn="/about">
         <button className="flex flex-row  w-full fsm:relative fsm:left-1" onClick={event => onClickAbout(event)}>
-          <div className="fsm:pl-1 pr-0.5  fsm:pb-0.5">About</div>
+          <div className="fsm:pl-1 pr-0.5  fsm:pb-0.5">{navbarLabels.about.title[lang]}</div>
           <div className={`chevPosn ${showAboutDropDown ? "hidden" : "group-hover:hidden"}`}>
             <BiChevronRight size={24} />
           </div>
@@ -57,9 +58,9 @@ const AboutDropDown = props => {
       {/* Dropdown menu for About pages on NARROW screens */}
       <div className="fsm:hidden w-80">
         <div className={`${showAboutDropDown ? "flex" : "hidden group-hover:flex"} mx-5 pl-5  flex-col`}>
-          <AboutLink className="text-left  border-b" label="About the Guide" destn="/about" />
-          <AboutLink className="text-left  border-b" label="Media Coverage" destn="/about/media" />
-          <AboutLink className="text-left" label="Credits and Collaborators" destn="/about/credits" />
+          <AboutLink className="text-left  border-b" label={navbarLabels.about.about[lang]} destn="/about" />
+          <AboutLink className="text-left  border-b" label={navbarLabels.about.media[lang]} destn="/about/media" />
+          <AboutLink className="text-left" label={navbarLabels.about.credits[lang]} destn="/about/credits" />
         </div>
       </div>
 
@@ -82,9 +83,13 @@ const AboutDropDown = props => {
           style={selected ? { right: 1, top: 81 } : { right: -1, top: 81 }}
           // style={selected ? { right: 1, top: 81, width: 200 } : { right: -1, top: 81, width: 200 }}
         >
-          <AboutLink className="px-5 text-right  border-b" label="About the Guide" destn="/about" />
-          <AboutLink className="px-5 text-right  border-b" label="Media Coverage" destn="/about/media" />
-          <AboutLink className="px-5 text-right" label="Credits and Collaborators" destn="/about/credits" />
+          <AboutLink className="px-5 text-right  border-b" label={navbarLabels.about.about[lang]} destn="/about" />
+          <AboutLink
+            className="px-5 text-right  border-b"
+            label={navbarLabels.about.media[lang]}
+            destn="/about/media"
+          />
+          <AboutLink className="px-5 text-right" label={navbarLabels.about.credits[lang]} destn="/about/credits" />
         </div>
       </div>
     </div>

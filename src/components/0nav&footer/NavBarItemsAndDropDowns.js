@@ -7,12 +7,13 @@ import { useMyContext } from "../../context/Context";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import HesTypesDropDown from "./HesTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";
+import { navbarLabels } from "../../content/navbarLabels";
 import NavItem from "./NavItem.js";
 import LanguageSwitcher from "./LanguageSwitcher.js";
 
 const NavBarItemsAndDropDowns = props => {
   const { onClickGo, setShowDropDown } = props;
-  const { locn, winWidth, branch, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } =
+  const { locn, winWidth, branch, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } =
     useMyContext();
 
   const w = winWidth;
@@ -75,7 +76,7 @@ const NavBarItemsAndDropDowns = props => {
           }`}
           destn="/details/overview"
         >
-          Medical Exemptions
+          {navbarLabels.medExempt[lang]}
         </NavItem>
       </button>
 
@@ -86,7 +87,7 @@ const NavBarItemsAndDropDowns = props => {
           }`}
           destn="/pearls"
         >
-          Clinical Pearls
+          {navbarLabels.pearls[lang]}
         </NavItem>
       </button>
 
