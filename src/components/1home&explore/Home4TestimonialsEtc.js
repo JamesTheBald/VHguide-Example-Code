@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import CarouselTestimonials from "./CarouselTestimonials";
 import CarouselCollaborators from "./CarouselCollaborators";
 import { useMyContext } from "../../context/Context";
+import landingTextOtherBI from "../../content/landingTextOtherBI";
 
 // {/* {{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }} */}
 // sm:ml-auto  xl:ml-0 xl:my-auto xl:order-2
@@ -17,7 +18,7 @@ const Home4TestimonialsEtc = () => {
     layout: "constrained",
     quality: 90,
   };
-  const { winWidth } = useMyContext();
+  const { lang } = useMyContext();
 
   return (
     <>
@@ -31,16 +32,13 @@ const Home4TestimonialsEtc = () => {
              rounded-2xl mxs:rounded-3xl sm:rounded-4xl  smThenBaseFont"
           >
             <div className="lg:mr-12 w-full lg:w-100 mxl:w-110 xl:w-120 flex-shrink-0">
-              <h2 className="titleFont titleBig">Media Coverage</h2>
-              <div className="pt-3">
-                The Guide has been featured in a number of publications including Global News Edmonton, CBC News
-                Calgary, the Calgary Herald, The Globe and Mail, among others.
-              </div>
+              <h2 className="titleFont titleBig">{landingTextOtherBI.mediaCoverage.title[lang]}</h2>
+              <div className="pt-3">{landingTextOtherBI.mediaCoverage.caption[lang]}</div>
               <br />
               <AnchorLink
                 to="/about/media"
                 // title="Take a Look at Our Media Coverage"
-                title={winWidth < 510 ? "Look at Our Media Coverage" : "Take a Look at Our Media Coverage"}
+                title={landingTextOtherBI.mediaCoverage.button[lang]}
                 className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light
                     rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
                     border-2 border-solid bg-gray-light hover:bg-opacity-0"
@@ -78,7 +76,7 @@ const Home4TestimonialsEtc = () => {
 
         <div className="w-full  stdMargins  flex flex-col items-center  bg-gray-light">
           <div className="halfSectionGapHomePage -mt-4" />
-          <h2 className="titleFont titleBig">Testimonials</h2>
+          <h2 className="titleFont titleBig">{landingTextOtherBI.testimonials.title[lang]}</h2>
           <div className="divider" />
           <CarouselTestimonials />
           <div className="halfSectionGapHomePage -mt-4" />
@@ -86,7 +84,7 @@ const Home4TestimonialsEtc = () => {
 
         <div className="w-full  stdMargins  flex flex-col items-center">
           <div className="halfSectionGapHomePage mt-2" />
-          <h2 className="titleFont titleBig">Collaborators</h2>
+          <h2 className="titleFont titleBig">{landingTextOtherBI.collaborators.title[lang]}</h2>
           <div className="divider" />
           <CarouselCollaborators size="large" />
         </div>

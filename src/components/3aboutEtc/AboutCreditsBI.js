@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 import CollabLogos from "./CollabLogos";
-import { biosContent } from "../../content/biosContent";
+import biosContentBI from "../../content/biosContentBI";
 import { useMyContext } from "../../context/Context";
 
 const AboutCreditsBI = () => {
@@ -26,15 +26,7 @@ const AboutCreditsBI = () => {
       </h2>
 
       <div className="flex flex-row flex-wrap  w-full">
-        {biosContent.map((currBioCont, indx) => {
-          
-          const currBio = {
-            ...currBioCont,
-            title: lang === "EN" || !currBioCont.title_FR ? currBioCont.title_EN : currBioCont.title_FR,
-            info: lang === "EN" || !currBioCont.info_FR ? currBioCont.info_EN : currBioCont.info_FR,
-          };
-          log2 && console.log("AboutCredits.js .map() currBio=", currBio);
-
+        {biosContentBI.map((currBio, indx) => {
           return (
             <div
               key={indx}
@@ -56,14 +48,15 @@ const AboutCreditsBI = () => {
                   <div className="ml-5 sm:ml-6 lg:ml-7  relative top-1/2 transform -translate-y-1/2">
                     <div className="flex flex-wrap  subHeadingFont">
                       <div>{currBio.name},&nbsp;</div>
-                      <div>{currBio.letters}</div>
+                      <div>{currBio.letters[lang]}</div>
                     </div>
-                    <div className="absolute top-full  panelTextClass italic">{currBio.title}</div>
+                    <div className="absolute top-full  panelTextClass italic">{currBio.title[lang]}</div>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-5 mxs:mt-6 lg:mt-7 smThenBaseFont">{currBio.info}</div>
+              <div className="mt-5 mxs:mt-6 lg:mt-7 smThenBaseFont">{currBio.info[lang]}</div>
+              {/* <div className="mt-5 mxs:mt-6 lg:mt-7 smThenBaseFont">{currBio.info[lang]}</div> */}
             </div>
           );
         })}

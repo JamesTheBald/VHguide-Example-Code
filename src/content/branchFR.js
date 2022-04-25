@@ -20,7 +20,7 @@ export const branchFR = [
         ),
         topicNameShort: (
           <>
-            Inquiétudes liées <strong>à la sécurité et à la science</strong>
+            Inquiétudes <b>de sécurité et de science</b>
           </>
         ),
         topicNameAsTitle: "Inquiétudes liées à la sécurité et à la science",
@@ -34,7 +34,8 @@ export const branchFR = [
           },
           {
             subtopicName: "Inquiétudes au sujet de l’altération de l’ADN par les vaccins à base d’ARNm",
-            subtopicNameShort: "Inquiétudes au sujet de l’ADN et de l’ARNm",
+            subtopicNameShort: "Inquiétudes liées à l’ADN et de l’ARNm",
+            // subtopicNameShort: "Inquiétudes au sujet de l’ADN et de l’ARNm",
             subtopicNameAsTitle: "Inquiétudes au sujet de l’altération de l’ADN par les vaccins à base d’ARNm",
             contentID: "mRNAConcerns",
           },
@@ -47,7 +48,7 @@ export const branchFR = [
           },
           {
             subtopicName: "Effets des vaccins sur la reproduction ou la forme physique",
-            subtopicNameShort: "Effets sur la reproduction ou la forme physique", // Should this have the "forme physique" part?
+            subtopicNameShort: "Effets sur la reproduction", // Should this have the "forme physique" part?
             subtopicNameAsTitle: "Effets des vaccins sur la reproduction ou la forme physique",
             contentID: "ReproductiveEffects",
           },
@@ -136,7 +137,8 @@ export const branchFR = [
         ),
         topicNameShort: (
           <>
-            <b>Traumatisme</b> découlant du système de santé
+            <b>Traumatisme</b> du système de santé
+            {/* <b>Traumatisme</b> découlant du système de santé */}
           </>
         ),
         topicNameAsTitle: "Traumatisme découlant d’anciennes expériences en soins de santé",
@@ -200,7 +202,7 @@ export const branchFR = [
 
   {
     branchName: "Aucune inquiétude au sujet de la pandémie",
-    branchNameShort: "Aucune inquiétude au sujet de la pandémie",
+    branchNameShort: "Aucune inquiétude re COVID",
     branchNameShortest: "Aucune inquiétude au sujet de la pandémie",
     linkToDetails: true,
     topic: [
@@ -212,7 +214,7 @@ export const branchFR = [
         subtopic: [
           {
             subtopicName: "Aucune inquiétude au sujet de la pandémie",
-            subtopicNameShort: "Aucune inquiétude au sujet de la pandémie",
+            subtopicNameShort: "Aucune inquiétude re COVID",
             subtopicNameAsTitle: "Aucune inquiétude au sujet de la pandémie",
             contentID: "Unconcerned",
           },

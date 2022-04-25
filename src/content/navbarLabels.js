@@ -12,7 +12,7 @@ export const navbarLabels = {
   },
   terms: { EN: "Terms & Notices", FR: "Modalités et avis" },
   // Thoughts and survey French text is just from google translate
-  thoughts: { EN: "Thoughts on the site?", FR: "Réflexions sur le site?" },
+  thoughts: { EN: "Thoughts on the site?", FR: "Votre avis sur le site" },
   // survey: { EN: "Take our survey!", FR: "Répondez à notre sondage!" },
 };
 

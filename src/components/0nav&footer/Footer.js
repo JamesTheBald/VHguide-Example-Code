@@ -43,7 +43,7 @@ const Footer = () => {
         ) : (
           <StaticImage src="../../assets/navbar/speechBubbleGrey.svg" alt="Speech bubble" style={{ width: 28 }} />
         )}
-        <div className="hidden qsm:block  pl-1.5 pt-1">Contact Us</div>
+        <div className="hidden qsm:block  pl-1.5 pt-1">{lang === "EN" ? "Contact Us" : "Contactez-nous"}</div>
       </button>
 
       {/* Language Switcher for narrow screens, stacked under Contact Us icon */}
@@ -61,11 +61,7 @@ const Footer = () => {
           <div className="flex justify-start">
             <div
               className="flex  gap-y-1"
-              style={
-                w < 900
-                  ? { flexDirection: "column" }
-                  : { flexDirection: "row", flexDirection: "row-reverse", alignItems: "center" }
-              }
+              style={w < 900 ? { flexDirection: "column" } : { flexDirection: "row-reverse", alignItems: "center" }}
             >
               {/* <div className="flex flex-wrap flex-row-reverse justify-end  items-center  gap-y-1.5 mxs:gap-y-1  bg-red-100"> */}
               <div className="mr-12 flex">
@@ -112,7 +108,7 @@ const Footer = () => {
           <button className="hidden qsm:flex flex-none cursor-pointer" onClick={() => toggleContactForm()}>
             <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 25 }} />
             <div className="pt-1 pl-1.5 pr-4 sm:pr-7 md:pr-10 lg:pr-12  text-14 sm:text-16 tracking-0.3">
-              Contact Us
+            {lang === "EN" ? "Contact Us" : "Contactez-nous"}
             </div>
           </button>
 

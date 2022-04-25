@@ -45,35 +45,75 @@ const comingSoonLilac = {
   backgndImageFileName: "Wavy Line - darker yet.svg",
 };
 
-const landingContent = [
+const landingSlidesContentBI = [
   {
     ...mainBlue,
-    mainTitle: "Are your patients hesitant about getting a COVID-19 vaccine?",
+    mainTitle: {
+      EN: "Are your patients hesitant about getting a COVID-19 vaccine?",
+      FR: "Vos patients hésitent à se faire vacciner contre la COVID-19?",
+    },
+
     mainImageFileName: "Panel Graphic - Landing.svg",
     exclaimText: "",
-    introPart1: (
-      <span>
-        The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
-        types of vaccine hesitancy that primary care
-      </span>
-    ),
-    introPart2: (
-      <span>
-        {" "}
-        clinicians may see. Browse through these types to help identify the sources of your patients&rsquo; hesitancy,
-        and find advice and resources on how to address them.
-      </span>
-    ),
-    introPart3: (
-      <span className="subtitleFont font-light italic">
-        For an overview of how to use the guide, visit the
-        <Link to="/about" className="px-1.5  underline cursor-pointer">
-          about
-        </Link>
-        <span>page.</span>
-      </span>
-    ),
-    buttonText: "Browse Hesitancy Types",
+    introPart1: {
+      EN: (
+        <span>
+          The Vaccine Hesitancy Guide supports better clinical conversations about vaccines. It differentiates common
+          types of vaccine hesitancy that primary care
+        </span>
+      ),
+      FR: (
+        <span>
+          Le Guide sur l’hésitation vaccinale permet d’entretenir de meilleures conversations au sujet des vaccins en
+          milieu clinique. Il dresse la différence entre les types
+        </span>
+      ),
+    },
+    // d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des ressources et des conseils pour surmonter ces hésitations. Un aperçu de ce guide se trouve à la page « À propos du guide ».
+
+    introPart2: {
+      EN: (
+        <span>
+          {" "}
+          clinicians may see. Browse through these types to help identify the sources of your patients&rsquo; hesitancy,
+          and find advice and resources on how to address them.
+        </span>
+      ),
+      FR: (
+        <span>
+          {" "}
+          d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux
+          divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des
+          ressources et des conseils pour surmonter ces hésitations.
+        </span>
+      ),
+    },
+
+    introPart3: {
+      EN: (
+        <>
+          <span className="subtitleFont font-light italic">
+            For an overview of how to use the guide, visit the
+            <Link to="/about" className="px-1.5  underline cursor-pointer">
+              about
+            </Link>
+            <span>page.&nbsp;</span>
+          </span>
+        </>
+      ),
+      FR: (
+        <>
+          <span className="subtitleFont font-light italic">
+            Un aperçu de ce guide se trouve à la page
+            <Link to="/about" className="px-1.5  underline cursor-pointer">
+              « À propos du guide ».
+            </Link>
+          </span>
+        </>
+      ),
+    },
+
+    buttonText: { EN: "Browse Hesitancy Types", FR: "Jeter un coup d’œil aux types d’hésitation" },
     buttonDestn: "/explore",
     newLocn: { branch: 0, topic: 0, subtopic: 0, showSubtopic: false },
   },
@@ -170,4 +210,4 @@ const landingContent = [
   },
 ];
 
-export default landingContent;
+export default landingSlidesContentBI;

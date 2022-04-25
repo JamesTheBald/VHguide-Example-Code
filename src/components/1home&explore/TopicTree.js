@@ -13,6 +13,7 @@ const TopicTree = props => {
   log2 && console.log("");
   log2 && console.log("TopicTree.js runs. branch=", branch);
   log2 && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
+  const w = winWidth;
 
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
@@ -39,13 +40,14 @@ const TopicTree = props => {
     }
   };
 
-  const outsideMargin = winWidth < 510 ? 10 : 32;
-  const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
-  const innerMarginLeft = 15 + 20 * (widthAdjRatio - 0.3125);
-  const innerMarginRight = innerMarginLeft - 8;
-  const bottomPadding = winWidth < 510 ? 40 : 58;
-  const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
-  const leftGapToLine = winWidth < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
+  const innerMarginLeft = 8 + 14 * (widthAdjRatio - 0.3125);
+  const innerMarginRight = w < 410 ? 6 : w < 510 ? 8 : innerMarginLeft - 8;
+  const outsideMargin = w < 510 ? 0 : w < 720 ? 8 : innerMarginLeft + 2;
+  // const outsideMargin = w < 510 ? 10 : 32;
+  const borderRadius = w < 510 ? "0px 0px 9px 9px" : w < 720 ? "0px 0px 12px 12px" : "0px 0px 47px 47px";
+  const bottomPadding = w < 510 ? 40 : 58;
+  const topicStepHt = w < 510 ? 30 : w < 800 ? 36 : 45;
+  const leftGapToLine = w < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
 
   log2 && console.log("TopicTree.js innerMarginLeft=", innerMarginLeft);
   log2 && console.log("TopicTree.js innerMarginRight=", innerMarginRight);
@@ -57,7 +59,7 @@ const TopicTree = props => {
       <>
         <div
           name="Rounded Outer Border"
-          className="mb-3  flex flex-col  border-3 border-solid border-t-0 border-blue-main relative -top-1"
+          className="mb-3  flex flex-col  border-2 mxs:border-3 border-solid border-t-0 border-blue-main relative -top-1"
           style={{
             marginLeft: outsideMargin,
             marginRight: outsideMargin,
@@ -84,7 +86,7 @@ const TopicTree = props => {
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
                   <h3 className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.4 sm:tracking-0.5`}>
-                    {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
+                    {w < 900 ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 
                   <div

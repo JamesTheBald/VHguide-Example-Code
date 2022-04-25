@@ -8,7 +8,7 @@ import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 
 const Home1TopPanel = props => {
   const { content, showFullIntro, setShowFullIntro } = props;
-  const { winWidth, winHeight, marginOuter, queryData, log, log2 } = useMyContext();
+  const { winWidth, winHeight, marginOuter, queryData, lang, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   const homepagePics = queryData.current.homepagePics.edges;
@@ -105,7 +105,7 @@ const Home1TopPanel = props => {
               buttonDestn={buttonDestn}
               newLocn={newLocn}
             >
-              {buttonText}
+              {buttonText[lang]}
             </BrowseButton>
           )}
         </div>

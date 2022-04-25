@@ -22,17 +22,21 @@ const Subtopics = props => {
   };
 
   const subtopicStepHt = winWidth < 510 ? 6 : 12;
+  const margLeft = innerMarginLeft * 2 - 2;
+  const margRight = innerMarginRight + 2;
 
-  const baseFontWide = "font-sans  text-15 mxs:text-18  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5";
+  const baseFontWide = "font-sans  text-16 mxs:text-18  tracking-0.2 mxs:tracking-0.4 sm:tracking-0.5";
+  // const baseFontWide = "font-sans  text-15 mxs:text-18  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5";
 
   if (subtopics?.[0]) {
     return (
       <>
         <div
+          name="thin grey dividing lines"
           className="border-b-1.5 border-solid border-gray-line"
           style={{
-            marginLeft: innerMarginLeft * 2,
-            marginRight: innerMarginRight,
+            marginLeft: margLeft,
+            marginRight: margRight,
             height: subtopicStepHt - 3,
             marginBottom: subtopicStepHt,
           }}
@@ -44,8 +48,8 @@ const Subtopics = props => {
               <div className="flex justify-start items-center">
                 <button
                   key={subtopicNum}
-                  className={`mt-1.5  w-50 axs:w-55 sm:w-auto ${baseFontWide}  cursor-pointer text-blue-dark hover:text-blue-main  text-left`}
-                  style={{ marginLeft: innerMarginLeft * 2 }}
+                  className={`mt-1.5  w-50 axs:w-55 sm:w-auto ${baseFontWide}  cursor-pointer text-blue-dark hover:text-blue-main  text-left  whitespace-nowrap`}
+                  style={{ marginLeft: margLeft }}
                   onClick={() => onClickSubtopic(subtopicNum)}
                 >
                   {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
@@ -62,8 +66,8 @@ const Subtopics = props => {
               <div
                 className="border-b-1.5 border-solid border-gray-line"
                 style={{
-                  marginLeft: innerMarginLeft * 2,
-                  marginRight: innerMarginRight,
+                  marginLeft: margLeft,
+                  marginRight: margRight,
                   height: subtopicStepHt,
                   marginBottom: subtopicStepHt,
                 }}

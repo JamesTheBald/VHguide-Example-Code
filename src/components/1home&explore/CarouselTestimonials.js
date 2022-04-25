@@ -1,16 +1,16 @@
 import React, { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 
-import testimonials from "../../content/testimonials";
+import testimonialsBI from "../../content/testimonialsBI";
 import CarouselDots from "./CarouselDotsTestimonials";
-// import { useMyContext } from "../../context/Context";
+import { useMyContext } from "../../context/Context";
 
 const CarouselTestimonials = () => {
-  // const { winWidth, log2 } = useMyContext();
+  const { lang } = useMyContext();
 
   const timeOnEach = 10000;
   const carouselRefTestimonials = useRef(null);
-  const numPages = Math.ceil(testimonials.length);
+  const numPages = Math.ceil(testimonialsBI.length);
   let timeout;
 
   return (
@@ -33,11 +33,11 @@ const CarouselTestimonials = () => {
           }
         }}
       >
-        {testimonials.map((currTest, indx) => {
+        {testimonialsBI.map((currTest, indx) => {
           return (
             <div key={indx}>
-              <div className="max-w-220 w-5/6 mx-auto">{currTest.quote}</div>
-              <div className="mt-6 italic">{currTest.name}</div>
+              <div className="max-w-220 w-5/6 mx-auto">{currTest.quote[lang]}</div>
+              <div className="mt-6 italic">{currTest.name[lang]}</div>
             </div>
           );
         })}
