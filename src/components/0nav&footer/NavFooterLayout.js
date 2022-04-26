@@ -21,7 +21,7 @@ const NavFooterLayout = ({ children }) => {
       <Seo />
       <div
         className={`${fixedBackdrop ? "fixed" : "relative"} 
-                    flex flex-col justify-between  w-full text-blue-main  overflow-hidden`}
+                    flex flex-col justify-between  w-screen text-blue-main  overflow-hidden`}
         style={{ minHeight: 100 + "vh" }}
       >
         <div className="">

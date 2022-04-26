@@ -71,7 +71,7 @@ const NavBar = () => {
     <>
       <div // Main Navbar container
         ref={dropDownRef}
-        className={`fixed w-full  flex ${showDropDown && "flex-col  border-gray-light"} fsm:flex-row justify-between 
+        className={`fixed w-screen  flex ${showDropDown && "flex-col  border-gray-light"} fsm:flex-row justify-between 
                     ${!showDropDown && "items-center  border-gray-light"}
                     border-solid border-b border-gray-light  bgUnselec
                     fsmFont text-gray-light  z-50`}

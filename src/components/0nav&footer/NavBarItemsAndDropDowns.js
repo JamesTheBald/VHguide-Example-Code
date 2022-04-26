@@ -106,11 +106,9 @@ const NavBarItemsAndDropDowns = props => {
         <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} />
       </div>
 
-      <div className={`${stackedSpacing} pt-4 fsm:mx-3`}>
+      <div className={`${stackedSpacing} pt-4 fsm:ml-3 fsm:mr-5`}>
         <LanguageSwitcher />
       </div>
-
-      {padNavBarOnExplorePage && <div className="h-4" style={{ width: 15 + "px" }} />}
     </>
   );
 };
