@@ -1,6 +1,6 @@
 import React from "react";
 
-export const contentFullStories = {
+export const contentFullStoriesBI = {
   chefAnalogy: {
     // The above line is the 'fullStoryID'
     tags: ["", ""], // not using tags yet, so this line is just a placeholders

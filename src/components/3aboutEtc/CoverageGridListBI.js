@@ -3,22 +3,18 @@ import { StaticImage } from "gatsby-plugin-image";
 import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
-import coverage from "../../content/featuredOnContent";
+import featuredOnContentBI from "../../content/featuredOnContentBI";
 
 const CoverageGridListBI = ({ type, className }) => {
-  const { lang } = useMyContext();
+  const { lang, log } = useMyContext();
   const imgParams = { quality: 90, layout: "constrained" };
+
+  const content = featuredOnContentBI[type];
+  log && console.log("CoverageGridListBI.js type=", type, ", content=", content);
 
   return (
     <div className={className}>
-      {coverage[type].map((currCoverage, index) => {
-        const currCov = {
-          ...currCoverage,
-          source: lang === "EN" || !currCoverage.source_FR ? currCoverage.source_EN : currCoverage.source_FR,
-          title: lang === "EN" || !currCoverage.title_FR ? currCoverage.title_EN : currCoverage.title_FR,
-          date: lang === "EN" || !currCoverage.date_FR ? currCoverage.date_EN : currCoverage.date_FR,
-          linkText: lang === "EN" || !currCoverage.linkText_FR ? currCoverage.linkText_EN : currCoverage.linkText_FR,
-        };
+      {content.map((currCov, index) => {
 
         return (
           <div key={index}>
@@ -39,9 +35,9 @@ const CoverageGridListBI = ({ type, className }) => {
               )}
             </div>
 
-            <div className="pb-2 font-semibold">{currCov.source}</div>
-            <div className="pb-2 font-semibold">{currCov.title}</div>
-            <div className="pb-2 italic">{currCov.date}</div>
+            <div className="pb-2 font-semibold">{currCov.source[lang]}</div>
+            <div className="pb-2 font-semibold">{currCov.title[lang]}</div>
+            <div className="pb-2 italic">{currCov.date[lang]}</div>
             <a
               className="w-11/12 sm:w-5/6 md:w-90 lg:w-100  flex flex-col justify-center"
               href={currCov.URL}
@@ -49,7 +45,7 @@ const CoverageGridListBI = ({ type, className }) => {
               target="_blank"
             >
               <span className="italic orangeUnderline">
-                {currCov.linkText}
+                {currCov.linkText[lang]}
                 <FiExternalLink className="pl-1.5 inline text-yellow-darkish" size={24} />
               </span>
             </a>

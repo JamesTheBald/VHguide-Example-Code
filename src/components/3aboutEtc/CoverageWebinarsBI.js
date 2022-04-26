@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
 import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
-import coverage from "../../content/featuredOnContent";
+import featuredOnContentBI from "../../content/featuredOnContentBI";
 
 const CoverageWebinarsBI = ({ className }) => {
   const { queryData, lang, log2 } = useMyContext();
@@ -13,17 +13,10 @@ const CoverageWebinarsBI = ({ className }) => {
 
   return (
     <div className={className}>
-      {coverage.webinars.map(currCoverage => {
-        const currCov = {
-          ...currCoverage,
-          source: lang === "EN" || !currCoverage.source_FR ? currCoverage.source_EN : currCoverage.source_FR,
-          title: lang === "EN" || !currCoverage.title_FR ? currCoverage.title_EN : currCoverage.title_FR,
-          date: lang === "EN" || !currCoverage.date_FR ? currCoverage.date_EN : currCoverage.date_FR,
-          linkText: lang === "EN" || !currCoverage.linkText_FR ? currCoverage.linkText_EN : currCoverage.linkText_FR,
-        };
+      {featuredOnContentBI.webinars.map((currCov, index) => {
 
         return (
-          <div key={currCov.title}>
+          <div key={index}>
             <a
               className="mb-4 w-full grid justify-start items-center  cursor-pointer hoverRevealTrigger"
               style={{ gridTemplateAreas: "area1" }}
@@ -54,9 +47,9 @@ const CoverageWebinarsBI = ({ className }) => {
               </div>
             </a>
 
-            <div className="pb-2 font-semibold">{currCov.source}</div>
-            <div className="pb-2 font-semibold">{currCov.title}</div>
-            {/* <div className="pb-2 italic">{currCov.date}</div> */}
+            <div className="pb-2 font-semibold">{currCov.source[lang]}</div>
+            <div className="pb-2 font-semibold">{currCov.title[lang]}</div>
+            <div className="pb-2 italic">{currCov.date[lang]}</div>
             <a
               className="w-11/12 sm:w-5/6 md:w-90 lg:w-100  flex flex-col justify-center"
               href={currCov.URL}
@@ -64,7 +57,7 @@ const CoverageWebinarsBI = ({ className }) => {
               target="_blank"
             >
               <span className="italic orangeUnderline">
-                {currCov.linkText}
+                {currCov.linkText[lang]}
                 <FiExternalLink className="pl-1.5 inline text-yellow-darkish" size={24} />
               </span>
             </a>

@@ -2,7 +2,7 @@ import React from "react";
 import { navigate } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
-import { contentFullStories } from "../../content/contentFullStories";
+import { contentFullStoriesBI } from "../../content/contentFullStoriesBI";
 
 const AdviceFullStory = props => {
   const { fullStoryID } = props;
@@ -15,8 +15,8 @@ const AdviceFullStory = props => {
 
   let story = {};
   let validData = true;
-  if (contentFullStories[fullStoryID]?.text[lang]) {
-    story = contentFullStories[fullStoryID];
+  if (contentFullStoriesBI[fullStoryID]?.text[lang]) {
+    story = contentFullStoriesBI[fullStoryID];
     log && console.log("AdviceFullStory.js story=", story);
     log && console.log("AdviceFullStory.js story.title[lang]=", story.title[lang]);
     log && console.log("AdviceFullStory.js story.text[lang]=", story.text[lang]);
