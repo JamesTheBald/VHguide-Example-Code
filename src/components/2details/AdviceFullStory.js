@@ -6,7 +6,7 @@ import { contentFullStories } from "../../content/contentFullStories";
 
 const AdviceFullStory = props => {
   const { fullStoryID } = props;
-  const { winWidth, queryData, log } = useMyContext();
+  const { winWidth, queryData, lang, log } = useMyContext();
 
   log && console.log("AdviceFullStory.js runs. fullStoryID=", fullStoryID);
 
@@ -15,9 +15,11 @@ const AdviceFullStory = props => {
 
   let story = {};
   let validData = true;
-  if (contentFullStories[fullStoryID]?.text) {
+  if (contentFullStories[fullStoryID]?.text[lang]) {
     story = contentFullStories[fullStoryID];
     log && console.log("AdviceFullStory.js story=", story);
+    log && console.log("AdviceFullStory.js story.title[lang]=", story.title[lang]);
+    log && console.log("AdviceFullStory.js story.text[lang]=", story.text[lang]);
   } else {
     log && console.log("AdviceFullStory.js - content for fullStoryID", fullStoryID, "not found.");
     navigate("/explore");
@@ -27,10 +29,10 @@ const AdviceFullStory = props => {
   return (
     <section>
       <button className="orangeLink" onClick={() => navigate(-1)}>
-        &#60; back
+        &#60; {lang === "EN" ? "back" : "retourner"}
       </button>
 
-      <h3 className="pt-6 text-25">{story.title}</h3>
+      <h3 className="pt-6 text-25">{story.title[lang]}</h3>
 
       <div
         className={`mt-7 baseFont text-blue-black`}
@@ -52,7 +54,7 @@ const AdviceFullStory = props => {
               );
             })}
 
-            {story.text}
+            {story.text[lang]}
           </p>
         )}
       </div>
