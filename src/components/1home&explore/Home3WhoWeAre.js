@@ -14,9 +14,6 @@ const Home3WhoWeAre = () => {
   log2 && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
   log && console.log("Home3WhoWeAre.js biosContentBI=", biosContentBI);
 
-  // const bioWidth =
-  //   winWidth < 510 ? "100%" : winWidth < 720 ? "80%" : winWidth < 1024 ? "29%" : winWidth < 1600 ? "28%" : "20%";
-
   return (
     <>
       <div className="halfSectionGapHomePage  mt-6 sm:mt-8 mxl:mt-9" />

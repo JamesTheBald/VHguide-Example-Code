@@ -1,14 +1,14 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";  
+// Use AnchoLink instead of Link when there are links that link to other pages AND links 
+// that scroll to another position on the current page.
 
 import CarouselTestimonials from "./CarouselTestimonials";
 import CarouselCollaborators from "./CarouselCollaborators";
 import { useMyContext } from "../../context/Context";
 import landingTextOtherBI from "../../content/landingTextOtherBI";
-
-// {/* {{ top: winWidth < 510 ? "90%" : winWidth < 720 ? "92%" : winWidth < 1024 ? "94%" : "96%", width: "90%" }} */}
-// sm:ml-auto  xl:ml-0 xl:my-auto xl:order-2
 
 const Home4TestimonialsEtc = () => {
   const imageProps = {
@@ -35,14 +35,14 @@ const Home4TestimonialsEtc = () => {
               <h2 className="titleFont titleBig">{landingTextOtherBI.mediaCoverage.title[lang]}</h2>
               <div className="pt-3">{landingTextOtherBI.mediaCoverage.caption[lang]}</div>
               <br />
-              <AnchorLink
+              <Link
                 to="/about/media"
-                // title="Take a Look at Our Media Coverage"
-                title={landingTextOtherBI.mediaCoverage.button[lang]}
                 className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light
-                    rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
-                    border-2 border-solid bg-gray-light hover:bg-opacity-0"
-              />
+                rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
+                border-2 border-solid bg-gray-light hover:bg-opacity-0"
+              >
+                {landingTextOtherBI.mediaCoverage.button[lang]}
+              </Link>
             </div>
 
             <div

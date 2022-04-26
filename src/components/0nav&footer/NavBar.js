@@ -9,7 +9,8 @@ import NavBarItemsAndDropDowns from "./NavBarItemsAndDropDowns";
 import useOnClickOutside from "../../functions/useOnClickOutside";
 
 const NavBar = () => {
-  const { winWidth, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } = useMyContext();
+  const { winWidth, fsmBrkPt, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } =
+    useMyContext();
 
   0 && console.log(log, log2);
   const dropDownRef = useRef();
@@ -48,7 +49,7 @@ const NavBar = () => {
         className={`w-24  flex justify-center items-center cursor-pointer ${className}`}
         onClick={event => onClickHamburger(event, true)}
       >
-        <IoIosMenu size={winWidth < 800 ? 40 : 44} />
+        <IoIosMenu size={winWidth < fsmBrkPt ? 40 : 44} />
       </button>
     );
   };
@@ -64,7 +65,7 @@ const NavBar = () => {
     );
   };
 
-  const navBarHeight = winWidth < 800 ? 65 : 80;
+  const navBarHeight = winWidth < fsmBrkPt ? 65 : 80;
 
   return (
     <>
@@ -111,7 +112,6 @@ const NavBar = () => {
         <div className="fsm:hidden relative">
           {showDropDown ? (
             <div
-              name="Dropdown menu container"
               className="pt-4 pb-7  absolute left-0  w-full  flex flex-col items-start
                          border-b border-gray-light  bgUnselec  rounded-b-3xl"
               style={{ top: 1 }}
@@ -128,7 +128,9 @@ const NavBar = () => {
       <div
         name="spacer, because navbar is fixed"
         style={
-          showDropDown && winWidth >= 800 && winWidth < 1366 ? { height: navBarHeight * 2 } : { height: navBarHeight }
+          showDropDown && winWidth >= fsmBrkPt && winWidth < 1366
+            ? { height: navBarHeight * 2 }
+            : { height: navBarHeight }
         }
       />
     </>

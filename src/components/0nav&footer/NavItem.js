@@ -3,6 +3,7 @@ import React from "react";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import { useMyContext } from "../../context/Context";
 
+// This component creates a 'shield' around the selected navbar item, on wider screens
 const NavItem = props => {
   const { classNom, selecOnHover, children, destn } = props;
   const { locn, log, log2 } = useMyContext();
@@ -17,7 +18,7 @@ const NavItem = props => {
       </div>
 
       <div
-        name="'Shield' border for when selected - Wider screens"
+        name="'Shield' border for when selected - Wider screens (>= fsm: breakpoint)"
         className={`hidden fsm:flex px-3 h-22  w-full  justify-center items-center  relative
                     rounded-b-lg  border-2 fsm:border-t-0 border-gray-light border-solid  z-20
         ${selected ? "bgSelec" : "border-opacity-0"}

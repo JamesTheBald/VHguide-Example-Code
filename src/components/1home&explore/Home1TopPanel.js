@@ -8,7 +8,7 @@ import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 
 const Home1TopPanel = props => {
   const { content, showFullIntro, setShowFullIntro } = props;
-  const { winWidth, winHeight, marginOuter, queryData, lang, log, log2 } = useMyContext();
+  const { winWidth, winHeight, fsmBrkPt, marginOuter, queryData, lang, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   const homepagePics = queryData.current.homepagePics.edges;
@@ -82,7 +82,7 @@ const Home1TopPanel = props => {
               className={`${
                 isOnFrenchPanel ? "mt-5 mxs:mt-9 lg:mt-0" : "mt-1 lg:mt-0"
               }  font-serif font-semibold italic  titleSmall ${
-                w < 720 ? exclaimTextColorClsMobl : exclaimTextColorClsDesk
+                w < fsmBrkPt ? exclaimTextColorClsMobl : exclaimTextColorClsDesk
               }`}
             >
               {exclaimText}

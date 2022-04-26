@@ -9,7 +9,7 @@ import { navbarLabels } from "../../content/navbarLabels";
 
 const HesTypesDropDown = props => {
   const { subMenuLinkClass, onClickGo, onClickToBranch } = props;
-  const { locn, winWidth, branch, lang, log } = useMyContext();
+  const { locn, winWidth, fsmBrkPt, branch, lang, log } = useMyContext();
 
   const [showHesDropDown, setShowHesDropDown] = useState(false);
 
@@ -48,10 +48,10 @@ const HesTypesDropDown = props => {
     <div
       className={`w-full fsm:w-auto pt-0.5 pb-2 fsm:py-0  hoverRevealTrigger group relative  flex flex-col items-start  z-30
                ${!selected && "fsm:border-l fsm:border-r border-opacity-0 hover:border-opacity-100  border-gray-light"}
-              ${selected && winWidth < 720 && "pb-1 subMenuYBorders bgSelec"}`}
+              ${selected && winWidth < fsmBrkPt && "pb-1 subMenuYBorders bgSelec"}`}
       style={{ top: 1 }}
     >
-      {/* Hesitancy Types navbar/dropdown main entry */}
+      {/* Hesitancy Types  */}
       <NavItem classNom="pl-7 pt-3  fsm:px-0 fsm:py-0" selecOnHover={true} destn={"/explore"}>
         <button className="flex flex-row  w-full" onClick={event => onClickExplore(event)}>
           <div className="fsm:pl-0.5 fsm:pb-0.5 pr-0.5">{navbarLabels.hesType[lang]}</div>
@@ -64,7 +64,7 @@ const HesTypesDropDown = props => {
         </button>
       </NavItem>
 
-      {/* Dropdown (sub-)menu for Hesitancy Types on NARROW screens */}
+      {/*  Dropdown (sub-)menu for Hesitancy Types on NARROW screens */}
       <div className="fsm:hidden  w-80">
         <div className={`${showHesDropDown ? "flex" : "hidden group-hover:flex"} mx-5 pl-5  flex-col`}>
           <HesTypeLink className="border-b" branchNum={0} />
@@ -78,12 +78,13 @@ const HesTypesDropDown = props => {
       <div className={`hidden fsm:inline  w-full  ${selected ? "z-40" : "z-10"}`}>
         <div
           name="Panel to cover navbar border"
-          className={`hiddenTillHover absolute flex justify-center items-start z-30
+          className={`hiddenTillHover absolute bottom-1  flex justify-center items-start  z-30
                       ${selected ? "bgSelec" : "bgUnselec"} `}
-          style={
-            selected ? { left: 2, width: 167, bottom: 0, height: 12 } : { left: 0, width: 171, bottom: 0, height: 12 }
-          }
-        />
+          style={selected ? { left: 2, paddingRight: 22 } : { paddingRight: 28 }}
+        >
+          <div className="invisible">{navbarLabels.hesType[lang]}</div>
+          <BiChevronRight size={24} className="invisible" />
+        </div>
 
         <div
           name="Dropdown menu"

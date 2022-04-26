@@ -9,7 +9,7 @@ import { navbarLabels } from "../../content/navbarLabels";
 
 const AboutDropDown = props => {
   const { subMenuLinkClass, onClickGo } = props;
-  const { locn, winWidth, lang, log } = useMyContext();
+  const { locn, winWidth, fsmBrkPt, lang, log } = useMyContext();
 
   const [showAboutDropDown, setShowAboutDropDown] = useState(false);
 
@@ -40,7 +40,7 @@ const AboutDropDown = props => {
     <div
       className={`w-full fsm:w-auto  pt-1 fsm:pt-0  hoverRevealTrigger group relative  flex flex-col items-start  z-30
                ${!selected && "fsm:border-l fsm:border-r border-opacity-0 hover:border-opacity-100  border-gray-light"}
-               ${selected && winWidth < 720 && "pb-1 subMenuYBorders  bgSelec"}`}
+               ${selected && winWidth < fsmBrkPt && "pb-1 subMenuYBorders  bgSelec"}`}
       style={{ top: 1 }}
     >
       <NavItem classNom={`pl-7 pt-2 fsm:px-0 fsm:py-0`} selecOnHover={true} destn="/about">
@@ -68,13 +68,13 @@ const AboutDropDown = props => {
       <div className={`hidden fsm:inline  w-full  ${selected ? "z-40" : "z-10"}`}>
         <div
           name="Panel to cover border"
-          className={`hiddenTillHover absolute flex justify-center items-start  z-30
-                      ${selected ? "bgSelec" : "bgUnselec"}
-          `}
-          style={
-            selected ? { right: 2, width: 97, bottom: 0, height: 12 } : { right: 0, width: 101, bottom: 0, height: 12 }
-          }
-        />
+          className={`hiddenTillHover absolute bottom-0  flex justify-center items-start  z-30
+                      ${selected ? "bgSelec" : "bgUnselec"}`}
+          style={selected ? { left: 2, paddingRight: 28 } : { paddingRight: 32 }}
+        >
+          <div className="invisible">{navbarLabels.about.title[lang]}</div>
+          <BiChevronRight size={24} className="invisible" />
+        </div>
 
         <div
           className={`hiddenTillHover pt-1.5 absolute  flex flex-col  rounded-b-xl  whitespace-nowrap

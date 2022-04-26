@@ -6,11 +6,10 @@ import { branchEN } from "../../content/branchEN";
 
 const LanguageSwitcher = props => {
   const { className } = props;
-  const { winWidth, lang, setLang, setBranch, log } = useMyContext();
+  const { winWidth, fsmBrkPt, lang, setLang, setBranch, log } = useMyContext();
 
-  const widthLg = 800;  // This should match the fsm: ("fairly small") breakpoint width in tailwind.config.js
-  const innerBoxWidth = winWidth < widthLg ? 19 : 23;
-  const innerBoxHeight = winWidth < widthLg ? 18 : 22;
+  const innerBoxWidth = winWidth < fsmBrkPt ? 19 : 23;
+  const innerBoxHeight = winWidth < fsmBrkPt ? 18 : 22;
 
   const InnerBox = props => {
     const { children, langSel } = props;
@@ -42,7 +41,7 @@ const LanguageSwitcher = props => {
     <div
       className={`border border-yellow-darkish flex justify-center items-center ${className}`}
       style={
-        winWidth < widthLg
+        winWidth < fsmBrkPt
           ? { borderRadius: 4, padding: 1, fontSize: 0.875 + "rem" }
           : { borderRadius: 4, padding: 2, fontSize: 1 + "rem" }
       }

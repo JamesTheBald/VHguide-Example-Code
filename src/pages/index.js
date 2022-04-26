@@ -31,7 +31,7 @@ const Home = props => {
 
   return (
     <>
-      <main className="w-screen bg-white text-blue-black overflow-x-hidden">
+      <main className="w-full bg-white text-blue-black overflow-x-hidden">
         <Home1TopCarousel />
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />

@@ -14,6 +14,7 @@ const MyProvider = ({ children }) => {
   log2 && console.log("Context.js runs.");
 
   const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
+  const fsmBrkPt = 880;  // This must match the fsm: ("fairly small") breakpoint width in tailwind.config.js
 
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
@@ -62,6 +63,7 @@ const MyProvider = ({ children }) => {
     winWidth: winWidth,
     winHeight: winHeight,
     widthAdjRatio: widthAdjRatio,
+    fsmBrkPt: fsmBrkPt,
     marginOuter: marginOuter,
     nomScreenWidth: nomScreenWidth,
     showContactForm: showContactForm,

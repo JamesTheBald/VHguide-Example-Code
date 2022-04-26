@@ -18,7 +18,7 @@ module.exports = {
       mxs: "510px", // 'medium extra small'
       qsm: "610px", // 'quite small'
       sm: "720px",
-      fsm: "800px", // 'fairly small'
+      fsm: "880px", // 'fairly small'. This must match the constant fsmBrkPt in Context.js
       md: "1024px",
       lg: "1366px",
       mxl: "1640px",
@@ -63,8 +63,6 @@ module.exports = {
       medium: "500",
       semibold: "600",
       bold: "700",
-      // 800: "800",
-      // 900: "900",
     },
 
     fontFamily: {

@@ -13,8 +13,19 @@ import LanguageSwitcher from "./LanguageSwitcher.js";
 
 const NavBarItemsAndDropDowns = props => {
   const { onClickGo, setShowDropDown } = props;
-  const { locn, winWidth, branch, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } =
-    useMyContext();
+  const {
+    locn,
+    winWidth,
+    fsmBrkPt,
+    branch,
+    setLocn,
+    setNoneSelected,
+    setShowContactForm,
+    setFixedBackdrop,
+    lang,
+    log,
+    log2,
+  } = useMyContext();
 
   const w = winWidth;
 
@@ -51,7 +62,7 @@ const NavBarItemsAndDropDowns = props => {
     <>
       <button
         className={`${mainLinkClass}
-                  ${isNavItemSelected("/", locn) && w < 800 ? "subMenuYBorders bgSelec" : ""}`}
+                  ${isNavItemSelected("/", locn) && w < fsmBrkPt ? "subMenuYBorders bgSelec" : ""}`}
         onClick={event => onClickGo(event, "/")}
       >
         <NavItem classNom={`${stackedSpacing}`} destn="/">
@@ -72,7 +83,7 @@ const NavBarItemsAndDropDowns = props => {
       <button className={`${mainLinkClass} fsm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
         <NavItem
           classNom={`${stackedSpacing}  ${
-            w < 800 && isNavItemSelected("/details/overview", locn) && w < 800 && "subMenuYBorders bgSelec"
+            w < fsmBrkPt && isNavItemSelected("/details/overview", locn) && "subMenuYBorders bgSelec"
           }`}
           destn="/details/overview"
         >
@@ -83,7 +94,7 @@ const NavBarItemsAndDropDowns = props => {
       <button className={mainLinkClass} onClick={event => onClickGo(event, "/pearls")}>
         <NavItem
           classNom={`${stackedSpacing}  ${
-            w < 800 && isNavItemSelected("/pearls", locn) && w < 800 && "subMenuYBorders bgSelec"
+            w < fsmBrkPt && isNavItemSelected("/pearls", locn) && "subMenuYBorders bgSelec"
           }`}
           destn="/pearls"
         >
