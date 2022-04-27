@@ -30,9 +30,9 @@ const Footer = () => {
 
   return (
     <div className="relative">
+      {/* Fixed Contact Us Pill (NARROWER Screens) */}
       <button
-        name="Fixed Contact Us Pill"
-        className={`fixed right-5 bottom-11 mxs:bottom-3.5 qsm:bottom-7  px-1.5 qsm:px-5 py-1.5 mx-auto mb-2 mxs:mb-0
+        className={`fixed right-5 bottom-11 mxs:bottom-6 qsm:bottom-7  px-1.5 qsm:px-5 py-1.5 mx-auto mb-2 mxs:mb-0
                   flex items-center  text-16 tracking-0.3  rounded-full cursor-pointer border border-gray-mid  z-50 qsm:z-40
                     ${onIndexPage ? "text-blue-dark bg-gray-light" : "text-gray-light bg-blue-black"}
                     `}
@@ -54,7 +54,7 @@ const Footer = () => {
       {/* Footer */}
       <div className={`z-40 qsm:z-50 ${fixedBackdrop ? "fixed w-full bottom-0" : "relative"} overflow-y-hidden`}>
         <footer
-          className="mt-6  pl-5 sm:pl-8 md:pl-10 lg:pl-12  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish text-10 mxs:text-12 text-blue-black"
+          className="mt-6  pl-8 sm:pl-10 md:pl-12 lg:pl-14  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish text-10 mxs:text-12 text-blue-black"
           style={w < 510 ? { height: 80 } : w < 900 ? { height: 90 } : { height: 75 }}
           aria-hidden="true"
         >
@@ -104,11 +104,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Us link on footer (icon+text) */}
-          <button className="hidden qsm:flex flex-none cursor-pointer" onClick={() => toggleContactForm()}>
-            <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 25 }} />
-            <div className="pt-1 pl-1.5 pr-4 sm:pr-7 md:pr-10 lg:pr-12  text-14 sm:text-16 tracking-0.3">
-            {lang === "EN" ? "Contact Us" : "Contactez-nous"}
+          {/* Contact Us link on footer (icon+text) - WIDER screens */}
+          <button className="hidden qsm:flex flex-none items-center  cursor-pointer  mr-6" onClick={() => toggleContactForm()}>
+            <StaticImage
+              src="../../assets/navbar/speechBubbleBlue.svg"
+              alt="Speech bubble"
+              style={{ width: 25 }}
+            />
+            <div className="pt-1.5 pl-1.5 pr-5 sm:pr-7 md:pr-9 lg:pr-12  text-14 sm:text-16 tracking-0.3">
+              {lang === "EN" ? "Contact Us" : "Contactez-nous"}
             </div>
           </button>
 

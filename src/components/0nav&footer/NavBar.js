@@ -42,11 +42,13 @@ const NavBar = () => {
     setShowDropDown(wantOpen);
   };
 
-  const HamburgerIcon = className => {
+  const HamburgerIcon = ({ rtPosn }) => {
+    log && console.log("NavBar.js HamburgerIcon() rtPosn=", rtPosn);
     return (
       <button
         name="Hamburger icon"
-        className={`w-24  flex justify-center items-center cursor-pointer ${className}`}
+        className="absolute top-3 fsm:top-5  cursor-pointer"
+        style={{ right: rtPosn }}
         onClick={event => onClickHamburger(event, true)}
       >
         <IoIosMenu size={winWidth < fsmBrkPt ? 40 : 44} />
@@ -54,10 +56,13 @@ const NavBar = () => {
     );
   };
 
-  const CloseButton = () => {
+  const CloseButton = ({ rtPosn }) => {
+    log2 && console.log("NavBar.js CloseButton() rtPosn=", rtPosn);
     return (
       <button
-        className="lg:hidden p-2 absolute -top-14 fsm:-top-16 right-6"
+        className="p-2  absolute -top-14 fsm:-top-16  cursor-pointer"
+        // className="lg:hidden p-2 absolute -top-14 fsm:-top-16  cursor-pointer"
+        style={{ right: rtPosn }}
         onClick={event => onClickHamburger(event, false)}
       >
         <VscClose size={30} />
@@ -100,27 +105,23 @@ const NavBar = () => {
             style={{ top: navBarHeight + 1, height: navBarHeight }}
           >
             <NavBarItemsAndDropDowns onClickGo={onClickGo} setShowDropDown={setShowDropDown} />
-            <CloseButton />
+            <CloseButton rtPosn={38} />
           </div>
         ) : (
-          <div className="hidden fsm:inline absolute top-4 right-0">
-            <HamburgerIcon />
-          </div>
+          <HamburgerIcon rtPosn={38} />
         )}
 
-        {/* NARROW screens - Dropdown Menu + Close Button or Hamburger */}
-        <div className="fsm:hidden relative">
-          {showDropDown ? (
+        {/* NARROWER screens - Dropdown Menu + Close Button or Hamburger */}
+        <div className="fsm:hidden relative  mr-2">
+          {showDropDown && (
             <div
               className="pt-4 pb-7  absolute left-0  w-full  flex flex-col items-start
                          border-b border-gray-light  bgUnselec  rounded-b-3xl"
               style={{ top: 1 }}
             >
               <NavBarItemsAndDropDowns onClickGo={onClickGo} setShowDropDown={setShowDropDown} />
-              <CloseButton />
+              <CloseButton rtPosn={25} />
             </div>
-          ) : (
-            <HamburgerIcon />
           )}
         </div>
       </div>
