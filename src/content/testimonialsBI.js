@@ -12,9 +12,9 @@ const testimonialsBI = [
       ),
       FR: (
         <>
-          « L’information de même que l’approche en matière de conversations sur les vaccins présentées dans ce guide sont
+          &nbsp;L’information de même que l’approche en matière de conversations sur les vaccins présentées dans ce guide sont
           d’une grande utilité aux médecins de soins primaires. Cette ressource s’avère déjà essentielle pour soutenir
-          les cliniciens faisant de la consultation en matière de vaccination en Alberta. »
+          les cliniciens faisant de la consultation en matière de vaccination en Alberta.&nbsp;»
         </>
       ),
     },
@@ -32,10 +32,10 @@ const testimonialsBI = [
       ),
       FR: (
         <>
-          « J’aime le fait que ce guide soit axé sur la personne. Il nous aide vraiment à choisir le genre d’approche et
+          &nbsp;J’aime le fait que ce guide soit axé sur la personne. Il nous aide vraiment à choisir le genre d’approche et
           de phrases dont nous avons besoin pour aider nos patients à réfléchir davantage sur la vaccination contre la
           COVID. Il nous aide à nous concentrer sur la relation thérapeutique des soins primaires, ce qui est essentiel
-          à nos yeux. »
+          à nos yeux.&nbsp;»
         </>
       ),
     },
@@ -53,9 +53,9 @@ const testimonialsBI = [
       ),
       FR: (
         <>
-          « Le Guide HV est unique en son genre en ce sens qu’il présente de l’information propre au contexte des soins
+          &nbsp;Le Guide HV est unique en son genre en ce sens qu’il présente de l’information propre au contexte des soins
           primaires de manière interactive et intuitive. Les conseils et les scénarios présentés dans le guide joueront
-          un rôle critique dans l’augmentation de la vaccination à l’échelle du Canada. »
+          un rôle critique dans l’augmentation de la vaccination à l’échelle du Canada.&nbsp;»
         </>
       ),
     },

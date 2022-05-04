@@ -52,8 +52,7 @@ const MyProvider = ({ children }) => {
   const [fullStoryID, setFullStoryID] = useState("");
 
   // pedQuoteGroupInitOpen array allows the appropriate quote group on Pediatrics' Details-Advice page to be expanded upon arrival on the page, after clicking on that topic on <PediatricsOverviewTheySay />
-  const pedQuoteGroupInitOpen = useRef(Array(10).fill(false));
-  log2 && console.log("Context.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
+  const pedQuoteGroupInitOpen = useRef(Array(20).fill(false));
 
   const [noneSelected, setNoneSelected] = useState(true);
   const queryData = useRef({});

@@ -47,7 +47,7 @@ const AboutCreditsBI = () => {
                 <div className="w-full">
                   <div className="ml-5 sm:ml-6 lg:ml-7  relative top-1/2 transform -translate-y-1/2">
                     <div className="flex flex-wrap  subHeadingFont">
-                      <div>{currBio.name},&nbsp;</div>
+                      <div>{currBio.name},&#8200;</div>
                       <div>{currBio.letters[lang]}</div>
                     </div>
                     <div className="absolute top-full  panelTextClass italic">{currBio.title[lang]}</div>

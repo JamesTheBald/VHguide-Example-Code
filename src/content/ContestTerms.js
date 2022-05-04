@@ -68,7 +68,7 @@ const ContestTerms = props => {
 
             <li className="listClassPopup">
               Winning prize funds will be provided in Canadian dollars (CAD), in the form of up to 10 $100 pre-paid VISA
-              gift cards. VISA gift cards are subject to VISA&apos;s standard pre-paid gift card&nbsp;
+              gift cards. VISA gift cards are subject to VISA&apos;s standard pre-paid gift card&#8200;
               <a
                 href="https://www.visa.ca/en_CA/pay-with-visa/cards/gift-cards.html"
                 className="underline cursor-pointer"
@@ -111,7 +111,7 @@ const ContestTerms = props => {
 
             <li className="listClassPopup">
               The use of any part of VHGuide.ca, including the survey and this competition are subject to our
-              site&apos;s standard&nbsp;
+              site&apos;s standard&#8200;
               <Link to="/terms" className="underline cursor-pointer" onClick={() => closeModal()}>
                 Privacy Policy
               </Link>

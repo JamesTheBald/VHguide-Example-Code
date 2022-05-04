@@ -37,17 +37,20 @@ const AboutHowUseFR = props => {
           interactive. Les types peuvent également être divisés en sous-types, chacun décrivant une présentation plus
           précise d’hésitation vaccinale. Après avoir pris connaissance des menus et déterminé le{" "}
           <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> qui correspond le
-          mieux à l’hésitation de votre patient, vous aurez accès à trois onglets d’information :
+          mieux à l’hésitation de votre patient, vous aurez accès à trois onglets d’information&nbsp;:
         </div>
         <ul className="listClass">
           <li>
-            l’onglet « Aperçu », comprenant des inquiétudes ou des énoncés courants pour le type d’hésitation choisi,
-            ainsi que certaines options à considérer pendant les consultations;
+            l’onglet «&nbsp;Aperçu&nbsp;», comprenant des inquiétudes ou des énoncés courants pour le type d’hésitation
+            choisi, ainsi que certaines options à considérer pendant les consultations;
           </li>
           <li>
-            l’onglet « Conseils », présentant des scénarios éprouvés qui ont été utilisés par d’autres cliniciens; et
+            l’onglet «&nbsp;Conseils&nbsp;», présentant des scénarios éprouvés qui ont été utilisés par d’autres
+            cliniciens; et
           </li>
-          <li>l’onglet « Ressources », menant à de l’information pertinente faisant partie de liens externes.</li>
+          <li>
+            l’onglet «&nbsp;Ressources&nbsp;», menant à de l’information pertinente faisant partie de liens externes.
+          </li>
         </ul>
         <span>
           Les conseils, les scénarios et les ressources figurant dans le guide sont mis à jour à la lumière de

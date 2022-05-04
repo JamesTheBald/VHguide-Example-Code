@@ -34,15 +34,17 @@ const Footer = () => {
       <button
         className={`fixed right-5 bottom-11 mxs:bottom-6 qsm:bottom-7  px-1.5 qsm:px-5 py-1.5 mx-auto mb-2 mxs:mb-0
                   flex items-center  text-16 tracking-0.3  rounded-full cursor-pointer border border-gray-mid  z-50 qsm:z-40
-                    ${onIndexPage ? "text-blue-dark bg-gray-light" : "text-gray-light bg-blue-black"}
+                    text-gray-light bg-blue-black
                     `}
+                    // ${onIndexPage ? "text-blue-dark bg-gray-light" : "text-gray-light bg-blue-black"}
         onClick={() => toggleContactForm()}
       >
-        {onIndexPage ? (
+        <StaticImage src="../../assets/navbar/speechBubbleGrey.svg" alt="Speech bubble" style={{ width: 28 }} />
+        {/* {onIndexPage ? (
           <StaticImage src="../../assets/navbar/speechBubbleBlue.svg" alt="Speech bubble" style={{ width: 28 }} />
         ) : (
           <StaticImage src="../../assets/navbar/speechBubbleGrey.svg" alt="Speech bubble" style={{ width: 28 }} />
-        )}
+        )} */}
         <div className="hidden qsm:block  pl-1.5 pt-1">{lang === "EN" ? "Contact Us" : "Contactez-nous"}</div>
       </button>
 
@@ -93,9 +95,9 @@ const Footer = () => {
                     style={w < 510 ? { bottom: "2px" } : { bottom: "1px" }}
                     size={w < 510 ? "10" : "12"}
                   />
-                  &nbsp;2022 Vaccine
+                  &#8200;2022 Vaccine
                 </div>
-                <div className="flex-shrink-0">&nbsp;Hesitancy Guide</div>
+                <div className="flex-shrink-0">&#8200;Hesitancy Guide</div>
               </div>
             </div>
 

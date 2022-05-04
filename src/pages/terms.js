@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-// import TermsPanels from "../components/3aboutEtc/TermsPanels";
 import TermsPanels from "../components/3aboutEtc/TermsPanels";
 
 const Terms = () => {
@@ -19,7 +18,14 @@ const Terms = () => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  return <TermsPanels pageTitle="Terms &amp; Notices" />;
+  return (
+    <TermsPanels
+      pageTitle={{
+        EN: "Terms &amp; Notices",
+        FR: "Modalités et avis",
+      }}
+    />
+  );
 };
 
 Terms.Layout = Layout;

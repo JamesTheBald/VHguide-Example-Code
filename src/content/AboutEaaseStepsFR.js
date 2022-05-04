@@ -9,7 +9,7 @@ const AboutEaaseStepsFR = props => {
   return (
     <article>
       <h2 id="eaaseSteps" className="aboutTitleClass">
-        Explication des étapes « EAASE »
+        Explication des étapes «&nbsp;EAASE&nbsp;»
       </h2>
 
       <div style={textColumnsStyle}>
@@ -17,23 +17,23 @@ const AboutEaaseStepsFR = props => {
           <span>S’appuyant sur les principes de</span>
           <MotivInterviewBI />
           <span>
-            , notre équipe a conçu les étapes <span className="whitespace-nowrap">« EAASE »</span> afin d’aider à
-            orienter les conversations avec les patients qui hésitent à se faire vacciner : <b>e</b>ntamer, <b>a</b>
+            , notre équipe a conçu les étapes <span className="whitespace-nowrap">«&nbsp;EAASE&nbsp;»</span> afin d’aider à
+            orienter les conversations avec les patients qui hésitent à se faire vacciner&nbsp;: <b>e</b>ntamer, <b>a</b>
             ffirmer, demander la permission puis faire part d’information (<b>a</b>sk then <b>s</b>hare) et <b>é</b>
-            voquer. Même si nous les appelons « étapes », vous n’êtes pas obligé d’en respecter l’ordre. Vous pouvez
+            voquer. Même si nous les appelons «&nbsp;étapes&nbsp;», vous n’êtes pas obligé d’en respecter l’ordre. Vous pouvez
             commencer et terminer par n’importe quelle étape.
           </span>
         </div>
         <div className="pt-3">
           L’approche EAASE permet d’améliorer les conversations en établissant un climat de confiance entre vous et
-          votre patient. Au lieu de miser sur l’obtention d’un <span className="whitespace-nowrap">« oui »</span> à la
+          votre patient. Au lieu de miser sur l’obtention d’un <span className="whitespace-nowrap">«&nbsp;oui&nbsp;»</span> à la
           vaccination par votre patient, l’objectif premier d’une conversation EAASE consiste à établir une alliance et
           à favoriser la confiance en la vaccination.
         </div>
         <br />
         <ul className="listClass">
           <li>
-            <b>Entamez</b> a conversation avec des questions ouvertes –{" "}
+            <b>Entamez</b> la conversation avec des questions ouvertes –{" "}
             <a
               className="orangeUnderline"
               href="https://tools.cep.health/wp-content/uploads/2020/12/CEP_COVID-Framework_2020.12.18.pdf?utm_source=link.cep.health&utm_medium=urlshortener&utm_campaign=covid-vaccine"
@@ -48,7 +48,7 @@ const AboutEaaseStepsFR = props => {
           </li>
           <li>
             <b>Affirmez</b> et écoutez d’un air pensif – Affirmez la façon de voir les choses de votre patient, et
-            positionnez-vous en tant qu’allié. Vous pouvez faire ce qui suit pour y parvenir :
+            positionnez-vous en tant qu’allié. Vous pouvez faire ce qui suit pour y parvenir&nbsp;:
             <ul className="pt-3 listClass">
               <li>
                 mettez l’accent sur l’autonomie de votre patient — peu importe la décision qu’il prendra, il sera une
@@ -60,7 +60,7 @@ const AboutEaaseStepsFR = props => {
               </li>
               <li>
                 mettez l’accent sur l’importance des décisions individuelles pour protéger la communauté dans son
-                ensemble; Emphasizing the importance of individual decisions for protection of the broader community.
+                ensemble;
               </li>
               <li>
                 faites en sorte que votre patient sache que vous l’écoutez bien. Le patient qui se sent mal écouté ou
@@ -117,7 +117,7 @@ const AboutEaaseStepsFR = props => {
           </div>
           <br />
           <div>
-            Sachez que les conversations EAASE sont parfois des conversations difficiles. N’oubliez pas : l’objectif
+            Sachez que les conversations EAASE sont parfois des conversations difficiles. N’oubliez pas&nbsp;: l’objectif
             consiste à aider votre patient à prendre une décision et non pas à le convaincre de se faire vacciner.
           </div>
         </div>

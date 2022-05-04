@@ -21,7 +21,7 @@ const MotivInterviewBI = () => {
       target="_blank"
     >
       {/* {lang === "EN" ? <></> : <></>} */}
-      {lang === "EN" ? <>Motivational Interviewing</> : <>d’entrevue motivationnelle</>}{" "}
+      {lang === "EN" ? <>Motivational Interviewing</> : <>l’entrevue motivationnelle</>}{" "}
       <FiExternalLink className="inline" size={18} />
     </a>
   );

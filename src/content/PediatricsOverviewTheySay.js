@@ -7,6 +7,8 @@ import { useMyContext } from "../context/Context";
 const PediatricsOverviewTheySay = () => {
   const { pedQuoteGroupInitOpen } = useMyContext();
 
+  pedQuoteGroupInitOpen.current = Array(20).fill(false);
+
   const theySayListItems = [
     "Long-term effects / Long-term data",
     "Developmental/puberty concerns",
@@ -26,7 +28,7 @@ const PediatricsOverviewTheySay = () => {
               <button
                 className="orangeUnderline text-left"
                 onClick={() => {
-                  pedQuoteGroupInitOpen.current[index]=true;
+                  pedQuoteGroupInitOpen.current[index] = true;
                   navigate("/details/advice/pediatrics");
                 }}
               >

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Collapsible from "react-collapsible";
 
 import { IoIosArrowForward } from "react-icons/io";
@@ -20,17 +20,28 @@ const QuoteGroupsPediatrics = props => {
   log2 && console.log("QuoteGroupsPediatrics.js panelContent=", panelContent);
   log && console.log("QuoteGroupsPediatrics.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
 
-  const TriggerComponent = currGroup => {
+  const numPanels = panelContent.length + 1;
+  const [openGroupNums, setOpenGroupNums] = useState(Array(numPanels).fill(false));
+
+  const TriggerComponent = (currGroup, groupNum) => {
     if (!currGroup.subheading) return <></>;
     return (
       <>
         <button
           className="w-full flex justify-between  triggerClassName"
-          onClick={() => pedQuoteGroupInitOpen.current.fill(false)}
+          onClick={() => {
+            pedQuoteGroupInitOpen.current.fill(false);
+            setOpenGroupNums(() => {
+              let tempGroupNums = Array(numPanels).fill(false);
+              tempGroupNums[groupNum] = !openGroupNums[groupNum];
+              return tempGroupNums;
+            });
+          }}
         >
           <div className="text-left subHeadingFont">{currGroup.subheading}</div>
-          <IoIosArrowDown className="CustomTriggerCSS hideWhenClosed" size={arrowSize} />
-          <IoIosArrowForward className="CustomTriggerCSS hideWhenOpen" size={arrowSize} />
+          {/* <IoIosArrowDown className="CustomTriggerCSS hideWhenClosed" size={arrowSize} />
+          <IoIosArrowForward className="CustomTriggerCSS hideWhenOpen" size={arrowSize} /> */}
+          {groupNum === openGroupNums ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
         </button>
         <DivLine className="mt-2 mb-8 mxs:mb-10 sm:mb-12" />
       </>
@@ -41,10 +52,10 @@ const QuoteGroupsPediatrics = props => {
     return (
       <Collapsible
         key={groupNum}
-        trigger={TriggerComponent(currGroup)}
+        trigger={TriggerComponent(currGroup, groupNum)}
         triggerClassName="CustomTriggerCSS--closed"
         triggerOpenedClassName="CustomTriggerCSS--open"
-        open={pedQuoteGroupInitOpen.current[groupNum]}
+        open={pedQuoteGroupInitOpen.current[groupNum] || openGroupNums[groupNum]}
         transitionTime={winWidth < 510 ? 200 : 400}
       >
         <div className="flex flex-col">

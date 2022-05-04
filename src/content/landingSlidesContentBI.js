@@ -69,7 +69,7 @@ const landingSlidesContentBI = [
         </span>
       ),
     },
-    // d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des ressources et des conseils pour surmonter ces hésitations. Un aperçu de ce guide se trouve à la page « À propos du guide ».
+    // d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des ressources et des conseils pour surmonter ces hésitations. Un aperçu de ce guide se trouve à la page «&nbsp;À propos du guide&nbsp;».
 
     introPart2: {
       EN: (
@@ -97,7 +97,7 @@ const landingSlidesContentBI = [
             <Link to="/about" className="px-1.5  underline cursor-pointer">
               about
             </Link>
-            <span>page.&nbsp;</span>
+            <span>page.</span>
           </span>
         </>
       ),
@@ -106,7 +106,7 @@ const landingSlidesContentBI = [
           <span className="subtitleFont font-light italic">
             Un aperçu de ce guide se trouve à la page
             <Link to="/about" className="px-1.5  underline cursor-pointer">
-              « À propos du guide ».
+              «&nbsp;À propos du guide&nbsp;».
             </Link>
           </span>
         </>

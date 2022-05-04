@@ -8,7 +8,7 @@ import QuoteGroups from "./QuoteGroups";
 
 const AdviceQuoteGroupList = props => {
   const { advice } = props;
-  const { log, log2 } = useMyContext();
+  const { locn, log, log2 } = useMyContext();
 
   const tabMatch = useMatch("/details/advice/:tabSelec");
   const tabSelected = String(tabMatch.tabSelec);
@@ -24,13 +24,21 @@ const AdviceQuoteGroupList = props => {
   log2 && console.log("AdviceQuoteGroupList.js runs. JSX string length of askAdvice=", firstAskAdviceStringLength);
   log2 && console.log("AdviceQuoteGroupList.js runs. askAdviceExists=", askAdviceExists);
 
+  const path = typeof window !== "undefined" ? window.location.pathname : "";
+  const onReprodAdviceAsk =
+    path.match(/\/details\/advice\/ask/i) && locn.branch === 0 && locn.topic === 0 && locn.subtopic === 3
+      ? true
+      : false;
+  log && console.log("AdviceQuoteGroupList.js onReprodAdviceAsk=", onReprodAdviceAsk);
+
+
   return (
     <>
       <div className="mt-10 axs:mt-14">
         <EaaseTopHeading tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
       </div>
 
-      <QuoteGroups panelContent={contentArray} />
+      <QuoteGroups panelContent={contentArray} initOpen={true} />
       
       {tabSelected === "ask" && (
         <>
@@ -40,7 +48,7 @@ const AdviceQuoteGroupList = props => {
           <span className="ml-1.5 emphFont">Share</span>
           <span className="ml-1.5 plusFont">information</span>
           <div className="h-5 axs:h-6 mxs:h-8" />
-          <QuoteGroups panelContent={advice.share.content} />
+          <QuoteGroups panelContent={advice.share.content} initOpen={!onReprodAdviceAsk} />
         </>
       )}
     </>

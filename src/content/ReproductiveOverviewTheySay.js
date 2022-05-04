@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-// import { Link } from "gatsby";
-// import { navigate } from "gatsby";
-
-// import { useMyContext } from "../context/Context";
 
 const ReproductiveOverviewTheySay = () => {
-  // const { pedQuoteGroupInitOpen } = useMyContext();
-
   const [showFullTheySay, setShowFullTheySay] = useState(false);
 
   const theySayListItems1 = [

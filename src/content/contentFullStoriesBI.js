@@ -106,10 +106,10 @@ export const contentFullStoriesBI = {
           oubliettes. La science des vaccins est assez délicate parce qu’il faut qu’un assez grand nombre de personnes
           soit atteint d’[une maladie] pour pouvoir étudier [les vaccins].
           <br /> <br />
-          Donc quand la COVID s’est déclarée, les scientifiques ont sorti l’ARNm des oubliettes et se sont dit : «
-          Voyons voir ce qu’on peut faire avec ça ». Au lieu de poser une question, de faire de la recherche, puis de
-          poser une autre question et de faire encore de la recherche, nous avons réussi à poser plusieurs questions en
-          même temps parce que tellement d’argent a été investi dans cette recherche.
+          Donc quand la COVID s’est déclarée, les scientifiques ont sorti l’ARNm des oubliettes et se sont dit&nbsp;:
+          «&nbsp;Voyons voir ce qu’on peut faire avec ça&nbsp;». Au lieu de poser une question, de faire de la
+          recherche, puis de poser une autre question et de faire encore de la recherche, nous avons réussi à poser
+          plusieurs questions en même temps parce que tellement d’argent a été investi dans cette recherche.
           <br />
           <br />
           Et à mesure que l’information était prête, elle pouvait être évaluée par des organismes comme Santé Canada et
@@ -208,8 +208,8 @@ export const contentFullStoriesBI = {
           votre corps. C’est comme ça que la maladie commence à vous attaquer. Donc, au lieu que la COVID vous attaque
           et prenne le dessus sur vos cellules, l’ARNm de votre vaccin pénètre dans votre cellule, puis lui dit de créer
           cette même petite forme à piquants. Il ne crée pas le virus, seulement la petite forme à piquants. Et là,
-          votre corps se dit : « Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais », et il se met à
-          développer une réponse immunitaire.
+          votre corps se dit&nbsp;: «&nbsp;Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais&nbsp;», et il se
+          met à développer une réponse immunitaire.
           <br />
           <br />
           Votre système immunitaire attaque cette petite protéine à piquants et apprend à la repousser. Pendant que

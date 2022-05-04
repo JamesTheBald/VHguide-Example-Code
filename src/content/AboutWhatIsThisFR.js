@@ -21,7 +21,7 @@ const AboutWhatIsThisFR = props => {
           Le Guide sur l’hésitation vaccinale (Guide HV) présente des conseils, des scénarios et des ressources aidant à
           orienter les conversations au sujet des vaccins contre la COVID-19 avec les patients qui hésitent à se faire
           vacciner. L’information contenue dans le guide a été préparée en collaboration avec des cliniciens des quatre
-          coins du Canada. Vous trouverez ce qui suit dans le guide :
+          coins du Canada. Vous trouverez ce qui suit dans le guide&nbsp;:
         </div>
 
         <ul className="listClass relative md:static">
@@ -64,7 +64,7 @@ const AboutWhatIsThisFR = props => {
         </ul>
         <div className="pb-3">
           Vous trouverez dans le guide des scénarios et des ressources pratiques provenant d’autres cliniciens, adaptés
-          à chaque « type » d’hésitation vaccinale.
+          à chaque «&nbsp;type&nbsp;» d’hésitation vaccinale.
         </div>
         <div className="pb-3">
           <span>

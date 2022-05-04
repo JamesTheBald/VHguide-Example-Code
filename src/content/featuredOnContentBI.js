@@ -1,3 +1,4 @@
+import React from "react";
 // Note: if you update the URLs below, be sure to also update them in "./featuredOnLogoInfo.js"
 
 const featuredOnContentBI = {
@@ -10,7 +11,12 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Improving Conversations with COVID-19 Vaccine Hesitant Patients: Action research to support family physicians” (Preprint)",
-        FR: "“Improving Conversations with COVID-19 Vaccine Hesitant Patients: Action research to support family physicians” (Preprint)",
+        FR: (
+          <>
+            «&nbsp;Improving Conversations with COVID-19 Vaccine Hesitant Patients: Action research to support family
+            physicians&nbsp;» (Preprint)
+          </>
+        ),
       },
       date: {
         EN: "Myles Leslie, Raad Fadaak, Nicole Pinto - October 1, 2021",
@@ -28,7 +34,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Better conversations about COVID-19 vaccines: A guide for primary care clinicians”",
-        FR: "« Better conversations about COVID-19 vaccines: A guide for primary care clinicians »",
+        FR: <>«&nbsp;Better conversations about COVID-19 vaccines: A guide for primary care clinicians&nbsp;»</>,
       },
       date: {
         EN: "Nicole Pinto, Raad Fadaak, and Myles Leslie - August 23, 2021",
@@ -48,7 +54,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“University of Calgary researchers develop COVID-19 Vaccine Hesitancy Guide for family physicians”",
-        FR: "« University of Calgary researchers develop COVID-19 Vaccine Hesitancy Guide for family physicians »",
+        FR: <>«&nbsp;University of Calgary researchers develop COVID-19 Vaccine Hesitancy Guide for family physicians&nbsp;»</>,
       },
       date: {
         EN: "17 August, 2021",
@@ -66,7 +72,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“U of C vaccine hesitancy guide gives doctors facts for struggling patients”",
-        FR: "« U of C vaccine hesitancy guide gives doctors facts for struggling patients »",
+        FR: <>«&nbsp;U of C vaccine hesitancy guide gives doctors facts for struggling patients&nbsp;»</>,
       },
       date: {
         EN: "July 21, 2021",
@@ -84,7 +90,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Alberta primary-care physicians get vaccine hesitancy roadmap”",
-        FR: "« Alberta primary-care physicians get vaccine hesitancy roadmap »",
+        FR: <>«&nbsp;Alberta primary-care physicians get vaccine hesitancy roadmap&nbsp;»</>,
       },
       date: {
         EN: "July 22, 2021",
@@ -102,7 +108,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Alberta, B.C., Saskatchewan ask Ottawa to send one-shot J&J COVID-19 vaccines to boost uptake”",
-        FR: "« Alberta, B.C., Saskatchewan ask Ottawa to send one-shot J&J COVID-19 vaccines to boost uptake »",
+        FR: <>«&nbsp;Alberta, B.C., Saskatchewan ask Ottawa to send one-shot J&J COVID-19 vaccines to boost uptake&nbsp;»</>,
       },
       date: {
         EN: "September 30, 2021",
@@ -120,7 +126,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Vaccine Hesitancy”",
-        FR: "« Vaccine Hesitancy »",
+        FR: <>«&nbsp;Vaccine Hesitancy&nbsp;»</>,
       },
       date: {
         EN: "August 13, 2021",
@@ -138,7 +144,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Vaccine Hesitancy Guide”",
-        FR: "« Vaccine Hesitancy Guide »",
+        FR: <>«&nbsp;Vaccine Hesitancy Guide&nbsp;»</>,
       },
       date: {
         EN: "July 27, 2021",
@@ -174,7 +180,7 @@ const featuredOnContentBI = {
       },
       title: {
         EN: "“Better Conversations for Vaccine Hesitancy”",
-        FR: "« Better Conversations for Vaccine Hesitancy »",
+        FR: <>«&nbsp;Better Conversations for Vaccine Hesitancy&nbsp;»</>,
       },
       date: {
         EN: "May 26, 2021",
