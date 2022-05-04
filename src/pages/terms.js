@@ -21,7 +21,7 @@ const Terms = () => {
   return (
     <TermsPanels
       pageTitle={{
-        EN: "Terms &amp; Notices",
+        EN: "Terms & Notices",
         FR: "Modalités et avis",
       }}
     />
