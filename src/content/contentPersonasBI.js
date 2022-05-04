@@ -69,7 +69,7 @@ export const contentPersonas = {
             <>&ldquo;You can still get COVID even if you are vaccinated. Why bother getting the vaccine then?&rdquo;</>,
             <>&ldquo;I already had COVID, why would I need to get a vaccine?&rdquo;</>,
           ],
-          FR: [<></>, <></>, <></>, <></>, <></>],
+          FR: [<></>, <></>, <></>, <></>, <></>, <></>, <></>, <></>],
         },
       },
 
@@ -678,7 +678,7 @@ export const contentPersonas = {
         },
 
         {
-          subheading: "'I already had COVID, why do I need to get the vaccine?'",
+          subheading: {EN: "'I already had COVID, why do I need to get the vaccine?'", FR: ""},
           quotes: [
             {
               text: {
