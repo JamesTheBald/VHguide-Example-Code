@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMyContext } from "../context/Context";
 
-const ReproductiveOverviewTheySay = () => {
+const ReproductiveOverviewTheySayBI = () => {
   const { lang } = useMyContext();
 
   const [showFullTheySay, setShowFullTheySay] = useState(false);
@@ -89,4 +89,4 @@ const ReproductiveOverviewTheySay = () => {
   );
 };
 
-export default ReproductiveOverviewTheySay;
+export default ReproductiveOverviewTheySayBI;

@@ -50,7 +50,7 @@ export const pediatricsPearlsBI = [
           },
 
           {
-            text: <>You have to acknowledge the emotional side, and the parental need to protect.</>,
+            text: { EN: <>You have to acknowledge the emotional side, and the parental need to protect.</>, FR: <></> },
             featured: true,
             image: "",
           },

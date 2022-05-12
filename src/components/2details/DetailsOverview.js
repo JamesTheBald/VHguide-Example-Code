@@ -4,9 +4,9 @@ import { Link } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonasBI } from "../../content/contentPersonasBI";
-import PediatricsOverviewTheySay from "../../content/PediatricsOverviewTheySay";
-import ReproductiveOverviewTheySay from "../../content/ReproductiveOverviewTheySay";
-import MedExemptOverviewTheySay from "./MedExemptOverviewTheySay";
+import PediatricsOverviewTheySayBI from "../../content/PediatricsOverviewTheySayBI";
+import ReproductiveOverviewTheySayBI from "../../content/ReproductiveOverviewTheySayBI";
+import MedExemptOverviewTheySayBI from "./MedExemptOverviewTheySayBI";
 
 const DetailsOverview = props => {
   const { contentID } = props;
@@ -58,11 +58,11 @@ const DetailsOverview = props => {
               ))}
             </>
           ) : contentID === "Pediatrics" ? (
-            <PediatricsOverviewTheySay />
+            <PediatricsOverviewTheySayBI />
           ) : contentID === "ReproductiveEffects" ? (
-            <ReproductiveOverviewTheySay />
+            <ReproductiveOverviewTheySayBI />
           ) : contentID === "MedicalExemptions" ? (
-            <MedExemptOverviewTheySay />
+            <MedExemptOverviewTheySayBI />
           ) : (
             <>
               <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say..." : ""}</h3>

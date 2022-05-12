@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 
-const PediatricsOverviewTheySay = () => {
+const PediatricsOverviewTheySayBI = () => {
   const { pedQuoteGroupInitOpen, lang } = useMyContext();
 
   pedQuoteGroupInitOpen.current = Array(20).fill(false);
@@ -42,4 +42,4 @@ const PediatricsOverviewTheySay = () => {
   );
 };
 
-export default PediatricsOverviewTheySay;
+export default PediatricsOverviewTheySayBI;

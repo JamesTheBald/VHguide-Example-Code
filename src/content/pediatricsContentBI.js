@@ -1,6 +1,6 @@
 import React from "react";
 
-export const pediatricsContent = [
+export const pediatricsContentBI = [
   //LOWERING THE TEMPERATURE
 
   // Path names for doctor icon images:

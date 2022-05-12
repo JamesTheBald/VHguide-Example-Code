@@ -1,6 +1,6 @@
 import React from "react";
 
-export const pearlsContent = [
+export const pearlsContentBI = [
   //LOWERING THE TEMPERATURE
 
   // Path names for doctor icon images:

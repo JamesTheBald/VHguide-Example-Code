@@ -9,12 +9,12 @@ import { useMyContext } from "../../context/Context";
 import DivLine from "../4general/DivLine";
 import { medExemptOverviewTheySayContentBI } from "../../content/medExemptOverviewTheySayContentBI";
 
-const MedExemptOverviewTheySay = () => {
+const MedExemptOverviewTheySayBI = () => {
   const { winWidth, setLocn, lang, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   // mEOTSSO stands for 'medical Exemptions Overview TheySay Section (is) Open'
-  const [mEOTSSO, setMEOTSSO] = useState(Array(10).fill(false)); // assume there'll never be >10 Medical Exemptiosn TheySay quotes
+  const [mEOTSSO, setMEOTSSO] = useState(Array(10).fill(false));   // assume there'll never be >10 Medical Exemptiosn TheySay quotes
 
   const arrowSize = winWidth < 720 ? 20 : 22;
 
@@ -68,7 +68,7 @@ const MedExemptOverviewTheySay = () => {
   // Main Content Container
   return (
     <>
-      <h3 className="mb-5 listTitleClass">{lang === "EN" ? "What patients are saying:" : ""}</h3>
+      <h3 className="mb-5 listTitleClass">{lang === "EN" ? "What patients are saying:" : "" }</h3>
 
       {medExemptOverviewTheySayContentBI.map((currSection, sectionNum) => {
         const theySayQuotes = currSection.quotes[lang];
@@ -99,4 +99,4 @@ const MedExemptOverviewTheySay = () => {
   );
 };
 
-export default MedExemptOverviewTheySay;
+export default MedExemptOverviewTheySayBI;

@@ -9236,7 +9236,7 @@ export const contentPersonasBI = {
 
     // Dummy content for Pediatrics.
     advice: {
-      // (The next sections are replaced by pediatricsPanels.js, which draws content from /2details/pediatricsContent.js)
+      // (The next sections are replaced by pediatricsPanels.js, which draws content from /content/pediatricsContentBI.js)
       eaase: {
         engage: { text: "", image: "" },
         affirm: { text: "", image: "" },

@@ -9,7 +9,7 @@ import TabBarOAR from "../../components/2details/TabBarOAR";
 
 const DetailsLayout = props => {
   const { hesTypeName, related } = props;
-  const { locn, branch, setLocn, fixedBackdrop, log, log2 } = useMyContext();
+  const { locn, branch, setLocn, fixedBackdrop, lang, log, log2 } = useMyContext();
   false && console.log(log, log2);
 
   // The following four functions were in a separate file (getRelatedDetails.js) but this didn't work once branch became a state var (for French version), to be passed in from Context. branch was either undefined in the separate file, or null if passed in as a param.
@@ -102,7 +102,7 @@ const DetailsLayout = props => {
           {/* Items below main panel */}
           {locn.branch === 3 ? (
             <div className="mt-2 md:mt-4  mb-8  sm:text-right  italic smThenBaseFont text-blue-pale">
-              *The pediatric hesitancy type is evolving and will receive regular updates.
+              {lang === "EN" ? <>*The pediatric hesitancy type is evolving and will receive regular updates.</> : <></>}
             </div>
           ) : related[0] ? (
             <>

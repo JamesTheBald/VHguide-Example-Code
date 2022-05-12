@@ -12,9 +12,10 @@ const QuoteGroupsPediatrics = props => {
   const { panelContent } = props;
   const { winWidth, setFullStoryID, pedQuoteGroupInitOpen, lang, log, log2 } = useMyContext();
 
-  const columnNum = winWidth < 950 ? 1 : winWidth < 1600 ? 2 : 3;
-  const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
-  const columnStyle = { columnCount: columnNum, columnGap: winWidth < 1600 ? 50 : 60, breakInside: "avoid" };
+  const w = winWidth;
+  const columnNum = w < 950 ? 1 : w < 1600 ? 2 : 3;
+  const arrowSize = w < 510 ? 20 : w < 720 ? 25 : 35;
+  const columnStyle = { columnCount: columnNum, columnGap: w < 1600 ? 50 : 60, breakInside: "avoid" };
 
   false && console.log(log, log2);
   log2 && console.log("QuoteGroupsPediatrics.js panelContent=", panelContent);
@@ -49,7 +50,6 @@ const QuoteGroupsPediatrics = props => {
   };
 
   return panelContent.map((currGroup, groupNum) => {
-
     log && console.log("QuoteGroupsPediatrics.js panelContent.map -> currGroup=", currGroup);
     return (
       <Collapsible
@@ -58,8 +58,7 @@ const QuoteGroupsPediatrics = props => {
         triggerClassName="CustomTriggerCSS--closed"
         triggerOpenedClassName="CustomTriggerCSS--open"
         open={pedQuoteGroupInitOpen.current[groupNum] || openGroupNums[groupNum]}
-        transitionTime={400}
-        // transitionTime={winWidth < 510 ? 200 : 400}
+        transitionTime={w < 510 ? 200 : 300}
       >
         <div className="flex flex-col">
           <div className="subSubHeadingFont mb-6 md:mb-8">What Clinicians Are Hearing</div>
