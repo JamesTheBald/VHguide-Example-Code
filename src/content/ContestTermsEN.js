@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 
 import { useMyContext } from "../context/Context";
 
-const ContestTerms = props => {
+const ContestTermsEN = props => {
   const { showContestTerms, setShowContestTerms } = props;
   const { setFixedBackdrop, log } = useMyContext();
 
@@ -128,4 +128,4 @@ const ContestTerms = props => {
   );
 };
 
-export default ContestTerms;
+export default ContestTermsEN;

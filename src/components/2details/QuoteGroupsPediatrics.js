@@ -10,7 +10,7 @@ import QuoteBoxes from "./QuoteBoxes";
 
 const QuoteGroupsPediatrics = props => {
   const { panelContent } = props;
-  const { winWidth, setFullStoryID, pedQuoteGroupInitOpen, log, log2 } = useMyContext();
+  const { winWidth, setFullStoryID, pedQuoteGroupInitOpen, lang, log, log2 } = useMyContext();
 
   const columnNum = winWidth < 950 ? 1 : winWidth < 1600 ? 2 : 3;
   const arrowSize = winWidth < 510 ? 20 : winWidth < 720 ? 25 : 35;
@@ -24,7 +24,7 @@ const QuoteGroupsPediatrics = props => {
   const [openGroupNums, setOpenGroupNums] = useState(Array(numPanels).fill(false));
 
   const TriggerComponent = (currGroup, groupNum) => {
-    if (!currGroup.subheading) return <></>;
+    if (!currGroup.subheading[lang]) return <></>;
     return (
       <>
         <button
@@ -38,7 +38,7 @@ const QuoteGroupsPediatrics = props => {
             });
           }}
         >
-          <div className="text-left subHeadingFont">{currGroup.subheading}</div>
+          <div className="text-left subHeadingFont">{currGroup.subheading[lang]}</div>
           {/* <IoIosArrowDown className="CustomTriggerCSS hideWhenClosed" size={arrowSize} />
           <IoIosArrowForward className="CustomTriggerCSS hideWhenOpen" size={arrowSize} /> */}
           {groupNum === openGroupNums ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
@@ -49,6 +49,8 @@ const QuoteGroupsPediatrics = props => {
   };
 
   return panelContent.map((currGroup, groupNum) => {
+
+    log && console.log("QuoteGroupsPediatrics.js panelContent.map -> currGroup=", currGroup);
     return (
       <Collapsible
         key={groupNum}
@@ -56,7 +58,8 @@ const QuoteGroupsPediatrics = props => {
         triggerClassName="CustomTriggerCSS--closed"
         triggerOpenedClassName="CustomTriggerCSS--open"
         open={pedQuoteGroupInitOpen.current[groupNum] || openGroupNums[groupNum]}
-        transitionTime={winWidth < 510 ? 200 : 400}
+        transitionTime={400}
+        // transitionTime={winWidth < 510 ? 200 : 400}
       >
         <div className="flex flex-col">
           <div className="subSubHeadingFont mb-6 md:mb-8">What Clinicians Are Hearing</div>

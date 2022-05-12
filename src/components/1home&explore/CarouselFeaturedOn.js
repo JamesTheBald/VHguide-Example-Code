@@ -4,11 +4,11 @@ import Carousel from "react-elastic-carousel";
 
 import CarouselDotsNone from "./CarouselDotsNone";
 import MyArrow from "./CarouselArrows";
-import featuredOnLogoInfo from "../../content/featuredOnLogoInfo";
+import featuredOnLogoInfoBI from "../../content/featuredOnLogoInfoBI";
 import { useMyContext } from "../../context/Context";
 
 const CarouselFeaturedOn = () => {
-  const { winWidth, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   const [itemsPerPage, setItemsPerPage] = useState(1);
@@ -20,7 +20,7 @@ const CarouselFeaturedOn = () => {
     setItemsPerPage(
       winWidth < 600 ? 1 : winWidth < 900 ? 2 : winWidth < 1366 ? 3 : winWidth < 1920 ? 4 : winWidth < 2500 ? 5 : 6
     );
-    setNumPages(featuredOnLogoInfo.length - itemsPerPage);
+    setNumPages(featuredOnLogoInfoBI.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
 
   const timeOnEach = 1800;
@@ -29,7 +29,7 @@ const CarouselFeaturedOn = () => {
   let timer;
 
   log2 && console.log("CarouselFeaturedOn.js featuredOnLogos=", featuredOnLogos);
-  log2 && console.log("CarouselFeaturedOn.js featuredOnLogoInfo=", featuredOnLogoInfo);
+  log2 && console.log("CarouselFeaturedOn.js featuredOnLogoInfo=", featuredOnLogoInfoBI);
 
   return (
     <>
@@ -56,7 +56,7 @@ const CarouselFeaturedOn = () => {
           }
         }}
       >
-        {featuredOnLogoInfo.map((currOutlet, indx) => {
+        {featuredOnLogoInfoBI.map((currOutlet, indx) => {
           log2 && console.log("CarouselFeaturedOn.js .map currLogo.URL=", currOutlet.URL);
 
           return (
@@ -75,7 +75,7 @@ const CarouselFeaturedOn = () => {
                       {currLogo.node.childImageSharp !== null ? (
                         <GatsbyImage
                           image={currLogo.node.childImageSharp.gatsbyImageData}
-                          alt={currOutlet.alt}
+                          alt={currOutlet.alt[lang]}
                           style={{
                             width: currOutlet.scalePercent + "%",
                             transform: `translate(${currOutlet.offsetPercent}%, 0%)`,
@@ -84,7 +84,7 @@ const CarouselFeaturedOn = () => {
                       ) : (
                         <img
                           src={currLogo.node.publicURL}
-                          alt={currOutlet.alt}
+                          alt={currOutlet.alt[lang]}
                           style={{
                             width: currOutlet.scalePercent + "%",
                             transform: `translate(${currOutlet.offsetPercent}%, 0%)`,

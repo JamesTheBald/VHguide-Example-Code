@@ -37,14 +37,14 @@ const Details = props => {
   const [related, setRelated] = useState();
 
   log && console.log("");
-  log2 && console.log("details.js runs. locn=", locn);
+  log && console.log("details.js runs. locn=", locn);
   log2 && console.log("details.js runs. fullStoryID=", fullStoryID);
   log && console.log("details.js contentID=", contentID);
 
   useEffect(() => {
     const { contIDTemp, hesTypeTemp } = getContIDandName(locn, branch, setContentID, setHesTypeName, log, log2);
-    log2 && console.log("details.js contentIDTemp=", contIDTemp);
-    log2 && console.log("details.js hesTypeTemp=", hesTypeTemp);
+    log && console.log("details.js useEffect() contentIDTemp=", contIDTemp);
+    log && console.log("details.js useEffect() hesTypeTemp=", hesTypeTemp);
     setAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
   }, [locn, contentID, branch, log, log2]);
 

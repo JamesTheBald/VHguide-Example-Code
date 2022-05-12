@@ -6,13 +6,13 @@ import Pill from "./Pill";
 import TopicTree from "./TopicTree";
 
 const PillsAndTrees = () => {
-  const { winWidth, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } = useMyContext();
+  const { winWidth, branch, locn, setLocn, noneSelected, setNoneSelected, lang, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
   log2 && console.log("PillsAndTrees.js noneSelected=", noneSelected);
 
-  const sideBySideWidth = 1320;
-  const allStretchWidth = 1600;
+  const sideBySideWidth = lang === "EN" ? 1366 : 1366; // would be 1320 for ENglish, but this is close enough to French, better to keep same
+  const allStretchWidth = 1800;
 
   const onClickExplore = clickedBranchNum => {
     setNoneSelected(branch[clickedBranchNum].linkToDetails ? true : false);

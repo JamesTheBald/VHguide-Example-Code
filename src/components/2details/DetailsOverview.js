@@ -3,17 +3,17 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
-import { contentPersonas } from "../../content/contentPersonas";
+import { contentPersonasBI } from "../../content/contentPersonasBI";
 import PediatricsOverviewTheySay from "../../content/PediatricsOverviewTheySay";
 import ReproductiveOverviewTheySay from "../../content/ReproductiveOverviewTheySay";
 import MedExemptOverviewTheySay from "./MedExemptOverviewTheySay";
 
 const DetailsOverview = props => {
   const { contentID } = props;
-  const { winWidth, queryData, locn, log, log2 } = useMyContext();
+  const { winWidth, queryData, locn, lang, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
-  let overview = contentPersonas[contentID]?.overview;
+  let overview = contentPersonasBI[contentID]?.overview;
   const theySay = overview?.theySay;
   const thingsToConsider = overview?.thingsToConsider;
   const takeHome = overview?.takeHome;
@@ -21,10 +21,10 @@ const DetailsOverview = props => {
 
   log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
   log && console.log("DetailsOverview.js locn.branch=", locn.branch);
-  log2 && console.log("DetailsOverview.js theySay=", theySay);
-  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
-  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
-  log2 && console.log("DetailsOverview.js pplIcons=", pplIcons);
+  log && console.log("DetailsOverview.js theySay=", theySay);
+  log && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log && console.log("DetailsOverview.js takeHome=", takeHome);
+  log && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
   const blockClass = "flex flex-col w-full  baseFont text-blue-black";
   const imageClass = "w-12 mxs:w-15 sm:w-20";
@@ -48,8 +48,10 @@ const DetailsOverview = props => {
           })}
           {contentID === "Undifferentiated" ? (
             <>
-              <h3 className="listTitleClass mb-2">Considerations for vaccine hesitant patients:</h3>
-              {theySay.content.map((currItem, index) => (
+              <h3 className="listTitleClass mb-2">
+                {lang === "EN" ? "Considerations for vaccine hesitant patients:" : ""}
+              </h3>
+              {theySay.content[lang].map((currItem, index) => (
                 <div key={index} className="pb-4">
                   {currItem}
                 </div>
@@ -63,9 +65,9 @@ const DetailsOverview = props => {
             <MedExemptOverviewTheySay />
           ) : (
             <>
-              <h3 className="listTitleClass">People with this hesitancy type say...</h3>
+              <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say..." : ""}</h3>
               <ul className="listClass2">
-                {theySay.content.map((currItem, index) => (
+                {theySay.content[lang].map((currItem, index) => (
                   <li key={index} className="pb-4">
                     {currItem}
                   </li>
@@ -85,13 +87,13 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">Things to consider...</h3>
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Things to consider..." : ""}</h3>
 
           {contentID === "Pediatrics" ? (
-            <>{thingsToConsider.content}</>
+            <>{thingsToConsider.content[lang]}</>
           ) : (
             <ul className="listClass2">
-              {thingsToConsider.content.map((currItem, index) => (
+              {thingsToConsider.content[lang].map((currItem, index) => (
                 <li key={index} className="pb-4">
                   {currItem}
                 </li>
@@ -110,8 +112,8 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">Take Home:</h3>
-          {takeHome.content.map((currItem, index) => (
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home:" : ""}</h3>
+          {takeHome.content[lang].map((currItem, index) => (
             <div key={index} className="mt-2  baseFont text-blue-black">
               {currItem}
             </div>
@@ -124,7 +126,13 @@ const DetailsOverview = props => {
           contentID === "Pediatrics" ? "lg:-mt-8" : "lg:mt-4"
         }  smFont orangeLink linkInvPill`}
       >
-        {winWidth < 450 ? <>How to start the conversation</> : <>Read advice on how to start the conversation</>}
+        {lang === "EN"
+          ? winWidth < 450
+            ? "How to start the conversation"
+            : "Read advice on how to start the conversation"
+          : winWidth < 450
+          ? ""
+          : ""}
       </Link>
     </div>
   );

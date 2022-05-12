@@ -1,8 +1,8 @@
 import React from "react";
 
-import { pediatricsPearls } from "../../content/pediatricsPearls";
-import { reproductivePearls } from "../../content/reproductivePearls";
-import { medExemptPearls } from "../../content/medExemptPearls";
+import { pediatricsPearlsBI } from "../../content/pediatricsPearlsBI";
+import { reproductivePearlsBI } from "../../content/reproductivePearlsBI";
+import { medExemptPearlsBI } from "../../content/medExemptPearlsBI";
 import { useMyContext } from "../../context/Context";
 import QuoteGroups from "../2details/QuoteGroups";
 
@@ -13,10 +13,10 @@ const DetailsPearls = () => {
 
   const detailsPearlsContent =
     locn.branch === 3
-      ? pediatricsPearls
+      ? pediatricsPearlsBI
       : locn.branch === 0 && locn.subtopic === 3
-      ? reproductivePearls
-      : medExemptPearls;
+      ? reproductivePearlsBI
+      : medExemptPearlsBI;
 
   log && console.log("DetailsPearls.js detailsPearlsContent=", detailsPearlsContent);
 

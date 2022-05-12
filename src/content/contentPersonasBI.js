@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
 
-export const contentPersonas = {
+export const contentPersonasBI = {
   // Put copy content inside <> and </> instead of double quotes (except for LinkText).
   // Be sure to put double quotes around all URL addresses. e.g. href="https://www.cdc.gov/"
 
@@ -92,748 +92,752 @@ export const contentPersonas = {
           FR: [<></>, <></>, <></>],
         },
       },
-    },
-    // (ScienceConcerns)
-    takeHome: {
-      image: "Notepad_small.svg",
-      content: {
-        EN: [
-          <>
-            As a trusted health care professional you can reassure your patient that the science behind the vaccines is
-            sound. Your recommendation carries significant weight when a patient is considering whether to get a
-            vaccine.
-          </>,
-          <>
-            <strong>Ask permission to share</strong> the science before jumping into the facts!
-          </>,
-        ],
-        FR: [<></>, <></>],
+
+      // (ScienceConcerns)
+      takeHome: {
+        image: "Notepad_small.svg",
+        content: {
+          EN: [
+            <>
+              As a trusted health care professional you can reassure your patient that the science behind the vaccines
+              is sound. Your recommendation carries significant weight when a patient is considering whether to get a
+              vaccine.
+            </>,
+            <>
+              <strong>Ask permission to share</strong> the science before jumping into the facts!
+            </>,
+          ],
+          FR: [<></>, <></>],
+        },
       },
     },
-  },
+    // },
 
-  // (ScienceConcerns)
+    // (ScienceConcerns)
 
-  advice: {
-    eaase: {
+    advice: {
+      eaase: {
+        engage: {
+          text: {
+            EN: (
+              <>
+                It sounds like you&apos;ve been doing a lot of research and reading about the vaccines. I have been,
+                too. Can we compare our notes and what we&apos;ve learned about them?
+              </>
+            ),
+            FR: <></>,
+          },
+          image: "doctorMuslimWomanYellowHeadCover.svg",
+        },
+        affirm: {
+          text: {
+            EN: (
+              <>
+                I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the
+                answers for you today. But let&apos;s see what we can get through now, together.
+              </>
+            ),
+            FR: <></>,
+          },
+          image: "doctorWhiteManBlackHair.svg",
+        },
+        ask: {
+          text: {
+            EN: (
+              <>
+                So it&apos;s not about any corners being cut. It&apos;s really more that we dropped everything else and
+                poured money and resources into it. When it comes to regulatory waiting times, we didn&apos;t remove the
+                red tape, we just got some sharper scissors to cut through the red tape and protect people as fast as
+                possible.
+              </>
+            ),
+            FR: <></>,
+          },
+          image: "doctorBlackWoman.svg",
+        },
+        evoke: {
+          text: {
+            EN: <>What if no vaccine had ever been created for COVID? What do the next five years look like for you?</>,
+            FR: <></>,
+          },
+          image: "doctorWhiteManGoatee.svg",
+        },
+      },
+      // (ScienceConcerns)
       engage: {
-        text: {
-          EN: (
-            <>
-              It sounds like you&apos;ve been doing a lot of research and reading about the vaccines. I have been, too.
-              Can we compare our notes and what we&apos;ve learned about them?
-            </>
-          ),
-          FR: <></>,
-        },
+        content: [
+          // Each item (between { }) should be either a subheading or a list of quotes, but not both.
+          {
+            subheading: { EN: "", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      It sounds like you&apos;ve been doing a lot of research and reading about the vaccines. I have
+                      been, too. Can we compare our notes and what we&apos;ve learned about them?
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorBlackManBeard.svg",
+                fullStoryID: "",
+              },
 
-        image: "doctorMuslimWomanYellowHeadCover.svg",
+              {
+                text: {
+                  EN: (
+                    <>
+                      Let me ask you, is it something specific with the vaccines or how they were made, or is it just
+                      more vaccination overall?
+                    </>
+                  ),
+
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      What sorts of things worry you about the vaccines? What information would you need to feel safe or
+                      confident in getting one?
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+        ],
       },
+      // (ScienceConcerns)
       affirm: {
-        text: {
-          EN: (
-            <>
-              I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all the
-              answers for you today. But let&apos;s see what we can get through now, together.
-            </>
-          ),
-          FR: <></>,
-        },
-        image: "doctorWhiteManBlackHair.svg",
+        content: [
+          {
+            subheading: { EN: "", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all
+                      the answers for you today. But let&apos;s see what we can get through now, together.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The media coverage of this has been really challenging to follow, eh? It seems like every day
+                      there&apos;s something new and it contradicts what was said before, which can make it even more
+                      difficult to tease out what&apos;s the truth.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorMuslimWomanYellowHeadCover.svg",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The information changes quickly, and I can see how, for folks who aren&apos;t as familiar with
+                      vaccines and haven&apos;t studied diseases, it looks like we&apos;re flipping and flopping all
+                      over the place and we don&apos;t know what the heck we&apos;re doing. But I think my job in
+                      working with you as a patient is to think about what&apos;s in the best interest of you and your
+                      health.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+        ],
       },
+      // (ScienceConcerns)
       ask: {
-        text: {
-          EN: (
-            <>
-              So it&apos;s not about any corners being cut. It&apos;s really more that we dropped everything else and
-              poured money and resources into it. When it comes to regulatory waiting times, we didn&apos;t remove the
-              red tape, we just got some sharper scissors to cut through the red tape and protect people as fast as
-              possible.
-            </>
-          ),
-          FR: <></>,
-        },
-        image: "doctorBlackWoman.svg",
+        content: [
+          {
+            subheading: { EN: "", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      Can I share with you what I know about the vaccines and a little more about the science behind
+                      them?
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      Would you be interested in hearing from me about how the vaccines work? You&apos;ve known me for a
+                      fair amount of time. You may not know how much of a science nerd I am, but do you have a moment? I
+                      can outline how we got here so quickly? Because, it&apos;s actually a cool science story.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+        ],
       },
+      // (ScienceConcerns)
+      share: {
+        content: [
+          {
+            subheading: { EN: "", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      So do you remember Ebola and another virus called MERS, M-E-R-S? We love our acronyms in science!
+                      But, researchers were actually looking at mRNA technology to fight those two conditions but they
+                      disappeared too quickly, so the mRNA technology was put on the shelf...
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "redTapemRNA",
+                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                // <div className="flex">
+                //   <div className="pr-2 ">Read the full story</div>
+                //   {/* <BsArrowRight size="24" /> */}
+                // </div>
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      Can I personally vouch for every CEO of every big pharma company? Can I personally vouch that no
+                      one in history has ever done something shady to try and make money? Absolutely I can&apos;t. And
+                      yet in my work, every single day I see people&apos;s whose lives are changed for the better, as a
+                      result of drug therapies developed by pharmaceutical companies. I see people who live longer,
+                      fuller lives because we&apos;re able to use the medications that are out there. And the vaccine is
+                      one of those drugs – longer, fuller lives for all of us. Better lives. Lives without masks and
+                      distancing and restrictions.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      You don&apos;t trust the pharmaceutical industry. And that&apos;s fair because let&apos;s face it
+                      – the number one threat to evidence-based practice right now is deliberate distortion of entire
+                      literatures by the pharmaceutical industry. So I don&apos;t blame you for not trusting Big Pharma.
+                      I don&apos;t either. On the other hand, the doubt about vaccines was created by a guy who
+                      basically committed a fraud for his own profit [source]. So you got to be alert for scams on both
+                      sides of this.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      So I guess [hearing about serious side effects from the vaccine] is like seeing a news story about
+                      an airplane crash. Even though it happens incredibly rarely, the media make sure you know about
+                      it. It&apos;s been like this with the vaccine ever since it was approved. Everybody&apos;s very
+                      interested, rightfully so, in how things go, every little twist and turn. It all gets reported on.
+                      But all the reporting on very rare events, combined with us being cooped up, all that makes people
+                      anxious. So I&apos;m wondering whether maybe if we could find a reliable source from one of the
+                      regulatory agencies or something to talk about safety. It might be worthwhile thinking about that.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The mRNA technology has been developed over many years. I know people freak out and they go,{" "}
+                      <i>
+                        &lsquo;Oh, my gosh. This is less than a year and we got a vaccine. That&apos;s not
+                        possible.&rsquo;
+                      </i>{" "}
+                      But, this sort of mRNA approach has been in development for decades. So, we were able to sort of
+                      piggyback onto earlier work.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      Around the world, hundreds of millions of people have had these vaccines. In terms of the
+                      development, they went faster than they&apos;ve ever gone before to go from &lsquo;
+                      <i>what&apos;s the virus?</i>
+                      &rsquo; to, &lsquo;<i>how do we build a vaccine for it?</i>&rsquo;. That&apos;s true. But they
+                      actually didn&apos;t skip any steps. I looked into it. The reason they were able to go faster, is
+                      that they actually invested more than they&apos;ve ever invested before. And they work together in
+                      ways that they&apos;ve never done before.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      Regular vaccines work by showing your immune system one kind of spike and it learns to make
+                      antibodies against THAT kind of spike. But if you show it a spike that&apos;s a little different,
+                      your immune system has to think harder about it. But the mRNA uses a different approach to
+                      vaccines. It doesnapos;t show your immune system one view of the virus and say &apos;good
+                      luck.&apos; It gives your immune system the tools to be able to figure out that what it&apos;s
+                      seeing is LIKE the old one, but not exactly the old one. Instead of being handed a hammer that
+                      hammers down a single kind of nail, the mRNA vaccines give you more of a tool belt. Your immune
+                      system can say, &apos;Okay well it&apos;s like that old one, but it&apos;s not the same.&apos; It
+                      helps your immune system attack the newer stuff too.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      It&apos;s true, a vaccinated person might still get COVID. Unlikely, but you might. What I&apos;m
+                      seeing - and what the data is saying – is that people who get the vaccine, and who then get a
+                      breakthrough case, they don&apos;t suffer nearly as badly. Not nearly as sick. Not in the
+                      hospital, and not recovering with long COVID.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The vaccine does keep most people from getting COVID, but some people get it anyway. On the up
+                      side, those people that get it anyway, they&apos;re not as sick for as long. They don&apos;t end
+                      up in the hospital and on ventilators nearly as much. And you know, they&apos;re not getting long
+                      COVID either. They&apos;re not the people who get &apos;better&apos; and then six months later,
+                      still can&apos;t climb a flight of stairs.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      What we&apos;re seeing with the unvaccinated people is that they&apos;re filling the ICUs. They
+                      make the vast majority of the people in ICU but they&apos;re a real minority when it comes to the
+                      whole population. That tells you something, right? Yeah you can still get it, but you&apos;re not
+                      going to end up being wrecked from it.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      I&apos;ve been working in this job for 20 years and we make lots of recommendations today that
+                      differ from when I started &mdash; because we have a commitment to lifelong learning and adapting
+                      our advice based on new research.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The tricky part with COVID is we don&apos;t have time to sit back and do more research before we
+                      make our next recommendation &mdash; we have to act fast. But the new research and guidance is
+                      always grounded in our longstanding knowledge about vaccines and immunity in general &mdash; so
+                      it&apos;s not just pulled out of a hat.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      We&apos;re learning as we go forward, and we&apos;re trying to be as safe as we can. So,
+                      we&apos;ve learned from some very rare events. 1 in 100,000 events. So, one person out of 100,000
+                      gets a blood clot. It&apos;s very small numbers but we&apos;re taking it really seriously. By
+                      comparison your chances, as a Canadian, of dying in a traffic accident – which is a chance we take
+                      every time we get in a car – that chance is 1 in 20,000. I hope that putting it in that context
+                      helps.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorWhiteManBlackHair.svg",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      I&apos;ve had my vaccine...[
+                      <i>Share your experience of the vaccination process and/or side effects here.</i>] I really
+                      didn&apos;t have any reservations about having the vaccine personally. I was actually quite
+                      excited to get it! I know that the science sounds new and modern when they talk about this mRNA
+                      vaccine and how it works in a different way compared to the previous way that vaccines have been
+                      made, but it has given us some real advantages.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      If we have increased volumes of people getting sick, the other thing to think about is: do we have
+                      enough space for them in hospital? We could wait to have enough people get sick and die, and
+                      enough people get sick and not die, so that we build up the &lsquo;herd immunity&rsquo; that
+                      people talk about. But for me, the vaccines get us to the same end point faster, sort of like a
+                      FastPass at Disneyland. A FastPass without all the hospitalizations and deaths.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      We want to keep people out of the ICU. Those ICU teams are really struggling. There&apos;s nurses
+                      and respiratory therapists who&apos;ve worked through all their weekends and evenings.
+                      They&apos;ve had their vacations canceled. They&apos;re just bloody exhausted.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The vaccines will help ease pressure off hospitals so people can have surgeries again. At the
+                      shallow end of the pool you&apos;ve got folks who need hip replacements and they&apos;ve been
+                      waiting for a year. A year. In pain. Waiting to be able to walk again. And that&apos;s the shallow
+                      end. At the deep end of the pool you&apos;ve got people whose kids need surgery, or who roll up
+                      with a heart attack or a burst appendix, and things are going slow or not happening. Heart attack
+                      and slow. Appendix and slow. These aren&apos;t words that go together well. At least not for the
+                      patient. If we get enough people vaccinated that we can knock down enough hospitalizations, that
+                      lady can get her hip replacement and the ambulance can get the heart attack straight into surgery.
+                      You&apos;re right, we&apos;re not gonna make COVID go away, but if we can just knock it down
+                      enough that can have huge impacts for others.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorBlackWoman.svg",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      If a large portion of the population don&apos;t get the vaccine, this could mean working from
+                      home, our kids in and out of school, no social activities, et cetera, for the next several years.
+                      Which feels kind of gross to me.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorBlackManBeard.svg",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      The vaccine developers were able to move quickly because the government gave them a lot of money.
+                      Usually these trials take a long time because they are very expensive but for COVID, that
+                      financial risk was taken away and that&apos;s a big part of what shortened the time.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+
+          {
+            subheading: { EN: "'I already had COVID, why do I need to get the vaccine?'", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      My daughter just learned to drive &mdash; I taught her to begin with. She picked up all my bad and
+                      lazy habits. Then I had a professional teach her and she&apos;s a great driver now, and I pay less
+                      on insurance for her too. A vaccine after the infection is like that professional
+                      &lsquo;tutoring&rsquo; to help your body be really good at fighting off COVID.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      We do have some emerging real-world data on patients who have been sick with COVID and we are
+                      specifically looking at whether these folks might be able to have just a single dose of vaccine to
+                      &lsquo;boost&rsquo; their immunity to better levels in the longer term.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorWhiteWomanBrownHairGlasses.svg",
+                fullStoryID: "",
+              },
+              // (ScienceConcerns)
+              {
+                text: {
+                  EN: (
+                    <>
+                      In comparing the antibodies on patients post-vaccine versus post illness we see a better immunity
+                      from the vaccine &mdash; likely because the body is not so busy with being sick in the vaccine
+                      group, so it can focus its attention on building more antibodies instead of trying not to die!
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      I know, you think your immune system should be able to do it alone. If what you are saying is true
+                      then you would chose to not wash your hands after using the bathroom, or wash your produce before
+                      eating it, or not refrigerate your eggs because your immune system just needs to &lsquo;figure
+                      out&rsquo; how to fight off E.coli and salmonella. But I bet you wash your hands and use your
+                      fridge, right? When Dr. Semmelweis first proposed in the 1900s that washing hands would reduce
+                      infections everyone thought he was crazy. But I bet you are glad I wash my hands in the office
+                      when I see you now!
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+        ],
+      },
+      // (ScienceConcerns)
       evoke: {
-        text: {
-          EN: <>What if no vaccine had ever been created for COVID? What do the next five years look like for you?</>,
-          FR: <></>,
-        },
-        image: "doctorWhiteManGoatee.svg",
+        content: [
+          {
+            subheading: { EN: "", FR: "" },
+            quotes: [
+              {
+                text: {
+                  EN: (
+                    <>
+                      What if no vaccine had ever been created for COVID? What would the next five years look like for
+                      you?
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: true,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      I hear you wondering, &lsquo;<i>oh, it&apos;s still kind of new. It&apos;s experimental.</i>
+                      &rsquo; We have a lot of data today, but we&apos;ll have even more as the weeks go by and more
+                      people get the vaccine. And I promise I will dig it up for you. And I&apos;ll tell you what I know
+                      and what I don&apos;t know at that point. And maybe we&apos;ll make a decision together then.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "doctorWhiteManBlackHair.svg",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      When was the last time you paid such close attention to scientific research related to health
+                      recommendations? I would argue we are all just a little freaked out right now and so this can
+                      sometimes be an outlet for that fear.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+
+              {
+                text: {
+                  EN: (
+                    <>
+                      I see you as a leader within your community, and if I can help you understand where I&apos;m
+                      coming from with this, I honestly feel like with the right information, we can help many, many
+                      people. If you can partner with me, I&apos;m more than willing to have a look through your
+                      literature, and we can figure out where some of the information on that is coming from, and
+                      hopefully help you to understand, and make the best choice for you, and your family, and your
+                      community.
+                    </>
+                  ),
+                  FR: <></>,
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+            ],
+          },
+        ],
       },
-    },
-    // (ScienceConcerns)
-    engage: {
-      content: [
-        // Each item (between { }) should be either a subheading or a list of quotes, but not both.
-        {
-          subheading: { EN: "", FR: "" },
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    It sounds like you&apos;ve been doing a lot of research and reading about the vaccines. I have been,
-                    too. Can we compare our notes and what we&apos;ve learned about them?
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorBlackManBeard.svg",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    Let me ask you, is it something specific with the vaccines or how they were made, or is it just more
-                    vaccination overall?
-                  </>
-                ),
-
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    What sorts of things worry you about the vaccines? What information would you need to feel safe or
-                    confident in getting one?
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-      ],
-    },
-    // (ScienceConcerns)
-    affirm: {
-      content: [
-        {
-          subheading: { EN: "", FR: "" },
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    I appreciate where you&apos;re coming from, and I don&apos;t know if I&apos;ll be able to get all
-                    the answers for you today. But let&apos;s see what we can get through now, together.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The media coverage of this has been really challenging to follow, eh? It seems like every day
-                    there&apos;s something new and it contradicts what was said before, which can make it even more
-                    difficult to tease out what&apos;s the truth.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorMuslimWomanYellowHeadCover.svg",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The information changes quickly, and I can see how, for folks who aren&apos;t as familiar with
-                    vaccines and haven&apos;t studied diseases, it looks like we&apos;re flipping and flopping all over
-                    the place and we don&apos;t know what the heck we&apos;re doing. But I think my job in working with
-                    you as a patient is to think about what&apos;s in the best interest of you and your health.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-      ],
-    },
-    // (ScienceConcerns)
-    ask: {
-      content: [
-        {
-          subheading: { EN: "", FR: "" },
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    Can I share with you what I know about the vaccines and a little more about the science behind them?
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    Would you be interested in hearing from me about how the vaccines work? You&apos;ve known me for a
-                    fair amount of time. You may not know how much of a science nerd I am, but do you have a moment? I
-                    can outline how we got here so quickly? Because, it&apos;s actually a cool science story.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-      ],
-    },
-    // (ScienceConcerns)
-    share: {
-      content: [
-        {
-          subheading: { EN: "", FR: "" },
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    So do you remember Ebola and another virus called MERS, M-E-R-S? We love our acronyms in science!
-                    But, researchers were actually looking at mRNA technology to fight those two conditions but they
-                    disappeared too quickly, so the mRNA technology was put on the shelf...
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "redTapemRNA",
-              fullStoryLinkText: { EN: "Read the full story", FR: "" },
-              // <div className="flex">
-              //   <div className="pr-2 ">Read the full story</div>
-              //   {/* <BsArrowRight size="24" /> */}
-              // </div>
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    Can I personally vouch for every CEO of every big pharma company? Can I personally vouch that no one
-                    in history has ever done something shady to try and make money? Absolutely I can&apos;t. And yet in
-                    my work, every single day I see people&apos;s whose lives are changed for the better, as a result of
-                    drug therapies developed by pharmaceutical companies. I see people who live longer, fuller lives
-                    because we&apos;re able to use the medications that are out there. And the vaccine is one of those
-                    drugs – longer, fuller lives for all of us. Better lives. Lives without masks and distancing and
-                    restrictions.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    You don&apos;t trust the pharmaceutical industry. And that&apos;s fair because let&apos;s face it –
-                    the number one threat to evidence-based practice right now is deliberate distortion of entire
-                    literatures by the pharmaceutical industry. So I don&apos;t blame you for not trusting Big Pharma. I
-                    don&apos;t either. On the other hand, the doubt about vaccines was created by a guy who basically
-                    committed a fraud for his own profit [source]. So you got to be alert for scams on both sides of
-                    this.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    So I guess [hearing about serious side effects from the vaccine] is like seeing a news story about
-                    an airplane crash. Even though it happens incredibly rarely, the media make sure you know about it.
-                    It&apos;s been like this with the vaccine ever since it was approved. Everybody&apos;s very
-                    interested, rightfully so, in how things go, every little twist and turn. It all gets reported on.
-                    But all the reporting on very rare events, combined with us being cooped up, all that makes people
-                    anxious. So I&apos;m wondering whether maybe if we could find a reliable source from one of the
-                    regulatory agencies or something to talk about safety. It might be worthwhile thinking about that.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorWhiteWomanBrownHairGlasses.svg",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The mRNA technology has been developed over many years. I know people freak out and they go,{" "}
-                    <i>
-                      &lsquo;Oh, my gosh. This is less than a year and we got a vaccine. That&apos;s not
-                      possible.&rsquo;
-                    </i>{" "}
-                    But, this sort of mRNA approach has been in development for decades. So, we were able to sort of
-                    piggyback onto earlier work.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    Around the world, hundreds of millions of people have had these vaccines. In terms of the
-                    development, they went faster than they&apos;ve ever gone before to go from &lsquo;
-                    <i>what&apos;s the virus?</i>
-                    &rsquo; to, &lsquo;<i>how do we build a vaccine for it?</i>&rsquo;. That&apos;s true. But they
-                    actually didn&apos;t skip any steps. I looked into it. The reason they were able to go faster, is
-                    that they actually invested more than they&apos;ve ever invested before. And they work together in
-                    ways that they&apos;ve never done before.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    Regular vaccines work by showing your immune system one kind of spike and it learns to make
-                    antibodies against THAT kind of spike. But if you show it a spike that&apos;s a little different,
-                    your immune system has to think harder about it. But the mRNA uses a different approach to vaccines.
-                    It doesnapos;t show your immune system one view of the virus and say &apos;good luck.&apos; It gives
-                    your immune system the tools to be able to figure out that what it&apos;s seeing is LIKE the old
-                    one, but not exactly the old one. Instead of being handed a hammer that hammers down a single kind
-                    of nail, the mRNA vaccines give you more of a tool belt. Your immune system can say, &apos;Okay well
-                    it&apos;s like that old one, but it&apos;s not the same.&apos; It helps your immune system attack
-                    the newer stuff too.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    It&apos;s true, a vaccinated person might still get COVID. Unlikely, but you might. What I&apos;m
-                    seeing - and what the data is saying – is that people who get the vaccine, and who then get a
-                    breakthrough case, they don&apos;t suffer nearly as badly. Not nearly as sick. Not in the hospital,
-                    and not recovering with long COVID.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The vaccine does keep most people from getting COVID, but some people get it anyway. On the up side,
-                    those people that get it anyway, they&apos;re not as sick for as long. They don&apos;t end up in the
-                    hospital and on ventilators nearly as much. And you know, they&apos;re not getting long COVID
-                    either. They&apos;re not the people who get &apos;better&apos; and then six months later, still
-                    can&apos;t climb a flight of stairs.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    What we&apos;re seeing with the unvaccinated people is that they&apos;re filling the ICUs. They make
-                    the vast majority of the people in ICU but they&apos;re a real minority when it comes to the whole
-                    population. That tells you something, right? Yeah you can still get it, but you&apos;re not going to
-                    end up being wrecked from it.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    I&apos;ve been working in this job for 20 years and we make lots of recommendations today that
-                    differ from when I started &mdash; because we have a commitment to lifelong learning and adapting
-                    our advice based on new research.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The tricky part with COVID is we don&apos;t have time to sit back and do more research before we
-                    make our next recommendation &mdash; we have to act fast. But the new research and guidance is
-                    always grounded in our longstanding knowledge about vaccines and immunity in general &mdash; so
-                    it&apos;s not just pulled out of a hat.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    We&apos;re learning as we go forward, and we&apos;re trying to be as safe as we can. So, we&apos;ve
-                    learned from some very rare events. 1 in 100,000 events. So, one person out of 100,000 gets a blood
-                    clot. It&apos;s very small numbers but we&apos;re taking it really seriously. By comparison your
-                    chances, as a Canadian, of dying in a traffic accident – which is a chance we take every time we get
-                    in a car – that chance is 1 in 20,000. I hope that putting it in that context helps.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorWhiteManBlackHair.svg",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    I&apos;ve had my vaccine...[
-                    <i>Share your experience of the vaccination process and/or side effects here.</i>] I really
-                    didn&apos;t have any reservations about having the vaccine personally. I was actually quite excited
-                    to get it! I know that the science sounds new and modern when they talk about this mRNA vaccine and
-                    how it works in a different way compared to the previous way that vaccines have been made, but it
-                    has given us some real advantages.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    If we have increased volumes of people getting sick, the other thing to think about is: do we have
-                    enough space for them in hospital? We could wait to have enough people get sick and die, and enough
-                    people get sick and not die, so that we build up the &lsquo;herd immunity&rsquo; that people talk
-                    about. But for me, the vaccines get us to the same end point faster, sort of like a FastPass at
-                    Disneyland. A FastPass without all the hospitalizations and deaths.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    We want to keep people out of the ICU. Those ICU teams are really struggling. There&apos;s nurses
-                    and respiratory therapists who&apos;ve worked through all their weekends and evenings. They&apos;ve
-                    had their vacations canceled. They&apos;re just bloody exhausted.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The vaccines will help ease pressure off hospitals so people can have surgeries again. At the
-                    shallow end of the pool you&apos;ve got folks who need hip replacements and they&apos;ve been
-                    waiting for a year. A year. In pain. Waiting to be able to walk again. And that&apos;s the shallow
-                    end. At the deep end of the pool you&apos;ve got people whose kids need surgery, or who roll up with
-                    a heart attack or a burst appendix, and things are going slow or not happening. Heart attack and
-                    slow. Appendix and slow. These aren&apos;t words that go together well. At least not for the
-                    patient. If we get enough people vaccinated that we can knock down enough hospitalizations, that
-                    lady can get her hip replacement and the ambulance can get the heart attack straight into surgery.
-                    You&apos;re right, we&apos;re not gonna make COVID go away, but if we can just knock it down enough
-                    that can have huge impacts for others.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorBlackWoman.svg",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    If a large portion of the population don&apos;t get the vaccine, this could mean working from home,
-                    our kids in and out of school, no social activities, et cetera, for the next several years. Which
-                    feels kind of gross to me.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorBlackManBeard.svg",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    The vaccine developers were able to move quickly because the government gave them a lot of money.
-                    Usually these trials take a long time because they are very expensive but for COVID, that financial
-                    risk was taken away and that&apos;s a big part of what shortened the time.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-
-        {
-          subheading: "'I already had COVID, why do I need to get the vaccine?'",
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    My daughter just learned to drive &mdash; I taught her to begin with. She picked up all my bad and
-                    lazy habits. Then I had a professional teach her and she&apos;s a great driver now, and I pay less
-                    on insurance for her too. A vaccine after the infection is like that professional
-                    &lsquo;tutoring&rsquo; to help your body be really good at fighting off COVID.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    We do have some emerging real-world data on patients who have been sick with COVID and we are
-                    specifically looking at whether these folks might be able to have just a single dose of vaccine to
-                    &lsquo;boost&rsquo; their immunity to better levels in the longer term.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorWhiteWomanBrownHairGlasses.svg",
-              fullStoryID: "",
-            },
-            // (ScienceConcerns)
-            {
-              text: {
-                EN: (
-                  <>
-                    In comparing the antibodies on patients post-vaccine versus post illness we see a better immunity
-                    from the vaccine &mdash; likely because the body is not so busy with being sick in the vaccine
-                    group, so it can focus its attention on building more antibodies instead of trying not to die!
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    I know, you think your immune system should be able to do it alone. If what you are saying is true
-                    then you would chose to not wash your hands after using the bathroom, or wash your produce before
-                    eating it, or not refrigerate your eggs because your immune system just needs to &lsquo;figure
-                    out&rsquo; how to fight off E.coli and salmonella. But I bet you wash your hands and use your
-                    fridge, right? When Dr. Semmelweis first proposed in the 1900s that washing hands would reduce
-                    infections everyone thought he was crazy. But I bet you are glad I wash my hands in the office when
-                    I see you now!
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-      ],
-    },
-    // (ScienceConcerns)
-    evoke: {
-      content: [
-        {
-          subheading: { EN: "", FR: "" },
-          quotes: [
-            {
-              text: {
-                EN: (
-                  <>
-                    What if no vaccine had ever been created for COVID? What would the next five years look like for
-                    you?
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: true,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    I hear you wondering, &lsquo;<i>oh, it&apos;s still kind of new. It&apos;s experimental.</i>&rsquo;
-                    We have a lot of data today, but we&apos;ll have even more as the weeks go by and more people get
-                    the vaccine. And I promise I will dig it up for you. And I&apos;ll tell you what I know and what I
-                    don&apos;t know at that point. And maybe we&apos;ll make a decision together then.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "doctorWhiteManBlackHair.svg",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    When was the last time you paid such close attention to scientific research related to health
-                    recommendations? I would argue we are all just a little freaked out right now and so this can
-                    sometimes be an outlet for that fear.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-
-            {
-              text: {
-                EN: (
-                  <>
-                    I see you as a leader within your community, and if I can help you understand where I&apos;m coming
-                    from with this, I honestly feel like with the right information, we can help many, many people. If
-                    you can partner with me, I&apos;m more than willing to have a look through your literature, and we
-                    can figure out where some of the information on that is coming from, and hopefully help you to
-                    understand, and make the best choice for you, and your family, and your community.
-                  </>
-                ),
-                FR: <></>,
-              },
-              featured: false,
-              image: "",
-              fullStoryID: "",
-            },
-          ],
-        },
-      ],
     },
     // (ScienceConcerns Resources)
-
     resources: [
       {
         title: { EN: <>CanVax - How do the mRNA vaccines work?</>, FR: <></> },
         linkText: { EN: <>Educational video from CanVax</>, FR: <></> },
-        link: { EN: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work", FR: <></> },
+        link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
         description: {
           EN: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
           FR: <></>,
@@ -843,7 +847,7 @@ export const contentPersonas = {
       {
         title: { EN: <>University of Waterloo - mRNA vaccine myths factsheet</>, FR: <></> },
         linkText: { EN: <>mRNA vaccine myths factsheet for patients</>, FR: <></> },
-        link: { EN: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg", FR: <></> },
+        link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
         description: {
           EN: (
             <>
@@ -858,7 +862,7 @@ export const contentPersonas = {
       {
         title: { EN: <>The Long Road to the mRNA vaccines</>, FR: <></> },
         linkText: { EN: <>CIHR Website and Timeline</>, FR: <></> },
-        link: { EN: "https://cihr-irsc.gc.ca/e/52424.html", FR: <></> },
+        link: "https://cihr-irsc.gc.ca/e/52424.html",
         description: {
           EN: <>CIHR&apos;s overview and timeline of the development of the mRNA vaccines. (April 2021)</>,
           FR: <></>,
@@ -867,7 +871,7 @@ export const contentPersonas = {
       {
         title: { EN: <>Safety of the COVID-19 Vaccines</>, FR: <></> },
         linkText: { EN: <>WHO website and infographics</>, FR: <></> },
-        link: { EN: "https://www.who.int/news-room/feature-stories/detail/safety-of-covid-19-vaccines", FR: <></> },
+        link: "https://www.who.int/news-room/feature-stories/detail/safety-of-covid-19-vaccines",
         description: {
           EN: (
             <>
@@ -881,7 +885,7 @@ export const contentPersonas = {
       {
         title: { EN: <>COVID-19 Vaccine Frequently Asked Questions</>, FR: <></> },
         linkText: { EN: <>ImmunizeBC Vaccine FAQ Page</>, FR: <></> },
-        link: { EN: "https://immunizebc.ca/covid-19-vaccine-frequently-asked-questions", FR: <></> },
+        link: "https://immunizebc.ca/covid-19-vaccine-frequently-asked-questions",
         description: {
           EN: (
             <>
@@ -895,7 +899,7 @@ export const contentPersonas = {
       {
         title: { EN: <>How Pfizer Makes Its Covid-19 Vaccine</>, FR: <></> },
         linkText: { EN: <>New York Times news article</>, FR: <></> },
-        link: { EN: "https://www.nytimes.com/interactive/2021/health/pfizer-coronavirus-vaccine.html", FR: <></> },
+        link: "https://www.nytimes.com/interactive/2021/health/pfizer-coronavirus-vaccine.html",
         description: {
           EN: <>Detailed examination of how Pfizer produces the mRNA vaccines. New York Times article. (April 2021).</>,
           FR: <></>,
@@ -904,10 +908,8 @@ export const contentPersonas = {
       {
         title: { EN: <>Is the COVID-19 vaccine safe?</>, FR: <></> },
         linkText: { EN: <>Johns Hopkins Medicine web resource</>, FR: <></> },
-        link: {
-          EN: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/is-the-covid19-vaccine-safe",
-          FR: <></>,
-        },
+        link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/is-the-covid19-vaccine-safe",
+
         description: {
           EN: (
             <>Hopkins Medicine fact page and resources for exploring the safety of the COVID-19 vaccines. (May 2021).</>
@@ -918,7 +920,7 @@ export const contentPersonas = {
       {
         title: { EN: <>How did you convince others? (Twitter)</>, FR: <></> },
         linkText: { EN: <>Twitter thread</>, FR: <></> },
-        link: { EN: "https://twitter.com/DoYouEvenLif/status/1405265498166595585?s=20", FR: <></> },
+        link: "https://twitter.com/DoYouEvenLif/status/1405265498166595585?s=20",
         description: {
           EN: (
             <>
@@ -1229,7 +1231,8 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "spikyVaccines",
-                fullStoryLinkText: <>Read the full story</>,
+                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+
               },
 
               {
@@ -1296,87 +1299,87 @@ export const contentPersonas = {
           },
         ],
       },
-      // (mRNAConcerns Resources)
-      resources: [
-        {
-          title: {
-            EN: <>CanVax - How do the mRNA vaccines work?</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Educational video from CanVax</>, FR: <></> },
-          link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
-          description: {
-            EN: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>University of Waterloo - mRNA vaccine myths factsheet</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>mRNA vaccine myths factsheet for patients</>, FR: <></> },
-          link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
-          description: {
-            EN: (
-              <>
-                A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA
-                vaccines. (2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>The Long Road to the mRNA vaccines</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>CIHR Website and Timeline</>, FR: <></> },
-          link: "https://cihr-irsc.gc.ca/e/52424.html",
-          description: {
-            EN: <>CIHR&apos;s overview and timeline of the development of the mRNA vaccines. (April 2021)</>,
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>Understanding the mRNA vaccines</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>US CDC website and infographics</>, FR: <></> },
-          link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html",
-          description: {
-            EN: (
-              <>
-                US CDC&apos;s website for patients and public to better understand the mRNA vaccines, including
-                infographics on how they work and links to information on their development. (March 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>How the COVID vaccine can save your life (comic)</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Interactive comic looking at COVID vaccines</>, FR: <></> },
-          link: "https://projects.nj.com/vaccine-comic/",
-          description: {
-            EN: <>A graphic novel/comic strip looking at the mRNA vaccines. (February 2021)</>,
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (mRNAConcerns Resources)
+    resources: [
+      {
+        title: {
+          EN: <>CanVax - How do the mRNA vaccines work?</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Educational video from CanVax</>, FR: <></> },
+        link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
+        description: {
+          EN: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>University of Waterloo - mRNA vaccine myths factsheet</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>mRNA vaccine myths factsheet for patients</>, FR: <></> },
+        link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
+        description: {
+          EN: (
+            <>
+              A short and patient-focused factsheet looking at some common myths and misconceptions about the mRNA
+              vaccines. (2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>The Long Road to the mRNA vaccines</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>CIHR Website and Timeline</>, FR: <></> },
+        link: "https://cihr-irsc.gc.ca/e/52424.html",
+        description: {
+          EN: <>CIHR&apos;s overview and timeline of the development of the mRNA vaccines. (April 2021)</>,
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>Understanding the mRNA vaccines</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>US CDC website and infographics</>, FR: <></> },
+        link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html",
+        description: {
+          EN: (
+            <>
+              US CDC&apos;s website for patients and public to better understand the mRNA vaccines, including
+              infographics on how they work and links to information on their development. (March 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>How the COVID vaccine can save your life (comic)</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Interactive comic looking at COVID vaccines</>, FR: <></> },
+        link: "https://projects.nj.com/vaccine-comic/",
+        description: {
+          EN: <>A graphic novel/comic strip looking at the mRNA vaccines. (February 2021)</>,
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   MedicallyComplex: {
@@ -1834,134 +1837,132 @@ export const contentPersonas = {
           },
         ],
       },
-      // (MedicallyComplex Resources)
-      resources: [
-        {
-          title: {
-            EN: (
-              <>
-                Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines
-              </>
-            ),
-            FR: <></>,
-          },
-          linkText: { EN: <>Interim Information for Health Care Providers Completing Risk Assessments</>, FR: <></> },
-          link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-counselling-immunocompromised-individuals-mrna.pdf",
-          description: {
-            EN: (
-              <>
-                An informational guide for health professionals on how to discuss the mRNA vaccines with
-                immunocompromised patients. (February 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: (
-              <>
-                Canadian Rheumatology Association&apos;s Recommendation on Covid-19 Vaccination in Persons with
-                Autoimmune Rheumatic Disease
-              </>
-            ),
-            FR: <></>,
-          },
-          linkText: { EN: <>Interim Recommendations for Healthcare Providers from the CRA</>, FR: <></> },
-          link: "https://rheum.ca/wp-content/uploads/2021/05/FINAL-V2-CRA-Recommendation-on-COVID-19-Vaccination_May-2021.pdf",
-          description: {
-            EN: (
-              <>
-                Advisory and recommendations from the CRA on COVID-19 vaccination in persons with autoimmune rheumatic
-                disease (Updated May 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        // (MedicallyComplex Resources)
-        {
-          title: {
-            EN: <>Crohn&apos;s and Colitis Canada: COVID-19 Vaccines and IBD</>,
-
-            FR: <></>,
-          },
-          linkText: {
-            EN: <>Recommendations on the use of COVID-19 vaccines in individuals with IBD/Crohn&apos;s/Colitis</>,
-            FR: <></>,
-          },
-          link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
-          description: {
-            EN: (
-              <>
-                The Crohn&apos;s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and
-                justifications for why the COVID-19 vaccines should be administered to patients with IBD at the earliest
-                available opportunity. (Updated May 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Information for Patients and Families</>, FR: <></> },
-          link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-cancer-treatment-info-pf.pdf",
-          description: {
-            EN: (
-              <>
-                Information on COVID-19 and COVID-19 vaccination for patients undergoing cancer treatments. (Updated
-                April 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Video from the Ontario Hospital Association</>, FR: <></> },
-          link: "https://www.youtube.com/watch?v=eWbaME_F750&list=PL2zzFmCbIz4eE5JUlT2ODFU2KnjCVG7D6",
-          description: {
-            EN: (
-              <>
-                Dr. Zainab Abdurrahman explains the possible allergens that cause rare allergic reactions in some people
-                who receive a COVID-19 vaccine. (March 2021).
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>US CDC website and factsheet</>, FR: <></> },
-          link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/underlying-conditions.html",
-          description: {
-            EN: (
-              <>
-                US CDC overview and examination of COVID-19 vaccine considerations for those with underlying medical
-                conditions. (Updated, June 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (MedicallyComplex Resources)
+    resources: [
+      {
+        title: {
+          EN: (
+            <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>
+          ),
+          FR: <></>,
+        },
+        linkText: { EN: <>Interim Information for Health Care Providers Completing Risk Assessments</>, FR: <></> },
+        link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-counselling-immunocompromised-individuals-mrna.pdf",
+        description: {
+          EN: (
+            <>
+              An informational guide for health professionals on how to discuss the mRNA vaccines with immunocompromised
+              patients. (February 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: (
+            <>
+              Canadian Rheumatology Association&apos;s Recommendation on Covid-19 Vaccination in Persons with Autoimmune
+              Rheumatic Disease
+            </>
+          ),
+          FR: <></>,
+        },
+        linkText: { EN: <>Interim Recommendations for Healthcare Providers from the CRA</>, FR: <></> },
+        link: "https://rheum.ca/wp-content/uploads/2021/05/FINAL-V2-CRA-Recommendation-on-COVID-19-Vaccination_May-2021.pdf",
+        description: {
+          EN: (
+            <>
+              Advisory and recommendations from the CRA on COVID-19 vaccination in persons with autoimmune rheumatic
+              disease (Updated May 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      // (MedicallyComplex Resources)
+      {
+        title: {
+          EN: <>Crohn&apos;s and Colitis Canada: COVID-19 Vaccines and IBD</>,
+
+          FR: <></>,
+        },
+        linkText: {
+          EN: <>Recommendations on the use of COVID-19 vaccines in individuals with IBD/Crohn&apos;s/Colitis</>,
+          FR: <></>,
+        },
+        link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
+        description: {
+          EN: (
+            <>
+              The Crohn&apos;s and Colitis Canada COVID-19 and IBD Task Force present their recommendations and
+              justifications for why the COVID-19 vaccines should be administered to patients with IBD at the earliest
+              available opportunity. (Updated May 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Information for Patients and Families</>, FR: <></> },
+        link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-cancer-treatment-info-pf.pdf",
+        description: {
+          EN: (
+            <>
+              Information on COVID-19 and COVID-19 vaccination for patients undergoing cancer treatments. (Updated April
+              2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Video from the Ontario Hospital Association</>, FR: <></> },
+        link: "https://www.youtube.com/watch?v=eWbaME_F750&list=PL2zzFmCbIz4eE5JUlT2ODFU2KnjCVG7D6",
+        description: {
+          EN: (
+            <>
+              Dr. Zainab Abdurrahman explains the possible allergens that cause rare allergic reactions in some people
+              who receive a COVID-19 vaccine. (March 2021).
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>US CDC website and factsheet</>, FR: <></> },
+        link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/underlying-conditions.html",
+        description: {
+          EN: (
+            <>
+              US CDC overview and examination of COVID-19 vaccine considerations for those with underlying medical
+              conditions. (Updated, June 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   ReproductiveEffects: {
@@ -2278,7 +2279,7 @@ export const contentPersonas = {
       share: {
         content: [
           {
-            subheading: "Safety in Pregnancy, Miscarriage Concerns, & Side Effects",
+            subheading: { EN: "Safety in Pregnancy, Miscarriage Concerns, & Side Effects", FR: "" },
             quotes: [
               {
                 text: {
@@ -2395,7 +2396,7 @@ export const contentPersonas = {
           },
 
           {
-            subheading: "Passive Immunity",
+            subheading: { EN: "Passive Immunity", FR: "" },
             quotes: [
               {
                 text: {
@@ -2474,7 +2475,7 @@ export const contentPersonas = {
           },
           // Reproductive
           {
-            subheading: "High-Risk Population",
+            subheading: { EN: "High-Risk Population", FR: "" },
             quotes: [
               {
                 text: {
@@ -3210,7 +3211,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "sideEffectsStory",
-                fullStoryLinkText: <>Read the full story</>,
+                fullStoryLinkText: { EN: "Read the full story", FR: "" },
               },
               {
                 text: {
@@ -3443,124 +3444,122 @@ export const contentPersonas = {
           },
         ],
       },
-      //SIDEEFFECTS RESOURCES
-      resources: [
-        {
-          title: {
-            EN: <>How to explain side effects without scaring patients</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>General advice to clinicians</>, FR: <></> },
-          link: "https://www.singlecare.com/blog/explain-side-effects/",
-          description: {
-            EN: <>Advice to clinicians on how to discuss side effects with patients. (Feb 2020)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Five Ways to Communicate Risk So That Patients Understand</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>AAFP Article</>, FR: <></> },
-          link: "https://www.aafp.org/fpm/2018/1100/p28.html",
-          description: {
-            EN: (
-              <>
-                Tips on how to communicate risks in understandable, patient-friendly ways. From the American Academy of
-                Family Medicine. (2018)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>FAQ page from ImmunizeBC</>, FR: <></> },
-          link: "https://immunizebc.ca/ask-us/questions/are-there-long-term-side-effects-caused-mrna-covid-19-vaccines-how-do-we-know",
-          description: {
-            EN: (
-              <>
-                ImmunizeBC examines the question of long-term side effects from COVID-19 vaccines. (Updated, June 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Medical advisory from Alberta Health for Medical Professionals</>, FR: <></> },
-          link: "https://www.alberta.ca/assets/documents/health-QA-myocarditis-and-pericarditis-following-covid.pdf",
-          description: {
-            EN: (
-              <>
-                Alberta Health compiled information on myocarditis and pericarditis following COVID vaccination.
-                Targeted for medical professionals. (Updated, July 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Information about side effects and care after COVID-19 vaccination</>, FR: <></> },
-          link: "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=custom.ab_imm_covid19vaccine_ac",
-          description: { EN: <> (Updated, July 2021)</>, FR: <></> },
-        },
-
-        {
-          title: {
-            EN: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>, FR: <></> },
-          link: "https://www.nytimes.com/2021/06/28/health/mixing-pfizer-astrazeneca-results.html",
-          description: {
-            EN: (
-              <>
-                {" "}
-                Media coverage with links to studies showing that mixing vaccine types provides strong immunity. (June
-                2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>MayoClinic - COVID-19: Long-term effects</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>MayoClinic Info on Long-COVID</>, FR: <></> },
-          link: "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-long-term-effects/art-20490351",
-          description: {
-            EN: <>MayoClinic&apos;s infopage on the long-term effects of COVID and long-COVID. (May 2021)</>,
-            FR: <></>,
-          },
-        },
-      ],
     },
+    //SIDEEFFECTS RESOURCES
+    resources: [
+      {
+        title: {
+          EN: <>How to explain side effects without scaring patients</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>General advice to clinicians</>, FR: <></> },
+        link: "https://www.singlecare.com/blog/explain-side-effects/",
+        description: {
+          EN: <>Advice to clinicians on how to discuss side effects with patients. (Feb 2020)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Five Ways to Communicate Risk So That Patients Understand</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>AAFP Article</>, FR: <></> },
+        link: "https://www.aafp.org/fpm/2018/1100/p28.html",
+        description: {
+          EN: (
+            <>
+              Tips on how to communicate risks in understandable, patient-friendly ways. From the American Academy of
+              Family Medicine. (2018)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>FAQ page from ImmunizeBC</>, FR: <></> },
+        link: "https://immunizebc.ca/ask-us/questions/are-there-long-term-side-effects-caused-mrna-covid-19-vaccines-how-do-we-know",
+        description: {
+          EN: (
+            <>ImmunizeBC examines the question of long-term side effects from COVID-19 vaccines. (Updated, June 2021)</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Medical advisory from Alberta Health for Medical Professionals</>, FR: <></> },
+        link: "https://www.alberta.ca/assets/documents/health-QA-myocarditis-and-pericarditis-following-covid.pdf",
+        description: {
+          EN: (
+            <>
+              Alberta Health compiled information on myocarditis and pericarditis following COVID vaccination. Targeted
+              for medical professionals. (Updated, July 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Information about side effects and care after COVID-19 vaccination</>, FR: <></> },
+        link: "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=custom.ab_imm_covid19vaccine_ac",
+        description: { EN: <> (Updated, July 2021)</>, FR: <></> },
+      },
+
+      {
+        title: {
+          EN: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>, FR: <></> },
+        link: "https://www.nytimes.com/2021/06/28/health/mixing-pfizer-astrazeneca-results.html",
+        description: {
+          EN: (
+            <>
+              {" "}
+              Media coverage with links to studies showing that mixing vaccine types provides strong immunity. (June
+              2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>MayoClinic - COVID-19: Long-term effects</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>MayoClinic Info on Long-COVID</>, FR: <></> },
+        link: "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-long-term-effects/art-20490351",
+        description: {
+          EN: <>MayoClinic&apos;s infopage on the long-term effects of COVID and long-COVID. (May 2021)</>,
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   Conspiracies: {
@@ -4246,76 +4245,74 @@ export const contentPersonas = {
           },
         ],
       },
-      // (Conspiracies)
-      resources: [
-        {
-          title: {
-            EN: <>How to take on COVID conspiracy theories</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Financial Times news article</>, FR: <></> },
-          link: "https://www.ft.com/content/6660cb80-8c11-476a-b107-e0193fa975f9",
-          description: {
-            EN: (
-              <>News article examining the spread of misinformation, and some advice on how to counter it. (Feb 2021)</>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Winning Hearts and Minds</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Johns Hopkins University interview</>, FR: <></> },
-          link: "https://hub.jhu.edu/2021/06/30/winning-hearts-and-minds/",
-          description: {
-            EN: (
-              <>
-                Interview with public health expert Jennifer Nuzzo of JHU about vaccine hesitancy conversations. (June
-                2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>To counter conspiracy theories, boost well-being</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Nature journal blog article</>, FR: <></> },
-          link: "https://www.nature.com/articles/d41586-020-03130-6",
-          description: {
-            EN: (
-              <>
-                Expert on countering misinformation looks at various approaches to these conversations. (November 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Six rules of engagement</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>The Conversation news article</>, FR: <></> },
-          link: "https://theconversation.com/ive-been-talking-to-conspiracy-theorists-for-20-years-here-are-my-six-rules-of-engagement-143132",
-          description: {
-            EN: <>Discussion looking at how to engage with misinformation and conspiracies. (July 2020)</>,
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (Conspiracies)
+    resources: [
+      {
+        title: {
+          EN: <>How to take on COVID conspiracy theories</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Financial Times news article</>, FR: <></> },
+        link: "https://www.ft.com/content/6660cb80-8c11-476a-b107-e0193fa975f9",
+        description: {
+          EN: (
+            <>News article examining the spread of misinformation, and some advice on how to counter it. (Feb 2021)</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Winning Hearts and Minds</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Johns Hopkins University interview</>, FR: <></> },
+        link: "https://hub.jhu.edu/2021/06/30/winning-hearts-and-minds/",
+        description: {
+          EN: (
+            <>
+              Interview with public health expert Jennifer Nuzzo of JHU about vaccine hesitancy conversations. (June
+              2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>To counter conspiracy theories, boost well-being</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Nature journal blog article</>, FR: <></> },
+        link: "https://www.nature.com/articles/d41586-020-03130-6",
+        description: {
+          EN: (
+            <>Expert on countering misinformation looks at various approaches to these conversations. (November 2020)</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Six rules of engagement</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>The Conversation news article</>, FR: <></> },
+        link: "https://theconversation.com/ive-been-talking-to-conspiracy-theorists-for-20-years-here-are-my-six-rules-of-engagement-143132",
+        description: {
+          EN: <>Discussion looking at how to engage with misinformation and conspiracies. (July 2020)</>,
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   Naturalist: {
@@ -4845,80 +4842,80 @@ export const contentPersonas = {
           },
         ],
       },
-      // (Naturalist)
-      resources: [
-        {
-          title: {
-            EN: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Link to AANMC statement</>, FR: <></> },
-          link: "https://aanmc.org/featured-articles/aanmc-statement-on-covid-19-vaccination/",
-          description: {
-            EN: <>AANMC issued a strong statement that all community members receive COVID vaccines. (January 2021)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>The COVID Choice</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>NDs for Vaccines article</>, FR: <></> },
-          link: "https://ndsforvaccines.com/the-covid-choice/",
-          description: {
-            EN: (
-              <>
-                Naturopathic doctors discuss the choice to get the COVID vaccine, with various approaches and
-                considerations. (December 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Holistic Vaccine Support</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Blog article from an ND</>, FR: <></> },
-          link: "https://www.drdianaquinn.com/blog/4ltwwd8s9657e93wr37xcx7ma7tj2w",
-          description: {
-            EN: (
-              <>
-                Naturopathic doctor discusses the various considerations for COVID vaccination. Approachable blog post
-                for CAM-oriented patients. (January 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Op-Ed in The Globe and Mail</>, FR: <></> },
-          link: "https://www.theglobeandmail.com/opinion/article-healthy-skepticism-doesnt-necessarily-mean-rejecting-mainstream/",
-          description: {
-            EN: (
-              <>
-                Author and patient committed to natural health explains why they decided to get the COVID vaccine. (July
-                2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (Naturalist)
+    resources: [
+      {
+        title: {
+          EN: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Link to AANMC statement</>, FR: <></> },
+        link: "https://aanmc.org/featured-articles/aanmc-statement-on-covid-19-vaccination/",
+        description: {
+          EN: <>AANMC issued a strong statement that all community members receive COVID vaccines. (January 2021)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>The COVID Choice</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>NDs for Vaccines article</>, FR: <></> },
+        link: "https://ndsforvaccines.com/the-covid-choice/",
+        description: {
+          EN: (
+            <>
+              Naturopathic doctors discuss the choice to get the COVID vaccine, with various approaches and
+              considerations. (December 2020)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Holistic Vaccine Support</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Blog article from an ND</>, FR: <></> },
+        link: "https://www.drdianaquinn.com/blog/4ltwwd8s9657e93wr37xcx7ma7tj2w",
+        description: {
+          EN: (
+            <>
+              Naturopathic doctor discusses the various considerations for COVID vaccination. Approachable blog post for
+              CAM-oriented patients. (January 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Op-Ed in The Globe and Mail</>, FR: <></> },
+        link: "https://www.theglobeandmail.com/opinion/article-healthy-skepticism-doesnt-necessarily-mean-rejecting-mainstream/",
+        description: {
+          EN: (
+            <>
+              Author and patient committed to natural health explains why they decided to get the COVID vaccine. (July
+              2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   PoliticalSkeptic: {
@@ -5306,61 +5303,59 @@ export const contentPersonas = {
           },
         ],
       },
-      // (PoliticalSkeptic)
-      resources: [
-        {
-          title: { EN: <>A Guide to Global COVID-19 Vaccine Efforts</>, FR: <></> },
-          title: { EN: <>Council on Foreign Relations Backgrounder</>, FR: <></> },
-          link: "https://www.cfr.org/backgrounder/guide-global-covid-19-vaccine-efforts",
-          description: {
-            EN: (
-              <>
-                CFR backgrounder looking at the development of the vaccines and who was involved. (Updated, June 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: (
-              <>
-                Organization for Economic Co-operation and Development (OECD): Enhancing public trust in COVID-19
-                vaccination: The role of governments
-              </>
-            ),
-            FR: <></>,
-          },
-          title: { EN: <>OECD Policy Responses to COVID-19</>, FR: <></> },
-          link: "https://www.oecd.org/coronavirus/policy-responses/enhancing-public-trust-in-covid-19-vaccination-the-role-of-governments-eae0ec5a/",
-          description: {
-            EN: (
-              <>
-                OECD overview of the role of governments globally in vaccination programs and efforts, including
-                building trust with the public. (May 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: { EN: <>Focus Group: Vaccine hesitancy conversation</>, FR: <></> },
-          title: { EN: <>YouTube video</>, FR: <></> },
-          link: "https://youtu.be/lSD_dSAFFwU",
-          description: {
-            EN: (
-              <>
-                Focus group discussion with a US-based Republican pollster and vaccine hesitant individuals who changed
-                their mind about the vaccine. (March 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (PoliticalSkeptic)
+    resources: [
+      {
+        title: { EN: <>A Guide to Global COVID-19 Vaccine Efforts</>, FR: <></> },
+        linkText: { EN: <>Council on Foreign Relations Backgrounder</>, FR: <></> },
+        link: "https://www.cfr.org/backgrounder/guide-global-covid-19-vaccine-efforts",
+        description: {
+          EN: (
+            <>CFR backgrounder looking at the development of the vaccines and who was involved. (Updated, June 2021)</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: (
+            <>
+              Organization for Economic Co-operation and Development (OECD): Enhancing public trust in COVID-19
+              vaccination: The role of governments
+            </>
+          ),
+          FR: <></>,
+        },
+        linkText: { EN: <>OECD Policy Responses to COVID-19</>, FR: <></> },
+        link: "https://www.oecd.org/coronavirus/policy-responses/enhancing-public-trust-in-covid-19-vaccination-the-role-of-governments-eae0ec5a/",
+        description: {
+          EN: (
+            <>
+              OECD overview of the role of governments globally in vaccination programs and efforts, including building
+              trust with the public. (May 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: { EN: <>Focus Group: Vaccine hesitancy conversation</>, FR: <></> },
+        linkText: { EN: <>YouTube video</>, FR: <></> },
+        link: "https://youtu.be/lSD_dSAFFwU",
+        description: {
+          EN: (
+            <>
+              Focus group discussion with a US-based Republican pollster and vaccine hesitant individuals who changed
+              their mind about the vaccine. (March 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   Religious: {
@@ -5883,94 +5878,94 @@ export const contentPersonas = {
           },
         ],
       },
-      // (Religious)
-      resources: [
-        {
-          title: {
-            EN: (
-              <>
-                Canadian Conference of Catholic Bishops - Note on Ethical Concerns Related to Currently Approved
-                COVID-19 Vaccines
-              </>
-            ),
-            FR: <></>,
-          },
-          title: { EN: <>CCCB Statement on COVID vaccines</>, FR: <></> },
-          link: "https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf",
-          description: {
-            EN: (
-              <>
-                CCCB issued a statement in support of vaccination and the ethical dimensions of the COVID vaccines, in
-                alignment with the Vatican and the Holy See, in March 2021. This is their statement. (March 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: (
-              <>
-                Congregation For the Doctrine of the Faith - Vatican: Note on the morality of using some anti-Covid-19
-                vaccines
-              </>
-            ),
-
-            FR: <></>,
-          },
-          title: { EN: <>Vatican Statement Supporting COVID-19 Vaccination</>, FR: <></> },
-          link: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html",
-          description: {
-            EN: (
-              <>
-                The Vatican issued a statement in support of COVID vaccines, examining the ethical considerations of
-                their development and the choice to vaccinate. (December 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Editorial Forum with multiple perspectives</>, FR: <></> },
-          link: "https://berkleycenter.georgetown.edu/posts/religion-bioethics-and-covid-19-vaccination",
-          description: {
-            EN: (
-              <>
-                Editorial forum and report addressing faithful engagement with COVID vaccination, and multiple
-                perspectives from multiple faith and health leaders. (February 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>YouTube video - virtual discussion</>, FR: <></> },
-          link: "https://youtu.be/wP-7tvq8P18",
-          description: {
-            EN: (
-              <>
-                Virtual roundtable/webinar to address Muslim community&apos;s questions about the COVID-19 vaccine, per
-                Cleveland Clinic in the US. (March 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (Religious)
+    resources: [
+      {
+        title: {
+          EN: (
+            <>
+              Canadian Conference of Catholic Bishops - Note on Ethical Concerns Related to Currently Approved COVID-19
+              Vaccines
+            </>
+          ),
+          FR: <></>,
+        },
+        linkText: { EN: <>CCCB Statement on COVID vaccines</>, FR: <></> },
+        link: "https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf",
+        description: {
+          EN: (
+            <>
+              CCCB issued a statement in support of vaccination and the ethical dimensions of the COVID vaccines, in
+              alignment with the Vatican and the Holy See, in March 2021. This is their statement. (March 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: (
+            <>
+              Congregation For the Doctrine of the Faith - Vatican: Note on the morality of using some anti-Covid-19
+              vaccines
+            </>
+          ),
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Vatican Statement Supporting COVID-19 Vaccination</>, FR: <></> },
+        link: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html",
+        description: {
+          EN: (
+            <>
+              The Vatican issued a statement in support of COVID vaccines, examining the ethical considerations of their
+              development and the choice to vaccinate. (December 2020)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Editorial Forum with multiple perspectives</>, FR: <></> },
+        link: "https://berkleycenter.georgetown.edu/posts/religion-bioethics-and-covid-19-vaccination",
+        description: {
+          EN: (
+            <>
+              Editorial forum and report addressing faithful engagement with COVID vaccination, and multiple
+              perspectives from multiple faith and health leaders. (February 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>YouTube video - virtual discussion</>, FR: <></> },
+        link: "https://youtu.be/wP-7tvq8P18",
+        description: {
+          EN: (
+            <>
+              Virtual roundtable/webinar to address Muslim community&apos;s questions about the COVID-19 vaccine, per
+              Cleveland Clinic in the US. (March 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   PersonalTrauma: {
@@ -6271,81 +6266,81 @@ export const contentPersonas = {
           },
         ],
       },
-      // Personal Trauma
-
-      resources: [
-        {
-          title: {
-            EN: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Fact sheet (patient-facing language)</>, FR: <></> },
-          link: "https://istss.org/ISTSS_Main/media/Documents/Public-Facing-Fact-Sheet-2.pdf",
-          description: {
-            EN: <>A public fact sheet examining medical trauma and coping advice for patients. (2020)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Breathe (Medical Journal): 2017 article</>, FR: <></> },
-          link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467659/",
-          description: {
-            EN: (
-              <>
-                An article examining challenging situations in doctor–patient interactions, how they might be better
-                managed. (June 2017)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Harvard Business Review Editorial</>, FR: <></> },
-          link: "https://hbr.org/2021/01/to-overcome-vaccine-hesitancy-we-need-a-better-patient-experience",
-          description: {
-            EN: (
-              <>
-                Editorial article looking at considerations surrounding the vaccination experience, both before, during,
-                and after. (January 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>The CARD Tool for Patients</>, FR: <></> },
-          link: "https://www.anxietycanada.com/wp-content/uploads/2020/04/CARD-for-Individuals.pdf",
-          description: {
-            EN: (
-              <>
-                An easy-to-use tool for patients with generalized anxiety – fears of fainting or appearing in public –
-                around the vaccination process that helps them develop specific strategies in four domains. (April 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // Personal Trauma
+
+    resources: [
+      {
+        title: {
+          EN: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Fact sheet (patient-facing language)</>, FR: <></> },
+        link: "https://istss.org/ISTSS_Main/media/Documents/Public-Facing-Fact-Sheet-2.pdf",
+        description: {
+          EN: <>A public fact sheet examining medical trauma and coping advice for patients. (2020)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Breathe (Medical Journal): 2017 article</>, FR: <></> },
+        link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467659/",
+        description: {
+          EN: (
+            <>
+              An article examining challenging situations in doctor–patient interactions, how they might be better
+              managed. (June 2017)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Harvard Business Review Editorial</>, FR: <></> },
+        link: "https://hbr.org/2021/01/to-overcome-vaccine-hesitancy-we-need-a-better-patient-experience",
+        description: {
+          EN: (
+            <>
+              Editorial article looking at considerations surrounding the vaccination experience, both before, during,
+              and after. (January 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>The CARD Tool for Patients</>, FR: <></> },
+        link: "https://www.anxietycanada.com/wp-content/uploads/2020/04/CARD-for-Individuals.pdf",
+        description: {
+          EN: (
+            <>
+              An easy-to-use tool for patients with generalized anxiety – fears of fainting or appearing in public –
+              around the vaccination process that helps them develop specific strategies in four domains. (April 2020)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   GroupTrauma: {
@@ -6874,295 +6869,293 @@ export const contentPersonas = {
           },
         ],
       },
-      // Group Trauma
-
-      resources: [
-        {
-          title: {
-            EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>BC CDC Resources Page</>, FR: <></> },
-          link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
-          description: {
-            EN: (
-              <>
-                BC Centres for Disease Control Indigenous Community Resources offers a wide array of resource materials
-                for providers working with Indigenous communities regarding vaccination.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>, FR: <></> },
-          link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
-          description: {
-            EN: (
-              <>
-                Morning Star Lodge, an Indigenous community-based health research organization, has a wealth of
-                resources available for building vaccine confidence in Indigenous communities. This includes YouTube
-                videos, fact sheets, and more.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        // Group Trauma
-        {
-          title: {
-            EN: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Resources for Indigenous, Métis, and Inuit Communities Page</>, FR: <></> },
-          link: "https://www.womenscollegehospital.ca/research,-education-and-innovation/maadookiing-mshkiki%E2%80%94sharing-medicine",
-          description: {
-            EN: (
-              <>
-                Consolidated resources co-developed by First Nations, Inuit and Métis Healthcare Professionals,
-                Traditional Practitioners and Trusted Community Members (2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: (
-              <>
-                NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
-                changed my mind.
-              </>
-            ),
-
-            FR: <></>,
-          },
-          title: { EN: <>NBCNews Article</>, FR: <></> },
-          link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
-          description: {
-            EN: (
-              <>
-                An editorial looking at a doctor&apos;s personal experience changing her perspective and choice to get
-                vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January
-                2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        // Group Trauma
-        {
-          title: {
-            EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>Resource list from the AMA</>, FR: <></> },
-          link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
-          description: {
-            EN: (
-              <>
-                Collected resource list from the American Medical Association looking at the disproprotionate impacts of
-                COVID-19 on marginalized communities. (Updated, October 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
-
-            FR: <></>,
-          },
-          title: { EN: <>WEF Article</>, FR: <></> },
-          link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
-          description: {
-            EN: (
-              <>
-                An article looking at a history of medical racism and how it may impact vaccine confidence, from the
-                World Economic Forum. (December 2020)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        // Group Trauma
-        {
-          title: {
-            EN: (
-              <>
-                Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis
-                communities
-              </>
-            ),
-
-            FR: <></>,
-          },
-          title: { EN: <>Resources Page</>, FR: <></> },
-          link: "https://www.iphcc.ca/covid-19/",
-          description: {
-            EN: (
-              <>
-                Patient-facing FAQ and concerns list about COVID-19 vaccines, tailored to common Indigenous patient
-                concerns. From IPHCC. (February 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: (
-              <>
-                Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
-                Implementation (Report)
-              </>
-            ),
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Online report here</>, FR: <></> },
-          link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
-          description: {
-            EN: (
-              <>
-                A report looking at providing guidance on communication/engagement strategies and culturally safe
-                practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
-
-      // resources: [
-
-      //   {
-      //     title: { EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
-      //     image: "",
-      //     linkText: { EN:<>BC CDC Resources Page</>,
-      //     link: "https://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
-      //     description: {EN: (
-      //       <>
-      //         BC Centres for Disease Control Indigenous Community Resources offers a wide array of resource materials for providers working with Indigenous communities regarding vaccination.
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
-      //     image: "",
-      //     linkText: { EN:<>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
-      //     link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
-      //     description: {EN: (
-      //       <>
-      //         Morning Star Lodge, an Indigenous community-based health research organization, has a wealth of resources available for building vaccine confidence in Indigenous communities. This includes YouTube videos, fact sheets, and more.
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: (
-      //       <>
-      //         NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
-      //         changed my mind.
-      //       </>
-      //     ),
-      //     image: "",
-      //     linkText: { EN:<>NBCNews Article</>,
-      //     link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
-      //     description: {EN: (
-      //       <>
-      //         An editorial looking at a doctor&apos;s personal experience changing her perspective and choice to get
-      //         vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January 2021)
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
-      //     image: "",
-      //     linkText: { EN:<>Resource list from the AMA</>,
-      //     link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
-      //     description: {EN: (
-      //       <>
-      //         Collected resource list from the American Medical Association looking at the disproprotionate impacts of
-      //         COVID-19 on marginalized communities. (Updated, October 2020)
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
-      //     image: "",
-      //     linkText: { EN:<>WEF Article</>,
-      //     link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
-      //     description: {EN: (
-      //       <>
-      //         An article looking at a history of medical racism and how it may impact vaccine confidence, from the World
-      //         Economic Forum. (December 2020)
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: <>Indigenous Primary Health Care Council: COVID-19 Vaccine – Common Beliefs Explored</>,
-      //     image: "",
-      //     linkText: { EN:<>Appendix (PDF) here</>,
-      //     link: "https://",
-      //     description: {EN: (
-      //       <>
-      //         Patient-facing FAQ and concerns list about COVID-19 vaccines, tailored to common Indigenous patient
-      //         concerns. From IPHCC. (February 2021)
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-
-      //   {
-      //     title: { EN: (
-      //       <>
-      //         Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
-      //         Implementation (Report)
-      //       </>
-      //     ),
-      //     image: "",
-      //     linkText: { EN: <>Online report here</>,
-      //     link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
-      //     description: {EN: (
-      //       <>
-      //         A report looking at providing guidance on communication/engagement strategies and culturally safe
-      //         practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
-      //       </>
-      //     ),
-      //   FR: <></>,
-      // },
-      //   },
-      // ],
     },
+    // Group Trauma
+
+    resources: [
+      {
+        title: {
+          EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>BC CDC Resources Page</>, FR: <></> },
+        link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
+        description: {
+          EN: (
+            <>
+              BC Centres for Disease Control Indigenous Community Resources offers a wide array of resource materials
+              for providers working with Indigenous communities regarding vaccination.
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>, FR: <></> },
+        link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
+        description: {
+          EN: (
+            <>
+              Morning Star Lodge, an Indigenous community-based health research organization, has a wealth of resources
+              available for building vaccine confidence in Indigenous communities. This includes YouTube videos, fact
+              sheets, and more.
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      // Group Trauma
+      {
+        title: {
+          EN: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Resources for Indigenous, Métis, and Inuit Communities Page</>, FR: <></> },
+        link: "https://www.womenscollegehospital.ca/research,-education-and-innovation/maadookiing-mshkiki%E2%80%94sharing-medicine",
+        description: {
+          EN: (
+            <>
+              Consolidated resources co-developed by First Nations, Inuit and Métis Healthcare Professionals,
+              Traditional Practitioners and Trusted Community Members (2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: (
+            <>
+              NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
+              changed my mind.
+            </>
+          ),
+
+          FR: <></>,
+        },
+        linkText: { EN: <>NBCNews Article</>, FR: <></> },
+        link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
+        description: {
+          EN: (
+            <>
+              An editorial looking at a doctor&apos;s personal experience changing her perspective and choice to get
+              vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      // Group Trauma
+      {
+        title: {
+          EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Resource list from the AMA</>, FR: <></> },
+        link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
+        description: {
+          EN: (
+            <>
+              Collected resource list from the American Medical Association looking at the disproprotionate impacts of
+              COVID-19 on marginalized communities. (Updated, October 2020)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>WEF Article</>, FR: <></> },
+        link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
+        description: {
+          EN: (
+            <>
+              An article looking at a history of medical racism and how it may impact vaccine confidence, from the World
+              Economic Forum. (December 2020)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      // Group Trauma
+      {
+        title: {
+          EN: (
+            <>
+              Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis communities
+            </>
+          ),
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Resources Page</>, FR: <></> },
+        link: "https://www.iphcc.ca/covid-19/",
+        description: {
+          EN: (
+            <>
+              Patient-facing FAQ and concerns list about COVID-19 vaccines, tailored to common Indigenous patient
+              concerns. From IPHCC. (February 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: (
+            <>
+              Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
+              Implementation (Report)
+            </>
+          ),
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Online report here</>, FR: <></> },
+        link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
+        description: {
+          EN: (
+            <>
+              A report looking at providing guidance on communication/engagement strategies and culturally safe
+              practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
+
+    // resources: [
+
+    //   {
+    //     title: { EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
+    //     image: "",
+    //     linkText: { EN:<>BC CDC Resources Page</>,
+    //     link: "https://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
+    //     description: {EN: (
+    //       <>
+    //         BC Centres for Disease Control Indigenous Community Resources offers a wide array of resource materials for providers working with Indigenous communities regarding vaccination.
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
+    //     image: "",
+    //     linkText: { EN:<>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
+    //     link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
+    //     description: {EN: (
+    //       <>
+    //         Morning Star Lodge, an Indigenous community-based health research organization, has a wealth of resources available for building vaccine confidence in Indigenous communities. This includes YouTube videos, fact sheets, and more.
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: (
+    //       <>
+    //         NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
+    //         changed my mind.
+    //       </>
+    //     ),
+    //     image: "",
+    //     linkText: { EN:<>NBCNews Article</>,
+    //     link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
+    //     description: {EN: (
+    //       <>
+    //         An editorial looking at a doctor&apos;s personal experience changing her perspective and choice to get
+    //         vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January 2021)
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
+    //     image: "",
+    //     linkText: { EN:<>Resource list from the AMA</>,
+    //     link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
+    //     description: {EN: (
+    //       <>
+    //         Collected resource list from the American Medical Association looking at the disproprotionate impacts of
+    //         COVID-19 on marginalized communities. (Updated, October 2020)
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
+    //     image: "",
+    //     linkText: { EN:<>WEF Article</>,
+    //     link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
+    //     description: {EN: (
+    //       <>
+    //         An article looking at a history of medical racism and how it may impact vaccine confidence, from the World
+    //         Economic Forum. (December 2020)
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: <>Indigenous Primary Health Care Council: COVID-19 Vaccine – Common Beliefs Explored</>,
+    //     image: "",
+    //     linkText: { EN:<>Appendix (PDF) here</>,
+    //     link: "https://",
+    //     description: {EN: (
+    //       <>
+    //         Patient-facing FAQ and concerns list about COVID-19 vaccines, tailored to common Indigenous patient
+    //         concerns. From IPHCC. (February 2021)
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+
+    //   {
+    //     title: { EN: (
+    //       <>
+    //         Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
+    //         Implementation (Report)
+    //       </>
+    //     ),
+    //     image: "",
+    //     linkText: { EN: <>Online report here</>,
+    //     link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
+    //     description: {EN: (
+    //       <>
+    //         A report looking at providing guidance on communication/engagement strategies and culturally safe
+    //         practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
+    //       </>
+    //     ),
+    //   FR: <></>,
+    // },
+    //   },
+    // ],
   },
 
   NeedlePhobia: {
@@ -7616,109 +7609,109 @@ export const contentPersonas = {
           },
         ],
       },
-      // (NeedlePhobia)
-
-      resources: [
-        {
-          title: {
-            EN: <>How patients can overcome needle phobia and get the COVID vaccine</>,
-            FR: <></>,
-          },
-          image: "",
-          // image: "/assets/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
-          linkText: { EN: <>Article from Open Access Government</>, FR: <></> },
-          link: "https://www.openaccessgovernment.org/patients-covid-19-vaccination-needle-phobia/103163/",
-          // Be sure that URLs do NOT include the https://
-          description: {
-            EN: (
-              <>
-                A physician explores what can be done to help patients who refuse the COVID-19 vaccination due to needle
-                phobia. (April 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-          // Open question: Should we add tags to resources, so individual resources are findable in a search?
-          // Or close enough to get them to the resources page?
-        },
-        {
-          title: {
-            EN: <>NHS: Overcoming your needle phobia (fear of needles)</>,
-            FR: <></>,
-          },
-          image: "", // path for screenshot image
-          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkText: { EN: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>, FR: <></> },
-          link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
-          description: {
-            EN: (
-              <>
-                A leaflet from the NHS explaining needle phobia and providing practical advice on how to overcome it.
-                Patient-facing. (2017)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
-            FR: <></>,
-          },
-          image: "", // path for screenshot image
-          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkText: { EN: <>PDF Handout for Providers</>, FR: <></> },
-          link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-orientation.pdf",
-          description: {
-            EN: (
-              <>
-                A PDF summary document for providers on easing pain and distress before, during and after immunization
-                (March 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
-            FR: <></>,
-          },
-          image: "", // path for screenshot image
-          // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-          linkText: { EN: <>PDF Handout for Patients</>, FR: <></> },
-          link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-client-summary.pdf",
-          description: {
-            EN: <>A PDF summary document for patients on how to improve comfort during immunizations (March 2021)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>ImmunizeBC: Managing Needle Fears</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Advice page from ImmunizeBC on needle fears</>, FR: <></> },
-          link: "https://immunizebc.ca/adults-managing-needle-fears",
-          description: {
-            EN: (
-              <>
-                Short advice page from ImmunizeBC on needle phobia and how to manage it for COVID-19 vaccination. (May
-                2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        // To add more resource linsk to this section, copy one of the resource link blocks above, paste it here, and change the content.
-        // Be sure to copy everything from curly brace { to curly brace }, and to separate the resource link blocks with a comma.
-      ],
     },
+    // (NeedlePhobia)
+
+    resources: [
+      {
+        title: {
+          EN: <>How patients can overcome needle phobia and get the COVID vaccine</>,
+          FR: <></>,
+        },
+        image: "",
+        // image: "/assets/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
+        linkText: { EN: <>Article from Open Access Government</>, FR: <></> },
+        link: "https://www.openaccessgovernment.org/patients-covid-19-vaccination-needle-phobia/103163/",
+        // Be sure that URLs do NOT include the https://
+        description: {
+          EN: (
+            <>
+              A physician explores what can be done to help patients who refuse the COVID-19 vaccination due to needle
+              phobia. (April 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+        // Open question: Should we add tags to resources, so individual resources are findable in a search?
+        // Or close enough to get them to the resources page?
+      },
+      {
+        title: {
+          EN: <>NHS: Overcoming your needle phobia (fear of needles)</>,
+          FR: <></>,
+        },
+        image: "", // path for screenshot image
+        // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+        linkText: { EN: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>, FR: <></> },
+        link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
+        description: {
+          EN: (
+            <>
+              A leaflet from the NHS explaining needle phobia and providing practical advice on how to overcome it.
+              Patient-facing. (2017)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
+          FR: <></>,
+        },
+        image: "", // path for screenshot image
+        // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+        linkText: { EN: <>PDF Handout for Providers</>, FR: <></> },
+        link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-orientation.pdf",
+        description: {
+          EN: (
+            <>
+              A PDF summary document for providers on easing pain and distress before, during and after immunization
+              (March 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
+          FR: <></>,
+        },
+        image: "", // path for screenshot image
+        // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
+        linkText: { EN: <>PDF Handout for Patients</>, FR: <></> },
+        link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-client-summary.pdf",
+        description: {
+          EN: <>A PDF summary document for patients on how to improve comfort during immunizations (March 2021)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>ImmunizeBC: Managing Needle Fears</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Advice page from ImmunizeBC on needle fears</>, FR: <></> },
+        link: "https://immunizebc.ca/adults-managing-needle-fears",
+        description: {
+          EN: (
+            <>
+              Short advice page from ImmunizeBC on needle phobia and how to manage it for COVID-19 vaccination. (May
+              2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      // To add more resource linsk to this section, copy one of the resource link blocks above, paste it here, and change the content.
+      // Be sure to copy everything from curly brace { to curly brace }, and to separate the resource link blocks with a comma.
+    ],
   },
 
   Unconcerned: {
@@ -8182,67 +8175,67 @@ export const contentPersonas = {
           },
         ],
       },
-      // (Unconcerned)
-
-      resources: [
-        {
-          title: {
-            EN: <>Understanding herd immunity</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Nature: Human Behaviour (Journal) article</>, FR: <></> },
-          link: "https://www.immunize.ca/sites/default/files/resources/s41562-017-0056_0.pdf",
-          description: {
-            EN: (
-              <>
-                Journal article examining the importance of communicating the concept of herd immunity in vaccine
-                advocacy. (2017)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Similarities and Differences Between COVID and the Flu</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>US CDC comparison between COVID and Influenza</>, FR: <></> },
-          link: "https://www.cdc.gov/flu/symptoms/flu-vs-covid19.htm ",
-          description: {
-            EN: (
-              <>
-                A comparison between COVID and the Flu, and how it affects the infectious window, vulnerable
-                populations, and complications (Updated, June 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Forbes Op-Ed by Infectious Diseases Doctor</>, FR: <></> },
-          link: "https://www.forbes.com/sites/coronavirusfrontlines/2021/04/23/if-herd-immunity-is-your-plan-to-beat-covid-you-need-a-plan-b/",
-          description: {
-            EN: (
-              <>
-                A discussion of the challenges of reaching herd immunity, and why vaccines are critical even if those
-                thresholds are lofty. (April 2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // (Unconcerned)
+
+    resources: [
+      {
+        title: {
+          EN: <>Understanding herd immunity</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Nature: Human Behaviour (Journal) article</>, FR: <></> },
+        link: "https://www.immunize.ca/sites/default/files/resources/s41562-017-0056_0.pdf",
+        description: {
+          EN: (
+            <>
+              Journal article examining the importance of communicating the concept of herd immunity in vaccine
+              advocacy. (2017)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Similarities and Differences Between COVID and the Flu</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>US CDC comparison between COVID and Influenza</>, FR: <></> },
+        link: "https://www.cdc.gov/flu/symptoms/flu-vs-covid19.htm ",
+        description: {
+          EN: (
+            <>
+              A comparison between COVID and the Flu, and how it affects the infectious window, vulnerable populations,
+              and complications (Updated, June 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Forbes Op-Ed by Infectious Diseases Doctor</>, FR: <></> },
+        link: "https://www.forbes.com/sites/coronavirusfrontlines/2021/04/23/if-herd-immunity-is-your-plan-to-beat-covid-you-need-a-plan-b/",
+        description: {
+          EN: (
+            <>
+              A discussion of the challenges of reaching herd immunity, and why vaccines are critical even if those
+              thresholds are lofty. (April 2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   Undifferentiated: {
@@ -9020,163 +9013,157 @@ export const contentPersonas = {
           },
         ],
       },
-      //UNDIFFERENTIATED RESOURCES
-      resources: [
-        {
-          title: {
-            EN: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Conversation tools for discussing vaccines with patients.</>, FR: <></> },
-          link: "https://www.albertadoctors.org/about/COVID-19/vaccine-positive-clinic-toolkit/addressing-vaccine-hesitancy",
-          description: {
-            EN: (
-              <>
-                The Alberta Medical Association&apos;s &ldquo;Be A Vaccine Positive Clinic&rdquo; Toolkit includes
-                proactive outreach resources, scripts, and other helpful guides for physicians to have vaccination
-                conversations with their patients.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Centre for Effective Practice: ProTCT Framework</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>ProTCT framework for COVID-19 vaccine discussion</>, FR: <></> },
-          link: "https://tools.cep.health/wp-content/uploads/2021/04/CEP_COVID-Framework_04-21_r1.pdf",
-          description: {
-            EN: (
-              <>A review of the ProTCT framework to structure conversations with patients about the COVID-19 vaccines</>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>CEP Resources for Supporting Patient Confidence in Vaccines</>, FR: <></> },
-          link: "https://tools.cep.health/tool/covid-19-vaccines/#ensuring-patient-confidence-in-vaccines",
-          description: {
-            EN: (
-              <>
-                A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>CEP: COVID-19 Resource Centre</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>CEP&apos;s resource toolkit for COVID-19 information</>, FR: <></> },
-          link: "https://cep.health/toolkit/covid-19-resource-centre/",
-          description: {
-            EN: <>A database for COVID-19 information on a variety of topics, including vaccines.</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>19-to-Zero COVID-19 Resources</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>COVID-19 resource repository</>, FR: <></> },
-          link: "https://www.19tozero.ca/healthcare-worker-resources",
-          description: {
-            EN: <>A repository of resources for healthcare workers about COVID-19 vaccines.</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>19-to-Zero YouTube Channel</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>COVID-19 video resources</>, FR: <></> },
-          link: "https://www.youtube.com/channel/UC107yJWv6Hz9v4b3rPA4YZw/videos",
-          description: {
-            EN: <>A selection of video resources for both patients and providers on COVID-19 and vaccines.</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>CANVax Resources on COVID-19 Immunization</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Resources related to COVID-19 vaccines</>, FR: <></> },
-          link: "https://canvax.ca/covid-19-resources-immunization",
-          description: {
-            EN: (
-              <>
-                A repository of resources for regional, national, and international sources on COVID-19 immunizations.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>US CDC: Vaccines for COVID-19 Information</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Resources on vaccines for COVID-19 curated by the CDC</>, FR: <></> },
-          link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html ",
-          description: {
-            EN: (
-              <>
-                A collection of resources on the COVID-19 vaccines for the general public and healthcare practitioners.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Immunize BC repository of common COVID vaccine questions and answers </>, FR: <></> },
-          link: "https://immunizebc.ca/taxonomy/term/378",
-          description: { EN: <>A list of common COVID-19 vaccine questions and answers.</>, FR: <></> },
-        },
-
-        {
-          title: {
-            EN: <>Indigenous Primary Health Care Council: COVID-19 information</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Indigenous Primary Care Council COVID information</>, FR: <></> },
-          link: "https://www.iphcc.ca/covid-19/",
-          description: { EN: <>COVID-19 resources with an Indigenous focus.</>, FR: <></> },
-        },
-      ],
     },
+    //UNDIFFERENTIATED RESOURCES
+    resources: [
+      {
+        title: {
+          EN: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Conversation tools for discussing vaccines with patients.</>, FR: <></> },
+        link: "https://www.albertadoctors.org/about/COVID-19/vaccine-positive-clinic-toolkit/addressing-vaccine-hesitancy",
+        description: {
+          EN: (
+            <>
+              The Alberta Medical Association&apos;s &ldquo;Be A Vaccine Positive Clinic&rdquo; Toolkit includes
+              proactive outreach resources, scripts, and other helpful guides for physicians to have vaccination
+              conversations with their patients.
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Centre for Effective Practice: ProTCT Framework</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>ProTCT framework for COVID-19 vaccine discussion</>, FR: <></> },
+        link: "https://tools.cep.health/wp-content/uploads/2021/04/CEP_COVID-Framework_04-21_r1.pdf",
+        description: {
+          EN: (
+            <>A review of the ProTCT framework to structure conversations with patients about the COVID-19 vaccines</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>CEP Resources for Supporting Patient Confidence in Vaccines</>, FR: <></> },
+        link: "https://tools.cep.health/tool/covid-19-vaccines/#ensuring-patient-confidence-in-vaccines",
+        description: {
+          EN: (
+            <>A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>CEP: COVID-19 Resource Centre</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>CEP&apos;s resource toolkit for COVID-19 information</>, FR: <></> },
+        link: "https://cep.health/toolkit/covid-19-resource-centre/",
+        description: {
+          EN: <>A database for COVID-19 information on a variety of topics, including vaccines.</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>19-to-Zero COVID-19 Resources</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>COVID-19 resource repository</>, FR: <></> },
+        link: "https://www.19tozero.ca/healthcare-worker-resources",
+        description: {
+          EN: <>A repository of resources for healthcare workers about COVID-19 vaccines.</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>19-to-Zero YouTube Channel</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>COVID-19 video resources</>, FR: <></> },
+        link: "https://www.youtube.com/channel/UC107yJWv6Hz9v4b3rPA4YZw/videos",
+        description: {
+          EN: <>A selection of video resources for both patients and providers on COVID-19 and vaccines.</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>CANVax Resources on COVID-19 Immunization</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Resources related to COVID-19 vaccines</>, FR: <></> },
+        link: "https://canvax.ca/covid-19-resources-immunization",
+        description: {
+          EN: (
+            <>A repository of resources for regional, national, and international sources on COVID-19 immunizations.</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>US CDC: Vaccines for COVID-19 Information</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Resources on vaccines for COVID-19 curated by the CDC</>, FR: <></> },
+        link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html ",
+        description: {
+          EN: (
+            <>A collection of resources on the COVID-19 vaccines for the general public and healthcare practitioners.</>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Immunize BC repository of common COVID vaccine questions and answers </>, FR: <></> },
+        link: "https://immunizebc.ca/taxonomy/term/378",
+        description: { EN: <>A list of common COVID-19 vaccine questions and answers.</>, FR: <></> },
+      },
+
+      {
+        title: {
+          EN: <>Indigenous Primary Health Care Council: COVID-19 information</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Indigenous Primary Care Council COVID information</>, FR: <></> },
+        link: "https://www.iphcc.ca/covid-19/",
+        description: { EN: <>COVID-19 resources with an Indigenous focus.</>, FR: <></> },
+      },
+    ],
   },
 
   Pediatrics: {
@@ -9298,84 +9285,83 @@ export const contentPersonas = {
           },
         ],
       },
-
-      // ACTUAL content for Pediatrics
-      resources: [
-        {
-          title: {
-            EN: <>Vaccines for Children: Deciding to vaccinate</>,
-            image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Government of Canada - Information and considerations</>, FR: <></> },
-          link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
-          description: {
-            EN: <>Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>, FR: <></> },
-          link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
-          description: {
-            EN: (
-              <>
-                An information sheet from the Ontario Ministry of Health outlining considerations and preparation
-                strategies for parents/guardians of children 5-11 (2021)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>COVID Vaccine: What parents need to know</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>, FR: <></> },
-          link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
-          description: {
-            EN: (
-              <>
-                An article written by pediatricians answering common parental/guardian questions about the COVID-19
-                vaccines for their children. *Please note this is a US source. In Canada, the Pfizer-BioNTech has been
-                approved for children age 5-11, and the Pfizer-BioNTech and Moderna vaccines have been approved for
-                children age 12 and older (2021).
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Children and the COVID-19 Vaccine </>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>BC CDC - Children and COVID-19 Vaccination</>, FR: <></> },
-          link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
-          description: {
-            EN: (
-              <>
-                Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a
-                review of the vaccine approval process.{" "}
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // ACTUAL content for Pediatrics
+    resources: [
+      {
+        title: {
+          EN: <>Vaccines for Children: Deciding to vaccinate</>,
+          image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Government of Canada - Information and considerations</>, FR: <></> },
+        link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
+        description: {
+          EN: <>Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)</>,
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>, FR: <></> },
+        link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
+        description: {
+          EN: (
+            <>
+              An information sheet from the Ontario Ministry of Health outlining considerations and preparation
+              strategies for parents/guardians of children 5-11 (2021)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>COVID Vaccine: What parents need to know</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>, FR: <></> },
+        link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
+        description: {
+          EN: (
+            <>
+              An article written by pediatricians answering common parental/guardian questions about the COVID-19
+              vaccines for their children. *Please note this is a US source. In Canada, the Pfizer-BioNTech has been
+              approved for children age 5-11, and the Pfizer-BioNTech and Moderna vaccines have been approved for
+              children age 12 and older (2021).
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+
+      {
+        title: {
+          EN: <>Children and the COVID-19 Vaccine </>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>BC CDC - Children and COVID-19 Vaccination</>, FR: <></> },
+        link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
+        description: {
+          EN: (
+            <>
+              Webpage which includes vaccine benefits for children, strategies for addressing needle phobia, and a
+              review of the vaccine approval process.{" "}
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   MedicalExemptions: {
@@ -9386,7 +9372,7 @@ export const contentPersonas = {
         image: "Hesitancy Group 2.svg",
         content: {
           EN: [
-            // This section is custom, and is in medExemptOverviewTheySayContent.js
+            // This section is custom, and is in medExemptOverviewTheySayContentBI.js
             <></>,
           ],
           FR: [<></>, <></>, <></>],
@@ -9550,7 +9536,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9569,7 +9555,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9585,7 +9571,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
             ],
           },
@@ -9612,10 +9598,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: {
-                  EN: "Mental Health",
-                  FR: "",
-                },
+                title: { EN: "Mental Health", FR: "" },
               },
               {
                 text: {
@@ -9709,7 +9692,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
             ],
           },
@@ -9739,7 +9722,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorBlackWoman.svg",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9756,7 +9739,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9774,7 +9757,7 @@ export const contentPersonas = {
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
-                title: "",
+                title: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9957,90 +9940,89 @@ export const contentPersonas = {
           },
         ],
       },
-
-      // MedicalExemptions
-      resources: [
-        {
-          title: {
-            EN: <>College of Physicians and Surgeons of Alberta</>,
-            FR: <></>,
-          },
-          linkText: { EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>, FR: <></> },
-          link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
-          description: {
-            EN: (
-              <>
-                Guidance document outlining using professional judgement when writing exemptions, managing challenging
-                interactions, and setting up exemption expectations with patients
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>CPSA</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Exemption Requests: Patient FAQs</>, FR: <></> },
-          link: "https://cpsa.ca/wp-content/uploads/2021/09/Vaccine-exemption-public-FAQ.pdf",
-          description: {
-            EN: (
-              <>
-                FAQ for patients on exemption eligibility, and the role of physicians in using professional discretion
-                to provide exemptions
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>College of Physicians and Surgeons BC</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>, FR: <></> },
-          link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
-          description: {
-            EN: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>Ontario Ministry of Health</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Medical Exemptions to COVID-19 Vaccination</>, FR: <></> },
-          link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
-          description: {
-            EN: <>Offers guidance to medical staff on when a medical exemption is warranted</>,
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>National Advisory Committee on Immunization (NACI)</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Recommendations on COVID-19</>, FR: <></> },
-          link: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
-          description: {
-            EN: (
-              <>
-                Information about NACI COVID vaccine recommendations for healthcare providers. (Current as of January
-                2022)
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-      ],
     },
+    // MedicalExemptions
+    resources: [
+      {
+        title: {
+          EN: <>College of Physicians and Surgeons of Alberta</>,
+          FR: <></>,
+        },
+        linkText: { EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>, FR: <></> },
+        link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
+        description: {
+          EN: (
+            <>
+              Guidance document outlining using professional judgement when writing exemptions, managing challenging
+              interactions, and setting up exemption expectations with patients
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>CPSA</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Exemption Requests: Patient FAQs</>, FR: <></> },
+        link: "https://cpsa.ca/wp-content/uploads/2021/09/Vaccine-exemption-public-FAQ.pdf",
+        description: {
+          EN: (
+            <>
+              FAQ for patients on exemption eligibility, and the role of physicians in using professional discretion to
+              provide exemptions
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>College of Physicians and Surgeons BC</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>, FR: <></> },
+        link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
+        description: {
+          EN: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>Ontario Ministry of Health</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Medical Exemptions to COVID-19 Vaccination</>, FR: <></> },
+        link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
+        description: {
+          EN: <>Offers guidance to medical staff on when a medical exemption is warranted</>,
+          FR: <></>,
+        },
+      },
+      {
+        title: {
+          EN: <>National Advisory Committee on Immunization (NACI)</>,
+
+          FR: <></>,
+        },
+        linkText: { EN: <>Recommendations on COVID-19</>, FR: <></> },
+        link: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
+        description: {
+          EN: (
+            <>
+              Information about NACI COVID vaccine recommendations for healthcare providers. (Current as of January
+              2022)
+            </>
+          ),
+          FR: <></>,
+        },
+      },
+    ],
   },
 
   BadContentID: {
@@ -10057,7 +10039,7 @@ export const contentPersonas = {
               </div>
               <div className="mt-4 baseFont text-red-700">
                 <div>Please click the VH Guide logo at top to continue. </div>
-                <div>Also, please check the path, as well as the appropriate section in contentPersonas.js</div>
+                <div>Also, please check the path, as well as the appropriate section in contentPersonasBI.js</div>
                 <div className="mt-4">We apologize for the inconveniece.</div>
               </div>
             </>,
@@ -10091,7 +10073,7 @@ export const contentPersonas = {
                 <div className="emphFont text-red-700">Bad Path or ContentID</div>
                 <div className="mt-4 baseFont text-red-700">
                   <div>Please click the VH Guide logo at top to continue. </div>
-                  <div>Also, please check the URL path and the appropriate section in contentPersonas.js</div>
+                  <div>Also, please check the URL path and the appropriate section in contentPersonasBI.js</div>
                   <div className="mt-4">We apologize for the inconveniece.</div>
                 </div>
               </>
@@ -10130,7 +10112,7 @@ export const contentPersonas = {
                       <div className="emphFont text-red-700">Bad path or contentID</div>
                       <div className="mt-4 vsmFont text-red-700">
                         <div>
-                          Please check the path in branch.js and/or the appropriate section in contentPersonas.js
+                          Please check the path in branch.js and/or the appropriate section in contentPersonasBI.js
                         </div>
                         <div>We apologize for the inconveniece.</div>
                       </div>
@@ -10160,7 +10142,7 @@ export const contentPersonas = {
                       <div className="emphFont text-red-700">Bad path or contentID</div>
                       <div className="mt-4 vsmFont text-red-700">
                         <div>
-                          Please check the path in branch.js and/or the appropriate section in contentPersonas.js
+                          Please check the path in branch.js and/or the appropriate section in contentPersonasBI.js
                         </div>
                         <div>We apologize for the inconveniece.</div>
                       </div>
@@ -10190,7 +10172,7 @@ export const contentPersonas = {
                       <div className="emphFont text-red-700">Bad path or contentID</div>
                       <div className="mt-4 vsmFont text-red-700">
                         <div>
-                          Please check the path in branch.js and/or the appropriate section in contentPersonas.js
+                          Please check the path in branch.js and/or the appropriate section in contentPersonasBI.js
                         </div>
                         <div>We apologize for the inconveniece.</div>
                       </div>
@@ -10220,7 +10202,7 @@ export const contentPersonas = {
                       <div className="emphFont text-red-700">Bad path or contentID</div>
                       <div className="mt-4 vsmFont text-red-700">
                         <div>
-                          Please check the path in branch.js and/or the appropriate section in contentPersonas.js
+                          Please check the path in branch.js and/or the appropriate section in contentPersonasBI.js
                         </div>
                         <div>We apologize for the inconveniece.</div>
                       </div>
@@ -10250,7 +10232,7 @@ export const contentPersonas = {
                       <div className="emphFont text-red-700">Bad path or contentID</div>
                       <div className="mt-4 vsmFont text-red-700">
                         <div>
-                          Please check the path in branch.js and/or the appropriate section in contentPersonas.js
+                          Please check the path in branch.js and/or the appropriate section in contentPersonasBI.js
                         </div>
                         <div>We apologize for the inconveniece.</div>
                       </div>
@@ -10266,28 +10248,28 @@ export const contentPersonas = {
           },
         ],
       },
-      //BadContentID
-      resources: [
-        {
-          title: {
-            EN: (
-              <>
-                <div className="emphFont text-red-700">Bad Path or ContentID</div>
-                <div className="mt-4 baseFont text-red-700">
-                  <div>Please click the VH Guide logo at top to continue. </div>
-                  <div>Also, please check the URL path and the appropriate section in contentPersonas.js</div>
-                  <div className="mt-4">We apologize for the inconveniece.</div>
-                </div>{" "}
-              </>
-            ),
-
-            FR: <></>,
-          },
-          linkText: { EN: <></>, FR: <></> },
-          link: "https://",
-          description: { EN: <></>, FR: <></> },
-        },
-      ],
     },
+    //BadContentID
+    resources: [
+      {
+        title: {
+          EN: (
+            <>
+              <div className="emphFont text-red-700">Bad Path or ContentID</div>
+              <div className="mt-4 baseFont text-red-700">
+                <div>Please click the VH Guide logo at top to continue. </div>
+                <div>Also, please check the URL path and the appropriate section in contentPersonasBI.js</div>
+                <div className="mt-4">We apologize for the inconveniece.</div>
+              </div>{" "}
+            </>
+          ),
+
+          FR: <></>,
+        },
+        linkText: { EN: <></>, FR: <></> },
+        link: "https://",
+        description: { EN: <></>, FR: <></> },
+      },
+    ],
   },
 };

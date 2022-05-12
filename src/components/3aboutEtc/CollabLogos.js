@@ -2,9 +2,9 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useMyContext } from "../../context/Context";
-import logoContent from "../../content/collabContent";
+import logoContentBI from "../../content/collabContentBI";
 
-const CollabLogos = () => {
+const CollabLogosBI = () => {
   const { queryData, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
@@ -16,7 +16,7 @@ const CollabLogos = () => {
       className={`ml-6 mxs:ml-0  justify-start mxs:justify-center grid mxs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mxl:grid-cols-5   
             grid-flow-row  gap-x-10 sm:gap-x-14 md:gap-x-18 xl:gap-x-24  gap-y-2 mxs:gap-y-4`}
     >
-      {logoContent.map((currLogo, indx) => {
+      {logoContentBI.map((currLogo, indx) => {
         return (
           <div key={indx}>
             {collabLogos.map((item, index) => {
@@ -45,4 +45,4 @@ const CollabLogos = () => {
   );
 };
 
-export default CollabLogos;
+export default CollabLogosBI;

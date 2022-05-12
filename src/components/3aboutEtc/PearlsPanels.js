@@ -5,7 +5,7 @@ import { useMyContext } from "../../context/Context";
 import QuoteGroups from "../2details/QuoteGroups";
 
 const PearlsPanels = () => {
-  const { fixedBackdrop, winWidth, log, log2 } = useMyContext();
+  const { fixedBackdrop, winWidth, lang, log, log2 } = useMyContext();
 
   false && log && log2 && console.log();
   log2 && console.log("PearlsPanel.js pearlsContent=", pearlsContent);
@@ -30,7 +30,7 @@ const PearlsPanels = () => {
             return (
               <div key={panelNum}>
                 <div className="panelBaseClass" style={{ columnStyle }}>
-                  <h2 className="mb-6 mxs:mb-9 sm:mb-12  titleFont titleMedium">{currPanel.title}</h2>
+                  <h2 className="mb-6 mxs:mb-9 sm:mb-12  titleFont titleMedium">{currPanel.title[lang]}</h2>
                   <QuoteGroups panelContent={currPanel.content} />
                 </div>
                 <div style={{ height: yGapBetweenPanels }} />

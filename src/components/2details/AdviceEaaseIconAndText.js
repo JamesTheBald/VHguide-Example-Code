@@ -5,8 +5,9 @@ import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {
   const { advice, tab } = props;
-  const { winWidth, queryData, log2 } = useMyContext();
+  const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
+  0 && console.log(log, log2);
   log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice?.eaase[tab].image);
 
   const pplIcons = queryData.current.pplIcons.edges;
@@ -44,7 +45,7 @@ const AdviceEaaseIconAndText = props => {
     return (
       <div className="baseFont text-blue-black">
         <span>&quot;</span>
-        {advice.eaase[tab].text}
+        {advice.eaase[tab].text[lang]}
         <span>&quot;</span>
       </div>
     );

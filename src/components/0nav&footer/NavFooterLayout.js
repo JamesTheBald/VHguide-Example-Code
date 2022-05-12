@@ -14,7 +14,7 @@ import Footer from "./Footer";
 import { useMyContext } from "../../context/Context";
 
 const NavFooterLayout = ({ children }) => {
-  const { fixedBackdrop } = useMyContext();
+  const { fixedBackdrop, lang } = useMyContext();
 
   return (
     <>
@@ -29,7 +29,7 @@ const NavFooterLayout = ({ children }) => {
           {children}
         </div>
         <Footer />
-        <SurveySlideIn />
+        {lang === "EN" && <SurveySlideIn />}
       </div>
     </>
   );

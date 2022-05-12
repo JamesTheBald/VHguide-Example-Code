@@ -8,7 +8,7 @@ import QuoteGroups from "./QuoteGroups";
 
 const AdviceQuoteGroupList = props => {
   const { advice } = props;
-  const { locn, log, log2 } = useMyContext();
+  const { locn, lang, log, log2 } = useMyContext();
 
   const tabMatch = useMatch("/details/advice/:tabSelec");
   const tabSelected = String(tabMatch.tabSelec);
@@ -17,7 +17,7 @@ const AdviceQuoteGroupList = props => {
   log2 && console.log("AdviceQuoteGroupList.js tabMatch=", tabMatch);
   log2 && console.log("AdviceQuoteGroupList.js So contentArray=", contentArray);
 
-  const firstAskAdviceQuote = advice?.ask?.content[0]?.quotes[0]?.text;
+  const firstAskAdviceQuote = advice?.ask?.content[0]?.quotes[0]?.text[lang];
   const firstAskAdviceStringLength = firstAskAdviceQuote && reactElementToJSXString(firstAskAdviceQuote).length;
   const askAdviceExists = firstAskAdviceStringLength > 14;
   log2 && console.log("AdviceQuoteGroupList.js runs. askAdvice=", firstAskAdviceQuote);

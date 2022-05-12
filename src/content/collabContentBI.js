@@ -1,7 +1,6 @@
-const collabContent = [
+const collabContentBI = [
   // {
-  //   name: "University of Calgary School of Public Policy",
-  //   alt: "University of Calgary School of Public Policy",
+  //   alt: { EN: "University of Calgary School of Public Policy",
   //   URL: "https://spp.ucalgary.ca/",
   //   imageName: "U of C SPP.jpg",
   //   scalePercent: 100,
@@ -9,8 +8,7 @@ const collabContent = [
   // },
 
   {
-    name: "Alberta College of Family Physicians", // the name field here is just for our quick reference; it's not used in the code
-    alt: "AB College of Family Physicians",
+    alt: { EN: "AB College of Family Physicians", FR: "" },
     URL: "https://acfp.ca/tools-resources/covid-19-resources/",
     imageName: "AB College Family Physicians.jpg",
     scalePercent: 100,
@@ -18,8 +16,7 @@ const collabContent = [
   },
 
   {
-    name: "UBC Innovation Support Unit (ISU)",
-    alt: "UBC Innovation Support Unit logo",
+    alt: { EN: "UBC Innovation Support Unit logo", FR: "" },
     URL: "https://isu.familymed.ubc.ca/",
     imageName: "UBC ISU.jpg",
     scalePercent: 100,
@@ -27,8 +24,7 @@ const collabContent = [
   },
 
   {
-    name: "Alberta Medical Association (AMA) ACTT",
-    alt: "Alberta Medical Association ACTT logo",
+    alt: { EN: "Alberta Medical Association ACTT logo", FR: "" },
     URL: "https://www.albertadoctors.org/",
     imageName: "AMA ACTT.jpg",
     scalePercent: 100,
@@ -36,8 +32,7 @@ const collabContent = [
   },
 
   {
-    name: "19 to Zero",
-    alt: "19 to Zero logo",
+    alt: { EN: "19 to Zero logo", FR: "" },
     URL: "https://www.19tozero.ca/",
     imageName: "19toZero.jpg",
     scalePercent: 100,
@@ -45,8 +40,7 @@ const collabContent = [
   },
 
   {
-    name: "Doctors Manitoba",
-    alt: "Doctors Manitoba logo",
+    alt: { EN: "Doctors Manitoba logo", FR: "" },
     URL: "https://doctorsmanitoba.ca/",
     imageName: "Doctors Manitoba.jpg",
     scalePercent: 100,
@@ -54,8 +48,7 @@ const collabContent = [
   },
 
   {
-    name: "University of Manitoba Rady Faculty Health Sciences",
-    alt: "UM Rady Faculty Health Sciences logo",
+    alt: { EN: "UM Rady Faculty Health Sciences logo", FR: "" },
     URL: "https://umanitoba.ca/health-sciences/",
     imageName: "UM Rady Faculty Health Sciences.jpg",
     scalePercent: 100,
@@ -63,8 +56,7 @@ const collabContent = [
   },
 
   {
-    name: "the rounds",
-    alt: "the rounds",
+    alt: { EN: "the rounds", FR: "" },
     URL: "https://therounds.com/",
     imageName: "the rounds.jpg",
     scalePercent: 100,
@@ -72,17 +64,15 @@ const collabContent = [
   },
 
   {
-    name: "QID",
-    alt: "QID",
+    alt: { EN: "QID", FR: "" },
     URL: "https://qid.io/",
     imageName: "QID.jpg",
     scalePercent: 100,
     offsetPercent: 0,
   },
-  
+
   {
-    name: "Center for Effective Practice",
-    alt: "Center for Effective Practice",
+    alt: { EN: "Center for Effective Practice", FR: "" },
     URL: "https://cep.health/",
     imageName: "Center for Effective Practice.jpg",
     scalePercent: 100,
@@ -90,11 +80,12 @@ const collabContent = [
   },
 
   // {
-  //   name: "template",
+  //   alt: { EN: "", FR: "",},
   //   imageName: "",
-  //   alt: "",
   //   URL: "",
+  //   scalePercent: 100,
+  //   offsetPercent: 0,
   // },
 ];
 
-export default collabContent;
+export default collabContentBI;

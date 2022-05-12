@@ -7,14 +7,14 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useMyContext } from "../../context/Context";
 import DivLine from "../4general/DivLine";
-import { medExemptOverviewTheySayContent } from "../../content/medExemptOverviewTheySayContent";
+import { medExemptOverviewTheySayContentBI } from "../../content/medExemptOverviewTheySayContentBI";
 
 const MedExemptOverviewTheySay = () => {
-  const { winWidth, setLocn, log, log2 } = useMyContext();
+  const { winWidth, setLocn, lang, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
   // mEOTSSO stands for 'medical Exemptions Overview TheySay Section (is) Open'
-  const [mEOTSSO, setMEOTSSO] = useState(Array(10).fill(false));   // assume there'll never be >10 Medical Exemptiosn TheySay quotes
+  const [mEOTSSO, setMEOTSSO] = useState(Array(10).fill(false)); // assume there'll never be >10 Medical Exemptiosn TheySay quotes
 
   const arrowSize = winWidth < 720 ? 20 : 22;
 
@@ -52,10 +52,10 @@ const MedExemptOverviewTheySay = () => {
               role="link"
               tabIndex={sectionNum}
             >
-              {currPanel.subheading}
+              {currPanel.subheading[lang]}
             </div>
           ) : (
-            <div className="text-left">{currPanel.subheading}</div>
+            <div className="text-left">{currPanel.subheading[lang]}</div>
           )}
           {mEOTSSO[sectionNum] === true ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
         </button>
@@ -68,17 +68,17 @@ const MedExemptOverviewTheySay = () => {
   // Main Content Container
   return (
     <>
-      <h3 className="mb-5 listTitleClass">What patients are saying:</h3>
+      <h3 className="mb-5 listTitleClass">{lang === "EN" ? "What patients are saying:" : ""}</h3>
 
-      {medExemptOverviewTheySayContent.map((currSection, sectionNum) => {
-        const theySayQuotes = currSection.quotes;
+      {medExemptOverviewTheySayContentBI.map((currSection, sectionNum) => {
+        const theySayQuotes = currSection.quotes[lang];
 
         return (
           <Collapsible
             key={sectionNum}
             trigger={TriggerComponent(currSection, sectionNum)}
             open={mEOTSSO[sectionNum]}
-            transitionTime={150}
+            transitionTime={200}
           >
             <div className="ml-2 mb-3 sm:mb-4  flex flex-col">
               {theySayQuotes.map((currQuote, quoteNum) => {

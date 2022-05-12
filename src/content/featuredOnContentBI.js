@@ -1,5 +1,5 @@
 import React from "react";
-// Note: if you update the URLs below, be sure to also update them in "./featuredOnLogoInfo.js"
+// Note: if you update the URLs below, be sure to also update them in "./featuredOnLogoInfoBI.js"
 
 const featuredOnContentBI = {
   publications: [
@@ -19,8 +19,8 @@ const featuredOnContentBI = {
         ),
       },
       date: {
-        EN: "Myles Leslie, Raad Fadaak, Nicole Pinto - October 1, 2021",
-        FR: "Myles Leslie, Raad Fadaak, Nicole Pinto - October 1, 2021",
+        EN: <>Myles Leslie, Raad Fadaak, Nicole Pinto - October 1, 2021</>,
+        FR: <>Myles Leslie, Raad Fadaak, Nicole Pinto - 1<sup>er</sup> octobre 2021</>,
       },
       URL: "https://deepblue.lib.umich.edu/handle/2027.42/170143",
       linkText: { EN: "Read the preprint article here", FR: "Lire la publication préliminaire" },
@@ -38,7 +38,7 @@ const featuredOnContentBI = {
       },
       date: {
         EN: "Nicole Pinto, Raad Fadaak, and Myles Leslie - August 23, 2021",
-        FR: "Nicole Pinto, Raad Fadaak, and Myles Leslie - August 23, 2021",
+        FR: "Nicole Pinto, Raad Fadaak, and Myles Leslie - 23 août 2021",
       },
       URL: "https://www.cfp.ca/news/2021/08/23/08-23",
       linkText: { EN: "Read the blog post", FR: "Lire le billet de blogue" },

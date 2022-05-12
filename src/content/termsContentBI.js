@@ -68,12 +68,12 @@ const PrivacyPolicyEN = () => {
         Users may voluntarily submit Personal Information when prompted in Google Forms. This information is stored on
         secured servers behind a firewall and will not be shared with any additional third parties. <br />
       </div>
-      <div className="subSubHeadingFont pb-3 pt-10 mb-6  dontBreak">
+      <div className="subSubHeadingFont pb-3 pt-10 dontBreak">
         Withdrawal of consent and/or personal information
       </div>
       <div>
-        If you do not want us to retain your Personal Information after submission, please
-        <button className="pl-1.5 orangeLink" onClick={() => setShowContactForm(true)}>
+        If you do not want us to retain your Personal Information after submission, please{" "}
+        <button className="orangeLink" onClick={() => setShowContactForm(true)}>
           contact us
         </button>
         . Additionally, if you would like to access, correct, amend, or delete any personal information we have about
@@ -184,12 +184,12 @@ const PrivacyPolicyFR = () => {
         seront pas partagés avec d’autres tiers.
         <br />
       </div>
-      <div className="subSubHeadingFont pb-3 pt-10 mb-6  dontBreak">
+      <div className="subSubHeadingFont pb-3 pt-10  dontBreak">
         Retrait du consentement et/ou des renseignements personnels
       </div>
       <div>
-        Si vous ne voulez pas que nous conservions vos renseignements personnels après les avoir fournis, veuillez
-        <button className="pl-1.5 orangeLink" onClick={() => setShowContactForm(true)}>
+        Si vous ne voulez pas que nous conservions vos renseignements personnels après les avoir fournis, veuillez{" "}
+        <button className="orangeLink" onClick={() => setShowContactForm(true)}>
           communiquer avec nous
         </button>
         . Par ailleurs, si vous voulez avoir accès aux renseignements personnels que nous avons à votre sujet, les

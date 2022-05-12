@@ -2,21 +2,21 @@ import React, { useEffect, useState, useRef } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Carousel from "react-elastic-carousel";
 
-import collabContent from "../../content/collabContent";
+import collabContentBI from "../../content/collabContentBI";
 import CarouselDotsNone from "./CarouselDotsNone";
 import MyArrow from "./CarouselArrows";
 import { useMyContext } from "../../context/Context";
 
 const CarouselCollaborators = () => {
-  const { winWidth, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   const [itemsPerPage, setItemsPerPage] = useState(1);
   const [numPages, setNumPages] = useState(1);
 
   const collabLogos = queryData.current.collabLogos.edges;
-  log2 && console.log("CarouselCollaborators.js collabContent=", collabContent);
-  log2 && console.log("CarouselCollaborators.js collabLogos=", collabLogos);
+  log2 && console.log("CarouselCollaborators.js collabContentBI=", collabContentBI);
+  log2 && console.log("CarouselCollaborators.js collabLogosBI=", collabLogos);
 
   useEffect(() => {
     setItemsPerPage(
@@ -34,7 +34,7 @@ const CarouselCollaborators = () => {
         ? 6
         : 7
     );
-    setNumPages(collabContent.length - itemsPerPage);
+    setNumPages(collabContentBI.length - itemsPerPage);
   }, [winWidth, itemsPerPage]);
 
   const timeOnEach = 1800;
@@ -67,7 +67,7 @@ const CarouselCollaborators = () => {
           }
         }}
       >
-        {collabContent.map((currCollab, indx) => {
+        {collabContentBI.map((currCollab, indx) => {
           log2 && console.log("CarouselCollaborators.js .map currLogo.URL=", currCollab.URL);
 
           return (
@@ -86,7 +86,7 @@ const CarouselCollaborators = () => {
                       {currLogo.node.childImageSharp !== null ? (
                         <GatsbyImage
                           image={currLogo.node.childImageSharp.gatsbyImageData}
-                          alt={currCollab.alt}
+                          alt={currCollab.alt[lang]}
                           style={{
                             width: currCollab.scalePercent + "%",
                             transform: `translate(${currCollab.offsetPercent}%, 0%)`,
@@ -95,7 +95,7 @@ const CarouselCollaborators = () => {
                       ) : (
                         <img
                           src={currLogo.node.publicURL}
-                          alt={currCollab.alt}
+                          alt={currCollab.alt[lang]}
                           style={{
                             width: currCollab.scalePercent + "%",
                             transform: `translate(${currCollab.offsetPercent}%, 0%)`,

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { useMyContext } from "../../context/Context";
-import termsContent from "../../content/termsContent";
+import termsContent from "../../content/termsContentBI";
 import DivLine from "../4general/DivLine";
 
 const TermsPanels = props => {
@@ -33,7 +33,7 @@ const TermsPanels = props => {
           }}
         >
           <div className="text-left">{currPanel.subheading[lang]}</div>
-          {panelNum === openPanelNums ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
+          {openPanelNums[panelNum] ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
         </button>
         <DivLine className="mt-2 mb-4 mxs:mb-5 md:mb-6" />
       </div>

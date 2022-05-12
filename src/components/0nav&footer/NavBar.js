@@ -43,7 +43,7 @@ const NavBar = () => {
   };
 
   const HamburgerIcon = ({ rtPosn }) => {
-    log && console.log("NavBar.js HamburgerIcon() rtPosn=", rtPosn);
+    log2 && console.log("NavBar.js HamburgerIcon() rtPosn=", rtPosn);
     return (
       <button
         name="Hamburger icon"

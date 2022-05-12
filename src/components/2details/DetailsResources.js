@@ -2,30 +2,29 @@ import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
-import { contentPersonas } from "../../content/contentPersonas";
+import { contentPersonasBI } from "../../content/contentPersonasBI";
 
 const DetailsResources = props => {
   const { contentID } = props;
-  const { log, log2 } = useMyContext();
+  const { lang, log, log2 } = useMyContext();
 
   log && console.log("DetailsResources.js runs. contentID=", contentID);
-  log2 && console.log("DetailsResources.js contentPersonas=", contentPersonas);
+  log2 && console.log("DetailsResources.js contentPersonasBI=", contentPersonasBI);
 
-  let resources = "";
-  if (contentPersonas[contentID]?.advice?.resources[0]) {
-    resources = contentPersonas[contentID].advice.resources;
+  let resources = [
+    {
+      title: { EN: <></>, FR: <></> },
+      linkText: { EN: <></>, FR: <></> },
+      link: "",
+      description: { EN: <></>, FR: <></> },
+    },
+  ];
+
+  if (contentPersonasBI[contentID]?.resources) {
+    resources = contentPersonasBI[contentID].resources;
     log && console.log("DetailsResources.js resources =", resources);
   } else {
     log && console.log("DetailsResources.js - Resources for contentID", contentID, "not found.");
-    resources = [
-      {
-        label: "",
-        image: "",
-        linkTitle: "",
-        link: "",
-        description: "",
-      },
-    ];
   }
 
   return (
@@ -47,15 +46,15 @@ const DetailsResources = props => {
                   target="_blank"
                 >
                   <div className="text-16 sm:text-20  tracking-0.3 sm:tracking-0.4  font-semibold">
-                    {currResource.title}
+                    {currResource.title[lang]}
                   </div>
 
                   <div className="mt-2 baseFont">
                     <span className="pr-2 orangeUnderline">
-                      <span>{currResource.linkText}</span>
+                      <span>{currResource.linkText[lang]}</span>
                       <FiExternalLink className="ml-1 inline" size={18} />
                     </span>
-                    <span className="text-blue-black">{currResource.description}</span>
+                    <span className="text-blue-black">{currResource.description[lang]}</span>
                   </div>
                 </a>
               </div>

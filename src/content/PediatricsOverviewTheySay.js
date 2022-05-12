@@ -5,21 +5,21 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../context/Context";
 
 const PediatricsOverviewTheySay = () => {
-  const { pedQuoteGroupInitOpen } = useMyContext();
+  const { pedQuoteGroupInitOpen, lang } = useMyContext();
 
   pedQuoteGroupInitOpen.current = Array(20).fill(false);
 
   const theySayListItems = [
-    "Long-term effects / Long-term data",
-    "Developmental/puberty concerns",
-    "Risks of COVID vs risks of vaccine to children",
-    "Rushed approval/authorization of vaccine for children",
-    "Virus 'Shedding'",
+    { EN: "Long-term effects / Long-term data", FR: "" },
+    { EN: "Developmental/puberty concerns", FR: "" },
+    { EN: "Risks of COVID vs risks of vaccine to children", FR: "" },
+    { EN: "Rushed approval/authorization of vaccine for children", FR: "" },
+    { EN: "Virus 'Shedding'", FR: "" },
   ];
 
   return (
     <>
-      <h3 className="listTitleClass">Patients are saying they have concerns about...</h3>
+      <h3 className="listTitleClass">{lang === "EN" ? "Patients are saying they have concerns about..." : ""}</h3>
 
       <ul className="listClass2">
         {theySayListItems.map((currItem, index) => {
@@ -32,7 +32,7 @@ const PediatricsOverviewTheySay = () => {
                   navigate("/details/advice/pediatrics");
                 }}
               >
-                {currItem}
+                {currItem[lang]}
               </button>
             </li>
           );

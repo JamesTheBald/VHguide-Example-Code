@@ -6,7 +6,15 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const Subtopics = props => {
-  const { branchNum, topicNum, subtopics, innerMarginLeft, innerMarginRight } = props;
+  const {
+    branchNum,
+    topicNum,
+    subtopics,
+    widTopicNameShortBrkPt,
+    indentSubtopicLeft,
+    innerMarginLeft,
+    innerMarginRight,
+  } = props;
   const { winWidth, setLocn, log, log2 } = useMyContext();
   0 && console.log(log, log2);
 
@@ -22,7 +30,7 @@ const Subtopics = props => {
   };
 
   const subtopicStepHt = winWidth < 510 ? 6 : 12;
-  const margLeft = innerMarginLeft * 2 - 2;
+  const margLeft = innerMarginLeft + indentSubtopicLeft;
   const margRight = innerMarginRight + 2;
 
   const baseFontWide = "font-sans  text-16 mxs:text-18  tracking-0.2 mxs:tracking-0.4 sm:tracking-0.5";
@@ -35,7 +43,7 @@ const Subtopics = props => {
           name="thin grey dividing lines"
           className="border-b-1.5 border-solid border-gray-line"
           style={{
-            marginLeft: margLeft,
+            marginLeft: innerMarginLeft,
             marginRight: margRight,
             height: subtopicStepHt - 3,
             marginBottom: subtopicStepHt,
@@ -52,7 +60,7 @@ const Subtopics = props => {
                   style={{ marginLeft: margLeft }}
                   onClick={() => onClickSubtopic(subtopicNum)}
                 >
-                  {winWidth < 900 ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
+                  {winWidth < widTopicNameShortBrkPt ? currSubtopic.subtopicNameShort : currSubtopic.subtopicName}
                 </button>
                 {/* {locn.branch === 0 && subtopicNum === 3 && (
                   // Banner for New subtopics. Need to set branch number and subtopic number, as per branch.js

@@ -7,12 +7,12 @@ import { useMyContext } from "../../context/Context";
 
 const QuoteBoxes = props => {
   const { quoteArray, setFullStoryID } = props;
-  const { winWidth, queryData, log, log2 } = useMyContext();
+  const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log2 && console.log("QuoteBoxes.js runs.");
-  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log && console.log("QuoteBoxes.js runs.");
+  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
   const quoteColorsEtAl = quote => {
@@ -25,9 +25,7 @@ const QuoteBoxes = props => {
 
   let style = "";
   const quotePaddingEtc = quote => {
-    if (quote.label) {
-      style = winWidth < 510 ? { padding: "34px 28px 26px 34px" } : { padding: "32px 32px 28px 42px" };
-    } else if (quote.image) {
+    if (quote.image) {
       style = winWidth < 510 ? { padding: "30px 25px 26px 50px" } : { padding: "32px 30px 28px 65px" };
       style.marginLeft = 42;
     } else if (quote.featured) {
@@ -41,34 +39,25 @@ const QuoteBoxes = props => {
   };
 
   const iconDistFromTop = quote => {
-    const quoteLen = reactElementToJSXString(quote.text).length;
+    // log && console.log("QuoteBoxes.js iconDistFromTop() quote=", quote);
+    const quoteLen = reactElementToJSXString(quote.text[lang]).length;
     return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : 50;
   };
 
   return (
     <>
       {quoteArray.map((quote, idx) => {
+        console.log("QuoteBoxes.js quoteArray.map -> quote=", quote);
         return (
           <div key={idx} style={{ breakInside: "avoid" }}>
-            {/* Need breakInside: "avoid" for each containing box down from the parent with the columns.
+            {/* Need breakInside: "avoid" or dontBreak Tailwind class for each containing box down from the parent with the columns.
             See: https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */}
-            {reactElementToJSXString(quote.text).length > 20 && (
+            {reactElementToJSXString(quote.text[lang]).length > 20 && (
               <div
                 name="Outer box to prevent column breaking inside"
                 className="pt-4 flex flex-col justify-start dontBreak  relative"
                 key={idx}
               >
-                {quote.label && (
-                  <div
-                    className="absolute left-0 top-0 px-4 pt-1.5 pb-0.5  baseFont text-blue-black font-bold 
-                                bg-gray-neutral rounded-full  z-50 overflow-hidden"
-                    // style={{ display: "inline-block" }}
-                    // See https://stackoverflow.com/questions/7785374/how-to-prevent-column-break-within-an-element
-                  >
-                    {quote.label}
-                  </div>
-                )}
-
                 {quote.image && (
                   <div className="absolute z-50" style={{ top: iconDistFromTop(quote) }}>
                     {pplIcons.map((item, index) => {
@@ -94,12 +83,12 @@ const QuoteBoxes = props => {
                   style={quotePaddingEtc(quote)}
                 >
                   <div name="inner text box w decorations" className="relative">
-                    {!quote.label && !quote.image && (
+                    {!quote.image && (
                       <div className="absolute -left-9 -top-1.5 text-30">
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
                     )}
-                    {quote.text} {/* The quote itself */}
+                    {quote.text[lang]} {/* The quote itself */}
                   </div>
 
                   {quote.fullStoryID && (
@@ -111,7 +100,7 @@ const QuoteBoxes = props => {
                         setFullStoryID(quote.fullStoryID);
                       }}
                     >
-                      {quote.fullStoryLinkText}
+                      {quote.fullStoryLinkText[lang]}
                     </Link>
                   )}
                 </div>

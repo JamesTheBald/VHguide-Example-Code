@@ -19,13 +19,12 @@ const TabBarOAR = () => {
   // Get tab name from URL
   const tabMatchDetails = useMatch("/details/:selected");
   const tabMatch = tabMatchDetails ? tabMatchDetails : { selected: "advice" };
-
-  log2 && console.log("TabBarOAR.js tabMatch=", tabMatchDetails);
-  log2 && console.log("TabBarOAR.js tabMatch.selected=", tabMatch.selected);
+  log2 && console.log("TabBarOAR.js tabMatch=", tabMatch);
 
   let selecTabName = "Overview";
   const OARtabs = ["overview", "advice", "resources", "pearls"];
-  if (tabMatch && OARtabs.includes(tabMatch.selected)) {
+
+  if (tabMatch?.selected && OARtabs.includes(tabMatch.selected)) {
     // Above line is to guard against bad URLs
     selecTabName = tabMatch.selected;
     selecTabName = titleCase(selecTabName);

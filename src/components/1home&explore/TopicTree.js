@@ -8,7 +8,7 @@ import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
   const { branchNum } = props;
-  const { winWidth, locn, setLocn, branch, widthAdjRatio, log, log2 } = useMyContext();
+  const { winWidth, locn, setLocn, branch, widthAdjRatio, lang, log, log2 } = useMyContext();
 
   log2 && console.log("");
   log2 && console.log("TopicTree.js runs. branch=", branch);
@@ -40,17 +40,24 @@ const TopicTree = props => {
     }
   };
 
-  const innerMarginLeft = 8 + 14 * (widthAdjRatio - 0.3125);
-  const innerMarginRight = w < 410 ? 6 : w < 510 ? 8 : innerMarginLeft - 8;
-  const outsideMargin = w < 510 ? 0 : w < 720 ? 8 : innerMarginLeft + 2;
+  const pillToBorderMarginLeft = w < 1366 ? 8 + 18 * (widthAdjRatio - 0.33) : 36;
+  const indentTopicLeft = w < 1920 ? 12 + 12 * (widthAdjRatio - 0.33) : 40;
+  const indentSubtopicLeft = w < 1920 ? 8 + 10 * (widthAdjRatio - 0.33) : 32;
+  log && console.log("TopicTree.js indentTopicLeft=", indentTopicLeft);
+  log && console.log("TopicTree.js indentSubtopicLeft=", indentSubtopicLeft);
+
+  // const pillToBorderMarginLeft = 8 + 14 * (widthAdjRatio - 0.3125);
+  const pillToBorderMarginRight = w < 410 ? 6 : w < 510 ? 8 : pillToBorderMarginLeft - 8;
+  const outsideMargin = w < 510 ? 0 : w < 720 ? 8 : pillToBorderMarginLeft + 2;
   // const outsideMargin = w < 510 ? 10 : 32;
   const borderRadius = w < 510 ? "0px 0px 9px 9px" : w < 720 ? "0px 0px 12px 12px" : "0px 0px 47px 47px";
   const bottomPadding = w < 510 ? 40 : 58;
   const topicStepHt = w < 510 ? 30 : w < 800 ? 36 : 45;
   const leftGapToLine = w < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
+  const widTopicNameShortBrkPt = lang === "EN" ? 800 : 1920;
 
-  log2 && console.log("TopicTree.js innerMarginLeft=", innerMarginLeft);
-  log2 && console.log("TopicTree.js innerMarginRight=", innerMarginRight);
+  log2 && console.log("TopicTree.js innerMarginLeft=", pillToBorderMarginLeft);
+  log2 && console.log("TopicTree.js innerMarginRight=", pillToBorderMarginRight);
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;
@@ -79,14 +86,14 @@ const TopicTree = props => {
                               hoverRevealTrigger cursor-pointer`}
                   style={{
                     color: "#263EC5",
-                    paddingLeft: innerMarginLeft,
+                    paddingLeft: indentTopicLeft,
                     paddingTop: topicStepHt,
                   }}
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
                   <h3 className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.4 sm:tracking-0.5`}>
-                    {w < 900 ? currTopic.topicNameShort : currTopic.topicName}
+                    {w < widTopicNameShortBrkPt ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 
                   <div
@@ -96,20 +103,20 @@ const TopicTree = props => {
                   />
 
                   {showSubtopics ? (
-                    <div className="flex-shrink-0" style={{ marginRight: innerMarginRight }}>
+                    <div className="flex-shrink-0" style={{ marginRight: pillToBorderMarginRight }}>
                       <IoIosArrowDown className="hidden mxs:inline" size="28" />
                       <IoIosArrowDown className="mxs:hidden" size="20" />
                     </div>
                   ) : (
                     <>
-                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: innerMarginRight - 4 }}>
+                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: pillToBorderMarginRight - 4 }}>
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
                         <IoIosArrowForward className="mxs:hidden" size="20" />
                       </div>
 
                       <div
                         className="hiddenTillHover hidden mxs:inline flex-shrink-0"
-                        style={{ marginRight: innerMarginRight }}
+                        style={{ marginRight: pillToBorderMarginRight }}
                       >
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
                         <IoIosArrowForward className="mxs:hidden" size="20" />
@@ -123,8 +130,10 @@ const TopicTree = props => {
                     branchNum={branchNum}
                     topicNum={topicNum}
                     subtopics={currTopic.subtopic}
-                    innerMarginLeft={innerMarginLeft}
-                    innerMarginRight={innerMarginRight}
+                    widTopicNameShortBrkPt={widTopicNameShortBrkPt}
+                    indentSubtopicLeft={indentSubtopicLeft}
+                    innerMarginLeft={pillToBorderMarginLeft}
+                    innerMarginRight={pillToBorderMarginRight}
                   />
                 )}
               </div>
