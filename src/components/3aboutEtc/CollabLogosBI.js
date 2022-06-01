@@ -5,7 +5,7 @@ import { useMyContext } from "../../context/Context";
 import logoContentBI from "../../content/collabContentBI";
 
 const CollabLogosBI = () => {
-  const { queryData, log, log2 } = useMyContext();
+  const { queryData, lang, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   const collabLogos = queryData.current.collabLogos.edges;
@@ -26,11 +26,11 @@ const CollabLogosBI = () => {
                     {item.node.childImageSharp !== null ? (
                       <GatsbyImage
                         image={item.node.childImageSharp.gatsbyImageData}
-                        alt={currLogo.alt}
+                        alt={currLogo.alt[lang]}
                         className="w-56 mxs:w-48 sm:w-60 md:w-60 lg:w-64"
                       />
                     ) : (
-                      <img src={item.node.publicURL} alt={currLogo.alt} />
+                      <img src={item.node.publicURL} alt={currLogo.alt[lang]} />
                     )}
                   </div>
                 );

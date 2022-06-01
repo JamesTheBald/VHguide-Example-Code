@@ -8,7 +8,7 @@ import { useMyContext } from "../../context/Context";
 import { navbarLabels } from "../../content/navbarLabels";
 
 const AboutDropDown = props => {
-  const { subMenuLinkClass, onClickGo } = props;
+  const { subMenuLinkClass, onClickGo, chevVertPosn } = props;
   const { locn, winWidth, fsmBrkPt, lang, log } = useMyContext();
 
   const [showAboutDropDown, setShowAboutDropDown] = useState(false);
@@ -46,10 +46,16 @@ const AboutDropDown = props => {
       <NavItem classNom={`pl-7 pt-2 fsm:px-0 fsm:py-0`} selecOnHover={true} destn="/about">
         <button className="flex flex-row  w-full fsm:relative fsm:left-1" onClick={event => onClickAbout(event)}>
           <div className="fsm:pl-1 pr-0.5  fsm:pb-0.5">{navbarLabels.about.title[lang]}</div>
-          <div className={`chevPosn ${showAboutDropDown ? "hidden" : "group-hover:hidden"}`}>
+          <div
+            className={`chevPosn ${showAboutDropDown ? "hidden" : "group-hover:hidden"}`}
+            style={{ bottom: chevVertPosn }}
+          >
             <BiChevronRight size={24} />
           </div>
-          <div className={`chevPosn ${showAboutDropDown ? "inline" : "hidden group-hover:inline"}`}>
+          <div
+            className={`chevPosn ${showAboutDropDown ? "inline" : "hidden group-hover:inline"}`}
+            style={{ bottom: chevVertPosn }}
+          >
             <BiChevronDown size={24} />
           </div>
         </button>

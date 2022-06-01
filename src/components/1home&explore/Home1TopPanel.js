@@ -29,6 +29,7 @@ const Home1TopPanel = props => {
     buttonBorderColorCls,
     buttonDestn,
     newLocn,
+    buttonFuncFlag,
     mainImageFileName,
     backgndImageFileName,
   } = content;
@@ -100,9 +101,10 @@ const Home1TopPanel = props => {
           {buttonText && (
             <BrowseButton
               className={`mt-6 mxs:mt-10  w-max px-7  h-9 mxs:h-12  ${buttonTextColorCls} hover:${mainTextColorCls}
-                     ${buttonBorderColorCls} ${buttonBgColorCls} hover:bg-opacity-0 border-${buttonBgColorCls}
-          `}
+                       ${buttonBorderColorCls} ${buttonBgColorCls} hover:bg-opacity-0 border-${buttonBgColorCls}
+                        `}
               buttonDestn={buttonDestn}
+              buttonFuncFlag={buttonFuncFlag}
               newLocn={newLocn}
             >
               {buttonText[lang]}

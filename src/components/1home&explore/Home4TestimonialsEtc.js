@@ -37,7 +37,7 @@ const Home4TestimonialsEtc = () => {
               <br />
               <Link
                 to="/about/media"
-                className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-main hover:text-gray-light
+                className="pt-1  w-max px-4 mxs:px-7  h-9 mxs:h-12  text-blue-dark hover:text-gray-light
                 rounded-full cursor-pointer  flex justify-center items-center  smThenBaseFont mxs:text-18  
                 border-2 border-solid bg-gray-light hover:bg-opacity-0"
               >

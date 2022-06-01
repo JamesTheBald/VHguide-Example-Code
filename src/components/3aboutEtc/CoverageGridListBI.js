@@ -19,7 +19,7 @@ const CoverageGridListBI = ({ type, className }) => {
         return (
           <div key={index}>
             {/* Media type icon */}
-            <div className="mb-4  w-8 h-8 object-contain opacity-50">
+            <div className="mb-4  w-8 h-8 object-contain opacity-40">
               {currCov.iconType === "news" ? (
                 <StaticImage
                   src="../../assets/featuredOn/icons/noun_news article_3817600.svg"

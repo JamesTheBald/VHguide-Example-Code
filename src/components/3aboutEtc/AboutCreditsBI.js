@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 // import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
-import CollabLogos from "./CollabLogos";
+import CollabLogosBI from "./CollabLogosBI";
 import biosContentBI from "../../content/biosContentBI";
 import { useMyContext } from "../../context/Context";
 
@@ -73,7 +73,7 @@ const AboutCreditsBI = () => {
       <div className="mt-12 md:mt-10 panelTitleClass pb-4">
         {lang === "EN" ? <>Collaborators</> : <>Collaborateurs</>}
       </div>
-      <CollabLogos />
+      <CollabLogosBI />
       <div className="h-10" />
     </>
   );

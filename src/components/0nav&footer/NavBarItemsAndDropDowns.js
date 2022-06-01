@@ -57,6 +57,7 @@ const NavBarItemsAndDropDowns = props => {
   const mainLinkClass = "fsm:mr-3  w-full fsm:w-auto";
   const subMenuLinkClass = "pt-2.5 pb-2  border-gray-light  text-14 tracking-0.4 cursor-pointer";
   const stackedSpacing = "pl-7 pt-3 pb-2 my-2 fsm:pl-0 fsm:py-0";
+  const chevVertPosn = w < 880 ? 4 : 1;
 
   return (
     <>
@@ -77,7 +78,12 @@ const NavBarItemsAndDropDowns = props => {
       </button>
 
       <div className={mainLinkClass}>
-        <HesTypesDropDown subMenuLinkClass={subMenuLinkClass} onClickToBranch={onClickToBranch} onClickGo={onClickGo} />
+        <HesTypesDropDown
+          subMenuLinkClass={subMenuLinkClass}
+          onClickToBranch={onClickToBranch}
+          onClickGo={onClickGo}
+          chevVertPosn={chevVertPosn}
+        />
       </div>
 
       <button className={`${mainLinkClass} fsm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
@@ -103,7 +109,7 @@ const NavBarItemsAndDropDowns = props => {
       </button>
 
       <div className={mainLinkClass}>
-        <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} />
+        <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} chevVertPosn={chevVertPosn} />
       </div>
 
       <div className={`${stackedSpacing} pt-4 fsm:ml-3 fsm:mr-5`}>

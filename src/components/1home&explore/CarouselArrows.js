@@ -1,12 +1,12 @@
 import React from "react";
 import { consts } from "react-elastic-carousel";
 
-import { IoIosArrowDropleftCircle } from "react-icons/io";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { FiChevronLeft } from "react-icons/fi";
+import { FiChevronRight } from "react-icons/fi";
 
 import { useMyContext } from "../../context/Context";
 
-const MyArrow = (props) => {
+const MyArrow = props => {
   const { type, onClick, isEdge } = props;
   const { winWidth } = useMyContext();
 
@@ -14,13 +14,9 @@ const MyArrow = (props) => {
 
   const pointer =
     type === consts.PREV ? (
-      <>
-        <IoIosArrowDropleftCircle size={arrowSize} className="mr-4" />
-      </>
+      <FiChevronLeft size={arrowSize} className="mr-4" />
     ) : (
-      <>
-        <IoIosArrowDroprightCircle size={arrowSize} className="ml-4" />
-      </>
+      <FiChevronRight size={arrowSize} className="ml-4" />
     );
   return (
     <button

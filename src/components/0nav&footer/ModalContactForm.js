@@ -6,10 +6,13 @@ import { VscClose } from "react-icons/vsc";
 import { useMyContext } from "../../context/Context";
 
 const ModalContactForm = () => {
-  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth } = useMyContext();
+  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth, lang } = useMyContext();
 
   const formSource =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true";
+    lang === "EN"
+      ? "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true"
+      : "https://docs.google.com/forms/d/e/1FAIpQLSf1KdgDar7gVV87kwWldiAjjyNWWRMw5xdDdk4hD1EJkA5Y1Q/viewform?usp=sf_link";
+
   const widthModal = winWidth < 720 ? 340 : 510;
   const heightModal = winWidth < 720 ? 900 : 840;
 
@@ -20,7 +23,7 @@ const ModalContactForm = () => {
   const closeModal = () => {
     setShowContactForm(false);
     setFixedBackdrop(false);
-  }
+  };
 
   return (
     <ReactModal
@@ -50,6 +53,6 @@ const ModalContactForm = () => {
       </iframe>
     </ReactModal>
   );
-}
+};
 
 export default ModalContactForm;

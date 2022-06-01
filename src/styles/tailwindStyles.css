@@ -62,7 +62,7 @@
   }
 
   .verySubHeadingFont {
-    @apply font-sans font-semibold  text-15 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
+    @apply font-sans font-semibold  text-15 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .subSubHeadingFont {
@@ -182,8 +182,9 @@
   }
 
   .chevPosn {
-    @apply relative fsm:-left-0.5 bottom-1 fsm:bottom-0
+    @apply relative fsm:-left-0.5
   } 
-
+  /* @apply relative fsm:-left-0.5 bottom-1 fsm:bottom-0.5 */
+  /* Set vertical position via inline style, for more precise control */
 
 }

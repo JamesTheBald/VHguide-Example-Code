@@ -77,9 +77,13 @@ const DetailsLayout = props => {
         {locn.branch < 4 ? (
           <>
             <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
-              &#60; back
+              &#60; {lang === "EN" ? "back" : "retourner"}
+              {/* Confirm that French translation is correct. */}
             </button>
-            <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">Hesitancy Type:</div>
+            <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">
+              {lang === "EN" ? "Hesitancy Type:" : "Type d’hésitation:"}
+              {/* Confirm that French translation is correct. */}
+            </div>
           </>
         ) : (
           <div className="h-16" />

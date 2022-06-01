@@ -14,7 +14,7 @@ const AboutWhatIsThisEN = props => {
   return (
     <article className="relative">
       {/* Add onClick to next line to reveal/collapse following content. Also add pivoting chevron */}
-      <h2 className="aboutTitleClass">What is the VH guide?</h2>
+      <h2 className="aboutTitleClass">What is the VH Guide?</h2>
 
       <div style={textColumnsStyle}>
         <div className="pb-3">

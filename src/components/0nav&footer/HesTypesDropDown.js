@@ -8,7 +8,7 @@ import { useMyContext } from "../../context/Context";
 import { navbarLabels } from "../../content/navbarLabels";
 
 const HesTypesDropDown = props => {
-  const { subMenuLinkClass, onClickGo, onClickToBranch } = props;
+  const { subMenuLinkClass, onClickGo, onClickToBranch, chevVertPosn } = props;
   const { locn, winWidth, fsmBrkPt, branch, lang, log } = useMyContext();
 
   const [showHesDropDown, setShowHesDropDown] = useState(false);
@@ -55,10 +55,16 @@ const HesTypesDropDown = props => {
       <NavItem classNom="pl-7 pt-3  fsm:px-0 fsm:py-0" selecOnHover={true} destn={"/explore"}>
         <button className="flex flex-row  w-full" onClick={event => onClickExplore(event)}>
           <div className="fsm:pl-0.5 fsm:pb-0.5 pr-0.5">{navbarLabels.hesType[lang]}</div>
-          <div className={`chevPosn ${showHesDropDown ? "hidden" : "group-hover:hidden"}`}>
+          <div
+            className={`chevPosn ${showHesDropDown ? "hidden" : "group-hover:hidden"}`}
+            style={{ bottom: chevVertPosn }}
+          >
             <BiChevronRight size={24} />
           </div>
-          <div className={`chevPosn ${showHesDropDown ? "inline" : "hidden group-hover:inline"}`}>
+          <div
+            className={`chevPosn ${showHesDropDown ? "inline" : "hidden group-hover:inline"}`}
+            style={{ bottom: chevVertPosn }}
+          >
             <BiChevronDown size={24} />
           </div>
         </button>
