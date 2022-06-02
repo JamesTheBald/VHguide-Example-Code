@@ -66,7 +66,7 @@
   }
 
   .subSubHeadingFont {
-    @apply font-sans font-semibold  text-16 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
+    @apply font-sans mxs:font-semibold  text-16 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
   }
 
   .subHeadingFont {
@@ -139,17 +139,16 @@
     @apply bg-yellow-darkish text-gray-light hover:bg-opacity-0 hover:text-yellow-darkish  border border-solid border-yellow-darkish rounded-full
   }
 
-
   .aboutEtcTopGap {
     @apply mt-9 mxs:mt-12 sm:mt-16 lg:mt-18
   }
 
-  .oarTabClassBase {
+  .oarTabBase {
     @apply font-serif font-semibold  text-16 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
-  .oarTabClassPedi {
-    @apply font-serif font-semibold  text-14 mxs:text-16 sm:text-20 md:text-24  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  .oarTabPedi {
+    @apply font-serif font-semibold  text-14 mxs:text-16 sm:text-20 md:text-24  tracking-0.2 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .quoteBoxFeatured {

@@ -74,7 +74,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div // Main Navbar container
+      <div // Main Navbar Container, with Logo
         ref={dropDownRef}
         className={`fixed w-screen  flex ${showDropDown && "flex-col  border-gray-light"} fsm:flex-row justify-between 
                     ${!showDropDown && "items-center  border-gray-light"}
@@ -97,7 +97,7 @@ const NavBar = () => {
           )}
         </button>
 
-        {/* WIDE screens => normal navbar, either on 1 line or split into 2 (stacked) */}
+        {/* Normal NavBar Menu (WIDER screens), either on 1 line (WIDE) or split into 2 (stacked, MEDIUM WIDTH) */}
         {showDropDown || winWidth >= 1366 ? (
           <div
             className="hidden fsm:flex justify-center absolute lg:static  lg:mr-6 pt-1  w-full lg:w-auto  items-center
@@ -111,11 +111,11 @@ const NavBar = () => {
           <HamburgerIcon rtPosn={38} />
         )}
 
-        {/* NARROWER screens - Dropdown Menu + Close Button or Hamburger */}
+        {/* Drop-Down Menu for NARROWER screens */}
         <div className="fsm:hidden relative  mr-2">
           {showDropDown && (
             <div
-              className="pt-4 pb-7  absolute left-0  w-full  flex flex-col items-start
+              className="pb-7  absolute left-0  w-full  flex flex-col items-start
                          border-b border-gray-light  bgUnselec  rounded-b-3xl"
               style={{ top: 1 }}
             >

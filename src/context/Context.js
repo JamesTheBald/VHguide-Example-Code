@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useRef, useContext, createContext } from "react";
 
+import getContIDandName from "../functions/getContIDandName";
+import setAdviceAndRelateds from "../functions/setAdviceAndRelateds";
+
 import { branchEN } from "../content/branchEN";
 import { branchFR } from "../content/branchFR";
 import WindowSizeListener from "./WindowSizeListener";
 
 const myContext = createContext();
-// export const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
   const log = true;
   const log2 = false;
-  log2 && console.log("Context.js runs.");
 
+  // STATE FOR FORMATTING
   const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
-  const fsmBrkPt = 880;  // This must match the fsm: ("fairly small") breakpoint width in tailwind.config.js
-
+  const fsmBrkPt = 880; // This must match the fsm: ("fairly small") breakpoint width in tailwind.config.js
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
   WindowSizeListener(winWidth, setWinWidth, setWinHeight);
@@ -33,31 +34,37 @@ const MyProvider = ({ children }) => {
   }, [winWidth, log2]);
 
   const [showContactForm, setShowContactForm] = useState(false);
-  const [fixedBackdrop, setFixedBackdrop] = useState(false);
+  const [fixedBackdrop, setFixedBackdrop] = useState(false); // This is to prevent the background from scrolling when a modal is open
 
+  // STATE FOR CONTENT
   const [locn, setLocn] = useState({
     branch: 0,
     topic: 0,
     subtopic: 0,
     showSubtopic: false,
   });
-
-  const [lang, setLang] = useState("FR");
-  // const [lang, setLang] = useState("EN");
-
-  const [branch, setBranch] = useState(lang==="EN" ? branchEN : branchFR);
-  0 && console.log("setBranch will be used for switching between English & French", setBranch);
-  // {/* {lang === "EN" ? <></> : <></>} */}
-
-  const [fullStoryID, setFullStoryID] = useState("");
-
-  // pedQuoteGroupInitOpen array allows the appropriate quote group on Pediatrics' Details-Advice page to be expanded upon arrival on the page, after clicking on that topic on <PediatricsOverviewTheySay />
-  const pedQuoteGroupInitOpen = useRef(Array(20).fill(false));
-
-  const [noneSelected, setNoneSelected] = useState(true);
   const queryData = useRef({});
+  const [lang, setLang] = useState("FR"); // default is "EN"
+  const [branch, setBranch] = useState(lang === "EN" ? branchEN : branchFR);
+  const [contentID, setContentID] = useState();
+  const [fullStoryID, setFullStoryID] = useState("");
+  const [hesType, setHesType] = useState();
+  const [advice, setAdvice] = useState();
+  const [related, setRelated] = useState();
 
-  // One day: Break this out into several context objects/values/providers, to reduce unnecessary re-renders
+  useEffect(() => {
+    const { contIDTemp, hesTypeTemp } = getContIDandName(locn, branch, setContentID, setHesType, log, log2);
+    log && console.log("Context.js contentIDTemp=", contIDTemp, " and hesTypeTemp=", hesTypeTemp);
+    setAdviceAndRelateds(contIDTemp, setAdvice, setRelated, log, log2);
+  }, [locn, contentID, branch, log, log2]);
+
+  // STATE FOR DISPLAY SETTINGS
+  const [noneSelected, setNoneSelected] = useState(true);
+  const pedQuoteGroupInitOpen = useRef(Array(20).fill(false));
+  // pedQuoteGroupInitOpen array allows the appropriate quote group on Pediatrics' Details-Advice page to be expanded
+  // upon arrival on the page, after clicking on that topic on < PediatricsOverviewTheySay />
+
+  // STATE OUTPUT
   const contextValues = {
     winWidth: winWidth,
     winHeight: winHeight,
@@ -70,6 +77,10 @@ const MyProvider = ({ children }) => {
     branch: branch,
     locn: locn,
     lang: lang,
+    contentID,
+    hesType,
+    advice,
+    related,
     fullStoryID: fullStoryID,
     noneSelected: noneSelected,
     pedQuoteGroupInitOpen: pedQuoteGroupInitOpen,
@@ -86,6 +97,7 @@ const MyProvider = ({ children }) => {
     log: log,
     log2: log2,
   };
+  // Consider breaking this out into several context objects/values/providers, if that will reduce unnecessary re-renders
 
   return <myContext.Provider value={contextValues}>{children}</myContext.Provider>;
 };

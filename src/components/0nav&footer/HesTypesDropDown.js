@@ -9,9 +9,12 @@ import { navbarLabels } from "../../content/navbarLabels";
 
 const HesTypesDropDown = props => {
   const { subMenuLinkClass, onClickGo, onClickToBranch, chevVertPosn } = props;
-  const { locn, winWidth, fsmBrkPt, branch, lang, log } = useMyContext();
+  const { locn, contentID, winWidth, fsmBrkPt, branch, lang, log } = useMyContext();
 
-  const [showHesDropDown, setShowHesDropDown] = useState(false);
+  const path = typeof window !== "undefined" ? window.location.pathname : "";
+  const [showHesDropDown, setShowHesDropDown] = useState(
+    path.match(/\/explore|\/detail/i) && winWidth < 880 && contentID !== "MedicalExemptions"
+  );
 
   const onClickExplore = event => {
     log && console.log("HesTypesDropDown.js onClickExplore runs");

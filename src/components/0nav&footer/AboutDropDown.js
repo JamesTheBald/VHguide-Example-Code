@@ -11,7 +11,8 @@ const AboutDropDown = props => {
   const { subMenuLinkClass, onClickGo, chevVertPosn } = props;
   const { locn, winWidth, fsmBrkPt, lang, log } = useMyContext();
 
-  const [showAboutDropDown, setShowAboutDropDown] = useState(false);
+  const path = typeof window !== "undefined" ? window.location.pathname : "";
+  const [showAboutDropDown, setShowAboutDropDown] = useState(path.match(/\/about/i) && winWidth < 880);
 
   const onClickAbout = event => {
     event.stopPropagation();

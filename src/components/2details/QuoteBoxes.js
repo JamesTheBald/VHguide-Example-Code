@@ -10,6 +10,7 @@ const QuoteBoxes = props => {
   const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
   const pplIcons = queryData.current.pplIcons.edges;
+  const w = winWidth;
 
   log && console.log("QuoteBoxes.js runs.");
   log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
@@ -26,13 +27,18 @@ const QuoteBoxes = props => {
   let style = "";
   const quotePaddingEtc = quote => {
     if (quote.image) {
-      style = winWidth < 510 ? { padding: "30px 25px 26px 50px" } : { padding: "32px 30px 28px 65px" };
-      style.marginLeft = 42;
+      style =
+        w < 510
+          ? { padding: "30px 25px 26px 36px" }
+          : w < 720
+          ? { padding: "30px 25px 26px 52px" }
+          : { padding: "32px 32px 30px 56px" };
+      style.marginLeft = w < 510 ? 25 : w < 720 ? 32 : 36;
     } else if (quote.featured) {
-      style = winWidth < 510 ? { padding: "34px 36px 36px 56px" } : { padding: "44px 44px 38px 72px" };
+      style = w < 510 ? { padding: "34px 30px 36px 44px" } : { padding: "40px 36px 36px 56px" };
     } else {
       // Plain quote
-      style = winWidth < 510 ? { padding: "30px 28px 24px 52px" } : { padding: "32px 32px 28px 63px" };
+      style = w < 510 ? { padding: "30px 24px 24px 44px" } : { padding: "32px 30px 30px 56px" };
     }
     log2 && console.log("QuoteBoxes.js quotepaddingEtc style=", style);
     return style;
@@ -41,7 +47,7 @@ const QuoteBoxes = props => {
   const iconDistFromTop = quote => {
     // log && console.log("QuoteBoxes.js iconDistFromTop() quote=", quote);
     const quoteLen = reactElementToJSXString(quote.text[lang]).length;
-    return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : 50;
+    return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : w < 1024 ? 42 : 50;
   };
 
   return (
@@ -53,11 +59,10 @@ const QuoteBoxes = props => {
             {/* Need breakInside: "avoid" or dontBreak Tailwind class for each containing box down from the parent with the columns.
             See: https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */}
             {reactElementToJSXString(quote.text[lang]).length > 20 && (
-              <div
-                name="Outer box to prevent column breaking inside"
-                className="pt-4 flex flex-col justify-start dontBreak  relative"
-                key={idx}
-              >
+              <div className="pt-4 flex flex-col justify-start dontBreak  relative" key={idx}>
+                {/* Outer box to prevent column breaking inside */}
+
+                {/* Doctor Icon */}
                 {quote.image && (
                   <div className="absolute z-50" style={{ top: iconDistFromTop(quote) }}>
                     {pplIcons.map((item, index) => {
@@ -67,30 +72,29 @@ const QuoteBoxes = props => {
                             key={index}
                             src={item.node.publicURL}
                             alt="Icon"
-                            className="w-20 mxs:w-22 h-20 mxs:h-22"
+                            className="w-12 mxs:w-16 sm:w-18 md:h-20 mxs:h-22"
                           />
                         )
                       );
                     })}
                   </div>
                 )}
-
+                {/* Main Quote Box */}
                 <div
-                  name="main visible quote box"
                   className={`mb-8 mxs:mb-10  flex flex-col rounded-3xl relative baseFontWide  dontBreak
                               ${quoteColorsEtAl(quote)}`}
-                  // ${quote.featured ? "quoteBoxFeatured" : "baseFontWide"}  // For larger font on featured boxes
                   style={quotePaddingEtc(quote)}
                 >
                   <div name="inner text box w decorations" className="relative">
                     {!quote.image && (
-                      <div className="absolute -left-9 -top-1.5 text-30">
+                      <div className="absolute -left-7 mxs:-left-8 sm:-left-10 -top-1 mxs:-top-1.5  text-20 sm:text-30">
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
                     )}
                     {quote.text[lang]} {/* The quote itself */}
                   </div>
 
+                  {/* Link to Full Story page, where applicable */}
                   {quote.fullStoryID && (
                     <Link
                       to="/details/advice/fullstory"

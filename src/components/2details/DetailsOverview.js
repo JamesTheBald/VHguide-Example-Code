@@ -49,7 +49,7 @@ const DetailsOverview = props => {
           {contentID === "Undifferentiated" ? (
             <>
               <h3 className="listTitleClass mb-2">
-                {lang === "EN" ? "Considerations for vaccine hesitant patients:" : ""}
+                {lang === "EN" ? "Considerations for Vaccine Hesitant Patients" : ""}
               </h3>
               {theySay.content[lang].map((currItem, index) => (
                 <div key={index} className="pb-4">
@@ -65,7 +65,7 @@ const DetailsOverview = props => {
             <MedExemptOverviewTheySayBI />
           ) : (
             <>
-              <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say..." : ""}</h3>
+              <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say" : ""}</h3>
               <ul className="listClass2">
                 {theySay.content[lang].map((currItem, index) => (
                   <li key={index} className="pb-4">
@@ -87,7 +87,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Things to consider..." : ""}</h3>
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Things to Consider" : ""}</h3>
 
           {contentID === "Pediatrics" ? (
             <>{thingsToConsider.content[lang]}</>
@@ -112,7 +112,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home:" : ""}</h3>
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home" : ""}</h3>
           {takeHome.content[lang].map((currItem, index) => (
             <div key={index} className="mt-2  baseFont text-blue-black">
               {currItem}
@@ -128,11 +128,12 @@ const DetailsOverview = props => {
       >
         {lang === "EN"
           ? winWidth < 450
-            ? "How to start the conversation"
-            : "Read advice on how to start the conversation"
+            ? "How to Start the Conversation"
+            : "Advice on Starting the Conversation"
           : winWidth < 450
           ? ""
-          : ""}
+            : ""}
+        {/* Add French translation for button */}
       </Link>
     </div>
   );

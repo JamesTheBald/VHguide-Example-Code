@@ -19,7 +19,8 @@ const PediatricsOverviewTheySayBI = () => {
 
   return (
     <>
-      <h3 className="listTitleClass">{lang === "EN" ? "Patients are saying they have concerns about..." : ""}</h3>
+      <h3 className="listTitleClass">{lang === "EN" ? "What Clinicians Are Hearing" : ""}</h3>
+      <div className="pt-3 baseFont">{lang === "EN" ? "Patients are saying they have concerns about..." : ""}</div>
 
       <ul className="listClass2">
         {theySayListItems.map((currItem, index) => {

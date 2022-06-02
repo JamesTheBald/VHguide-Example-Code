@@ -63,7 +63,7 @@ const NavBarItemsAndDropDowns = props => {
     <>
       <button
         className={`${mainLinkClass}
-                  ${isNavItemSelected("/", locn) && w < fsmBrkPt ? "subMenuYBorders bgSelec" : ""}`}
+                  ${isNavItemSelected("/", locn) && w < fsmBrkPt ? "border-b border-gray-light bgSelec" : ""}`}
         onClick={event => onClickGo(event, "/")}
       >
         <NavItem classNom={`${stackedSpacing}`} destn="/">

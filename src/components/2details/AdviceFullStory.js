@@ -4,9 +4,8 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 import { contentFullStoriesBI } from "../../content/contentFullStoriesBI";
 
-const AdviceFullStory = props => {
-  const { fullStoryID } = props;
-  const { winWidth, queryData, lang, log } = useMyContext();
+const AdviceFullStory = () => {
+  const { fullStoryID, winWidth, queryData, lang, log } = useMyContext();
 
   log && console.log("AdviceFullStory.js runs. fullStoryID=", fullStoryID);
 

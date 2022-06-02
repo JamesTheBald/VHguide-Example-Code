@@ -30,7 +30,7 @@ export const pediatricsContentBI = [
           EN: (
             <>
               <span>Long-Term Effects / </span>
-              <span className="whitespace-nowrap">Long-Term Data</span>
+              <span className="whitespace-nowrap">Data</span>
             </>
           ),
           FR: <></>,

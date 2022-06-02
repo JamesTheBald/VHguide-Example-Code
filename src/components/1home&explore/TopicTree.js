@@ -92,7 +92,9 @@ const TopicTree = props => {
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <h3 className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.4 sm:tracking-0.5`}>
+                  <h3
+                    className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.2 axs:tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5`}
+                  >
                     {w < widTopicNameShortBrkPt ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 

@@ -13,12 +13,14 @@ const NavItem = props => {
 
   return (
     <div className={`${classNom} w-full  flex flex-col items-start  cursor-pointer group  relative`}>
-      <div name="Narrow screens" className="fsm:hidden w-full  text-left">
+      {/* Narrower Screens */}
+      <div className="fsm:hidden w-full  text-left">
         {children}
       </div>
 
+      {/* Wider Screens */}
       <div
-        name="'Shield' border for when selected - Wider screens (>= fsm: breakpoint)"
+        name="'Shield' border for when selected"
         className={`hidden fsm:flex px-3 h-22  w-full  justify-center items-center  relative
                     rounded-b-lg  border-2 fsm:border-t-0 border-gray-light border-solid  z-20
         ${selected ? "bgSelec" : "border-opacity-0"}

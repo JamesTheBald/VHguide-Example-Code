@@ -5,11 +5,9 @@ import { animateScroll as scroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import Layout from "../0nav&footer/NavFooterLayout";
 import TabBarOAR from "../../components/2details/TabBarOAR";
-// import { getBranchNum, getTopicNum, getSubtopicNum, getSubtopicName } from "../../functions/getRelatedDetails";
 
-const DetailsLayout = props => {
-  const { hesTypeName, related } = props;
-  const { locn, branch, setLocn, fixedBackdrop, lang, log, log2 } = useMyContext();
+const DetailsLayout = (props) => {
+  const { locn, branch, setLocn, hesType, related, fixedBackdrop, lang, log, log2 } = useMyContext();
   false && console.log(log, log2);
 
   // The following four functions were in a separate file (getRelatedDetails.js) but this didn't work once branch became a state var (for French version), to be passed in from Context. branch was either undefined in the separate file, or null if passed in as a param.
@@ -68,7 +66,6 @@ const DetailsLayout = props => {
   const yPosnPanel = 24;
   const tabHeight = 50;
   const relatedPill = "px-3 pt-1 mr-5 mb-3  vsmFont italic orangeLink  linkPill";
-
   const panelPadding = "p-5 axs:p-7 mxs:p-8 sm:p-12 md:p-14  pb-6 sm:pb-8 md:pb-10";
 
   return (
@@ -86,10 +83,10 @@ const DetailsLayout = props => {
             </div>
           </>
         ) : (
-          <div className="h-16" />
+          <div className="h-10" />
         )}
 
-        <h1 className="mt-0.5 mb-1  titleFont titleMediumPlus">{hesTypeName}</h1>
+        <h1 className="mt-0.5 mb-1  titleFont titleMediumPlus">{hesType}</h1>
 
         <div name="OAR Tab and Panel container" style={{ marginTop: yPosnPanel }}>
           <div className="relative z-10">
@@ -106,12 +103,12 @@ const DetailsLayout = props => {
           {/* Items below main panel */}
           {locn.branch === 3 ? (
             <div className="mt-2 md:mt-4  mb-8  sm:text-right  italic smThenBaseFont text-blue-pale">
-              {lang === "EN" ? <>*The pediatric hesitancy type is evolving and will receive regular updates.</> : <></>}
+              {lang === "EN" ? <>*The pediatric hesitancy type is evolving and will receive updates.</> : <></>}
             </div>
           ) : related[0] ? (
             <>
               <div className="mb-10 mxs:mb-16  flex flex-wrap items-baseline">
-                <h4 className="mt-6 mb-2.5  text-14 tracking-0.3 font-semibold">Related hesitancy types:</h4>
+                <h4 className="mt-6 mb-2.5  text-14 tracking-0.3 font-semibold">Related Hesitancy Types:</h4>
                 <div className="ml-6  flex flex-wrap">
                   {related.map((contID, index) => {
                     return (

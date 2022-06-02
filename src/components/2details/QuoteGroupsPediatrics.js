@@ -40,8 +40,6 @@ const QuoteGroupsPediatrics = props => {
           }}
         >
           <div className="text-left subHeadingFont">{currGroup.subheading[lang]}</div>
-          {/* <IoIosArrowDown className="CustomTriggerCSS hideWhenClosed" size={arrowSize} />
-          <IoIosArrowForward className="CustomTriggerCSS hideWhenOpen" size={arrowSize} /> */}
           {groupNum === openGroupNums ? <IoIosArrowDown size={arrowSize} /> : <IoIosArrowForward size={arrowSize} />}
         </button>
         <DivLine className="mt-2 mb-8 mxs:mb-10 sm:mb-12" />
@@ -61,12 +59,12 @@ const QuoteGroupsPediatrics = props => {
         transitionTime={w < 510 ? 200 : 300}
       >
         <div className="flex flex-col">
-          <div className="subSubHeadingFont mb-6 md:mb-8">What Clinicians Are Hearing</div>
+          <div className="subSubHeadingFont mb-6 md:mb-8">{lang === "EN" ? "What Clinicians are Hearing" : ""}</div>
           <div className="mb-2 mxs:mb-3 sm:mb-12" style={columnStyle}>
             <QuoteBoxes quoteArray={currGroup.cliniciansHearing} setFullStoryID={setFullStoryID} />
           </div>
-
-          <div className="subSubHeadingFont mt-2 mb-6 md:mb-8">What Clinicians Are Saying</div>
+          {/* Add French translations in above and below */}
+          <div className="subSubHeadingFont mt-2 mb-6 md:mb-8">{lang === "EN" ? "What Clinicians are Saying" : ""}</div>
           <div className="mb-2 mxs:mb-3 sm:mb-12" style={columnStyle}>
             <QuoteBoxes quoteArray={currGroup.cliniciansSaying} setFullStoryID={setFullStoryID} />
           </div>

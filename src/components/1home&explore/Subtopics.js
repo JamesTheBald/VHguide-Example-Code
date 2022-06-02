@@ -33,7 +33,7 @@ const Subtopics = props => {
   const margLeft = innerMarginLeft + indentSubtopicLeft;
   const margRight = innerMarginRight + 2;
 
-  const baseFontWide = "font-sans  text-16 mxs:text-18  tracking-0.2 mxs:tracking-0.4 sm:tracking-0.5";
+  const baseFontWide = "font-sans  text-16 mxs:text-18  tracking-0.2 axs:tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5";
   // const baseFontWide = "font-sans  text-15 mxs:text-18  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5";
 
   if (subtopics?.[0]) {
