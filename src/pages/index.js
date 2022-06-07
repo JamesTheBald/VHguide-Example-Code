@@ -31,11 +31,11 @@ const Home = props => {
 
   return (
     <>
-      <main className="w-full bg-white text-blue-black overflow-x-hidden">
+      <main className="w-full bg-white text-blue-black">
         <Home1TopCarousel />
         <Home3WhoWeAre />
         <Home4TestimonialsEtc />
-        <div className="w-full h-16 md:h-24"></div>
+        <div name="spacer above footer" className="w-full h-16 md:h-24"></div>
       </main>
     </>
   );

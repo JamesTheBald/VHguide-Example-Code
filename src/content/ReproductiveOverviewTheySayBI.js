@@ -49,7 +49,7 @@ const ReproductiveOverviewTheySayBI = () => {
     <>
       <h3 className="listTitleClass">{lang === "EN" ? "People with this hesitancy type say:" : ""}</h3>
 
-      <ul className="listClass2">
+      <ul className="ml-5  listClass2">
         {theySayListItems1.map((currItem, index) => {
           return (
             <li className="pb-3" key={index}>
@@ -59,7 +59,7 @@ const ReproductiveOverviewTheySayBI = () => {
         })}
       </ul>
       {showFullTheySay && (
-        <ul className="listClass2">
+        <ul className="ml-5  listClass2">
           {theySayListItems2.map((currItem, index) => {
             return (
               <li className="pb-3" key={index}>

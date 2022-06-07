@@ -22,10 +22,10 @@ const PediatricsOverviewTheySayBI = () => {
       <h3 className="listTitleClass">{lang === "EN" ? "What Clinicians Are Hearing" : ""}</h3>
       <div className="pt-3 baseFont">{lang === "EN" ? "Patients are saying they have concerns about..." : ""}</div>
 
-      <ul className="listClass2">
+      <ul className="ml-5 sm:ml-10  listClass2">
         {theySayListItems.map((currItem, index) => {
           return (
-            <li className="pb-3" key={index}>
+            <li className="pb-3 pl-1" key={index}>
               <button
                 className="orangeUnderline text-left"
                 onClick={() => {

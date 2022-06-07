@@ -1,4 +1,5 @@
 import React from "react";
+// import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import "../../styles/fonts.css";
@@ -16,12 +17,20 @@ import { useMyContext } from "../../context/Context";
 const NavFooterLayout = ({ children }) => {
   const { fixedBackdrop, lang } = useMyContext();
 
+  // const hasYScrollbar = useRef();
+  // useEffect(() => {
+  //   if (typeof window !== `undefined`) hasYScrollbar.current = window.innerWidth - document.body.offsetWidth > 0;
+  //   // if (typeof window !== `undefined`) hasYScrollbar.current = window.visualViewport.width < window.Width;
+  //   console.log("NavFooterLayout.js hasYScrollbar=", hasYScrollbar.current);
+  // }, []);
+
   return (
-    <>
+    <div className="overflow-hidden"> 
+      {/* Suppress scrollbars at this hierarchy level -esp. horizontal ones */}
       <Seo />
       <div
         className={`${fixedBackdrop ? "fixed" : "relative"} 
-                    flex flex-col justify-between  w-screen text-blue-main  overflow-hidden`}
+                    flex flex-col justify-between  w-screen text-blue-main`}
         style={{ minHeight: 100 + "vh" }}
       >
         <div className="">
@@ -31,7 +40,7 @@ const NavFooterLayout = ({ children }) => {
         <Footer />
         {lang === "EN" && <SurveySlideIn />}
       </div>
-    </>
+    </div>
   );
 };
 

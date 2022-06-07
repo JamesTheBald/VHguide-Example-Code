@@ -99,7 +99,7 @@
 
 
   .titleLanding {
-    @apply text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65
+    @apply text-22 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65
            tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4
   }
 
@@ -108,7 +108,7 @@
   }
 
   .listClass2 {
-    @apply ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc
+    @apply mt-2  baseFont text-blue-black  list-disc
   }
   
   .listClassPopup {

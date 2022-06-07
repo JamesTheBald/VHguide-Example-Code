@@ -72,23 +72,12 @@ const landingSlidesContentBI = [
     introPart2: {
       EN: (
         <span>
-          {" "}
-          the hesitancy types to help identify the sources of your patients’ hesitancy and find advice from fellow
-          clinicians on how to address them.
-        </span>
-      ),
-      FR: (
-        <span>
-          {" "}
-          d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux
-          divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des
-          ressources et des conseils pour surmonter ces hésitations.
-        </span>
-      ),
-    },
-    introPart3: {
-      EN: (
-        <>
+          <span>
+            {" "}
+            the hesitancy types to help identify the sources of your patients’ hesitancy and find advice from fellow
+            clinicians on how to address them.
+          </span>
+          <div className="h-3" />
           <span className="subtitleFont font-light italic">
             For an overview of how to use the guide, visit the
             <Link to="/about" className="px-1.5  underline cursor-pointer">
@@ -96,18 +85,29 @@ const landingSlidesContentBI = [
             </Link>
             <span>page.</span>
           </span>
-        </>
+        </span>
       ),
       FR: (
-        <>
+        <span>
+          <span>
+            {" "}
+            d’hésitation vaccinale auxquels les cliniciens de soins primaires font souvent face. Jetez un coup d’œil aux
+            divers types d’hésitation afin de déterminer les sources d’hésitation de vos patients et de trouver des
+            ressources et des conseils pour surmonter ces hésitations.
+          </span>
+          <div className="h-3" />
           <span className="subtitleFont font-light italic">
             Un aperçu de ce guide se trouve à la page
             <Link to="/about" className="px-1.5  underline cursor-pointer">
               «&nbsp;À propos du guide&nbsp;».
             </Link>
           </span>
-        </>
+        </span>
       ),
+    },
+    introPart3: {
+      EN: <></>,
+      FR: <></>,
     },
     buttonText: { EN: "Browse Hesitancy Types", FR: "Jeter un coup d’œil aux types d’hésitation" },
     buttonDestn: "/explore",

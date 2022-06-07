@@ -1,7 +1,8 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
-import EaaseHoverPopup from "../components/2details/EaaseHoverPopup";
+import EaaseHoverPopupEN from "./EaaseHoverPopupEN";
+import EaaseHoverPopupFR from "./EaaseHoverPopupFR";
 
 export const contentPersonasBI = {
   // Put copy content inside <> and </> instead of double quotes (except for LinkText).
@@ -1232,7 +1233,6 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "spikyVaccines",
                 fullStoryLinkText: { EN: "Read the full story", FR: "" },
-
               },
 
               {
@@ -8250,32 +8250,33 @@ export const contentPersonasBI = {
                 Below you can download a slide deck that outlines approaches for any vaccine hesitancy conversation. The
                 slides describe successful approaches to:
               </p>
-              <div className="ml-5 mxs:ml-10">
-                <p>
+              <ul className="ml-5 mxs:ml-10 list-disc">
+                <li>
                   <strong>Resetting</strong> your expectations for the conversation
-                </p>
-                <p>
+                </li>
+                <li>
                   <strong>Engaging</strong> openly
-                </p>
-                <p>
+                </li>
+                <li>
                   <strong>Affirming</strong> your patient&apos;s concerns and starting points
-                </p>
-                <p>
+                </li>
+                <li>
                   <strong>Asking</strong> permission, then <strong>sharing</strong> your own information or perspectives
-                </p>
-                <p>
+                </li>
+                <li>
                   <strong>Evoking</strong> positive visions of the future, and co-planning to find a common goal
-                </p>
-              </div>
+                </li>
+              </ul>
             </>,
             <>
               <a
-                className="px-4 pt-1.5 pb-1  smFont orangeLink  linkPill"
+                className="px-4 pt-1.5 pb-1  smFont orangeLink underline"
                 href="https://docs.google.com/presentation/d/1UCFV9zVZFa6sLrRXGBnYLK0zUK7A6kDZbFHJSmwe_Ag/edit?usp=sharing"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Download the slides
+                <span>Download the Slides</span>
+                <FiExternalLink className="ml-1 inline" size={18} />
               </a>
             </>,
           ],
@@ -8294,13 +8295,10 @@ export const contentPersonasBI = {
             <>
               <div className="relative">
                 <span>Use the</span>
-                {/* <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className="ml-1.5 orangeLink" /> */}
-
-                <EaaseHoverPopup
+                <EaaseHoverPopupEN
                   eaaseTextClass="mx-1.5 orangeUnderline"
                   eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
                 />
-
                 <span>
                   to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
                   responding.
@@ -8316,7 +8314,23 @@ export const contentPersonasBI = {
               become your patients&apos; ally.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+            <></>,
+            <>
+              <div className="relative">
+                <span>Use the</span>
+                <EaaseHoverPopupFR
+                  eaaseTextClass="mx-1.5 orangeUnderline"
+                  eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
+                />
+                <span>
+                  to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
+                  responding. (TEMP FRENCH)
+                </span>
+              </div>
+            </>,
+            <></>,
+          ],
         },
       },
       takeHome: {
@@ -9192,7 +9206,7 @@ export const contentPersonasBI = {
                   Conversations with the parents of younger children eligible for the vaccine are likely to be
                   emotionally charged, and come in a variety of forms. These include:
                 </div>
-                <ul className="pl-10 pt-3 list-disc">
+                <ul className="pl-5 sm:pl-10 pt-3 list-disc">
                   <li key={0}>Unvaccinated parents unwilling to vaccinate their children,</li>
                   <li key={1}>Vaccinated parents hesitant to vaccinate their children, and</li>
                   <li key={2}>Unvaccinated children who want to be vaccinated contrary to parental wishes.</li>

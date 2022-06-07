@@ -73,7 +73,7 @@ const DetailsLayout = (props) => {
       <div className="text-blue-main panelMargins">
         {locn.branch < 4 ? (
           <>
-            <button className="mt-6 mxs:mt-11 sm:mt-11 orangeLink" onClick={() => navigate(-1)}>
+            <button className="mt-6 mxs:mt-11 sm:mt-11  text-12 mxs:text-14 orangeLink" onClick={() => navigate(-1)}>
               &#60; {lang === "EN" ? "back" : "retourner"}
               {/* Confirm that French translation is correct. */}
             </button>

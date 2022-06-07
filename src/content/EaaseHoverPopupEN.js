@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-const EaaseHoverPopup = props => {
+const EaaseHoverPopupEN = props => {
   const { eaaseTextClass, eaaseBoxClass } = props;
   return (
     <span className="hoverRevealTrigger">
@@ -32,4 +32,4 @@ const EaaseHoverPopup = props => {
   );
 };
 
-export default EaaseHoverPopup;
+export default EaaseHoverPopupEN;

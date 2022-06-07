@@ -52,7 +52,13 @@ const AboutEaaseStepsEN = props => {
                 Emphasizing your patient&apos;s autonomy &mdash; they will be a good person regardless of the decision
                 they make.
               </li>
-              <li>Offering to work together as equals to understand available vaccine information.</li>
+              <li>
+                <span>Offering to work together,{" "}</span>
+                {/* <Link to="/about/media" className="orangeUnderline"> */}
+                  as equals
+                {/* </Link> */}
+                <span>, to understand available vaccine information.</span>
+              </li>
               <li>Emphasizing the importance of individual decisions for protection of the broader community.</li>
               <li>
                 Ensuring they feel heard. A patient who feels misheard and mis-interpreted is unlikely to trust you.

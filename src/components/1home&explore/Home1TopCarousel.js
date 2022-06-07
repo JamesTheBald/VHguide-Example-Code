@@ -1,12 +1,11 @@
-import React, { useState, useRef } from "react";
-// import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { detect } from "detect-browser";
 
 import "../../styles/splide.css";
 import landingSlidesContentBI from "../../content/landingSlidesContentBI";
-import Home1TopPanel from "./Home1TopPanel";
+import Home1Panel from "./Home1Panel";
 import { useMyContext } from "../../context/Context";
 
 const Home1TopCarousel = () => {
@@ -14,10 +13,13 @@ const Home1TopCarousel = () => {
   0 && console.log(log, log2);
 
   const [showFullIntro, setShowFullIntro] = useState(false);
+
+  // Panel height must be defined so the nav dots are in the same place on screen on different slides
+  // Note that customizing the nav dots (aka pagination dots) is difficult. https://splidejs.com/guides/pagination/#custom-pagination
   const panelHtClass =
     lang === "EN"
-      ? `${showFullIntro ? "h-200" : "h-190"} mxs:h-220 sm:h-240 md:h-260 lg:h-210 xl:h-220`
-      : `${showFullIntro ? "h-220" : "h-190"} mxs:h-240 sm:h-270 md:h-260 lg:h-210 xl:h-220`;
+      ? `${showFullIntro ? "h-160" : "h-130"} mxs:h-220 sm:h-260 fsm:h-250 md:h-260 lg:h-210 xl:h-220`
+      : `${showFullIntro ? "h-170" : "h-130"} mxs:h-230 sm:h-270 fsm:h-260 md:h-260 lg:h-210 xl:h-220`;
 
   const browser = detect(); // from https://www.npmjs.com/package/detect-browser
   log2 && console.log("Home1TopCarousel.js browser object=", browser);
@@ -29,24 +31,32 @@ const Home1TopCarousel = () => {
   const slideSpeed = browser.name === "safari" ? 300 : isMobile ? 600 : 1200;
   // faster sliding on Safari because it doesn't render the slide content until the slide stops sliding
 
-  const splideRef = useRef();
-
+  // const splideRef = useRef();
   // useEffect(() => {
   //   if (lang === "FR" && currContent.buttonFuncFlag === "french")
   //     // may need to set currContent.buttonFuncFlag to a useRef.current within the .map below, so this value is accessible here.
   //         splideRef.current.splide.go('>'); // switches to the next carousel slide. See https://splidejs.com/guides/apis/#go
   //  }, [lang, splideRef]);
 
+  // Detect if vertical scrollbar is present. If so, render narrower panel.
+  const hasYScrollbarB = useRef();
+  useEffect(() => {
+    if (typeof window !== `undefined`) hasYScrollbarB.current = window.innerWidth - document.body.offsetWidth > 0;
+    // From https://stackoverflow.com/questions/58445267/how-to-know-whether-a-browser-is-displaying-scrollbar-is-present-or-not-in-react
+    log2 && console.log("Home1TopCarousel.js hasYScrollbar=", hasYScrollbarB.current);
+  }, [log2]);
+  const carouselPanelWidth = hasYScrollbarB.current ? winWidth - 15 : winWidth;
+
   return (
     <>
-      <div className="overflow-hidden" style={{ width: winWidth - 15 }}>
+      <div className="overflow-hidden" style={{ width: carouselPanelWidth }}>
         <Splide
           options={{
             type: "slide",
             gap: 40,
             speed: slideSpeed, // slide-across time in ms
             waitForTransition: true, // default=true
-            autoplay: true, // default=true
+            autoplay: false, // default=true
             interval: 15000,
             rewind: true, // default=false
             rewindSpeed: 2000,
@@ -57,7 +67,7 @@ const Home1TopCarousel = () => {
             preloadPages: 1,
             arrows: false, // default=true
           }}
-          ref={splideRef}
+          // ref={splideRef}
         >
           {landingSlidesContentBI.map((currContent, index) => {
             log2 && console.log("Home1TopCarousel.js index=", index, "& content=", currContent);
@@ -67,11 +77,7 @@ const Home1TopCarousel = () => {
 
             return (
               <SplideSlide key={index} className={`relative ${panelHtClass}`}>
-                <Home1TopPanel
-                  content={currContent}
-                  showFullIntro={showFullIntro}
-                  setShowFullIntro={setShowFullIntro}
-                />
+                <Home1Panel content={currContent} showFullIntro={showFullIntro} setShowFullIntro={setShowFullIntro} />
               </SplideSlide>
             );
           })}

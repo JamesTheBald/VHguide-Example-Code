@@ -44,7 +44,7 @@ const MyProvider = ({ children }) => {
     showSubtopic: false,
   });
   const queryData = useRef({});
-  const [lang, setLang] = useState("FR"); // default is "EN"
+  const [lang, setLang] = useState("EN"); // Sets current language. default is "EN" for English, alt is "FR" for French
   const [branch, setBranch] = useState(lang === "EN" ? branchEN : branchFR);
   const [contentID, setContentID] = useState();
   const [fullStoryID, setFullStoryID] = useState("");

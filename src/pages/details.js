@@ -7,7 +7,7 @@ import AdviceTabNavBar from "../components/2details/AdviceTabNavBar";
 import AdviceQuoteGroupList from "../components/2details/AdviceQuoteGroupList";
 import AdviceEaase from "../components/2details/AdviceEaase";
 import AdviceFullStory from "../components/2details/AdviceFullStory";
-import AdviceWhatsWorking from "../components/2details/AdviceWhatsWorking";
+import AdviceWhatsWorkingBI from "../components/2details/AdviceWhatsWorkingBI";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import DetailsLayout from "../components/2details/DetailsLayout";
 import DetailsOverview from "../components/2details/DetailsOverview";
@@ -35,7 +35,7 @@ const Details = props => {
   const EaaseIntro = ({ advice }) => {
     return (
       <>
-        <AdviceWhatsWorking />
+        <AdviceWhatsWorkingBI />
         <AdviceEaase advice={advice} />
       </>
     );
@@ -44,7 +44,7 @@ const Details = props => {
   const EaasePages = () => {
     return (
       <>
-        <AdviceWhatsWorking />
+        <AdviceWhatsWorkingBI />
         <AdviceTabNavBar />
         <AdviceQuoteGroupList advice={advice} />
       </>

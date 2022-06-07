@@ -66,9 +66,9 @@ const DetailsOverview = props => {
           ) : (
             <>
               <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say" : ""}</h3>
-              <ul className="listClass2">
+              <ul className="pl-5 listClass2">
                 {theySay.content[lang].map((currItem, index) => (
-                  <li key={index} className="pb-4">
+                  <li key={index} className="pb-4 pl-1">
                     {currItem}
                   </li>
                 ))}
@@ -92,9 +92,9 @@ const DetailsOverview = props => {
           {contentID === "Pediatrics" ? (
             <>{thingsToConsider.content[lang]}</>
           ) : (
-            <ul className="listClass2">
+            <ul className="pl-5  listClass2">
               {thingsToConsider.content[lang].map((currItem, index) => (
-                <li key={index} className="pb-4">
+                <li key={index} className="pb-4 pl-1">
                   {currItem}
                 </li>
               ))}
@@ -132,7 +132,7 @@ const DetailsOverview = props => {
             : "Advice on Starting the Conversation"
           : winWidth < 450
           ? ""
-            : ""}
+          : ""}
         {/* Add French translation for button */}
       </Link>
     </div>
