@@ -42,7 +42,7 @@ const Footer = () => {
       </button>
 
       {/* Language Switcher for narrow screens, stacked under Contact Us icon */}
-      <div className="mxs:hidden  absolute bottom-4 z-50" style={{ right: 18 }}>
+      <div className="mxs:hidden  absolute bottom-4 z-50" style={{ right: 26 }}>
         <LanguageSwitcher />
       </div>
 
@@ -94,7 +94,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="hidden mxs:flex items-center  mr-9">
+            <div className="hidden mxs:flex items-center  relative -left-2 mr-9">
               <LanguageSwitcher />
             </div>
           </div>

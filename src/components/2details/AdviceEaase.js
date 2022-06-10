@@ -29,6 +29,8 @@ const AdviceEaase = props => {
         {eaaseTitlesAndButtonsBI.map((curr, index) => {
           const title1 = curr.title1[lang];
           const title2 = curr.title2 ? curr.title2[lang] : "";
+          const title3 = curr.title3 ? curr.title3[lang] : "";
+          const title4 = curr.title4 ? curr.title4[lang] : "";
 
           return (
             <div key={index}>
@@ -38,8 +40,12 @@ const AdviceEaase = props => {
                   <span className={restOfTitle}>{title1.substr(1)}</span>
                   <span className={`ml-1.5 ${dropCapClass}`}>{title2.substr(0, 1)}</span>
                   <span className={restOfTitle}>{title2.substr(1)}</span>
+                  <span className={`ml-1.5 ${dropCapClass}`}>{title3.substr(0, 1)}</span>
+                  <span className={restOfTitle}>{title3.substr(1)}</span>
+                  <span className={`ml-1.5 ${dropCapClass}`}>{title4.substr(0, 1)}</span>
+                  <span className={restOfTitle}>{title4.substr(1)}</span>
                 </h4>
-                <AdviceEaaseIconAndText advice={advice} tab={"ask"} />
+                <AdviceEaaseIconAndText advice={advice} tab={curr.tab} />
               </section>
             </div>
           );
@@ -50,44 +56,3 @@ const AdviceEaase = props => {
 };
 
 export default AdviceEaase;
-
-{
-  /* <section className={blockContainer}>
-<h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
-  <span className={dropCapClass}>E</span>
-  <span className={restOfTitle}>ngage with open questions</span>
-</h4>
-<AdviceEaaseIconAndText advice={advice} tab={"engage"} />
-</section>
-
-<section className={blockContainer}>
-<h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
-  <span className={dropCapClass}>A</span>
-  <span className={restOfTitle}>ffirm and reflectively listen</span>
-</h4>
-<AdviceEaaseIconAndText advice={advice} tab={"affirm"} />
-</section> */
-}
-
-{
-  /* <div className={`{blockContainer} lg:order-4`}> */
-}
-{
-  /* <section className={blockContainer}>
-<h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
-  <span className={dropCapClass}>A</span>
-  <span className={restOfTitle}>sk for permission then</span>
-  <span className={`ml-1.5 ${dropCapClass}`}>S</span>
-  <span className={restOfTitle}>hare information</span>
-</h4>
-<AdviceEaaseIconAndText advice={advice} tab={"ask"} />
-</section>
-
-<section className={blockContainer}>
-<h4 className={titleWrapperClass} style={{ lineHeight: 1 }}>
-  <span className={dropCapClass}>E</span>
-  <span className={restOfTitle}>voke and evaluate options</span>
-</h4>
-<AdviceEaaseIconAndText advice={advice} tab={"evoke"} />
-</section> */
-}

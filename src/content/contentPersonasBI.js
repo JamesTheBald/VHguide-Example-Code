@@ -9532,7 +9532,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "" },
               },
               {
                 text: {
@@ -9550,7 +9550,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9569,7 +9569,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9585,7 +9585,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
             ],
           },
@@ -9612,7 +9612,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "" },
               },
               {
                 text: {
@@ -9629,7 +9629,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "" },
               },
               // MedicalExemptions
 
@@ -9647,7 +9647,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "" },
               },
               {
                 text: {
@@ -9664,7 +9664,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "" },
               },
             ],
           },
@@ -9691,7 +9691,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "" },
               },
               {
                 text: {
@@ -9706,7 +9706,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
             ],
           },
@@ -9736,7 +9736,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "doctorBlackWoman.svg",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9753,7 +9753,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9771,7 +9771,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
-                title: { EN: "", FR: "" },
+                label: { EN: "", FR: "" },
               },
               {
                 text: {
@@ -9788,7 +9788,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9808,7 +9808,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "" },
               },
             ],
           },
@@ -9839,7 +9839,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Do me a favour", FR: "" },
+                label: { EN: "Do me a favour", FR: "" },
               },
               {
                 text: {
@@ -9856,7 +9856,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Do me a favour", FR: "" },
+                label: { EN: "Do me a favour", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9874,7 +9874,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "" },
               },
               {
                 text: {
@@ -9893,7 +9893,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9913,7 +9913,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "" },
               },
               {
                 text: {
@@ -9929,7 +9929,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "" },
               },
               // MedicalExemptions
               {
@@ -9948,7 +9948,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                title: { EN: "Religion", FR: "" },
+                label: { EN: "Religion", FR: "" },
               },
             ],
           },

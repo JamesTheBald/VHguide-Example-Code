@@ -31,14 +31,14 @@ const QuoteBoxes = props => {
         w < 510
           ? { padding: "30px 25px 26px 36px" }
           : w < 720
-          ? { padding: "30px 25px 26px 52px" }
-          : { padding: "32px 32px 30px 56px" };
+          ? { padding: "32px 25px 26px 52px" }
+          : { padding: "34px 32px 30px 56px" };
       style.marginLeft = w < 510 ? 25 : w < 720 ? 32 : 36;
     } else if (quote.featured) {
       style = w < 510 ? { padding: "34px 30px 36px 44px" } : { padding: "40px 36px 36px 56px" };
     } else {
       // Plain quote
-      style = w < 510 ? { padding: "30px 24px 24px 44px" } : { padding: "32px 30px 30px 56px" };
+      style = w < 510 ? { padding: "30px 24px 24px 44px" } : { padding: "36px 30px 30px 56px" };
     }
     log2 && console.log("QuoteBoxes.js quotepaddingEtc style=", style);
     return style;
@@ -47,20 +47,28 @@ const QuoteBoxes = props => {
   const iconDistFromTop = quote => {
     // log && console.log("QuoteBoxes.js iconDistFromTop() quote=", quote);
     const quoteLen = reactElementToJSXString(quote.text[lang]).length;
-    return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : w < 1024 ? 42 : 50;
+    return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : w < 1024 ? 46 : 50;
   };
 
   return (
     <>
       {quoteArray.map((quote, idx) => {
         console.log("QuoteBoxes.js quoteArray.map -> quote=", quote);
+        const label = quote.label && quote.label[lang];
+
         return (
           <div key={idx} style={{ breakInside: "avoid" }}>
             {/* Need breakInside: "avoid" or dontBreak Tailwind class for each containing box down from the parent with the columns.
             See: https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */}
             {reactElementToJSXString(quote.text[lang]).length > 20 && (
-              <div className="pt-4 flex flex-col justify-start dontBreak  relative" key={idx}>
+              <div className="pt-5 flex flex-col justify-start dontBreak  relative" key={idx}>
                 {/* Outer box to prevent column breaking inside */}
+
+                {label && (
+                  <div className="absolute top-0 px-6 pt-1.5 pb-1  baseFont text-blue-black font-semibold  bg-gray-neutral  rounded-full z-50">
+                    {label}
+                  </div>
+                )}
 
                 {/* Doctor Icon */}
                 {quote.image && (
@@ -85,9 +93,10 @@ const QuoteBoxes = props => {
                               ${quoteColorsEtAl(quote)}`}
                   style={quotePaddingEtc(quote)}
                 >
+                  {label && <div className="h-2" />}
                   <div name="inner text box w decorations" className="relative">
                     {!quote.image && (
-                      <div className="absolute -left-7 mxs:-left-8 sm:-left-10 -top-1 mxs:-top-1.5  text-20 sm:text-30">
+                      <div className="absolute -left-7 mxs:-left-8 sm:-left-10 -top-1 sm:-top-2  text-20 sm:text-30">
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
                     )}

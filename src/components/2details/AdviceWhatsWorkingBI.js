@@ -28,16 +28,16 @@ const AdviceWhatsWorkingBI = () => {
     );
   return (
     <>
-      <h3 className="titleFont titleMediumPlus">Ce qui fonctionne pour les autres cliniciens (TEMP FRENCH)</h3>
+      <h3 className="titleFont titleMediumPlus">Ce qui porte fruits pour d’autres cliniciens [FROM XD]</h3>
       <div className="mt-6 baseFont text-blue-black  relative">
-        <span>Approach the conversation through the</span>
+        <span>Abordez la conversation en empruntant les étapese</span>
         <EaaseHoverPopupFR
           eaaseTextClass="ml-1.5 orangeUnderline"
           eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-12  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"
         />
         <span>
-          . Below you'll find examples of dialogue from other clinicians who have addressed this type of hesitancy.
-          (FRENCH)
+          . Vous trouverez ci-dessous des exemples de dialogues d’autres cliniciens et cliniciennes qui ont eu à faire
+          face à ce type d’hésitation. [FROM XD]
         </span>
       </div>
     </>

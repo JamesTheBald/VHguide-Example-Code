@@ -5,60 +5,54 @@ import { useMyContext } from "../../context/Context";
 import changeOARTab from "../../functions/changeOARTab";
 
 const TabBarOAR = () => {
-  const { winWidth, marginOuter, locn, log, log2 } = useMyContext();
+  const { winWidth, marginOuter, locn, lang, log, log2 } = useMyContext();
 
   false && console.log(log && log2);
   const w = winWidth;
-  log2 && console.log("TabBarOAR.js runs. winWidth=", w);
-  log2 && console.log("TabBarOAR.js runs. locn=", locn);
-
-  // To convert to title case, per KevBot: https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
-  const titleCase = str => {
-    return str.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
-  };
 
   // Get tab name from URL
   const tabMatchDetails = useMatch("/details/:selected");
-  const tabMatch = tabMatchDetails ? tabMatchDetails : { selected: "advice" };
-  log2 && console.log("TabBarOAR.js tabMatch=", tabMatch);
+  const tabMatchAdvice = useMatch("/details/advice/:selected");
+  log && console.log("TabBarOAR.js tabMatchDetails=", tabMatchDetails);
+  log && console.log("TabBarOAR.js tabMatchAdvice=", tabMatchAdvice);
+  let tabFromURL = "overview";
+  if (tabMatchDetails) {
+    tabFromURL = tabMatchDetails.selected;
+  } else if (tabMatchAdvice) {
+    tabFromURL = "advice";
+  }
+  log && console.log("TabBarOAR.js Initially tabFromURL=", tabFromURL);
 
-  let selecTabName = "Overview";
-  const OARtabs = ["overview", "advice", "resources", "pearls"];
-
-  if (tabMatch?.selected && OARtabs.includes(tabMatch.selected)) {
-    // Above line is to guard against bad URLs
-    selecTabName = tabMatch.selected;
-    selecTabName = titleCase(selecTabName);
-    if (selecTabName === "Pearls") selecTabName = "Clinical Pearls";
-    log2 && console.log("TabBarOAR.js selecTabName=", selecTabName);
-  } else {
-    log2 && console.log("TabBarOAR.js selecTabName=", selecTabName);
-    log2 && console.log("TabBarOAR.js No match to URL param so leaving selectedTab=", selecTabName);
+  // Check that tab name from URL is on the list of legit tab names, if not default to 'overview'
+  const OARtabList = ["overview", "advice", "resources", "pearls"];
+  if (!OARtabList.includes(tabFromURL)) {
+    tabFromURL = "overview";
+    log && console.log("TabBarOAR.js No match of tabFromURL to OARtabList so setting tabFromURL=", tabFromURL);
   }
 
-  const oarTabs = ["Overview", "Advice", "Resources", "Clinical Pearls"];
+  // Flags to display 'Clinical Pearls' tab on Pediatrics, Med Exemptions and Pregnancy/Fertility pages
   const hasPearlsTab = locn.branch >= 3 || (locn.branch === 0 && locn.subtopic === 3) ? true : false;
   const numTabs = hasPearlsTab ? 4 : 3;
+  const onPediatrics = locn.branch === 3 ? true : false;
 
+  // Formatting
   const tabWidthAdjRatio = (w - 2 * marginOuter) / (720 - 2 * marginOuter);
-  // const widA = hasPearlsTab ? 100 : 180;
-  // const widB = hasPearlsTab ? 100 : 180;
-  // const widC = hasPearlsTab ? 125 : 185;
-  // const tabWidth = w < 510 ? widA * tabWidthAdjRatio : w < 720 ? widB * tabWidthAdjRatio : widC;
-  // log && console.log("TabBarOAR.js tabWidth=", tabWidth);
-
-  const tabGap = w < 510 ? 14 * tabWidthAdjRatio : w < 720 ? 16 * tabWidthAdjRatio : 19;
+  const tabGap = w < 720 ? 14 * tabWidthAdjRatio : 19;
   const tabTall =
     w < 510 ? (hasPearlsTab ? 50 : 55) : w < 720 ? (hasPearlsTab ? 58 : 63) : w < 1024 ? (hasPearlsTab ? 65 : 72) : 72;
-  // log && console.log("TabBarOAR.js tabWidthAdjRatio=", tabWidthAdjRatio);
+
+  const oarTabNames = [
+    { key: "overview", EN: "Overview", FR: "Aperçu" },
+    { key: "advice", EN: "Advice", FR: "Conseils" },
+    { key: "resources", EN: "Resources", FR: "Ressources" },
+    { key: "pearls", EN: "Clinical Pearls", FR: "Perles Cliniques" },
+  ];
 
   return (
     <div className="flex flex-row relative">
-      {oarTabs.map((currTabName, index) => {
-        const isSelected = oarTabs[index] === selecTabName ? true : false;
-        log && console.log("TabBarOAR.js index=", index, "currTabName=", currTabName, ", selected=", isSelected);
-
-        const onPediatrics = locn.branch === 3 ? true : false;
+      {oarTabNames.map((currTabNames, index) => {
+        const isSelected = currTabNames.key === tabFromURL;
+        log && console.log("TabBarOAR.js index=", index, "currTabName=", currTabNames[lang], ", selected=", isSelected);
 
         return (
           <div key={index}>
@@ -73,9 +67,9 @@ const TabBarOAR = () => {
                     mxs:border-3 sm:border-4  border-b-0 border-solid border-gray-light 
                     rounded-t-xl mxs:rounded-t-2xl sm:rounded-t-3xl  cursor-pointer`}
                   style={{ height: tabTall }}
-                  onClick={() => changeOARTab(currTabName, onPediatrics)}
+                  onClick={() => changeOARTab(currTabNames, onPediatrics)} // check this
                 >
-                  {currTabName}
+                  {currTabNames[lang]}
                 </button>
                 <div className="h-12" style={{ width: tabGap }} />
               </div>

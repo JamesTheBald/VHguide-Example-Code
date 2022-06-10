@@ -57,7 +57,7 @@ const Details = props => {
         {/* Note: for the following routing to work you need the prefix option set up for
             gatsby-plugin-create-client-paths in gatsby-config.js */}
         <Router basepath="/details">
-          <DetailsOverview path="/overview" contentID={contentID} />
+          <DetailsOverview default contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
           <DetailsPearls path="/pearls" />
           <AdviceFullStory path="/advice/fullstory" />
