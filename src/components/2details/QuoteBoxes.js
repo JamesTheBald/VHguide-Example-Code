@@ -53,7 +53,7 @@ const QuoteBoxes = props => {
   return (
     <>
       {quoteArray.map((quote, idx) => {
-        console.log("QuoteBoxes.js quoteArray.map -> quote=", quote);
+        log2 && console.log("QuoteBoxes.js quoteArray.map -> quote=", quote);
         const label = quote.label && quote.label[lang];
 
         return (

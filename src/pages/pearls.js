@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
 import Layout from "../components/0nav&footer/NavFooterLayout";
-import PearlsPanels from "../components/3aboutEtc/PearlsPanels";
+import PearlsPanelsBI from "../components/3aboutEtc/PearlsPanelsBI";
 
 const Pearls = props => {
   const { data } = props; // Gatsby pages receive a location object upon loading
@@ -22,7 +22,7 @@ const Pearls = props => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  return <PearlsPanels />;
+  return <PearlsPanelsBI />;
 };
 
 export const query = graphql`

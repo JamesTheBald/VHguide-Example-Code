@@ -4,10 +4,11 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {
-  const { advice, tab } = props;
+  const { advice, titleNButtonBI } = props;
   const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
+  const tab = titleNButtonBI.tab;
   log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice?.eaase[tab].image);
 
   const pplIcons = queryData.current.pplIcons.edges;
@@ -58,7 +59,7 @@ const AdviceEaaseIconAndText = props => {
         onClick={() => changeAdviceTab(tab)}
         onKeyPress={() => changeAdviceTab(tab)}
       >
-        More ways to {adviceTabNames[tab]}
+        {titleNButtonBI.buttonText[lang]}
       </button>
     );
   };

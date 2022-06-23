@@ -1,6 +1,6 @@
 import React from "react";
 import { useMyContext } from "../../context/Context";
-import AdviceTabNavBarName from "./AdviceTabNavBarName";
+import AdviceTabNavBarSection from "./AdviceTabNavBarSection";
 
 const AdviceTabNavBar = () => {
   const { log, log2 } = useMyContext();
@@ -15,10 +15,10 @@ const AdviceTabNavBar = () => {
 
       <div className="flex -mb-2">
         {adviceTabs.map((currTab, tabNum) => {
-          log2 && console.log("AdviceTabNavBar.js currTab=", currTab);
+          log && console.log("AdviceTabNavBar.js currTab=", currTab);
           return (
             <div key={tabNum} className="cursor-pointer">
-              <AdviceTabNavBarName currTab={currTab} />
+              <AdviceTabNavBarSection currTab={currTab} />
             </div>
           );
         })}
