@@ -26,7 +26,7 @@ export const pediatricsPearlsBI = [
     title: { EN: "", FR: "" },
     content: [
       {
-        subheading: { EN: "Validate Feelings", FR: "" },
+        subheading: { EN: "Validate Feelings", FR: "Validez les sentiments" },
         quotes: [
           {
             text: {
@@ -41,7 +41,17 @@ export const pediatricsPearlsBI = [
                   . I give them permission to be afraid, or mistrustful.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je ne commence pas par dire aux parents que la chose la plus importante, c’est de protéger leurs
+                  enfants. Je commence plutôt par valider leurs sentiments, dès le début, en leur disant :
+                  <i>
+                    «&nbsp;C’est normal d’avoir peur. C’est normal de penser que ça peut être menaçant. On est juste des
+                    humains, n’est-ce pas&nbsp;»?
+                  </i>{" "}
+                  Je leur donne ainsi la permission d’avoir peur ou d’être méfiants.
+                </>
+              ),
             },
             featured: false,
             image: "doctorBlackManBeard.svg",
@@ -50,7 +60,15 @@ export const pediatricsPearlsBI = [
           },
 
           {
-            text: { EN: <>You have to acknowledge the emotional side, and the parental need to protect.</>, FR: <></> },
+            text: {
+              EN: <>You have to acknowledge the emotional side, and the parental need to protect.</>,
+              FR: (
+                <>
+                  Il faut reconnaître l’aspect émotionnel de la chose et le besoin, pour les parents, de protéger leurs
+                  enfants.
+                </>
+              ),
+            },
             featured: true,
             image: "",
           },
@@ -65,7 +83,14 @@ export const pediatricsPearlsBI = [
                   someone there is important.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Même les parents très instruits sont souvent très anxieux. Il faut aborder ces émotions et les gérer.
+                  Je leur dis que mes enfants ont été vaccinés et que moi aussi, j’étais anxieux. Parfois, c’est tout ce
+                  qu’ils ont besoin d’entendre, vous savez? On est tous tiraillés dans plusieurs sens. C’est important
+                  d’en discuter.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -74,7 +99,7 @@ export const pediatricsPearlsBI = [
       },
 
       {
-        subheading: { EN: "Embrace Uncertainty", FR: "" },
+        subheading: { EN: "Embrace Uncertainty", FR: "Faites face à l’incertitude" },
         quotes: [
           {
             text: {
@@ -86,7 +111,14 @@ export const pediatricsPearlsBI = [
                   establishing trust.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Ne tombez pas dans le piège du déficit d’information. Oui, il arrive souvent que la conversation soit
+                  seulement axée sur l’information. C’est ce qu’affirment les études sur la sécurité de même que les
+                  épidémiologistes. Mais n’oubliez pas que l’hésitation ne prend probablement pas racine dans
+                  l’information. Votre conversation au grand complet doit viser à établir la confiance.{" "}
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -104,7 +136,17 @@ export const pediatricsPearlsBI = [
                   have now, can be a helpful way forward.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Leur offrir de la certitude, c’est probablement une excellente option, mais les rejoindre dans
+                  l’incertitude, c’est probablement plus efficace. Pour y parvenir, vous devez reconnaître que vos bons
+                  conseils sont seulement en fonction de vos connaissances actuelles. Et que ces connaissances
+                  pourraient être totalement différentes le lendemain. On est tous passés par là : «&nbsp;Masque, pas de
+                  masque; seulement certaines sortes de masques; masques en tissu acceptables, ou peut-être pas&nbsp;». Quand
+                  on est tous passés par là, valider le fait que les choses sont incertaines et se concentrer sur les
+                  meilleures connaissances qu’on possède à ce moment-là, ça peut aider.{" "}
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -121,7 +163,15 @@ export const pediatricsPearlsBI = [
                   bringing your expertise to their side.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  En tant que professionnel de la santé, vous devez faire face aux faits et aux recommandations qui
+                  changent. Et c’est très difficile, c’est une triste vérité que d’avouer à un patient qu’il n’y a pas
+                  de vérité absolue. On dirait que ça va à l’encontre de l’intuition, mais communiquer l’incertitude,
+                  l’admettre, c’est une façon d’établir la confiance en fait. Faites-leur comprendre que vous êtes dans
+                  le même bateau qu’eux et que vous leur transmettez votre expertise.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -130,7 +180,10 @@ export const pediatricsPearlsBI = [
       },
 
       {
-        subheading: { EN: "Share Professional & Personal Experiences", FR: "" },
+        subheading: {
+          EN: "Share Professional & Personal Experiences",
+          FR: "Faites part de vos expériences professionnelles et personnelles",
+        },
         quotes: [
           {
             text: {
@@ -142,7 +195,14 @@ export const pediatricsPearlsBI = [
                   long time, or if they ask the question, I'll share with them.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Souvent, mes patients savent que j’ai des enfants et ils me demandent s’ils ont été vaccinés. Je pense
+                  que le fait de parler à quelqu’un des choix personnels faits par notre famille peut l’aider à voir
+                  plus clair dans la désinformation. Je ne partage pas souvent cette information, mais dans le cas de
+                  patients que je connais depuis longtemps, ou si un patient me pose la question, je lui en fais part.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -159,7 +219,17 @@ export const pediatricsPearlsBI = [
                   why vaccination is important, even for kids. I go over all of the risks and benefits.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Soyons réalistes : les conseils officiels en matière de vaccination ne sont pas rassurants. C’est
+                  ambigu. Les conseils disent ce qui suit : «&nbsp;Vous devriez vous adresser à votre médecin pour déterminer
+                  si le vaccin est bon pour vous ou vos enfants&nbsp;». Mais qu’est-ce que ça veut dire au juste? Je pense
+                  que c’est là qu’accrochent bien des gens. De mon point de vue, le vaccin est bon pour tout le monde.
+                  Tout le monde devrait se faire vacciner. Donc je m’efforce vraiment de leur faire comprendre pourquoi
+                  la vaccination est importante, même pour les enfants. Je leur parle de tous les risques et de tous les
+                  avantages.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -168,7 +238,7 @@ export const pediatricsPearlsBI = [
       },
 
       {
-        subheading: { EN: "Address Complacency", FR: "" },
+        subheading: { EN: "Address Complacency", FR: "Gérez la complaisance " },
         quotes: [
           {
             text: {
@@ -181,7 +251,14 @@ export const pediatricsPearlsBI = [
                 </>
                 // [Link out to SAGE group-3 C’s of vaccine confidence]
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  La complaisance, c’est le plus gros défi à relever pour ce qui est des enfants. Je crois que les gens
+                  pensent généralement que la maladie n’est pas grave chez les enfants. Il faut prendre le taureau par
+                  les cornes. Et cette conversation, elle diffère de celle sur la sûreté des vaccins. Ça aussi, c’est
+                  important, mais ça doit faire partie d’une conversation différente.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -197,7 +274,15 @@ export const pediatricsPearlsBI = [
                   life needs to go on, for us and our kids.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  J’aime reconnaître qu’on a ni plus ni moins frappé un nœud pour ce qui est de nos enfants et des
+                  restrictions les concernant. Je sais que les gens organisent des soirées pizza, des fêtes de toutes
+                  sortes, et que des enfants vaccinés et non vaccinés sont de la partie. C’est important de faire preuve
+                  d’empathie et de comprendre que les gens en ont marre, que la vie doit reprendre son cours normal,
+                  tant pour nous que pour nos enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -206,7 +291,7 @@ export const pediatricsPearlsBI = [
       },
 
       {
-        subheading: { EN: "Focus on Compassion", FR: "" },
+        subheading: { EN: "Focus on Compassion", FR: "Faites preuve de compassion" },
         quotes: [
           {
             text: {
@@ -225,7 +310,22 @@ export const pediatricsPearlsBI = [
                   </i>
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Gérer des émotions fortes, voire des accusations de la part des patients, c’est difficile, n’est-ce
+                  pas? Pour moi, c’est impossible de ne pas me sentir personnellement visé. C’est pourquoi j’essaie de
+                  prendre trois ou quatre respirations. Dans ce temps-là, mes mains deviennent moites et mon cœur bat au
+                  rythme de 150 battements à la minute. Après ça, je peux retourner à la compassion. La plupart du
+                  temps, quand les gens réagissent par la colère, c’est parce qu’ils ont mal. Vous comprenez? Ils ont
+                  mal ou ils ont peur. Il y a quelque chose qui leur fait tellement mal ou qui leur fait tellement peur
+                  qu’ils deviennent violents. Sachant ça, j’essaie de faire preuve de compassion. Ça m’aide quand je
+                  sens que quelqu’un m’attaque ou essaie de me discréditer. J’essaie tout simplement de leur dire :
+                  <i>
+                    «&nbsp;Vous savez, je comprends que c’est très difficile pour vous et je peux m’imaginer à quel point
+                    c’est difficile. Sinon, vous ne diriez pas quelque chose du genre.&nbsp;»
+                  </i>
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -234,7 +334,7 @@ export const pediatricsPearlsBI = [
       },
 
       {
-        subheading: { EN: "Extend the Conversation", FR: "" },
+        subheading: { EN: "Extend the Conversation", FR: "Poussez la conversation plus loin" },
         quotes: [
           {
             text: {
@@ -249,7 +349,18 @@ export const pediatricsPearlsBI = [
                   and then a follow up with both parents and kid(s).
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je peux voir la dynamique qui s’exerce entre un enfant de 11 ans qui veut se faire vacciner et ses
+                  parents qui refusent. Ça crée une situation délicate. Je pense que c’est le genre de situation qui
+                  mérite une conversation de longue haleine. Si vous le pouvez, vous devriez pousser cette conversation
+                  plus loin. Assurez-vous que les parents ne pensent pas seulement en termes de «&nbsp;oui&nbsp;» par opposition à
+                  «&nbsp;non&nbsp;». Concentrez-vous plutôt sur leur raisonnement, leurs inquiétudes, leur compréhension des
+                  avantages et leur rôle de preneurs de décisions pour leurs enfants. Vous devrez probablement reprendre
+                  cette conversation au moins deux fois : une fois avec les parents seulement, et une autre fois avec
+                  les parents et leurs enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",

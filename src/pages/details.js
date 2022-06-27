@@ -10,9 +10,9 @@ import AdviceFullStory from "../components/2details/AdviceFullStory";
 import AdviceWhatsWorkingBI from "../components/2details/AdviceWhatsWorkingBI";
 import Layout from "../components/0nav&footer/NavFooterLayout";
 import DetailsLayout from "../components/2details/DetailsLayout";
-import DetailsOverview from "../components/2details/DetailsOverview";
+import DetailsOverviewBI from "../components/2details/DetailsOverviewBI";
 import DetailsResources from "../components/2details/DetailsResources";
-import PediatricsPanels from "../components/2details/PediatricsPanels";
+import PediatricsPanelsBI from "../components/2details/PediatricsPanelsBI";
 import DetailsPearls from "../components/2details/DetailsPearls";
 
 const Details = props => {
@@ -57,11 +57,11 @@ const Details = props => {
         {/* Note: for the following routing to work you need the prefix option set up for
             gatsby-plugin-create-client-paths in gatsby-config.js */}
         <Router basepath="/details">
-          <DetailsOverview default contentID={contentID} />
+          <DetailsOverviewBI default contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
           <DetailsPearls path="/pearls" />
           <AdviceFullStory path="/advice/fullstory" />
-          <PediatricsPanels path="/advice/pediatrics" />
+          <PediatricsPanelsBI path="/advice/pediatrics" />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
             // For Details-Advice-Engage, Affirm, Ask, Evoke

@@ -423,7 +423,7 @@ export const pearlsContentBI = [
   },
   // Lowering the ‘temperature’
   {
-    title: { EN: "Lowering the ‘Temperature’", FR: "Abaissez la «&nbsp;température&nbsp;»" },
+    title: { EN: "Lowering the ‘Temperature’", FR: <>Abaissez la «&nbsp;température&nbsp;»</> },
 
     content: [
       {

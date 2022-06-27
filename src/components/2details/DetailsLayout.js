@@ -6,7 +6,7 @@ import { useMyContext } from "../../context/Context";
 import Layout from "../0nav&footer/NavFooterLayout";
 import TabBarOAR from "../../components/2details/TabBarOAR";
 
-const DetailsLayout = (props) => {
+const DetailsLayout = props => {
   const { locn, branch, setLocn, hesType, related, fixedBackdrop, lang, log, log2 } = useMyContext();
   false && console.log(log, log2);
 
@@ -103,7 +103,11 @@ const DetailsLayout = (props) => {
           {/* Items below main panel */}
           {locn.branch === 3 ? (
             <div className="mt-2 md:mt-4  mb-8  sm:text-right  italic smThenBaseFont text-blue-pale">
-              {lang === "EN" ? <>*The pediatric hesitancy type is evolving and will receive updates.</> : <></>}
+              {lang === "EN" ? (
+                <>*The pediatric hesitancy type is evolving and will receive updates.</>
+              ) : (
+                <>Le type d’hésitation pédiatrique évolue et fera l’objet de mises à jour régulières.</>
+              )}
             </div>
           ) : related[0] ? (
             <>

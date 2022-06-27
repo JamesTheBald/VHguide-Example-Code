@@ -33,7 +33,12 @@ export const pediatricsContentBI = [
               <span className="whitespace-nowrap">Data</span>
             </>
           ),
-          FR: <></>,
+          FR: (
+            <>
+              <span>Effets ou données </span>
+              <span className="whitespace-nowrap">à long terme</span>
+            </>
+          ),
         },
 
         cliniciansHearing: [
@@ -45,7 +50,13 @@ export const pediatricsContentBI = [
                   should have it. I don&apos;t want to put that stuff in them just in case there are long-term effects.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  J’ai eu deux doses de vaccin. J’ai fait ce que j’avais à faire. Je ne suis pas convaincue que mon
+                  enfant de 11 ans devrait se faire vacciner par contre. Je ne veux pas que ces substances soient
+                  injectées dans son corps si jamais il y avait des effets à long terme.
+                </>
+              ),
             },
             featured: true,
             image: "",
@@ -60,7 +71,13 @@ export const pediatricsContentBI = [
                   get some weird reaction that speeds this up.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Pour moi, la vaccination, ce n’était pas un problème, mais mon enfant est jeune et en santé. Il a 25 à
+                  35 années avant de commencer à s’inquiéter des maladies qui se manifestent en vieillissant. Je ne veux
+                  pas qu’il ait une drôle de réaction susceptible d’accélérer ce processus.
+                </>
+              ),
             },
             featured: false,
             image: "doctorBlackManBeard.svg",
@@ -81,7 +98,17 @@ export const pediatricsContentBI = [
                   we know its safe and its efficacious right now.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Vous avez raison en ce sens que nous n’avons pas de données à long terme en ce moment. Les essais
+                  cliniques faisant appel à des enfants se poursuivent et les équipes recueillent beaucoup de données.
+                  Cela dit, les premiers résultats obtenus jusqu’à maintenant ont permis de conclure deux choses : les
+                  vaccins sont très sûrs et les vaccins sont très efficaces. Les vaccins sont sûrs et ils sont efficaces
+                  pour protéger les enfants du virus. Les autorisations et les approbations sont fondées sur ces
+                  premiers résultats. On va en savoir plus à mesure que les études se poursuivent, mais pour l’instant,
+                  on sait que les vaccins sont sûrs et efficaces.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -103,7 +130,22 @@ export const pediatricsContentBI = [
                   the moment.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je comprends ce que vous voulez dire à propos du manque de données à long terme sur les effets
+                  secondaires. Je vous le concède. Si vos pensées vont dans ce sens, vous voudrez alors considérer les
+                  autres données à long terme dont on ne dispose toujours pas. On se sait pas comment le développement
+                  d’un enfant qui attrape la COVID peut être touché. Quels sont les effets de la maladie sur le
+                  développement de l’enfant non vacciné? On sait que dans certains cas, la maladie traîne en longueur.
+                  Il y a des personnes qui ne peuvent pas se débarrasser de la COVID. Elles ont des maux de tête, des
+                  troubles de concentration et ainsi de suite. Quels EN SERONT LES EFFETS sur leur développement? On
+                  sait aussi que les personnes qui ont eu la COVID sont plus susceptibles d’avoir des caillots sanguins,
+                  des accidents vasculaires cérébraux et des choses comme ça. On connaît ces risques et au bout du
+                  compte, tout comme on ne connaît pas les effets à long terme des vaccins, on ne connaît pas les effets
+                  à long terme de la COVID sur le corps d’un enfant. Il faut trouver un juste équilibre, mais pour moi,
+                  l’important, c’est de jouer sûr en ce moment.
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteManBlackHair.svg",
@@ -118,7 +160,13 @@ export const pediatricsContentBI = [
                   continue this dialogue with you and your kid(s).
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Peu importe la décision que vous prendrez, vous serez toujours un bon parent. L’important, c’est de
+                  choisir la meilleure manière de protéger vos enfants. Peu importe la décision que vous prendrez à ce
+                  stade-ci, je veux poursuivre ce dialogue avec vous et vos enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -134,7 +182,15 @@ export const pediatricsContentBI = [
                   against it.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Les enfants se font constamment vacciner pour plus d’une dizaine de maladies. La vaccination existe
+                  depuis plus d’un siècle, et cela fait plus d’un siècle que la santé de l’ensemble de la population
+                  s’améliore progressivement. Vous savez, les maladies contre lesquelles les enfants sont vaccinés ne
+                  sont pas toutes instantanément mortelles. Donc, ce n’est pas parce que la COVID n’est pas mortelle
+                  chez les enfants qu’on ne devrait pas les faire vacciner en conséquence.
+                </>
+              ),
             },
             featured: true,
             image: "",
@@ -152,7 +208,15 @@ export const pediatricsContentBI = [
                   safe option for your kid(s).
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Grâce aux autorisations et aux approbations vaccinales chez les enfants, le monde accumule énormément
+                  d’expérience par rapport au vaccin contre la COVID en quelques mois seulement. Il va falloir du temps
+                  pour accumuler les données de toute cette histoire, mais je vais continuer de suivre les progrès. Dans
+                  le cadre de mes fonctions, j’ai la responsabilité de vous dire où en sont exactement les études, et de
+                  vous dire si les vaccins continuent à être sûrs pour vos enfants.{" "}
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -169,7 +233,15 @@ export const pediatricsContentBI = [
                   discussed.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense que vous n’avez pas besoin de prendre une décision trop rapide sur la vaccination de vos
+                  enfants. Peut-être que vous devriez bien absorber cette conversation et après ça, il me fera plaisir
+                  de vous donner un autre rendez-vous pour rediscuter de votre décision. Si vous voulez lire sur un
+                  sujet en particulier, dites-le-moi et je partagerai mes ressources avec vous volontiers. Prenez le
+                  temps d’y penser. Réfléchissez à ce dont nous venons de discuter.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -185,7 +257,13 @@ export const pediatricsContentBI = [
                   that work for you?
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je sais que vos enfants sont trop jeunes pour se faire vacciner pour l’instant, mais d’ici à ce qu’ils
+                  aient cinq ans, on en saura plus sur l’aspect sécuritaire des vaccins. J’aimerais donc attendre de
+                  voir ce qui va se passer, puis en rediscuter. Qu’en pensez-vous?
+                </>
+              ),
             },
             featured: false,
             image: "doctorBlackWoman.svg",
@@ -201,7 +279,12 @@ export const pediatricsContentBI = [
               <span className="whitespace-nowrap">Puberty Concerns</span>
             </>
           ),
-          FR: <></>,
+          FR: (
+            <>
+              <span>Problèmes en matière de développement </span>
+              <span className="whitespace-nowrap">ou de puberté</span>
+            </>
+          ),
         },
 
         cliniciansHearing: [
@@ -213,7 +296,13 @@ export const pediatricsContentBI = [
                   and I don&apos;t want to put that stuff in them just in case it affects them.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je ne pense tout simplement pas que mes enfants devraient se faire vacciner à l’âge qu’ils ont. Leur
+                  développement ne fait que commencer et je ne veux pas que ces substances leur soient injectées si
+                  jamais il y avait des effets néfastes.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -227,7 +316,12 @@ export const pediatricsContentBI = [
                   don&apos;t have the evidence yet.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Ne me dites pas que les vaccins n’auront pas d’effets sur la puberté ou la fertilité de nos enfants.
+                  Vous n’avez toujours pas de preuves.
+                </>
+              ),
             },
             featured: true,
             image: "",
@@ -244,7 +338,14 @@ export const pediatricsContentBI = [
                   between our immune systems and puberty. They work quite differently.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  On a beaucoup d’expérience maintenant pour ce qui est de la sécurité des enfants de 12 ans et plus et
+                  des adultes. Personnellement, je ne m’inquiète pas des effets des vaccins sur la puberté, surtout
+                  puisque je connais le lien entre notre système immunitaire et la puberté. Ils ne fonctionnent pas du
+                  tout de la même manière.
+                </>
+              ),
             },
             featured: false,
             image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -260,7 +361,14 @@ export const pediatricsContentBI = [
                   remaining.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  La composante du vaccin ne reste dans le corps que pendant une période relativement courte. Donc, si
+                  vous pensez que vos enfants atteindront le stade de la puberté dans quelques années, le vaccin ne sera
+                  plus dans leur corps depuis longtemps. Il ne sera plus dans son système. Tout ce qui restera, ce sera
+                  la mémoire des anticorps.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -279,7 +387,19 @@ export const pediatricsContentBI = [
                   science, this is not what we see.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Pour ce qui est de la fertilité, si on se penche sur la façon dont ces vaccins fonctionnent et qu’on
+                  s’arrête à penser pendant combien de temps le vaccin et ses ingrédients restent vraiment dans votre
+                  système, nous avons de bonnes données qui indiquent qu’ils restent dans les muscles et les nœuds
+                  lymphoïdes pendant environ sept jours. La protéine S que fabrique notre corps à partir de ces vaccins
+                  ne reste là que pendant quelques semaines, puis elle sort de notre système. Je sais ce que vous voulez
+                  dire. Il y a tellement de désinformation au sujet de ces vaccins, à savoir qu’ils vont rester dans
+                  notre système pendant des années et qu’ils peuvent s’accumuler dans les ovaires et d’autres organes.
+                  Mais je dois vous dire que si on regarde ça purement du point de vue scientifique, ce n’est pas le
+                  cas.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -290,7 +410,7 @@ export const pediatricsContentBI = [
       {
         subheading: {
           EN: "COVID Is Low-Risk In Children",
-          FR: "",
+          FR: "La COVID présente peu de risques pour les enfants",
         },
         cliniciansHearing: [
           {
@@ -302,7 +422,13 @@ export const pediatricsContentBI = [
                   anyway.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense que les risques d’effets secondaires de la vaccination l’emportent sur les risques liés à la
+                  COVID si mon enfant finissait par l’attraper. Je ne veux pas que mon enfant se fasse vacciner quand je
+                  sais que cette maladie ne lui fera pas de mal de toute façon.
+                </>
+              ),
             },
             featured: true,
             image: "",
@@ -316,7 +442,12 @@ export const pediatricsContentBI = [
                   had COVID at this point anyway.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Mais je ne vois pas pourquoi les enfants se feraient vacciner. Je suis pas mal certaine qu’ils ont à
+                  peu près tous attrapé la COVID à ce stade-ci de toute façon.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -330,7 +461,12 @@ export const pediatricsContentBI = [
                   that sick from it?
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Pourquoi est-ce qu’on se soucie de faire vacciner les enfants de toute façon quand on sait que le taux
+                  de mortalité est tellement faible et qu’ils ne tombent pas vraiment malades?
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteManGoatee.svg",
@@ -348,7 +484,16 @@ export const pediatricsContentBI = [
                   this disease in many settings. So children are at lower risk, but not at no risk.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense qu’il faut se poser cette question : est-ce que la COVID-19 est une maladie importante chez
+                  les enfants? Je pense que la réponse est un « oui » catégorique! On sait que les risques de
+                  répercussions graves sur les enfants sont plus faibles que pour les adultes. Je ne veux donc pas
+                  exagérer la situation. Mais dans bien des endroits, il y a des enfants qui ont de graves cas de
+                  COVID-19 et qui en meurent. Alors effectivement, les risques sont moins grands chez les enfants, mais
+                  il y a tout de même des risques.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -365,7 +510,17 @@ export const pediatricsContentBI = [
                   all means we should be vaccinating children.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Malheureusement, ici en Amérique du Nord, on vient juste de traverser une autre vague importante de
+                  cette maladie. En raison de cette vague, les chances que vos enfants aient été exposés à la COVID ont
+                  beaucoup augmenté. Quant à moi, je pense qu’en ce moment, il ne faut pas se demander « si » un enfant
+                  non vacciné va attraper la COVID, mais plutôt « à quel moment » il va l’attraper. Pour moi, ça veut
+                  dire que la barre est plus haute. S’il est très probable que les enfants attrapent la COVID, mais très
+                  peu probable qu’ils aient d’importants effets secondaires en raison des vaccins, alors on devrait
+                  vraiment faire vacciner les enfants.
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteManYoung.svg",
@@ -381,7 +536,14 @@ export const pediatricsContentBI = [
                   house you can help protect your infant under the age of one.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je sais que vous avez de jeunes enfants chez vous. On sait que les enfants de moins d’un an qui sont
+                  infectés par la COVID courent les mêmes risques d’hospitalisation que les personnes de 30 à 39 ans.
+                  Ils sont donc particulièrement vulnérables. La bonne nouvelle, c’est qu’en faisant vacciner les
+                  enfants plus âgés qui vivent sous votre toit, vous aidez à protéger votre enfant de moins d’un an.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -396,7 +558,13 @@ export const pediatricsContentBI = [
                   of growing up.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Selon moi, c’est important de penser aux effets sociaux de la COVID sur la vie des enfants. Je pense
+                  qu’on aimerait tous que nos enfants reprennent le cours normal de leur vie et de leurs activités, et
+                  tout le reste. La vaccination joue un grand rôle dans la normalité de la vie des enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -412,7 +580,15 @@ export const pediatricsContentBI = [
                   it to be your kid either. We can get there. With the vaccine its totally preventable.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  J’ai entendu dire que pour environ 99 % des enfants, ça se passe bien, mais que pour certains autres,
+                  ce n’est pas le cas. Il s’agit là d’enfants qui étaient en santé et qui ont dû être hospitalisés, ou
+                  qui ont le syndrome post-COVID-19 (ou le syndrome inflammatoire multisystémique) et qui sont malades
+                  pendant des semaines ou des mois. Je ne veux pas que ça arrive à mon enfant, et que ça arrive à votre
+                  enfant. On peut surmonter tout ça. C’est une situation tout à fait évitable grâce au vaccin.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -426,7 +602,13 @@ export const pediatricsContentBI = [
                   grandma&apos;s house.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense que vous devez aussi tenir compte de la protection de votre famille. Les enfants ont de
+                  grandes incidences sur la famille. L’enfant qui n’est pas vacciné pourrait amener la COVID chez lui,
+                  ou même chez sa grand-mère.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -442,7 +624,14 @@ export const pediatricsContentBI = [
                   there to help out with that.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Vous savez ce que font les enfants à l’école. Ils portent les vêtements des autres, essuient leur
+                  morve sur leurs manches, s’échangent les chandails et font d’autres choses du genre. Les enfants
+                  propagent beaucoup les maladies, et je plains énormément les enseignants qui ont dû faire face à tant
+                  d’éclosions. Les vaccins existent pour aider avec ça.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -460,7 +649,17 @@ export const pediatricsContentBI = [
                   that one child death from something that is preventable is one too many.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense qu’au début de la pandémie, grand nombre des communications affirmaient que la COVID n’était
+                  pas un problème pour les enfants, mais plutôt pour les adultes. Je pense que ça s’est révélé faux,
+                  surtout pour ce qui est du variant Delta. Mes collègues de pédiatrie me disent à quel point au cours
+                  des derniers mois (vers la fin de 2021), il y a eu beaucoup plus d’enfants malades de la COVID à
+                  l’hôpital. Je sais que certains enfants sont morts de la COVID-19. Est-ce que le risque de mourir de
+                  cette maladie est plus grand pour une personne de 80 ans? Oui. Par contre, en tant que parent, je peux
+                  vous dire que le décès d’un seul enfant d’une maladie qui est évitable, c’est un décès de trop.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -478,7 +677,17 @@ export const pediatricsContentBI = [
                   most serious of all.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Il me fait plaisir de partager une ressource avec vous qui compare le nombre d’enfants qui sont morts
+                  de la COVID-19 au nombre d’enfants qui sont morts d’autres maladies pour lesquelles il existe des
+                  vaccins. Il y a un vaccin contre la rougeole, n’est-ce pas? Vous vous souvenez, quand [vos enfants]
+                  ont eu 18 mois, ils se sont fait vacciner contre la rougeole, les oreillons, la rubéole et la
+                  varicelle, n’est-ce pas? Quand on jette un coup d’œil aux chiffres des mauvaises choses qui découlent
+                  de la COVID-19 et qu’on les compare à d’autres maladies pour lesquelles nos enfants sont vaccinés, les
+                  résultats de la COVID-19 sont les pires.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -489,7 +698,7 @@ export const pediatricsContentBI = [
       {
         subheading: {
           EN: "Vaccination Is Too Risky For My Kids",
-          FR: "",
+          FR: "La vaccination est trop risquée pour mon enfant",
         },
         cliniciansHearing: [
           {
@@ -501,7 +710,12 @@ export const pediatricsContentBI = [
                   I&apos;m giving that to my kid.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Il y a des centaines de milliers de signaux d’alarme dans Internet, et personne n’a le temps de tous
+                  les analyser. Il est hors de question que je donne ces substances à mon enfant.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -510,7 +724,11 @@ export const pediatricsContentBI = [
           {
             text: {
               EN: <>I think it needs to be proven that this is safe before we start giving it to children.</>,
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense qu’ils doivent prouver que les vaccins sont sûrs avant de commencer à les donner aux enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -523,7 +741,12 @@ export const pediatricsContentBI = [
                   what&apos;s going to happen to them.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Les vaccins sont trop nouveaux. Je ne veux pas assujettir mes enfants aux vaccins si on ne sait pas ce
+                  qui risque de leur arriver.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -542,7 +765,16 @@ export const pediatricsContentBI = [
                   &lsquo;is it worth the risk of seeing them?&rsquo;.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je sais que beaucoup de personnes n’aiment pas l’idée de faire vacciner leurs enfants. Je comprends
+                  ça. Je sympathise avec eux. Je pense qu’il vaut aussi la peine de tenir compte des risques que posent
+                  les enfants non vaccinés aux grands-parents et aux membres de la famille plus âgés. Il y a les risques
+                  qu’ils présentent aux membres de votre famille qui ne sont pas en santé, qui sont malades. Si vos
+                  enfants ne se font pas vacciner, vous allez constamment vous demander s’il vaut la peine de prendre le
+                  risque de les voir.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -558,7 +790,15 @@ export const pediatricsContentBI = [
                   on them at this stage of the game.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Dans tout ça, je pense qu’on doit essayer de trouver un juste équilibre entre les avantages des
+                  vaccins pour la protection de nos enfants et les risques des effets secondaires. Pour moi, cet
+                  équilibre exige de tenir compte dans quelle mesure vos enfants sont susceptibles d’attraper la COVID,
+                  ET dans quelle mesure ils sont susceptibles de la transmettre à d’autres. Les enfants propagent cette
+                  maladie rapidement et c’est pourquoi nous nous concentrons sur eux en ce moment.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -574,7 +814,15 @@ export const pediatricsContentBI = [
                   at the end of the day, whatever we choose to do, no choice in our life is risk free.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Il me fait plaisir de reprendre cette discussion. Je veux conclure en vous disant qu’au bout du
+                  compte, aucun des choix ne comporte pas de risques. Que vous décidiez de ne pas vous faire vacciner ou
+                  de vous faire vacciner, à ce stade-ci, chacun des deux choix comporte des risques. Et peu importe ce
+                  qu’on en pense, il est important de reconnaître que malgré la décision prise, aucune des décisions
+                  qu’on prend dans la vie n’est sans risque.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -589,7 +837,14 @@ export const pediatricsContentBI = [
                   risks for complications.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Vous devez vous demander : « Quels sont les risques pour mon enfant, des deux côtés de la médaille. Je
+                  le fais vacciner ou non »? Le risque que les enfants non vaccinés aient de mauvaises séquelles de la
+                  COVID est généralement moins grand. Mais à mesure que la COVID devient endémique dans les écoles et
+                  que le virus subit des mutations, il y aura certainement des risques de complications.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -605,7 +860,15 @@ export const pediatricsContentBI = [
                   level of protection there, just like we do for many flu viruses.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Les vaccins permettent aux enfants d’être exposés à la maladie de manière contrôlée, ce qui permet à
+                  leur corps de développer l’immunité adéquate. Ainsi, quand ils seront exposés à une plus grande dose
+                  de COVID ou au prochain variant – un variant qui pourrait toucher le cœur des enfants, bien pire que
+                  le Delta – ils auront un certain degré de protection, comme c’est le cas pour les nombreux virus de la
+                  grippe.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -621,7 +884,15 @@ export const pediatricsContentBI = [
                   him getting COVID was worse than that worry.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je n’ai pas de jeunes enfants en ce moment, mais j’en ai déjà eu. Est-ce que je me suis inquiété quand
+                  mon fils de 17 ans est allé se faire vacciner? Oui! J’ai passé une semaine à réviser toutes les
+                  données qui étaient publiées, ce qui m’a fait comprendre que mon garçon était un candidat parfait à la
+                  myocardite résultant d’un vaccin à ARNm. C’est certain que j’étais inquiet. Je comprends votre
+                  inquiétude, mais pour moi, le risque qu’il attrape la COVID était pire que cette inquiétude.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -632,11 +903,14 @@ export const pediatricsContentBI = [
       {
         subheading: {
           EN: "Rushed Approval Of The Vaccines For Children",
-          FR: "",
+          FR: "Approbation rapide des vaccins pour les enfants",
         },
         cliniciansHearing: [
           {
-            text: { EN: <>I think the approval/authorization for kids was rushed.</>, FR: <></> },
+            text: {
+              EN: <>I think the approval/authorization for kids was rushed.</>,
+              FR: <>Je pense que l’approbation ou l’autorisation des vaccins pour les enfants s’est faite trop vite.</>,
+            },
             featured: false,
             image: "",
           },
@@ -646,10 +920,15 @@ export const pediatricsContentBI = [
               EN: (
                 <>
                   They&apos;re kind of making this stuff up. It&apos;s just happening way too quickly for me to be able
-                  to say, yeah, this is a good thing for my kids.{" "}
+                  to say, yeah, this is a good thing for my kids.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Ils inventent des histoires. Les choses se passent beaucoup trop vite pour que je puisse dire que
+                  c’est une bonne chose pour mes enfants.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -666,7 +945,13 @@ export const pediatricsContentBI = [
                   any surprises, which is great to see.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  On n’a certainement pas vu de signaux négatifs pour ce qui est de la sûreté des vaccins et beaucoup
+                  d’enfants du monde entier ont été vaccinés avant nous ici au Canada. On n’a donc pas eu de surprises,
+                  ce qui est bon à savoir.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -684,7 +969,18 @@ export const pediatricsContentBI = [
                   nine age group.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je pense qu’en général, quand on essaie de prendre ces décisions avec les enfants, on se demande : «
+                  Est-ce qu’on en sait assez? Est-ce qu’on en sait assez sur le vaccin et sur la manière dont le vaccin
+                  fonctionne chez les enfants de cinq à onze ans »? Alors, vous savez quoi? Je pense qu’on en sait
+                  assez. On sait que le vaccin a été testé chez 3 000 enfants qui ont été suivis pendant 12 semaines. En
+                  six semaines, tous les effets secondaires susceptibles de surgir dans les études de vaccins ont le
+                  temps de se manifester. Les effets secondaires que nous avons vus chez les enfants de ce groupe d’âge
+                  sont moins prononcés que ceux des enfants plus âgés, et aucun effet secondaire grave n’a été aperçu
+                  dans le groupe d’âge des cinq à neuf ans.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -701,7 +997,15 @@ export const pediatricsContentBI = [
                   both accounts, I recommend it.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Est-ce qu’on sait tout ce qu’on peut savoir sur ce vaccin? Non. Mais si vous me demandez
+                  personnellement si on en sait assez pour aller de l’avant avec la protection des enfants de cinq à
+                  onze ans pour qu’ils puissent, espérons-le, aller à l’école et socialiser avec leurs amis? Je pense
+                  qu’on en sait assez. Donc si vous me demandez mon opinion professionnelle, et mon opinion en fonction
+                  de l’expérience de ma propre famille, je le recommande dans les deux sens.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -712,7 +1016,7 @@ export const pediatricsContentBI = [
       {
         subheading: {
           EN: <>Virus &lsquo;Shedding&rsquo;</>,
-          FR: <></>,
+          FR: <>Excrétion virale</>,
         },
         cliniciansHearing: [
           {
@@ -723,7 +1027,12 @@ export const pediatricsContentBI = [
                   to me, our family, or their friends.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Qu’en est-il de cette histoire d’excrétion virale? Je ne veux pas que mes enfants me transmettent le
+                  virus ou qu’ils le transmettent aux autres membres de notre famille ou à leurs amis.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -742,7 +1051,15 @@ export const pediatricsContentBI = [
                   not how these vaccines work.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  (Au sujet du vaccin et de l’excrétion virale) D’autres patients m’ont posé cette question aussi. Vous
+                  avez peut-être entendu parler de ça dans le cas d’un vaccin pour un virus complètement différent,
+                  appelé le rotavirus. En fait, ce vaccin contient le virus actif, mais les [vaccins contre la COVID à
+                  ARNm] ne contiennent aucune partie du virus. Donc si vous vous faites vacciner ou si vos enfants se
+                  font vacciner, il n’y aura pas d’excrétion virale. Ces vaccins ne fonctionnent pas comme ça.
+                </>
+              ),
             },
             featured: false,
             image: "",

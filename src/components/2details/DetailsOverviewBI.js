@@ -8,7 +8,7 @@ import PediatricsOverviewTheySayBI from "../../content/PediatricsOverviewTheySay
 import ReproductiveOverviewTheySayBI from "../../content/ReproductiveOverviewTheySayBI";
 import MedExemptOverviewTheySayBI from "./MedExemptOverviewTheySayBI";
 
-const DetailsOverview = props => {
+const DetailsOverviewBI = props => {
   const { contentID } = props;
   const { winWidth, queryData, locn, lang, log, log2 } = useMyContext();
 
@@ -65,7 +65,11 @@ const DetailsOverview = props => {
             <MedExemptOverviewTheySayBI />
           ) : (
             <>
-              <h3 className="listTitleClass mb-1">{lang === "EN" ? "People with this hesitancy type say" : ""}</h3>
+              <h3 className="listTitleClass mb-1">
+                {lang === "EN"
+                  ? "People with this hesitancy type say"
+                  : "Ce que disent les personnes ayant ce type d’hésitation"}
+              </h3>
               <ul className="pl-5 listClass2">
                 {theySay.content[lang].map((currItem, index) => (
                   <li key={index} className="pb-4 pl-1">
@@ -87,7 +91,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Things to Consider" : ""}</h3>
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Things to Consider" : "Considérations"}</h3>
 
           {contentID === "Pediatrics" ? (
             <>{thingsToConsider.content[lang]}</>
@@ -112,7 +116,7 @@ const DetailsOverview = props => {
             );
           })}
 
-          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home" : ""}</h3>
+          <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home" : "Matière à réflexion"}</h3>
           {takeHome.content[lang].map((currItem, index) => (
             <div key={index} className="mt-2  baseFont text-blue-black">
               {currItem}
@@ -131,12 +135,12 @@ const DetailsOverview = props => {
             ? "How to Start the Conversation"
             : "Advice on Starting the Conversation"
           : winWidth < 450
-          ? ""
-          : ""}
+          ? "Comment entamer la conversation"
+          : "Conseils pour entamer la conversation"}
         {/* Add French translation for button */}
       </Link>
     </div>
   );
 };
 
-export default DetailsOverview;
+export default DetailsOverviewBI;

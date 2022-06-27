@@ -12,8 +12,7 @@ const QuoteBoxes = props => {
   const pplIcons = queryData.current.pplIcons.edges;
   const w = winWidth;
 
-  log && console.log("QuoteBoxes.js runs.");
-  log && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
+  log2 && console.log("QuoteBoxes.js runs. quoteArray=", quoteArray);
   log2 && console.log("QuoteBoxes.js runs. pplIcons=", pplIcons);
 
   const quoteColorsEtAl = quote => {
@@ -45,7 +44,6 @@ const QuoteBoxes = props => {
   };
 
   const iconDistFromTop = quote => {
-    // log && console.log("QuoteBoxes.js iconDistFromTop() quote=", quote);
     const quoteLen = reactElementToJSXString(quote.text[lang]).length;
     return quoteLen < 55 ? 18 : quoteLen < 100 ? 32 : w < 1024 ? 46 : 50;
   };

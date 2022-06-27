@@ -839,6 +839,12 @@ export const contentPersonasBI = {
         title: { EN: <>CanVax - How do the mRNA vaccines work?</>, FR: <></> },
         linkText: { EN: <>Educational video from CanVax</>, FR: <></> },
         link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
+        // Note: link can be either a string (as above) or an object (as below, if there's both a French site and an English one).
+        // link: {
+        //   EN: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
+        //   FR: "https://www.canada.ca/fr/sante-publique/services/vaccinations-pour-enfants.html ",
+        // },
+
         description: {
           EN: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
           FR: <></>,
@@ -9200,7 +9206,8 @@ export const contentPersonasBI = {
         content: {
           EN: (
             <div key={123}>
-              {/* Need a key here because the thingsToConsider.content.map may be run upon first load  */}
+              {/* Need a key here because the thingsToConsider.content.map may be run upon first load, before content
+               has been loaded and indices assigned  */}
               <div className="mt-3 relative">
                 <div>
                   Conversations with the parents of younger children eligible for the vaccine are likely to be
@@ -9215,7 +9222,28 @@ export const contentPersonasBI = {
               <div>Consider consulting your College&apos;s standards of practice related to vaccinating minors.</div>
             </div>
           ),
-          FR: [<></>, <></>, <></>],
+          FR: (
+            <div key={123}>
+              {/* Need a key here because the thingsToConsider.content.map may be run upon first load  */}
+              <div className="mt-3 relative">
+                <div>
+                  Les conversations avec les parents d’enfants plus jeunes étant admissibles au vaccin risquent d’être
+                  chargées en émotions et de prendre plusieurs formes. En voici des exemples :
+                </div>
+                <ul className="pl-5 sm:pl-10 pt-3 list-disc">
+                  <li key={0}>des parents non vaccinés qui ne veulent pas que leurs enfants se fassent vacciner;,</li>
+                  <li key={1}>des parents vaccinés qui hésitent à faire vacciner leurs enfants; et</li>
+                  <li key={2}>
+                    les enfants non vaccinés qui veulent se faire vacciner, contre la volonté de leurs parents.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                Au besoin, consultez les normes d’exercice de votre collège des médecins en matière de vaccination des
+                mineurs..
+              </div>
+            </div>
+          ),
         },
       },
       // ACTUAL content for Pediatrics
@@ -9243,7 +9271,26 @@ export const contentPersonasBI = {
               </div>
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+            <>
+              <div className="pb-2">
+                <strong>Faites preuve d’empathie envers les patients.</strong> La pandémie et les conversations sur les
+                vaccins peuvent provoquer de la colère, de la peur, du stress et de l’anxiété. Déterminez les émotions
+                de votre patient, reconnaissez-les et gérez-les.
+              </div>
+              <div className="pb-2">
+                <strong>Poussez la conversation plus loin.</strong> Il se peut que les discussions sur la vaccination
+                des enfants doivent se faire en plusieurs temps. Considérez la possibilité de faire revenir vos patients
+                et leurs enfants pour les écouter parler davantage de leurs inquiétudes et en discuter.
+              </div>
+              <div className="pb-2">
+                <strong>Gérez la complaisance.</strong> La pandémie a mis à l’épreuve la capacité de chacun à foncer
+                pendant cette période difficile et à prendre de dures décisions. En discutant des risques et des
+                avantages non seulement du vaccin, mais aussi de ceux liés à l’infection de la COVID-19 par les enfants,
+                vous pouvez aider les parents à ne pas devenir complaisants.
+              </div>
+            </>,
+          ],
         },
       },
     },
@@ -9305,15 +9352,24 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Vaccines for Children: Deciding to vaccinate</>,
-          image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
-
-          FR: <></>,
+          FR: <>Vaccination des enfants : Choisir de faire vacciner son enfant</>,
+          // image: "", // No image files yet - the code is not in place for images (e.g. screenshots) for Resources
         },
-        linkText: { EN: <>Government of Canada - Information and considerations</>, FR: <></> },
-        link: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
+        linkText: {
+          EN: <>Government of Canada - Vaccines for children: Deciding to vaccinate</>,
+          FR: <>Gouvernement du Canada - Vaccination des enfants : Choisir de faire vacciner son enfant</>,
+        },
+        link: {
+          EN: "https://www.canada.ca/en/public-health/services/vaccination-children.html",
+          FR: "https://www.canada.ca/fr/sante-publique/services/vaccinations-pour-enfants.html",
+        },
         description: {
           EN: <>Health Canada website on childhood vaccines, including COVID-19 vaccination (2021)</>,
-          FR: <></>,
+          FR: (
+            <>
+              Site Web de Santé Canada sur les vaccins pour enfants, y compris la vaccination contre la COVID-19 (2021)
+            </>
+          ),
         },
       },
 
@@ -9321,10 +9377,16 @@ export const contentPersonasBI = {
         title: {
           EN: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
 
-          FR: <></>,
+          FR: <>Fiche d’information sur la vaccination contre la COVID-19 : Pour les enfants (âgés de 5 à 11 ans) </>,
         },
-        linkText: { EN: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>, FR: <></> },
-        link: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
+        linkText: {
+          EN: <>Ontario Ministry of Health - COVID-19 Vaccine For Children</>,
+          FR: <>Ministère de la Santé de l’Ontario - Vaccination contre la COVID-19 pour les enfants et les jeunes</>,
+        },
+        link: {
+          EN: "https://www.health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_info_sheet_kids_5_11.pdf",
+          FR: "https://covid-19.ontario.ca/fr/vaccination-contre-la-covid-19-pour-les-enfants-et-les-jeunes",
+        },
         description: {
           EN: (
             <>
@@ -9332,17 +9394,24 @@ export const contentPersonasBI = {
               strategies for parents/guardians of children 5-11 (2021)
             </>
           ),
-          FR: <></>,
+          FR: (
+            <>
+              Fiche d’information du ministère de la Santé de l’Ontario sur les considérations et les stratégies de
+              préparation destinées aux parents et aux tuteurs d’enfants âgés de 5 à 11 ans (2021)
+            </>
+          ),
         },
       },
 
       {
         title: {
           EN: <>COVID Vaccine: What parents need to know</>,
-
-          FR: <></>,
+          FR: <>COVID Vaccine: What parents need to know</>,
         },
-        linkText: { EN: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>, FR: <></> },
+        linkText: {
+          EN: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
+          FR: <>John Hopkins Medicine - COVID Vaccine: What Parents Need to Know</>,
+        },
         link: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid19-vaccine-what-parents-need-to-know",
         description: {
           EN: (
@@ -9353,17 +9422,24 @@ export const contentPersonasBI = {
               children age 12 and older (2021).
             </>
           ),
-          FR: <></>,
+          FR: (
+            <>
+              Article rédigé par des pédiatres présentant des réponses aux questions les plus souvent posées par les
+              parents et les tuteurs au sujet des vaccins contre la COVID-19 pour leurs enfants *Veuillez noter qu’il
+              s’agit d’une source américaine. Au Canada, le vaccin de Pfizer-BioNTech a été approuvé pour les enfants
+              âgés de 5 à 11 ans, et les vaccins de Pfizer-BioNTech et de Moderna ont été approuvés pour les enfants de
+              12 ans et plus (2021).{" "}
+            </>
+          ),
         },
       },
 
       {
         title: {
-          EN: <>Children and the COVID-19 Vaccine </>,
-
-          FR: <></>,
+          EN: <>Children and the COVID-19 Vaccine</>,
+          FR: <>Children and the COVID-19 Vaccine</>,
         },
-        linkText: { EN: <>BC CDC - Children and COVID-19 Vaccination</>, FR: <></> },
+        linkText: { EN: <>BC CDC - Children and COVID-19 Vaccination</>, FR: <>BC CDC - Children and COVID-19 Vaccination</> },
         link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
         description: {
           EN: (
@@ -9372,7 +9448,7 @@ export const contentPersonasBI = {
               review of the vaccine approval process.{" "}
             </>
           ),
-          FR: <></>,
+          FR: <>Page Web présentant les avantages des vaccins pour enfants, les stratégies pour gérer la peur des aiguilles et un résumé du processus d’approbation des vaccins</>,
         },
       },
     ],
@@ -10274,7 +10350,7 @@ export const contentPersonasBI = {
                 <div>Please click the VH Guide logo at top to continue. </div>
                 <div>Also, please check the URL path and the appropriate section in contentPersonasBI.js</div>
                 <div className="mt-4">We apologize for the inconveniece.</div>
-              </div>{" "}
+              </div>
             </>
           ),
 

@@ -37,11 +37,16 @@ const DetailsResources = props => {
                         sm:gap-x-16 lg:gap-x-20  gap-y-10 sm:gap-y-16 lg:gap-y-20"
         >
           {resources.map((currResource, index) => {
+            log && console.log("DetailsResources.js resources.map currResource.link=", currResource.link);
+            const link = currResource.link;
+            // handle cases where link is an object or  a string. 
+            const url = typeof link === "string" || link instanceof String ? link : link[lang];
+
             return (
               <div key={index}>
                 <a
                   className="w-11/12 sm:w-5/6 md:w-90 lg:w-100  flex flex-col justify-center"
-                  href={currResource.link}
+                  href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                 >

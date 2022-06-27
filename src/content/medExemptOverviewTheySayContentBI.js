@@ -11,7 +11,10 @@ export const medExemptOverviewTheySayContentBI = [
   // </>
 
   {
-    subheading: { EN: <>&ldquo;My mental health is suffering&rdquo;</>, FR: <>French translation</> },
+    subheading: {
+      EN: <>&ldquo;My mental health is suffering&rdquo;</>,
+      FR: <>«&nbsp;Ma santé mentale en souffre.&nbsp;»</>,
+    },
     quotes: {
       EN: [
         <>
@@ -20,11 +23,20 @@ export const medExemptOverviewTheySayContentBI = [
           legitimate medical concern?
         </>,
       ],
-      FR: [<></>],
+      FR: [
+        <>
+          Je suis complètement isolée parce que je ne suis pas vaccinée. Je ne peux plus rien faire avec personne. Je
+          veux une lettre d’exemption parce que ma santé mentale est à son plus bas. Ma santé mentale, c’est un problème
+          médical valable, non?
+        </>,
+      ],
     },
   },
   {
-    subheading: { EN: <>&ldquo;It's all politics, it's an infringement&rdquo;</>, FR: <>goes in these subheading</> },
+    subheading: {
+      EN: <>&ldquo;It's all politics, it's an infringement&rdquo;</>,
+      FR: <>«&nbsp;C’est juste de la politique. C’est une violation de mes droits.&nbsp;»</>,
+    },
     quotes: {
       EN: [
         <>
@@ -32,11 +44,16 @@ export const medExemptOverviewTheySayContentBI = [
           to do this.
         </>,
       ],
-      FR: [<></>],
+      FR: [
+        <>
+          J’ai le droit de sortir et de faire ce que je veux. Je ne vais pas laisser quelqu’un d’autre me dicter quoi
+          faire.
+        </>,
+      ],
     },
   },
   {
-    subheading: { EN: <>&ldquo;It's against my religion&rdquo;</>, FR: <>lines.</> },
+    subheading: { EN: <>&ldquo;It's against my religion&rdquo;</>, FR: <>«&nbsp;C’est contre ma religion.&nbsp;»</> },
     quotes: {
       EN: [
         <>
@@ -56,11 +73,33 @@ export const medExemptOverviewTheySayContentBI = [
           scientific research and production of the vaccines violates my faith, beliefs, and biblical values.
         </>,
       ],
-      FR: [<></>],
+      FR: [
+        <>
+          Je suis contre les injections ayant des ingrédients susceptibles de produire des effets nuisibles à long
+          terme, comme la COVID-19. Ça va à l’encontre de mes croyances et de ce que j’ai appris dans ma vie.
+        </>,
+        <>
+          J’ai une lettre de mon [curé/prêtre/imam/chef religieux] ici qui appuie mes objections et affirme que j’ai le
+          droit de refuser le vaccin.
+        </>,
+        <>
+          Pour Dieu, l’homme est le maître de ses propres actions. Du point de vue religieux ou juridique, j’ai le droit
+          de ne pas me soumettre aux vaccins.
+        </>,
+        <>
+          La vie est précieuse et le caractère sacré de la vie est au cœur de ma foi. L’utilisation de vie humaine
+          avortée en recherche scientifique et en production de vaccins va à l’encontre de ma foi, de mes croyances et
+          de mes valeurs bibliques.
+        </>,
+      ],
     },
   },
+
   {
-    subheading: { EN: <>&ldquo;I am allergic to the vaccines&rdquo;</>, FR: <></> },
+    subheading: {
+      EN: <>&ldquo;I am allergic to the vaccines&rdquo;</>,
+      FR: <>«&nbsp;Je suis allergique aux vaccins.&nbsp;»</>,
+    },
     quotes: {
       EN: [
         <>I have a severe allergy to the ingredients in the vaccines.</>,
@@ -70,11 +109,21 @@ export const medExemptOverviewTheySayContentBI = [
           to them.
         </>,
       ],
-      FR: [<></>],
+      FR: [
+        <>J’ai une grave allergie aux ingrédients des vaccins.</>,
+        <>
+          J’ai déjà eu une réaction à un vaccin et je pense que je ne devrais pas accepter le vaccin contre la COVID.
+        </>,
+        <>
+          J’ai eu une mauvaise réaction à mon premier vaccin contre la COVID et je ne veux pas d’autres injections. Je
+          pense que j’y suis allergique.
+        </>,
+      ],
     },
   },
+
   {
-    subheading: { EN: <>&ldquo;Do me a favour&rdquo;</>, FR: <></> },
+    subheading: { EN: <>&ldquo;Do me a favour&rdquo;</>, FR: <>«&nbsp;Rendez-moi service.&nbsp;»</> },
     quotes: {
       EN: [
         <>
@@ -83,11 +132,20 @@ export const medExemptOverviewTheySayContentBI = [
           human relationships.
         </>,
       ],
-      FR: [<></>],
+      FR: [
+        <>
+          Ça fait plus de dix ans que je suis votre patiente. Il me semble que ce n’est pas beaucoup vous demander [une
+          lettre d’exemption]. Vous me dites que ça va à l’encontre des procédures et tout le reste, mais une procédure,
+          c’est une procédure. Il ne faut pas oublier les vraies relations humaines.{" "}
+        </>,
+      ],
     },
   },
   {
-    subheading: { EN: <>&ldquo;I'm pregnant/worried about fertility&rdquo;</>, FR: <></> },
+    subheading: {
+      EN: <>&ldquo;I'm pregnant/worried about fertility&rdquo;</>,
+      FR: <>«&nbsp;Je suis enceinte. Je m’inquiète de ma fertilité.&nbsp;»</>,
+    },
     quotes: {
       EN: [
         <>
@@ -97,7 +155,14 @@ export const medExemptOverviewTheySayContentBI = [
         <>I am breastfeeding, and I do not want to pass on a vaccine or vaccine components to my baby.</>,
         <>It's &lsquo;my body, my choice&rsquo; with my baby, so why not with the vaccines?</>,
       ],
-      FR: [<></>],
+      FR: [
+        <>
+          J’en suis à mon premier trimestre et je m’inquiète vraiment des risques du vaccin pour mon enfant. Est-ce que
+          je peux avoir une exemption pour reporter le vaccin à plus tard?
+        </>,
+        <>J’allaite mon bébé et je ne veux pas transmettre le vaccin ou les composantes du vaccin à mon bébé.</>,
+        <>C’est « mon corps, mon choix » pour ce qui est de mon bébé, alors pourquoi pas avec les vaccins?</>,
+      ],
     },
   },
 ];
