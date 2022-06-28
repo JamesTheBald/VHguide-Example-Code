@@ -4018,7 +4018,11 @@ export const contentPersonasBI = {
             </>,
             <>&ldquo;We don&apos;t know what the long-term effects will be.&rdquo;</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« J’ai entendu dire que les effets secondaires de la deuxième dose sont vraiment graves. »</>, 
+          <>« Mon (amie/un membre de ma famille) a eu une très mauvaise réaction au vaccin. J’ai peur d’avoir la même chose. »</>, 
+          <>« J’ai entendu parler de caillots sanguins et de troubles cardiaques. Je pense que ces vaccins sont dangereux. »</>, 
+          <>« On ne sait pas quels seront les effets à long terme de ces vaccins. »</>],
         },
       },
       thingsToConsider: {
@@ -4036,7 +4040,11 @@ export const contentPersonasBI = {
             </>,
             <>Emphasize the close regulatory scrutiny of the vaccines, their safety, and any adverse events.</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Expliquez clairement les effets secondaires possibles des vaccins aux patients.</>, 
+          <>Dites-leur que l’apparition de symptômes s’apparentant à la grippe après la vaccination est de bon augure et que ces symptômes sont un signe que le système immunitaire fait son travail.</>, 
+          <>Considérez la possibilité que des événements indésirables puissent aussi se produire dans le cadre d’activités courantes et quotidiennes (comme un accident de voiture, un écrasement d’avion, etc.).</>,
+          <>Mettez l’accent sur les contrôles réglementaires rapprochés qui se font à l’égard des vaccins, sur leur innocuité et sur leurs effets néfastes.</>,],
         },
       },
       takeHome: {
@@ -4049,7 +4057,9 @@ export const contentPersonasBI = {
               the vaccine and the patient&apos;s immune system are working, can help make the difference.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Votre patient aura vraisemblablement besoin d’être rassuré et non pas seulement de vous entendre dire que les effets secondaires graves de ces vaccins sont très rares. Dites-lui à nouveau que les « effets secondaires » mineurs prouvent, en fait, que le vaccin et le système immunitaire du patient font leur travail, car ça peut faire une différence.</>,
+        ],
         },
       },
     },
@@ -4064,7 +4074,7 @@ export const contentPersonasBI = {
                 you get vaccinated?
               </>
             ),
-            FR: <></>,
+            FR: <>Quels effets secondaires des vaccins vous inquiètent le plus? Pouvez-vous me dire ce que vous pensez qui va arriver si vous vous faites vacciner?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -4076,7 +4086,7 @@ export const contentPersonasBI = {
                 thinking about all of the risks and benefits of getting the vaccine or not.
               </>
             ),
-            FR: <></>,
+            FR: <>Certains de mes patients ont effectivement exprimé ces inquiétudes. Je suis content que vous pensiez à tous les risques et les avantages de la vaccination par opposition à la non-vaccination.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -4089,7 +4099,7 @@ export const contentPersonasBI = {
                 system to do its job, right? That&apos;s not a side effect, that&apos;s THE effect.
               </>
             ),
-            FR: <></>,
+            FR: <>Il arrive parfois que les gens méprennent leur réponse immunitaire pour un effet secondaire. Il faut que votre corps produise la plus forte réponse immunitaire possible par rapport au vaccin. Est-ce que ça a du sens? Parce qu’il faut que votre système immunitaire fasse son travail, vous comprenez? Ce n’est pas un effet secondaire. C’est L’EFFET.</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -4102,7 +4112,7 @@ export const contentPersonasBI = {
                 sicker than you might feel from a side effect.
               </>
             ),
-            FR: <></>,
+            FR: <>Vous devez penser au risque d’attraper la COVID. Parce que si vous l’attrapez, vos symptômes pourraient être beaucoup plus graves, vous savez? La COVID pourrait vous rendre très malade. Ça pourrait être beaucoup plus grave qu’un effet secondaire.</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -4121,7 +4131,7 @@ export const contentPersonasBI = {
                       happen if you get vaccinated?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quels effets secondaires des vaccins vous inquiètent le plus? Pouvez-vous me dire ce que vous pensez qui va arriver si vous vous faites vacciner?</>,
                 },
                 featured: true,
                 image: "",
@@ -4135,7 +4145,7 @@ export const contentPersonasBI = {
                       been with it?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que certains de vos amis ou membres de votre famille ont déjà été vaccinés? Comment ont-ils réagi?</>,
                 },
                 featured: false,
                 image: "",
@@ -4149,7 +4159,7 @@ export const contentPersonasBI = {
                       making you particularly anxious about vaccination?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pouvez-vous précisément me dire pourquoi les vaccins vous rendent nerveuse? Est-ce que quelque chose de particulier vous inquiète?</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -4173,7 +4183,7 @@ export const contentPersonasBI = {
                       you&apos;re thinking about all of the risks and benefits of getting the vaccine or not.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Certains de mes patients ont effectivement exprimé ces inquiétudes. Je suis content que vous pensiez à tous les risques et les avantages de la vaccination par opposition à la non-vaccination.</>,
                 },
                 featured: true,
                 image: "",
@@ -4188,7 +4198,7 @@ export const contentPersonasBI = {
                       a vaccine, or any medication for that matter.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous n’êtes pas la seule! D’autres patients ont aussi hésité à se faire vacciner tout de suite parce qu’ils s’inquiétaient des effets secondaires potentiels.  Quand on entend parler de mauvais effets secondaires à cause de vaccins ou de médicaments, ça fait peur en fait.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -4203,7 +4213,7 @@ export const contentPersonasBI = {
                       been quite confusing.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>On a beaucoup entendu parler de caillots sanguins et de vaccins dans les médias. Les nombreux reportages peuvent porter à confusion.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -4217,7 +4227,7 @@ export const contentPersonasBI = {
                       really common. Feeling some flu-like symptoms after getting a vaccine is certainly not unusual.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>C’est vrai, ce que vous décrivez (comme des symptômes s’apparentant à la grippe), ça se produit souvent. Avoir des symptômes s’apparentant à la grippe après avoir été vaccinés, ce n’est certainement pas rare.</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -4231,7 +4241,7 @@ export const contentPersonasBI = {
                       a few days after getting your vaccine.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je peux comprendre pourquoi vous n’avez pas hâte de vous sentir un peu malade ou d’avoir des symptômes de grippe pendant quelques jours après avoir été vacciné.</>,
                 },
                 featured: false,
                 image: "",
@@ -4246,7 +4256,7 @@ export const contentPersonasBI = {
                       worse side effects.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis vraiment content que vous ayez eu votre première dose. Ça veut dire que vous avez déjà une certaine immunité et protection. Et je peux comprendre pourquoi vous pensez que les effets secondaires de la deuxième dose pourraient être pires.</>,
                 },
                 featured: false,
                 image: "",
@@ -4261,7 +4271,7 @@ export const contentPersonasBI = {
                       clot/myocarditis&#93; issue, and it makes sense to have concerns about that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’apprécie le fait que vous considérez et soupesez les risques ainsi que les avantages de la vaccination. Tout le monde suit la situation de très près (les caillots sanguins et la myocardite, par exemple) et c’est normal de s’inquiéter de ces choses-là.</>,
                 },
                 featured: true,
                 image: "",
@@ -4285,7 +4295,7 @@ export const contentPersonasBI = {
                       myocarditis&#93;. Do you want to look at that information with me? We can discuss it together.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>On a entendu parler de certains effets secondaires (comme les caillots sanguins, la myocardite). Voulez-vous qu’on passe ça en revue ensemble? On pourrait en discuter si vous voulez.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -4299,7 +4309,7 @@ export const contentPersonasBI = {
                       benefits and risks of the vaccines with you?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand on a un tableau complet de la situation, ça fait un peu moins peur. Est-ce qu’on pourrait discuter des avantages et des risques des vaccins ensemble.</>,
                 },
                 featured: false,
                 image: "",
@@ -4323,7 +4333,7 @@ export const contentPersonasBI = {
                       immune system to do its job, right? That&apos;s not a side effect, that&apos;s <i>THE</i> effect.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Il arrive parfois que les gens méprennent leur réponse immunitaire pour un effet secondaire. Il faut que votre corps produise la plus forte réponse immunitaire possible par rapport au vaccin. Est-ce que ça a du sens? Parce qu’il faut que votre système immunitaire fasse son travail, vous comprenez? Ce n’est pas un effet secondaire. C’est <i>L’EFFET</i>.</>,
                 },
                 featured: false,
                 image: "",
@@ -4340,7 +4350,7 @@ export const contentPersonasBI = {
                       more complete protection we have the safer we all will be.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>(<i>Au sujet de l’importance de la deuxième dose</i>) Quand le virus est en mesure de s’attaquer à un plus grand nombre de personnes – même si elles ne sont pas très malades – il a la possibilité de muter. C’est comme ça que les variants se développent et c’est pour ça que cette pandémie ne cesse de s’étirer en longueur. Donc, plus il y aura de personnes protégées, plus nous serons en sécurité.</>,
                 },
                 featured: true,
                 image: "",
@@ -4356,7 +4366,7 @@ export const contentPersonasBI = {
                       that it remembers, and you will be protected for longer.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>On sait que la première dose offre une certaine protection, mais on sait aussi que cette protection n’est pas aussi forte et ne durera pas aussi longtemps qu’escompté. La deuxième dose va donner à votre système immunitaire encore plus de force. Elle va rappeler à votre système immunitaire ce qu’il doit faire et par conséquent, vous serez protégée pendant plus longtemps.</>,
                 },
                 featured: false,
                 image: "",
@@ -4373,7 +4383,7 @@ export const contentPersonasBI = {
                       different antibodies, slightly different ones...
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En réalité, les effets secondaires sont signe que votre système immunitaire a compris ce qui se passe et qu’il s’est mis en marche. Cela ne veut pas dire que quelque chose ne va pas avec le vaccin. Les effets secondaires veulent plutôt dire que le vaccin fait son travail. Maintenant, la raison pour laquelle quelques caillots sanguins se sont formés, c’est parce que chez quelques personnes, très peu de personnes, le système immunitaire produit un anticorps plutôt étrange. Chaque personne produit des anticorps différents, un peu différents.</>,
                 },
                 featured: false,
                 image: "",
@@ -4389,7 +4399,7 @@ export const contentPersonasBI = {
                       it showed that it was doing something. They saw it as a desired effect, not a side effect!
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Une de mes collègues me disait l’autre jour qu’elle s’était entretenue avec des infectiologues qui se réjouissaient du fait que leurs patients aient mal au bras après avoir été vaccinés parce que c’était la preuve que le vaccin fonctionne. Pour eux, c’est un effet souhaité et non pas un effet secondaire!</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -4405,7 +4415,7 @@ export const contentPersonasBI = {
                       Imagine what you&apos;d feel like if it was the real thing and not the vaccine?!
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En fait, ça fait des années que je dis ça au sujet des vaccins : c’est bon de se sentir misérable parce que ça veut dire que le système immunitaire fait son travail. Ça veut dire que votre système immunitaire se rend compte de la présence du vaccin. Votre système immunitaire réagit au vaccin, comme ce devrait être le cas. Imaginez-vous comment vous vous sentiriez si c’était la maladie et non pas le vaccin?</>,
                 },
                 featured: true,
                 image: "",
@@ -4422,7 +4432,7 @@ export const contentPersonasBI = {
                       case of the disease they&apos;re preventing.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Maintenant, si vous me demandez : « <i>Comment pouvez-vous savoir s’il n’y aura pas de problèmes dans une dizaine d’années?</i> », je ne sais pas la réponse à cette question. Je ne peux pas vous le dire avec certitude, mais je peux vous expliquer comment le vaccin fonctionne, en commençant par vous dire que le bilan des vaccins est très positif. C’est certain que c’est bien mieux de se faire vacciner que d’être très malade à cause du virus contre lequel le vaccin est censé nous protéger.</>,
                 },
                 featured: false,
                 image: "",
@@ -4441,7 +4451,7 @@ export const contentPersonasBI = {
                       something to talk about safety. It might be worthwhile thinking about that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>L’histoire des (caillots sanguins), c’est comme quand on entend parler d’un écrasement d’avion aux nouvelles. Même si ça se produit très peu souvent, les médias se font un devoir de nous en parler. C’est ce qui se passe avec le vaccin depuis qu’il a été autorisé. Tout le monde s’intéresse, non sans raison, à ce qui se passe et à toutes les tournures que prend la situation. Il y a tout plein de reportages à ce sujet. Mais tous les reportages portent sur des événements qui se produisent très rarement. Quand on ajoute ça au fait qu’on ne peut pas trop sortir, tout ça, ça rend les gens anxieux. Alors je me demande si on peut peut-être trouver une source fiable d’un des organismes réglementaires ou quelque chose du genre pour parler de l’innocuité du vaccin. Ça pourrait valoir la peine d’en discuter.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -4457,7 +4467,7 @@ export const contentPersonasBI = {
                       more real.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que les histoires d’effets secondaires peuvent vous faire peur. Mais quand on se penche sur les statistiques, la probabilité que les choses tournent mal est tellement mince. La probabilité qu’on porte un masque à tout jamais et que les enfants fassent l’école à domicile pour toujours est bien plus élevée que ça et bien plus réelle.</>,
                 },
                 featured: false,
                 image: "",
@@ -4473,7 +4483,7 @@ export const contentPersonasBI = {
                       vaccine personally. I was actually quite excited to get it really.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai déjà été vacciné… Au début, j’ai eu un peu mal à la tête pendant le premier jour, puis de la douleur pendant deux jours. Je ne pouvais pas bien dormir. Et j’ai été un peu fatigué pendant environ une semaine, puis ça s’est estompé. Personnellement, je n’ai pas hésité à me faire vacciner. En fait, j’avais plutôt hâte de l’avoir!</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -4489,7 +4499,7 @@ export const contentPersonasBI = {
                       effects affecting sexual function. There&apos;s just no side effects in that regard.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Les professionnels de la santé ont donné ce vaccin à des centaines de millions de personnes dans le monde entier jusqu’à maintenant. Il s’agit probablement de l’intervention médicale la plus suivie de toute l’histoire de l’humanité. On connaît toutes les facettes des effets secondaires et je vous promets qu’aucun effet secondaire ne touche la fonction sexuelle. Ce vaccin n’a absolument aucun effet sur la fonction sexuelle.</>,
                 },
                 featured: false,
                 image: "",
@@ -4505,7 +4515,7 @@ export const contentPersonasBI = {
                       vaccine.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Dans mon domaine, tous les jours, je rencontre des hommes qui ont besoin de Viagra, mais ce n’est pas parce qu’ils se sont fait vacciner. Ils ont besoin de Viagra parce qu’ils ont d’autres problèmes. Certains font de l’hypertension artérielle, d’autres du diabète et ainsi de suite, mais ça n’a rien à voir avec le vaccin.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -4521,7 +4531,7 @@ export const contentPersonasBI = {
                       give people.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Il faut qu’il y ait des effets. Il ne faut pas que rien ne se produise. En fait, c’est prometteur quand le vaccin a des effets parce que ça veut dire que votre système immunitaire va reconnaître la COVID et va vous protéger contre l’hospitalisation et la mort découlant de la maladie.</>,
                 },
                 featured: true,
                 image: "",
@@ -4541,7 +4551,7 @@ export const contentPersonasBI = {
                       the vaccine than roll the dice with getting the real disease.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, mon (ami/un membre de ma famille) est un grand sportif et il est (plus jeune). Ce que je vous raconte est une histoire vraie. Il a attrapé la COVID et la maladie l’a terrassé. Il a des douleurs à la poitrine depuis qu’il a été malade, au point de consulter un cardiologue. Le cardiologue lui a dit que son cœur était en santé, et pourtant, il n’a pas pu recommencer à faire du vélo pendant des semaines et des semaines. Alors, quand je l’ai vu souffrir comme ça, je me suis dit : « <i>Ouf, je ne veux pas prendre la chance d’être malade à ce point-là</i> ». Je préfère avoir les effets secondaires du vaccin que de courir le risque de tomber vraiment malade.</>,
                 },
                 featured: false,
                 image: "",
@@ -4566,7 +4576,7 @@ export const contentPersonasBI = {
                       that. Much sicker than you might feel from a side effect.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous devez penser au risque d’attraper la COVID. Parce que si vous l’attrapez, vos symptômes pourraient être beaucoup plus graves, vous savez? La COVID pourrait vous rendre très malade. Ça pourrait être beaucoup plus grave qu’un d’un effet secondaire.</>,
                 },
                 featured: false,
                 image: "",
@@ -4584,7 +4594,7 @@ export const contentPersonasBI = {
                       going to be worried about a potential side effect?!
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vraiment? Donc tous les jours, une vingtaine de fois par jour, vous ouvrez un paquet de cigarettes qui vous dit que la cigarette va vous tuer. Ça fait une vingtaine d’années que vous faites ça et maintenant, vous me dites que vous avez peur d’un grave effet néfaste dont la probabilité de se produire est d’un sur un million. Avez-vous peur quand vous lisez sur l’emballage de votre paquet de cigarettes qu’elle va vraiment finir par vous tuer? Et là, vous vous souciez d’un effet secondaire potentiel?</>,
                 },
                 featured: false,
                 image: "",
@@ -4601,7 +4611,7 @@ export const contentPersonasBI = {
                       such a bad disease.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>(En matière de coordination de la vaccination en fonction d’événements importants de la vie) Je pense que vous pourriez avoir votre première dose et voir comment vous allez vous sentir. Puis pour ce qui est de la deuxième dose, vous pourriez la retarder parce que vous serez un peu plus susceptible de ressentir des symptômes s’apparentant à la grippe pendant quelques jours. Ce serait raisonnable. Cela dit, ma première recommandation serait d’avoir les deux doses dès que vous le pourrez parce que la COVID peut faire bien des ravages.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -4618,13 +4628,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>How to explain side effects without scaring patients</>,
 
-          FR: <></>,
+          FR: <>How to explain side effects without scaring patients</>,
         },
-        linkText: { EN: <>General advice to clinicians</>, FR: <></> },
+        linkText: { EN: <>General advice to clinicians</>, FR: <>Conseils généraux à l’intention des cliniciens</> },
         link: "https://www.singlecare.com/blog/explain-side-effects/",
         description: {
           EN: <>Advice to clinicians on how to discuss side effects with patients. (Feb 2020)</>,
-          FR: <></>,
+          FR: <>Conseils à l’intention des cliniciens sur la façon de discuter des effets secondaires avec les patients. (février 2020)</>,
         },
       },
 
@@ -4632,9 +4642,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Five Ways to Communicate Risk So That Patients Understand</>,
 
-          FR: <></>,
+          FR: <>Five Ways to Communicate Risk So That Patients Understand</>,
         },
-        linkText: { EN: <>AAFP Article</>, FR: <></> },
+        linkText: { EN: <>AAFP Article</>, FR: <>Article de l’AAFP</> },
         link: "https://www.aafp.org/fpm/2018/1100/p28.html",
         description: {
           EN: (
@@ -4643,7 +4653,8 @@ export const contentPersonasBI = {
               Family Medicine. (2018)
             </>
           ),
-          FR: <></>,
+          FR: <>Conseils sur la façon de communiquer les risques de manière compréhensible par le patient. Publié par l’American Academy of
+          Family Medicine. (2018)</>,
         },
       },
 
@@ -4651,15 +4662,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
 
-          FR: <></>,
+          FR: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
         },
-        linkText: { EN: <>FAQ page from ImmunizeBC</>, FR: <></> },
+        linkText: { EN: <>FAQ page from ImmunizeBC</>, FR: <>Page des FAQ d’ImmunizeBC</> },
         link: "https://immunizebc.ca/ask-us/questions/are-there-long-term-side-effects-caused-mrna-covid-19-vaccines-how-do-we-know",
         description: {
           EN: (
             <>ImmunizeBC examines the question of long-term side effects from COVID-19 vaccines. (Updated, June 2021)</>
           ),
-          FR: <></>,
+          FR: <>ImmunizeBC examine la question des effets secondaires à long terme des vaccins contre la COVID-19. (mis à jour en juin 2021)</>,
         },
       },
 
@@ -4667,9 +4678,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
 
-          FR: <></>,
+          FR: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
         },
-        linkText: { EN: <>Medical advisory from Alberta Health for Medical Professionals</>, FR: <></> },
+        linkText: { EN: <>Medical advisory from Alberta Health for Medical Professionals</>, FR: <>Conseils médicaux du ministère de la Santé de l’Alberta à l’intention des professionnels de la santé</> },
         link: "https://www.alberta.ca/assets/documents/health-QA-myocarditis-and-pericarditis-following-covid.pdf",
         description: {
           EN: (
@@ -4678,7 +4689,7 @@ export const contentPersonasBI = {
               for medical professionals. (Updated, July 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Compilation d’information sur la myocardite et la péricardite après la vaccination contre la COVID réalisée par le ministère de la Santé de l’Alberta, à l’intention des professionnels de la santé. (mis à jour en juillet 2021)</>,
         },
       },
 
@@ -4686,20 +4697,20 @@ export const contentPersonasBI = {
         title: {
           EN: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
 
-          FR: <></>,
+          FR: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
         },
-        linkText: { EN: <>Information about side effects and care after COVID-19 vaccination</>, FR: <></> },
+        linkText: { EN: <>Information about side effects and care after COVID-19 vaccination</>, FR: <>Information sur les effets secondaires et les soins à prodiguer après la vaccination contre la COVID-19</> },
         link: "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=custom.ab_imm_covid19vaccine_ac",
-        description: { EN: <> (Updated, July 2021)</>, FR: <></> },
+        description: { EN: <> (Updated, July 2021)</>, FR: <>(mis à jour en juillet 2021)</> },
       },
 
       {
         title: {
           EN: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
 
-          FR: <></>,
+          FR: <>Mixing Vaccines Provides Strong Protection: Article du NYTimes</>,
         },
-        linkText: { EN: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>, FR: <></> },
+        linkText: { EN: <>NYTimes Article: Mixing Pfizer and Astra Zeneca Provides Strong Protection</>, FR: <>Article du NYTimes: Mélanger les vaccins de Pfizer et d’Astra Zeneca donne une très bonne protection</> },
         link: "https://www.nytimes.com/2021/06/28/health/mixing-pfizer-astrazeneca-results.html",
         description: {
           EN: (
@@ -4709,7 +4720,7 @@ export const contentPersonasBI = {
               2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Couverture médiatique avec liens menant aux études montrant que le fait de mélanger les types de vaccins se traduit par une solide immunité. (juin 2021)</>,
         },
       },
 
@@ -4717,13 +4728,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>MayoClinic - COVID-19: Long-term effects</>,
 
-          FR: <></>,
+          FR: <>MayoClinic - COVID-19: Long-term effects</>,
         },
-        linkText: { EN: <>MayoClinic Info on Long-COVID</>, FR: <></> },
+        linkText: { EN: <>MayoClinic Info on Long-COVID</>, FR: <>Information de la MayoClinic sur le syndrome post-COVID</> },
         link: "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-long-term-effects/art-20490351",
         description: {
           EN: <>MayoClinic&apos;s infopage on the long-term effects of COVID and long-COVID. (May 2021)</>,
-          FR: <></>,
+          FR: <>Page d’information de la MayoClinic sur les effets à long terme de la COVID et le syndrome post-COVID. (mai 2021)</>,
         },
       },
     ],
@@ -4756,7 +4767,14 @@ export const contentPersonasBI = {
             </>,
             <>&ldquo;Why haven&apos;t we been using Ivermectin to help treat COVID?&rdquo;</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Je n’ai pas confiance au gouvernement qui me dicte quoi faire quand je sais qu’il ne nous a pas amenés sur la bonne route jusqu’à maintenant. »</>, 
+          <>« Je ne pense pas que les grandes entreprises pharmaceutiques aient nos meilleurs intérêts à cœur. Elles pensent seulement à faire de l’argent. »</>, 
+          <>« Je ne me ferai pas injecter un vaccin conçu par Bill Gates pour contrôler la population. »</>, 
+          <>« Les médias traditionnels ne connaissent pas les faits entourant le virus. Ils sont en mode panique alarmiste. »</>, 
+          <>« Comment est-ce que je peux savoir avec certitude que les vaccins n’ont pas de puces? »</>, 
+          <>« Le site Web du CDC publie toutes sortes de rapports au sujet d’effets secondaires horribles à cause du vaccin. Pourquoi est-ce qu’ils n’en parlent pas? Pourquoi est-ce que je ferais confiance aux médecins et non pas au CDC? »</>, 
+          <>« Pourquoi on n’utilise pas Ivermectin pour aider à traiter la COVID? »</>,],
         },
       },
       thingsToConsider: {
@@ -4773,7 +4791,11 @@ export const contentPersonasBI = {
               find middle ground based on shared experiences and understandings.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Réaffirmez votre position en tant qu’allié et votre rôle de fournisseur d’information de confiance sur la santé.</>, 
+          <>Présentez des situations ou des scénarios hypothétiques pour aider à montrer des points de vue différents aux patients.</>, 
+          <>Travaillez avec le patient pour trouver des situations ou des scénarios qui lui permettraient de changer d’avis au sujet de la vaccination.</>, 
+          <>Précisez bien que votre perspective, à titre de professionnel de la santé, diffère de celle du patient et efforcez-vous de trouver un juste milieu en fonction d’expériences et de connaissances que vous avez en commun.</>],
         },
       },
       takeHome: {
@@ -4786,7 +4808,7 @@ export const contentPersonasBI = {
               meets their health goals.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>Il y a de l’information en abondance et c’est parfois difficile de tout comprendre. En collaboration avec votre patient, sur un pied d’égalité, passez en revue cette information afin d’aboutir à une compréhension réciproque qui répond à ses objectifs en matière de santé.</>,],
         },
       },
     },
@@ -4805,7 +4827,7 @@ export const contentPersonasBI = {
                 in creating this whole situation. How are they winning?
               </>
             ),
-            FR: <></>,
+            FR: <>Pour moi, en tant que médecin, et pour mes collègues, ce n’est pas facile. Personnellement, je vois beaucoup de patients malades, beaucoup de patients qui ont peur parce qu’ils ont été en contact avec des cas, et ainsi de suite. Et je vous comprends quand vous me dites que vous ne vivez pas la même chose que moi. Alors, (pour les entreprises pharmaceutiques), c’est quoi leur objectif final, à part que de faire de l’argent avec les vaccins? Selon vous, en quoi les entreprises pharmaceutiques bénéficient-elles de la création de toute cette situation? Qu’ont-elles à gagner?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -4819,7 +4841,7 @@ export const contentPersonasBI = {
                 fully up to date, so I can provide the right advice to the people I really care for.
               </>
             ),
-            FR: <></>,
+            FR: <>Je comprends, vous ne faites pas confiance au gouvernement à ce sujet, mais moi, je fais mes propres recherches parce que je voulais en avoir le cœur net. Je pense que le gouvernement ne mérite pas notre confiance sur toute la ligne, n’est-ce pas? C’est pour ça que je fais mes propres recherches. Je me fais un devoir de bien me tenir à jour afin de pouvoir donner de bons conseils aux personnes dont je m’occupe.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -4832,7 +4854,7 @@ export const contentPersonasBI = {
                 this vaccine with a different lens than what you&apos;ve heard in the media.
               </>
             ),
-            FR: <></>,
+            FR: <>Est-ce que ça vous intéresserait que je vous explique un peu comment les vaccins fonctionnent? Ça fait (<i>x période de temps</i>) qu’on se connaît, alors j’espère que vous pourrez comprendre que je regarde ce vaccin sous un angle différent de celui des médias.</>,
           },
           image: "doctorWhiteManYoung.svg",
         },
@@ -4845,7 +4867,7 @@ export const contentPersonasBI = {
                 normal way. What would you be willing to pay for that? What would you be willing to give for that?
               </>
             ),
-            FR: <></>,
+            FR: <>Vous avez parlé de faire (des activités). Vous avez mentionné le travail en personne et la camaraderie avec vos collègues. Vous avez parlé de vos enfants qui devraient retourner à l’école normalement. Quel prix seriez-vous prête à payer pour ça? Que seriez-vous prête à donner pour ça?</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -4869,7 +4891,7 @@ export const contentPersonasBI = {
                       winning?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour moi, en tant que médecin, et pour mes collègues, ce n’est pas facile. Personnellement, je vois beaucoup de patients malades, beaucoup de patients qui ont peur parce qu’ils ont été en contact avec des cas, et ainsi de suite. Et je vous comprends quand vous me dites que vous ne vivez pas la même chose que moi. Alors (pour les entreprises pharmaceutiques), c’est quoi leur objectif final, à part que de faire de l’argent avec les vaccins? Selon vous, en quoi les entreprises pharmaceutiques bénéficient-elles de la création de toute cette situation? Qu’ont-elles à gagner?</>,
                 },
                 featured: true,
                 image: "",
@@ -4888,7 +4910,7 @@ export const contentPersonasBI = {
                       think I&apos;m totally wrong either.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que je comprends ce que vous me dites par rapport à la COVID-19. C’est blanc ou c’est noir. Alors, ou bien je me trompe complètement en tant que médecin et scientifique, et vous avez raison sur toute la ligne. Et si je me trompe, alors c’est une vraie imposture, l’histoire a été inventée de toutes pièces et c’est une question de contrôle par le gouvernement, complètement. Ou peut-être que c’est le contraire et que vous vous trompez, ce qui vous mettrait dans une position inconfortable, j’imagine. Je pense qu’après tout, ce n’est pas tellement blanc et noir. Je ne pense certainement pas que vous vous trompez entièrement, mais peut-être que vous pensez que je ne me trompe pas entièrement aussi.</>,
                 },
                 featured: false,
                 image: "",
@@ -4915,7 +4937,7 @@ export const contentPersonasBI = {
                       for.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends, vous ne faites pas confiance au gouvernement à ce sujet, mais moi, je fais mes propres recherches parce que je voulais en avoir le cœur net. Je pense que le gouvernement ne mérite pas notre confiance sur toute la ligne, n’est-ce pas? C’est pour ça que je fais mes propres recherches. Je me fais un devoir de bien me tenir à jour afin de pouvoir donner de bons conseils aux personnes dont je m’occupe.</>,
                 },
                 featured: false,
                 image: "",
@@ -4941,7 +4963,15 @@ export const contentPersonasBI = {
                       &#93;. So you got to be alert for scams on both sides of this.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous n’avez pas confiance en l’industrie pharmaceutique. Je peux vous comprendre parce qu’en fait, la menace numéro un à la pratique factuelle en ce moment, c’est la déformation intentionnelle de toute la documentation produite par l’industrie pharmaceutique. Je ne vous reproche donc pas de ne pas faire confiance aux grandes entreprises pharmaceutiques. C’est la même chose pour moi. Cela dit, le doute à l’égard des vaccins a été semé par un homme qui a, pour ainsi dire, fait de la fraude pour son propre profit (
+                    <a
+                    href="https://www.bmj.com/content/342/bmj.c5347"
+                    className="orangeLink"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    source
+                  </a>). Il faut donc être à l’affût des arnaques des deux côtés de la médaille.</>,
                 },
                 featured: true,
                 image: "",
@@ -4956,7 +4986,7 @@ export const contentPersonasBI = {
                       make sure that I could effectively answer people&apos;s questions and concerns.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Cette inquiétude fait souvent surface chez mes autres patients. Et je comprends pourquoi les gens s’y attardent. J’ai donc fait pas mal de recherche à ce sujet pour pouvoir bien répondre à leurs questions et inquiétudes.</>,
                 },
                 featured: false,
                 image: "",
@@ -4971,7 +5001,7 @@ export const contentPersonasBI = {
                       difficult to tease out what&apos;s helpful.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La couverture médiatique entourant les vaccins est vraiment difficile à suivre, n’est-ce pas? On dirait qu’il y a quelque chose de nouveau tous les jours, qui contredit ce qui a été dit avant, ce qui peut être encore plus difficile de trouver l’information qui est vraiment utile.</>,
                 },
                 featured: false,
                 image: "",
@@ -4986,7 +5016,7 @@ export const contentPersonasBI = {
                       government and public health, is that fair?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je crois que vous vous inquiétez vraiment du fait que le gouvernement et d’autres personnes prennent des décisions pour vous, et c’est comme si le gouvernement et le service de la santé publique (nuisaient) aux décisions que vous devez prendre, est-ce bien ça?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -5011,7 +5041,7 @@ export const contentPersonasBI = {
                       this vaccine with a different lens than what you&apos;ve heard in the media.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que ça vous intéresserait que je vous explique un peu comment les vaccins fonctionnent? Ça fait (x période de temps) qu’on se connaît, alors j’espère que vous pourrez comprendre que je regarde ce vaccin sous un angle différent de celui des médias.</>,
                 },
                 featured: true,
                 image: "",
@@ -5025,7 +5055,7 @@ export const contentPersonasBI = {
                       really confusing, isn&apos;t it? Can we compare notes?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous faites des recherches sur Internet et moi aussi. Je vous comprends. On ne s’y retrouve plus, non? Est-ce qu’on peut comparer notre information?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -5047,7 +5077,15 @@ export const contentPersonasBI = {
                       with other people who had, I think, similar mistrusts as yours. Would that be helpful?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que je pourrais vous faire part de l’expérience de quelqu’un d’autre? Je pourrais vous envoyer (
+                    <a
+                        href="https://youtu.be/7sgAdgqOFQs"
+                        className="orangeLink"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        des liens
+                      </a>) par courriel à propos de personnes qui se méfiaient de tout ce qui se passe, comme vous. Est-ce que ça pourrait vous aider?</>,
                 },
                 featured: false,
                 image: "",
@@ -5076,7 +5114,7 @@ export const contentPersonasBI = {
                       and distancing and restrictions.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que je peux me porter garant de tous les chefs de la direction de toutes les grandes entreprises pharmaceutiques? Est-ce que je peux affirmer que personne au fil de l’histoire n’a fait quelque chose de croche pour essayer de faire de l’argent? Absolument pas. Et pourtant, dans le cadre de mes fonctions, je vois tous les jours des personnes dont la vie a changé en mieux grâce aux médicaments mis au point par les entreprises pharmaceutiques. Je vois des gens qui vivent plus longtemps et qui ont des vies plus remplies grâce aux médicaments qui existent. Et le vaccin fait partie de ces médicaments. Il permet à tous de vivre plus longtemps et d’avoir une vie plus remplie, une meilleure vie. Une vie sans masque, sans distanciation physique et sans restrictions.</>,
                 },
                 featured: false,
                 image: "",
@@ -5103,7 +5141,15 @@ export const contentPersonasBI = {
                       start taking unapproved drugs.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je me souviens que vous vous inquiétiez de leur approbation par la FDA avant de vous faire vacciner. On sait que la FDA a dit explicitement :
+                  <a
+                        className="ml-1.5 orangeUnderline"
+                        href="https://www.fda.gov/consumers/consumer-updates/why-you-should-not-use-ivermectin-treat-or-prevent-covid-19"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        « N’utilisez pas Ivermectin pour la COVID-19 » <FiExternalLink className="inline" size={18} />
+                      </a>. Ce médicament n’est absolument pas approuvé pour traiter quoi que ce soit se rapportant à la COVID. Mais en ce moment, ils font de la recherche, ils font des essais. Ils ne font pas fi des anecdotes, ou ils n’essaient pas de supprimer la recherche. Il faut attendre que les recherches soient terminées avant de commencer à prendre des médicaments non approuvés.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -5119,7 +5165,7 @@ export const contentPersonasBI = {
                       virus.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour ce qui est de ces vaccins, il ne faut pas nécessairement que vous ayez confiance (aux politiciens), mais vous pouvez avoir confiance en moi. Ce sont de bons vaccins. Ils empêchent les gens de mourir de ce virus.</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -5140,7 +5186,7 @@ export const contentPersonasBI = {
                       more harm than good.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vois que vous avez fait beaucoup de recherche sur Ivermectin. Ce qui m’inquiète en fait, c’est que certaines études affirment que l’utilisation de médicaments existants pour d’autres types de maladies ne donne pas toujours de bons résultats. Je sais que bien des gens espèrent qu’Ivermectin permettra de bien traiter la COVID. Mais ce médicament n’a pas du tout été conçu pour ça. Avec les vaccins, pas besoin d’espérer que ça fonctionne. On sait qu’ils fonctionnent. Et ils sont sûrs. À la lumière de ce que j’ai lu à propos des personnes qui prennent un médicament vétérinaire comme Ivermectin, ça m’inquiète que vous pensiez qu’il s’agit d’une méthode sûre. En fait, je pense qu’il peut davantage vous nuire que de vous faire du bien.</>,
                 },
                 featured: true,
                 image: "",
@@ -5166,7 +5212,7 @@ export const contentPersonasBI = {
                       vaccine.&apos;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Le problème avec les sites Web d’événements indésirables (comme CDC VAERS), c’est qu’ils ne sont pas du tout supervisés. Toute mauvaise chose qui s’est produite, une semaine ou six semaines après avoir reçu un vaccin, est publiée sur ces sites. Si on prend 100 000 personnes au hasard, qu’on ne les vaccine pas et qu’on leur dit : « <i>Bon, c’est aujourd’hui qu’on va vous accorder de l’attention</i> », je vous garantis que 30 000 d’entre eux, un ou deux jours plus tard, vont avoir le nez bouché, avoir mal à la tête, faire une fausse couche ou quelque chose du genre. Si on suit ces 100 000 personnes pendant un certain temps, c’est à peu près certain que quelque chose va se produire tout à fait par hasard. Ou si ce n’est pas par hasard, ça n’a certainement rien à voir avec la chose à laquelle on avait décidé de porter attention. Ce que ça veut dire, c’est qu’une grande partie de l’information publiée dans ces sites Web fait du bruit. La raison pour laquelle l’information est recueillie, c’est pour voir si ce bruit donne lieu à certaines tendances. Ils ne se demandent pas : « Est-ce que quelqu’un quelque part a eu ça après avoir été vacciné » mais plutôt : « Au cours d’une semaine donnée après avoir reçu le vaccin, est-ce que plus de personnes ont eu ça comparativement aux personnes qui ne se sont pas fait vacciner »?</>,
                 },
                 featured: false,
                 image: "",
@@ -5188,7 +5234,7 @@ export const contentPersonasBI = {
                       outside. But one of them definitely works and the other, well, you&apos;re looking at clouds.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Les médecins ont pris l’idée d’utiliser Ivermectin suffisamment au sérieux pour faire des études scientifiques contrôlées à leur égard. Si ce médicament n’est pas prescrit contre la COVID, c’est qu’il y a une raison : il ne fonctionne pas. Des dizaines d’études ont été effectuées à ce sujet. Au mieux, une ou deux études ont montré, dans une très très mince mesure, qu’Ivermectin pourrait peut-être aider, et je répète, dans une très très mince mesure. Un petit peu. La plupart des études n’ont trouvé aucun avantage à ce médicament. Si vous êtes vraiment déterminé à croire que ce médicament pourrait aider, vous pouvez contourner les chiffres et essayer de vous convaincre par vous-même, mais à vrai dire, c’est comme si vous cherchiez des réponses dans les nuages. Et pourquoi chercher des réponses dans les nuages quand on sait que les vaccins fonctionnent et qu’ils sont sûrs? Les deux sont des médicaments. Les deux constituent une intervention venue de l’extérieur. Mais l’un d’entre eux donne de bons résultats et l’autre, comme je le disais tout à l’heure, vous force à chercher des réponses dans les nuages.</>,
                 },
                 featured: false,
                 image: "",
@@ -5205,7 +5251,7 @@ export const contentPersonasBI = {
                       don&apos;t have chips small enough to fit into these vaccine syringes.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>L’injection se fait à l’aide d’une aiguille dont l’ouverture est de moins d’un millimètre de largeur. Il se fait beaucoup de micropuces, mais aucune n’est aussi petite que ça. Il faut avoir une certaine mesure de confiance à cet égard, j’imagine. Regardez les aiguilles utilisées pour injecter des micropuces dans les chiens. Elles ont environ trois millimètres de largeur pour permettre l’insertion de la micropuce. Il n’existe tout simplement pas de puces assez petites pour entrer dans les seringues à vaccins.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -5224,7 +5270,7 @@ export const contentPersonasBI = {
                       weeks, on average, and of those, probably about 30&#37; of them die.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je rencontre beaucoup de personnes, je vis bien des expériences différentes, et j’ai une perspective bien différente de celle de la personne moyenne qui connaît seulement les membres de sa famille et de son propre environnement. Ce que je sais, c’est que beaucoup de personnes sont tombées malades, et qu’un petit pourcentage d’entre elles ont été extrêmement malade. Vous avez tout à fait raison. Le problème, c’est qu’un petit pourcentage d’un grand nombre de personnes, ça finit par s’accumuler, et que chaque cas qui aboutit aux soins intensifs y reste pendant trois semaines en moyenne, et que de ce nombre, environ 30 pour cent meurent.</>,
                 },
                 featured: false,
                 image: "",
@@ -5242,7 +5288,7 @@ export const contentPersonasBI = {
                       with other vaccines&#93;.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>(<i>Si le patient fait mention de rapports d’événements indésirables.</i>) Vous comparez ce vaccin à d’autres vaccins. Ce que vous devriez vraiment comparer, ce sont les décès attribuables à un vaccin par rapport à l’impact de la maladie contre laquelle le vaccin nous protège. Les vaccins contre la COVID ont également été étudiés chez beaucoup plus de personnes que tout autre vaccin. Ils ont aussi été donnés à beaucoup plus de personnes que tout autre vaccin. Il est donc pas mal normal qu’il y ait des résultats indésirables (autres que les vaccins).</>,
                 },
                 featured: true,
                 image: "",
@@ -5258,12 +5304,12 @@ export const contentPersonasBI = {
                       disappeared too quickly, so the mRNA technology was put on the shelf...
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous souvenez-vous du virus Ebola et d’un autre virus appelé SRMO, le syndrome respiratoire du Moyen-Orient? Les scientifiques adorent les acronymes! En fait, les chercheurs faisaient des recherches sur la technologie de l’ARNm pour combattre ces deux virus, mais ils ont disparu tellement vite que la technologie de l’ARNm a été reléguée aux oubliettes.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "redTapemRNA",
-                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                fullStoryLinkText: { EN: "Read the full story", FR: "Lire l'histoire complète" },
               },
             ],
           },
@@ -5285,7 +5331,7 @@ export const contentPersonasBI = {
                       that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous avez parlé de faire (des activités). Vous avez mentionné le travail en personne et la camaraderie avec vos collègues. Vous avez parlé de vos enfants qui devraient retourner à l’école normalement. Quel prix seriez-vous prête à payer pour ça? Que seriez-vous prête à donner pour ça?</>,
                 },
                 featured: false,
                 image: "",
@@ -5300,7 +5346,7 @@ export const contentPersonasBI = {
                       doing?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Permettez-moi de vous demander d’imaginer ce que vous serez en train de faire dans un an. Ne pensons pas au vaccin de la COVID pour l’instant. Imaginez-vous dans un an. Qu’est-ce que vous aimeriez être en train de faire?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -5317,7 +5363,7 @@ export const contentPersonasBI = {
                       intubated, would that change your opinion? Hypothetically?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Votre compréhension de la pandémie se fait en fonction de vos sources (de vérité), mais qu’est-ce qu’il faudrait, dans votre environnement immédiat, pour vous convaincre de vous fier à des sources autres que celles-là? Si, par exemple, quelqu’un que vous connaissez bien tombait malade au point d’aller aux soins intensifs et d’être intubé, est-ce que ça vous ferait changer d’avis? C’est une hypothèse.</>,
                 },
                 featured: false,
                 image: "",
@@ -5341,7 +5387,7 @@ export const contentPersonasBI = {
                       didn&apos;t come up with the right disease.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends ce que vous voulez dire. Moi, si je voulais faire le gros méchant, si je voulais créer une situation pour laquelle tout le monde voudrait se faire vacciner, je ne leur donnerais pas une maladie semblable à une maladie déjà connue comme la grippe. J’irais plus loin. Je me dirais : « <i>Bon, je vais créer quelque chose qui va faire en sorte que la peau de toute la population devienne violette</i> », et la seule façon d’y remédier, ce sera en se faisant vacciner. Parce que personne ne veut se faire voir en violet, ce serait trop visible. Aussi, je ferais en sorte que la maladie ne tue personne parce qu’il est impossible de vendre un vaccin à un mort. Alors je me dis que si c’était leur (les entreprises pharmaceutiques, les gouvernements, par exemple) vrai objectif, ils n’ont probablement pas inventé la bonne maladie.</>,
                 },
                 featured: true,
                 image: "",
@@ -5358,7 +5404,7 @@ export const contentPersonasBI = {
                       would that nudge you away from where you&apos;re at right now?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Et si quelqu’un que vous connaissez bien (un membre de la famille ou une amie) se faisait vacciner, peut-être pour une tout autre raison? Cette personne pourrait avoir des troubles de santé et son médecin pourrait lui avoir donné des explications qui lui auraient fait changer d’idée. En théorie, si quelqu’un que vous connaissez s’était fait vacciner contre la COVID, est-ce que ça vous ferait reconsidérer votre point de vue?</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -5373,7 +5419,7 @@ export const contentPersonasBI = {
                       &lsquo;maybe&rsquo;?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Dites-moi, qu’est-ce qu’il faudrait que vous voyiez ou entendiez, ou quelle personne devrait s’exprimer à voix haute en faveur des vaccins pour que vous passiez de ce « non » catégorique à un « peut-être »?</>,
                 },
                 featured: false,
                 image: "",
@@ -5388,7 +5434,7 @@ export const contentPersonasBI = {
                       as credible?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Depuis le temps que vous me connaissez, est-ce que vous considérez que l’information que je vous transmets est crédible?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -5402,7 +5448,7 @@ export const contentPersonasBI = {
                       some situations where you could potentially change your mind.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que vous avez dit que lorsqu’on avec des hypothèses, il y a certaines situations qui vous feraient peut-être changer d’idée.</>,
                 },
                 featured: false,
                 image: "",
@@ -5419,15 +5465,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>How to take on COVID conspiracy theories</>,
 
-          FR: <></>,
+          FR: <>How to take on COVID conspiracy theories</>,
         },
-        linkText: { EN: <>Financial Times news article</>, FR: <></> },
+        linkText: { EN: <>Financial Times news article</>, FR: <>Article de nouvelles du Financial Times</> },
         link: "https://www.ft.com/content/6660cb80-8c11-476a-b107-e0193fa975f9",
         description: {
           EN: (
             <>News article examining the spread of misinformation, and some advice on how to counter it. (Feb 2021)</>
           ),
-          FR: <></>,
+          FR: <>Article de nouvelles se penchant sur la montée de la désinformation et conseils pour contrer ce phénomène. (février 2021)</>,
         },
       },
 
@@ -5435,9 +5481,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Winning Hearts and Minds</>,
 
-          FR: <></>,
+          FR: <>Winning Hearts and Minds</>,
         },
-        linkText: { EN: <>Johns Hopkins University interview</>, FR: <></> },
+        linkText: { EN: <>Johns Hopkins University interview</>, FR: <>Entrevue de l’Université Johns Hopkins</> },
         link: "https://hub.jhu.edu/2021/06/30/winning-hearts-and-minds/",
         description: {
           EN: (
@@ -5446,7 +5492,7 @@ export const contentPersonasBI = {
               2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Entrevue avec Jennifer Nuzzo, experte en santé publique de l’Université John Hopkins au sujet des conversations sur l’hésitation vaccinale. (juin 2021)</>,
         },
       },
 
@@ -5454,15 +5500,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>To counter conspiracy theories, boost well-being</>,
 
-          FR: <></>,
+          FR: <>To counter conspiracy theories, boost well-being</>,
         },
-        linkText: { EN: <>Nature journal blog article</>, FR: <></> },
+        linkText: { EN: <>Nature journal blog article</>, FR: <>Billet de blogue de la revue Nature</> },
         link: "https://www.nature.com/articles/d41586-020-03130-6",
         description: {
           EN: (
             <>Expert on countering misinformation looks at various approaches to these conversations. (November 2020)</>
           ),
-          FR: <></>,
+          FR: <>Une spécialiste du domaine de la désinformation s’entretient de diverses approches de conversations pour contrer ce phénomène. (novembre 2020)</>,
         },
       },
 
@@ -5470,13 +5516,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>Six rules of engagement</>,
 
-          FR: <></>,
+          FR: <>Six rules of engagement</>,
         },
-        linkText: { EN: <>The Conversation news article</>, FR: <></> },
+        linkText: { EN: <>The Conversation news article</>, FR: <>Article de nouvelles publié dans The Conversation</> },
         link: "https://theconversation.com/ive-been-talking-to-conspiracy-theorists-for-20-years-here-are-my-six-rules-of-engagement-143132",
         description: {
           EN: <>Discussion looking at how to engage with misinformation and conspiracies. (July 2020)</>,
-          FR: <></>,
+          FR: <>Discussion pour savoir comment s’y prendre en présence de désinformation et de complots. (juillet 2020)</>,
         },
       },
     ],
@@ -5511,7 +5557,12 @@ export const contentPersonasBI = {
               vaccinated.&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Ces vaccins ne sont pas naturels. Je préfère attraper la COVID et développer mon système immunitaire de manière naturelle. »</>, 
+          <>« Les vaccins contiennent des toxines. Je ne veux pas mettre de toxines dans mon corps. »</>, 
+          <>« Je préfère me protéger avec des remèdes naturels (comme des vitamines, du zinc, de l’huile d’origan). »</>, 
+          <>« J’ai entendu dire que certains (suppléments/probiotiques/remèdes) peuvent aider à prévenir ou à minimiser les symptômes de la COVID. »</>, 
+          <>« J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas pourquoi je me ferais vacciner. »</>,],
         },
       },
 
@@ -5532,7 +5583,10 @@ export const contentPersonasBI = {
               &apos;unnatural&apos;.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Respectez les choix de traitement du patient, y compris sa préférence pour les médecines douces et complémentaires (MDC). Évitez d’écarter ses perspectives et de corriger la désinformation.</>, 
+          <>Faites-lui comprendre que les objectifs des MDC et de la médecine de première ligne ne vont pas à l’encontre les uns des autres, et que ces deux types de médecine acceptent les vaccins.</>, 
+          <>Essayez de mieux comprendre ce que le patient veut dire par « naturel » par opposition à « pas naturel ».</>],
         },
       },
       takeHome: {
@@ -5544,7 +5598,7 @@ export const contentPersonasBI = {
               Help your patient see that vaccines can leverage their natural immunity and ultimately promote longevity.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>N’oubliez pas que vous et votre patient avec le même objectif : optimiser sa santé et son bien-être. Aidez votre patient à comprendre que les vaccins peuvent renforcer son immunité naturelle et, au bout du compte, favoriser sa longévité.</>,],
         },
       },
     },
@@ -5560,7 +5614,8 @@ export const contentPersonasBI = {
                 me understand what you mean by natural as it relates to the vaccine.
               </>
             ),
-            FR: <></>,
+            FR: <>Alors, quand vous dites « naturel », je veux m’assurer qu’on est sur la même longueur d’onde parce que
+            je sais qu’on a le même objectif au bout du compte. Tous les deux, on veut votre bien. Alors, aidez-moi à comprendre ce que vous voulez dire par « naturel » en ce qui a trait au vaccin.</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -5573,7 +5628,7 @@ export const contentPersonasBI = {
                 describing yourself?
               </>
             ),
-            FR: <></>,
+            FR: <>Depuis le temps que je vous connais, je sais que votre santé et votre aptitude à vivre longtemps et en santé sont au cœur même de qui vous êtes. Est-ce une bonne façon de vous décrire?</>,
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -5586,7 +5641,7 @@ export const contentPersonasBI = {
                 triggers your own body to make the proteins that you then make antibodies for.
               </>
             ),
-            FR: <></>,
+            FR: <>Donc l’ARNm, c’est quelque chose qui se trouve déjà dans notre corps. Il fait partie de la façon dont nous fabriquons des protéines. Alors je tiens juste à vous rassurer que l’ARNm ne va pas à l’encontre de la nature. C’est un élément qui incite votre propre corps à fabriquer les protéines pour lesquelles vous fabriquez ensuite des anticorps.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -5599,7 +5654,7 @@ export const contentPersonasBI = {
                 way to protect yourself than the vaccine, right?
               </>
             ),
-            FR: <></>,
+            FR: <>Ce qui m’inquiète, c’est que l’infection à la COVID n’est pas naturelle aussi. C’est pourquoi il faudra peut-être faire des efforts supplémentaires pour vous protéger de la COVID. Et je ne vois pas de manière plus naturelle de vous protéger que le vaccin, non?</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -5619,7 +5674,7 @@ export const contentPersonasBI = {
                       So just help me understand what you mean by natural as it relates to the vaccine.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, quand vous dites « naturel », je veux m’assurer qu’on est sur la même longueur d’onde parce que tous les deux, on veut votre bien. Alors, aidez-moi à comprendre ce que vous voulez dire par « naturel » en ce qui a trait au vaccin.</>,
                 },
                 featured: true,
                 image: "",
@@ -5629,7 +5684,7 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>Can you tell me more about what you mean by &lsquo;natural immunity&rsquo;? </>,
-                  FR: <></>,
+                  FR: <>Pouvez-vous m’expliquer un peu plus ce que vous voulez dire par « immunité naturelle »?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -5644,7 +5699,7 @@ export const contentPersonasBI = {
                       immunity&rsquo;? Are there any specific ingredients you do not feel comfortable taking?{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quelles sortes de médicaments ou de produits médicaux vous sentez-vous prêt à prendre pour « stimuler votre immunité »? Y a-t-il des ingrédients particuliers que vous hésitez à prendre?</>,
                 },
                 featured: false,
                 image: "",
@@ -5669,7 +5724,7 @@ export const contentPersonasBI = {
                       you were describing yourself?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Depuis le temps que je vous connais, je sais que votre santé et votre aptitude à vivre longtemps et en santé sont au cœur même de qui vous êtes. Est-ce une bonne façon de vous décrire?</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -5684,7 +5739,7 @@ export const contentPersonasBI = {
                       you&apos;ve been doing to keep yourself healthy normally, I get that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends que recevoir le vaccin, ça ne cadre pas nécessairement avec ce que vous faites normalement pour rester en santé. Je comprends ça.</>,
                 },
                 featured: true,
                 image: "",
@@ -5701,7 +5756,7 @@ export const contentPersonasBI = {
                       these new medicines might disrupt our normal, healthy routines.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que quand on est confronté à une situation comme celle de la COVID et qu’on a vécu une vie en très bonne santé et fait tout ce qu’on pouvait pour rester en santé, on commence à être nerveux parce que c’est quelque chose de nouveau. On peut avoir l’impression que ces nouveaux médicaments peuvent déranger « notre normal », nos habitudes santé.</>,
                 },
                 featured: false,
                 image: "",
@@ -5716,7 +5771,7 @@ export const contentPersonasBI = {
                       you want to be healthy. I think we&apos;re the same there.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous savez que je suis là pour vous. Je veux que vous atteigniez vos objectifs. Je veux que vous soyez en santé, tout comme vous voulez être en santé. Je pense qu’on s’entend là-dessus.</>,
                 },
                 featured: true,
                 image: "",
@@ -5731,7 +5786,7 @@ export const contentPersonasBI = {
                       you. I&apos;m not here to lie to you. You know I have your back.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que dans le cas d’une personne en santé comme vous, la COVID ne va probablement pas vous tuer. Je ne suis pas là pour vous mentir. Vous savez que je suis là pour vous.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -5757,7 +5812,7 @@ export const contentPersonasBI = {
                       sources?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai aussi fait pas mal de recherche sur ces vaccins et sur les différentes options qui peuvent s’offrir à vous. Est-ce que je peux vous parler un peu de ce que je sais, au lieu, peut-être, d’en entendre parler par d’autres sources?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -5774,7 +5829,7 @@ export const contentPersonasBI = {
                       sources.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que ça vous intéresserait que je vous explique un peu comment les vaccins fonctionnent? Ça fait (<i>x période de temps</i>) qu’on se connaît, alors j’espère que vous pourrez comprendre que je regarde ce vaccin sous un angle différent de celui de certaines de vos autres sources.</>,
                 },
                 featured: false,
                 image: "",
@@ -5800,7 +5855,7 @@ export const contentPersonasBI = {
                       allow us to inject it.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que le vaccin qu’on a aujourd’hui est très sûr, et qu’il est très simple, en réalité. Il est difficile à faire, mais très simple quand même. Il n’y a pas beaucoup de produits chimiques supplémentaires dans le vaccin. Il n’y a pas d’autres ingrédients dans le vaccin, à part la matière grasse dont ils se servent pour en faciliter l’injection.</>,
                 },
                 featured: false,
                 image: "",
@@ -5820,7 +5875,7 @@ export const contentPersonasBI = {
                       system goes!
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’aimerais vous présenter une autre façon de penser aux vaccins. Je ne veux pas dire que vous vous trompez, mais j’aimerais tout de même que vous y pensiez différemment. Un vaccin, c’est un enseignant. Votre système immunitaire est une des machines d’apprentissage les plus impressionnantes de l’univers connu. Le vaccin ne fait que se tenir devant votre système immunitaire hyper intelligent, puis il lui montre un morceau de virus et lui dit : « <i>Allô, voici le méchant. C’est à ça que tu dois t’attaquer.</i> » Et là, votre système immunitaire le prend d’assaut.</>,
                 },
                 featured: true,
                 image: "",
@@ -5839,7 +5894,7 @@ export const contentPersonasBI = {
                       it&apos;s on a mission!
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que je peux vous présenter une autre façon de penser aux vaccins? Le vaccin, c’est comme un policier, un détective spécialisé dans les homicides. Quand il pénètre dans votre bras, c’est comme si on donnait le gant d’un suspect à un chien policier pour qu’il le renifle. Votre système immunitaire, c’est ce chien d’attaque. Le vaccin pénètre dans votre bras et il brandit le gant du suspect devant le chien d’attaque. C’est comme si le vaccin lui disait : « <i>C’est ça que tu dois chercher.</i> » Et une fois que votre système immunitaire connaît l’odeur, il part en mission!</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -5861,7 +5916,7 @@ export const contentPersonasBI = {
                       key.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La <i>quantité</i>, c’est le mot d’ordre pour tout ce que vous mettez dans votre corps. Cela dit, certaines choses sont empoisonnées, ce qui veut dire qu’aucune quantité de ces substances n’est justifiée. Le plutonium (une matière radioactive) est tellement toxique que même une infime quantité de cette substance vous rendra malade. Je vous donne un autre exemple, avec le sélénium cette fois-ci. Une des raisons pour lesquelles les mines de charbon sont contestées, c’est parce qu’elles déversent du sélénium dans l’eau en quantités qui, même s’il ne s’agit que de millionièmes d’un gramme, tueront les poissons, rendront les gens malades, détruiront les puits et empêcheront l’utilisation de l’eau. Le sélénium est donc très toxique dans ces quantités. Mais chose curieuse, si vous n’avez pas du tout de sélénium, vous allez mourir. C’est pour cette raison que les multivitamines contiennent du sélénium. Ce qui est important, c’est la quantité.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -5879,7 +5934,7 @@ export const contentPersonasBI = {
                       tiny.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je ne m’inquiète pas du propylèneglycol. Effectivement, ils s’en servent dans le liquide lave-glace, pas parce qu’il est toxique, mais parce qu’il ne gèle pas. Et n’oubliez pas que les vaccins doivent être conservés au congélateur. C’est un antigel qui ne présente pas de danger aux humains s’il se trouve en minuscules quantités. Et les quantités dont on parle ici (dans les vaccins) sont incroyablement minuscules.</>,
                 },
                 featured: true,
                 image: "",
@@ -5895,7 +5950,7 @@ export const contentPersonasBI = {
                       options, I just feel like it&apos;s pretty natural one, really.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Il utilise votre immunité naturelle. Il donne un indice à votre système immunitaire naturel pour qu’il sache à quoi ressemble la COVID et il prépare votre système immunitaire naturel en conséquence. Alors, parmi toutes les options, je crois que c’est celle-là qui est la plus naturelle, croyez-moi.</>,
                 },
                 featured: false,
                 image: "",
@@ -5921,7 +5976,7 @@ export const contentPersonasBI = {
                       works that way. It&apos;s an avid learner.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Votre système immunitaire, c’est un peu comme votre système langagier. Si vous n’apprenez pas une langue, si vous n’apprenez pas à lire quand vous êtes jeune, vous pouvez toujours le faire plus tard, mais c’est plus dur à maîtriser. Vous ne parlerez jamais la langue comme si c’était votre langue maternelle. Et vous ne serez jamais bon en lecture si vous n’apprenez pas à lire quand vous êtes jeune parce que c’est à ce moment-là que votre cerveau est prêt à apprendre tout ça. C’est aussi quand on est jeune que notre système immunitaire est prêt à apprendre les langues. Pour les personnes comme moi, dans la soixantaine, ce n’est pas une très bonne nouvelle. Et si vous vous mettez à lire la documentation sur les vaccins, vous allez voir que les personnes de mon âge ne développent pas de réponse immunitaire. On la développe dans une certaine mesure, mais on ne développe pas la même réponse immunitaire que les jeunes parce que ça fait trop longtemps qu’on a dépassé la période critique. C’est de ça que parlent les enseignants en langues. On a largement dépassé la période critique. Je veux dire que je pourrais apprendre le mandarin. J’ai déjà appris quelques mots, mais je ne parlerai jamais le mandarin comme quelqu’un dont c’est la langue maternelle. Si j’avais commencé quand j’avais dix ans, peut-être que oui. Alors, votre système immunitaire fonctionne de la même manière. Il aime apprendre.</>,
                 },
                 featured: false,
                 image: "",
@@ -5937,7 +5992,7 @@ export const contentPersonasBI = {
                       out of your body in a few days, naturally.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Le vaccin ne reste pas dans votre corps pendant toute la vie. C’est comme les médicaments que vous prenez, comme une pilule que vous avalez. Elle ne reste pas dans votre corps jusqu’à la fin de vos jours. Votre corps l’élimine en quelques jours, tout naturellement.</>,
                 },
                 featured: false,
                 image: "",
@@ -5962,7 +6017,7 @@ export const contentPersonasBI = {
                       more natural way to protect yourself than the vaccine, right?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qui m’inquiète, c’est que l’infection à la COVID n’est pas naturelle aussi. C’est pourquoi il faudra peut-être faire des efforts supplémentaires pour vous protéger de la COVID. Et je ne vois pas de manière plus naturelle de vous protéger qu’avec le vaccin, non?</>,
                 },
                 featured: false,
                 image: "",
@@ -5982,7 +6037,7 @@ export const contentPersonasBI = {
                       for an appendix.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vois ce que vous dites, mais je ne crois pas vraiment comprendre ce qu’il y a de naturel dans tout ça. Ce qui serait naturel quand une personne fait une crise d’appendicite, ce serait de laisser l’appendice éclater, ce qui risquerait de vous créer bien des ennuis. La chose moins naturelle serait de permettre à un chirurgien de l’enlever. Mais c’est ce qu’il faut faire quand même. Et je pense qu’il y a d’autres sortes d’interventions médicales pour lesquelles vous opteriez en cas de besoin réel. La COVID-19 est un de ces moments où on a tous vraiment besoin d’une intervention. Notre réponse immunitaire naturelle a seulement besoin d’un peu d’aide sous la forme d’un vaccin. C’est beaucoup moins invasif que la chirurgie de l’appendicite.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -5999,7 +6054,7 @@ export const contentPersonasBI = {
                       we do. The vaccine helps stop the transmission chains and gets us back to normal, natural life.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qui m’inquiète par contre, c’est que vous pourriez être le maillon d’une chaîne de transmission conduisant une personne aux soins intensifs, qu’il s’agisse d’amis ou de membres de votre famille. Avez-vous absolument besoin de ce vaccin? Peut-être que non. Vous pourriez peut-être vous en passer. Mais en tant que communauté, est-ce qu’on a besoin de ce vaccin? Je pense que oui. Le vaccin freine la chaîne de transmission et nous ramène à la normale, la vie naturelle.</>,
                 },
                 featured: true,
                 image: "",
@@ -6016,13 +6071,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
 
-          FR: <></>,
+          FR: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (États-Unis)</>,
         },
-        linkText: { EN: <>Link to AANMC statement</>, FR: <></> },
+        linkText: { EN: <>Link to AANMC statement</>, FR: <>Lien à la déclaration de l’AANMC</> },
         link: "https://aanmc.org/featured-articles/aanmc-statement-on-covid-19-vaccination/",
         description: {
           EN: <>AANMC issued a strong statement that all community members receive COVID vaccines. (January 2021)</>,
-          FR: <></>,
+          FR: <>L’AANMC a fait une déclaration ferme demandant à tous les membres des communautés de recevoir les vaccins contre la COVID. (janvier 2021)</>,
         },
       },
 
@@ -6030,9 +6085,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>The COVID Choice</>,
 
-          FR: <></>,
+          FR: <>The COVID Choice</>,
         },
-        linkText: { EN: <>NDs for Vaccines article</>, FR: <></> },
+        linkText: { EN: <>NDs for Vaccines article</>, FR: <>Article publié dans NDs for Vaccines</> },
         link: "https://ndsforvaccines.com/the-covid-choice/",
         description: {
           EN: (
@@ -6041,7 +6096,8 @@ export const contentPersonasBI = {
               considerations. (December 2020)
             </>
           ),
-          FR: <></>,
+          FR: <>Des naturopathes discutent du choix de recevoir le vaccin contre la COVID, en tenant compte de diverses approches et considérations.
+          (décembre 2020)</>,
         },
       },
 
@@ -6049,9 +6105,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Holistic Vaccine Support</>,
 
-          FR: <></>,
+          FR: <>Holistic Vaccine Support</>,
         },
-        linkText: { EN: <>Blog article from an ND</>, FR: <></> },
+        linkText: { EN: <>Blog article from an ND</>, FR: <>Billet de blogue d’une naturopathe</> },
         link: "https://www.drdianaquinn.com/blog/4ltwwd8s9657e93wr37xcx7ma7tj2w",
         description: {
           EN: (
@@ -6060,7 +6116,7 @@ export const contentPersonasBI = {
               CAM-oriented patients. (January 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Une naturopathe discute des diverses considérations à l’égard de la vaccination contre la COVID. Billet de blogue destiné aux patients des MDC. (janvier 2021)</>,
         },
       },
 
@@ -6068,9 +6124,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
 
-          FR: <></>,
+          FR: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
         },
-        linkText: { EN: <>Op-Ed in The Globe and Mail</>, FR: <></> },
+        linkText: { EN: <>Op-Ed in The Globe and Mail</>, FR: <>Article d’opinion publié dans le Globe and Mail</> },
         link: "https://www.theglobeandmail.com/opinion/article-healthy-skepticism-doesnt-necessarily-mean-rejecting-mainstream/",
         description: {
           EN: (
@@ -6079,7 +6135,7 @@ export const contentPersonasBI = {
               2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Une auteure et un patient voués à la santé naturelle expliquent pourquoi ils ont décidé de se faire vacciner contre la COVID. (juillet 2021)</>,
         },
       },
     ],
@@ -6106,7 +6162,11 @@ export const contentPersonasBI = {
               not.&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Je ne vais pas laisser le gouvernement avoir son mot à dire sur ce qui entre dans mon corps. »</>, 
+          <>« Ce virus a été politisé à l’extrême. Si vous voulez que je fasse confiance à la science, il va falloir que vous enleviez le caractère politique de la chose. »</>, 
+          <>« Le gouvernement se mêle de nos vies, et ce vaccin est un autre exemple d’exagération de la part du gouvernement. »</>, 
+          <>« (Les entreprises/les gouvernements) ne devraient pas nous dire de nous faire vacciner ou non. »</>],
         },
       },
       thingsToConsider: {
@@ -6121,7 +6181,11 @@ export const contentPersonasBI = {
               etc.&#41;.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Mettez l’accent sur l’autonomie du patient et validez les délibérations au sujet du vaccin.</>, 
+          <>Positionnez-vous comme source neutre de vérité et soyez prêt à découvrir ses inquiétudes.</>, 
+          <>Offrez au patient la possibilité d’explorer les faits et les sources avec lui.</>, 
+          <>Concentrez-vous sur les avantages personnels de la vaccination (comme les voyages, la vie sociale, les activités récréatives, etc.).</>],
         },
       },
       takeHome: {
@@ -6134,7 +6198,8 @@ export const contentPersonasBI = {
               vaccination, and discuss what both possibilities mean for their freedom and independence.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>Après plus d’un an de confinement et de fermetures forcées, il est temps que les patients aient la possibilité de prendre leur santé en main.
+            Vous pouvez aider votre patient à évaluer les options en faveur de la vaccination et contre celle-ci, et discuter de ce que les deux possibilités signifient en termes de liberté et d’indépendance.</>,],
         },
       },
     },
@@ -6150,7 +6215,7 @@ export const contentPersonasBI = {
                 normal lives. What are your thoughts?
               </>
             ),
-            FR: <></>,
+            FR: <>Je veux vraiment reprendre le cours de la vie comme en 2019. Pour moi, la meilleure façon d’y arriver, c’est grâce au vaccin parce que quand tout le monde sera protégé par le vaccin, on sera alors capables de reprendre le cours normal de notre vie. Qu’en pensez-vous?</>,
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -6163,7 +6228,7 @@ export const contentPersonasBI = {
                 government and public health, is that fair?
               </>
             ),
-            FR: <></>,
+            FR: <>Je crois que vous vous inquiétez vraiment du fait que le gouvernement et d’autres personnes prennent des décisions pour vous, et c’est comme si le gouvernement et le service de la santé publique (nuisaient) aux décisions que vous devez prendre, est-ce bien ça?</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -6179,7 +6244,7 @@ export const contentPersonasBI = {
                 talking about right now.
               </>
             ),
-            FR: <></>,
+            FR: <>C’est fou ce qui se passe en ce moment : dès qu’on a pris une décision, l’information change. Et je peux comprendre que pour les personnes qui n’ont pas étudié les vaccins et les maladies, c’est comme si les gouvernements ne savaient plus où « donner de la tête » et ne savent pas ce qu’ils font. Mais il y a une différence avec toutes ces consignes gouvernementales de haut niveau – les fermetures d’écoles, d’entreprises et ainsi de suite. Il y a une différence entre ça et ce dont vous et moi on parle en ce moment.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -6194,7 +6259,7 @@ export const contentPersonasBI = {
                 would you be willing to pay for that? What would you be willing to give for that?
               </>
             ),
-            FR: <></>,
+            FR: <>Je sais que vous aimez (voyager/&#8203;camper/&#8203;passer du temps en plein air/&#8203;aller dans les boîtes de nuit/&#8203;manger au restaurant/&#8203;etc.). Et je suis pas mal certain que vous préféreriez faire votre travail en personne et profiter de ce sens de la camaraderie avec vos collègues. Je suis pas mal certain que vous aimeriez que vos enfants reprennent le chemin normal de l’école. Quel prix seriez-vous prête à payer pour ça? Que seriez-vous prête à donner pour ça?</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -6220,7 +6285,7 @@ export const contentPersonasBI = {
                       sham, for sure, and some of it is really effective. Can we have that conversation?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>D’un côté, je vous entends dire que pour vous, cette situation, c’est noir ou c’est blanc. Alors, ou bien je me trompe complètement en tant que médecin et scientifique, et vous avez raison sur toute la ligne, que toute cette histoire est une vraie imposture, qu’elle a été inventée de toutes pièces et que c’est une question de contrôle par le gouvernement. Ou bien ça va dans l’autre sens, que vous vous trompez et que tout le monde avait de bonnes intentions envers les autres. Tout est « kumbaya » et tout est beau. Je pense qu’il y a de la place entre ces deux positions cependant. Il y a une zone grise. Et je sais que si c’est blanc ou si c’est noir, vous allez vouloir gagner la partie. Mais je ne suis pas ici pour essayer de gagner. Je suis ici en tant que médecin, votre médecin. Je ne fais pas partie du gouvernement. Je suis ici pour vous parler de la zone grise située entre les deux positions. On pourrait discuter de l’imposture, bien sûr, mais aussi de l’efficacité. Est-ce qu’on peut en parler?</>,
                 },
                 featured: false,
                 image: "",
@@ -6236,7 +6301,7 @@ export const contentPersonasBI = {
                       to resume our normal lives. What are your thoughts?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je veux vraiment reprendre le cours de la vie comme en 2019. Pour moi, la meilleure façon d’y arriver, c’est grâce au vaccin parce que quand tout le monde sera protégé par le vaccin, on sera alors capables de reprendre le cours normal de notre vie. Qu’en pensez-vous?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -6261,7 +6326,7 @@ export const contentPersonasBI = {
                       by the government and public health, is that fair?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je crois que vous vous inquiétez vraiment du fait que le gouvernement et d’autres personnes prennent des décisions pour vous, et c’est comme si le gouvernement et le service de la santé publique (nuisaient) aux décisions que vous devez prendre, est-ce bien ça?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -6278,7 +6343,7 @@ export const contentPersonasBI = {
                       date, so I can provide the advice that I want to provide to the people I really care for.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, je comprends que vous ne faites pas confiance au gouvernement à cet égard. Je vous comprends. C’est pour ça que je fais mes propres recherches, parce que je veux en avoir le cœur net. Je crois qu’ils n’ont pas mérité votre confiance, n’est-ce pas? Alors, je me fais un devoir de bien me tenir à jour afin de pouvoir donner de bons conseils aux personnes dont je m’occupe.</>,
                 },
                 featured: true,
                 image: "",
@@ -6294,7 +6359,7 @@ export const contentPersonasBI = {
                       physical distancing and masking. Is that what I&apos;m hearing?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si je vous comprends bien, vous voulez reprendre le cours normal de votre vie, c’est bien ça? Vous voulez faire les activités que vous avez aimées pendant toute votre vie sans avoir à pratiquer la distanciation physique et porter de masque? C’est bien ça?</>,
                 },
                 featured: false,
                 image: "",
@@ -6342,7 +6407,7 @@ export const contentPersonasBI = {
                       interests and very good for your health.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>C’est fou ce qui se passe en ce moment : dès qu’on a pris une décision, l’information change. Et je peux comprendre que pour les personnes qui n’ont pas étudié les vaccins et les maladies, c’est comme si les gouvernements ne savaient plus où « donner de la tête » et ne savent pas ce qu’ils font. Mais il y a une différence avec toutes ces consignes gouvernementales de haut niveau – les fermetures d’écoles, d’entreprises et ainsi de suite. Il y a une différence entre ça et ce dont vous et moi on parle en ce moment. Est-ce qu’ils se trompent parfois dans leurs décisions de haut niveau? Probablement. Mais pour ce qui est des vaccins, je peux vous dire qu’ils sont entièrement sur la bonne voie. Mon rôle, c’est de travailler avec vous pour penser à ce qu’il y a de mieux à faire pour vous et votre santé. Et je peux vous dire que les vaccins vont dans votre meilleur intérêt et qu’ils sont très bons pour votre santé.</>,
                 },
                 featured: true,
                 image: "",
@@ -6358,7 +6423,7 @@ export const contentPersonasBI = {
                       and get back to a sense of normal, like before COVID.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En tant que médecins, ce qu’on essaie de faire, c’est d’aider les gens à comprendre que plus il y aura de gens qui prendront cette dernière mesure, c’est-à-dire se faire vacciner, plus on pourra éliminer les restrictions et reprendre le cours normal de notre vie, comme avant la COVID.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -6376,7 +6441,7 @@ export const contentPersonasBI = {
                       skip any steps. I looked into it.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Voici ce qu’on a appris. Des centaines de millions de personnes se sont fait vacciner dans le monde entier. Du point de vue du développement des vaccins, ça s’est fait effectivement assez vite du moment où ils sont passés de la question « <i>qu’est-ce que ce virus?</i> » au moment où ils se sont dit « <i>préparons un vaccin contre ce virus</i> ». Mais aucune étape n’a été brûlée. Je me suis penché là-dessus.</>,
                 },
                 featured: false,
                 image: "",
@@ -6405,7 +6470,7 @@ export const contentPersonasBI = {
                       give for that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous aimez (voyager/&#8203;camper/&#8203;passer du temps en plein air/&#8203;aller dans les boîtes de nuit/&#8203;manger au restaurant/&#8203;etc.). Et je suis pas mal certain que vous préféreriez faire votre travail en personne et profiter de ce sens de la camaraderie avec vos collègues. Je suis pas mal certain que vous aimeriez que vos enfants reprennent le chemin normal de l’école. Quel prix seriez-vous prête à payer pour ça? Que seriez-vous prête à donner pour ça?</>,
                 },
                 featured: false,
                 image: "",
@@ -6421,7 +6486,7 @@ export const contentPersonasBI = {
                       doing?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Permettez-moi de vous demander d’imaginer ce que vous serez en train de faire dans un an. Ne pensons pas au vaccin de la COVID pour l’instant. Imaginez-vous dans un an. Qu’est-ce que vous aimeriez être en train de faire?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -6442,7 +6507,7 @@ export const contentPersonasBI = {
                       but I&apos;m hoping you&apos;ll consider it alongside the other ideas you&apos;re following.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Bien sûr, vous pourriez penser que les personnes qui se font vacciner sont des moutons. Qu’ils ne font que suivre ce que le gouvernement leur demande de faire. Mais moi, je ne suis pas le gouvernement. Je vous dis que c’est une vraiment bonne idée. Mais vous pourriez toujours considérer ceux qui se font vacciner comme des moutons. C’est correct. Mais ma prochaine question serait la suivante : Comment s’appelle le groupe que suivent les gens qui ne se font pas vacciner? Ne sont-ils pas des moutons, mais d’une couleur différente? Il faut avoir confiance en quelque chose, je comprends. Et je vous offre certaines perspectives en lesquelles vous pouvez avoir confiance. Je suis votre médecin et non pas le gouvernement. Vous n’êtes pas obligé de me croire, mais j’espère que vous allez considérer mon information en plus des autres idées que vous avez.</>,
                 },
                 featured: true,
                 image: "",
@@ -6460,7 +6525,7 @@ export const contentPersonasBI = {
                       in your mind right now.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, j’ai l’impression que si vous saviez que ce serait clairement le moyen de reprendre vos (activités sociales), de permettre aux enfants de retourner à l’école et de reprendre le cours normal de votre vie, que ce serait le temps. Ce serait le temps pour vous de dire « <i>Bon, je vois c’est quoi l’avantage du vaccin</i> ». Mais en attendant, vous vivez ni plus ni moins comme un ermite et ce n’est pas ce que vous voulez en ce moment.</>,
                 },
                 featured: false,
                 image: "",
@@ -6474,14 +6539,14 @@ export const contentPersonasBI = {
     // (PoliticalSkeptic)
     resources: [
       {
-        title: { EN: <>A Guide to Global COVID-19 Vaccine Efforts</>, FR: <></> },
-        linkText: { EN: <>Council on Foreign Relations Backgrounder</>, FR: <></> },
+        title: { EN: <>A Guide to Global COVID-19 Vaccine Efforts</>, FR: <>A Guide to Global COVID-19 Vaccine Efforts</> },
+        linkText: { EN: <>Council on Foreign Relations Backgrounder</>, FR: <>Fiche de renseignements sur le Council on Foreign Relations</> },
         link: "https://www.cfr.org/backgrounder/guide-global-covid-19-vaccine-efforts",
         description: {
           EN: (
             <>CFR backgrounder looking at the development of the vaccines and who was involved. (Updated, June 2021)</>
           ),
-          FR: <></>,
+          FR: <>Fiche de renseignements du CFR sur le développement des vaccins et sur les participants au processus. (mis à jour en juin 2021)</>,
         },
       },
 
@@ -6493,9 +6558,9 @@ export const contentPersonasBI = {
               vaccination: The role of governments
             </>
           ),
-          FR: <></>,
+          FR: <>Organisation de coopération et de développement économiques (OCDE) : Enhancing public trust in COVID-19 vaccination: The role of governments</>,
         },
-        linkText: { EN: <>OECD Policy Responses to COVID-19</>, FR: <></> },
+        linkText: { EN: <>OECD Policy Responses to COVID-19</>, FR: <>Réponses de l’OCDE en matière de politiques relatives à la COVID-19</> },
         link: "https://www.oecd.org/coronavirus/policy-responses/enhancing-public-trust-in-covid-19-vaccination-the-role-of-governments-eae0ec5a/",
         description: {
           EN: (
@@ -6504,13 +6569,14 @@ export const contentPersonasBI = {
               trust with the public. (May 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Aperçu du rôle des gouvernements à l’échelle mondiale en matière d’efforts et de programmes de vaccination, y compris la confiance auprès du public, préparé par l’OCDE. (mai 2021)
+         </>,
         },
       },
 
       {
-        title: { EN: <>Focus Group: Vaccine hesitancy conversation</>, FR: <></> },
-        linkText: { EN: <>YouTube video</>, FR: <></> },
+        title: { EN: <>Focus Group: Vaccine hesitancy conversation</>, FR: <>Focus Group: Vaccine hesitancy conversation</> },
+        linkText: { EN: <>YouTube video</>, FR: <>Vidéo de YouTube</> },
         link: "https://youtu.be/lSD_dSAFFwU",
         description: {
           EN: (
@@ -6519,7 +6585,7 @@ export const contentPersonasBI = {
               their mind about the vaccine. (March 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Discussion de groupe avec un enquêteur républicain basé aux États-Unis et des personnes ayant hésité à recevoir le vaccin, mais qui ont fini par changer d’idée. (mars 2021)</>,
         },
       },
     ],
@@ -6545,7 +6611,10 @@ export const contentPersonasBI = {
               Devil&apos;s coronavirus work passed over.&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Le vaccin va à l’encontre de mes croyances religieuses. Mon inquiétude est plutôt d’ordre religieux ».</>, 
+          <>« C’est Dieu qui va décider si je dois avoir la COVID et si je dois mourir de cette maladie. »</>, 
+          <>« Mieux vaut se laver les mains, se tenir loin des autres et boire du jus d’orange en attendant que le coronavirus, l’œuvre du diable, passe. »</>],
         },
       },
 
@@ -6561,7 +6630,11 @@ export const contentPersonasBI = {
             <>Consider highlighting the shared values between the vaccine scientists and the religious community.</>,
             <>Emphasize vaccination as a key part to getting back to worshipping in person.</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Dites à votre patient que le fait de se faire vacciner est un acte moral (comme un acte d’amour envers son prochain).</>, 
+          <>Précisez bien que les autorités religieuses du monde entier ont déclaré que les vaccins et la vaccination sont moralement acceptables et conseillés.</>, 
+          <>Considérez la possibilité de mettre l’accent sur les valeurs qu’ont en commun les scientifiques et la communauté religieuse à propos du vaccin.</>, 
+          <>Prenez soin de mentionner que la vaccination joue un rôle clé dans la fréquentation des lieux de culte.</>],
         },
       },
       // Moral or Religious Objections
@@ -6572,11 +6645,11 @@ export const contentPersonasBI = {
           EN: [
             <>
               The majority of religious leaders and organizations have come out in favour of the COVID-19 vaccines.
-              Remind patients that these vaccines can help us return to normal life, including being able to worship
+              Remind patients that these vaccines can help continue with our return to normal life, including protecting their religious communities, and continuing to worship
               together in person.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>La majorité des chefs et des organismes religieux se sont exprimés en faveur des vaccins contre la COVID. Rappelez à vos patients que ces vaccins peuvent nous aider à reprendre le cours normal de nos activités, ce qui comprend la possibilité de retourner dans les lieux de culte en personne.</>,],
         },
       },
     },
@@ -6592,7 +6665,7 @@ export const contentPersonasBI = {
                 better understand that and how it relates to your health?
               </>
             ),
-            FR: <></>,
+            FR: <>Ce que vous dites m’intéresse. Pouvez-vous me raconter ce que votre (religion/secte/communauté, par exemple) a à dire au sujet du vaccin? Pouvez-vous me raconter ce que vous avez entendu pour m’aider à comprendre dans quelle mesure ça se rapporte à votre santé?</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -6605,7 +6678,7 @@ export const contentPersonasBI = {
                 hearing from public health.
               </>
             ),
-            FR: <></>,
+            FR: <>Quand un lieu nous procure du réconfort  (foi/communauté, etc.), je pense que c’est très difficile quand on y obtient des conseils qui ne cadrent pas nécessairement avec les déclarations de la santé publique.</>,
           },
           image: "doctorWhiteWomanDarkBrownHair",
         },
@@ -6617,7 +6690,7 @@ export const contentPersonasBI = {
                 help paint a picture about how these vaccines align with the teachings of your religion.{" "}
               </>
             ),
-            FR: <></>,
+            FR: <>Est-ce que vous pourriez me prêter certaines de vos ressources à ce sujet? Certaines ressources de patients peuvent aider à brosser un tableau de la façon dont les vaccins cadrent avec les enseignements de votre religion.</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -6632,7 +6705,7 @@ export const contentPersonasBI = {
                 teachings from your faith.
               </>
             ),
-            FR: <></>,
+            FR: <>Pour moi, me faire vacciner, c’est rendre service à mes patients, à ma famille et à ma communauté. C’est quelque chose que je peux faire pour les garder en sécurité. Alors, peut-être que cette manière de penser peut s’ajouter aux enseignements de votre foi.</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -6652,7 +6725,7 @@ export const contentPersonasBI = {
                       you&apos;ve heard so I can better understand that and how it relates to your health?{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce que vous dites m’intéresse. Pouvez-vous me raconter ce que votre (religion/&#8203;secte/&#8203;communauté, etc.) a à dire au sujet du vaccin? Pouvez-vous me raconter ce que vous avez entendu pour m’aider à comprendre dans quelle mesure ça se rapporte à votre santé?</>,
                 },
                 featured: false,
                 image: "",
@@ -6669,7 +6742,7 @@ export const contentPersonasBI = {
                       you&apos;re aware of?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pouvez-vous me donner des précisions expliquant pourquoi votre (imam/&#8203;pasteur/&#8203;prêtre/&#8203;célébrant) estime que le vaccin est problématique? Est-ce qu’on peut en parler plus en détail? À votre connaissance, est-ce qu’il y a d’autres points de vue au sein de cette même religion?</>,
                 },
                 featured: true,
                 image: "",
@@ -6684,7 +6757,7 @@ export const contentPersonasBI = {
                       that a little bit more?{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pouvez-vous m’expliquer pourquoi le vaccin va à l’encontre de votre religion, selon vous? Est-ce qu’on peut en parler plus en détail?</>,
                 },
                 featured: false,
                 image: "",
@@ -6701,7 +6774,7 @@ export const contentPersonasBI = {
                       heard?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis aussi (musulman/&#8203;chrétien/&#8203;juif/&#8203;hindou/&#8203;sikh/&#8203;membre d’une communauté, etc.), et j’aime bien me tenir au courant des enseignements prodigués. Je n’ai jamais entendu parler d’enseignements qui vont à l’encontre de l’immunisation. Pouvez-vous m’en dire un peu plus à ce sujet?</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -6726,7 +6799,7 @@ export const contentPersonasBI = {
                       align with what we&apos;re hearing from public health.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand un lieu nous procure du réconfort  (foi/communauté, etc.), je pense que c’est très difficile quand on y obtient des conseils qui ne cadrent pas nécessairement avec les déclarations de la santé publique.</>,
                 },
                 featured: false,
                 image: "",
@@ -6741,7 +6814,7 @@ export const contentPersonasBI = {
                       is important to you and I can completely appreciate that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous êtes juive/&#8203;chrétienne/&#8203;musulmane/&#8203;etc.). Ça fait quelques années que je vous connais, et je sais que vous respectez tous les enseignements de votre religion. C’est important à vos yeux, et je comprends tout à fait.</>,
                 },
                 featured: true,
                 image: "",
@@ -6755,7 +6828,7 @@ export const contentPersonasBI = {
                       against your faith.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, je comprends que la façon dont les vaccins ont été conçus peut présenter une source d’inquiétude pour vous, et je me demande si les vaccins vont à l’encontre de votre religion.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -6771,7 +6844,7 @@ export const contentPersonasBI = {
                       significant.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je ne veux pas que vous soyez éloignée de votre (foi/communauté, etc.). Je ne veux pas aussi que vous attrapiez la COVID, parce que je pense que votre réaction pourrait être assez grave.</>,
                 },
                 featured: false,
                 image: "",
@@ -6795,7 +6868,7 @@ export const contentPersonasBI = {
                       that may help paint a picture about how these vaccines align with the teachings of your religion.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que vous pourriez me prêter certaines de vos ressources à ce sujet? Certaines ressources de patients peuvent aider à brosser un tableau de la façon dont les vaccins cadrent avec les enseignements de votre religion.</>,
                 },
                 featured: false,
                 image: "",
@@ -6829,7 +6902,19 @@ export const contentPersonasBI = {
                       church. So maybe I can share that with you through it if you&apos;d be interested?
                     </>
                   ),
-                  FR: <></>,
+                  FR:
+                    <>
+                      J’ai vu un excellent{" "} 
+                      <a
+                        href="https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf"
+                        className="orangeLink"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        document
+                      </a>{" "}
+                  concernant le point de vue des évêques catholiques canadiens sur les vaccins. Les évêques expliquent comment les fervents catholiques peuvent se comporter tout en ayant l’impression de respecter les enseignements de l’Église. Peut-être que je peux vous en faire part, si ça vous intéresse?
+                    </>,
                 },
                 featured: true,
                 image: "",
@@ -6853,7 +6938,16 @@ export const contentPersonasBI = {
                       to discuss it in some more detail if you feel the need for that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>L’Église catholique s’est{" "} 
+                      <a
+                        href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html"
+                        className="orangeLink"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        manifestée en faveur de la vaccination
+                      </a>{" "}
+                      moyennant certaines nuances. Peut-être que je pourrais vous envoyer le lien, après quoi on pourrait en discuter plus en détail si ça vous tente?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -6870,7 +6964,7 @@ export const contentPersonasBI = {
                       we&apos;re conducting ourselves in a way that serves our communities.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors moi, je suis chrétien/juif/musulman/hindou/sikh/membre d’une Première Nation). Bien que je puisse admettre que je ne suis peut-être pas le meilleur exemple, je me ramène toujours aux enseignements de base, soit traiter les autres comme on aimerait être traité soi-même, et se comporter d’une manière bénéfique pour nos communautés.</>,
                 },
                 featured: false,
                 image: "",
@@ -6895,7 +6989,7 @@ export const contentPersonasBI = {
                       alongside the other teachings from your faith.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour moi, me faire vacciner, c’est rendre service à mes patients, à ma famille et à ma communauté. C’est quelque chose que je peux faire pour les garder en sécurité. Alors, peut-être que cette manière de penser peut s’ajouter aux enseignements de votre foi.</>,
                 },
                 featured: false,
                 image: "",
@@ -6911,7 +7005,7 @@ export const contentPersonasBI = {
                       that would be okay by your &#91;e.g. faith/community&#93;?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, et si on avait une option qui ne se rapportait pas du tout à cet enjeu dans votre cas? Que se passerait-il si ce n’était plus une inquiétude? Seriez-vous intéressée à vous faire vacciner s’il y avait un vaccin accepté par votre (religion/communauté, etc.)?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -6927,7 +7021,7 @@ export const contentPersonasBI = {
                       quite huge.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand on s’arrête à y penser, le risque que vous, vos voisins, tous les (membres de votre église, communauté, etc.), vos amis et les membres de votre famille contractent ce virus est… est énorme en fait.</>,
                 },
                 featured: false,
                 image: "",
@@ -6945,7 +7039,7 @@ export const contentPersonasBI = {
                       to me, like an extension of that divine will.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>C’est le genre de chose qui est difficile à imaginer, mais pour moi, si  (Dieu/&#8203;Allah/&#8203;Yahvé/&#8203;etc.) voulait vraiment qu’on ne se fasse pas vacciner, je ne vois pas comment on aurait pu faire tant de progrès du point de vue médical, au point d’être capables de protéger les gens. Pour moi, la science médicale, c’est un prolongement de la volonté divine.</>,
                 },
                 featured: true,
                 image: "",
@@ -6962,7 +7056,7 @@ export const contentPersonasBI = {
                       of your community has been really hard on you this last year.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si on se met à regarder ce qui se passe dans le monde, les pays qui ont réussi à faire vacciner les gens, ce sont eux qui retournent à la normale en ce moment. Ils peuvent fréquenter les lieux de culte, comme vous aimeriez le faire. Je sais que le fait de ne pas avoir pu aller à votre lieu de culte, avec les membres de votre communauté, ça a été très dur pour vous cette dernière année.</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -6979,7 +7073,7 @@ export const contentPersonasBI = {
                       back up and running.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La voie à suivre, c’est celle qui permet de protéger le plus grand nombre de personnes possible. Un chef de file comme vous ou le chef de votre communauté peut jouer un rôle pour faire en sorte que le plus grand nombre de personnes possible soit protégé. Vous pouvez donner l’exemple et aider les voisins à remettre leurs commerces sur pied.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -6997,7 +7091,7 @@ export const contentPersonasBI = {
                       scientists and doctors.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, (Dieu/&#8203;Yahvé/&#8203;Allah/&#8203;le Créateur/&#8203;etc.) a aidé les personnes qui ont fabriqué le vaccin, et il les a aidés à le faire très rapidement. Et vous savez, c’est comme si une main divine s’en était mêlée parce qu’on voit bien que c’est efficace et que ça s’est fait sans tarder. Selon moi, (Dieu/&#8203;Yahvé/&#8203;Allah/&#8203;etc.) travaille par le biais des scientifiques et des médecins.</>,
                 },
                 featured: false,
                 image: "",
@@ -7018,7 +7112,7 @@ export const contentPersonasBI = {
                       protect each other and get back to normal. The vaccines will help us do that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>(Concernant l’utilisation de cellules souches embryonnaires dans le développement du vaccin) On a entendu dire que certains des métaux utilisés dans les téléphones cellulaires viennent de pays ravagés par la guerre, que des enfants sont asservis en esclavage et toutes sortes de choses atroces de ce genre. Est-ce que ça veut dire qu’on devrait tous se débarrasser de nos téléphones cellulaires? C’est une bonne question, je crois. On devrait s’attarder à ce genre de chose. Mais cette technologie nous procure aussi de bons avantages. Il faut peut-être penser à la façon de réformer les procédés de fabrication. C’est toutefois un processus long et différent. Mais en ce moment, l’urgence nous fait comprendre que la chose la plus importante, c’est de s’entre-protéger et de retourner à la normale. Les vaccins peuvent nous aider à en arriver là.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -7035,7 +7129,7 @@ export const contentPersonasBI = {
                       information, because I understand how confusing it can be.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si d’autres membres de votre communauté veulent en discuter avec moi, je comprendrai tout à fait s’ils obtiennent leur information d’autres sources. Mais sachez que je suis ici pour vous, pour votre communauté. Et comme je le disais tout à l’heure, j’ai passé beaucoup de temps à essayer de comprendre cette information parce que je sais à quel point ça peut-être mélangeant.</>,
                 },
                 featured: false,
                 image: "",
@@ -7056,9 +7150,9 @@ export const contentPersonasBI = {
               Vaccines
             </>
           ),
-          FR: <></>,
+          FR: <>Conférence des évêques catholiques du Canada - Note de la CECC sur des préoccupations éthiques relatives aux vaccins contre la COVID-19</>,
         },
-        linkText: { EN: <>CCCB Statement on COVID vaccines</>, FR: <></> },
+        linkText: { EN: <>CCCB Statement on COVID vaccines</>, FR: <>Déclaration de la CECC sur les vaccins contre la COVID</> },
         link: "https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf",
         description: {
           EN: (
@@ -7067,7 +7161,7 @@ export const contentPersonasBI = {
               alignment with the Vatican and the Holy See, in March 2021. This is their statement. (March 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>La CECC a fait une déclaration en faveur de la vaccination et des dimensions éthiques des vaccins contre la COVID, conformément aux déclarations du Vatican et du Saint-Siège, en mars 2021. Il s’agit de sa déclaration. (mars 2021)</>,
         },
       },
 
@@ -7080,10 +7174,13 @@ export const contentPersonasBI = {
             </>
           ),
 
-          FR: <></>,
+          FR: <>Congrégation pour la doctrine de la foi – Vatican : Note du Saint-Siège sur la moralité de l’utilisation de certains vaccins anti-COVID-19</>,
         },
-        linkText: { EN: <>Vatican Statement Supporting COVID-19 Vaccination</>, FR: <></> },
-        link: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html",
+        linkText: { EN: <>Vatican Statement Supporting COVID-19 Vaccination</>, FR: <>Déclaration du Vatican en faveur de la vaccination contre la COVID-19</> },
+        link: {
+             EN: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html",
+             FR: "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_fr.html",
+           },
         description: {
           EN: (
             <>
@@ -7091,7 +7188,7 @@ export const contentPersonasBI = {
               development and the choice to vaccinate. (December 2020)
             </>
           ),
-          FR: <></>,
+          FR: <>Le Vatican a fait une déclaration en faveur des vaccins contre la COVID, dans laquelle il examine les considérations entourant leur développement et le choix de se faire vacciner. (décembre 2020)</>,
         },
       },
 
@@ -7099,9 +7196,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
 
-          FR: <></>,
+          FR: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
         },
-        linkText: { EN: <>Editorial Forum with multiple perspectives</>, FR: <></> },
+        linkText: { EN: <>Editorial Forum with multiple perspectives</>, FR: <>Tribune éditoriale présentant plusieurs perspectives</> },
         link: "https://berkleycenter.georgetown.edu/posts/religion-bioethics-and-covid-19-vaccination",
         description: {
           EN: (
@@ -7110,7 +7207,7 @@ export const contentPersonasBI = {
               perspectives from multiple faith and health leaders. (February 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Tribune éditoriale et rapport sur l’engagement de la foi concernant la vaccination contre la COVID, et perspectives multiples en provenance de leaders de la foi et du domaine de la santé. (février 2021)</>,
         },
       },
 
@@ -7118,9 +7215,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
 
-          FR: <></>,
+          FR: <>Imam's Roundtable: COVID-19 Vaccines in the Muslim Community</>,
         },
-        linkText: { EN: <>YouTube video - virtual discussion</>, FR: <></> },
+        linkText: { EN: <>YouTube video - virtual discussion</>, FR: <>Vidéo de YouTube – discussion virtuelle</> },
         link: "https://youtu.be/wP-7tvq8P18",
         description: {
           EN: (
@@ -7129,7 +7226,7 @@ export const contentPersonasBI = {
               Cleveland Clinic in the US. (March 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Table ronde et webinaire virtuels portant sur les questions de la communauté musulmane au sujet des vaccins contre la COVID-19, selon une clinique de Cleveland, aux États-Unis. (mars 2021)</>,
         },
       },
     ],
@@ -7148,7 +7245,10 @@ export const contentPersonasBI = {
             <>&ldquo;Doctors and nurses haven&apos;t treated me well when I&apos;ve needed their help.&rdquo;</>,
             <>&ldquo;I get really anxious in hospitals or clinics. I don&apos;t know if I can get vaccinated.&rdquo;</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« La dernière fois que je suis allée à (la clinique, l’hôpital, etc.), ça ne s’est pas bien passé. »</>, 
+          <>« Les médecins et les infirmières ne m’ont pas bien traitée quand j’ai eu besoin d’eux. »</>, 
+          <>« Je n’aime vraiment pas les hôpitaux ou les cliniques. Je ne sais pas si je pourrai me faire vacciner. »</>],
         },
       },
 
@@ -7164,7 +7264,10 @@ export const contentPersonasBI = {
             </>,
             <>Offer to help arrange alternative locations for receiving a vaccine.</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Demandez au patient dans quelles circonstances il se sentirait en sécurité pour recevoir le vaccin.</>, 
+          <>Différenciez votre rôle en tant que défenseur du vaccin de votre rôle général dans le système de la santé ou du gouvernement.</>, 
+          <>Reconnaissez et affirmez la validité des traumatismes personnels et de l’anxiété sociale susceptibles de décourager votre patiente de se faire vacciner.</>, <>Offrez-lui de trouver un autre endroit pour se faire vacciner.</>],
         },
       },
 
@@ -7178,7 +7281,7 @@ export const contentPersonasBI = {
               safety around getting the vaccine.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>N’oubliez pas que même si ce patient a vécu de mauvaises expériences au sein du système de santé, il vous demande tout de même conseil. Travaillez avec votre patient, en tant que membre de son équipe, pour trouver des moyens lui permettant de se sentir en sécurité pour se faire vacciner.</>,],
         },
       },
     },
@@ -7189,7 +7292,7 @@ export const contentPersonasBI = {
         engage: {
           text: {
             EN: <>What do you need to feel safe about getting vaccinated?</>,
-            FR: <></>,
+            FR: <>Qu’est-ce qui pourrait vous aider à vous sentir en sécurité pour vous faire vacciner?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -7202,7 +7305,7 @@ export const contentPersonasBI = {
                 together to make this as easy a process as possible.
               </>
             ),
-            FR: <></>,
+            FR: <>Je sais que les hôpitaux et les cliniques peuvent faire peur, et qu’attendre, ça peut être frustrant. Prendre les mesures nécessaires pour aller se faire vacciner, ce n’est pas toujours évident, pour bien des raisons. Je tiens à vous rassurer qu’on peut travailler ensemble pour que tout se déroule le mieux possible.</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -7215,7 +7318,7 @@ export const contentPersonasBI = {
                 protect you because I really would worry that if you caught COVID, you would do quite badly.
               </>
             ),
-            FR: <></>,
+            FR: <>J’aimerais voir si on pourrait passer par-dessus ce qui s’est produit dans le temps et se concentrer sur votre protection. Oublions le système pour l’instant. Ils peuvent bien faire ce qu’ils veulent, mais maintenant, l’important, c’est de vous protéger parce que si vous attrapez la COVID, je crains que vous ne vous en sortiez pas très bien.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -7227,7 +7330,7 @@ export const contentPersonasBI = {
                 every day. Maybe we can find one that makes you feel more comfortable and safe.
               </>
             ),
-            FR: <></>,
+            FR: <>Est-ce qu’on pourrait s’organiser pour que vous vous fassiez vacciner ailleurs? Tous les jours, de plus en plus d’endroits offrent le vaccin. Peut-être qu’on pourrait trouver un endroit où vous vous sentiriez à l’aise et en sécurité.</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -7240,7 +7343,7 @@ export const contentPersonasBI = {
             subheading: { EN: "", FR: "" },
             quotes: [
               {
-                text: { EN: <>What do you need to feel safe about getting vaccinated?</>, FR: <></> },
+                text: { EN: <>What do you need to feel safe about getting vaccinated?</>, FR: <>Qu’est-ce qui pourrait vous aider à vous sentir en sécurité pour vous faire vacciner?</> },
                 featured: false,
                 image: "",
                 fullStoryID: "",
@@ -7253,14 +7356,14 @@ export const contentPersonasBI = {
                       reaction or a bad experience getting the vaccine?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, vous me parlez d’une mauvaise expérience avec le vaccin? Est-ce que vous avez eu une mauvaise réaction, ou une mauvaise expérience en vous faisant vacciner?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
               },
               {
-                text: { EN: <>What part about getting the vaccine worries you the most?</>, FR: <></> },
+                text: { EN: <>What part about getting the vaccine worries you the most?</>, FR: <>Quel aspect de la vaccination vous inquiète le plus?</> },
                 featured: false,
                 image: "",
                 fullStoryID: "",
@@ -7287,7 +7390,7 @@ export const contentPersonasBI = {
                       want to get you protected.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous n’êtes pas satisfait de la manière dont les choses se sont déroulées dans (un autre lieu de soins de santé). Je sais que ça a été difficile. J’en suis désolé. Mais j’ose croire que je peux vous aider maintenant. Ça fait longtemps que vous me connaissez, et je pense qu’on a fait un pas mal bon travail pour vous garder en santé, et je ne vous mentirais pas. J’espère à tout le moins que vous me pensez honnête. Je veux vraiment que vous soyez protégé.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -7303,7 +7406,7 @@ export const contentPersonasBI = {
                       that we can work together to make this as easy a process as possible.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que les hôpitaux et les cliniques peuvent faire peur, et qu’attendre, ça peut être frustrant. Prendre les mesures nécessaires pour aller se faire vacciner, ce n’est pas toujours évident, pour bien des raisons. Je tiens à vous rassurer qu’on peut travailler ensemble pour que tout se déroule le mieux possible.</>,
                 },
                 featured: true,
                 image: "",
@@ -7321,7 +7424,7 @@ export const contentPersonasBI = {
                       back.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous ne faites pas confiance aux (autres lieux de soins de santé), mais je suis là pour vous aider. Ils n’ont pas réussi à mériter votre confiance, non? Et c’est parce qu’ils n’ont pas réussi à mériter votre confiance que j’ai fait des recherches. Je me fais un devoir de bien me tenir à jour afin de pouvoir donner des conseils dignes de confiance aux personnes dont je m’occupe. Je suis là pour vous aider.</>,
                 },
                 featured: false,
                 image: "",
@@ -7348,7 +7451,7 @@ export const contentPersonasBI = {
                       sources?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai fait pas mal de recherche sur ces vaccins et sur les différentes options qui peuvent s’offrir à vous. Est-ce que je peux vous parler un peu de ce que je sais, au lieu, peut-être, d’en entendre parler par d’autres sources?</>,
                 },
                 featured: false,
                 image: "",
@@ -7376,7 +7479,7 @@ export const contentPersonasBI = {
                       check in on you, and just worry that you&apos;d end up in hospital or worse.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’aimerais voir si on pourrait passer par-dessus ce qui s’est produit dans le temps et se concentrer sur votre protection. Oublions le système pour l’instant. Ils peuvent bien faire ce qu’ils veulent, mais maintenant, l’important, c’est de vous protéger parce que si vous attrapez la COVID, je crains que vous ne vous en sortiez pas très bien. Je m’inquièterais beaucoup de vous, je vous appellerais tous les jours, à tout le moins, pour voir comment vous allez, et j’aurais peur que vous aboutissiez à l’hôpital, ou pire encore.</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -7401,7 +7504,7 @@ export const contentPersonasBI = {
                       available every day. Maybe we can find one that makes you feel more comfortable and safe.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce qu’on pourrait s’organiser pour que vous vous fassiez vacciner ailleurs? Tous les jours, de plus en plus d’endroits offrent le vaccin. Peut-être qu’on pourrait trouver un endroit où vous vous sentiriez à l’aise et en sécurité.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -7423,7 +7526,7 @@ export const contentPersonasBI = {
                       having the power to decide what happens to you and your family is important to you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais ce que vous voulez dire : vous avez perdu beaucoup de choses à cause de ce que vous avez vécu. Votre lieu d’appartenance, votre culture. Tous les gouvernements ont des problèmes. Vous avez bien des raisons de ne pas faire confiance au gouvernement en matière de vaccination. Mais j’espère que vous ne considérez pas que je fais partie du gouvernement parce que ce n’est pas le cas. C’est plutôt une question, pour vous et moi, de trouver ce qu’il y a de mieux pour votre santé et celle de votre famille. Je fais des recherches – pour tous mes patients comme vous – et d’après mes recherches, ces vaccins sont non seulement sûrs, mais aussi beaucoup plus sûrs que de courir le risque de les refuser. La vaccination vous donne du pouvoir par rapport au système. Elle vous redonne la liberté et je pense, d’après ce que je sais de vous, que c’est important pour vous de décider ce qui vous arrivera, à vous et à votre famille.</>,
                 },
                 featured: false,
                 image: "",
@@ -7441,13 +7544,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
 
-          FR: <></>,
+          FR: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
         },
-        linkText: { EN: <>Fact sheet (patient-facing language)</>, FR: <></> },
+        linkText: { EN: <>Fact sheet (patient-facing language)</>, FR: <>Fiche de renseignements (à l’intention des patients)</> },
         link: "https://istss.org/ISTSS_Main/media/Documents/Public-Facing-Fact-Sheet-2.pdf",
         description: {
           EN: <>A public fact sheet examining medical trauma and coping advice for patients. (2020)</>,
-          FR: <></>,
+          FR: <>iche de renseignements publique sur les traumatismes médicaux, et conseils aux patients pour surmonter les traumatismes. (2020)</>,
         },
       },
 
@@ -7455,9 +7558,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
 
-          FR: <></>,
+          FR: <>Top tips to deal with challenging situations: doctor-patient interactions</>,
         },
-        linkText: { EN: <>Breathe (Medical Journal): 2017 article</>, FR: <></> },
+        linkText: { EN: <>Breathe (Medical Journal): 2017 article</>, FR: <>Breathe (revue médicale): article de 2017</> },
         link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467659/",
         description: {
           EN: (
@@ -7466,7 +7569,8 @@ export const contentPersonasBI = {
               managed. (June 2017)
             </>
           ),
-          FR: <></>,
+          FR: <>Article portant sur les situations difficiles du point de vue des interactions entre les médecins et les patients, comment mieux les gérer.
+          (juin 2017)</>,
         },
       },
 
@@ -7474,9 +7578,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
 
-          FR: <></>,
+          FR: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
         },
-        linkText: { EN: <>Harvard Business Review Editorial</>, FR: <></> },
+        linkText: { EN: <>Harvard Business Review Editorial</>, FR: <>Éditorial de revue d’affaires de Harvard</> },
         link: "https://hbr.org/2021/01/to-overcome-vaccine-hesitancy-we-need-a-better-patient-experience",
         description: {
           EN: (
@@ -7485,7 +7589,7 @@ export const contentPersonasBI = {
               and after. (January 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Éditorial sur les considérations entourant l’expérience de la vaccination, avant, pendant et après. (janvier 2021)</>,
         },
       },
 
@@ -7493,9 +7597,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
 
-          FR: <></>,
+          FR: <>Anxiété Canada : A Tool for Dealing with Anxiety Around Vaccination</>,
         },
-        linkText: { EN: <>The CARD Tool for Patients</>, FR: <></> },
+        linkText: { EN: <>The CARD Tool for Patients</>, FR: <>Outil CARD à l’intention des patients</> },
         link: "https://www.anxietycanada.com/wp-content/uploads/2020/04/CARD-for-Individuals.pdf",
         description: {
           EN: (
@@ -7504,7 +7608,7 @@ export const contentPersonasBI = {
               around the vaccination process that helps them develop specific strategies in four domains. (April 2020)
             </>
           ),
-          FR: <></>,
+          FR: <>Outil convivial pour les patients souffrant d’anxiété généralisée – peur de s’évanouir ou d’apparaître en public – concernant le processus de la vaccination afin de les aider à élaborer des stratégies particulières dans quatre domaines différents. (avril 2020)</>,
         },
       },
     ],
@@ -7529,7 +7633,10 @@ export const contentPersonasBI = {
               get a different one?&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Je ne peux pas m’imaginer comment nous, en tant que (minorités/Premières Nations) pouvons vite accepter quelque chose qui a été développé si rapidement. Je ne peux pas juste me fier aux paroles du gouvernement, qui dit que c’est sécuritaire. »</>, 
+          <>« Je ne veux pas être le cobaye des Blancs. »</>, 
+          <>« Comment est-ce que je peux savoir si les Blancs n’auront pas un certain vaccin et que (mon groupe minoritaire) n’aura pas de vaccin différent? »</>],
         },
       },
 
@@ -7566,7 +7673,23 @@ export const contentPersonasBI = {
               the vaccine&apos;s safety is questionable.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Reconnaissez et affirmez la validité des traumatismes historiques et des mauvais traitements susceptibles de décourager la personne de se faire vacciner.</>, 
+          <>
+            La prestation 
+              <a
+                className="ml-1.5 orangeUnderline"
+                href="http://www.bccdc.ca/health-professionals/clinical-resources/covid-19-care/education-and-training/culturally-safe-care"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                de soins culturellement sûrs <FiExternalLink className="inline" size={18} />
+              </a>{" "}  
+              devrait être une priorité pour tous les professionnels de la santé.
+          </>, 
+          <>Mettez l’accent sur le fait que le vaccin a pour but de protéger la communauté et non pas seulement l’individu (comme protéger les aînés).</>, 
+          <>Reconnaissez et affirmez la validité des traumatismes personnels et de l’anxiété sociale susceptibles de décourager la personne de se faire vacciner.</>, 
+          <>Dites-lui que le fait de prioriser les populations marginalisées fait partie d’un plan de vaccination juste et équitable, et que ce n’est pas parce que l’innocuité du vaccin est mise en doute.</>],
         },
       },
       // Group Trauma
@@ -7582,7 +7705,7 @@ export const contentPersonasBI = {
               promote feelings of safety towards getting a vaccine.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>Les traumatismes communautaires, collectifs et historiques sont des enjeux complexes qu’il faut démêler et dont il faut parler. En tant que conseiller en santé de confiance, vous pouvez jouer le rôle de la personne du système de soins de santé qui peut reconnaître ces traumatismes et créer des expériences plus positives pour ce patient dès maintenant. Avec votre patient, essayez de trouver des moyens de faire en sorte qu’il se sente en sécurité vis-à-vis du vaccin.</>,],
         },
       },
     },
@@ -7592,7 +7715,7 @@ export const contentPersonasBI = {
         engage: {
           text: {
             EN: <>What would you need in order to feel safe about getting vaccinated?</>,
-            FR: <></>,
+            FR: <>Qu’est-ce qui pourrait vous aider à vous sentir en sécurité pour vous faire vacciner?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -7605,7 +7728,7 @@ export const contentPersonasBI = {
                 been all these years? Am I understanding that right?
               </>
             ),
-            FR: <></>,
+            FR: <>Je comprends ce que vous voulez dire. C’est en effet assez bizarre de voir que tout à coup, il/elle (le gouvernement, la santé publique, etc.) s’intéresse à votre protection et à celle de votre peuple, alors que vous n’avez pas entendu parler de lui/d’elle pendant des années. Est-ce que je comprends bien?</>,
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -7622,7 +7745,7 @@ export const contentPersonasBI = {
                 &rsquo;
               </>
             ),
-            FR: <></>,
+            FR: <>Personnellement, je crois que c’est l’occasion, pour votre communauté, de saisir le pouvoir qu’elle peut saisir, de prendre la ressource qui est mise à sa disposition à son propre avantage et d’y aller en premier. Et de vous dire : « <i>Eh bien, pour une fois qu’on peut recevoir un traitement en premier, on va être en tête de la ligne cette fois-ci.</i> »</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -7635,7 +7758,7 @@ export const contentPersonasBI = {
                 finding the best things for your health, and the health of your family...
               </>
             ),
-            FR: <></>,
+            FR: <>...Vous avez bien des raisons de ne pas faire confiance au gouvernement en matière de vaccination. Mais j’espère que vous ne considérez pas que je fais partie du gouvernement parce que ce n’est pas le cas. C’est plutôt une question, pour vous et moi, de trouver ce qu’il y a de mieux pour votre santé et celle de votre famille...</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -7650,7 +7773,7 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>What would you need in order to feel safe about getting vaccinated?</>,
-                  FR: <></>,
+                  FR: <>Qu’est-ce qui pourrait vous aider à vous sentir en sécurité pour vous faire vacciner?</>,
                 },
                 featured: false,
                 image: "",
@@ -7664,7 +7787,7 @@ export const contentPersonasBI = {
                       are and I just want to hear from you for a moment.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je n’essaie pas de vous forcer à faire quoi que ce soit ici. Dites-moi qu’est-ce qui vous tracasse. Je veux prendre le temps de bien vous écouter.</>,
                 },
                 featured: true,
                 image: "",
@@ -7678,7 +7801,7 @@ export const contentPersonasBI = {
                       vaccinated? How do you feel about their choice to do so?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis curieux de savoir combien vous avez vu d’exemples de personnes qui se sont fait vacciner dans votre communauté? Que pensez-vous de leur décision de se faire vacciner?</>,
                 },
                 featured: false,
                 image: "",
@@ -7704,7 +7827,7 @@ export const contentPersonasBI = {
                       they been all these years? Am I understanding that right?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends ce que vous voulez dire. C’est en effet assez bizarre de voir que tout à coup, il/elle (le gouvernement, la santé publique, etc.) s’intéresse à votre protection et à celle de votre peuple, alors que vous n’avez pas entendu parler de lui/d’elle pendant des années. Est-ce que je comprends bien?</>,
                 },
                 featured: false,
                 image: "",
@@ -7722,7 +7845,7 @@ export const contentPersonasBI = {
                       conversation.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, je comprends que votre communauté a été très maltraitée par le système. Elle a fait l’objet d’expériences et d’abus flagrants. Pour vous, c’est du sérieux, et toutes les personnes de votre communauté ont été touchées par ça. J’espère qu’on pourra discuter des vaccins tout en reconnaissant ce qui s’est passé. Cette discussion, c’est entre nous deux, et non pas avec le système dans son ensemble. C’est une conversation entre vous et moi.</>,
                 },
                 featured: true,
                 image: "",
@@ -7740,7 +7863,7 @@ export const contentPersonasBI = {
                       communities be disproportionately affected by the virus.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La pandémie a fait ressortir certains des grands enjeux que vous venez de soulever pour bien des gens. Je pense qu’elle a permis aux gens de s’ouvrir les yeux. Il ne fait aucun doute que vous n’êtes pas la seule à ne pas faire confiance aux motifs. J’imagine qu’une des raisons pour lesquelles j’ai soulevé l’idée du vaccin pour vous, c’est parce qu’une des façons dont les gens se sont ouvert les yeux a trait au fait que différentes communautés ont été touchées par le virus de manière disproportionnée.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -7758,7 +7881,7 @@ export const contentPersonasBI = {
                       people I really care for.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends, vous ne faites pas confiance au gouvernement à ce sujet, mais moi, je vous assure que j’ai fait mes propres recherches parce que je voulais en avoir le cœur net. Je ne pense pas que le gouvernement mérite votre confiance, n’est-ce pas? C’est pour ça que je fais mes propres recherches. Je me fais un devoir de bien me tenir à jour afin de pouvoir donner les meilleurs conseils aux personnes dont je m’occupe.</>,
                 },
                 featured: false,
                 image: "",
@@ -7773,7 +7896,7 @@ export const contentPersonasBI = {
                       here for you, that I&apos;m looking out for you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’imagine que vous pourriez dire que je fais partie du système, mais je pense que vous savez que je suis là pour vous, et que je m’occupe de vous.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -7798,7 +7921,7 @@ export const contentPersonasBI = {
                       for you and your community?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que vous me permettez de vous dire pourquoi je pense que les vaccins seraient particulièrement bons et importants pour vous et votre communauté?</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -7815,7 +7938,7 @@ export const contentPersonasBI = {
                       sources?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai fait pas mal de recherche sur ces vaccins et sur les différentes options qui peuvent s’offrir à vous. Est-ce que je peux vous parler un peu de ce que je sais, au lieu, peut-être, d’en entendre parler par d’autres sources?</>,
                 },
                 featured: false,
                 image: "",
@@ -7843,7 +7966,7 @@ export const contentPersonasBI = {
                       When it comes to that, you&apos;re really taking it for them. So you can be there for them.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Moi, quand je me suis fait vacciner, ce n’était pas tellement pour moi, mais plutôt pour vous. Je me suis fait vacciner afin d’être là pour vous. Je l’ai accepté afin de ne pas vous mettre en danger. Et je pense que c’est peut-être un peu comme ça dans votre communauté. Peut-être que vous vous rangez du côté du « peut-être », mais quand vient le temps de protéger votre communauté, les aînés et leurs connaissances, quand c’est une question de les protéger, c’est pour eux que vous vous faites vacciner au bout du compte. Pour que vous puissiez être là pour eux.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -7864,7 +7987,7 @@ export const contentPersonasBI = {
                       with our Elders especially.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Personnellement, je peux vraiment comprendre pourquoi vous ne faites pas confiance au système. Après tout, le système de santé n’a pas nécessairement la réputation d’avoir passé les intérêts et la santé des peuples autochtones en premier au cours des deux derniers siècles. Mais je sais que les vaccins me gardent non seulement en sécurité, mais qu’ils gardent aussi ma communauté et mes aînés en sécurité. Je connais bien une aînée crie, et je sais qu’elle s’est fait vacciner. Moi aussi j’avais des questions au sujet du vaccin, mais j’ai choisi de me faire vacciner, et ma grand-mère métisse au Manitoba s’est aussi fait vacciner il y a trois semaines. Je trouve que la colonisation nous a assez enlevé de choses que je ne veux pas prendre le risque de ne pas faire ma part pour préserver la culture et les connaissances qui nous restent, surtout chez nos aînés.</>,
                 },
                 featured: true,
                 image: "",
@@ -7884,7 +8007,7 @@ export const contentPersonasBI = {
                       equity and right some of those historical wrongs.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Avec le déploiement du vaccin, il faut essayer de reconnaître les injustices historiques et de fournir quelque chose de plus équitable. Donc, je pense qu’une des raisons pour lesquelles les communautés autochtones sont priorisées, c’est justement pour nous donner un traitement plus équitable. J’imagine que vous pouvez vous dire que vous serez en tête de file d’une file assez bizarre, mais je peux vous dire que j’ai des patients non autochtones qui sont très impatients de se faire vacciner. C’est donc une file pour laquelle bien des gens voudraient se retrouver en tête de file. Pour moi, la façon dont se fait le déploiement est un gage de bonne foi pour améliorer l’équité et corriger certaines des erreurs du passé.</>,
                 },
                 featured: false,
                 image: "",
@@ -7901,7 +8024,7 @@ export const contentPersonasBI = {
                       the priority lists.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La liste des priorités de la vaccination, ce n’est pas seulement pour viser les personnes qui sont les plus à risque, les personnes de votre communauté qui le sont. C’est aussi une question de réparer les dommages historiques et de contrer les inégalités. Quand le personnel de la santé publique dresse les listes de priorité, il pense à ça aussi.</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -7919,7 +8042,7 @@ export const contentPersonasBI = {
                       brunt of this pandemic, I want to move heaven and earth to get them vaccinated first.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Et j’imagine que de mon point de vue, je veux faire tout mon possible pour protéger votre communauté. Chose certaine, je n’ai pas le pouvoir de tout réparer, même si j’aimerais pouvoir le faire. Certaines choses dépendent de moi cependant, et je veux faire ça pour protéger mes patients et les communautés dont je m’occupe. Personnellement, quand je vois les communautés sous-desservies, les communautés qui manquent de ressources faire les frais de cette pandémie, je veux remuer ciel et terre pour les faire vacciner en premier.</>,
                 },
                 featured: true,
                 image: "",
@@ -7938,7 +8061,7 @@ export const contentPersonasBI = {
                       virus.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ça me fâche de voir qu’ils peuvent développer des vaccins si rapidement en ce moment. Pourquoi ça ne se fait pas pour la tuberculose? Pourquoi ne font-ils pas ça pour le paludisme? Maintenant qu’on sait que ce genre de chose est possible, je veux qu’ils fassent ça pour toutes sortes de maladies qui s’attaquent aux gens marginalisés. Pour ce qui est de ces vaccins (contre la COVID) pour l’instant, il ne faut pas nécessairement que vous ayez confiance en eux, mais je crois que vous pouvez avoir confiance en moi. Ce sont de bons vaccins. Ils empêchent les gens de mourir de ce virus.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -7956,7 +8079,7 @@ export const contentPersonasBI = {
                       much for.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que vous et votre communauté, vous devriez relativement être en tête de file au Canada, mais déjà, au Canada, des millions de personnes ont été vaccinées. Et des centaines de millions de personnes ont été vaccinées dans le monde entier. On sait que ces vaccins sont bons, on sait qu’ils fonctionnent, et on sait qu’ils sont sûrs. Et maintenant, je veux prendre ces connaissances et faire en sorte que votre peuple puisse en profiter parce que votre santé me tient à cœur.</>,
                 },
                 featured: false,
                 image: "",
@@ -7988,7 +8111,7 @@ export const contentPersonasBI = {
                       one another, having the power to decide what happens to you and your family is important to you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vous comprends. Vous avez perdu beaucoup de choses à cause de ce que vous avez vécu. Votre lieu d’appartenance, votre culture. Tous les gouvernements ont des problèmes. Vous avez bien des raisons de ne pas faire confiance au gouvernement en matière de vaccination. Mais j’espère que vous ne considérez pas que je fais partie du gouvernement parce que ce n’est pas le cas. C’est plutôt une question, pour vous et moi, de trouver ce qu’il y a de mieux pour votre santé et celle de votre famille. Je fais des recherches – pour tous mes patients comme vous – et d’après mes recherches, ces vaccins sont non seulement sûrs, mais aussi beaucoup plus sûrs que de courir le risque de les refuser. La vaccination vous donne du pouvoir par rapport au système. Elle vous redonne la liberté et je pense, d’après ce que je sais de vous, que c’est important pour vous de décider ce qui vous arrivera, à vous et à votre famille.</>,
                 },
                 featured: false,
                 image: "",
@@ -8010,7 +8133,7 @@ export const contentPersonasBI = {
                       &rsquo;.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Chose certaine, ce geste ne va pas réparer les autres problèmes. Ce n’est pas seulement pendant la pandémie. Ça fait des centaines d’années que votre peuple est à la fin de la file. Et ce n’est pas correct, mais voilà votre chance de passer en premier. Et je veux vous aider à y arriver. Je veux que votre communauté soit protégée du virus, puis qu’elle soit en santé et fière de dire : « <i> On a réussi à vaincre le virus. Maintenant, donnez-nous tout ce qui nous revient, toutes les ressources qu’on était censés avoir </i> ».</>,
                 },
                 featured: true,
                 image: "",
@@ -8026,7 +8149,7 @@ export const contentPersonasBI = {
                       going by faith that these people won&apos;t do us wrong. I&apos;m holding them accountable.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En tant que membres de groupes minoritaires, on dirait toujours qu’on en a moins que les autres. Je veux qu’on soit en tête de file. Je veux m’assurer que (notre communauté) soit représentée. J’ai confiance et je me dis que ces gens ne nous feront pas de tort. Je les en tiens responsables.</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -8044,9 +8167,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
 
-          FR: <></>,
+          FR: <>BC Centres for Disease Control: Indigenous Community Resources</>,
         },
-        linkText: { EN: <>BC CDC Resources Page</>, FR: <></> },
+        linkText: { EN: <>BC CDC Resources Page</>, FR: <>Page de ressources de BC CDC</> },
         link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
         description: {
           EN: (
@@ -8055,7 +8178,9 @@ export const contentPersonasBI = {
               for providers working with Indigenous communities regarding vaccination.
             </>
           ),
-          FR: <></>,
+          FR: <>Les ressources communautaires à l’intention des Autochtones de BC Centres for Disease Control offrent une vaste gamme de ressources
+          aux fournisseurs qui travaillent avec les communautés autochtones en matière de vaccination.
+          </>,
         },
       },
 
@@ -8063,9 +8188,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
 
-          FR: <></>,
+          FR: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
         },
-        linkText: { EN: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>, FR: <></> },
+        linkText: { EN: <>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>, FR: <>Ressources de Morning Star Lodge sur la pandémie de la COVID-19 à l’intention des communautés autochtones</> },
         link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
         description: {
           EN: (
@@ -8075,7 +8200,7 @@ export const contentPersonasBI = {
               sheets, and more.
             </>
           ),
-          FR: <></>,
+          FR: <>Morning Star Lodge, organisme de recherche autochtone communautaire en matière de santé, met une vaste gamme de ressources à la disposition des gens pour accroître la confiance des communautés autochtones en ce qui a trait au vaccin. Ces ressources comprennent des vidéos sur YouTube, des fiches de renseignements et autres.</>,
         },
       },
       // Group Trauma
@@ -8083,9 +8208,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
 
-          FR: <></>,
+          FR: <>Women's College Hospital - Maad'ookiing Mshkiki: Sharing Medicine</>,
         },
-        linkText: { EN: <>Resources for Indigenous, Métis, and Inuit Communities Page</>, FR: <></> },
+        linkText: { EN: <>Resources for Indigenous, Métis, and Inuit Communities Page</>, FR: <>age de ressources à l’intention des communautés autochtones, métisses et inuites</> },
         link: "https://www.womenscollegehospital.ca/research,-education-and-innovation/maadookiing-mshkiki%E2%80%94sharing-medicine",
         description: {
           EN: (
@@ -8094,7 +8219,7 @@ export const contentPersonasBI = {
               Traditional Practitioners and Trusted Community Members (2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Ressources consolidées élaborées en collaboration par des professionnels de la santé, des praticiens traditionnels et des membres de la communauté de confiance des Premières Nations, des Inuits et des Métis. (2021)</>,
         },
       },
 
@@ -8107,9 +8232,9 @@ export const contentPersonasBI = {
             </>
           ),
 
-          FR: <></>,
+          FR: <>NBCNews Editorial: I'm a Black doctor who didn't trust the Covid vaccine. Here's what changed my mind.</>,
         },
-        linkText: { EN: <>NBCNews Article</>, FR: <></> },
+        linkText: { EN: <>NBCNews Article</>, FR: <>Article de NBCNews</> },
         link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
         description: {
           EN: (
@@ -8118,7 +8243,7 @@ export const contentPersonasBI = {
               vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Éditorial portant sur l’expérience personnelle d’un médecin qui a changé sa perspective et a décidé de se faire vacciner. Considérations pour les conversations sur la manière de gérer le doute et l’incertitude. (janvier 2021)</>,
         },
       },
       // Group Trauma
@@ -8126,9 +8251,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
 
-          FR: <></>,
+          FR: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
         },
-        linkText: { EN: <>Resource list from the AMA</>, FR: <></> },
+        linkText: { EN: <>Resource list from the AMA</>, FR: <>Liste de ressources de l’AMA</> },
         link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
         description: {
           EN: (
@@ -8137,7 +8262,7 @@ export const contentPersonasBI = {
               COVID-19 on marginalized communities. (Updated, October 2020)
             </>
           ),
-          FR: <></>,
+          FR: <>Liste de ressources recueillies par l’American Medical Association au sujet des incidences disproportionnées de la COVID-19 sur les communautés marginalisées. (mis à jour en octobre 2020)</>,
         },
       },
 
@@ -8145,9 +8270,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
 
-          FR: <></>,
+          FR: <>Forum économique mondial : How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
         },
-        linkText: { EN: <>WEF Article</>, FR: <></> },
+        linkText: { EN: <>WEF Article</>, FR: <>Article du FEM</> },
         link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
         description: {
           EN: (
@@ -8156,7 +8281,7 @@ export const contentPersonasBI = {
               Economic Forum. (December 2020)
             </>
           ),
-          FR: <></>,
+          FR: <>Article du Forum économique mondial se penchant sur l’historique du racisme dans le monde de la médecine et ses incidences sur la confiance au vaccin. (décembre 2020)</>,
         },
       },
       // Group Trauma
@@ -8168,9 +8293,9 @@ export const contentPersonasBI = {
             </>
           ),
 
-          FR: <></>,
+          FR: <>Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis communities</>,
         },
-        linkText: { EN: <>Resources Page</>, FR: <></> },
+        linkText: { EN: <>Resources Page</>, FR: <>Page de ressources</> },
         link: "https://www.iphcc.ca/covid-19/",
         description: {
           EN: (
@@ -8179,7 +8304,7 @@ export const contentPersonasBI = {
               concerns. From IPHCC. (February 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>FAQ à l’intention des patients et listes d’inquiétudes au sujet des vaccins contre la COVID-19, conçues pour les patients autochtones. Ressources de l’IPHCC. (février 2021)</>,
         },
       },
 
@@ -8192,9 +8317,9 @@ export const contentPersonasBI = {
             </>
           ),
 
-          FR: <></>,
+          FR: <>Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine Implementation (rapport)</>,
         },
-        linkText: { EN: <>Online report here</>, FR: <></> },
+        linkText: { EN: <>Online report here</>, FR: <>Rapport en ligne accessible ici</> },
         link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
         description: {
           EN: (
@@ -8203,7 +8328,7 @@ export const contentPersonasBI = {
               practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Rapport présentant des conseils sur les stratégies de communication et de mobilisation ainsi que sur les pratiques et les politiques culturellement sûres en vue du déploiement de la vaccination pour les peuples autochtones de l’Ontario. (2021)</>,
         },
       },
     ],
@@ -8344,7 +8469,11 @@ export const contentPersonasBI = {
               to ice.&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Je déteste vraiment les aiguilles. »</>, 
+          <>« Le vaccin m’inquiète parce que la vue d’une aiguille me rend vraiment nerveuse. »</>, 
+          <>« Je me suis déjà évanoui après avoir reçu un vaccin. »</>, 
+          <>« Le simple fait d’entendre des mots comme « injection » ou « prise de sang » me met l’estomac à l’envers. »</>],
         },
       },
 
@@ -8363,7 +8492,12 @@ export const contentPersonasBI = {
             </>,
             <>Direct patients to low-stimulus/sensory-friendly clinics &#40;if available&#41;.</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Offrez à votre patiente de lui donner le vaccin directement (si possible).</>, 
+          <>Offrez-lui un anesthésique topique ou la sédation.</>, 
+          <>Offrez à la patiente de s’étendre si elle est susceptible d’avoir une réaction vasovagale.</>, 
+          <>Dites au patient de consulter des ressources pour l’aider à surmonter sa peur des aiguilles. (Voir l’onglet Ressources)</>, 
+          <>Recommandez au patient d’aller à une clinique à faible stimulus ou conviviale pour les sens (si celles-ci existent).</>],
         },
       },
 
@@ -8384,7 +8518,9 @@ export const contentPersonasBI = {
               someone can be worth it in the long run.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Pour les patients, la peur des aiguilles peut être problématique dans tous les aspects des soins de santé, qu’il s’agisse de prises de sang ou de vaccins de toutes sortes. Aider votre patient à trouver la source de ses anxiétés en ce qui a trait aux aiguilles (douleur, évanouissement, etc.) - et explorer diverses options pour le milieu et le contexte de la vaccination – peut faire en sorte que les vaccins soient plus réalisables et acceptables.</>, 
+          <> Il est important de considérer les nombreuses façons dont les personnes ayant peur des aiguilles peuvent vivre une expérience plus positive en se faisant vacciner, comme ne pas les bousculer pendant leur rendez-vous, faire en sorte que votre salle d’immunisation soit la plus confortable et accueillante possible. Passer une dizaine de minutes de plus avec un patient peut porter fruits à long terme.</>,],
         },
       },
     },
@@ -8403,7 +8539,7 @@ export const contentPersonasBI = {
                 fear of needles?
               </>
             ),
-            FR: <></>,
+            FR: <>Alors, si je comprends bien par exemple, si cette peur dont on parle n’existait pas, vous vous feriez vacciner contre la COVID? Avez-vous d’autres inquiétudes ou questions au sujet du vaccin avant qu’on discute de votre peur des aiguilles?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -8415,7 +8551,7 @@ export const contentPersonasBI = {
                 doctor! But we can address this.
               </>
             ),
-            FR: <></>,
+            FR: <>Je peux vous comprendre parce qu’à vrai dire, même moi en tant que médecin, j’ai un peu peur des aiguilles! Mais on peut gérer ça.</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -8427,7 +8563,7 @@ export const contentPersonasBI = {
                 getting a vaccine?
               </>
             ),
-            FR: <></>,
+            FR: <>Aimeriez-vous entendre certaines solutions qui vous aideraient à avoir le vaccin?</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -8439,7 +8575,7 @@ export const contentPersonasBI = {
                 if we could change the environment and the way the vaccine is delivered?
               </>
             ),
-            FR: <></>,
+            FR: <>Si la question de (l’aiguille) n’entrait plus un enjeu, que se passerait-il? Je ne veux pas dire que ça peut être une réalité, mais si on pouvait modifier l’environnement et la façon dont le vaccin est donné, que se passerait-il?</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -8460,7 +8596,7 @@ export const contentPersonasBI = {
                       address your fear of needles?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Alors, si je comprends bien par exemple, si cette peur dont on parle n’existait pas, vous vous feriez vacciner contre la COVID? Avez-vous d’autres inquiétudes ou questions au sujet du vaccin avant qu’on discute de votre peur des aiguilles?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -8475,7 +8611,7 @@ export const contentPersonasBI = {
                       fear of getting the needle was bothering you. Can you tell me more about this fear?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc, vous n’êtes pas contre le vaccin, mais c’est la peur des aiguilles qui vous tracasse, c’est bien ça? Pouvez-vous m’en parler un peu plus?</>,
                 },
                 featured: false,
                 image: "",
@@ -8490,7 +8626,7 @@ export const contentPersonasBI = {
                       you were a child or is it something that has kind of got worse over time?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Oh, je suis désolé d’apprendre ça. Vous souvenez-vous de ce qui pourrait avoir déclenché cette peur, quand vous étiez jeune peut-être? Ou bien est-ce que votre peur s’est aggravée avec le temps?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -8515,7 +8651,7 @@ export const contentPersonasBI = {
                       I&apos;m a doctor! But we can address this.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je peux vous comprendre parce qu’à vrai dire, même moi en tant que médecin, j’ai un peu peur des aiguilles! Mais on peut gérer ça.</>,
                 },
                 featured: true,
                 image: "", // Add image path
@@ -8530,7 +8666,7 @@ export const contentPersonasBI = {
                       done for that reason.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je comprends votre peur des aiguilles et je sais que pour nous les médecins, c’est toujours difficile de faire prendre des prises de sang pour cette raison.</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -8557,7 +8693,7 @@ export const contentPersonasBI = {
                       help me get over this. It might be something to think about.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En fait, vous parlez à quelqu’un qui a déjà eu peur des aiguilles, croyez-le ou non, ce qui est bien terrible pour un médecin. Je me souviens de m’être évanoui à la vue d’une aiguille quand j’étais jeune. Alors, peut-être que je peux vous faire part de certaines stratégies qui m’ont aidé à surmonter ma peur. C’est à considérer.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -8572,7 +8708,7 @@ export const contentPersonasBI = {
                       about getting a vaccine?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Aimeriez-vous entendre certaines solutions qui vous aideraient à avoir le vaccin?</>,
                 },
                 featured: false,
                 image: "",
@@ -8588,7 +8724,7 @@ export const contentPersonasBI = {
                       these together?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Il existe bien des options différentes pour les personnes sensibles aux aiguilles. Aimeriez-vous qu’on en discute ensemble?</>,
                 },
                 featured: true,
                 image: "",
@@ -8616,7 +8752,7 @@ export const contentPersonasBI = {
                       should set up an appointment for you at one of these locations.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Parce que vous n’êtes pas la seule personne à avoir peur des aiguilles, divers endroits se sont dotés de cliniques à « faible stimulus » ou « conviviales pour les sens ». Dans ces cliniques, des mesures spéciales sont prises pour réduire la douleur potentielle ou la détresse liée à la vaccination. Je pense qu’on devrait vous prendre un rendez-vous à ce genre de clinique.</>,
                 },
                 featured: true,
                 image: "",
@@ -8631,7 +8767,7 @@ export const contentPersonasBI = {
                       And you can look away when they give you the injection and you probably won&apos;t even feel it.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Il faut tout de même que vous sachiez que l’aiguille d’un vaccin est beaucoup plus petite que celle des prises de sang. Vous pouvez regarder ailleurs quand ils vous donnent l’injection, et vous ne la sentirez probablement pas.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg", // Add image path
@@ -8643,7 +8779,7 @@ export const contentPersonasBI = {
                   EN: (
                     <>It&apos;s a super tiny needle. I didn&apos;t even notice it when I went in and got my vaccine.</>
                   ),
-                  FR: <></>,
+                  FR: <>L’aiguille est minuscule. Je n’ai même pas rien senti que je me suis fait vacciner.</>,
                 },
                 featured: false,
                 image: "",
@@ -8659,7 +8795,7 @@ export const contentPersonasBI = {
                       times for you, there are little tips and tricks that I learned along the way that I could share.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Certaines personnes font une « syncope » à l’idée ou à la vue d’une aiguille. Ça veut dire qu’il y a une baisse de tension artérielle. Et si c’est ce qui se passe généralement dans votre cas, je peux vous donner quelques trucs et conseils que j’ai appris avec le temps.</>,
                 },
                 featured: false,
                 image: "",
@@ -8684,7 +8820,7 @@ export const contentPersonasBI = {
                       what if we could change the environment and the way the vaccine is delivered?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si la question de (l’aiguille) n’entrait plus un enjeu, que se passerait-il? Je ne veux pas dire que ça peut être une réalité, mais si on pouvait modifier l’environnement et la façon dont le vaccin est donné, que se passerait-il?</>,
                 },
                 featured: true,
                 image: "",
@@ -8700,7 +8836,7 @@ export const contentPersonasBI = {
                       ever caught COVID. I wouldn&apos;t want you to have to go through all that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si vous voulez, je peux sûrement vous trouver une photo du genre d’aiguille qu’ils utilisent. Elle est vraiment minuscule. Aussi, pensez au nombre de fois que vous devrez vous faire piquer si jamais vous attrapiez la COVID. Je ne voudrais pas que vous viviez ça.</>,
                 },
                 featured: false,
                 image: "",
@@ -8715,7 +8851,7 @@ export const contentPersonasBI = {
                       pretty significant, too, even if you just have a mild case.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous avez peur des aiguilles, mais certains des autres (symptômes de la COVID) peuvent être pas mal graves aussi, même si votre cas était bénin.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -8731,7 +8867,7 @@ export const contentPersonasBI = {
                       here?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Que pensez-vous de la possibilité de faire affaire avec (un clinicien, à la clinique ou au cabinet) de confiance pour votre vaccin? D’accord? Et si vous receviez le vaccin ici même, à mon cabinet? Si je peux faire venir le vaccin ici, est-ce que vous seriez prête à considérer ça?</>,
                 },
                 featured: true,
                 image: "",
@@ -8748,7 +8884,7 @@ export const contentPersonasBI = {
                       this a forgettable experience.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qu’on va faire, c’est qu’on va vous faire venir à mon cabinet. Je vais vous donner quelque chose pour lutter contre l’anxiété. On va attendre que ça fasse effet, puis (un clinicien de confiance à la clinique ou au cabinet) va s’occuper de vous. On va faire tout ce qu’on peut pour rendre cette expérience oubliable.</>,
                 },
                 featured: false,
                 image: "",
@@ -8764,7 +8900,7 @@ export const contentPersonasBI = {
                       you&apos;re interested in that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense qu’on pourrait s’entretenir avec des conseillers en comportement à notre clinique. Peut-être que je pourrais vous mettre en contact avec une telle personne pour discuter de certaines des stratégies vous permettant de surmonter cette peur. Est-ce que c’est le genre de chose qui vous intéresserait?</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -8783,11 +8919,11 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>How patients can overcome needle phobia and get the COVID vaccine</>,
-          FR: <></>,
+          FR: <>How patients can overcome needle phobia and get the COVID vaccine</>,
         },
         image: "",
         // image: "/assets/screenshots/How patients can overcome needle phobia and get the COVID vaccine.png",
-        linkText: { EN: <>Article from Open Access Government</>, FR: <></> },
+        linkText: { EN: <>Article from Open Access Government</>, FR: <>Article d’Open Access Government</> },
         link: "https://www.openaccessgovernment.org/patients-covid-19-vaccination-needle-phobia/103163/",
         // Be sure that URLs do NOT include the https://
         description: {
@@ -8797,7 +8933,8 @@ export const contentPersonasBI = {
               phobia. (April 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Un médecin explore comment aider les patients qui refusent le vaccin contre la COVID-19 en raison de leur peur des aiguilles.
+          (avril 2021)</>,
         },
         // Open question: Should we add tags to resources, so individual resources are findable in a search?
         // Or close enough to get them to the resources page?
@@ -8805,11 +8942,11 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>NHS: Overcoming your needle phobia (fear of needles)</>,
-          FR: <></>,
+          FR: <>NHS: Overcoming your needle phobia (fear of needles)</>,
         },
         image: "", // path for screenshot image
         // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-        linkText: { EN: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>, FR: <></> },
+        linkText: { EN: <>Article from Guy&apos;s and St Thomas&apos; NHS Foundation Trust</>, FR: <>Article de Guy's and St Thomas' NHS Foundation Trust</> },
         link: "https://www.guysandstthomas.nhs.uk/resources/patient-information/all-patients/overcoming-your-fear-of-needles.pdf",
         description: {
           EN: (
@@ -8818,18 +8955,18 @@ export const contentPersonasBI = {
               Patient-facing. (2017)
             </>
           ),
-          FR: <></>,
+          FR: <>Dépliant du NHS expliquant la peur des aiguilles et offrant des conseils pratiques pour surmonter cette peur, à l’intention des patients. (2017)</>,
         },
       },
 
       {
         title: {
           EN: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
-          FR: <></>,
+          FR: <>Alberta Health Services: Commitment to Comfort - For Providers</>,
         },
         image: "", // path for screenshot image
         // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-        linkText: { EN: <>PDF Handout for Providers</>, FR: <></> },
+        linkText: { EN: <>PDF Handout for Providers</>, FR: <>Fichier PDF à l’intention des fournisseurs</> },
         link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-orientation.pdf",
         description: {
           EN: (
@@ -8838,22 +8975,23 @@ export const contentPersonasBI = {
               (March 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Document sommaire en version PDF à l’intention des fournisseurs pour atténuer la douleur et la détresse avant, pendant et après l’immunisation.
+          (mars 2021)</>,
         },
       },
 
       {
         title: {
           EN: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
-          FR: <></>,
+          FR: <>Alberta Health Services: Commitment to Comfort - For Patients</>,
         },
         image: "", // path for screenshot image
         // image: "/assets/screenshots/Overcoming your needle phobia (fear of needles) (PDF).png", // path for screenshot image
-        linkText: { EN: <>PDF Handout for Patients</>, FR: <></> },
+        linkText: { EN: <>PDF Handout for Patients</>, FR: <>Fichier PDF à l’intention des patients</> },
         link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-commitment-comfort-vaccine-client-summary.pdf",
         description: {
           EN: <>A PDF summary document for patients on how to improve comfort during immunizations (March 2021)</>,
-          FR: <></>,
+          FR: <>Document sommaire en version PDF à l’intention des patients pour les rendre plus confortables pendant l’immunisation. (mars 2021)</>,
         },
       },
 
@@ -8861,9 +8999,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>ImmunizeBC: Managing Needle Fears</>,
 
-          FR: <></>,
+          FR: <>ImmunizeBC: Managing Needle Fears</>,
         },
-        linkText: { EN: <>Advice page from ImmunizeBC on needle fears</>, FR: <></> },
+        linkText: { EN: <>Advice page from ImmunizeBC on needle fears</>, FR: <>Page de conseils d’ImmunizeBC sur la peur des aiguilles</> },
         link: "https://immunizebc.ca/adults-managing-needle-fears",
         description: {
           EN: (
@@ -8872,7 +9010,7 @@ export const contentPersonasBI = {
               2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Brève page de conseils d’ImmunizeBC sur la peur des aiguilles et la gestion de cette peur pour la vaccination contre la COVID-19. (mai 2021)</>,
         },
       },
 
@@ -8901,7 +9039,14 @@ export const contentPersonasBI = {
               make any difference at this point.&rdquo;
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>« Les gens exagèrent. C’est juste une mauvaise grippe. »</>, 
+          <>« Je connais quelqu’un qui l’a attrapé et c’était pas si mal. »</>, 
+          <>« J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas pourquoi je me ferais vacciner. »</>, 
+          <>« Ça ne touche que les gens âgés. Je suis pas mal jeune. Ça ne devrait donc pas être un problème. »</>, 
+          <>« Le taux de survie à la COVID est de 99 pour cent. Cette maladie est moins mortelle que la grippe pour la plupart des gens. »</>, 
+          <>« La ligne d’arrivée ou les restrictions changent constamment. Je ne suis pas certaine que le vaccin va faire une différence à ce stade-ci. »
+          </>],
         },
       },
 
@@ -8919,7 +9064,11 @@ export const contentPersonasBI = {
             </>,
             <>Avoid lengthy debates about facts, and stress the ease of access and high safety profile of vaccines.</>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <>Précisez à votre patiente qu’à titre de fournisseur de soins de santé de la communauté, votre perspective de la gravité et des incidences de la COVID est différente.</>, 
+          <>Mentionnez-lui que bien des plans de réouverture sont rattachés aux taux de vaccination et qu’il continuera d’en être ainsi.</>, 
+          <>Dites-lui que les vaccins peuvent protéger non seulement le patient, mais aussi ses amis, sa famille et ses êtres chers.</>, 
+          <>Évitez les longs débats sur les faits et mettez l’accent sur l’accès facile et l’innocuité des vaccins.</>],
         },
       },
 
@@ -8934,7 +9083,7 @@ export const contentPersonasBI = {
               pandemic on the patient&apos;s community.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>Dans le cas de patients qui n’ont pas eu la COVID ou dont les groupes sociaux ne l’ont pas eue, il peut être dur de comprendre la gravité de la maladie et ses ravages. Si vous prenez le temps d’expliquer votre point de vue en tant que professionnel de la santé, ça pourrait jeter de la lumière sur les « effets cachés » de la pandémie sur la communauté de votre patient.</>,],
         },
       },
     },
@@ -8945,7 +9094,7 @@ export const contentPersonasBI = {
           text: {
             EN: <>Could you tell me a little bit more about your understanding of COVID and its severity?</>,
 
-            FR: <></>,
+            FR: <>Pourriez-vous me parler un peu de ce qu’est la COVID pour vous et de sa gravité?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -8959,7 +9108,7 @@ export const contentPersonasBI = {
                 of people who have been really sick with it.
               </>
             ),
-            FR: <></>,
+            FR: <>Je sais que vous ne voyez pas nécessairement les effets de la COVID au quotidien. Peut-être que dans votre entourage, personne n’a vraiment été malade. Par conséquent, ça peut être difficile pour vous d’être conscient de l’impact de la COVID sur le monde. Mais chose certaine, ici en ville, il y a beaucoup de gens qui sont tombés vraiment malades à cause de la COVID.</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -8971,7 +9120,7 @@ export const contentPersonasBI = {
                 may not necessarily align with your views of COVID. Could I share my experience&#40;s&#41; with you?
               </>
             ),
-            FR: <></>,
+            FR: <>J’ai vu beaucoup de patients et c’est pour ça que j’ai une perspective différente de la pandémie, qui ne cadre pas nécessairement avec la vôtre. Est-ce que je peux vous faire part de mon expérience?</>,
           },
           image: "doctorBlackManBeard.svg",
         },
@@ -8985,7 +9134,7 @@ export const contentPersonasBI = {
                 community, need this vaccine? I think we do.
               </>
             ),
-            FR: <></>,
+            FR: <>Ce qui m’inquiète par contre, c’est que vous pourriez être le maillon d’une chaîne de transmission conduisant une personne aux soins intensifs, qu’il s’agisse de votre mère ou d’un membre de votre famille qui n’est pas en aussi bonne santé que vous. Avez-vous absolument besoin de ce vaccin? Peut-être que non. Vous pourriez peut-être vous en passer. Mais en tant que communauté, est-ce qu’on a besoin de ce vaccin? Je pense que oui.</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -8999,14 +9148,14 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>Could you tell me a little bit more about your understanding of COVID and its severity?</>,
-                  FR: <></>,
+                  FR: <>Pourriez-vous me parler un peu de ce qu’est la COVID pour vous et de sa gravité?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
               },
               {
-                text: { EN: <>Can we talk through your information? Can you show me your sources?</>, FR: <></> },
+                text: { EN: <>Can we talk through your information? Can you show me your sources?</>, FR: <>Pouvez-vous me parler de votre information? Pouvez-vous me montrer vos sources?</> },
                 featured: false,
                 image: "",
                 fullStoryID: "",
@@ -9031,7 +9180,7 @@ export const contentPersonasBI = {
                       town here, there&apos;s lots of people who have been really sick with it.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous ne voyez pas nécessairement les effets de la COVID au quotidien. Peut-être que dans votre entourage, personne n’a vraiment été malade. Par conséquent, ça peut être difficile pour vous d’être conscient de l’impact de la COVID sur le monde. Mais chose certaine, ici en ville, il y a beaucoup de gens qui sont tombés vraiment malades à cause de la COVID.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -9047,7 +9196,7 @@ export const contentPersonasBI = {
                       had the disease.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je peux comprendre qu’une personne en santé comme vous puisse ne pas s’inquiéter de la COVID. C’est parfois difficile de comprendre les chiffres et leurs incidences quand on ne connaît personne qui a eu la maladie.</>,
                 },
                 featured: false,
                 image: "",
@@ -9063,7 +9212,7 @@ export const contentPersonasBI = {
                       homeschool our kids forever, not having to designate one person to go to the grocery store.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En fait, je pense qu’on s’est tellement tous habitués à essayer de rester en sécurité qu’on a oublié qu’au bout du compte, ce qu’on veut, c’est de ne pas porter de masque pour le restant de nos jours, de ne pas enseigner à nos enfants à domicile pour toute la vie et de ne pas avoir à désigner une seule personne pour aller faire l’épicerie.</>,
                 },
                 featured: false,
                 image: "",
@@ -9080,7 +9229,7 @@ export const contentPersonasBI = {
                       even feel like it&apos;s even going to help you?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc, si je comprends bien, vous ne voyez pas d’avantages à vous faire vacciner. Vous avez déjà laissé tomber tellement de choses et vous vous demandez : « <i>Pourquoi est-ce que je dois faire une chose de plus pour le monde?</i> », surtout quand vous avez l’impression que ça ne va pas vous aider personnellement?</>,
                 },
                 featured: true,
                 image: "",
@@ -9105,7 +9254,7 @@ export const contentPersonasBI = {
                       with you?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai vu beaucoup de patients et c’est pour ça que j’ai une perspective différente de la pandémie, qui ne cadre pas nécessairement avec la vôtre. Est-ce que je peux vous faire part de mon expérience?</>,
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -9119,7 +9268,7 @@ export const contentPersonasBI = {
                       out of this pandemic. Would you like to hear what some of those reasons are?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Bien des raisons expliquent pourquoi l’immunité naturelle ou l’immunité collective ne sont pas les meilleurs moyens de se sortir de cette pandémie. Aimeriez-vous que je vous explique certaines de ces raisons?</>,
                 },
                 featured: false,
                 image: "",
@@ -9148,7 +9297,7 @@ export const contentPersonasBI = {
                       enough of us do it, we&apos;re going to go back to &#91;lockdowns, restrictions, etc.&#93;.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc, il y a des personnes comme vous et comme moi aux soins intensifs, ce qui est tout à fait évitable en obtenant un vaccin semblable à celui contre la grippe. Une des difficultés qu’on rencontre en ce moment, c’est d’essayer de convaincre la population que la COVID est différente et qu’elle est très différente de maladies comme la grippe. La COVID se transmet beaucoup plus facilement. Son taux de gravité est plus élevé, et elle surcharge déjà les systèmes de santé de par le monde. Et vous voyez, on est en confinement en raison de cette foutue de maladie. Donc pour s’en sortir, il faut que les personnes comme vous et moi se fassent vacciner. Mais si un nombre insuffisant de personnes se font vacciner, (le confinement, les restrictions, etc.) vont recommencer.</>,
                 },
                 featured: false,
                 image: "",
@@ -9166,7 +9315,7 @@ export const contentPersonasBI = {
                       doesn&apos;t need to happen.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour être franc, ce sont les personnes qui ne sont pas en santé qui courent plus de risques de vraiment souffrir de la COVID, il n’y a pas de doute là-dessus. Cela dit, il y a aussi des personnes plus jeunes et en très bonne santé qui finissent aux soins intensifs. C’est catastrophique. Le pire dans tout ça, c’est que c’est tellement évitable. Ça n’a pas besoin d’être ainsi.</>,
                 },
                 featured: false,
                 image: "",
@@ -9187,7 +9336,7 @@ export const contentPersonasBI = {
                       were all healthy enough that they would otherwise be living normal lives and productive lives.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je rencontre beaucoup de personnes, je vis bien des expériences différentes, et j’ai un portrait beaucoup plus général que celui de la personne moyenne qui connaît seulement les membres de sa famille et ses groupes sociaux immédiats. Ce que je sais, c’est que beaucoup de personnes sont tombées malades (en raison de la COVID), et qu’un petit pourcentage d’entre elles a été extrêmement malade. Vous avez tout à fait raison. Le problème, c’est qu’un petit pourcentage d’un grand nombre de personnes, ça finit par s’accumuler, et que chaque cas qui aboutit aux soins intensifs y reste pendant trois semaines en moyenne, et que de ce nombre, environ 30 pour cent meurent. Même plus tard dans le courant de la pandémie, on a vu des jeunes aboutir aux soins intensifs. Ces jeunes étaient tous assez en santé et ils avaient une vie normale et productive.</>,
                 },
                 featured: true,
                 image: "",
@@ -9209,7 +9358,7 @@ export const contentPersonasBI = {
                       units. What do you say we do then?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Au final, je sais qu’il y a beaucoup de confusion, que les messages ne sont pas cohérents et qu’il y a des gens qui vont complètement dire le contraire de ce que je dis parce que selon eux, c’est une chose naturelle qui devrait suivre son cours. Si c’est le cas, qu’est-ce qui va se passer? Vous n’avez qu’à penser à ce qui s’est passé (<i>au début de 2021: Ontario, Québec, Inde</i>), où les unités de soins intensifs étaient engorgées. Mais cette situation est différente. C’est différent parce que le virus est beaucoup plus infectieux. Il n’y a pas d’immunité au sein de la population. Le virus se répand comme un feu déchaîné, et ces gens-là disent qu’il faut atteindre l’immunité naturelle. Le problème avec ça, c’est qu’il va y avoir un nombre effarant de personnes qui va être malade et qui va engorger les unités de soins intensifs. Qu’est-ce qu’on va faire à ce moment-là?</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -9230,7 +9379,7 @@ export const contentPersonasBI = {
                       <i>Reference India&apos;s wave of COVID in early 2021; Reference long COVID, etc.</i>&#93;.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>D’après ce que j’ai vu dans les pays qui ont adopté cette approche, celle de l’« immunité collective », au début, quand tout a commencé, ils se disaient que si on laisse les gens l’attraper, la population finirait par être suffisamment immunisée pour s’en sortir et la maladie suivrait son cours. Mais avec le temps, ils se sont rendu compte que ce n’était pas une bonne façon de procéder. Ce qu’ils (les politiciens, etc.) ne savaient pas, c’est que la COVID peut toucher bien des personnes différentes de manières différentes. Atteindre l’immunité collective sans vaccin va se traduire par de nombreuses pertes de vie et beaucoup de gens très malades. ( <i>Faites mention de la vague de COVID qui a sévi en Inde au début de 2021; du syndrome post-COVID, etc.</i>).</>,
                 },
                 featured: false,
                 image: "",
@@ -9250,7 +9399,7 @@ export const contentPersonasBI = {
                       waiting game I&apos;m comfortable with.{" "}
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>L’immunité naturelle présume que beaucoup de personnes vont tomber malades. Pour grand nombre d’entre eux, la maladie va se résumer à la congestion nasale et à la grippe. Mais 30 pour cent d’entre elles vont être hospitalisées. C’est quelque chose qu’on sait avec certitude. Y a-t-il assez de place pour tout ce monde à l’hôpital? Est-ce qu’on peut accepter qu’une partie de ces personnes meure? J’imagine que vous pourriez me dire que prendre une chance avec l’immunité naturelle nous amène au même point qu’avec les vaccins. Mais sans vaccins, on va y arriver beaucoup plus lentement. Pendant ce temps-là, on va encore attendre que les gens meurent, on va continuer à faire du télétravail et nos enfants n’iront toujours pas en classe. Moi, ce n’est pas le genre de chose qui me satisfait.</>,
                 },
                 featured: true,
                 image: "",
@@ -9279,7 +9428,7 @@ export const contentPersonasBI = {
                       that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’aimerais vous brosser un tableau complètement différent. Disons, par exemple, que vous (et votre groupe social), vous vous rassemblez par un bon dimanche, puis vous rentrez chacun chez vous. Vous avez tous décidé de prendre un risque à la Thelma et Louise, de vous laisser aller et de ne pas vous faire vacciner. Que se passerait-il si le lundi, (votre ami/ __ un membre de votre famille) était admis à l’hôpital en raison d’une pneumonie à la COVID et que vous auriez tous été en contact avec lui? Et si vous ne savez pas où il l’a attrapé, comment vous sentiriez-vous à l’idée de lui avoir peut-être transmis? Comment vous sentiriez-vous, sachant que vous auriez pu éviter cette situation?</>,
                 },
                 featured: true,
                 image: "",
@@ -9297,7 +9446,7 @@ export const contentPersonasBI = {
                       transmission chains and gets us to normal.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qui m’inquiète, c’est que vous pourriez être le maillon d’une chaîne de transmission conduisant une personne aux soins intensifs, qu’il s’agisse de votre mère ou d’un membre de votre famille qui n’est pas en aussi bonne santé que vous. Avez-vous absolument besoin de ce vaccin? Peut-être que non. Vous pourriez peut-être vous en passer. Mais en tant que communauté, est-ce qu’on a besoin de ce vaccin? Je pense que oui. C’est comme ça qu’on peut obtenir l’immunité. Le vaccin freine la chaîne de transmission et nous ramène à la normale.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -9315,7 +9464,7 @@ export const contentPersonasBI = {
                       It&apos;s also about our responsibility to our families and the community around us.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour moi, c’est important la vaccination, pas seulement pour assurer votre sûreté, mais aussi celle des gens autour de vous. Je suis certain que vous allez vouloir voir vos (enfants/ __ petits-enfants/ __ parents/ __ amis). Voir votre monde, c’est une pas mal bonne raison de vous faire vacciner, non? Cette responsabilité n’est pas seulement envers notre propre santé. C’est aussi une responsabilité qu’on a envers nos familles et les gens de nos communautés.</>,
                 },
                 featured: true,
                 image: "",
@@ -9332,7 +9481,7 @@ export const contentPersonasBI = {
                       that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous avez parlé de faire (des activités). Vous avez mentionné le travail en personne et la camaraderie avec vos collègues. Vous avez parlé de vos enfants qui devraient retourner à l’école normalement. Quel prix seriez-vous prête à payer pour ça? Que seriez-vous prête à donner pour ça?</>,
                 },
                 featured: false,
                 image: "",
@@ -9350,9 +9499,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Understanding herd immunity</>,
 
-          FR: <></>,
+          FR: <>Understanding herd immunity</>,
         },
-        linkText: { EN: <>Nature: Human Behaviour (Journal) article</>, FR: <></> },
+        linkText: { EN: <>Nature: Human Behaviour (Journal) article</>, FR: <>Article publié dans Nature: Human Behaviour (revue)</> },
         link: "https://www.immunize.ca/sites/default/files/resources/s41562-017-0056_0.pdf",
         description: {
           EN: (
@@ -9361,7 +9510,8 @@ export const contentPersonasBI = {
               advocacy. (2017)
             </>
           ),
-          FR: <></>,
+          FR: <>Article de revue portant sur l’importance de communiquer le concept de l’immunité collective dans la défense du vaccin.
+          (2017)</>,
         },
       },
 
@@ -9369,9 +9519,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Similarities and Differences Between COVID and the Flu</>,
 
-          FR: <></>,
+          FR: <>Similarities and Differences Between COVID and the Flu</>,
         },
-        linkText: { EN: <>US CDC comparison between COVID and Influenza</>, FR: <></> },
+        linkText: { EN: <>US CDC comparison between COVID and Influenza</>, FR: <>Comparaison de la COVID et de la grippe par le CDC américain</> },
         link: "https://www.cdc.gov/flu/symptoms/flu-vs-covid19.htm ",
         description: {
           EN: (
@@ -9380,7 +9530,7 @@ export const contentPersonasBI = {
               and complications (Updated, June 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Comparaison de la COVID et de la grippe, de leurs effets sur la période infectieuse, les populations vulnérables et les complications. (mis à jour en juin 2021)</>,
         },
       },
 
@@ -9388,9 +9538,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
 
-          FR: <></>,
+          FR: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
         },
-        linkText: { EN: <>Forbes Op-Ed by Infectious Diseases Doctor</>, FR: <></> },
+        linkText: { EN: <>Forbes Op-Ed by Infectious Diseases Doctor</>, FR: <>Éditorial de Forbes par un médecin spécialisé en maladies infectieuses</> },
         link: "https://www.forbes.com/sites/coronavirusfrontlines/2021/04/23/if-herd-immunity-is-your-plan-to-beat-covid-you-need-a-plan-b/",
         description: {
           EN: (
@@ -9399,7 +9549,7 @@ export const contentPersonasBI = {
               thresholds are lofty. (April 2021)
             </>
           ),
-          FR: <></>,
+          FR: <>Discussion au sujet des difficultés d’obtention de l’immunité collective et des raisons pour lesquelles les vaccins jouent un rôle critique dans la situation même si les seuils sont élevés. (avril 2021)</>,
         },
       },
     ],
@@ -9447,7 +9597,41 @@ export const contentPersonasBI = {
               </a>
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+            <>
+              <p>
+              Vous pouvez télécharger ci-dessous des diapositives faisant ressortir les approches pour tous types de conversation sur les hésitations. Les diapositives décrivent les approches réussies pour :
+              </p>
+              <ul className="ml-5 mxs:ml-10 list-disc">
+                <li>
+                <strong>Réajustez </strong> vos attentes en fonction de la conversation
+                </li>
+                <li>
+                <strong>Entamez</strong> une conversation ouverte
+                </li>
+                <li>
+                <strong>Affirmez</strong> les inquiétudes de votre patient et les points de départ
+                </li>
+                <li>
+                <strong>Demandez</strong> la permission, puis <strong>faites part</strong> de votre propre information ou de vos perspectives
+                </li>
+                <li>
+                <strong>Évoquez</strong> les visions positives de l’avenir et planifiez ensemble pour trouver un objectif commun
+                </li>
+              </ul>
+            </>,
+            <>
+              <a
+                className="px-4 pt-1.5 pb-1  smFont orangeLink underline"
+                href="https://docs.google.com/presentation/d/1UCFV9zVZFa6sLrRXGBnYLK0zUK7A6kDZbFHJSmwe_Ag/edit?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>Téléchargement des diapositives</span>
+                <FiExternalLink className="ml-1 inline" size={18} />
+              </a>
+            </>,
+          ],
         },
       },
       // (Undifferentiated)
@@ -9482,21 +9666,20 @@ export const contentPersonasBI = {
             </>,
           ],
           FR: [
-            <></>,
+            <>Le fait d’offrir de l’information générique sur les vaccins n’est peut-être pas aussi efficace que d’offrir des communications ciblées sur les inquiétudes particulières d’un patient.</>,
             <>
               <div className="relative">
-                <span>Use the</span>
+                <span>Utilisez les</span>
                 <EaaseHoverPopupFR
                   eaaseTextClass="mx-1.5 orangeUnderline"
                   eaaseBoxClass="absolute  md:right-0 mxl:right-10  top-10  w-full mxs:w-100 sm:w-120 md:w-120 lg:w-140  shadow-gray"
                 />
                 <span>
-                  to structure a conversation that can help you differentiate your patient&apos;s hesitancy before
-                  responding. (TEMP FRENCH)
+                pour donner de la structure à vos conversations, car cela peut vous aider à déterminer le genre d’hésitation de votre patient avant de commencer à lui répondre.
                 </span>
               </div>
             </>,
-            <></>,
+            <>Faites en sorte de faire participer votre patient à la conversation afin de mieux comprendre et déterminer le type ou la source de son hésitation vaccinale.</>, <>Prenez votre temps et ne visez pas de recevoir un « oui » pendant n’importe quelle de vos conversations. Votre objectif, c’est de vous faire l’allié de votre patient.</>
           ],
         },
       },
@@ -9512,7 +9695,7 @@ export const contentPersonasBI = {
               can make the difference.
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [<>Prenez le temps de vous familiariser avec les inquiétudes propres à votre patient en matière de vaccins contre la COVID afin d’avoir une meilleure conversation. L’objectif de ces conversations est d’<strong>(re)affirmer</strong> que vous êtes un allié; de <strong>valider</strong> les expériences de votre patient; et de viser la <strong>considération</strong> du vaccin et non pas son acceptation. Votre rôle de conseiller de confiance en soins de santé peut faire une différence.</>,],
         },
       },
     },
@@ -9528,7 +9711,7 @@ export const contentPersonasBI = {
                 comfortable doing that?
               </>
             ),
-            FR: <></>,
+            FR: <>Y a-t-il une raison pour laquelle vous ne vous sentez pas à l’aise vis-à-vis du vaccin? Voulez-vous en discuter? Êtes-vous à l’aise d’en discuter?</>,
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -9543,7 +9726,7 @@ export const contentPersonasBI = {
                 here - we&apos;re just having a conversation.
               </>
             ),
-            FR: <></>,
+            FR: <>Je suis content qu’on en parle. Je suis vraiment content que vous acceptiez de discuter de la vaccination parce que ça prouve que vous avez une ouverture d’esprit et que vous êtes prête à entendre parler d’autres facettes de la question. Je ne suis pas là pour vous convaincre de vous faire vacciner ou de ne pas vous faire vacciner. Vous êtes aux commandes ici. On ne fait qu’en discuter.</>,
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -9557,7 +9740,7 @@ export const contentPersonasBI = {
                 what I know? As opposed to, maybe, what you&apos;re hearing about from other sources?
               </>
             ),
-            FR: <></>,
+            FR: <>J’ai fait pas mal de recherche sur ces vaccins et sur les différentes options qui peuvent s’offrir à vous. Est-ce que je pourrais vous parler un peu de ce que je sais? Et non pas peut-être seulement vous contenter de ce que vos autres sources vous disent?</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -9573,7 +9756,7 @@ export const contentPersonasBI = {
                 really hard on you this last year, but we can do something about that.
               </>
             ),
-            FR: <></>,
+            FR: <>Si on se met à regarder ce qui se passe dans le monde, les pays qui ont réussi à faire vacciner les gens, ce sont eux qui retournent à la normale en ce moment. Ils sont capables (d’aller dans leurs lieux de culte/ __ de faire des sorties/ __ de se visiter, de vivre). Ils sont capables de faire des choses du genre. Je sais que le fait de ne pas avoir pu (aller à votre lieu de culte/faire des sorties/visiter les gens), avec les membres de votre communauté, ça a été très dur pour vous l’année dernière, mais on peut faire quelque chose pour remédier à la situation.</>,
           },
           image: "doctorBlackWoman.svg",
         },
@@ -9593,7 +9776,7 @@ export const contentPersonasBI = {
                       you comfortable doing that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Y a-t-il une raison pour laquelle vous ne vous sentez pas à l’aise vis-à-vis du vaccin? Voulez-vous en parler? Êtes-vous à l’aise d’en discuter?</>,
                 },
                 featured: false,
                 image: "",
@@ -9610,7 +9793,7 @@ export const contentPersonasBI = {
                       see. So more of a &lsquo;<i>maybe</i>&rsquo;, or &lsquo;<i>later</i>&rsquo;?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Permettez-moi de bien comprendre ce que vous me dites. Est-ce que vous êtes du genre à dire : « <i>Non, jamais, au grand jamais »?</i> Ou êtes-vous plutôt indécis et vous préférez attendre de voir ce qui va se passer? Ni plus ni moins, êtes-vous du genre à dire « <i>peut-être</i> » ou « <i>plus tard</i> »?</>,
                 },
                 featured: true,
                 image: "",
@@ -9625,7 +9808,7 @@ export const contentPersonasBI = {
                       more?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ça m’intéresse : Où avez-vous entendu parler de (ces théories, ces idées)? Pourriez-vous m’en dire un peu plus?</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -9643,7 +9826,7 @@ export const contentPersonasBI = {
                       about your potential risks around COVID?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je me demande ce que vous pensez de votre propre risque en matière de COVID? Parce qu’en ce moment, on parle des risques potentiels avec le vaccin. Et je me demande si vous avez songé à vos risques potentiels en matière de COVID?</>,
                 },
                 featured: false,
                 image: "",
@@ -9659,7 +9842,7 @@ export const contentPersonasBI = {
                       are on the same page.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vais oser vous contredire un peu ici. Je veux faire en sorte que vous ayez la bonne information, histoire d’être sur la même longueur d’onde.</>,
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -9685,7 +9868,7 @@ export const contentPersonasBI = {
                       You&apos;re in charge here &mdash; we&apos;re just having a conversation.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis content qu’on en parle. Je suis vraiment content que vous acceptiez de discuter de la vaccination parce que ça prouve que vous avez une ouverture d’esprit et que vous êtes prête à entendre parler d’autres facettes de la question. Je ne suis pas là pour vous convaincre de vous faire vacciner ou de ne pas vous faire vacciner. Vous êtes aux commandes ici. On ne fait qu’en discuter.</>,
                 },
                 featured: false,
                 image: "",
@@ -9702,7 +9885,7 @@ export const contentPersonasBI = {
                       progress and help you make the best decision for your health.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis d’accord avec vous en ce sens que la couverture médiatique entourant les vaccins est vraiment difficile à suivre. On dirait qu’il y a quelque chose de nouveau tous les jours, qui contredit ce qui a été dit avant, ce qui peut rendre encore plus difficile la connaissance de la vérité. Mais ensemble, je pense qu’on peut faire des progrès et vous aider à prendre la meilleure décision possible du point de vue de votre santé.</>,
                 },
                 featured: true,
                 image: "",
@@ -9717,7 +9900,7 @@ export const contentPersonasBI = {
                       really confusing, isn&apos;t it? Can we compare notes?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous faites des recherches sur Internet et moi aussi. Je vous comprends. On ne s’y retrouve plus, non? Est-ce qu’on peut comparer notre information?</>,
                 },
                 featured: false,
                 image: "",
@@ -9734,7 +9917,7 @@ export const contentPersonasBI = {
                       to, and I&apos;m hoping to share what I&apos;ve found.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous avez probablement fait beaucoup de lecture à ce sujet. N’est-ce pas? Ces jours-ci, beaucoup de personnes lisent au sujet de ces vaccins, non? Il existe beaucoup d’information à ce sujet. Il y a aussi de la désinformation et de l’information partielle sur les vaccins. Ça sème des doutes dans l’esprit des gens, non? J’ai dépouillé l’information et j’aimerais bien vous faire part de ce que j’ai trouvé.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -9754,7 +9937,7 @@ export const contentPersonasBI = {
                       figure out what&apos;s best for your family too. What&apos;s best for your community too.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La dernière année et même plus ont été incroyablement difficiles, n’est-ce pas? Il y a tellement d’incertitude. À la lumière de tout ça, c’est absolument raisonnable d’avoir des questions sur la vaccination. Normalement, mon travail consiste à vous communiquer les risques et les avantages des vaccins. N’est-ce pas? On trouverait la meilleure réponse dans votre cas. Ensemble. Mais maintenant, puisque nous faisons face à une crise de santé publique comme on n’en a jamais vu, il faut aller plus loin et trouver non seulement ce qu’il y a de mieux pour vous, mais aussi pour votre famille. Et ce qu’il y a de mieux pour votre communauté aussi.</>,
                 },
                 featured: true,
                 image: "",
@@ -9771,7 +9954,7 @@ export const contentPersonasBI = {
                       information, because I understand how confusing it can be.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si d’autres membres de votre communauté veulent en discuter avec moi, je comprendrai tout à fait s’ils obtiennent leur information d’autres sources. Mais sachez que je suis ici pour vous, pour votre communauté. Et comme je le disais tout à l’heure, j’ai passé beaucoup de temps à essayer de comprendre cette information parce que je sais à quel point ça peut-être mélangeant.</>,
                 },
                 featured: false,
                 image: "",
@@ -9787,7 +9970,7 @@ export const contentPersonasBI = {
                       year.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je ne veux pas vous forcer à faire quoi que ce soit, mais j’espère vraiment qu’on pourra travailler ensemble pour que vous et votre famille restiez en sécurité de même que votre communauté afin d’en arriver là où on veut en arriver dans un an.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -9805,7 +9988,7 @@ export const contentPersonasBI = {
                       values.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ouais. Je pense que le savoir, c’est le pouvoir. J’ai toujours pensé ainsi. Lors de vos autres rendez-vous ici pour discuter d’autres problèmes de santé, j’ai toujours essayé de vous donner de la documentation parce que je veux que vous soyez le mieux informé possible. Ça vous permet de prendre une décision qui convient vraiment à vos propres valeurs.</>,
                 },
                 featured: false,
                 image: "",
@@ -9830,7 +10013,7 @@ export const contentPersonasBI = {
                       and the safety of the vaccines?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vous m’avez déjà dit que l’approbation de la (FDA américaine) changerait votre point de vue au sujet du vaccin. Maintenant que le vaccin à ARNm de Pfizer a été approuvé par la FDA, que pensez-vous de la vaccination et de l’innocuité des vaccins?</>,
                 },
                 featured: false,
                 image: "",
@@ -9845,7 +10028,7 @@ export const contentPersonasBI = {
                       it&apos;s actually a cool science story.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ça fait un bon bout de temps que vous me connaissez. Vous ne savez peut-être pas à quel point je suis mordu des sciences, mais avez-vous quelques instants pour qu’on en parle? Voulez-vous que je vous indique comment on en est arrivés là si rapidement? Parce qu’en fait, du point de vue scientifique, c’est une histoire « cool ».</>,
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -9861,7 +10044,7 @@ export const contentPersonasBI = {
                       people&apos;s questions and concerns. Is it okay if I share some of that research with you?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc, cette (inquiétude), j’en ai entendu souvent parler. J’ai donc fait pas mal de recherche à ce sujet pour pouvoir bien répondre aux questions et inquiétudes. Est-ce que je peux vous faire part de ma recherche?</>,
                 },
                 featured: true,
                 image: "",
@@ -9879,7 +10062,7 @@ export const contentPersonasBI = {
                       sources?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai fait pas mal de recherche sur ces vaccins et sur les différentes options qui peuvent s’offrir à vous. Est-ce que je pourrais vous parler un peu de ce que je sais? Et non pas peut-être seulement vous contenter de ce que vos autres sources vous disent?</>,
                 },
                 featured: false,
                 image: "",
@@ -9909,7 +10092,7 @@ export const contentPersonasBI = {
                       have to lose everything. Just a sore arm, maybe.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>La raison pour laquelle ce virus est si mortel, c’est qu’il est complètement nouveau. C’est comme si vous vous faisiez cambrioler pour la première fois, vous voyez? Si vous ne vous êtes jamais fait cambrioler, mais que c’est quelque chose qui vous inquiétait, la première fois que ça se produit, ça a un effet dévastateur. N’est-ce pas? C’est à peu près la même chose avec ce virus. Quand votre corps ne l’a jamais vu, il ne sait pas comment réagir et vous pouvez tout perdre. Mais si vous êtes vacciné, c’est comme si vous aviez un système d’alarme complet et que l’entreprise de sécurité venait de le tester. Votre corps garde ce qu’il a vu en mémoire. Donc, quand les vrais cambrioleurs arrivent, vous êtes prêt. Et vous n’avez pas tout perdu. Vous avez seulement eu une douleur au bras, peut-être.</>,
                 },
                 featured: true,
                 image: "",
@@ -9926,7 +10109,7 @@ export const contentPersonasBI = {
                       would feel if I didn&apos;t do my best to protect somebody like you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc, une chose qu’on voit de plus en plus, ce sont des jeunes en santé qui tombent très malades en raison de ce virus. C’est pourquoi lorsque je parle à quelqu’un comme vous, j’amène la vaccination sur le tapis parce que je ne peux pas m’imaginer comment je me sentirais si je n’avais pas fait de mon mieux pour protéger une personne comme vous.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -9944,7 +10127,7 @@ export const contentPersonasBI = {
                       protect ourselves with boosters in the future if that&apos;s what it takes.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>À ce temps-ci l’année dernière, tout le monde était terrifié, et maintenant, un an plus tard, on a des vaccins. C’est phénoménal ce que la science a pu accomplir si rapidement. Les progrès se poursuivent et si des changements s’imposent, ils ont alors la possibilité de faire de petites modifications aux vaccins. C’est vraiment bon de savoir qu’on pourra se protéger au moyen de doses de rappel à l’avenir en cas de besoin.</>,
                 },
                 featured: false,
                 image: "",
@@ -9961,7 +10144,7 @@ export const contentPersonasBI = {
                       vaccines are the ticket back into feeling like ourselves again. A ticket back to normal.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je suis content qu’on puisse se parler comme ça. Merci de me demander mon avis. Vous me connaissez, et vous savez que mon travail consiste à m’occuper non seulement de votre santé physique, mais aussi de votre santé mentale, n’est-ce pas? Quand je considère ce qui est bon pour votre santé mentale et celle de votre famille, je crois que ces vaccins sont la clé qui nous permettra de nous sentir comme avant. La clé qui nous permettra de revenir à la normale.</>,
                 },
                 featured: true,
                 image: "",
@@ -9988,7 +10171,7 @@ export const contentPersonasBI = {
                       <i>I wish I had gotten the vaccine when I could have</i>&rsquo;.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand vous voyez des personnes très malades ou mourantes à l’hôpital, là où les gens n’ont pas été vaccinés, ils disent qu’ils auraient bien aimé avoir le vaccin. Mais vous ne voyez pas de personnes vaccinées qui disent qu’elles auraient préféré ne pas être vaccinées. Je ne veux pas que vous fassiez partie des personnes hospitalisées qui disent : « <i>J’aurais bien dû me faire vacciner quand c’était le temps</i> ».</>,
                 },
                 featured: true,
                 image: "",
@@ -10011,7 +10194,7 @@ export const contentPersonasBI = {
                       get the vaccines yet.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vois un grand parallèle entre les panneaux de vitesse des zones scolaires et la vaccination. Vous pouvez dire : « Eh bien, je peux aller à 100 kilomètres à l’heure dans une zone scolaire parce que je ne me ferai probablement pas pincer et que je suis une personne libre. Les petits enfants qui sont là, il faut qu’ils prennent leurs responsabilités »! Vous pouvez vous dire ça, mais il n’en reste pas moins que vous pouvez vous faire arrêter par la police; vous pouvez tomber malade. En réalité, on vit dans une société où les gens ont dû abandonner certaines de leurs libertés pour en faire partie. Il y a des limites de vitesse dans les zones scolaires parce qu’on veut protéger les enfants, notre prochaine génération, parce qu’ils ne savent pas tout encore. Avec la COVID, on se fait tous vacciner pour que les enfants restent en sécurité. On se trouve à créer une sorte de « zone scolaire » en réduisant la quantité de virus se trouvant dans la communauté parce que les enfants ne peuvent toujours pas se faire vacciner pour l’instant.</>,
                 },
                 featured: false,
                 image: "",
@@ -10030,7 +10213,7 @@ export const contentPersonasBI = {
                       that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si on se met à regarder ce qui se passe dans le monde, les pays qui ont réussi à faire vacciner les gens, ce sont eux qui retournent à la normale en ce moment. Les gens sont capables (d’aller dans les lieux de culte/de sortir, de visiter, de vivre). Ils sont capables de faire des choses du genre. Je sais que le fait de ne pas avoir pu (aller à votre lieu de culte/faire des sorties/visiter les gens), avec les membres de votre communauté, ça a été très dur pour vous l’année dernière, mais on peut faire quelque chose pour remédier à la situation.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -10046,7 +10229,7 @@ export const contentPersonasBI = {
                       doing?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Permettez-moi de vous demander d’imaginer ce que vous serez en train de faire dans un an. Ne pensons pas au vaccin contre la COVID pour l’instant. Imaginez-vous dans un an. Qu’est-ce que vous aimeriez être en train de faire?</>,
                 },
                 featured: false,
                 image: "",
@@ -10065,7 +10248,7 @@ export const contentPersonasBI = {
                       all the hospitalizations and deaths.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand on parlait tout à l’heure du grand nombre de personnes malades, il faut aussi se demander s’il y a assez de place pour tout ce monde à l’hôpital. On pourrait toujours attendre qu’il y ait suffisamment de personnes qui tombent malades et meurent pour atteindre l’immunité collective dont les gens parlent. Mais à mon avis, les vaccins nous amèneront au même point, mais plus vite, un peu comme le FastPass à Disneyland. Un FastPass sans toutes les hospitalisations et les décès.</>,
                 },
                 featured: false,
                 image: "",
@@ -10082,7 +10265,7 @@ export const contentPersonasBI = {
                       And the vaccines are what are bringing normal back to us.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>En fait, je pense qu’on s’est tellement tous habitués à essayer de rester en sécurité qu’on a oublié qu’au bout du compte, ce qu’on veut, c’est de ne pas porter de masque pour le restant de nos jours, de ne pas enseigner à nos enfants à domicile pour toute la vie et de ne pas avoir à désigner une seule personne pour aller faire l’épicerie. On a oublié à quel point c’était merveilleux quand tout était normal. Et ce sont les vaccins qui nous ramèneront à la normale.</>,
                 },
                 featured: false,
                 image: "",
@@ -10097,7 +10280,7 @@ export const contentPersonasBI = {
                       the next five years look like? What does the next 10 years look like?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Bien, laissez-moi examiner la situation sous un autre angle. Et si aucun vaccin n’avait été créé contre la COVID? À quoi ressembleraient les cinq prochaines années? À quoi ressembleraient les dix prochaines années?</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -10114,7 +10297,7 @@ export const contentPersonasBI = {
                       risk for those long&ndash;COVID effects than the average person.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qui m’inquiète dans votre cas, c’est le syndrome post-COVID, les symptômes qui durent longtemps, un brouillard cérébral qui pourrait durer pendant un an ou plus. Je ne voudrais vraiment pas que ça vous arrive. Donc, c’est ça qui m’inquiète le plus parce que vos risques de syndrome post-COVID sont un peu plus élevés que ceux de la personne moyenne.</>,
                 },
                 featured: false,
                 image: "",
@@ -10131,7 +10314,7 @@ export const contentPersonasBI = {
                       rather we just protect you from that altogether. These vaccines do that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je m’inquiète parce que je pense que vous pourriez être très malade si le virus s’attaquait à vous. Le risque que vous aboutissiez à l’hôpital est grand, que vous soyez très malade et peut-être même que vous soyez admise aux soins intensifs. Les personnes qui ont dû passer par les soins intensifs, quand elles en sortent ou si elles en sortent, elles ne sont pas en très bon état. J’aimerais mieux que vous soyez protégée contre tout ça. Ces vaccins vous protègent.</>,
                 },
                 featured: false,
                 image: "",
@@ -10149,7 +10332,7 @@ export const contentPersonasBI = {
                       we do. It stops the transmission chains and gets us safely back to normal.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ce qui m’inquiète, c’est que vous pourriez être le maillon d’une chaîne de transmission conduisant une personne aux soins intensifs, qu’il s’agisse de votre mère, de votre père ou d’un grand-parent. Avez-vous absolument besoin de ce vaccin? Peut-être que non. Vous pourriez peut-être vous en passer. Mais en tant que communauté, est-ce qu’on a besoin de ce vaccin? Je pense que oui. Le vaccin freine la chaîne de transmission et nous ramène à la normale, en toute sécurité.</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -10166,7 +10349,7 @@ export const contentPersonasBI = {
                       you feel then having been someone who could have prevented that?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Qu’arriverait-il si vous organisiez une rencontre d’une fin de semaine avec vos amis, que vous rentriez chez vous le dimanche et que le lundi, un de vos amis doive être hospitalisé en raison d’une pneumonie à la COVID. Ça veut dire que vous auriez tous été en contact avec le virus. Et sans s’attarder à penser où votre ami l’a attrapé, comment vous sentiriez-vous en sachant que vous auriez pu personnellement empêcher cette situation de se produire?</>,
                 },
                 featured: false,
                 image: "",
@@ -10184,7 +10367,7 @@ export const contentPersonasBI = {
                       grumpy about it. You have every right to be grumpy. But go get it.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Vous pourriez le faire pour votre conjointe. Vous pourriez le faire pour vos parents. Mais même si vous ne le faites pas pour vous-même, qu’est-ce que ça vous coûterait (de vous faire vacciner)? Peut-être un petit peu d’argent pour l’essence et une heure ou deux de votre temps de travail? Vraiment, la plupart des gens ont le temps de toute façon, n’est-ce pas? C’est ce que je me dis. Je vois les choses un peu différemment des sceptiques qui se trouvent dans la société. Certainement, ça vous fait une chose de plus à faire. Ça peut vous fâcher. Vous avez bien le droit de vous fâcher. Mais allez vous faire vacciner.</>,
                 },
                 featured: true,
                 image: "",
@@ -10201,9 +10384,9 @@ export const contentPersonasBI = {
         title: {
           EN: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
 
-          FR: <></>,
+          FR: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
         },
-        linkText: { EN: <>Conversation tools for discussing vaccines with patients.</>, FR: <></> },
+        linkText: { EN: <>Conversation tools for discussing vaccines with patients.</>, FR: <>Outils de conversation pour discuter des vaccins avec les patients.</> },
         link: "https://www.albertadoctors.org/about/COVID-19/vaccine-positive-clinic-toolkit/addressing-vaccine-hesitancy",
         description: {
           EN: (
@@ -10213,7 +10396,7 @@ export const contentPersonasBI = {
               conversations with their patients.
             </>
           ),
-          FR: <></>,
+          FR: <>La trousse d’outils Be a Vaccine Positive Clinic de l’Alberta Medical Association comprend des ressources de vulgarisation proactives, des scénarios et d’autres guides utiles à l’intention des médecins pour les aider à discuter de la vaccination avec leurs patients.</>,
         },
       },
 
@@ -10221,15 +10404,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>Centre for Effective Practice: ProTCT Framework</>,
 
-          FR: <></>,
+          FR: <>Centre for Effective Practice: ProTCT Framework</>,
         },
-        linkText: { EN: <>ProTCT framework for COVID-19 vaccine discussion</>, FR: <></> },
+        linkText: { EN: <>ProTCT framework for COVID-19 vaccine discussion</>, FR: <>Cadre PrOTCT de discussions sur le vaccin contre la COVID-19</> },
         link: "https://tools.cep.health/wp-content/uploads/2021/04/CEP_COVID-Framework_04-21_r1.pdf",
         description: {
           EN: (
             <>A review of the ProTCT framework to structure conversations with patients about the COVID-19 vaccines</>
           ),
-          FR: <></>,
+          FR: <>Revue du cadre ProTCT pour structurer les conversations avec les patients au sujet des vaccins contre la COVID-19.</>,
         },
       },
 
@@ -10237,15 +10420,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
 
-          FR: <></>,
+          FR: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
         },
-        linkText: { EN: <>CEP Resources for Supporting Patient Confidence in Vaccines</>, FR: <></> },
+        linkText: { EN: <>CEP Resources for Supporting Patient Confidence in Vaccines</>, FR: <>Ressources du CEP pour susciter la confiance des patients envers les vaccins</> },
         link: "https://tools.cep.health/tool/covid-19-vaccines/#ensuring-patient-confidence-in-vaccines",
         description: {
           EN: (
             <>A consolidated resource section organized by concern, issue, and topic related to COVID-19 vaccination.</>
           ),
-          FR: <></>,
+          FR: <>Section de ressources consolidées organisée en fonction des inquiétudes, des enjeux et des sujets se rapportant à la vaccination de la COVID-19.</>,
         },
       },
 
@@ -10253,13 +10436,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>CEP: COVID-19 Resource Centre</>,
 
-          FR: <></>,
+          FR: <>CEP: COVID-19 Resource Centre</>,
         },
-        linkText: { EN: <>CEP&apos;s resource toolkit for COVID-19 information</>, FR: <></> },
+        linkText: { EN: <>CEP&apos;s resource toolkit for COVID-19 information</>, FR: <>Trousse d’information pour les ressources du CEP sur la COVID-19</> },
         link: "https://cep.health/toolkit/covid-19-resource-centre/",
         description: {
           EN: <>A database for COVID-19 information on a variety of topics, including vaccines.</>,
-          FR: <></>,
+          FR: <>Base de données sur divers sujets se rapportant à la COVID-19, y compris les vaccins.</>,
         },
       },
 
@@ -10267,13 +10450,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>19-to-Zero COVID-19 Resources</>,
 
-          FR: <></>,
+          FR: <>19-to-Zero COVID-19 Resources</>,
         },
-        linkText: { EN: <>COVID-19 resource repository</>, FR: <></> },
+        linkText: { EN: <>COVID-19 resource repository</>, FR: <>Dépôt de ressources sur la COVID-19</> },
         link: "https://www.19tozero.ca/healthcare-worker-resources",
         description: {
           EN: <>A repository of resources for healthcare workers about COVID-19 vaccines.</>,
-          FR: <></>,
+          FR: <>Dépôt de ressources sur les vaccins contre la COVID-19 à l’intention des travailleurs des soins de santé.</>,
         },
       },
 
@@ -10281,13 +10464,13 @@ export const contentPersonasBI = {
         title: {
           EN: <>19-to-Zero YouTube Channel</>,
 
-          FR: <></>,
+          FR: <>Poste YouTube de 19-to-Zero</>,
         },
-        linkText: { EN: <>COVID-19 video resources</>, FR: <></> },
+        linkText: { EN: <>COVID-19 video resources</>, FR: <>Vidéos sur la COVID-19</> },
         link: "https://www.youtube.com/channel/UC107yJWv6Hz9v4b3rPA4YZw/videos",
         description: {
           EN: <>A selection of video resources for both patients and providers on COVID-19 and vaccines.</>,
-          FR: <></>,
+          FR: <>Sélection de vidéos sur la COVID-19 et les vaccins à l’intention des patients et des fournisseurs.</>,
         },
       },
 
@@ -10295,15 +10478,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>CANVax Resources on COVID-19 Immunization</>,
 
-          FR: <></>,
+          FR: <>Ressources de CANVax sur l’immunisation de la COVID-19</>,
         },
-        linkText: { EN: <>Resources related to COVID-19 vaccines</>, FR: <></> },
+        linkText: { EN: <>Resources related to COVID-19 vaccines</>, FR: <>Ressources se rapportant aux vaccins contre la COVID-19</> },
         link: "https://canvax.ca/covid-19-resources-immunization",
         description: {
           EN: (
             <>A repository of resources for regional, national, and international sources on COVID-19 immunizations.</>
           ),
-          FR: <></>,
+          FR: <>Dépôt de ressources régionales, nationales et internationales sur les immunisations contre la COVID-19.</>,
         },
       },
 
@@ -10311,15 +10494,15 @@ export const contentPersonasBI = {
         title: {
           EN: <>US CDC: Vaccines for COVID-19 Information</>,
 
-          FR: <></>,
+          FR: <>US CDC: Vaccines for COVID-19 Information</>,
         },
-        linkText: { EN: <>Resources on vaccines for COVID-19 curated by the CDC</>, FR: <></> },
+        linkText: { EN: <>Resources on vaccines for COVID-19 curated by the CDC</>, FR: <>Ressources sur les vaccins contre la COVID-19 sélectionnées et organisées par le CDC</> },
         link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html ",
         description: {
           EN: (
             <>A collection of resources on the COVID-19 vaccines for the general public and healthcare practitioners.</>
           ),
-          FR: <></>,
+          FR: <>Collection de ressources sur les vaccins contre la COVID-19 à l’intention du grand public et des professionnels de la santé.</>,
         },
       },
 
@@ -10327,22 +10510,22 @@ export const contentPersonasBI = {
         title: {
           EN: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
 
-          FR: <></>,
+          FR: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
         },
-        linkText: { EN: <>Immunize BC repository of common COVID vaccine questions and answers </>, FR: <></> },
+        linkText: { EN: <>Immunize BC repository of common COVID vaccine questions and answers </>, FR: <>Dépôt d’ImmunizeBC contenant diverses questions et réponses courantes au sujet des vaccins contre la COVID</> },
         link: "https://immunizebc.ca/taxonomy/term/378",
-        description: { EN: <>A list of common COVID-19 vaccine questions and answers.</>, FR: <></> },
+        description: { EN: <>A list of common COVID-19 vaccine questions and answers.</>, FR: <>Liste de questions et réponses courantes sur les vaccins contre la COVID-19.</> },
       },
 
       {
         title: {
           EN: <>Indigenous Primary Health Care Council: COVID-19 information</>,
 
-          FR: <></>,
+          FR: <>Indigenous Primary Health Care Council: COVID-19 information</>,
         },
-        linkText: { EN: <>Indigenous Primary Care Council COVID information</>, FR: <></> },
+        linkText: { EN: <>Indigenous Primary Care Council COVID information</>, FR: <>Information sur la COVID préparée par l’Indigenous Primary Care Council</> },
         link: "https://www.iphcc.ca/covid-19/",
-        description: { EN: <>COVID-19 resources with an Indigenous focus.</>, FR: <></> },
+        description: { EN: <>COVID-19 resources with an Indigenous focus.</>, FR: <>Ressources sur la COVID-19 mettant l’accent sur les personnes autochtones.</> },
       },
     ],
   },
