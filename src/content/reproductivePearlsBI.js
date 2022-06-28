@@ -24,7 +24,7 @@ export const reproductivePearlsBI = [
     title: { EN: "", FR: "" },
     content: [
       {
-        subheading: { EN: "Be Non-Confrontational", FR: <></> },
+        subheading: { EN: "Be Non-Confrontational", FR: "Évitez la confrontation" },
         quotes: [
           {
             text: {
@@ -38,7 +38,18 @@ export const reproductivePearlsBI = [
                   women, you have to prioritize having the patient come back, so you can’t risk pushing them away.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Dans le cas des femmes enceintes, vous devez donner aux patientes le plus de choix et d’options
+                  d’autodétermination possible. Pour ce faire, mon approche a toujours consisté à faire moins de
+                  confrontations et à m’efforcer de valider leurs inquiétudes. Ensuite, il faut reconnaître que vous
+                  devrez probablement déployer bien des efforts pour ramener certaines mamans sur votre longueur d’onde.
+                  Il va vous falloir de nombreuses conversations. Si vous mettez trop l’accent sur les procédures
+                  médicales, certaines femmes seront dégoûtées. Donc, pour ce qui est des femmes enceintes, la priorité,
+                  c’est de faire en sorte qu’elles reviennent vous voir et c’est pourquoi vous ne pouvez pas prendre le
+                  risque de les repousser.
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteManYoung.svg",
@@ -55,7 +66,14 @@ export const reproductivePearlsBI = [
                   don’t think the moms or the docs are ready for that to be the go-to method.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  J’évite l’approche «&nbsp;présomptive&nbsp;» que bien des membres du personnel de la santé utilisent. Je
+                  n’entreprends pas la conversation en disant : «&nbsp;Alors, c’est le temps de vous faire vacciner
+                  aujourd’hui.&nbsp;» Je ne pense pas que les femmes enceintes ou leurs médecins soient prêts à adopter cette
+                  méthode.{" "}
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -70,7 +88,13 @@ export const reproductivePearlsBI = [
                   capacity to help them through their pregnancy and revisit the vaccine conversation.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Si vous insistez trop au sujet du vaccin chez les femmes enceintes ou si vous les faites sentir mal à
+                  ce sujet, elles vont se refermer sur elles-mêmes. Vous n’aurez alors plus la possibilité de suivre
+                  leur grossesse et de reparler de la vaccination.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -79,7 +103,7 @@ export const reproductivePearlsBI = [
       },
 
       {
-        subheading: { EN: "Validate Concerns and Feelings", FR: <></> },
+        subheading: { EN: "Validate Concerns and Feelings", FR: "Validez leurs inquiétudes et leurs sentiments" },
         quotes: [
           {
             text: {
@@ -92,7 +116,16 @@ export const reproductivePearlsBI = [
                   back regularly, then I’ll return to the conversation.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Vous devez valider leurs inquiétudes. Je sais que si vous êtes enceinte, la vaccination peut faire
+                  peur et vous pouvez avoir des inquiétudes changeantes au sujet de la sécurité des vaccins. Vous devez
+                  essayer de comprendre pourquoi elles sont si troublées. Vous aurez peut-être besoin de plusieurs
+                  rendez-vous. Au premier rendez-vous, si je les entends dire que la vaccination ne les intéresse pas,
+                  je garde ça en tête et je leur dis, une fois la relation établie et les rendez-vous pris
+                  régulièrement, qu’on reviendra sur le sujet.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -108,7 +141,15 @@ export const reproductivePearlsBI = [
                   directly rather than always trying to say ‘I hear you as another parent.’
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Je prends soin de valider leurs sentiments dès le début de la conversation. J’utilise la tactique «&nbsp;Je
+                  suis aussi un parent&nbsp;» que très peu souvent, peut-être à la fin d’une conversation, quand on est sur
+                  le point de terminer. Je m’en sers parfois pour finir une discussion en fonction de ce que j’ai
+                  entendu. Mais la plupart du temps, j’essaie de valider leurs pensées directement au lieu de toujours
+                  leur dire : «&nbsp;En tant que parent, je sais ce que vous voulez dire&nbsp;».
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -117,7 +158,7 @@ export const reproductivePearlsBI = [
       },
 
       {
-        subheading: { EN: "Start From A Place of Non-Judgment", FR: <></> },
+        subheading: { EN: "Start From A Place of Non-Judgment", FR: "N’exercez pas de jugement" },
         quotes: [
           {
             text: {
@@ -130,7 +171,16 @@ export const reproductivePearlsBI = [
                   conversations that start from a place of non-judgment are just more successful.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  La pire chose qui peut arriver, c’est de rompre la relation thérapeutique que vous entretenez avec les
+                  patients et patientes. Mon objectif, c’est toujours de pouvoir discuter de vaccination avec mes
+                  patients plus tard. C’est surtout le cas des patientes enceintes ou des patients aux cas complexes,
+                  quand je sais que je dois les revoir. J’essaie de formuler le moins de jugements possible, même si
+                  leurs réflexions vont à l’encontre des miennes. Je trouve que les conversations qui ne sont pas
+                  fondées sur le jugement donnent de meilleurs résultats.
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -150,7 +200,20 @@ export const reproductivePearlsBI = [
                   the time to find out. Especially with pregnant patients.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Vous devez prendre le temps de trouver la source de la méfiance d’une personne. Certaines patientes
+                  enceintes ont eu de mauvaises expériences avec les vaccins ou avec les soins de santé dans d’autres
+                  pays. La conversation est alors empreinte de méfiance. Ou encore, leur méfiance peut être attribuable
+                  au système, aux compagnies pharmaceutiques ou aux gouvernements. La méfiance peut concerner l’ensemble
+                  du système, ou encore, certaines relations ou certains aspects du système. Par conséquent, les
+                  questions de méfiance ne peuvent pas toutes être traitées de la même manière. La méfiance peut avoir
+                  trait à la vaccination, aux établissements responsables d’essais cliniques ou aux fabricants des
+                  vaccins. Il peut s’agir d’un manque de confiance envers les programmes de vaccination ou d’un manque
+                  de confiance envers les fournisseurs de vaccins. Vous devez prendre le temps de trouver de quoi il
+                  s’agit, surtout dans le cas des patientes enceintes.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -159,7 +222,7 @@ export const reproductivePearlsBI = [
       },
 
       {
-        subheading: { EN: "Be Mindful of Complex Emotions", FR: <></> },
+        subheading: { EN: "Be Mindful of Complex Emotions", FR: "Prêtez attention aux émotions complexes" },
         quotes: [
           {
             text: {
@@ -174,7 +237,18 @@ export const reproductivePearlsBI = [
                   they need to hear.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Certaines personnes entament la conversation sur le vaccin en disant : «&nbsp;Oubliez ça, je ne peux pas
+                  parler de vaccination&nbsp;», et elles se fâchent parce que j’ai amené le sujet de la vaccination sur le
+                  tapis. D’autres personnes sont inquiètes. Elles sont anxieuses. Elles ne savent pas quoi faire. Et
+                  certaines autres personnes sont enchantées quand j’aborde le sujet. Elles me disent : «&nbsp;J’ai beaucoup
+                  lu au sujet des vaccins. Que feriez-vous&nbsp;»? C’est à ce moment-là que je leur dis que j’ai fait partie
+                  des toutes premières personnes à se prévaloir de ce vaccin, dès que j’en ai eu l’occasion. Et je ne
+                  changerais pas d’idée pour rien au monde si j’avais été enceinte ou si j’avais songé à tomber
+                  enceinte. Et parfois, c’est tout ce qu’elles ont besoin d’entendre.
+                </>
+              ),
             },
             featured: false,
             image: "",
@@ -190,7 +264,15 @@ export const reproductivePearlsBI = [
                   that tends to be fairly powerful for some pregnant patients.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Dans le monde prénatal, l’anxiété joue un grand rôle, et elle est encore plus forte en temps de
+                  pandémie. Dans ce contexte, j’essaie de leur dire que la vaccination est une occasion de les aider à
+                  protéger leur bébé. Je leur dis que le vaccin n’est pas seulement une chose personnelle, mais qu’elle
+                  concerne aussi le bébé, qui court de très grands risques, et que ceux-ci ont tendance à être très
+                  puissants pour certaines femmes enceintes.{" "}
+                </>
+              ),
             },
             featured: false,
             image: "doctorWhiteManYoung.svg",
@@ -205,7 +287,14 @@ export const reproductivePearlsBI = [
                   their [partner/family] is not there with us in the room.
                 </>
               ),
-              FR: <></>,
+              FR: (
+                <>
+                  Certains [partenaires ou membres de la famille] peuvent faire preuve de beaucoup d’agressivité quand
+                  ils expriment leur point de vue sur la vaccination. Je tiens à souligner que le choix incombe à la
+                  patiente et souvent, ce que je fais, c’est que je reviens à cette patiente quand son [partenaire ou le
+                  membre de sa famille] n’est pas présent dans la salle.
+                </>
+              ),
             },
             featured: false,
             image: "",

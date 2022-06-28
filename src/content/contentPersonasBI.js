@@ -3649,11 +3649,29 @@ export const contentPersonasBI = {
                 fullStoryID: "",
               },
               // Reproductive
-
-              // MISSING ENGLISH VERSION OF THIS QUOTE:
-              // Je tiens à dire clairement que pour s’assurer d’avoir des bébés en santé, il faut que les mamans soient en santé. Et on aide les mères à fabriquer des anticorps contre la COVID, qui a bouleversé notre monde, et à donner ces anticorps – cette protection, ce bouclier – à son bébé.
-              //
-              //
+              {
+                text: {
+                  EN: (
+                    <>
+                      I would like to make it really clear to you that the way we make sure that we have healthy babies,
+                      is that we keep moms healthy. And we help get mom to make antibodies against COVID, which has
+                      turned our world upside down, and to give those antibodies - that protection, that shield - to her
+                      baby.
+                    </>
+                  ),
+                  FR: (
+                    <>
+                      Je tiens à dire clairement que pour s’assurer d’avoir des bébés en santé, il faut que les mamans
+                      soient en santé. Et on aide les mères à fabriquer des anticorps contre la COVID, qui a bouleversé
+                      notre monde, et à donner ces anticorps – cette protection, ce bouclier – à son bébé.
+                    </>
+                  ),
+                },
+                featured: false,
+                image: "",
+                fullStoryID: "",
+              },
+              // Reproductive
               {
                 text: {
                   EN: (

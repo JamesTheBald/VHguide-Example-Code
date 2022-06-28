@@ -25,11 +25,9 @@ const detailsPearlsIntroBI = {
     ),
     FR: (
       <>
-        Dans cette section, vous trouverez des conseils entre pairs sur la façon d'engager et de mener des conversations
-        sur l'hésitation à la vaccination, en particulier en ce qui concerne la grossesse, la fertilité ou les problèmes
-        de reproduction.
+        Vous trouverez dans cette section des conseils de pair-à-pair sur la manière d’aborder les conversations portant
+        sur les inquiétudes concernant la grossesse, la fertilité ou la reproduction.
       </>
-      // Translation above partially from Google Translate!!
     ),
   },
 
