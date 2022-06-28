@@ -28,7 +28,7 @@ const AdviceWhatsWorkingBI = () => {
     );
   return (
     <>
-      <h3 className="titleFont titleMediumPlus">Ce qui porte fruits pour d’autres cliniciens [FROM XD]</h3>
+      <h3 className="titleFont titleMediumPlus">Ce qui porte fruits pour d’autres cliniciens</h3>
       <div className="mt-6 baseFont text-blue-black  relative">
         <span>Abordez la conversation en empruntant les étapese</span>
         <EaaseHoverPopupFR
@@ -37,7 +37,7 @@ const AdviceWhatsWorkingBI = () => {
         />
         <span>
           . Vous trouverez ci-dessous des exemples de dialogues d’autres cliniciens et cliniciennes qui ont eu à faire
-          face à ce type d’hésitation. [FROM XD]
+          face à ce type d’hésitation.
         </span>
       </div>
     </>

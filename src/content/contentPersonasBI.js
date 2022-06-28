@@ -70,15 +70,19 @@ export const contentPersonasBI = {
             <>&ldquo;You can still get COVID even if you are vaccinated. Why bother getting the vaccine then?&rdquo;</>,
             <>&ldquo;I already had COVID, why would I need to get a vaccine?&rdquo;</>,
           ],
-          FR: [<>« À mon âge, je n’ai pas confiance à ça. Je ne sais pas ce qui va se passer plus tard, ce que ça va me faire dans trois à cinq ans. »
+          FR: [
+            <>
+              « À mon âge, je n’ai pas confiance à ça. Je ne sais pas ce qui va se passer plus tard, ce que ça va me
+              faire dans trois à cinq ans. »
             </>,
             <>« Est-ce que ça va être un vaccin annuel? Faudra-t-il des vaccins de rappel? »</>,
-            <>« Je ne fais confiance à personne à ce sujet. Ils nous prennent pour des cobayes. »</>, 
-            <>« On ne connaît pas les effets secondaires à long terme de ces vaccins. »</>, 
-            <>« Je veux voir les statistiques quant au pourcentage à atteindre pour avoir l’immunité collective. »</>, 
-            <>« Ça me fait peur. On nous injecte des substances inconnues. Les données sont insuffisantes. »</>, 
-            <>« On peut attraper la COVID même si on a été vacciné. Alors, à quoi bon se faire vacciner? »</>, 
-            <>« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »</>],
+            <>« Je ne fais confiance à personne à ce sujet. Ils nous prennent pour des cobayes. »</>,
+            <>« On ne connaît pas les effets secondaires à long terme de ces vaccins. »</>,
+            <>« Je veux voir les statistiques quant au pourcentage à atteindre pour avoir l’immunité collective. »</>,
+            <>« Ça me fait peur. On nous injecte des substances inconnues. Les données sont insuffisantes. »</>,
+            <>« On peut attraper la COVID même si on a été vacciné. Alors, à quoi bon se faire vacciner? »</>,
+            <>« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »</>,
+          ],
         },
       },
 
@@ -98,9 +102,21 @@ export const contentPersonasBI = {
               the vaccines&apos; mechanisms of action.
             </>,
           ],
-          FR: [<><strong>Ne vous mettez pas à expliquer les aspects scientifiques trop vite.</strong> Tâchez de déterminer dans quelle mesure votre patient est prêt à entendre parler de la science, sa capacité à comprendre les faits scientifiques, les statistiques et les données.</>, 
-          <><strong>Demandez la permission de lui faire part d’information</strong> scientifique avant de vous lancer dans les faits.</>, 
-          <><strong>Considérez la possibilité d’utiliser des métaphores simples et pertinentes pour expliquer</strong> le processus de développement des vaccins et les mécanismes d’action des vaccins.</>],
+          FR: [
+            <>
+              <strong>Ne vous mettez pas à expliquer les aspects scientifiques trop vite.</strong> Tâchez de déterminer
+              dans quelle mesure votre patient est prêt à entendre parler de la science, sa capacité à comprendre les
+              faits scientifiques, les statistiques et les données.
+            </>,
+            <>
+              <strong>Demandez la permission de lui faire part d’information</strong> scientifique avant de vous lancer
+              dans les faits.
+            </>,
+            <>
+              <strong>Considérez la possibilité d’utiliser des métaphores simples et pertinentes pour expliquer</strong>{" "}
+              le processus de développement des vaccins et les mécanismes d’action des vaccins.
+            </>,
+          ],
         },
       },
 
@@ -118,8 +134,17 @@ export const contentPersonasBI = {
               <strong>Ask permission to share</strong> the science before jumping into the facts!
             </>,
           ],
-          FR: [<>À titre de professionnel de la santé de confiance, vous pouvez rassurer votre patient en lui affirmant que la science derrière les vaccins est solide. Votre recommandation a beaucoup de poids quand un patient essaie de décider s’il va se faire vacciner ou non.</>, 
-          <><strong>Demandez la permission de lui faire part d’information</strong> sur la science avant de vous lancer dans les faits!</>],
+          FR: [
+            <>
+              À titre de professionnel de la santé de confiance, vous pouvez rassurer votre patient en lui affirmant que
+              la science derrière les vaccins est solide. Votre recommandation a beaucoup de poids quand un patient
+              essaie de décider s’il va se faire vacciner ou non.
+            </>,
+            <>
+              <strong>Demandez la permission de lui faire part d’information</strong> sur la science avant de vous
+              lancer dans les faits!
+            </>,
+          ],
         },
       },
     },
@@ -137,7 +162,12 @@ export const contentPersonasBI = {
                 too. Can we compare our notes and what we&apos;ve learned about them?
               </>
             ),
-            FR: <>J’ai l’impression que vous avez fait beaucoup de recherche et que vous avez lu au sujet des vaccins. Moi aussi. Peut-être qu’on pourrait comparer ce qu’on a appris à leur sujet?</>,
+            FR: (
+              <>
+                J’ai l’impression que vous avez fait beaucoup de recherche et que vous avez lu au sujet des vaccins. Moi
+                aussi. Peut-être qu’on pourrait comparer ce qu’on a appris à leur sujet?
+              </>
+            ),
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -149,8 +179,12 @@ export const contentPersonasBI = {
                 answers for you today. But let&apos;s see what we can get through now, together.
               </>
             ),
-            FR: <>Je comprends votre point de vue et je ne sais pas si je vais pouvoir vous donner toutes les réponses aujourd’hui.
-            Mais voyons les questions auxquelles on peut trouver des réponses ensemble dès maintenant.</>,
+            FR: (
+              <>
+                Je comprends votre point de vue et je ne sais pas si je vais pouvoir vous donner toutes les réponses
+                aujourd’hui. Mais voyons les questions auxquelles on peut trouver des réponses ensemble dès maintenant.
+              </>
+            ),
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -164,14 +198,26 @@ export const contentPersonasBI = {
                 possible.
               </>
             ),
-            FR: <>Cela ne veut pas dire qu’ils ont bâclé la tâche. C’est plutôt parce qu’ils ont laissé tomber tous les autres projets et injecté de l’argent et des ressources dans ce projet. Pour ce qui est des attentes réglementaires, la bureaucratie n’a pas été éliminée. Ils se sont seulement frayé un chemin plus rapidement dans tout ça afin de protéger les gens le plus vite possible.</>,
+            FR: (
+              <>
+                Cela ne veut pas dire qu’ils ont bâclé la tâche. C’est plutôt parce qu’ils ont laissé tomber tous les
+                autres projets et injecté de l’argent et des ressources dans ce projet. Pour ce qui est des attentes
+                réglementaires, la bureaucratie n’a pas été éliminée. Ils se sont seulement frayé un chemin plus
+                rapidement dans tout ça afin de protéger les gens le plus vite possible.
+              </>
+            ),
           },
           image: "doctorBlackWoman.svg",
         },
         evoke: {
           text: {
             EN: <>What if no vaccine had ever been created for COVID? What do the next five years look like for you?</>,
-            FR: <>Et si aucun vaccin n’avait été créé contre la COVID? À quoi vos cinq prochaines années ressembleraient-elles?</>,
+            FR: (
+              <>
+                Et si aucun vaccin n’avait été créé contre la COVID? À quoi vos cinq prochaines années
+                ressembleraient-elles?
+              </>
+            ),
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -191,7 +237,12 @@ export const contentPersonasBI = {
                       been, too. Can we compare our notes and what we&apos;ve learned about them?
                     </>
                   ),
-                  FR: <>J’ai l’impression que vous avez fait beaucoup de recherche et que vous avez lu au sujet des vaccins. Moi aussi. Peut-être qu’on pourrait comparer ce qu’on a appris à leur sujet?</>,
+                  FR: (
+                    <>
+                      J’ai l’impression que vous avez fait beaucoup de recherche et que vous avez lu au sujet des
+                      vaccins. Moi aussi. Peut-être qu’on pourrait comparer ce qu’on a appris à leur sujet?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -207,7 +258,12 @@ export const contentPersonasBI = {
                     </>
                   ),
 
-                  FR: <>J’aimerais savoir s’il y a quelque chose de précis au sujet des vaccins ou de leur fabrication qui vous inquiète, ou si c’est la vaccination dans son ensemble qui vous tracasse?</>,
+                  FR: (
+                    <>
+                      J’aimerais savoir s’il y a quelque chose de précis au sujet des vaccins ou de leur fabrication qui
+                      vous inquiète, ou si c’est la vaccination dans son ensemble qui vous tracasse?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -222,7 +278,12 @@ export const contentPersonasBI = {
                       confident in getting one?
                     </>
                   ),
-                  FR: <>Quelles sortes de choses vous inquiètent au sujet des vaccins, au juste? De quelle information auriez-vous besoin pour vous sentir à l’aise ou en confiance d’en avoir un?</>,
+                  FR: (
+                    <>
+                      Quelles sortes de choses vous inquiètent au sujet des vaccins, au juste? De quelle information
+                      auriez-vous besoin pour vous sentir à l’aise ou en confiance d’en avoir un?
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -246,7 +307,13 @@ export const contentPersonasBI = {
                       the answers for you today. But let&apos;s see what we can get through now, together.
                     </>
                   ),
-                  FR: <>Je comprends votre point de vue et je ne sais pas si je vais pouvoir vous donner toutes les réponses aujourd’hui. Mais voyons les questions auxquelles on peut trouver des réponses ensemble dès maintenant.</>,
+                  FR: (
+                    <>
+                      Je comprends votre point de vue et je ne sais pas si je vais pouvoir vous donner toutes les
+                      réponses aujourd’hui. Mais voyons les questions auxquelles on peut trouver des réponses ensemble
+                      dès maintenant.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -262,7 +329,13 @@ export const contentPersonasBI = {
                       difficult to tease out what&apos;s the truth.
                     </>
                   ),
-                  FR: <>La couverture médiatique entourant les vaccins est vraiment difficile à suivre, n’est-ce pas? On dirait qu’il y a quelque chose de nouveau tous les jours, qui contredit ce qui a été dit avant, ce qui peut être encore plus difficile de trouver la vérité.</>,
+                  FR: (
+                    <>
+                      La couverture médiatique entourant les vaccins est vraiment difficile à suivre, n’est-ce pas? On
+                      dirait qu’il y a quelque chose de nouveau tous les jours, qui contredit ce qui a été dit avant, ce
+                      qui peut être encore plus difficile de trouver la vérité.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -280,7 +353,14 @@ export const contentPersonasBI = {
                       health.
                     </>
                   ),
-                  FR: <>L’information évolue vite et je peux comprendre comment les personnes qui ne connaissent pas les vaccins et qui n’ont pas étudié les maladies ont l’impression qu’on change constamment d’idée et qu’on ne sait pas ce qu’on fait. Mais je pense que mon rôle avec vous, mon patient, c’est de penser à ce qu’il y a de mieux à faire pour vous et votre santé.</>,
+                  FR: (
+                    <>
+                      L’information évolue vite et je peux comprendre comment les personnes qui ne connaissent pas les
+                      vaccins et qui n’ont pas étudié les maladies ont l’impression qu’on change constamment d’idée et
+                      qu’on ne sait pas ce qu’on fait. Mais je pense que mon rôle avec vous, mon patient, c’est de
+                      penser à ce qu’il y a de mieux à faire pour vous et votre santé.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -304,7 +384,12 @@ export const contentPersonasBI = {
                       them?
                     </>
                   ),
-                  FR: <>Est-ce que je peux vous faire part de ce que je sais sur les vaccins et vous parler un peu de la science derrière les vaccins?</>,
+                  FR: (
+                    <>
+                      Est-ce que je peux vous faire part de ce que je sais sur les vaccins et vous parler un peu de la
+                      science derrière les vaccins?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -320,7 +405,15 @@ export const contentPersonasBI = {
                       can outline how we got here so quickly? Because, it&apos;s actually a cool science story.
                     </>
                   ),
-                  FR: <>Est-ce que ça vous intéresserait que je vous explique un peu comment les vaccins fonctionnent? Ça fait un bon bout de temps que vous me connaissez. Vous ne savez peut-être pas à quel point je suis mordu des sciences, mais avez-vous quelques instants pour qu’on en parle? Je pourrais vous expliquer comment on en est arrivés là si vite? Parce qu’en fait, du point de vue scientifique, c’est une histoire plutôt géniale.</>,
+                  FR: (
+                    <>
+                      Est-ce que ça vous intéresserait que je vous explique un peu comment les vaccins fonctionnent? Ça
+                      fait un bon bout de temps que vous me connaissez. Vous ne savez peut-être pas à quel point je suis
+                      mordu des sciences, mais avez-vous quelques instants pour qu’on en parle? Je pourrais vous
+                      expliquer comment on en est arrivés là si vite? Parce qu’en fait, du point de vue scientifique,
+                      c’est une histoire plutôt géniale.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -345,7 +438,14 @@ export const contentPersonasBI = {
                       disappeared too quickly, so the mRNA technology was put on the shelf...
                     </>
                   ),
-                  FR: <>Vous souvenez-vous du virus Ebola et d’un autre virus appelé SRMO, le syndrome respiratoire du Moyen-Orient? Les scientifiques adorent les acronymes! En fait, les chercheurs faisaient des recherches sur la technologie de l’ARNm pour combattre ces deux virus, mais ils ont disparu tellement vite que la technologie de l’ARNm a été reléguée aux oubliettes.</>,
+                  FR: (
+                    <>
+                      Vous souvenez-vous du virus Ebola et d’un autre virus appelé SRMO, le syndrome respiratoire du
+                      Moyen-Orient? Les scientifiques adorent les acronymes! En fait, les chercheurs faisaient des
+                      recherches sur la technologie de l’ARNm pour combattre ces deux virus, mais ils ont disparu
+                      tellement vite que la technologie de l’ARNm a été reléguée aux oubliettes.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -370,7 +470,19 @@ export const contentPersonasBI = {
                       distancing and restrictions.
                     </>
                   ),
-                  FR: <>Est-ce que je peux me porter garant de tous les chefs de la direction de toutes les grandes entreprises pharmaceutiques? Est-ce que je peux affirmer que personne au fil de l’histoire n’a fait quelque chose de croche pour essayer de faire de l’argent? Absolument pas. Et pourtant, dans le cadre de mes fonctions, je vois tous les jours des personnes dont la vie a changé en mieux grâce aux médicaments mis au point par les entreprises pharmaceutiques. Je vois des gens qui vivent plus longtemps et qui ont des vies plus remplies grâce aux médicaments qui existent. Et le vaccin fait partie de ces médicaments. Il permet à tous de vivre plus longtemps et d’avoir une vie plus remplie, une meilleure vie. Une vie sans masque, sans distanciation physique et sans restrictions.</>,
+                  FR: (
+                    <>
+                      Est-ce que je peux me porter garant de tous les chefs de la direction de toutes les grandes
+                      entreprises pharmaceutiques? Est-ce que je peux affirmer que personne au fil de l’histoire n’a
+                      fait quelque chose de croche pour essayer de faire de l’argent? Absolument pas. Et pourtant, dans
+                      le cadre de mes fonctions, je vois tous les jours des personnes dont la vie a changé en mieux
+                      grâce aux médicaments mis au point par les entreprises pharmaceutiques. Je vois des gens qui
+                      vivent plus longtemps et qui ont des vies plus remplies grâce aux médicaments qui existent. Et le
+                      vaccin fait partie de ces médicaments. Il permet à tous de vivre plus longtemps et d’avoir une vie
+                      plus remplie, une meilleure vie. Une vie sans masque, sans distanciation physique et sans
+                      restrictions.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -389,7 +501,17 @@ export const contentPersonasBI = {
                       sides of this.
                     </>
                   ),
-                  FR: <>Vous n’avez pas confiance en l’industrie pharmaceutique. Je peux vous comprendre parce qu’en fait, la menace numéro un à la pratique factuelle en ce moment, c’est la déformation intentionnelle de toute la documentation produite par l’industrie pharmaceutique. Je ne vous reproche donc pas de ne pas faire confiance aux grandes entreprises pharmaceutiques. C’est la même chose pour moi. Cela dit, le doute à l’égard des vaccins a été semé par un homme qui a, pour ainsi dire, fait de la fraude pour son propre profit [source]. Il faut donc être à l’affût des arnaques des deux côtés de la médaille.</>,
+                  FR: (
+                    <>
+                      Vous n’avez pas confiance en l’industrie pharmaceutique. Je peux vous comprendre parce qu’en fait,
+                      la menace numéro un à la pratique factuelle en ce moment, c’est la déformation intentionnelle de
+                      toute la documentation produite par l’industrie pharmaceutique. Je ne vous reproche donc pas de ne
+                      pas faire confiance aux grandes entreprises pharmaceutiques. C’est la même chose pour moi. Cela
+                      dit, le doute à l’égard des vaccins a été semé par un homme qui a, pour ainsi dire, fait de la
+                      fraude pour son propre profit [source]. Il faut donc être à l’affût des arnaques des deux côtés de
+                      la médaille.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -409,7 +531,19 @@ export const contentPersonasBI = {
                       regulatory agencies or something to talk about safety. It might be worthwhile thinking about that.
                     </>
                   ),
-                  FR: <>Donc, j’imagine que [d’entendre parler des graves effets secondaires du vaccin], c’est comme écouter la nouvelle d’un écrasement d’avion. Même si ça se produit très peu souvent, les médias se font un devoir de nous en parler. C’est ce qui se passe avec le vaccin depuis qu’il a été approuvé. Tout le monde s’intéresse, non sans raison, à ce qui se passe et à toutes les tournures que prend la situation. Il y a tout plein de reportages à ce sujet. Mais tous les reportages portent sur les événements qui se produisent très rarement. Quand on ajoute ça au fait qu’on ne peut pas trop sortir, tout ça, ça rend les gens anxieux. Alors je me demande si on peut peut-être trouver une source fiable d’un des organismes règlementaires ou quelque chose du genre pour parler de l’innocuité du vaccin. Ça pourrait valoir la peine d’en parler.</>,
+                  FR: (
+                    <>
+                      Donc, j’imagine que [d’entendre parler des graves effets secondaires du vaccin], c’est comme
+                      écouter la nouvelle d’un écrasement d’avion. Même si ça se produit très peu souvent, les médias se
+                      font un devoir de nous en parler. C’est ce qui se passe avec le vaccin depuis qu’il a été
+                      approuvé. Tout le monde s’intéresse, non sans raison, à ce qui se passe et à toutes les tournures
+                      que prend la situation. Il y a tout plein de reportages à ce sujet. Mais tous les reportages
+                      portent sur les événements qui se produisent très rarement. Quand on ajoute ça au fait qu’on ne
+                      peut pas trop sortir, tout ça, ça rend les gens anxieux. Alors je me demande si on peut peut-être
+                      trouver une source fiable d’un des organismes règlementaires ou quelque chose du genre pour parler
+                      de l’innocuité du vaccin. Ça pourrait valoir la peine d’en parler.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -429,7 +563,15 @@ export const contentPersonasBI = {
                       piggyback onto earlier work.
                     </>
                   ),
-                  FR: <>Il a fallu de nombreuses années pour mettre au point la technologie de l’ARNm. Je sais que les gens paniquent et se disent : <i> « Oh, ma foi. On a eu en vaccin en moins d’un an. C’est pas possible. »</i> Mais ça fait des décennies que ce genre d’approche à base d’ARNm est en développement. On a donc pu profiter de travaux qui étaient déjà faits.</>,
+                  FR: (
+                    <>
+                      Il a fallu de nombreuses années pour mettre au point la technologie de l’ARNm. Je sais que les
+                      gens paniquent et se disent :{" "}
+                      <i> « Oh, ma foi. On a eu en vaccin en moins d’un an. C’est pas possible. »</i> Mais ça fait des
+                      décennies que ce genre d’approche à base d’ARNm est en développement. On a donc pu profiter de
+                      travaux qui étaient déjà faits.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -449,7 +591,17 @@ export const contentPersonasBI = {
                       ways that they&apos;ve never done before.
                     </>
                   ),
-                  FR: <>Des centaines de millions de personnes se sont fait vacciner dans le monde entier. Le processus de développement de ces vaccins s’est fait plus vite qu’à l’habitude quand les scientifiques sont passés de « <i>c’est quoi ce virus?</i> » à « <i>comment peut-on faire un vaccin contre ce virus?</i> ». C’est vrai. Mais aucune étape n’a été brûlée. Je me suis penché là-dessus. La raison pour laquelle ils ont pu aller plus vite, c’est parce que les investissements ont été plus grands qu’ils ne l’avaient jamais été. Et ils ont travaillé ensemble, comme cela n’a jamais été le cas avant.</>,
+                  FR: (
+                    <>
+                      Des centaines de millions de personnes se sont fait vacciner dans le monde entier. Le processus de
+                      développement de ces vaccins s’est fait plus vite qu’à l’habitude quand les scientifiques sont
+                      passés de « <i>c’est quoi ce virus?</i> » à «{" "}
+                      <i>comment peut-on faire un vaccin contre ce virus?</i> ». C’est vrai. Mais aucune étape n’a été
+                      brûlée. Je me suis penché là-dessus. La raison pour laquelle ils ont pu aller plus vite, c’est
+                      parce que les investissements ont été plus grands qu’ils ne l’avaient jamais été. Et ils ont
+                      travaillé ensemble, comme cela n’a jamais été le cas avant.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -471,7 +623,20 @@ export const contentPersonasBI = {
                       helps your immune system attack the newer stuff too.
                     </>
                   ),
-                  FR: <>Les vaccins ordinaires montrent à votre système immunitaire une sorte de spicule, et le système apprend à faire des anticorps contre CE genre de spicule. Mais si on lui montre un spicule un peu différent, le système immunitaire doit y penser plus fort. L’approche de l’ARNm en matière de vaccination est différente. Elle ne montre pas une simple vue du virus à votre système immunitaire pour finir par lui dire « bonne chance ». Elle donne à votre système immunitaire les outils nécessaires pour qu’il sache que ce qu’il voit, c’est COMME l’ancien, mais que ce n’est pas tout à fait l’ancien. Au lieu de vous donner un marteau qui martèle une seule sorte de clou, les vaccins à ARNm vous donnent plutôt une ceinture à outils. Votre système immunitaire peut alors dire : « Alors, c’est comme l’ancien, mais ce n’est pas l’ancien ». Il aide votre système immunitaire à s’attaquer à ce qu’il y a de plus nouveau aussi.</>,
+                  FR: (
+                    <>
+                      Les vaccins ordinaires montrent à votre système immunitaire une sorte de spicule, et le système
+                      apprend à faire des anticorps contre CE genre de spicule. Mais si on lui montre un spicule un peu
+                      différent, le système immunitaire doit y penser plus fort. L’approche de l’ARNm en matière de
+                      vaccination est différente. Elle ne montre pas une simple vue du virus à votre système immunitaire
+                      pour finir par lui dire « bonne chance ». Elle donne à votre système immunitaire les outils
+                      nécessaires pour qu’il sache que ce qu’il voit, c’est COMME l’ancien, mais que ce n’est pas tout à
+                      fait l’ancien. Au lieu de vous donner un marteau qui martèle une seule sorte de clou, les vaccins
+                      à ARNm vous donnent plutôt une ceinture à outils. Votre système immunitaire peut alors dire : «
+                      Alors, c’est comme l’ancien, mais ce n’est pas l’ancien ». Il aide votre système immunitaire à
+                      s’attaquer à ce qu’il y a de plus nouveau aussi.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -488,7 +653,14 @@ export const contentPersonasBI = {
                       hospital, and not recovering with long COVID.
                     </>
                   ),
-                  FR: <>C’est vrai qu’une personne vaccinée peut quand même attraper la COVID. C’est peu probable, mais c’est quand même possible. Ce que je vois – et ce que les données nous racontent – c’est que les personnes vaccinées qui finissent par l’attraper sont loin de souffrir autant. Elles sont beaucoup moins malades. Elles ne sont pas hospitalisées et elles ne souffrent pas du syndrome post-COVID.</>,
+                  FR: (
+                    <>
+                      C’est vrai qu’une personne vaccinée peut quand même attraper la COVID. C’est peu probable, mais
+                      c’est quand même possible. Ce que je vois – et ce que les données nous racontent – c’est que les
+                      personnes vaccinées qui finissent par l’attraper sont loin de souffrir autant. Elles sont beaucoup
+                      moins malades. Elles ne sont pas hospitalisées et elles ne souffrent pas du syndrome post-COVID.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -506,7 +678,16 @@ export const contentPersonasBI = {
                       still can&apos;t climb a flight of stairs.
                     </>
                   ),
-                  FR: <>Le vaccin empêche la plupart des gens d’attraper la COVID, mais certaines personnes finissent par l’avoir quand même. Par contre, les personnes qui l’attrapent quand même ne sont pas malades aussi longtemps. Elles n’aboutissent pas à l’hôpital et n’ont pas autant besoin d’être branchées à un respirateur. Et vous savez, elles ne souffrent pas du syndrome post-COVID aussi. Elles ne font pas partie des personnes qui « récupèrent », mais qui ne sont toujours pas capables de monter un escalier six mois plus tard.</>,
+                  FR: (
+                    <>
+                      Le vaccin empêche la plupart des gens d’attraper la COVID, mais certaines personnes finissent par
+                      l’avoir quand même. Par contre, les personnes qui l’attrapent quand même ne sont pas malades aussi
+                      longtemps. Elles n’aboutissent pas à l’hôpital et n’ont pas autant besoin d’être branchées à un
+                      respirateur. Et vous savez, elles ne souffrent pas du syndrome post-COVID aussi. Elles ne font pas
+                      partie des personnes qui « récupèrent », mais qui ne sont toujours pas capables de monter un
+                      escalier six mois plus tard.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -523,7 +704,14 @@ export const contentPersonasBI = {
                       going to end up being wrecked from it.
                     </>
                   ),
-                  FR: <>Ce qui arrive chez les personnes non vaccinées, c’est qu’elles remplissent les unités de soins intensifs. Elles représentent la grande majorité des personnes aux soins intensifs, mais c’est tout de même une minorité par rapport à l’ensemble de la population. Ça veut dire quelque chose, non? Oui, vous pouvez toujours l’attraper, mais vous ne serez pas autant amoché.</>,
+                  FR: (
+                    <>
+                      Ce qui arrive chez les personnes non vaccinées, c’est qu’elles remplissent les unités de soins
+                      intensifs. Elles représentent la grande majorité des personnes aux soins intensifs, mais c’est
+                      tout de même une minorité par rapport à l’ensemble de la population. Ça veut dire quelque chose,
+                      non? Oui, vous pouvez toujours l’attraper, mais vous ne serez pas autant amoché.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -540,7 +728,13 @@ export const contentPersonasBI = {
                       our advice based on new research.
                     </>
                   ),
-                  FR: <>Ça fait 20 ans que j’exerce ma profession et de nos jours, on fait beaucoup de recommandations qui diffèrent de celles qu’on faisait dans le temps parce qu’on apprend toujours quelque chose de nouveau et qu’on adapte nos conseils en fonction des nouvelles recherches.</>,
+                  FR: (
+                    <>
+                      Ça fait 20 ans que j’exerce ma profession et de nos jours, on fait beaucoup de recommandations qui
+                      diffèrent de celles qu’on faisait dans le temps parce qu’on apprend toujours quelque chose de
+                      nouveau et qu’on adapte nos conseils en fonction des nouvelles recherches.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -557,7 +751,14 @@ export const contentPersonasBI = {
                       it&apos;s not just pulled out of a hat.
                     </>
                   ),
-                  FR: <>Ce qui est difficile avec la COVID, c’est qu’on n’a pas le temps d’attendre et de pousser nos recherches plus loin avant de faire la prochaine recommandation. Il faut agir vite. Mais les nouvelles recherches et les nouveaux conseils sont toujours enracinés dans nos anciennes connaissances des vaccins et de l’immunité en général. Rien ne se fait au hasard.</>,
+                  FR: (
+                    <>
+                      Ce qui est difficile avec la COVID, c’est qu’on n’a pas le temps d’attendre et de pousser nos
+                      recherches plus loin avant de faire la prochaine recommandation. Il faut agir vite. Mais les
+                      nouvelles recherches et les nouveaux conseils sont toujours enracinés dans nos anciennes
+                      connaissances des vaccins et de l’immunité en général. Rien ne se fait au hasard.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -576,7 +777,17 @@ export const contentPersonasBI = {
                       helps.
                     </>
                   ),
-                  FR: <>On apprend au fur et à mesure qu’on avance, et on essaie de faire en sorte que la situation soit la plus sûre possible. On a donc appris à partir d’événements très rares. Un événement sur 100 000. Ça veut dire qu’une personne sur 100 000 va avoir un caillot sanguin. C’est un très petit nombre, mais on prend ça très au sérieux. On peut comparer ça à vos chances, en tant que Canadien, de mourir d’un accident de la route – un risque qu’on prend chaque fois qu’on va en voiture – cette chance étant d’une sur 20 000. J’espère que ce genre de comparaison vous aide à mieux comprendre.</>,
+                  FR: (
+                    <>
+                      On apprend au fur et à mesure qu’on avance, et on essaie de faire en sorte que la situation soit
+                      la plus sûre possible. On a donc appris à partir d’événements très rares. Un événement sur 100
+                      000. Ça veut dire qu’une personne sur 100 000 va avoir un caillot sanguin. C’est un très petit
+                      nombre, mais on prend ça très au sérieux. On peut comparer ça à vos chances, en tant que Canadien,
+                      de mourir d’un accident de la route – un risque qu’on prend chaque fois qu’on va en voiture –
+                      cette chance étant d’une sur 20 000. J’espère que ce genre de comparaison vous aide à mieux
+                      comprendre.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -595,8 +806,19 @@ export const contentPersonasBI = {
                       made, but it has given us some real advantages.
                     </>
                   ),
-                  FR: <>J’ai déjà été vacciné… [ <i>Faites part de votre expérience du point de vue du processus de vaccination et/ou des effets secondaires ici.</i>] Personnellement, je n’ai pas hésité à recevoir le vaccin. En fait, j’avais plutôt hâte de l’avoir! Je sais que la science semble nouvelle et moderne quand ils parlent de ce vaccin à ARNm et de son fonctionnement comparativement aux vaccins traditionnels, mais ça nous a donné de vrais avantages.
-                  </>,
+                  FR: (
+                    <>
+                      J’ai déjà été vacciné… [{" "}
+                      <i>
+                        Faites part de votre expérience du point de vue du processus de vaccination et/ou des effets
+                        secondaires ici.
+                      </i>
+                      ] Personnellement, je n’ai pas hésité à recevoir le vaccin. En fait, j’avais plutôt hâte de
+                      l’avoir! Je sais que la science semble nouvelle et moderne quand ils parlent de ce vaccin à ARNm
+                      et de son fonctionnement comparativement aux vaccins traditionnels, mais ça nous a donné de vrais
+                      avantages.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -614,7 +836,16 @@ export const contentPersonasBI = {
                       FastPass at Disneyland. A FastPass without all the hospitalizations and deaths.
                     </>
                   ),
-                  FR: <>Si le nombre de personnes qui tombent malades augmente tout le temps, il faut se demander : « Est-ce qu’on aura assez de place pour eux à l’hôpital? » On pourrait toujours attendre qu’il y ait suffisamment de personnes qui tombent malades et meurent, ou suffisamment de personnes malades qui ne meurent pas afin d’atteindre l’immunité collective dont les gens parlent. Mais à mon avis, les vaccins nous amèneront au même point, mais plus vite, un peu comme le FastPass à Disneyland. Un FastPass sans toutes les hospitalisations et les décès.</>,
+                  FR: (
+                    <>
+                      Si le nombre de personnes qui tombent malades augmente tout le temps, il faut se demander : «
+                      Est-ce qu’on aura assez de place pour eux à l’hôpital? » On pourrait toujours attendre qu’il y ait
+                      suffisamment de personnes qui tombent malades et meurent, ou suffisamment de personnes malades qui
+                      ne meurent pas afin d’atteindre l’immunité collective dont les gens parlent. Mais à mon avis, les
+                      vaccins nous amèneront au même point, mais plus vite, un peu comme le FastPass à Disneyland. Un
+                      FastPass sans toutes les hospitalisations et les décès.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -630,7 +861,13 @@ export const contentPersonasBI = {
                       They&apos;ve had their vacations canceled. They&apos;re just bloody exhausted.
                     </>
                   ),
-                  FR: <>Il ne faut pas engorger les unités de soins intensifs. Les équipes des soins intensifs n’ont pas la vie facile. Les infirmières et les inhalothérapeutes qui travaillent pendant toutes leurs fins de semaine et leurs soirées, dont les vacances ont été annulées, sont tout simplement épuisés.</>,
+                  FR: (
+                    <>
+                      Il ne faut pas engorger les unités de soins intensifs. Les équipes des soins intensifs n’ont pas
+                      la vie facile. Les infirmières et les inhalothérapeutes qui travaillent pendant toutes leurs fins
+                      de semaine et leurs soirées, dont les vacances ont été annulées, sont tout simplement épuisés.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -653,7 +890,23 @@ export const contentPersonasBI = {
                       enough that can have huge impacts for others.
                     </>
                   ),
-                  FR: <>Les vaccins vont aider à désengorger les hôpitaux et permettre aux médecins de faire les chirurgies nécessaires. D’un côté, il y a des personnes qui attendent un remplacement de la hanche depuis un an. Un an. Ces personnes souffrent. Elles attendent de pouvoir recommencer à marcher. Ça, c’est un côté de la médaille. Et de l’autre côté, il y a des gens dont les enfants doivent se faire opérer, ou des personnes qui font une crise cardiaque ou une appendicite, et les choses bougent lentement, ou pas du tout. Une crise cardiaque, et les choses vont lentement. Une appendicite, et les choses vont lentement. Ces mots ne vont pas bien ensemble. Du moins, pas pour le patient. Si suffisamment de personnes se font vacciner au point d’éviter assez d’hospitalisations, une certaine dame, par exemple, pourrait se faire remplacer la hanche, ou les ambulanciers pourraient amener le patient qui vient d’avoir une crise cardiaque directement à l’hôpital pour se faire opérer. Vous avez raison en ce sens que la COVID ne va pas s’en aller, mais si on peut éviter suffisamment de cas, ça pourrait avoir un énorme impact sur d’autres personnes.</>,
+                  FR: (
+                    <>
+                      Les vaccins vont aider à désengorger les hôpitaux et permettre aux médecins de faire les
+                      chirurgies nécessaires. D’un côté, il y a des personnes qui attendent un remplacement de la hanche
+                      depuis un an. Un an. Ces personnes souffrent. Elles attendent de pouvoir recommencer à marcher.
+                      Ça, c’est un côté de la médaille. Et de l’autre côté, il y a des gens dont les enfants doivent se
+                      faire opérer, ou des personnes qui font une crise cardiaque ou une appendicite, et les choses
+                      bougent lentement, ou pas du tout. Une crise cardiaque, et les choses vont lentement. Une
+                      appendicite, et les choses vont lentement. Ces mots ne vont pas bien ensemble. Du moins, pas pour
+                      le patient. Si suffisamment de personnes se font vacciner au point d’éviter assez
+                      d’hospitalisations, une certaine dame, par exemple, pourrait se faire remplacer la hanche, ou les
+                      ambulanciers pourraient amener le patient qui vient d’avoir une crise cardiaque directement à
+                      l’hôpital pour se faire opérer. Vous avez raison en ce sens que la COVID ne va pas s’en aller,
+                      mais si on peut éviter suffisamment de cas, ça pourrait avoir un énorme impact sur d’autres
+                      personnes.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -669,7 +922,13 @@ export const contentPersonasBI = {
                       Which feels kind of gross to me.
                     </>
                   ),
-                  FR: <>Si une grande partie de la population ne se fait pas vacciner, les gens pourraient être obligés de travailler à la maison, les enfants ne seraient pas toujours en classe, il n’y aurait pas d’activités sociales, etc. pendant plusieurs années. Ce qui est effrayant à mon avis.</>,
+                  FR: (
+                    <>
+                      Si une grande partie de la population ne se fait pas vacciner, les gens pourraient être obligés de
+                      travailler à la maison, les enfants ne seraient pas toujours en classe, il n’y aurait pas
+                      d’activités sociales, etc. pendant plusieurs années. Ce qui est effrayant à mon avis.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -685,7 +944,15 @@ export const contentPersonasBI = {
                       financial risk was taken away and that&apos;s a big part of what shortened the time.
                     </>
                   ),
-                  FR: <>Les responsables du développement des vaccins ont réussi à faire vite parce que le gouvernement leur a octroyé des sommes importantes. En général, la mise à l’essai des vaccins prend du temps parce que ça coûte très cher, mais dans le cas de la COVID, le risque financier lié à la recherche avait été éliminé, ce qui explique en grande partie pourquoi les essais se sont faits plus rapidement.</>,
+                  FR: (
+                    <>
+                      Les responsables du développement des vaccins ont réussi à faire vite parce que le gouvernement
+                      leur a octroyé des sommes importantes. En général, la mise à l’essai des vaccins prend du temps
+                      parce que ça coûte très cher, mais dans le cas de la COVID, le risque financier lié à la recherche
+                      avait été éliminé, ce qui explique en grande partie pourquoi les essais se sont faits plus
+                      rapidement.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -695,7 +962,10 @@ export const contentPersonasBI = {
           },
 
           {
-            subheading: { EN: "'I already had COVID, why do I need to get the vaccine?'", FR: "« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »" },
+            subheading: {
+              EN: "'I already had COVID, why do I need to get the vaccine?'",
+              FR: "« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »",
+            },
             quotes: [
               {
                 text: {
@@ -707,7 +977,15 @@ export const contentPersonasBI = {
                       &lsquo;tutoring&rsquo; to help your body be really good at fighting off COVID.
                     </>
                   ),
-                  FR: <>Ma fille vient tout juste d’apprendre à conduire. C’est moi qui lui ai montré au début. Elle a donc pris toutes mes mauvaises manières. Ensuite, un professionnel lui a donné des cours de conduite et maintenant, elle conduit très bien. Ses assurances coûtent moins cher, aussi. La vaccination après l’infection, c’est comme cet « enseignement » professionnel. Elle aide votre corps à bien combattre la COVID.</>,
+                  FR: (
+                    <>
+                      Ma fille vient tout juste d’apprendre à conduire. C’est moi qui lui ai montré au début. Elle a
+                      donc pris toutes mes mauvaises manières. Ensuite, un professionnel lui a donné des cours de
+                      conduite et maintenant, elle conduit très bien. Ses assurances coûtent moins cher, aussi. La
+                      vaccination après l’infection, c’est comme cet « enseignement » professionnel. Elle aide votre
+                      corps à bien combattre la COVID.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -723,7 +1001,13 @@ export const contentPersonasBI = {
                       &lsquo;boost&rsquo; their immunity to better levels in the longer term.
                     </>
                   ),
-                  FR: <>Des données du monde réel commencent à sortir à propos des patients qui ont été atteints de la COVID, et des études sont effectuées pour voir s’il serait possible de ne leur donner qu’une seule dose de vaccin pour améliorer leur immunité à plus long terme.</>,
+                  FR: (
+                    <>
+                      Des données du monde réel commencent à sortir à propos des patients qui ont été atteints de la
+                      COVID, et des études sont effectuées pour voir s’il serait possible de ne leur donner qu’une seule
+                      dose de vaccin pour améliorer leur immunité à plus long terme.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -739,7 +1023,14 @@ export const contentPersonasBI = {
                       group, so it can focus its attention on building more antibodies instead of trying not to die!
                     </>
                   ),
-                  FR: <>Quand on compare les anticorps des patients qui ont eu le vaccin par opposition à ceux qui ont eu la maladie, on constate que l’immunité est meilleure dans le cas du vaccin, probablement parce que le corps du groupe de personnes vaccinées n’est pas occupé à combattre la maladie, ce qui lui permet de fabriquer plus d’anticorps au lieu d’essayer de survivre!</>,
+                  FR: (
+                    <>
+                      Quand on compare les anticorps des patients qui ont eu le vaccin par opposition à ceux qui ont eu
+                      la maladie, on constate que l’immunité est meilleure dans le cas du vaccin, probablement parce que
+                      le corps du groupe de personnes vaccinées n’est pas occupé à combattre la maladie, ce qui lui
+                      permet de fabriquer plus d’anticorps au lieu d’essayer de survivre!
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -759,7 +1050,19 @@ export const contentPersonasBI = {
                       when I see you now!
                     </>
                   ),
-                  FR: <>Je sais que vous pensez que votre système immunitaire devrait être capable de combattre seul. Si ce que vous dites était vrai, alors vous décideriez aussi de ne pas vous laver les mains après être allé aux toilettes, ou vous ne laveriez pas vos fruits et légumes avant de les manger, ou vous ne mettriez pas vos œufs au réfrigérateur parce que votre système immunitaire devrait simplement arriver à comprendre comment combattre le E. coli et la salmonelle par lui-même. Mais je serais prêt à parier que vous vous lavez les mains et que vous réfrigérez vos aliments, non? La première fois que le Dr Semmelweis a suggéré, dans les années 1900, que le lavage des mains réduirait les infections, tout le monde pensait qu’il était fou. Mais je suis certain que vous êtes content que je me lave les mains avant de vous recevoir dans mon cabinet!</>,
+                  FR: (
+                    <>
+                      Je sais que vous pensez que votre système immunitaire devrait être capable de combattre seul. Si
+                      ce que vous dites était vrai, alors vous décideriez aussi de ne pas vous laver les mains après
+                      être allé aux toilettes, ou vous ne laveriez pas vos fruits et légumes avant de les manger, ou
+                      vous ne mettriez pas vos œufs au réfrigérateur parce que votre système immunitaire devrait
+                      simplement arriver à comprendre comment combattre le E. coli et la salmonelle par lui-même. Mais
+                      je serais prêt à parier que vous vous lavez les mains et que vous réfrigérez vos aliments, non? La
+                      première fois que le Dr Semmelweis a suggéré, dans les années 1900, que le lavage des mains
+                      réduirait les infections, tout le monde pensait qu’il était fou. Mais je suis certain que vous
+                      êtes content que je me lave les mains avant de vous recevoir dans mon cabinet!
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -783,7 +1086,12 @@ export const contentPersonasBI = {
                       you?
                     </>
                   ),
-                  FR: <>Et si aucun vaccin n’avait été créé contre la COVID? À quoi vos cinq prochaines années ressembleraient-elles?</>,
+                  FR: (
+                    <>
+                      Et si aucun vaccin n’avait été créé contre la COVID? À quoi vos cinq prochaines années
+                      ressembleraient-elles?
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -800,7 +1108,15 @@ export const contentPersonasBI = {
                       and what I don&apos;t know at that point. And maybe we&apos;ll make a decision together then.
                     </>
                   ),
-                  FR: <>Je vous entends penser : « <i>Oh, mais c’est encore assez nouveau. C’est expérimental.</i>' » On a beaucoup de données en ce moment, mais on en aura encore plus à mesure que les semaines passeront et que de plus en plus de personnes se feront vacciner. Et je vous promets de trouver cette information pour vous. Et je vous dirai ce que je saurai et ce que je ne saurai pas à ce moment-là. Et peut-être qu’on prendra une décision ensemble rendu là.</>,
+                  FR: (
+                    <>
+                      Je vous entends penser : « <i>Oh, mais c’est encore assez nouveau. C’est expérimental.</i>' » On a
+                      beaucoup de données en ce moment, mais on en aura encore plus à mesure que les semaines passeront
+                      et que de plus en plus de personnes se feront vacciner. Et je vous promets de trouver cette
+                      information pour vous. Et je vous dirai ce que je saurai et ce que je ne saurai pas à ce
+                      moment-là. Et peut-être qu’on prendra une décision ensemble rendu là.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -816,7 +1132,13 @@ export const contentPersonasBI = {
                       sometimes be an outlet for that fear.
                     </>
                   ),
-                  FR: <>À quand remonte la dernière fois que vous avez porté tant d’attention à la recherche scientifique concernant les recommandations de santé? Je dirais qu’on a tous un peu peur en ce moment, et que c’est parfois comme ça qu’on exprime notre peur.</>,
+                  FR: (
+                    <>
+                      À quand remonte la dernière fois que vous avez porté tant d’attention à la recherche scientifique
+                      concernant les recommandations de santé? Je dirais qu’on a tous un peu peur en ce moment, et que
+                      c’est parfois comme ça qu’on exprime notre peur.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -835,7 +1157,15 @@ export const contentPersonasBI = {
                       community.
                     </>
                   ),
-                  FR: <>Je vois que vous êtes un leader dans votre communauté et si je peux vous aider à comprendre ce que je sais, je crois qu’avec la bonne information, on pourra aider bien des personnes. Si vous pouvez faire équipe avec moi, il me fera plaisir de jeter un coup d’œil à votre documentation pour déterminer d’où vient vraiment l’information que vous avez et, espérons-le, vous aider à la comprendre et à faire les meilleurs choix pour vous, votre famille et votre communauté.</>,
+                  FR: (
+                    <>
+                      Je vois que vous êtes un leader dans votre communauté et si je peux vous aider à comprendre ce que
+                      je sais, je crois qu’avec la bonne information, on pourra aider bien des personnes. Si vous pouvez
+                      faire équipe avec moi, il me fera plaisir de jeter un coup d’œil à votre documentation pour
+                      déterminer d’où vient vraiment l’information que vous avez et, espérons-le, vous aider à la
+                      comprendre et à faire les meilleurs choix pour vous, votre famille et votre communauté.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -849,7 +1179,10 @@ export const contentPersonasBI = {
     // (ScienceConcerns Resources)
     resources: [
       {
-        title: { EN: <>CanVax - How do the mRNA vaccines work?</>, FR: <>CanVax - Comment fonctionnent les vaccins à base d’ARNm contre la COVID-19?</> },
+        title: {
+          EN: <>CanVax - How do the mRNA vaccines work?</>,
+          FR: <>CanVax - Comment fonctionnent les vaccins à base d’ARNm contre la COVID-19?</>,
+        },
         linkText: { EN: <>Educational video from CanVax</>, FR: <>Vidéo éducative de CanVax</> },
         link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
         // Note: link can be either a string (as above) or an object (as below, if there's both a French site and an English one).
@@ -865,8 +1198,14 @@ export const contentPersonasBI = {
       },
 
       {
-        title: { EN: <>University of Waterloo - mRNA vaccine myths factsheet</>, FR: <>Université de Waterloo - Fiche sur les mythes entourant les vaccins à ARNm</> },
-        linkText: { EN: <>mRNA vaccine myths factsheet for patients</>, FR: <>Fiche sur les mythes entourant les vaccins à ARNm à l’intention des patients</> },
+        title: {
+          EN: <>University of Waterloo - mRNA vaccine myths factsheet</>,
+          FR: <>Université de Waterloo - Fiche sur les mythes entourant les vaccins à ARNm</>,
+        },
+        linkText: {
+          EN: <>mRNA vaccine myths factsheet for patients</>,
+          FR: <>Fiche sur les mythes entourant les vaccins à ARNm à l’intention des patients</>,
+        },
         link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
         description: {
           EN: (
@@ -875,9 +1214,12 @@ export const contentPersonasBI = {
               vaccines. (2021)
             </>
           ),
-          FR: <>Brève fiche d’information destinée aux patients au sujet de certains des mythes et idées fausses concernant les vaccins à ARNm.
-          (2021)
-          </>,
+          FR: (
+            <>
+              Brève fiche d’information destinée aux patients au sujet de certains des mythes et idées fausses
+              concernant les vaccins à ARNm. (2021)
+            </>
+          ),
         },
       },
 
@@ -901,11 +1243,19 @@ export const contentPersonasBI = {
               infographics and videos. (March 2021)
             </>
           ),
-          FR: <>Aperçu de l’Organisation mondiale de la santé concernant l’innocuité des vaccins contre la COVID-19. Information destinée aux patients, avec infographie et vidéos. (mars 2021)</>,
+          FR: (
+            <>
+              Aperçu de l’Organisation mondiale de la santé concernant l’innocuité des vaccins contre la COVID-19.
+              Information destinée aux patients, avec infographie et vidéos. (mars 2021)
+            </>
+          ),
         },
       },
       {
-        title: { EN: <>COVID-19 Vaccine Frequently Asked Questions</>, FR: <>COVID-19 Vaccine Frequently Asked Questions</> },
+        title: {
+          EN: <>COVID-19 Vaccine Frequently Asked Questions</>,
+          FR: <>COVID-19 Vaccine Frequently Asked Questions</>,
+        },
         linkText: { EN: <>ImmunizeBC Vaccine FAQ Page</>, FR: <>Page des FAQ d’ImmunizeBC sur les vaccins</> },
         link: "https://immunizebc.ca/covid-19-vaccine-frequently-asked-questions",
         description: {
@@ -915,8 +1265,12 @@ export const contentPersonasBI = {
               effects. (Updated regularly, 2021).
             </>
           ),
-          FR: <>FAQ d’ImmunizeBC sur les vaccins contre la COVID-19, comprenant des sections sur l’innocuité, les allergies et les effets secondaires.
-          (mis à jour régulièrement, 2021)</>,
+          FR: (
+            <>
+              FAQ d’ImmunizeBC sur les vaccins contre la COVID-19, comprenant des sections sur l’innocuité, les
+              allergies et les effets secondaires. (mis à jour régulièrement, 2021)
+            </>
+          ),
         },
       },
       {
@@ -925,7 +1279,12 @@ export const contentPersonasBI = {
         link: "https://www.nytimes.com/interactive/2021/health/pfizer-coronavirus-vaccine.html",
         description: {
           EN: <>Detailed examination of how Pfizer produces the mRNA vaccines. New York Times article. (April 2021).</>,
-          FR: <>Information détaillée sur la façon dont Pfizer produit les vaccins à ARNm. Article du New York Times. (avril 2021)</>,
+          FR: (
+            <>
+              Information détaillée sur la façon dont Pfizer produit les vaccins à ARNm. Article du New York Times.
+              (avril 2021)
+            </>
+          ),
         },
       },
       {
@@ -937,7 +1296,12 @@ export const contentPersonasBI = {
           EN: (
             <>Hopkins Medicine fact page and resources for exploring the safety of the COVID-19 vaccines. (May 2021).</>
           ),
-          FR: <>Faits et ressources publiés dans Hopkins Medicine au sujet de l’innocuité des vaccins contre la COVID-19. (mai 2021)</>,
+          FR: (
+            <>
+              Faits et ressources publiés dans Hopkins Medicine au sujet de l’innocuité des vaccins contre la COVID-19.
+              (mai 2021)
+            </>
+          ),
         },
       },
       {
@@ -951,7 +1315,12 @@ export const contentPersonasBI = {
               your own risk. (June 2021).
             </>
           ),
-          FR: <>Fil de discussion Twitter sur les hésitations et les stratégies de counseling efficaces pour autrui. L’utilisation de Twitter se fait aux risques de l’utilisateur. (juin 2021)</>,
+          FR: (
+            <>
+              Fil de discussion Twitter sur les hésitations et les stratégies de counseling efficaces pour autrui.
+              L’utilisation de Twitter se fait aux risques de l’utilisateur. (juin 2021)
+            </>
+          ),
         },
       },
     ],
@@ -974,9 +1343,10 @@ export const contentPersonasBI = {
             <>&ldquo;Will my cells be permanently reprogrammed?&rdquo;</>,
           ],
           FR: [
-          <>« J’ai entendu dire que les vaccins à ARNm vont modifier mon ADN. »</>, 
-          <>« Je ne veux pas d’injections dans mon corps qui pourraient modifier mon ADN. »</>, 
-          <>« Est-ce que mes cellules vont être reprogrammées en permanence? »</>],
+            <>« J’ai entendu dire que les vaccins à ARNm vont modifier mon ADN. »</>,
+            <>« Je ne veux pas d’injections dans mon corps qui pourraient modifier mon ADN. »</>,
+            <>« Est-ce que mes cellules vont être reprogrammées en permanence? »</>,
+          ],
         },
       },
 
@@ -987,7 +1357,13 @@ export const contentPersonasBI = {
             <>Affirm with the patient that this concern is shared by others.</>,
             <>Use clear metaphors and straight forward analogies to explain how the mRNA vaccines work.</>,
           ],
-          FR: [<>Affirmez au patient qu’il n’est pas le seul à se soucier de ça.</>, <>Utilisez des métaphores et des analogies claires et directes pour expliquer le fonctionnement des vaccins à ARNm.</>,],
+          FR: [
+            <>Affirmez au patient qu’il n’est pas le seul à se soucier de ça.</>,
+            <>
+              Utilisez des métaphores et des analogies claires et directes pour expliquer le fonctionnement des vaccins
+              à ARNm.
+            </>,
+          ],
         },
       },
       takeHome: {
@@ -1000,7 +1376,13 @@ export const contentPersonasBI = {
               vaccines.
             </>,
           ],
-          FR: [<>Les vaccins à ARNm sont sûrs et n’agissent jamais sur l’ADN d’un patient. L’utilisation de métaphores claires pour expliquer le fonctionnement de ces vaccins peut aider votre patient à se sentir mieux informé et plus à l’aise avec ces types de vaccins.</>,],
+          FR: [
+            <>
+              Les vaccins à ARNm sont sûrs et n’agissent jamais sur l’ADN d’un patient. L’utilisation de métaphores
+              claires pour expliquer le fonctionnement de ces vaccins peut aider votre patient à se sentir mieux informé
+              et plus à l’aise avec ces types de vaccins.
+            </>,
+          ],
         },
       },
     },
@@ -1015,7 +1397,12 @@ export const contentPersonasBI = {
                 vaccine might do to you?
               </>
             ),
-            FR: <>Si ça ne vous dérange pas, j’aimerais que vous me fassiez part de vos inquiétudes à propos de ce que le vaccin pourrait vous faire?</>,
+            FR: (
+              <>
+                Si ça ne vous dérange pas, j’aimerais que vous me fassiez part de vos inquiétudes à propos de ce que le
+                vaccin pourrait vous faire?
+              </>
+            ),
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
@@ -1028,7 +1415,13 @@ export const contentPersonasBI = {
                 we&apos;ve had before.
               </>
             ),
-            FR: <>Je sais qu’il y a beaucoup de discussions au sujet du fonctionnement des vaccins, et certaines des discussions peuvent être inquiétantes. Il peut parfois être difficile de donner un sens à quelque chose de si nouveau et différent de ce que nous avons vu par le passé.</>,
+            FR: (
+              <>
+                Je sais qu’il y a beaucoup de discussions au sujet du fonctionnement des vaccins, et certaines des
+                discussions peuvent être inquiétantes. Il peut parfois être difficile de donner un sens à quelque chose
+                de si nouveau et différent de ce que nous avons vu par le passé.
+              </>
+            ),
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -1041,7 +1434,13 @@ export const contentPersonasBI = {
                 concerns. Is it okay if I share some of the vaccine science with you?
               </>
             ),
-            FR: <>Donc, cette inquiétude au sujet de l’ADN, j’en ai entendu souvent parler. J’ai donc fait pas mal de recherche à ce sujet pour pouvoir bien répondre aux questions et aux inquiétudes des gens. Est-ce que je peux vous faire part de certains faits scientifiques au sujet des vaccins?</>,
+            FR: (
+              <>
+                Donc, cette inquiétude au sujet de l’ADN, j’en ai entendu souvent parler. J’ai donc fait pas mal de
+                recherche à ce sujet pour pouvoir bien répondre aux questions et aux inquiétudes des gens. Est-ce que je
+                peux vous faire part de certains faits scientifiques au sujet des vaccins?
+              </>
+            ),
           },
           image: "doctorBlackWoman.svg",
         },
@@ -1053,7 +1452,12 @@ export const contentPersonasBI = {
                 explore.
               </>
             ),
-            FR: <>Est-ce que vous vous sentiriez mieux si vous pouviez avoir un vaccin sans ARNm? On peut explorer d’autres options de vaccins.</>,
+            FR: (
+              <>
+                Est-ce que vous vous sentiriez mieux si vous pouviez avoir un vaccin sans ARNm? On peut explorer
+                d’autres options de vaccins.
+              </>
+            ),
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -1072,7 +1476,12 @@ export const contentPersonasBI = {
                       the vaccine might do to you?
                     </>
                   ),
-                  FR: <>Si ça ne vous dérange pas, j’aimerais que vous me fassiez part de vos inquiétudes à propos de ce que le vaccin pourrait vous faire?</>,
+                  FR: (
+                    <>
+                      Si ça ne vous dérange pas, j’aimerais que vous me fassiez part de vos inquiétudes à propos de ce
+                      que le vaccin pourrait vous faire?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -1087,7 +1496,12 @@ export const contentPersonasBI = {
                       are on the same page.
                     </>
                   ),
-                  FR: <>Je vais oser vous contredire un peu ici. Je veux faire en sorte que vous ayez la bonne information, histoire d’être sur la même longueur d’onde.</>,
+                  FR: (
+                    <>
+                      Je vais oser vous contredire un peu ici. Je veux faire en sorte que vous ayez la bonne
+                      information, histoire d’être sur la même longueur d’onde.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1112,7 +1526,13 @@ export const contentPersonasBI = {
                       different from what we&apos;ve had before.
                     </>
                   ),
-                  FR: <>Je sais qu’il y a beaucoup de discussions au sujet du fonctionnement des vaccins, et certaines des discussions peuvent être inquiétantes. Il peut parfois être difficile de donner un sens à quelque chose de si nouveau et différent de ce que nous avons vu par le passé.</>,
+                  FR: (
+                    <>
+                      Je sais qu’il y a beaucoup de discussions au sujet du fonctionnement des vaccins, et certaines des
+                      discussions peuvent être inquiétantes. Il peut parfois être difficile de donner un sens à quelque
+                      chose de si nouveau et différent de ce que nous avons vu par le passé.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1128,7 +1548,13 @@ export const contentPersonasBI = {
                       just trying to figure out what&apos;s going on.
                     </>
                   ),
-                  FR: <>Je veux dire, c’est vraiment complexe, non? Tout comme vous, je me suis fait un devoir d’en savoir plus au sujet des vaccins. C’est tellement nouveau pour tout le monde, je pense qu’on essaie tous de déterminer ce qui se passe vraiment.</>,
+                  FR: (
+                    <>
+                      Je veux dire, c’est vraiment complexe, non? Tout comme vous, je me suis fait un devoir d’en savoir
+                      plus au sujet des vaccins. C’est tellement nouveau pour tout le monde, je pense qu’on essaie tous
+                      de déterminer ce qui se passe vraiment.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -1153,7 +1579,13 @@ export const contentPersonasBI = {
                       and concerns. Is it okay if I share some of the vaccine science with you?
                     </>
                   ),
-                  FR: <>Donc, cette inquiétude au sujet de l’ADN, j’en ai entendu souvent parler. J’ai fait pas mal de recherche à ce sujet pour pouvoir bien répondre aux questions et aux inquiétudes des gens. Est-ce que je peux vous faire part de certains faits scientifiques au sujet des vaccins?</>,
+                  FR: (
+                    <>
+                      Donc, cette inquiétude au sujet de l’ADN, j’en ai entendu souvent parler. J’ai fait pas mal de
+                      recherche à ce sujet pour pouvoir bien répondre aux questions et aux inquiétudes des gens. Est-ce
+                      que je peux vous faire part de certains faits scientifiques au sujet des vaccins?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -1170,7 +1602,13 @@ export const contentPersonasBI = {
                       make your favourite dish...
                     </>
                   ),
-                  FR: <>J’ai une bonne analogie qui aide les gens à comprendre le fonctionnement de l’ARNm. Est-ce que je peux vous en faire part? Imaginez-vous si le chef de votre restaurant préféré venait chez vous et vous faisait votre repas préféré…</>,
+                  FR: (
+                    <>
+                      J’ai une bonne analogie qui aide les gens à comprendre le fonctionnement de l’ARNm. Est-ce que je
+                      peux vous en faire part? Imaginez-vous si le chef de votre restaurant préféré venait chez vous et
+                      vous faisait votre repas préféré…
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1196,7 +1634,13 @@ export const contentPersonasBI = {
                       know for sure. That one is absolutely true.
                     </>
                   ),
-                  FR: <>Je sais qu’il existe beaucoup d’information à ce sujet, mais croyez-en ma parole : le vaccin ne modifie pas votre ADN. Il y a peut-être d’autres choses qu’on ne sait toujours pas, mais c’est certain que le vaccin ne modifie pas l’ADN. C’est ce qu’il y a de plus vrai.</>,
+                  FR: (
+                    <>
+                      Je sais qu’il existe beaucoup d’information à ce sujet, mais croyez-en ma parole : le vaccin ne
+                      modifie pas votre ADN. Il y a peut-être d’autres choses qu’on ne sait toujours pas, mais c’est
+                      certain que le vaccin ne modifie pas l’ADN. C’est ce qu’il y a de plus vrai.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1213,7 +1657,14 @@ export const contentPersonasBI = {
                       do have to protect you from getting so sick.
                     </>
                   ),
-                  FR: <>J’aimerais bien que la technologie permettant de modifier l’ADN existe. Vraiment, ce serait génial parce que si cette technologie existait, vous savez quoi? On pourrait guérir le cancer sous toutes ses formes. On n’est pas capable de modifier l’ADN. Ça n’existe franchement pas. Il faut tout simplement se servir des technologies qu’on a déjà pour vous empêcher de devenir tellement malade.</>,
+                  FR: (
+                    <>
+                      J’aimerais bien que la technologie permettant de modifier l’ADN existe. Vraiment, ce serait génial
+                      parce que si cette technologie existait, vous savez quoi? On pourrait guérir le cancer sous toutes
+                      ses formes. On n’est pas capable de modifier l’ADN. Ça n’existe franchement pas. Il faut tout
+                      simplement se servir des technologies qu’on a déjà pour vous empêcher de devenir tellement malade.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -1229,7 +1680,13 @@ export const contentPersonasBI = {
                       for this bit of protein that we want your cells to make.
                     </>
                   ),
-                  FR: <>Les vaccins à ARNm sont très différents des vaccins traditionnels parce qu’ils ne vous exposent pas au vrai virus. En fait, le petit peu d’ARNm qui se trouve dans les vaccins ressemble à un livre de recettes en ce sens qu’il faut que la protéine dise à vos cellules quoi faire.</>,
+                  FR: (
+                    <>
+                      Les vaccins à ARNm sont très différents des vaccins traditionnels parce qu’ils ne vous exposent
+                      pas au vrai virus. En fait, le petit peu d’ARNm qui se trouve dans les vaccins ressemble à un
+                      livre de recettes en ce sens qu’il faut que la protéine dise à vos cellules quoi faire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -1252,7 +1709,19 @@ export const contentPersonasBI = {
                       response.
                     </>
                   ),
-                  FR: <>L’aspect intéressant des vaccins à ARNm, et qui les rend même meilleurs que les autres vaccins, c’est le fait qu’ils pénètrent dans votre cellule et font en sorte que celle-ci produise ces petites sortes de piquants que vous voyez dans toutes les photos de COVID. C’est grâce à ces piquants que la COVID se fixe aux cellules de votre corps. C’est comme ça que la maladie commence à vous attaquer. Donc, au lieu que la COVID vous attaque et prenne le dessus sur vos cellules, l’ARNm de votre vaccin pénètre dans votre cellule, puis lui dit de créer cette même petite forme à piquants. Il ne crée pas le virus, seulement la petite forme à piquants. Et là, votre corps se dit : « <i>Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais</i> », et il se met à développer une réponse immunitaire.</>,
+                  FR: (
+                    <>
+                      L’aspect intéressant des vaccins à ARNm, et qui les rend même meilleurs que les autres vaccins,
+                      c’est le fait qu’ils pénètrent dans votre cellule et font en sorte que celle-ci produise ces
+                      petites sortes de piquants que vous voyez dans toutes les photos de COVID. C’est grâce à ces
+                      piquants que la COVID se fixe aux cellules de votre corps. C’est comme ça que la maladie commence
+                      à vous attaquer. Donc, au lieu que la COVID vous attaque et prenne le dessus sur vos cellules,
+                      l’ARNm de votre vaccin pénètre dans votre cellule, puis lui dit de créer cette même petite forme à
+                      piquants. Il ne crée pas le virus, seulement la petite forme à piquants. Et là, votre corps se dit
+                      : « <i>Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais</i> », et il se met à
+                      développer une réponse immunitaire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1272,7 +1741,18 @@ export const contentPersonasBI = {
                       his technology is all about being nimble and responding to the variants.
                     </>
                   ),
-                  FR: <>Ce qui est super à propos de ces vaccins, c’est qu’il est facile de les modifier légèrement pour qu’ils puissent être efficaces contre différentes souches virales. Ils peuvent modifier un peu la protéine de spicule par ici et par là, parce que c’est comme ça que fonctionne la technologie de l’ARNm. C’est comme quand on commande une voiture de nos jours, comparativement à il y a 50 ans. Aujourd’hui, vous pouvez aller en ligne et commander une couleur différente et autant d’options ou aussi peu d’options que vous le désirez. Il y a 50 ans, quand les gens s’achetaient une voiture, ils la prenaient comme elle était. Cette technologie donne de la souplesse et permet de réagir aux variants.</>,
+                  FR: (
+                    <>
+                      Ce qui est super à propos de ces vaccins, c’est qu’il est facile de les modifier légèrement pour
+                      qu’ils puissent être efficaces contre différentes souches virales. Ils peuvent modifier un peu la
+                      protéine de spicule par ici et par là, parce que c’est comme ça que fonctionne la technologie de
+                      l’ARNm. C’est comme quand on commande une voiture de nos jours, comparativement à il y a 50 ans.
+                      Aujourd’hui, vous pouvez aller en ligne et commander une couleur différente et autant d’options ou
+                      aussi peu d’options que vous le désirez. Il y a 50 ans, quand les gens s’achetaient une voiture,
+                      ils la prenaient comme elle était. Cette technologie donne de la souplesse et permet de réagir aux
+                      variants.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1298,7 +1778,14 @@ export const contentPersonasBI = {
                       DNA, and that they are a safe choice.
                     </>
                   ),
-                  FR: <>Maintenant, on sait que ces vaccins sont sûrs et efficaces pour tellement de personnes de par le monde. Chose certaine, ils ne compromettent pas l’ADN des gens. C’est normal de s’inquiéter de quelque chose d’aussi nouveau, mais je vous assure que ces vaccins n’agiront pas sur votre ADN et qu’ils sont un choix sécuritaire.</>,
+                  FR: (
+                    <>
+                      Maintenant, on sait que ces vaccins sont sûrs et efficaces pour tellement de personnes de par le
+                      monde. Chose certaine, ils ne compromettent pas l’ADN des gens. C’est normal de s’inquiéter de
+                      quelque chose d’aussi nouveau, mais je vous assure que ces vaccins n’agiront pas sur votre ADN et
+                      qu’ils sont un choix sécuritaire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1314,7 +1801,13 @@ export const contentPersonasBI = {
                       these restrictions coming back and disrupting our lives again.
                     </>
                   ),
-                  FR: <>Les médecins et les professionnels de la santé en général essaient d’aider les gens à comprendre que plus de personnes vont se faire vacciner, plus on sera susceptibles d’éviter les restrictions à l’avenir et la perturbation de notre vie.</>,
+                  FR: (
+                    <>
+                      Les médecins et les professionnels de la santé en général essaient d’aider les gens à comprendre
+                      que plus de personnes vont se faire vacciner, plus on sera susceptibles d’éviter les restrictions
+                      à l’avenir et la perturbation de notre vie.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorMuslimWomanYellowHeadCover.svg",
@@ -1347,7 +1840,10 @@ export const contentPersonasBI = {
 
           FR: <>Université de Waterloo - fiche sur les mythes entourant les vaccins à ARNm</>,
         },
-        linkText: { EN: <>mRNA vaccine myths factsheet for patients</>, FR: <>Fiche sur les mythes entourant les vaccins à ARNm à l’intention des patients</> },
+        linkText: {
+          EN: <>mRNA vaccine myths factsheet for patients</>,
+          FR: <>Fiche sur les mythes entourant les vaccins à ARNm à l’intention des patients</>,
+        },
         link: "https://tools.cep.health/wp-content/uploads/2021/01/mRNA-Vaccine-Myths.jpg",
         description: {
           EN: (
@@ -1356,8 +1852,12 @@ export const contentPersonasBI = {
               vaccines. (2021)
             </>
           ),
-          FR: <>Brève fiche d’information destinée aux patients au sujet de certains mythes et idées fausses concernant les vaccins à ARNm.
-          (2021)</>,
+          FR: (
+            <>
+              Brève fiche d’information destinée aux patients au sujet de certains mythes et idées fausses concernant
+              les vaccins à ARNm. (2021)
+            </>
+          ),
         },
       },
 
@@ -1389,8 +1889,13 @@ export const contentPersonasBI = {
               infographics on how they work and links to information on their development. (March 2021)
             </>
           ),
-          FR: <>Site Web du CDC américain pour aider les patients et le grand public à mieux comprendre les vaccins à ARNm, comprenant de l’infographie expliquant le fonctionnement de ces vaccins et des liens d’information sur leur développement.
-          (mars 2021)</>,
+          FR: (
+            <>
+              Site Web du CDC américain pour aider les patients et le grand public à mieux comprendre les vaccins à
+              ARNm, comprenant de l’infographie expliquant le fonctionnement de ces vaccins et des liens d’information
+              sur leur développement. (mars 2021)
+            </>
+          ),
         },
       },
       {
@@ -1399,7 +1904,10 @@ export const contentPersonasBI = {
 
           FR: <>How the COVID vaccine can save your life (comic)</>,
         },
-        linkText: { EN: <>Interactive comic looking at COVID vaccines</>, FR: <>Bande dessinée interactive sur les vaccins contre la COVID</> },
+        linkText: {
+          EN: <>Interactive comic looking at COVID vaccines</>,
+          FR: <>Bande dessinée interactive sur les vaccins contre la COVID</>,
+        },
         link: "https://projects.nj.com/vaccine-comic/",
         description: {
           EN: <>A graphic novel/comic strip looking at the mRNA vaccines. (February 2021)</>,
@@ -1424,9 +1932,13 @@ export const contentPersonasBI = {
             <>&ldquo;I&apos;m worried about the vaccine interacting with my medications.&rdquo;</>,
           ],
           FR: [
-          <>« Avec toutes les maladies que j’ai et les médicaments que je prends, je ne suis pas sûre que le vaccin est bon pour moi. »</>, 
-          <>« Si j’attrape la COVID et que j’en meurs, alors ce sera ça. »</>, 
-          <>« Je m’inquiète de l’interaction du vaccin avec mes médicaments. »</>],
+            <>
+              « Avec toutes les maladies que j’ai et les médicaments que je prends, je ne suis pas sûre que le vaccin
+              est bon pour moi. »
+            </>,
+            <>« Si j’attrape la COVID et que j’en meurs, alors ce sera ça. »</>,
+            <>« Je m’inquiète de l’interaction du vaccin avec mes médicaments. »</>,
+          ],
         },
       },
 
@@ -1448,9 +1960,19 @@ export const contentPersonasBI = {
             </>,
           ],
           FR: [
-          <>Considérez la possibilité de discuter des facteurs de comorbidité et des médicaments de votre patiente avec un spécialiste qui vous indiquera la meilleure marche à suivre.</>, 
-          <>Encouragez les patients à voir que le fait de refuser le vaccin pourrait empirer les maladies dont ils souffrent déjà ou leur donner de la difficulté à les combattre.</>, 
-          <>Communiquez avec votre patiente pour voir comment elle se sent. Après de longues conversations au sujet des troubles de santé, il serait peut-être préférable de discuter des vaccins lors d’un autre rendez-vous.</>],
+            <>
+              Considérez la possibilité de discuter des facteurs de comorbidité et des médicaments de votre patiente
+              avec un spécialiste qui vous indiquera la meilleure marche à suivre.
+            </>,
+            <>
+              Encouragez les patients à voir que le fait de refuser le vaccin pourrait empirer les maladies dont ils
+              souffrent déjà ou leur donner de la difficulté à les combattre.
+            </>,
+            <>
+              Communiquez avec votre patiente pour voir comment elle se sent. Après de longues conversations au sujet
+              des troubles de santé, il serait peut-être préférable de discuter des vaccins lors d’un autre rendez-vous.
+            </>,
+          ],
         },
       },
       takeHome: {
@@ -1463,7 +1985,14 @@ export const contentPersonasBI = {
               treatment plans on track and lower the risk of long&ndash;term health implications.
             </>,
           ],
-          FR: [<>À titre de professionnel de la santé de confiance, vous pouvez rappeler à votre patiente au dossier médical complexe que votre but, c’est d’optimiser sa santé. Considérez la possibilité de discuter de l’importance de ce vaccin pour que ses plans de traitement continuent dans la bonne voie et pour diminuer le risque d’effets à long terme sur la santé de votre patiente.</>,],
+          FR: [
+            <>
+              À titre de professionnel de la santé de confiance, vous pouvez rappeler à votre patiente au dossier
+              médical complexe que votre but, c’est d’optimiser sa santé. Considérez la possibilité de discuter de
+              l’importance de ce vaccin pour que ses plans de traitement continuent dans la bonne voie et pour diminuer
+              le risque d’effets à long terme sur la santé de votre patiente.
+            </>,
+          ],
         },
       },
     },
@@ -1487,7 +2016,15 @@ export const contentPersonasBI = {
                 need to protect you, get you living the best life you can.
               </>
             ),
-            FR: <>Je comprends que vous avez l’impression d’être dépassée par les événements. Je sais qu’il se passe beaucoup de choses dans votre vie et c’est pour ça qu’on finit par avoir tellement de conversations. Vous et moi, on travaille ensemble pour maximiser votre qualité de vie dans la plus grande mesure possible. Vous savez qu’en réalité, je préférerais que vous ne preniez aucun médicament, mais il faut qu’on vous protège pour que vous ayez la meilleure qualité de vie possible.</>,
+            FR: (
+              <>
+                Je comprends que vous avez l’impression d’être dépassée par les événements. Je sais qu’il se passe
+                beaucoup de choses dans votre vie et c’est pour ça qu’on finit par avoir tellement de conversations.
+                Vous et moi, on travaille ensemble pour maximiser votre qualité de vie dans la plus grande mesure
+                possible. Vous savez qu’en réalité, je préférerais que vous ne preniez aucun médicament, mais il faut
+                qu’on vous protège pour que vous ayez la meilleure qualité de vie possible.
+              </>
+            ),
           },
           image: "doctorWhiteManBlackHair.svg",
         },
@@ -1500,8 +2037,13 @@ export const contentPersonasBI = {
                 I&apos;d really much rather that you didn&apos;t have a new health problem from COVID on your hands.
               </>
             ),
-            FR: <>Peu importe ce que vous lisez au sujet des divers vaccins, je peux vous dire que tous les vaccins empêchent les gens d’être hospitalisés ou de mourir. C’est le genre de protection qu’ils nous procurent. Je ne veux vraiment pas que vous ayez d’autres troubles de santé à cause de la COVID.
-            </>,
+            FR: (
+              <>
+                Peu importe ce que vous lisez au sujet des divers vaccins, je peux vous dire que tous les vaccins
+                empêchent les gens d’être hospitalisés ou de mourir. C’est le genre de protection qu’ils nous procurent.
+                Je ne veux vraiment pas que vous ayez d’autres troubles de santé à cause de la COVID.
+              </>
+            ),
           },
           image: "doctorBlackWoman.svg",
         },
@@ -1517,7 +2059,16 @@ export const contentPersonasBI = {
                 rather we just protect you from that altogether. These vaccines do that.
               </>
             ),
-            FR: <>En matière de COVID, ma plus grande inquiétude dans le cas de personnes qui ont des troubles médicaux comme vous, c’est que vous soyez très malade si jamais vous attrapez le virus. Le risque que vous aboutissiez à l’hôpital est grand, ou le risque que vous soyez très malade et peut-être même que vous soyez admise aux soins intensifs. Les personnes qui ont dû passer par les soins intensifs, quand elles en sortent ou si elles en sortent, elles ne sont pas en très bon état. J’aimerais mieux que vous soyez protégée contre tout ça. Ces vaccins vous protègent.</>,
+            FR: (
+              <>
+                En matière de COVID, ma plus grande inquiétude dans le cas de personnes qui ont des troubles médicaux
+                comme vous, c’est que vous soyez très malade si jamais vous attrapez le virus. Le risque que vous
+                aboutissiez à l’hôpital est grand, ou le risque que vous soyez très malade et peut-être même que vous
+                soyez admise aux soins intensifs. Les personnes qui ont dû passer par les soins intensifs, quand elles
+                en sortent ou si elles en sortent, elles ne sont pas en très bon état. J’aimerais mieux que vous soyez
+                protégée contre tout ça. Ces vaccins vous protègent.
+              </>
+            ),
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -1531,7 +2082,9 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>I know this is yet another thing, but I really hope you&apos;re not giving up on me.</>,
-                  FR: <>Je sais que ça s’ajoute à tout le reste, mais j’espère vraiment que vous ne perdez pas espoir.</>,
+                  FR: (
+                    <>Je sais que ça s’ajoute à tout le reste, mais j’espère vraiment que vous ne perdez pas espoir.</>
+                  ),
                 },
 
                 featured: false,
@@ -1546,7 +2099,12 @@ export const contentPersonasBI = {
                       for you and your health.
                     </>
                   ),
-                  FR: <>Je sais qu’il se passe beaucoup de choses dans votre vie, mais parlons quand même du vaccin et des raisons pour lesquelles il est vraiment important pour vous et votre santé.</>,
+                  FR: (
+                    <>
+                      Je sais qu’il se passe beaucoup de choses dans votre vie, mais parlons quand même du vaccin et des
+                      raisons pour lesquelles il est vraiment important pour vous et votre santé.
+                    </>
+                  ),
                 },
                 // (MedicallyComplex)
                 featured: true,
@@ -1556,7 +2114,12 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>I hear you&apos;re worried about drug interactions. Let&apos;s explore that a little bit.</>,
-                  FR: <>Je sais que vous vous inquiétez de l’interaction du vaccin avec vos médicaments. Discutons-en un peu.</>,
+                  FR: (
+                    <>
+                      Je sais que vous vous inquiétez de l’interaction du vaccin avec vos médicaments. Discutons-en un
+                      peu.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1582,7 +2145,16 @@ export const contentPersonasBI = {
                       all, but we need to protect you, get you living the best life you can.
                     </>
                   ),
-                  FR: <>Je sais que vous avez l’impression d’être dépassée par les événements. Je sais qu’il se passe beaucoup de choses dans votre vie et c’est pour ça qu’on finit par avoir tellement de conversations. Vous et moi, on travaille ensemble pour maximiser votre qualité de vie dans la plus grande mesure possible. Vous savez qu’en réalité, je préférerais que vous ne preniez aucun médicament, mais il faut qu’on vous protège pour que vous ayez la meilleure qualité de vie possible.</>,
+                  FR: (
+                    <>
+                      Je sais que vous avez l’impression d’être dépassée par les événements. Je sais qu’il se passe
+                      beaucoup de choses dans votre vie et c’est pour ça qu’on finit par avoir tellement de
+                      conversations. Vous et moi, on travaille ensemble pour maximiser votre qualité de vie dans la plus
+                      grande mesure possible. Vous savez qu’en réalité, je préférerais que vous ne preniez aucun
+                      médicament, mais il faut qu’on vous protège pour que vous ayez la meilleure qualité de vie
+                      possible.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -1596,7 +2168,13 @@ export const contentPersonasBI = {
                       feel as comfortable as possible about taking this vaccine. I&apos;m here to help you get there.
                     </>
                   ),
-                  FR: <>Je peux comprendre votre inquiétude au sujet de l’interaction du vaccin avec vos médicaments. Je veux que vous soyez à l’aise le plus possible d’accepter ce vaccin. Je vais vous aider à en arriver là.</>,
+                  FR: (
+                    <>
+                      Je peux comprendre votre inquiétude au sujet de l’interaction du vaccin avec vos médicaments. Je
+                      veux que vous soyez à l’aise le plus possible d’accepter ce vaccin. Je vais vous aider à en
+                      arriver là.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1610,7 +2188,12 @@ export const contentPersonasBI = {
                       mine to express these concerns.
                     </>
                   ),
-                  FR: <>Effectivement, vous avez beaucoup de choses à gérer du point de vue de la santé. Vous n’êtes pas ma première patiente à s’inquiéter de tout ça.</>,
+                  FR: (
+                    <>
+                      Effectivement, vous avez beaucoup de choses à gérer du point de vue de la santé. Vous n’êtes pas
+                      ma première patiente à s’inquiéter de tout ça.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -1633,7 +2216,12 @@ export const contentPersonasBI = {
                       What specifically about your condition(s) or medication(s) makes you concerned about the vaccine?
                     </>
                   ),
-                  FR: <>Plus précisément, quels aspects de votre état ou de vos médicaments vous inquiètent du point de vue vaccinal?</>,
+                  FR: (
+                    <>
+                      Plus précisément, quels aspects de votre état ou de vos médicaments vous inquiètent du point de
+                      vue vaccinal?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -1648,7 +2236,13 @@ export const contentPersonasBI = {
                       what I&apos;ve found relating to your conditions?
                     </>
                   ),
-                  FR: <>J’ai beaucoup lu au sujet des vaccins et des personnes comme vous, des personnes qui ont d’autres troubles de santé et qui prennent divers types de médicaments. Est-ce que vous aimeriez que je vous parle de ce que j’ai appris au sujet de votre état?</>,
+                  FR: (
+                    <>
+                      J’ai beaucoup lu au sujet des vaccins et des personnes comme vous, des personnes qui ont d’autres
+                      troubles de santé et qui prennent divers types de médicaments. Est-ce que vous aimeriez que je
+                      vous parle de ce que j’ai appris au sujet de votre état?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1674,7 +2268,13 @@ export const contentPersonasBI = {
                       from COVID on your hands.
                     </>
                   ),
-                  FR: <>Peu importe ce que vous lisez au sujet des divers vaccins, je peux vous dire que tous les vaccins empêchent les gens d’être hospitalisés ou de mourir. C’est le genre de protection qu’ils nous procurent. Je ne veux vraiment pas que vous ayez d’autres troubles de santé à cause de la COVID.</>,
+                  FR: (
+                    <>
+                      Peu importe ce que vous lisez au sujet des divers vaccins, je peux vous dire que tous les vaccins
+                      empêchent les gens d’être hospitalisés ou de mourir. C’est le genre de protection qu’ils nous
+                      procurent. Je ne veux vraiment pas que vous ayez d’autres troubles de santé à cause de la COVID.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1692,7 +2292,15 @@ export const contentPersonasBI = {
                       protected as we can.
                     </>
                   ),
-                  FR: <>Ces derniers mois, c’est avec beaucoup de soulagement que j’ai parlé avec des personnes comme vous qui m’ont dit : « <i>Vous savez quoi? Je viens de me faire vacciner et je n’ai aucun regret</i> ». Je leur réponds : « <i>Oh, c’est super, ça. C’est formidable de savoir que vous êtes protégé</i> ». C’est vraiment ce que je veux pour vous, ma patiente, c’est de vous offrir la meilleure protection possible.</>,
+                  FR: (
+                    <>
+                      Ces derniers mois, c’est avec beaucoup de soulagement que j’ai parlé avec des personnes comme vous
+                      qui m’ont dit : « <i>Vous savez quoi? Je viens de me faire vacciner et je n’ai aucun regret</i> ».
+                      Je leur réponds : « <i>Oh, c’est super, ça. C’est formidable de savoir que vous êtes protégé</i>{" "}
+                      ». C’est vraiment ce que je veux pour vous, ma patiente, c’est de vous offrir la meilleure
+                      protection possible.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -1706,7 +2314,12 @@ export const contentPersonasBI = {
                       your health issues would be pretty significant.
                     </>
                   ),
-                  FR: <>Je ne veux vraiment pas que vous attrapiez la COVID parce que je pense qu’avec vos problèmes de santé, votre réaction pourrait être assez grave.</>,
+                  FR: (
+                    <>
+                      Je ne veux vraiment pas que vous attrapiez la COVID parce que je pense qu’avec vos problèmes de
+                      santé, votre réaction pourrait être assez grave.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1734,7 +2347,16 @@ export const contentPersonasBI = {
                       average person.
                     </>
                   ),
-                  FR: <>D’un côté, je comprends que vous vous inquiétez de l’interaction du vaccin avec vos médicaments, mais d’un autre côté, ce qui m’inquiète vraiment, ce sont les effets à long terme de la COVID sur vous. Ce qui m’inquiète dans votre cas, c’est le syndrome post-COVID, les symptômes qui durent longtemps, un brouillard cérébral qui pourrait durer pendant un an ou plus. Je ne voudrais vraiment pas que ça vous arrive. Donc, c’est ça qui m’inquiète le plus parce que vos risques de syndrome post-COVID sont un peu plus élevés que ceux de la personne moyenne.</>,
+                  FR: (
+                    <>
+                      D’un côté, je comprends que vous vous inquiétez de l’interaction du vaccin avec vos médicaments,
+                      mais d’un autre côté, ce qui m’inquiète vraiment, ce sont les effets à long terme de la COVID sur
+                      vous. Ce qui m’inquiète dans votre cas, c’est le syndrome post-COVID, les symptômes qui durent
+                      longtemps, un brouillard cérébral qui pourrait durer pendant un an ou plus. Je ne voudrais
+                      vraiment pas que ça vous arrive. Donc, c’est ça qui m’inquiète le plus parce que vos risques de
+                      syndrome post-COVID sont un peu plus élevés que ceux de la personne moyenne.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -1751,7 +2373,13 @@ export const contentPersonasBI = {
                       something that we would be able to work with?
                     </>
                   ),
-                  FR: <>Est-ce que je pourrais m’entretenir avec votre pharmacien? Je suis certaine que vous le connaissez mieux que vous me connaissez et je pourrais lui demander d’en mettre une dose de côté pour vous afin de vous éviter d’aller dans un des grands centres? Qu’en pensez-vous?</>,
+                  FR: (
+                    <>
+                      Est-ce que je pourrais m’entretenir avec votre pharmacien? Je suis certaine que vous le connaissez
+                      mieux que vous me connaissez et je pourrais lui demander d’en mettre une dose de côté pour vous
+                      afin de vous éviter d’aller dans un des grands centres? Qu’en pensez-vous?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1772,7 +2400,19 @@ export const contentPersonasBI = {
                       by having a chat with your specialist and making sure that we&apos;re making the right decisions.
                     </>
                   ),
-                  FR: <>J’ai lu des lettres de spécialistes qui s’occupent de patients qui doivent prendre des médicaments pour changer la façon dont leur système immunitaire fonctionne. Certains de ces patients sont capables de recevoir le vaccin s’ils cessent de prendre leurs médicaments avant de se faire vacciner. Donc, c’est toujours possible de donner le vaccin dans certaines situations, mais il doit y avoir un certain répit entre les immunodépresseurs et le vaccin. Il faut ni plus ni moins freiner l’amenuisement du système immunitaire pour qu’il puisse reconnaître ce que le vaccin lui présente. Après ça, vous pouvez recommencer à prendre vos médicaments. Je pourrais donc m’entretenir avec votre spécialiste pour connaître la meilleure manière de procéder et pour prendre de bonnes décisions.</>,
+                  FR: (
+                    <>
+                      J’ai lu des lettres de spécialistes qui s’occupent de patients qui doivent prendre des médicaments
+                      pour changer la façon dont leur système immunitaire fonctionne. Certains de ces patients sont
+                      capables de recevoir le vaccin s’ils cessent de prendre leurs médicaments avant de se faire
+                      vacciner. Donc, c’est toujours possible de donner le vaccin dans certaines situations, mais il
+                      doit y avoir un certain répit entre les immunodépresseurs et le vaccin. Il faut ni plus ni moins
+                      freiner l’amenuisement du système immunitaire pour qu’il puisse reconnaître ce que le vaccin lui
+                      présente. Après ça, vous pouvez recommencer à prendre vos médicaments. Je pourrais donc
+                      m’entretenir avec votre spécialiste pour connaître la meilleure manière de procéder et pour
+                      prendre de bonnes décisions.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -1789,7 +2429,15 @@ export const contentPersonasBI = {
                       about your medications and come up with the best plan.
                     </>
                   ),
-                  FR: <>Pour certains des nouveaux traitements, je ne suis pas expert et c’est pourquoi j’aimerais parler avec votre spécialiste pour que le vaccin ne cause pas de problèmes. J’ai accès à une ligne d’assistance téléphonique me permettant de discuter avec un spécialiste, de lui expliquer votre situation, de lui parler de vos médicaments et de préparer le meilleur plan possible dans votre cas.</>,
+                  FR: (
+                    <>
+                      Pour certains des nouveaux traitements, je ne suis pas expert et c’est pourquoi j’aimerais parler
+                      avec votre spécialiste pour que le vaccin ne cause pas de problèmes. J’ai accès à une ligne
+                      d’assistance téléphonique me permettant de discuter avec un spécialiste, de lui expliquer votre
+                      situation, de lui parler de vos médicaments et de préparer le meilleur plan possible dans votre
+                      cas.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1807,7 +2455,16 @@ export const contentPersonasBI = {
                       do come out. I&apos;d rather we just protect you from that altogether. These vaccines do that.
                     </>
                   ),
-                  FR: <>En matière de COVID, ma plus grande inquiétude dans le cas de personnes qui ont des troubles médicaux comme vous, c’est que vous soyez très malade si jamais vous attrapez le virus. Le risque que vous aboutissiez à l’hôpital est grand, ou le risque que vous soyez très malade et peut-être même que vous soyez admise aux soins intensifs. Les personnes qui ont dû passer par les soins intensifs, quand elles en sortent ou si elles en sortent, elles ne sont pas en très bon état. J’aimerais mieux que vous soyez protégée contre tout ça. Ces vaccins vous protègent.</>,
+                  FR: (
+                    <>
+                      En matière de COVID, ma plus grande inquiétude dans le cas de personnes qui ont des troubles
+                      médicaux comme vous, c’est que vous soyez très malade si jamais vous attrapez le virus. Le risque
+                      que vous aboutissiez à l’hôpital est grand, ou le risque que vous soyez très malade et peut-être
+                      même que vous soyez admise aux soins intensifs. Les personnes qui ont dû passer par les soins
+                      intensifs, quand elles en sortent ou si elles en sortent, elles ne sont pas en très bon état.
+                      J’aimerais mieux que vous soyez protégée contre tout ça. Ces vaccins vous protègent.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1829,7 +2486,19 @@ export const contentPersonasBI = {
                       else around you.
                     </>
                   ),
-                  FR: <>Alors, supposons que la COVID finisse par vous tuer. Votre vie est finie et c’est tout. Mais si vous n’en mourez pas? Si vous attrapez la COVID et que vous survivez? Je dois avouer que j’ai beaucoup de patients qui souffrent des effets à long terme de la COVID dont on entend parler à la radio et aux nouvelles. Il y a des personnes qui finissent par avoir des problèmes à long terme. Ça s’ajouterait donc à votre état de santé actuel et ça empirerait les choses. Ce serait encore plus dur pour vous de traverser votre journée parce que vous seriez fatiguée et à bout de souffle. Moi, je pense qu’à la lumière de tous les efforts que vous faites pour votre santé, la chose la plus simple à faire serait de vous protéger pour vous empêcher d’en arriver là. C’est vraiment une question de vous tenir loin des dangers, tout comme les personnes qui vous entourent.</>,
+                  FR: (
+                    <>
+                      Alors, supposons que la COVID finisse par vous tuer. Votre vie est finie et c’est tout. Mais si
+                      vous n’en mourez pas? Si vous attrapez la COVID et que vous survivez? Je dois avouer que j’ai
+                      beaucoup de patients qui souffrent des effets à long terme de la COVID dont on entend parler à la
+                      radio et aux nouvelles. Il y a des personnes qui finissent par avoir des problèmes à long terme.
+                      Ça s’ajouterait donc à votre état de santé actuel et ça empirerait les choses. Ce serait encore
+                      plus dur pour vous de traverser votre journée parce que vous seriez fatiguée et à bout de souffle.
+                      Moi, je pense qu’à la lumière de tous les efforts que vous faites pour votre santé, la chose la
+                      plus simple à faire serait de vous protéger pour vous empêcher d’en arriver là. C’est vraiment une
+                      question de vous tenir loin des dangers, tout comme les personnes qui vous entourent.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1845,7 +2514,13 @@ export const contentPersonasBI = {
                       making you sick, and for me to see you as well.
                     </>
                   ),
-                  FR: <>N’oubliez pas qu’il sera beaucoup plus facile pour vos amis et les membres de votre famille de vous rendre visite sans souci s’ils savent que vous êtes protégée. Ils n’auront pas à s’inquiéter de vous rendre malade, et vos rendez-vous ici seront plus simples aussi.</>,
+                  FR: (
+                    <>
+                      N’oubliez pas qu’il sera beaucoup plus facile pour vos amis et les membres de votre famille de
+                      vous rendre visite sans souci s’ils savent que vous êtes protégée. Ils n’auront pas à s’inquiéter
+                      de vous rendre malade, et vos rendez-vous ici seront plus simples aussi.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -1861,7 +2536,14 @@ export const contentPersonasBI = {
                       this really big issue. Protecting you from COVID-19 is that important.
                     </>
                   ),
-                  FR: <>Une façon de voir le vaccin, c’est que d’une certaine manière, il est plus important que la plupart de vos autres médicaments. Ce sont de « petits caractères », ni plus ni moins, comparativement à ce vrai gros problème. Vous protéger contre la COVID-19, c’est important à ce point-là.</>,
+                  FR: (
+                    <>
+                      Une façon de voir le vaccin, c’est que d’une certaine manière, il est plus important que la
+                      plupart de vos autres médicaments. Ce sont de « petits caractères », ni plus ni moins,
+                      comparativement à ce vrai gros problème. Vous protéger contre la COVID-19, c’est important à ce
+                      point-là.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -1879,9 +2561,14 @@ export const contentPersonasBI = {
           EN: (
             <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>
           ),
-          FR: <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>,
+          FR: (
+            <>Alberta Health Services: Counselling Immunocompromised Individuals on the use of mRNA COVID-19 Vaccines</>
+          ),
         },
-        linkText: { EN: <>Interim Information for Health Care Providers Completing Risk Assessments</>, FR: <>Information provisoire à l’intention des professionnels de la santé évaluant les risques</> },
+        linkText: {
+          EN: <>Interim Information for Health Care Providers Completing Risk Assessments</>,
+          FR: <>Information provisoire à l’intention des professionnels de la santé évaluant les risques</>,
+        },
         link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-covid-19-counselling-immunocompromised-individuals-mrna.pdf",
         description: {
           EN: (
@@ -1890,9 +2577,12 @@ export const contentPersonasBI = {
               patients. (February 2021)
             </>
           ),
-          FR: <>Guide destiné aux professionnels de la santé pour savoir comment discuter des vaccins à ARNm avec les patients immunodéficients.
-          (février 2021)
-          </>,
+          FR: (
+            <>
+              Guide destiné aux professionnels de la santé pour savoir comment discuter des vaccins à ARNm avec les
+              patients immunodéficients. (février 2021)
+            </>
+          ),
         },
       },
 
@@ -1904,9 +2594,17 @@ export const contentPersonasBI = {
               Rheumatic Disease
             </>
           ),
-          FR: <>Recommandation de la Société canadienne de rhumatologie sur la vaccination contre la COVID-19 chez les personnes atteintes de maladies rhumatologiques auto-immunes</>,
+          FR: (
+            <>
+              Recommandation de la Société canadienne de rhumatologie sur la vaccination contre la COVID-19 chez les
+              personnes atteintes de maladies rhumatologiques auto-immunes
+            </>
+          ),
         },
-        linkText: { EN: <>Interim Recommendations for Healthcare Providers from the CRA</>, FR: <>Recommandations provisoires de la SCR à l’intention des professionnels de la santé</> },
+        linkText: {
+          EN: <>Interim Recommendations for Healthcare Providers from the CRA</>,
+          FR: <>Recommandations provisoires de la SCR à l’intention des professionnels de la santé</>,
+        },
         link: "https://rheum.ca/wp-content/uploads/2021/05/FINAL-V2-CRA-Recommendation-on-COVID-19-Vaccination_May-2021.pdf",
         description: {
           EN: (
@@ -1915,7 +2613,12 @@ export const contentPersonasBI = {
               disease (Updated May 2021)
             </>
           ),
-          FR: <>Conseils et recommandations de la SCR sur la vaccination contre la COVID-19 chez les personnes atteintes de maladies rhumatologiques auto-immunes. (mis à jour en mai 2021)</>,
+          FR: (
+            <>
+              Conseils et recommandations de la SCR sur la vaccination contre la COVID-19 chez les personnes atteintes
+              de maladies rhumatologiques auto-immunes. (mis à jour en mai 2021)
+            </>
+          ),
         },
       },
       // (MedicallyComplex Resources)
@@ -1927,7 +2630,12 @@ export const contentPersonasBI = {
         },
         linkText: {
           EN: <>Recommendations on the use of COVID-19 vaccines in individuals with IBD/Crohn&apos;s/Colitis</>,
-          FR: <>Recommandations au sujet des vaccins contre la COVID-19 chez les personnes atteintes de MII, de la maladie de Crohn ou de colite</>,
+          FR: (
+            <>
+              Recommandations au sujet des vaccins contre la COVID-19 chez les personnes atteintes de MII, de la maladie
+              de Crohn ou de colite
+            </>
+          ),
         },
         link: "https://crohnsandcolitis.ca/About-Crohn-s-Colitis/COVID-19-and-IBD/Vaccines",
         description: {
@@ -1938,8 +2646,13 @@ export const contentPersonasBI = {
               available opportunity. (Updated May 2021)
             </>
           ),
-          FR: <>Le groupe de travail sur les MII et la COVID-19 de Crohn et Colite Canada présente ses recommandations et ses justifications expliquant pourquoi les vaccins contre la COVID-19 devraient être donnés aux patients atteints de MII dès que possible.
-          (mis à jour en mai 2021)</>,
+          FR: (
+            <>
+              Le groupe de travail sur les MII et la COVID-19 de Crohn et Colite Canada présente ses recommandations et
+              ses justifications expliquant pourquoi les vaccins contre la COVID-19 devraient être donnés aux patients
+              atteints de MII dès que possible. (mis à jour en mai 2021)
+            </>
+          ),
         },
       },
 
@@ -1949,7 +2662,10 @@ export const contentPersonasBI = {
 
           FR: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
         },
-        linkText: { EN: <>Information for Patients and Families</>, FR: <>Information à l’intention des patients et des familles</> },
+        linkText: {
+          EN: <>Information for Patients and Families</>,
+          FR: <>Information à l’intention des patients et des familles</>,
+        },
         link: "https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-cancer-treatment-info-pf.pdf",
         description: {
           EN: (
@@ -1958,7 +2674,12 @@ export const contentPersonasBI = {
               2021)
             </>
           ),
-          FR: <>Information sur la COVID-19 et la vaccination contre la COVID-19 destinée aux patients subissant des traitements contre le cancer. (mis à jour en avril 2021)</>,
+          FR: (
+            <>
+              Information sur la COVID-19 et la vaccination contre la COVID-19 destinée aux patients subissant des
+              traitements contre le cancer. (mis à jour en avril 2021)
+            </>
+          ),
         },
       },
 
@@ -1968,7 +2689,10 @@ export const contentPersonasBI = {
 
           FR: <>I've heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
         },
-        linkText: { EN: <>Video from the Ontario Hospital Association</>, FR: <>Vidéo de l’Ontario Hospital Association</> },
+        linkText: {
+          EN: <>Video from the Ontario Hospital Association</>,
+          FR: <>Vidéo de l’Ontario Hospital Association</>,
+        },
         link: "https://www.youtube.com/watch?v=eWbaME_F750&list=PL2zzFmCbIz4eE5JUlT2ODFU2KnjCVG7D6",
         description: {
           EN: (
@@ -1977,7 +2701,12 @@ export const contentPersonasBI = {
               who receive a COVID-19 vaccine. (March 2021).
             </>
           ),
-          FR: <>La Dr Zainab Abdurrahman explique les allergènes qui seraient susceptibles de causer de rares réactions allergiques chez certaines personnes qui se font vacciner contre la COVID-19. (mars 2021)</>,
+          FR: (
+            <>
+              La Dr Zainab Abdurrahman explique les allergènes qui seraient susceptibles de causer de rares réactions
+              allergiques chez certaines personnes qui se font vacciner contre la COVID-19. (mars 2021)
+            </>
+          ),
         },
       },
 
@@ -1996,7 +2725,12 @@ export const contentPersonasBI = {
               conditions. (Updated, June 2021)
             </>
           ),
-          FR: <>Aperçu et examen du CDC américain des considérations concernant le vaccin contre la COVID-19 pour les personnes atteintes de maladies sous-jacentes. (mis à jour en juin 2021)</>,
+          FR: (
+            <>
+              Aperçu et examen du CDC américain des considérations concernant le vaccin contre la COVID-19 pour les
+              personnes atteintes de maladies sous-jacentes. (mis à jour en juin 2021)
+            </>
+          ),
         },
       },
     ],
@@ -2013,7 +2747,7 @@ export const contentPersonasBI = {
           EN: "",
           FR: [<></>, <></>, <></>],
         },
-        // The content for Overview-TheySay is in its own component <PediatricsOverviewTheySay /> so useContext can be used.
+        // The content for Overview-TheySay is in its own component <ReproductiveOverviewTheySayBI /> so useContext can be used.
       },
 
       thingsToConsider: {
@@ -2050,10 +2784,44 @@ export const contentPersonasBI = {
               >
                 young children <FiExternalLink className="inline" size={18} />
               </a>{" "}
-              are at particularly high risk for COVID-19 complications.
+              are at particularly <b>high risk for COVID-19 complications.</b>
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          // Reproductive
+          FR: [
+            <>
+              Mentionnez le fait que les <b>vaccins représentent un aspect normal des soins prénataux.</b>
+            </>,
+            <>
+              Mettez l’accent sur le fait que la <b>sécurité des vaccins a été prouvée</b>, tant dans le cadre d’essais
+              cliniques que dans le cadre de la vaccination réelle des femmes enceintes.
+            </>,
+            <>
+              Faites mention des <b>bienfaits de la vaccination qui sont partagés entre la mère et l’enfant à naître</b>
+              (l’immunité passive, autrement dit).
+            </>,
+            <>
+              Mettez l’accent sur le fait que
+              <a
+                className="ml-1.5 orangeUnderline"
+                href="https://www.ajog.org/article/S0002-9378(21)00991-1/fulltext"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                les patientes enceintes <FiExternalLink className="inline" size={18} />
+              </a>{" "}
+              et
+              <a
+                className="ml-1.5 orangeUnderline"
+                href="https://www.publications.aap.org/neoreviews/article/22/5/e284/180665/Perinatal-SARS-CoV-2-Infection-and-Neonatal-COVID"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                les très jeunes enfants <FiExternalLink className="inline" size={18} />
+              </a>
+              , plus particulièrement, <b>présentent des risques élevés de complications attribuables à la COVID-19.</b>
+            </>,
+          ],
         },
       },
       // Reproductive
@@ -2063,22 +2831,46 @@ export const contentPersonasBI = {
           EN: [
             <ul>
               <li className="listClass">
-                With pregnant patients, place extra emphasis on the patient’s autonomy and self-determination over their
-                bodies. Take time to validate their concerns, and prioritize having the patient return to you for care
-                throughout the course of their pregnancy.
+                With pregnant patients,{" "}
+                <b>place extra emphasis on the patient’s autonomy and self-determination over their bodies.</b> Take
+                time to validate their concerns, and prioritize having the patient return to you for care throughout the
+                course of their pregnancy.
               </li>
               <li className="listClass">
-                As a clinician, you are a key part of your patient’s support network. Emphasize your role during their
-                pregnancy, and your interest in protecting the health of them and their child in the best way possible.
+                <b>As a clinician, you are a key part of your patient’s support network.</b> Emphasize your role during
+                their pregnancy, and your interest in protecting the health of them and their child in the best way
+                possible.
               </li>
               <li className="listClass">
-                Avoid taking a ‘presumptive’ approach about vaccination. Be prepared to have multiple conversations, and
-                take the time to understand and validate your patients’ concerns. Especially with pregnant patients,
-                prioritize the development of your long-term patient-provider relationship.
+                <b>Avoid taking a ‘presumptive’ approach about vaccination.</b> Be prepared to have multiple
+                conversations, and take the time to understand and validate your patients’ concerns. Especially with
+                pregnant patients, prioritize the development of your long-term patient-provider relationship.
               </li>
             </ul>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+            <>
+              Dans le cas des patientes enceintes,{" "}
+              <b>
+                prenez soin de mentionner que la patiente est maître d’elle-même et qu’elle a le droit de prendre des
+                décisions par rapport à son propre corps.
+              </b>{" "}
+              Prenez le temps de valider ses inquiétudes et demandez-lui de revenir vous voir pendant sa grossesse, en
+              n’oubliant pas de mentionner que les suivis sont très importants.
+            </>,
+            <>
+              À titre de clinicien ou de clinicienne,{" "}
+              <b>vous jouez un rôle clé dans le réseau de soutien de votre patiente</b>. Expliquez-lui bien votre rôle
+              pendant sa grossesse et votre intérêt à protéger sa santé et celle de son enfant de la meilleure manière
+              qui soit.
+            </>,
+            <>
+              <b>Évitez l’approche « présomptive » en matière de vaccination.</b> Préparez-vous à avoir plus d’une
+              conversation et prenez le temps de comprendre et de valider les inquiétudes de vos patients. Surtout dans
+              le cas de vos patientes enceintes, priorisez le développement de la relation que vous allez entretenir
+              avec ces patientes à long terme.
+            </>,
+          ],
         },
       },
     },
@@ -2095,7 +2887,13 @@ export const contentPersonasBI = {
                 vaccines.
               </>
             ),
-            FR: <></>,
+            FR: (
+              <>
+                C’est tout à fait normal d’avoir des inquiétudes à ce stade-ci. Vous (et votre partenaire) voulez vous
+                assurer d’avoir une grossesse et un bébé en santé. Parlons un peu plus de vos inquiétudes au sujet des
+                vaccins.
+              </>
+            ),
           },
           image: "doctorWhiteManYoung.svg",
         },
@@ -2105,13 +2903,20 @@ export const contentPersonasBI = {
               <>
                 I just want to underline that this is your body and your choice and completely respect whatever decision
                 you make. I want to highlight that I absolutely respect this as your decision. On my end, my job is to
-                help you make an informed decision, and to support you through this pregnancy.{" "}
+                help you make an informed decision, and to support you through this pregnancy.
               </>
             ),
-            FR: <></>,
+            FR: (
+              <>
+                J’ajoute tout de même qu’il s’agit de votre corps et que c’est votre choix, et que je vais tout à fait
+                respecter votre décision. Je réitère que je respecte absolument votre décision. De mon côté, mon travail
+                consiste à vous aider à prendre une décision éclairée et à vous aider pendant cette grossesse.
+              </>
+            ),
           },
           image: "doctorBlackWoman.svg",
         },
+        // Reproductive
         ask: {
           text: {
             EN: (
@@ -2121,10 +2926,17 @@ export const contentPersonasBI = {
                 people's questions and concerns. Can I share what I've been telling my other patients?
               </>
             ),
-            FR: <></>,
+            FR: (
+              <>
+                Les inquiétudes en matière de fertilité font souvent surface chez mes autres patientes. J’ai donc fait
+                pas mal de recherche à ce sujet pour pouvoir bien répondre à leurs questions et inquiétudes. Est-ce que
+                je peux vous faire part de ce que je dis à mes autres patientes?
+              </>
+            ),
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
+        // Reproductive
         evoke: {
           text: {
             EN: (
@@ -2136,7 +2948,15 @@ export const contentPersonasBI = {
                 that you make.
               </>
             ),
-            FR: <></>,
+            FR: (
+              <>
+                Il me fait plaisir de vous reparler de la vaccination. Vous n’avez pas à prendre votre décision tout de
+                suite, mais quand vous prendrez votre décision et pendant votre grossesse, vous voudrez vous assurer
+                d’avoir tous les degrés de protection supplémentaires possibles. Si vous ne vous faites pas vacciner,
+                vous et votre bébé ne bénéficierez pas de ce degré de protection supplémentaire, et je crois que c’est
+                très important. Mais chose certaine, je respecte votre choix.
+              </>
+            ),
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -2156,7 +2976,13 @@ export const contentPersonasBI = {
                       it together.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Est-ce que vous, ou votre partenaire avez des inquiétudes particulières [au sujet de la
+                      vaccination] auxquelles je peux essayer de répondre? Votre partenaire pourrait se joindre à nous
+                      au prochain rendez-vous pour qu’on puisse en discuter ensemble.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -2172,7 +2998,13 @@ export const contentPersonasBI = {
                       the vaccines.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      C’est tout à fait normal d’avoir des inquiétudes à ce stade-ci. Vous (et votre partenaire) voulez
+                      vous assurer d’avoir une grossesse et un bébé en santé. Parlons un peu plus de vos inquiétudes au
+                      sujet des vaccins.{" "}
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -2188,7 +3020,14 @@ export const contentPersonasBI = {
                       told that made you concerned about the vaccines?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Vous allez entendre toutes sortes d’information de la part de vos amis et des membres de votre
+                      famille, surtout en ce qui a trait à la grossesse et aux bébés. Mais souvent, il peut s’agir de
+                      désinformation ou d’information erronée. Avez-vous entendu parler de quelque chose en particulier
+                      qui suscite des inquiétudes au sujet des vaccins?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2212,7 +3051,13 @@ export const contentPersonasBI = {
                       decision, not only for ourselves, but for our babies to whom we feel a huge responsibility.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Il s’agit là d’inquiétudes courantes chez la plupart de nos patientes enceintes. On essaie de
+                      prendre une décision pas seulement pour nous-mêmes, mais aussi pour nos bébés envers lesquels on a
+                      une énorme responsabilité.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2229,7 +3074,14 @@ export const contentPersonasBI = {
                       unprotected.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Je suis un parent moi aussi, et je sais que ce qui nous importe le plus, c’est de protéger nos
+                      enfants. C’est l’histoire de notre vie. Alors oui, je peux comprendre que le vaccin peut provoquer
+                      de la nervosité, mais à vrai dire, ce qui m’inquiète beaucoup, c’est le fait que vous et votre
+                      bébé n’êtes pas vaccinés et protégés.{" "}
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2245,7 +3097,14 @@ export const contentPersonasBI = {
                       my job is to help you make an informed decision, and to support you through this pregnancy.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      J’ajoute tout de même qu’il s’agit de votre corps et que c’est votre choix, et que je vais tout à
+                      fait respecter votre décision. Je réitère que je respecte absolument votre décision. De mon côté,
+                      mon travail consiste à vous aider à prendre une décision éclairée et à vous aider pendant cette
+                      grossesse.{" "}
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -2261,7 +3120,14 @@ export const contentPersonasBI = {
                       that, right? So I get where you're coming from in that regard, and that's very important to you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Je sais qu’on a déjà discuté de vos plans pour assurer votre fertilité, ce qui a eu des incidences
+                      sur les décisions qui ont été prises au fil du temps [comme la contraception, la performance
+                      sexuelle], et des choses comme ça, n’est-ce pas? Je comprends donc ce que vous ressentez et je
+                      sais que c’est très important pour vous.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManGoatee.svg",
@@ -2286,7 +3152,14 @@ export const contentPersonasBI = {
                       send them to you and we can talk through them when I see you again in a few weeks?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      En ce moment, il existe de bonnes données [sur la grossesse, la COVID-19 et les vaccins]. Des
+                      études ont été faites à ce sujet. Voulez-vous qu’on en parle et qu’on discute des résultats de
+                      recherche? Sinon, je peux vous envoyer de l’information à ce sujet et on pourra en discuter à
+                      votre prochain rendez-vous, dans quelques semaines?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2302,7 +3175,13 @@ export const contentPersonasBI = {
                       answer people's questions and concerns. Can I share what I've been telling my other patients?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Les inquiétudes en matière de fertilité font souvent surface chez mes autres patientes. J’ai donc
+                      fait pas mal de recherche à ce sujet pour pouvoir bien répondre à leurs questions et inquiétudes.
+                      Est-ce que je peux vous faire part de ce que je dis à mes autres patientes?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -2316,7 +3195,10 @@ export const contentPersonasBI = {
       share: {
         content: [
           {
-            subheading: { EN: "Safety in Pregnancy, Miscarriage Concerns, & Side Effects", FR: "" },
+            subheading: {
+              EN: "Safety in Pregnancy, Miscarriage Concerns, & Side Effects",
+              FR: "Sécurité de la grossesse, possibilité de fausse couche et effets secondaires",
+            },
             quotes: [
               {
                 text: {
@@ -2326,7 +3208,12 @@ export const contentPersonasBI = {
                       that miscarriage rates are increased at all in people who are vaccinated.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Je pense qu’il faut prendre le temps de bien analyser les données qui existent et jusqu’à
+                      maintenant, rien ne prouve qu’il y ait des taux de fausse couche accrus chez les femmes vaccinées.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -2344,7 +3231,16 @@ export const contentPersonasBI = {
                       pregnancies or gotten pregnant shortly thereafter.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Si c’est le risque de fausse couche qui vous inquiète plus particulièrement, on commence à avoir
+                      des données à plus long terme, et il y a certaines choses dont on n’est pas certains. Selon les
+                      données, les taux de fausses couches n’ont pas augmenté. Et quand on se penche sur les chiffres,
+                      il faut se dire que des centaines de millions de vaccins contre la COVID-19 ont été donnés de par
+                      le monde, et qu’un grand nombre des femmes vaccinées ont eu une grossesse sans problème ou sont
+                      tombées enceintes peu après avoir été vaccinées.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2363,7 +3259,17 @@ export const contentPersonasBI = {
                       possible for them to happen.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Même si certains faits sont toujours inconnus, on en sait tout de même beaucoup sur les vaccins, à
+                      savoir comment ils fonctionnent et s’ils sont sécuritaires, même pour les personnes enceintes.
+                      Vous avez raison en ce sens que ces vaccins n’existent pas depuis aussi longtemps que d’autres
+                      types de vaccins, mais on en sait quand même beaucoup sur le fonctionnement de ces vaccins et sur
+                      certains de leurs effets secondaires potentiels. Je dois avouer que certains des effets
+                      secondaires dont il est question dans les médias sociaux ne sont tout simplement pas plausibles.
+                      Du point de vue scientifique, ces effets secondaires ne peuvent pas se produire.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -2379,7 +3285,13 @@ export const contentPersonasBI = {
                       dangerous to the baby or to you.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Les effets secondaires qu’on remarque chez les femmes enceintes ne diffèrent pas ou ne sont pas
+                      plus graves que ceux observés dans le reste de la population. Ils disparaissent spontanément et{" "}
+                      <b>ne sont pas</b> dangereux, pour l’enfant et pour la mère.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2405,7 +3317,26 @@ export const contentPersonasBI = {
                       . And we don&apos;t see any signals whatsoever of concern for mom or baby.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Des dizaines et des dizaines de milliers de femmes ont réussi à tomber enceintes après avoir été
+                      vaccinées contre la COVID-19. Elles n’ont pas eu de difficulté à tomber enceintes et leur
+                      grossesse se déroule bien. Des études aléatoires ont permis de constater qu’il y avait même
+                      beaucoup de femmes qui tombaient enceintes. C’est donc quelque chose qu’on a constaté dès les
+                      débuts, que le vaccin ne nuisait pas à la fertilité. En ce moment, plus de 100 000 personnes
+                      inscrites à
+                      <a
+                        href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafepregnancyregistry.html"
+                        className="orangeLink underline"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        un registre font l’objet d’un suivi aux États-Unis
+                        <FiExternalLink className="ml-1 inline" size={18} />
+                      </a>
+                      , et rien ne laisse croire que le vaccin est à la source d’inquiétudes pour la mère ou son bébé.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2423,7 +3354,17 @@ export const contentPersonasBI = {
                       the typical flu-like side effects in the first 48 hours after the vaccine.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Ces vaccins ont été étudiés chez des femmes enceintes, et des millions de personnes enceintes ont
+                      été vaccinées dans le monde entier. Il existe de bonnes données sur la sécurité des vaccins pour
+                      les femmes enceintes. On sait qu’il n’y a pas de risques accrus de malformation fœtale, et on sait
+                      aussi que le vaccin ne provoque pas d’accouchement prématuré ou de fausses couches. Les effets
+                      secondaires que vous pourriez éprouver seraient les mêmes que si vous n’étiez pas enceinte. Il
+                      s’agit d’effets secondaires s’apparentant à la grippe pendant les 48 premières heures suivant
+                      l’injection du vaccin.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -2433,7 +3374,7 @@ export const contentPersonasBI = {
           },
 
           {
-            subheading: { EN: "Passive Immunity", FR: "" },
+            subheading: { EN: "Passive Immunity", FR: "Immunité passive" },
             quotes: [
               {
                 text: {
@@ -2446,7 +3387,15 @@ export const contentPersonasBI = {
                       after they're born.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Ce n’est pas nouveau. On utilise des vaccins non vivants chez les femmes enceintes depuis des
+                      décennies. Leur sécurité a été prouvée, et les résultats sont bons, tant pour la mère que pour le
+                      bébé. De mon point de vue, et d’après mes connaissances de la science, le fait de se faire
+                      vacciner se traduit par un meilleur système immunitaire, ce qui est un énorme avantage parce que
+                      vous allez transférer vos anticorps à votre enfant pendant des mois, même après sa naissance.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
@@ -2466,7 +3415,18 @@ export const contentPersonasBI = {
                       shield to her baby.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Il est pratique courante de vacciner les futures mamans contre la grippe et contre la coqueluche.
+                      Cette pratique repose sur le principe que la mère peut alors transmettre la protection que ces
+                      vaccins lui procurent à son nouveau-né. L’injection du vaccin contre la COVID repose donc sur un
+                      principe semblable. D’après les recherches qui ont été effectuées, en soi, le vaccin ne traverse
+                      pas le placenta. Par conséquent, le vaccin ne nuit pas au bébé, mais cela dit, la mère peut
+                      transmettre sa protection à l’enfant. La mère se trouve donc à faire un geste incroyable pour son
+                      bébé, en ce sens qu’elle se sert de son système immunitaire pour protéger le nouveau-né. Et je ne
+                      peux pas m’imaginer qu’une future maman ne veut pas donner un bouclier à son bébé.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackManBeard.svg",
@@ -2484,13 +3444,21 @@ export const contentPersonasBI = {
                       and by making sure you've been vaccinated.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Il est important de se rappeler que le vaccin va vous aider à fournir une protection continue à
+                      mesure que le système immunitaire de votre bébé se développe. Vous allez transmettre votre système
+                      immunitaire à votre bébé pendant la première année de sa vie. C’est ce qu’on appelle l’immunité
+                      passive. C’est pourquoi il faut que votre système immunitaire soit le plus fort possible. Bien
+                      manger, bien dormir et vous faire vacciner vous aident à renforcer votre système immunitaire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
               },
-
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2502,7 +3470,15 @@ export const contentPersonasBI = {
                       for you as a new mom.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      En soi, le vaccin n’atteindra pas le placenta ou le lait maternel. Seuls les anticorps les
+                      atteindront, et ces anticorps ressembleront aux autres maladies que vous avez eues, pour
+                      lesquelles vous avez produit des anticorps afin de les combattre. Tous ces anticorps vont dans
+                      votre lait maternel et dans votre placenta. C’est donc vraiment une fonction immunitaire
+                      incroyable que votre corps produit, pour votre bébé et pour vous-même en tant que nouvelle maman.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2512,7 +3488,7 @@ export const contentPersonasBI = {
           },
           // Reproductive
           {
-            subheading: { EN: "High-Risk Population", FR: "" },
+            subheading: { EN: "High-Risk Population", FR: "Population à risque élevé" },
             quotes: [
               {
                 text: {
@@ -2525,12 +3501,22 @@ export const contentPersonasBI = {
                       with you because you are considered a very vulnerable part of the population at this point.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      En tant que femme enceinte, votre risque de tomber très malade – assez malade pour aller à
+                      l’hôpital – est très élevé. À l’hôpital, une personne sur dix [pendant la vague du variant Omicron
+                      en 2022] est une femme enceinte. Et le risque que vous aboutissiez aux soins intensifs avec une
+                      sonde d’intubation à lutter pour votre vie et celle de votre bébé s’établit entre un et trois pour
+                      cent, ce qui est un taux très élevé aussi. Je tiens à vous faire part de ces risques parce que
+                      vous faites partie d’un segment très vulnérable de la population en ce moment.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
               },
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2544,13 +3530,21 @@ export const contentPersonasBI = {
                       pregnancy.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      En tant que femme enceinte, votre risque de tomber très malade – assez malade pour aller à
+                      l’hôpital – est très élevé. À l’hôpital, une personne sur dix [pendant la vague du variant Omicron
+                      en 2022] est une femme enceinte. Et le risque que vous aboutissiez aux soins intensifs avec une
+                      sonde d’intubation à lutter pour votre vie et celle de votre bébé s’établit entre un et trois pour
+                      cent, ce qui est un taux très élevé aussi. Je tiens à vous faire part de ces risques parce que
+                      vous faites partie d’un segment très vulnérable de la population en ce moment.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
               },
-
               // Reproductive
               {
                 text: {
@@ -2561,13 +3555,19 @@ export const contentPersonasBI = {
                       from having growth difficulties and being born early.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Donc, le vaccin est particulièrement recommandé pendant la grossesse parce qu’on sait qu’il
+                      diminue votre risque d’attraper la COVID, réduit vos possibilités d’hospitalisation et protège,
+                      par le fait même, votre bébé de difficultés de croissance et de naissance prématurée.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
                 fullStoryID: "",
               },
-
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2578,7 +3578,13 @@ export const contentPersonasBI = {
                       we're protecting two lives, aren't we?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Pendant la pandémie, beaucoup de femmes enceintes non vaccinées ont été très, très malades. Donc
+                      pour ma clinique, c’est devenu une priorité de faire en sorte que les femmes enceintes se fassent
+                      vacciner. Si on peut protéger la mère, en réalité, on protège deux vies, n’est-ce pas?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2594,7 +3600,13 @@ export const contentPersonasBI = {
                       as well, then you’ll be making the best decision possible.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Je tiens à préciser que le fait de ne pas être vaccinée vous fait courir des risques. Ce sont des
+                      risques réels dont j’aimerais que vous teniez compte dans votre décision. Si je peux vous aider à
+                      mieux comprendre ces risques, vous pourrez alors prendre la meilleure décision qui soit.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -2621,13 +3633,27 @@ export const contentPersonasBI = {
                       obviously I respect the choices that you make.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Il me fait plaisir de vous reparler de la vaccination. Vous n’avez pas à prendre votre décision
+                      tout de suite, mais quand vous prendrez votre décision et pendant votre grossesse, vous voudrez
+                      vous assurer d’avoir tous les degrés de protection supplémentaires possibles. Si vous ne vous
+                      faites pas vacciner, vous et votre bébé ne bénéficierez pas de ce degré de protection
+                      supplémentaire, et je crois que c’est très important. Mais chose certaine, je respecte votre
+                      choix.
+                    </>
+                  ),
                 },
                 featured: true,
                 image: "",
                 fullStoryID: "",
               },
               // Reproductive
+
+              // MISSING ENGLISH VERSION OF THIS QUOTE:
+              // Je tiens à dire clairement que pour s’assurer d’avoir des bébés en santé, il faut que les mamans soient en santé. Et on aide les mères à fabriquer des anticorps contre la COVID, qui a bouleversé notre monde, et à donner ces anticorps – cette protection, ce bouclier – à son bébé.
+              //
+              //
               {
                 text: {
                   EN: (
@@ -2638,12 +3664,20 @@ export const contentPersonasBI = {
                       your own research in this instance. Why the difference with these vaccines in particular?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Est-ce que vous examinez d’aussi près que ces vaccins [les autres produits de santé ou
+                      médicaments] que vous prenez? Je comprends ce que vous me dites. Il est évident que vous avez fait
+                      des recherches. Mais ce que je comprends aussi, c’est que vous ne faites pas vos recherches de la
+                      même manière qu’avant. Pourquoi vous y prenez-vous d’une autre manière avec ces vaccins?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
               },
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2653,7 +3687,13 @@ export const contentPersonasBI = {
                       we'll pick this back up again?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      J’ai mon point de vue et vous avez le vôtre, alors pourquoi ne pas arrêter d’en parler, et à votre
+                      prochain examen prénatal, dans deux à quatre semaines, on pourra reprendre la discussion après
+                      avoir réfléchi davantage?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManBlackHair.svg",
@@ -2671,13 +3711,21 @@ export const contentPersonasBI = {
                       choice is risk free.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Eh bien, il me fait plaisir de reprendre cette discussion. Je veux seulement vous donner matière à
+                      réflexion. Je veux vous dire qu’aucun choix n’est sans risques. Que vous décidiez de ne pas vous
+                      faire vacciner, ou de vous faire vacciner, à ce stade-ci, chacun des deux choix comporte des
+                      risques. Peu importe ce qu’on en pense, au bout du compte, il est important de reconnaître que
+                      malgré la décision prise, aucune des décisions n’est sans risques.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
               },
-
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2687,7 +3735,13 @@ export const contentPersonasBI = {
                       at the next trimester and we’ll discuss it again then.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      À ce stade-ci de votre grossesse, je comprends que vous ayez beaucoup d’inquiétudes au sujet de la
+                      vaccination. Alors, emmitouflez-vous, portez un masque et restez chez vous le plus possible. Puis
+                      on pourra en rediscuter au prochain trimestre de votre grossesse.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -2702,13 +3756,18 @@ export const contentPersonasBI = {
                       and so you have a chance to help protect them by getting immunized?
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Qu’est-ce qu’une mère pourrait souhaiter de plus que de transmettre l’immunité à son bébé sans
+                      défense quand vous avez la possibilité d’aider à le protéger en vous faisant immuniser?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
               },
-
+              // Reproductive
               {
                 text: {
                   EN: (
@@ -2721,7 +3780,17 @@ export const contentPersonasBI = {
                       statements from scientific bodies that I can find for you, if you'd like.
                     </>
                   ),
-                  FR: <></>,
+                  FR: (
+                    <>
+                      Une chose que je pourrais peut-être vous aider à mieux comprendre, c’est la façon dont les choses
+                      [comme les effets indésirables du vaccin] sont rapportées, scientifiquement parlant. Les personnes
+                      qui ne font pas partie du milieu médical semblent avoir des difficultés dans ce sens. Il est
+                      certain que je n’ai pas vu de preuves fiables qui laissent croire que les effets que vous décrivez
+                      sont réels, mais il me fera plaisir de jeter un coup d’œil aux sources que vous utilisez et de
+                      vous dire comment je les interpréterais. Aussi, si vous le voulez, je pourrais vous présenter des
+                      sources scientifiques que je trouverai pour vous.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -2731,143 +3800,186 @@ export const contentPersonasBI = {
           },
         ],
       },
-      //REPRODUCTIVE Resources
-      resources: [
-        {
-          title: {
-            EN: <>Pregnancy, fertility and the COVID-19 vaccine</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>FAQ page from Sunnybrook Hospital</>, FR: <></> },
-          link: "https://health.sunnybrook.ca/babies-newborns/pregnancy-fertility-covid-19-vaccine-faq/",
-          description: {
-            EN: <>FAQ from Sunnybrook Hospital obstetrics and fertility specialists about the COVID vaccines</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          // Preliminary Findings of ...
-          title: {
-            EN: <>mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>NEJM peer-reviewed publication (2021)</>, FR: <></> },
-          link: "https://www.nejm.org/doi/full/10.1056/nejmoa2104983",
-          description: {
-            EN: (
-              <>
-                2021 NEJM peer-reviewed publication examining preliminary safety findings of COVID-19 vaccines in
-                pregnancy populations.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-        {
-          title: {
-            EN: <>Correspondence - Receipt of mRNA Covid-19 Vaccines and Risk of Spontaneous Abortion</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>NEJM correspondence article (2021)</>, FR: <></> },
-          link: "https://www.nejm.org/doi/full/10.1056/NEJMc2113891",
-          description: {
-            EN: (
-              <>
-                New England Journal of Medicine correspondence about miscarraige risk after mRNA vaccination against
-                COVID-19
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Spontaneous Abortion Following COVID-19 Vaccination During Pregnancy</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>JAMA letter, published 2021</>, FR: <></> },
-          link: "https://jamanetwork.com/journals/jama/fullarticle/2784193",
-          description: {
-            EN: <>Journal of the American Medical Association letter about miscarriage and COVID-19 vaccines</>,
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>COVID-19 Vaccines, Fertility and Menstruation</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>19 to Zero video</>, FR: <></> },
-          link: "https://www.youtube.com/watch?v=aFZ757WXNRE",
-          description: {
-            EN: (
-              <>
-                Dr. Stephanie Elliott and Dr. Fiona Mattatall talk COVID-19 vaccines and what it means for fertility and
-                menstruation.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Vaccines, pregnancy and fertility telephone town hall</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Archived audio recording of Townhall conversation</>, FR: <></> },
-          link: "https://www.alberta.ca/article-vaccines-pregnancy-and-fertility-telephone-town-hall.aspx",
-          description: {
-            EN: (
-              <>
-                Dr. Deena Hinshaw held a conversation about COVID-19 vaccines, pregnancy, and both female and male
-                fertility on October 27, 2021. This is an archived recording of this event.
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>Calgary Health Foundation: Live Q&amp;A, COVID-19 vaccine</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Video archive of Q&amp;A</>, FR: <></> },
-          link: "https://www.calgaryhealthfoundation.ca/events/live-qa-covid-19-vaccine/",
-          description: {
-            EN: (
-              <>
-                Q&amp;A video from Live session with public health and obstetrics health specialists about the COVID
-                vaccines and fertility/pregnancy
-              </>
-            ),
-            FR: <></>,
-          },
-        },
-
-        {
-          title: {
-            EN: <>US CDC: V-safe COVID-19 Vaccine Pregnancy Registry</>,
-
-            FR: <></>,
-          },
-          linkText: { EN: <>Link</>, FR: <></> },
-          link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafepregnancyregistry.html",
-          description: { EN: <>US CDC’s V-safe COVID-19 Vaccine Pregnancy Registry.</>, FR: <></> },
-        },
-      ],
     },
+    //REPRODUCTIVE Resources
+    resources: [
+      {
+        title: {
+          EN: <>Pregnancy, fertility and the COVID-19 vaccine</>,
+          FR: <>Pregnancy, fertility and the COVID-19 vaccine</>,
+        },
+        linkText: { EN: <>FAQ page from Sunnybrook Hospital</>, FR: <>FAQ page from Sunnybrook Hospital</> },
+        link: "https://health.sunnybrook.ca/babies-newborns/pregnancy-fertility-covid-19-vaccine-faq/",
+        description: {
+          EN: <>FAQ from Sunnybrook Hospital obstetrics and fertility specialists about the COVID vaccines</>,
+          FR: (
+            <>
+              FAQ de spécialistes en obstétrique et en fertilité de l’hôpital Sunnybrook au sujet des vaccins contre la
+              COVID
+            </>
+          ),
+        },
+      },
+      // Reproductive - Resources
+      {
+        // Preliminary Findings of ...
+        title: {
+          EN: <>mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
+
+          FR: <>Preliminary Findings of mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
+        },
+        linkText: {
+          EN: <>NEJM peer-reviewed publication (2021)</>,
+          FR: <>Publication de 2021 du NEJM révisée</>,
+        },
+        link: "https://www.nejm.org/doi/full/10.1056/nejmoa2104983",
+        description: {
+          EN: (
+            <>
+              2021 NEJM peer-reviewed publication examining preliminary safety findings of COVID-19 vaccines in
+              pregnancy populations.
+            </>
+          ),
+          FR: (
+            <>
+              Publication de 2021 du NEJM révisée par des pairs portant sur les constatations préliminaires en matière
+              de sécurité des vaccins contre la COVID-19 chez les femmes enceintes
+            </>
+          ),
+        },
+      },
+      // Reproductive - Resources
+      {
+        title: {
+          EN: <>Correspondence - Receipt of mRNA Covid-19 Vaccines and Risk of Spontaneous Abortion</>,
+          FR: <>Correspondance – Receipt of mRNA Covid-19 Vaccines and Risk of Spontaneous Abortion</>,
+        },
+        linkText: {
+          EN: <>NEJM correspondence article (2021)</>,
+          FR: <>Correspondance du NEJM (2021)</>,
+        },
+        link: "https://www.nejm.org/doi/full/10.1056/NEJMc2113891",
+        description: {
+          EN: (
+            <>
+              New England Journal of Medicine correspondence about miscarraige risk after mRNA vaccination against
+              COVID-19
+            </>
+          ),
+          FR: (
+            <>
+              Correspondance du New England Journal of Medicine au sujet des risques de fausse couche après avoir reçu
+              un vaccin à ARNm contre la COVID-19
+            </>
+          ),
+        },
+      },
+
+      {
+        title: {
+          EN: <>Spontaneous Abortion Following COVID-19 Vaccination During Pregnancy</>,
+          FR: <>Spontaneous Abortion Following COVID-19 Vaccination During Pregnancy</>,
+        },
+        linkText: { EN: <>JAMA letter, published 2021</>, FR: <>Lettre de l’American Medical Association (2021)</> },
+        link: "https://jamanetwork.com/journals/jama/fullarticle/2784193",
+        description: {
+          EN: <>Journal of the American Medical Association letter about miscarriage and COVID-19 vaccines</>,
+          FR: (
+            <>Lettre de l’American Medical Association au sujet des fausses couches et des vaccins contre la COVID-19</>
+          ),
+        },
+      },
+      // Reproductive - Resources
+      {
+        title: {
+          EN: <>COVID-19 Vaccines, Fertility and Menstruation</>,
+          FR: <>COVID-19 Vaccines, Fertility and Menstruation</>,
+        },
+        linkText: { EN: <>19 to Zero video</>, FR: <>Vidéo de 19 to Zero</> },
+        link: "https://www.youtube.com/watch?v=aFZ757WXNRE",
+        description: {
+          EN: (
+            <>
+              Dr. Stephanie Elliott and Dr. Fiona Mattatall talk COVID-19 vaccines and what it means for fertility and
+              menstruation.
+            </>
+          ),
+          FR: (
+            <>
+              Vidéo de 19 to Zero : Les docteures Stephanie Elliott et Fiona Mattatall s’entretiennent des vaccins
+              contre la COVID-19 et de ce qu’ils représentent en matière de fertilité et de menstruation.
+            </>
+          ),
+        },
+      },
+      // Reproductive - Resources
+      {
+        title: {
+          EN: <>Vaccines, pregnancy and fertility telephone town hall</>,
+          FR: <>Vaccines, pregnancy and fertility telephone town hall</>,
+        },
+        linkText: {
+          EN: <>Archived audio recording of Townhall conversation</>,
+          FR: <>L’enregistrement archivé de cette entretien</>,
+          // Translation from Google Translate
+        },
+        link: "https://www.alberta.ca/article-vaccines-pregnancy-and-fertility-telephone-town-hall.aspx",
+        description: {
+          EN: (
+            <>
+              Dr. Deena Hinshaw held a conversation about COVID-19 vaccines, pregnancy, and both female and male
+              fertility on October 27, 2021. This is an archived recording of this event.
+            </>
+          ),
+          FR: (
+            <>
+              La docteure Deena Hinshaw s’est entretenue des vaccins contre la COVID-19, de la grossesse et de la
+              fertilité des femmes et des hommes le 27 octobre 2021. Ce lien mène à l’enregistrement archivé de cet
+              entretien.
+            </>
+          ),
+        },
+      },
+      // Reproductive - Resources
+      {
+        title: {
+          EN: <>Calgary Health Foundation: Live Q&amp;A, COVID-19 vaccine</>,
+          FR: <>Calgary Health Foundation: Live Q&amp;A, COVID-19 vaccine</>,
+        },
+        linkText: { EN: <>Video archive of Q&amp;A</>, FR: <>Archives vidéo</> },
+        // Translation from Google Translate
+        link: "https://www.calgaryhealthfoundation.ca/events/live-qa-covid-19-vaccine/",
+        description: {
+          EN: (
+            <>
+              Q&amp;A video from Live session with public health and obstetrics health specialists about the COVID
+              vaccines and fertility/pregnancy
+            </>
+          ),
+          FR: (
+            <>
+              Vidéo avec questions et réponses d’une séance en direct tenue avec des spécialistes en santé publique et
+              en obstétrique au sujet des vaccins contre la COVID, de la fertilité et de la grossesse{" "}
+            </>
+          ),
+        },
+      },
+
+      {
+        title: {
+          EN: <>US CDC: V-safe COVID-19 Vaccine Pregnancy Registry</>,
+          FR: <>US CDC: V-safe COVID-19 Vaccine Pregnancy Registry</>,
+        },
+        linkText: { EN: <>Link</>, FR: <>lien Web</> },
+        // Translation from Google Translate
+
+        link: "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafepregnancyregistry.html",
+        description: {
+          EN: <>US CDC’s V-safe COVID-19 Vaccine Pregnancy Registry.</>,
+          FR: <>Registre v-safe des grossesses du CDC américain pour les vaccins contre la COVID-19</>,
+        },
+      },
+    ],
   },
 
   SideEffects: {
@@ -9470,7 +10582,10 @@ export const contentPersonasBI = {
           EN: <>Children and the COVID-19 Vaccine</>,
           FR: <>Children and the COVID-19 Vaccine</>,
         },
-        linkText: { EN: <>BC CDC - Children and COVID-19 Vaccination</>, FR: <>BC CDC - Children and COVID-19 Vaccination</> },
+        linkText: {
+          EN: <>BC CDC - Children and COVID-19 Vaccination</>,
+          FR: <>BC CDC - Children and COVID-19 Vaccination</>,
+        },
         link: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/covid-19-vaccine/vaccines-children",
         description: {
           EN: (
@@ -9479,7 +10594,12 @@ export const contentPersonasBI = {
               review of the vaccine approval process.{" "}
             </>
           ),
-          FR: <>Page Web présentant les avantages des vaccins pour enfants, les stratégies pour gérer la peur des aiguilles et un résumé du processus d’approbation des vaccins</>,
+          FR: (
+            <>
+              Page Web présentant les avantages des vaccins pour enfants, les stratégies pour gérer la peur des
+              aiguilles et un résumé du processus d’approbation des vaccins
+            </>
+          ),
         },
       },
     ],

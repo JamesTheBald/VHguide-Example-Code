@@ -8,8 +8,9 @@ const DetailsResources = props => {
   const { contentID } = props;
   const { lang, log, log2 } = useMyContext();
 
+  0 && console.log(log, log2);
   log && console.log("DetailsResources.js runs. contentID=", contentID);
-  log2 && console.log("DetailsResources.js contentPersonasBI=", contentPersonasBI);
+  log && console.log("DetailsResources.js contentPersonasBI=", contentPersonasBI);
 
   let resources = [
     {

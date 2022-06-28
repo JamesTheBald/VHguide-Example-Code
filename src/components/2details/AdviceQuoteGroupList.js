@@ -39,7 +39,7 @@ const AdviceQuoteGroupList = props => {
 
   return (
     <>
-      <div className="h-10 axs:h-14" />
+      <div className="h-12 axs:h-14 mxs:h-16" />
 
       {
         // Always show EAASE step heading on narrower screens and for Ask & Share
@@ -51,15 +51,15 @@ const AdviceQuoteGroupList = props => {
       <QuoteGroups panelContent={contentArray} initOpen={true} />
 
       {tabSelected === "ask" && (
-        <>
+        <div className="mt-6">
           {askAdviceExists && <div style={{ height: 30 }} />}
           {askAdviceExists && <div className="mb-9  w-full  border-gray-medium border-solid border-b-3" />}
           <span className="plusFont">{otherWord1}</span>
           <span className="ml-1.5 emphFont">{keyword}</span>
           <span className="ml-1.5 plusFont">{otherWord2}</span>
-          <div className="h-4 axs:h-4 mxs:h-5" />
+          <div className="h-6 axs:h-7 mxs:h-9" />
           <QuoteGroups panelContent={advice.share.content} initOpen={!onReprodAdviceAsk} />
-        </>
+        </div>
       )}
     </>
   );

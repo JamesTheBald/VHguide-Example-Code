@@ -47,9 +47,10 @@ export const branchFR = [
             contentID: "MedicallyComplex",
           },
           {
-            subtopicName: "Effets des vaccins sur la reproduction ou la forme physique",
+            subtopicName: "Inquiétudes en matière de grossesse, de fertilité ou de reproduction",
+            // 
             subtopicNameShort: "Effets sur la reproduction", // Should this have the "forme physique" part?
-            subtopicNameAsTitle: "Effets des vaccins sur la reproduction ou la forme physique",
+            subtopicNameAsTitle: "Inquiétudes en matière de grossesse, de fertilité ou de reproduction",
             contentID: "ReproductiveEffects",
           },
           {
