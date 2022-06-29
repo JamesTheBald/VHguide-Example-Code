@@ -8020,7 +8020,7 @@ export const contentPersonasBI = {
                     <>
                       J’ai vu un excellent{" "}
                       <a
-                        href="https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-EN.pdf"
+                        href="https://www.cccb.ca/wp-content/uploads/2021/03/CLARIFICATION-CCCB-Statement-on-COVID-19-Vaccine-Choice-9-March-2021-FR.pdf"
                         className="orangeLink"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -8060,7 +8060,7 @@ export const contentPersonasBI = {
                     <>
                       L’Église catholique s’est{" "}
                       <a
-                        href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_en.html"
+                        href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20201221_nota-vaccini-anticovid_fr.html"
                         className="orangeLink"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -13223,7 +13223,10 @@ export const contentPersonasBI = {
               <strong>these conversations are good opportunities to explore these concerns</strong>.
             </div>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+          <div>En matière d’exemption, <strong>soyez honnête quant à ce que vous êtes prêt à offrir à vos patients</strong>.  Ne leur donnez pas de faux espoirs quand une exemption n’est pas justifiée.</div>, 
+          <div>Essayez <strong>de ne pas laisser place aux négociations</strong>. Ne lancez pas de débat pour exposer les faits. Axez la conversation sur votre responsabilité à l’égard de la santé de votre patient et sur vos normes professionnelles.</div>, 
+          <div>Les patients qui demandent des exemptions ont probablement d’autres sources d’hésitations ou d’autres craintes. <strong>Ces conversations sont de bonnes occasions d’en parler</strong>.</div>],
         },
       },
       // MedicalExemptions
@@ -13253,7 +13256,26 @@ export const contentPersonasBI = {
               </ul>
             </>,
           ],
-          FR: [<></>, <></>, <></>],
+          FR: [
+            <>
+              <ul className="pl-5 list-disc">
+                <li className="">
+                  <strong>noncez clairement les critères régissant les exemptions médicales</strong>, puis commencez à parler d’autres sources possibles d’hésitations de la part du patient.
+                </li>
+                <li className="">
+                  <strong>Affirmez les craintes de la patiente et dites-lui que vous la comprenez</strong>, surtout si elle a mal réagi aux autres doses du vaccin.
+                </li>
+                <li className="">
+                Comme pour toutes les conversations entourant les hésitations,{" "}
+                  <strong>la confiance est de mise</strong>.
+                </li>
+                <li className="">
+                Si vous devez refuser une demande d’exemption,{" "}
+                  <strong>passez vite à autre chose et discutez de ce que vous pouvez faire pour votre patient</strong>.
+                </li>
+              </ul>
+            </>,
+          ],
         },
       },
     },
@@ -13270,7 +13292,7 @@ export const contentPersonasBI = {
                 the back of your mind in terms of vaccination?
               </>
             ),
-            FR: <></>,
+            FR: <>À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une exemption, qu’est-ce qui vous tracasse vraiment en matière de vaccination?</>,
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -13282,7 +13304,7 @@ export const contentPersonasBI = {
                 sense to me. That sounds like a very natural and human thing, and very understandable.
               </>
             ),
-            FR: <></>,
+            FR: <>Je peux comprendre qu’une autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus de temps pour y penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux. C’est une chose naturelle et très humaine. Je comprends tout à fait.</>,
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -13295,7 +13317,7 @@ export const contentPersonasBI = {
                 apply to your situation?
               </>
             ),
-            FR: <></>,
+            FR: <>Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour qu’on puisse voir s’ils s’appliquent à votre situation?</>,
           },
           image: "doctorWhiteManYoung.svg",
         },
@@ -13309,7 +13331,7 @@ export const contentPersonasBI = {
                 something I’m willing to do.
               </>
             ),
-            FR: <></>,
+            FR: <>Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour l’autre. J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les principes et les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est pas correct à mon sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque chose que je peux faire.</>,
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -13326,37 +13348,29 @@ export const contentPersonasBI = {
                 text: {
                   EN: (
                     <>
-                      &ldquo;Okay, so which vaccine component were you concerned that you might be allergic to? This
-                      allergy is news to me. So, what I think I'm hearing is that you really don't want the vaccine and
-                      you'd like me to sign an exemption for you? Do you believe that there's a medical reason for that,
-                      or is there actually something else going on? I'd like to explore your worries a little bit
-                      further so that we can understand if there’s something that really would impact your ability to
-                      get the vaccine. Aside from what the medical criteria are, and why you think you need an
-                      exemption, what's going on in the back of your mind in terms of vaccination? The next bit is for
-                      us to unpack each of your concerns, and then I would propose that we spend some time going through
-                      them just to make sure that I fully understand your perspective on those concerns . I really do
-                      care about you and I want to understand where you're coming from.&rdquo;
+                      Okay, so which vaccine component were you concerned that you might be allergic to? This
+                      allergy is news to me.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>D’accord, donc à quelle composante du vaccin pensez-vous être allergique? Je n’étais pas au courant de cette allergie.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "Allergie" },
               },
               {
                 text: {
                   EN: (
                     <>
-                      &ldquo;So, what I think I'm hearing is that you really don't want the vaccine and you'd like me to
+                      So, what I think I'm hearing is that you really don't want the vaccine and you'd like me to
                       sign an exemption for you? Do you believe that there's a medical reason for that, or is there
                       actually something else going on? I'd like to explore your worries a little bit further so that we
                       can understand if there’s something that really would impact your ability to get the
-                      vaccine.&rdquo;
+                      vaccine.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Donc si je comprends bien, vous ne voulez vraiment pas vous faire vacciner et vous aimeriez que je vous donne une lettre d’exemption? Selon vous, y a-t-il une raison médicale pour justifier cette exemption? Ou est-ce qu’il y a quelque chose d’autre? J’aimerais parler de vos inquiétudes un peu plus pour qu’on sache s’il y a vraiment quelque chose qui vous empêcherait de vous faire vacciner.</>,
                 },
                 featured: false,
                 image: "",
@@ -13369,13 +13383,10 @@ export const contentPersonasBI = {
                   EN: (
                     <>
                       Aside from what the medical criteria are, and why you think you need an exemption, what's going on
-                      in the back of your mind in terms of vaccination? The next bit is for us to unpack each of your
-                      concerns, and then I would propose that we spend some time going through them just to make sure
-                      that I fully understand your perspective on those concerns . I really do care about you and I want
-                      to understand where you're coming from.
+                      in the back of your mind in terms of vaccination?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une exemption, qu’est-ce qui vous tracasse vraiment en matière de vaccination?</>,
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -13391,7 +13402,7 @@ export const contentPersonasBI = {
                       concerns. I really do care about you and I want to understand where you're coming from.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Mentionnez-moi chacune de vos inquiétudes et après ça, je vais vous proposer d’en discuter une à la fois pour que je comprenne bien votre point de vue pour chacune des inquiétudes. Je me soucie vraiment de votre bien-être et je veux comprendre ce que vous voulez dire.</>,
                 },
                 featured: false,
                 image: "",
@@ -13418,12 +13429,12 @@ export const contentPersonasBI = {
                       or anxiety related to vaccination.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je m’inquiète vraiment de vous et je me demande comment vous allez vraiment. J’aimerais en parler avec vous. Cela dit, je ne peux pas vous écrire une lettre d’exemption parce que vous ressentez du stress ou de l’anxiété en raison du vaccin.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "Santé mentale" },
               },
               {
                 text: {
@@ -13435,12 +13446,12 @@ export const contentPersonasBI = {
                       deteriorate” and so there are very few things that fit in that category.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je peux comprendre que vous ressentez une grande détresse mentale à cause de la vaccination. Cependant, la détresse mentale attribuable au vaccin ne vous donne tout de même pas droit à une exemption. Les exemptions existent pour les personnes qui peuvent dire : « Si je reçois ce vaccin, ma santé physique va se détériorer ». Peu de choses entrent dans cette catégorie.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "Santé mentale" },
               },
               // MedicalExemptions
 
@@ -13453,12 +13464,12 @@ export const contentPersonasBI = {
                       of fear now.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Ça doit être assez effrayant si vous pensez que le gouvernement essaie de contrôler les gens avec la vaccination ou si vous pensez que la science a tort. Parlons de vos peurs dès maintenant.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "Politique" },
               },
               {
                 text: {
@@ -13470,12 +13481,12 @@ export const contentPersonasBI = {
                       very human thing, and very understandable.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>[Si le patient a eu une mauvaise expérience avec les doses précédentes.] Je peux comprendre qu’une autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus de temps pour y penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux. C’est une chose naturelle et très humaine. Je comprends tout à fait.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "Allergie" },
               },
             ],
           },
@@ -13497,12 +13508,12 @@ export const contentPersonasBI = {
                       worried about?&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je me demande s’il n’y a pas d’autres aspects du vaccin qui vous tracassent, à part la question de l’allergie. Y a-t-il quelque chose de particulier qui vous inquiète?</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "Allergie" },
               },
               {
                 text: {
@@ -13512,7 +13523,7 @@ export const contentPersonasBI = {
                       these apply to your situation?
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour qu’on puisse voir s’ils s’appliquent à votre situation?</>,
                 },
                 featured: false,
                 image: "",
@@ -13542,7 +13553,7 @@ export const contentPersonasBI = {
                       and my position on them.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Pour moi, c’est très difficile d’approuver quelque chose qui n’est pas vrai à 100 %. Ça ne cadre pas avec mes obligations professionnelles. Le collège des médecins a indiqué clairement à tous les médecins, moi y compris, que si on écrit quelque chose de faux, c’est une infraction. Je pourrais perdre mon permis d’exercice et je veux continuer à travailler pour vous et pour mes autres patients, vous savez. Je ne suis donc pas capable de faire ça. Je veux être très clair au sujet des exemptions médicales et de mon point de vue à ce sujet.</>,
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -13559,7 +13570,7 @@ export const contentPersonasBI = {
                       that.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Si vous jetez un coup d’œil à ce qui a été approuvé par Santé Canada, le gouvernement provincial et notre collège des médecins et des chirurgiens, vous verrez qu’une exemption doit s’accompagner de raisons valables. Ce n’est pas aussi simple que de me faire dire que vous avez besoin d’une exemption, et que je me conforme à votre demande.</>,
                 },
                 featured: false,
                 image: "",
@@ -13577,7 +13588,7 @@ export const contentPersonasBI = {
                       just want to give you some clarity there.
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Quand j’approuve une exemption, j’accepte la responsabilité qui est liée à cette lettre d’exemption, au sens de la loi, et je pense que bien des patients ne comprennent pas ça. Les gens se disent : « Il ne faut que quelques secondes au médecin pour signer une lettre », mais ça va beaucoup plus loin que ça, et je tiens à ce que ce soit clair.</>,
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -13594,12 +13605,12 @@ export const contentPersonasBI = {
                       allergist.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Généralement, les personnes qui sont allergiques aux ingrédients du vaccin (comme le PEG) le sauraient déjà parce que ces ingrédients sont souvent utilisés dans d’autres produits utilisés au quotidien. Si vous croyez avoir une telle allergie, je vais vous recommander à un allergologue.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "Allergie" },
               },
               // MedicalExemptions
               {
@@ -13614,12 +13625,12 @@ export const contentPersonasBI = {
                       side, and a lot of the other sides of the issue.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>J’ai vu des personnes comme vous, qui pensent que les vaccins vont à l’encontre de leurs droits, mais j’ai aussi vu des personnes qui sont fâchées de ne pas pouvoir travailler parce que leur état de santé les rend vulnérables, et j’ai vu des personnes déprimées parce qu’elles ne peuvent pas sortir de chez elles en raison des restrictions et de la COVID. Je vois beaucoup de professionnels de la santé fâchés parce qu’ils subissent un stress immense au travail. Donc, je comprends votre point de vue, mais je vois aussi les nombreux autres côtés de la question.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "Politique" },
               },
             ],
           },
@@ -13645,12 +13656,12 @@ export const contentPersonasBI = {
                       can.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que ma décision de ne pas vous donner ce que vous voulez ou ce dont vous pensez avoir besoin vous frustre.  Mais j’aimerais bien que vous pensiez aux soins de santé que je vous ai prodigués ces 20 dernières années, à ce qu’on a accompli ensemble. Êtes-vous content que j’aie bien pris soin de vous ces 20 dernières années? Au lieu de vous dire que votre médecin a changé – moi ou ma façon d’exercer la médecine – j’espère que vous allez voir que j’ai toujours pris soin de vous et que je vais toujours vous donner les meilleurs conseils de santé qui soient.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Do me a favour", FR: "" },
+                label: { EN: "Do me a favour", FR: "Rendez-moi service" },
               },
               {
                 text: {
@@ -13662,12 +13673,12 @@ export const contentPersonasBI = {
                       my professional standards, that’s not something I’m willing to do.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour l’autre. J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les principes et les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est pas correct à mon sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque chose que je peux faire.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Do me a favour", FR: "" },
+                label: { EN: "Do me a favour", FR: "Rendez-moi service" },
               },
               // MedicalExemptions
               {
@@ -13680,12 +13691,12 @@ export const contentPersonasBI = {
                       why I agree with making medical exemptions only available for very specific reasons.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je vois que vous croyez qu’un mandat vaccinal va à l’encontre de vos droits. Je vois les choses bien différemment, du point de vue du professionnel de la santé. J’ai vu des patients très malades, et des membres de famille très malades, et je crois que les vaccins aident à protéger ces personnes. Et c’est pour ça que j’estime que les exemptions médicales ne doivent être accordées que pour des raisons très précises.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Politics", FR: "" },
+                label: { EN: "Politics", FR: "Politique" },
               },
               {
                 text: {
@@ -13699,12 +13710,12 @@ export const contentPersonasBI = {
                       of a medical exemption.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Que vous décidiez de vous faire vacciner ou non, je peux tout de même vous aider avec les aspects angoissants de votre isolement social. Je veux vous parler de façons de reprendre certains de vos liens sociaux pour vous aider à gérer votre angoisse. On peut commencer par trouver des stratégies pour reprendre certains des liens sociaux qui vont vous aider à gérer votre humeur malgré les restrictions actuelles. Je pense que c’est ce qu’il faut faire au bout du compte, au lieu d’une exemption médicale.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "Santé mentale" },
               },
               // MedicalExemptions
               {
@@ -13719,12 +13730,12 @@ export const contentPersonasBI = {
                       vaccine.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Mais parlons un peu de votre santé mentale. On pourrait peut-être vous prendre un rendez-vous avec un spécialiste de la santé mentale comme source de soutien. Quelqu’un qui peut prendre le temps de vous parler, de vous aider à gérer cette angoisse et ce stress, et qui pourrait peut-être même vous aider à faire un plan en vue de la vaccination. Donc, il ne s’agit pas ici d’une exemption, mais plutôt d’une occasion de vous aider à être plus calme et à vous sentir mieux à l’idée de vous faire vacciner.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Mental Health", FR: "" },
+                label: { EN: "Mental Health", FR: "Santé mentale" },
               },
               {
                 text: {
@@ -13735,12 +13746,12 @@ export const contentPersonasBI = {
                       I will need to refer you out to an allergist to get that testing done.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je peux vous donner une lettre d’exemption seulement si vous avez une vraie allergie. Et la seule façon de vraiment savoir si vous avez des allergies, c’est de vous faire subir un test d’allergie pour un des deux produits se trouvant dans les vaccins. Pour ce faire, je vais devoir vous recommander à un allergologue.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Allergy", FR: "" },
+                label: { EN: "Allergy", FR: "Allergie" },
               },
               // MedicalExemptions
               {
@@ -13754,12 +13765,12 @@ export const contentPersonasBI = {
                       rigor? Because I need to understand this as we plan options for your future care.&rdquo;
                     </>
                   ),
-                  FR: <></>,
+                  FR: <>Je sais que vos convictions religieuses sont profondes et que vous êtes diamétralement opposé à toute recherche qui entre en conflit avec votre foi. J’aime le fait que vous soyez une personne de conviction. À la lumière de tout ça, est-ce que je peux vous demander de faire des recherches sur tout ce dont nous discutons en matière de soins de santé, avec autant de rigueur? Parce qu’il faut que je comprenne ça pour qu’on puisse planifier les options de vos soins futurs.</>,
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "",
-                label: { EN: "Religion", FR: "" },
+                label: { EN: "Religion", FR: "Religion" },
               },
             ],
           },
@@ -13771,9 +13782,9 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>College of Physicians and Surgeons of Alberta</>,
-          FR: <></>,
+          FR: <>College of Physicians and Surgeons of Alberta</>,
         },
-        linkText: { EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>, FR: <></> },
+        linkText: { EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>, FR: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions (College of Physicians and Surgeons of Alberta)</> },
         link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
         description: {
           EN: (
@@ -13782,16 +13793,16 @@ export const contentPersonasBI = {
               interactions, and setting up exemption expectations with patients
             </>
           ),
-          FR: <></>,
+          FR: <>Guide sur le jugement professionnel en matière d’exemptions, la gestion des interactions difficiles et l’établissement des attentes des patients quant aux exemptions</>,
         },
       },
       {
         title: {
-          EN: <>CPSA</>,
+          EN: <>CPSA - Vaccine Exemptions FAQ</>,
 
-          FR: <></>,
+          FR: <>CPSA - Vaccine Exemptions FAQ</>,
         },
-        linkText: { EN: <>Exemption Requests: Patient FAQs</>, FR: <></> },
+        linkText: { EN: <>Exemption Requests: Patient FAQs</>, FR: <>Exemption Requests: Patient FAQs (CPSA)</> },
         link: "https://cpsa.ca/wp-content/uploads/2021/09/Vaccine-exemption-public-FAQ.pdf",
         description: {
           EN: (
@@ -13800,43 +13811,46 @@ export const contentPersonasBI = {
               provide exemptions
             </>
           ),
-          FR: <></>,
+          FR: <>FAQ destinée aux patients concernant l’admissibilité aux exemptions, et le rôle des médecins devant faire preuve de discrétion professionnelle en matière d’exemptions</>,
         },
       },
       {
         title: {
           EN: <>College of Physicians and Surgeons BC</>,
 
-          FR: <></>,
+          FR: <>College of Physicians and Surgeons BC</>,
         },
-        linkText: { EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>, FR: <></> },
+        linkText: { EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>, FR: <>How to verify a legitimate COVID-19 vaccine exemption or deferral – (College of Physicians and Surgeons BC)</> },
         link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
         description: {
           EN: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
-          FR: <></>,
+          FR: <>Document contenant un lien menant au formulaire d’exemption et de sursis de même qu’une liste de conditions d’exemption</>,
         },
       },
       {
         title: {
           EN: <>Ontario Ministry of Health</>,
 
-          FR: <></>,
+          FR: <>Ontario Ministry of Health</>,
         },
-        linkText: { EN: <>Medical Exemptions to COVID-19 Vaccination</>, FR: <></> },
+        linkText: { EN: <>Medical Exemptions to COVID-19 Vaccination</>, FR: <>Exemptions médicales à l’immunisation contre la COVID-19 : Ministère de la Santé de l’Ontario</> },
         link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
         description: {
           EN: <>Offers guidance to medical staff on when a medical exemption is warranted</>,
-          FR: <></>,
+          FR: <>Guide destiné au personnel médical sur les exemptions médicales justifiées</>,
         },
       },
       {
         title: {
           EN: <>National Advisory Committee on Immunization (NACI)</>,
 
-          FR: <></>,
+          FR: <>Comité consultatif national de l'immunisation (CCNI)</>,
         },
-        linkText: { EN: <>Recommendations on COVID-19</>, FR: <></> },
-        link: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
+        linkText: { EN: <>Recommendations on COVID-19</>, FR: <>Les recommandations du CCNI</> },
+        link: {
+          EN: "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html",
+          FR: "https://www.canada.ca/fr/sante-publique/services/publications/vie-saine/guide-canadien-immunisation-partie-4-agents-immunisation-active/page-26-vaccin-contre-covid-19.html",
+        },
         description: {
           EN: (
             <>
@@ -13844,7 +13858,7 @@ export const contentPersonasBI = {
               2022)
             </>
           ),
-          FR: <></>,
+          FR: <>Vaccin contre la COVID-19 : Guide canadien d’immunisation (à jour en janvier 2022)</>,
         },
       },
     ],
