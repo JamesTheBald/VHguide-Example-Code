@@ -32,9 +32,10 @@ const Footer = () => {
     <div className="relative">
       {/* Fixed ('floating') Contact Us Pill */}
       <button
-        className={`fixed right-5 bottom-11 mxs:bottom-6 qsm:bottom-7  px-1.5 qsm:px-5 py-1.5 mx-auto mb-2 mxs:mb-0
+        className={`fixed bottom-11 mxs:bottom-6 qsm:bottom-7  px-1.5 qsm:px-5 py-1.5 mx-auto mb-2 mxs:mb-0
                   flex items-center  text-16 tracking-0.3  rounded-full cursor-pointer border-2 border-white  z-50 qsm:z-40
                     text-gray-light bg-blue-black`}
+        style={w < 610 ? { left: winWidth - 79 } : { right: 20 }}
         onClick={() => toggleContactForm()}
       >
         <StaticImage src="../../assets/navbar/speechBubbleGrey.svg" alt="Speech bubble" style={{ width: 28 }} />
@@ -42,14 +43,14 @@ const Footer = () => {
       </button>
 
       {/* Language Switcher for narrow screens, stacked under Contact Us icon */}
-      <div className="mxs:hidden  absolute bottom-4 z-50" style={{ right: 26 }}>
+      <div className="mxs:hidden  absolute bottom-3 mxs:bottom-4 z-50" style={{ right: 26 }}>
         <LanguageSwitcher />
       </div>
 
       {/* Footer */}
       <div className={`z-40 qsm:z-50 ${fixedBackdrop ? "fixed w-full bottom-0" : "relative"} overflow-y-hidden`}>
         <footer
-          className="mt-6  pl-8 sm:pl-10 md:pl-12 lg:pl-14  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish text-10 mxs:text-12 text-blue-black"
+          className="mt-6  pl-8 axs:pl-10 md:pl-12 lg:pl-14  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish text-10 mxs:text-12 text-blue-black"
           style={w < 510 ? { height: 80 } : w < 900 ? { height: 90 } : { height: 75 }}
           aria-hidden="true"
         >
