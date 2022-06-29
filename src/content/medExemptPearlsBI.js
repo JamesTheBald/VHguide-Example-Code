@@ -24,7 +24,7 @@ export const medExemptPearlsBI = [
     title: { EN: "", FR: "" },
     content: [
       {
-        subheading: { EN: "The Art of the Difficult Conversation", FR: "" },
+        subheading: { EN: "The Art of the Difficult Conversation", FR: "L’art de la conversation difficile" },
         quotes: [
           {
             text: {
@@ -37,7 +37,7 @@ export const medExemptPearlsBI = [
                   hear, and then shift the conversation to the things that I can offer for them and their situation.
                 </>
               ),
-              FR: <></>,
+              FR: <>Quand j’ai une conversation sur les exemptions, j’essaie de dire aux patients sans tarder si je peux leur en accorder une ou non. Je ne veux pas qu’ils se fassent d’illusions parce que si je finis par dire « non », leur déception sera encore plus grande. S’ils ne sont pas admissibles à l’exemption, j’essaie vite de passer à ce que je peux faire pour eux. Je sais que ce n’est probablement pas ce qu’ils veulent entendre, mais je dévie la conversation sur ce que je peux leur offrir et sur leur situation.</>,
             },
             featured: false,
             image: "doctorBlackManBeard.svg",
@@ -57,7 +57,7 @@ export const medExemptPearlsBI = [
                   trying to get a better price on a car.
                 </>
               ),
-              FR: <></>,
+              FR: <>C’est un art. Il faut que vous fassiez part de votre décision sans tarder parce que si vous tournez autour du pot, vous devrez alors prendre le chemin de la justification. Les patients difficiles vont commencer à contester chacune de vos justifications. Naturellement, la conversation va dégénérer et là, vous serez pris entre l’arbre et l’écorce, entre le « non » et le « pourquoi pas », ce qui n’a plus rien à voir avec la relation thérapeutique. C’est plutôt de la négociation. C’est comme essayer de faire baisser le prix d’une voiture.</>,
             },
             featured: false,
             image: "",
@@ -72,7 +72,7 @@ export const medExemptPearlsBI = [
                   frustrating for them to hear, but at least you're not getting into that negotiation space.
                 </>
               ),
-              FR: <></>,
+              FR: <>J’ai des patients qui me demandent la même chose au moins cinq fois. Après la deuxième fois, j’arrête de leur expliquer et je ne fais que répéter, calmement et poliment, ce que je peux leur offrir. Pour les patients, ça peut être vraiment frustrant, mais au moins, ça veut dire que je ne m’adonne pas au jeu de la négociation.</>,
             },
             featured: false,
             image: "",
@@ -81,7 +81,7 @@ export const medExemptPearlsBI = [
       },
 
       {
-        subheading: { EN: "Avoiding a Negotiation", FR: "" },
+        subheading: { EN: "Avoiding a Negotiation", FR: "Évitez les négociations" },
         quotes: [
           {
             text: {
@@ -96,10 +96,10 @@ export const medExemptPearlsBI = [
                   giving them an exemption.
                 </>
               ),
-              FR: <></>,
+              FR: <>Entreprendre un débat sur les faits, ça ne donne probablement rien et ce n’est pas productif. Mais encore une fois, c’est une bonne idée que de leur faire comprendre certains faits, comme le fait que toutes les grandes religions ont déclaré que c’est moralement acceptable de se faire vacciner. Si vous vous en tenez à ces principaux faits, ça vous aidera à diriger la conversation. C’est toujours important de reconnaître ce que dit le patient de même que l’information et la perspective qu’il vous présente.  Mais pour vous, votre tâche consiste à lui faire savoir que son information et sa perspective, même si elles sont valables dans un certain sens, ne changeront pas votre point de vue à l’égard d’une exemption.</>,
             },
             featured: false,
-            image: "",
+            image: "doctorWhiteManGoatee.svg",
           },
 
           {
@@ -113,7 +113,7 @@ export const medExemptPearlsBI = [
                   &lsquo;as your physician, I'm not going to recommend against vaccination&rsquo;.
                 </>
               ),
-              FR: <></>,
+              FR: <>Donc, ces [faits et énoncés] importants que vous pourrez lui présenter pourront vous être d’une grande utilité. Vous n’avez qu’à continuer de les répéter et à tenir votre position. Ne lui laissez pas la chance de s’infiltrer et de commencer à négocier ou à échanger des faits. Si vous en arrivez là, vous êtes clairement dans l’impasse au point où vous serez peut-être obligé de convenir que vous n’êtes pas d’accord et de dire « en tant que votre médecin, je ne vais pas faire de recommandation contre la vaccination ».</>,
             },
             featured: false,
             image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -121,7 +121,7 @@ export const medExemptPearlsBI = [
         ],
       },
       {
-        subheading: { EN: "Keeping it Medical and Professional", FR: "" },
+        subheading: { EN: "Keeping it Medical and Professional", FR: "Tenez-vous-en à l’aspect médical et professionnel" },
         quotes: [
           {
             text: {
@@ -131,7 +131,7 @@ export const medExemptPearlsBI = [
                   I'm not permitted to provide an exemption for [any non-medical] reasons.
                 </>
               ),
-              FR: <></>,
+              FR: <>Je me fais toujours un devoir de dire que je dois adhérer à mes normes professionnelles et aux principes du collège des médecins, et que je n’ai pas le droit de donner une exemption pour des raisons [non médicales], quelles qu’elles soient.</>,
             },
             featured: false,
             image: "doctorWhiteManYoung.svg",
@@ -148,7 +148,7 @@ export const medExemptPearlsBI = [
                   about what's keeping them from getting a vaccine.
                 </>
               ),
-              FR: <></>,
+              FR: <>Quand ils me demandent une lettre d’exemption, je commence par essayer d’évaluer s’ils sont admissibles au vaccin médicalement parlant. Je leur en parle et leur dis : « Il y a des critères médicaux précis qui permettent de donner une exemption à la vaccination. Est-ce que vous répondez à ces critères? » Sinon, j’essaie de leur expliquer pourquoi ils ne sont pas admissibles à une exemption médicale. Ensuite, j’entame une conversation sur les facteurs qui les empêchent de se faire vacciner.</>,
             },
             featured: false,
             image: "",
@@ -167,7 +167,7 @@ export const medExemptPearlsBI = [
                   that."
                 </>
               ),
-              FR: <></>,
+              FR: <>Grand nombre des patients [qui demandent des exemptions] sont des personnes qui sont obligées de se faire vacciner parce que leur employeur l’exige. Certains patients essaient de trouver un prétexte médical pour contrer cette exigence. La plupart des patients disent qu’ils ont des allergies ou qu’ils ont peur des aiguilles, mais peu importe ce qu’ils vous racontent, vous devez toujours répondre de la même manière.  Mettez l’accent sur ce qui EST et sur ce qui N’EST PAS médical à propos de leurs explications.  Par exemple, si quelqu’un vous dit : « Je suis suicidaire », répondez : « D’accord, je peux vous aider avec ça, mais je ne peux pas vous aider avec la lettre d’exemption parce que vous n’y êtes médicalement pas admissible ».</>,
             },
             featured: false,
             image: "",
@@ -184,7 +184,7 @@ export const medExemptPearlsBI = [
                   actually the correct thing to do, that's the only way you can mentally cope.
                 </>
               ),
-              FR: <></>,
+              FR: <>Je fonde ces décisions [au sujet des exemptions] sur mes normes professionnelles parce que je sais que si je veux bien dormir la nuit en tant que médecin, je dois avoir la conscience tranquille. Au bout du compte, je pense que nous sommes nous-mêmes nos critiques les plus sévères. Même si c’est dur d’encaisser les coups ou les commentaires négatifs des patients, si vous allez travailler le lendemain et que vous vous rendez compte que vous avez pris la bonne décision, c’est ça qui va vous sauver mentalement parlant.</>,
             },
             featured: false,
             image: "",
@@ -193,7 +193,7 @@ export const medExemptPearlsBI = [
       },
 
       {
-        subheading: { EN: "Having Empathy and Finding Out What's Really Going On", FR: "" },
+        subheading: { EN: "Having Empathy and Finding Out What's Really Going On", FR: "Faites preuve d’empathie et trouvez ce qui les tracasse vraiment" },
         quotes: [
           {
             text: {
@@ -206,10 +206,10 @@ export const medExemptPearlsBI = [
                   how bad it might be if she weren't fully vaccinated and got COVID.
                 </>
               ),
-              FR: <></>,
+              FR: <>Une de mes patientes pense que sa sclérose en plaques s’est aggravée après avoir été vaccinée. Elle hésite vraiment à recevoir la deuxième dose. Son inquiétude est donc très raisonnable. Je l’invite à m’en parler et je lui demande quel serait un bon moment pour en discuter davantage, puis je fais le suivi. C’est important d’avoir de la pitié, vous savez. La discussion porte sur sa sclérose en plaques, son ampleur, puis j’essaie de comparer ça à sa situation si jamais elle ne se faisait pas entièrement vacciner et attrapait la COVID.</>,
             },
             featured: false,
-            image: "",
+            image: "doctorBlackWoman.svg",
           },
 
           {
@@ -222,7 +222,7 @@ export const medExemptPearlsBI = [
                   about getting vaccinated?”
                 </>
               ),
-              FR: <></>,
+              FR: <>Quand un patient me demande une lettre d’exemption, j’essaie de voir ce qui se passe vraiment. Je commence par essayer d’évaluer s’il est médicalement admissible au vaccin. Le cas échéant, j’essaie de le convaincre que c’est effectivement le cas. Il faut leur parler. « Est-ce que je peux vous faire part d’information qui vous aiderait à prendre une décision pour vous faire vacciner? »</>,
             },
             featured: false,
             image: "doctorWhiteManGoatee.svg",
@@ -238,7 +238,7 @@ export const medExemptPearlsBI = [
                   feel distressed, and talking through solutions that work for them.
                 </>
               ),
-              FR: <></>,
+              FR: <>Alors, encore une fois, j’essaie de découvrir ce qui contrarie le patient en matière de vaccination. J’essaie de discuter de ce qui va se passer et de la manière de se préparer pour qu’il se sente le mieux possible avant de se faire vacciner. L’essentiel, je pense que c’est d’essayer de faire ressortir ce qui le dérange et de parler de solutions susceptibles de lui convenir.</>,
             },
             featured: false,
             image: "",
