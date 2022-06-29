@@ -39,7 +39,7 @@ const AboutHowUseFR = props => {
           <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> qui correspond le
           mieux à l’hésitation de votre patient, vous aurez accès à trois onglets d’information&nbsp;:
         </div>
-        <ul className="listClass">
+        <ul className="ml-6 sm:ml-12  listClass">
           <li>
             l’onglet «&nbsp;Aperçu&nbsp;», comprenant des inquiétudes ou des énoncés courants pour le type d’hésitation
             choisi, ainsi que certaines options à considérer pendant les consultations;

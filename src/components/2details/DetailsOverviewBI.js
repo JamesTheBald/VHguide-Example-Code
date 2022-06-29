@@ -96,7 +96,7 @@ const DetailsOverviewBI = props => {
           {contentID === "Pediatrics" ? (
             <>{thingsToConsider.content[lang]}</>
           ) : (
-            <ul className="pl-5  listClass2">
+            <ul className="ml-5  listClass2">
               {thingsToConsider.content[lang].map((currItem, index) => (
                 <li key={index} className="pb-4 pl-1">
                   {currItem}
@@ -106,7 +106,8 @@ const DetailsOverviewBI = props => {
           )}
         </section>
 
-        {/* Third Panel */}
+        {/* Third Panel. Note that some of the formatting may be in contentPersonas.js (This panel uses a .map function
+          but there may only be 1 item in the takeHome.content[lang] array */}
         <section className={blockClass}>
           {pplIcons.map((item, index) => {
             return (
@@ -117,13 +118,15 @@ const DetailsOverviewBI = props => {
           })}
 
           <h3 className="listTitleClass mb-1">{lang === "EN" ? "Take Home" : "Matière à réflexion"}</h3>
+
           {takeHome.content[lang].map((currItem, index) => (
-            <div key={index} className="mt-2  baseFont text-blue-black">
+            <div key={index} className="mt-2 baseFont text-blue-black">
               {currItem}
             </div>
           ))}
         </section>
       </main>
+
       <Link
         to={linkDestn}
         className={`mt-6 mxs:mt-10  mb-5 mr-auto  pt-2.5 pb-2  px-4  ${

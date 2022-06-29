@@ -7,7 +7,7 @@ const BigDoubleQuotes = featured => {
 
   return <i className={`ri-double-quotes-l leading-none ${quotesColor}`} />;
   // ri-double-quotes-l is from remixicons, which is imported as css in NavFooterLayout.js
-  // <i /> is the html tag for Idiomatic Text  
+  // <i /> is the html tag for Idiomatic Text. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
 };
 
 export default BigDoubleQuotes;

@@ -28,7 +28,7 @@ const AboutEaaseStepsEN = props => {
           EAASE conversation is to build an alliance and set a foundation for vaccine confidence.
         </div>
         <br />
-        <ul className="listClass">
+        <ul className="ml-6 sm:ml-12  listClass">
           <li>
             <strong>Engage</strong> with open questions:
             <a

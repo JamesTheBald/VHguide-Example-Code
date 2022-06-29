@@ -37,7 +37,7 @@ const AboutHowUseEN = props => {
           vaccine hesitancy. Once you have worked through the menus and identified the &lsquo;type&rsquo; that most
           closely resembles your patient&apos;s hesitancy, you will have access to three tabs of information:
         </div>
-        <ul className="listClass">
+        <ul className="ml-6 sm:ml-12  listClass">
           <li>
             An &lsquo;Overview&rsquo; tab which includes common phrases or concerns related to this type of hesitancy,
             as well as some options to consider during consultations;

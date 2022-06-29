@@ -23,7 +23,7 @@ const AboutWhatIsThisEN = props => {
           find&#58;
         </div>
 
-        <ul className="listClass relative md:static">
+        <ul className="ml-6 sm:ml-12  listClass relative md:static">
           <li>
             <Link to="/pearls" className="orangeUnderline">
               Clinician-to-clinician advice

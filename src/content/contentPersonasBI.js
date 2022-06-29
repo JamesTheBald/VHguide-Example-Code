@@ -72,16 +72,21 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « À mon âge, je n’ai pas confiance à ça. Je ne sais pas ce qui va se passer plus tard, ce que ça va me
-              faire dans trois à cinq ans. »
+              «&nbsp;À mon âge, je n’ai pas confiance à ça. Je ne sais pas ce qui va se passer plus tard, ce que ça va
+              me faire dans trois à cinq ans.&nbsp;»
             </>,
-            <>« Est-ce que ça va être un vaccin annuel? Faudra-t-il des vaccins de rappel? »</>,
-            <>« Je ne fais confiance à personne à ce sujet. Ils nous prennent pour des cobayes. »</>,
-            <>« On ne connaît pas les effets secondaires à long terme de ces vaccins. »</>,
-            <>« Je veux voir les statistiques quant au pourcentage à atteindre pour avoir l’immunité collective. »</>,
-            <>« Ça me fait peur. On nous injecte des substances inconnues. Les données sont insuffisantes. »</>,
-            <>« On peut attraper la COVID même si on a été vacciné. Alors, à quoi bon se faire vacciner? »</>,
-            <>« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »</>,
+            <>«&nbsp;Est-ce que ça va être un vaccin annuel? Faudra-t-il des vaccins de rappel?&nbsp;»</>,
+            <>«&nbsp;Je ne fais confiance à personne à ce sujet. Ils nous prennent pour des cobayes.&nbsp;»</>,
+            <>«&nbsp;On ne connaît pas les effets secondaires à long terme de ces vaccins.&nbsp;»</>,
+            <>
+              «&nbsp;Je veux voir les statistiques quant au pourcentage à atteindre pour avoir l’immunité
+              collective.&nbsp;»
+            </>,
+            <>
+              «&nbsp;Ça me fait peur. On nous injecte des substances inconnues. Les données sont insuffisantes.&nbsp;»
+            </>,
+            <>«&nbsp;On peut attraper la COVID même si on a été vacciné. Alors, à quoi bon se faire vacciner?&nbsp;»</>,
+            <>«&nbsp;J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner?&nbsp;»</>,
           ],
         },
       },
@@ -450,7 +455,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "redTapemRNA",
-                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                fullStoryLinkText: { EN: "Read the full story", FR: "Lire l'histoire complète" },
                 // <div className="flex">
                 //   <div className="pr-2 ">Read the full story</div>
                 //   {/* <BsArrowRight size="24" /> */}
@@ -567,9 +572,9 @@ export const contentPersonasBI = {
                     <>
                       Il a fallu de nombreuses années pour mettre au point la technologie de l’ARNm. Je sais que les
                       gens paniquent et se disent :{" "}
-                      <i> « Oh, ma foi. On a eu en vaccin en moins d’un an. C’est pas possible. »</i> Mais ça fait des
-                      décennies que ce genre d’approche à base d’ARNm est en développement. On a donc pu profiter de
-                      travaux qui étaient déjà faits.
+                      <i> «&nbsp;Oh, ma foi. On a eu en vaccin en moins d’un an. C’est pas possible.&nbsp;»</i> Mais ça
+                      fait des décennies que ce genre d’approche à base d’ARNm est en développement. On a donc pu
+                      profiter de travaux qui étaient déjà faits.
                     </>
                   ),
                 },
@@ -595,9 +600,9 @@ export const contentPersonasBI = {
                     <>
                       Des centaines de millions de personnes se sont fait vacciner dans le monde entier. Le processus de
                       développement de ces vaccins s’est fait plus vite qu’à l’habitude quand les scientifiques sont
-                      passés de « <i>c’est quoi ce virus?</i> » à «{" "}
-                      <i>comment peut-on faire un vaccin contre ce virus?</i> ». C’est vrai. Mais aucune étape n’a été
-                      brûlée. Je me suis penché là-dessus. La raison pour laquelle ils ont pu aller plus vite, c’est
+                      passés de «&nbsp;<i>c’est quoi ce virus?</i>&nbsp;» à «{" "}
+                      <i>comment peut-on faire un vaccin contre ce virus?</i>&nbsp;». C’est vrai. Mais aucune étape n’a
+                      été brûlée. Je me suis penché là-dessus. La raison pour laquelle ils ont pu aller plus vite, c’est
                       parce que les investissements ont été plus grands qu’ils ne l’avaient jamais été. Et ils ont
                       travaillé ensemble, comme cela n’a jamais été le cas avant.
                     </>
@@ -629,12 +634,12 @@ export const contentPersonasBI = {
                       apprend à faire des anticorps contre CE genre de spicule. Mais si on lui montre un spicule un peu
                       différent, le système immunitaire doit y penser plus fort. L’approche de l’ARNm en matière de
                       vaccination est différente. Elle ne montre pas une simple vue du virus à votre système immunitaire
-                      pour finir par lui dire « bonne chance ». Elle donne à votre système immunitaire les outils
-                      nécessaires pour qu’il sache que ce qu’il voit, c’est COMME l’ancien, mais que ce n’est pas tout à
-                      fait l’ancien. Au lieu de vous donner un marteau qui martèle une seule sorte de clou, les vaccins
-                      à ARNm vous donnent plutôt une ceinture à outils. Votre système immunitaire peut alors dire : «
-                      Alors, c’est comme l’ancien, mais ce n’est pas l’ancien ». Il aide votre système immunitaire à
-                      s’attaquer à ce qu’il y a de plus nouveau aussi.
+                      pour finir par lui dire «&nbsp;bonne chance&nbsp;». Elle donne à votre système immunitaire les
+                      outils nécessaires pour qu’il sache que ce qu’il voit, c’est COMME l’ancien, mais que ce n’est pas
+                      tout à fait l’ancien. Au lieu de vous donner un marteau qui martèle une seule sorte de clou, les
+                      vaccins à ARNm vous donnent plutôt une ceinture à outils. Votre système immunitaire peut alors
+                      dire : «&nbsp;Alors, c’est comme l’ancien, mais ce n’est pas l’ancien&nbsp;». Il aide votre
+                      système immunitaire à s’attaquer à ce qu’il y a de plus nouveau aussi.
                     </>
                   ),
                 },
@@ -684,8 +689,8 @@ export const contentPersonasBI = {
                       l’avoir quand même. Par contre, les personnes qui l’attrapent quand même ne sont pas malades aussi
                       longtemps. Elles n’aboutissent pas à l’hôpital et n’ont pas autant besoin d’être branchées à un
                       respirateur. Et vous savez, elles ne souffrent pas du syndrome post-COVID aussi. Elles ne font pas
-                      partie des personnes qui « récupèrent », mais qui ne sont toujours pas capables de monter un
-                      escalier six mois plus tard.
+                      partie des personnes qui «&nbsp;récupèrent&nbsp;», mais qui ne sont toujours pas capables de
+                      monter un escalier six mois plus tard.
                     </>
                   ),
                 },
@@ -839,11 +844,11 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Si le nombre de personnes qui tombent malades augmente tout le temps, il faut se demander : «
-                      Est-ce qu’on aura assez de place pour eux à l’hôpital? » On pourrait toujours attendre qu’il y ait
-                      suffisamment de personnes qui tombent malades et meurent, ou suffisamment de personnes malades qui
-                      ne meurent pas afin d’atteindre l’immunité collective dont les gens parlent. Mais à mon avis, les
-                      vaccins nous amèneront au même point, mais plus vite, un peu comme le FastPass à Disneyland. Un
-                      FastPass sans toutes les hospitalisations et les décès.
+                      Est-ce qu’on aura assez de place pour eux à l’hôpital?&nbsp;» On pourrait toujours attendre qu’il
+                      y ait suffisamment de personnes qui tombent malades et meurent, ou suffisamment de personnes
+                      malades qui ne meurent pas afin d’atteindre l’immunité collective dont les gens parlent. Mais à
+                      mon avis, les vaccins nous amèneront au même point, mais plus vite, un peu comme le FastPass à
+                      Disneyland. Un FastPass sans toutes les hospitalisations et les décès.
                     </>
                   ),
                 },
@@ -964,7 +969,7 @@ export const contentPersonasBI = {
           {
             subheading: {
               EN: "'I already had COVID, why do I need to get the vaccine?'",
-              FR: "« J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner? »",
+              FR: <>«&nbsp;J’ai déjà eu la COVID. Pourquoi est-ce que je me ferais vacciner?&nbsp;»</>,
             },
             quotes: [
               {
@@ -982,8 +987,8 @@ export const contentPersonasBI = {
                       Ma fille vient tout juste d’apprendre à conduire. C’est moi qui lui ai montré au début. Elle a
                       donc pris toutes mes mauvaises manières. Ensuite, un professionnel lui a donné des cours de
                       conduite et maintenant, elle conduit très bien. Ses assurances coûtent moins cher, aussi. La
-                      vaccination après l’infection, c’est comme cet « enseignement » professionnel. Elle aide votre
-                      corps à bien combattre la COVID.
+                      vaccination après l’infection, c’est comme cet «&nbsp;enseignement&nbsp;» professionnel. Elle aide
+                      votre corps à bien combattre la COVID.
                     </>
                   ),
                 },
@@ -1110,11 +1115,11 @@ export const contentPersonasBI = {
                   ),
                   FR: (
                     <>
-                      Je vous entends penser : « <i>Oh, mais c’est encore assez nouveau. C’est expérimental.</i>' » On a
-                      beaucoup de données en ce moment, mais on en aura encore plus à mesure que les semaines passeront
-                      et que de plus en plus de personnes se feront vacciner. Et je vous promets de trouver cette
-                      information pour vous. Et je vous dirai ce que je saurai et ce que je ne saurai pas à ce
-                      moment-là. Et peut-être qu’on prendra une décision ensemble rendu là.
+                      Je vous entends penser : «&nbsp;<i>Oh, mais c’est encore assez nouveau. C’est expérimental.</i>
+                      '&nbsp;» On a beaucoup de données en ce moment, mais on en aura encore plus à mesure que les
+                      semaines passeront et que de plus en plus de personnes se feront vacciner. Et je vous promets de
+                      trouver cette information pour vous. Et je vous dirai ce que je saurai et ce que je ne saurai pas
+                      à ce moment-là. Et peut-être qu’on prendra une décision ensemble rendu là.
                     </>
                   ),
                 },
@@ -1343,9 +1348,9 @@ export const contentPersonasBI = {
             <>&ldquo;Will my cells be permanently reprogrammed?&rdquo;</>,
           ],
           FR: [
-            <>« J’ai entendu dire que les vaccins à ARNm vont modifier mon ADN. »</>,
-            <>« Je ne veux pas d’injections dans mon corps qui pourraient modifier mon ADN. »</>,
-            <>« Est-ce que mes cellules vont être reprogrammées en permanence? »</>,
+            <>«&nbsp;J’ai entendu dire que les vaccins à ARNm vont modifier mon ADN.&nbsp;»</>,
+            <>«&nbsp;Je ne veux pas d’injections dans mon corps qui pourraient modifier mon ADN.&nbsp;»</>,
+            <>«&nbsp;Est-ce que mes cellules vont être reprogrammées en permanence?&nbsp;»</>,
           ],
         },
       },
@@ -1718,15 +1723,15 @@ export const contentPersonasBI = {
                       à vous attaquer. Donc, au lieu que la COVID vous attaque et prenne le dessus sur vos cellules,
                       l’ARNm de votre vaccin pénètre dans votre cellule, puis lui dit de créer cette même petite forme à
                       piquants. Il ne crée pas le virus, seulement la petite forme à piquants. Et là, votre corps se dit
-                      : « <i>Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais</i> », et il se met à
-                      développer une réponse immunitaire.
+                      : «&nbsp;<i>Oh, c’est quoi cette chose à piquants? Je pense que c’est mauvais</i>&nbsp;», et il se
+                      met à développer une réponse immunitaire.
                     </>
                   ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "spikyVaccines",
-                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                fullStoryLinkText: { EN: "Read the full story", FR: "Lire l'histoire complète" },
               },
 
               {
@@ -1933,11 +1938,11 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « Avec toutes les maladies que j’ai et les médicaments que je prends, je ne suis pas sûre que le vaccin
-              est bon pour moi. »
+              «&nbsp;Avec toutes les maladies que j’ai et les médicaments que je prends, je ne suis pas sûre que le
+              vaccin est bon pour moi.&nbsp;»
             </>,
-            <>« Si j’attrape la COVID et que j’en meurs, alors ce sera ça. »</>,
-            <>« Je m’inquiète de l’interaction du vaccin avec mes médicaments. »</>,
+            <>«&nbsp;Si j’attrape la COVID et que j’en meurs, alors ce sera ça.&nbsp;»</>,
+            <>«&nbsp;Je m’inquiète de l’interaction du vaccin avec mes médicaments.&nbsp;»</>,
           ],
         },
       },
@@ -2295,9 +2300,10 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Ces derniers mois, c’est avec beaucoup de soulagement que j’ai parlé avec des personnes comme vous
-                      qui m’ont dit : « <i>Vous savez quoi? Je viens de me faire vacciner et je n’ai aucun regret</i> ».
-                      Je leur réponds : « <i>Oh, c’est super, ça. C’est formidable de savoir que vous êtes protégé</i>{" "}
-                      ». C’est vraiment ce que je veux pour vous, ma patiente, c’est de vous offrir la meilleure
+                      qui m’ont dit : «&nbsp;
+                      <i>Vous savez quoi? Je viens de me faire vacciner et je n’ai aucun regret</i>&nbsp;». Je leur
+                      réponds : «&nbsp;<i>Oh, c’est super, ça. C’est formidable de savoir que vous êtes protégé</i>{" "}
+                      &nbsp;». C’est vraiment ce que je veux pour vous, ma patiente, c’est de vous offrir la meilleure
                       protection possible.
                     </>
                   ),
@@ -2539,7 +2545,7 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Une façon de voir le vaccin, c’est que d’une certaine manière, il est plus important que la
-                      plupart de vos autres médicaments. Ce sont de « petits caractères », ni plus ni moins,
+                      plupart de vos autres médicaments. Ce sont de «&nbsp;petits caractères&nbsp;», ni plus ni moins,
                       comparativement à ce vrai gros problème. Vous protéger contre la COVID-19, c’est important à ce
                       point-là.
                     </>
@@ -2830,18 +2836,18 @@ export const contentPersonasBI = {
         content: {
           EN: [
             <ul>
-              <li className="listClass">
+              <li className="ml-5  listClass">
                 With pregnant patients,{" "}
                 <b>place extra emphasis on the patient’s autonomy and self-determination over their bodies.</b> Take
                 time to validate their concerns, and prioritize having the patient return to you for care throughout the
                 course of their pregnancy.
               </li>
-              <li className="listClass">
+              <li className="ml-5  listClass">
                 <b>As a clinician, you are a key part of your patient’s support network.</b> Emphasize your role during
                 their pregnancy, and your interest in protecting the health of them and their child in the best way
                 possible.
               </li>
-              <li className="listClass">
+              <li className="ml-5  listClass">
                 <b>Avoid taking a ‘presumptive’ approach about vaccination.</b> Be prepared to have multiple
                 conversations, and take the time to understand and validate your patients’ concerns. Especially with
                 pregnant patients, prioritize the development of your long-term patient-provider relationship.
@@ -2849,27 +2855,29 @@ export const contentPersonasBI = {
             </ul>,
           ],
           FR: [
-            <>
-              Dans le cas des patientes enceintes,{" "}
-              <b>
-                prenez soin de mentionner que la patiente est maître d’elle-même et qu’elle a le droit de prendre des
-                décisions par rapport à son propre corps.
-              </b>{" "}
-              Prenez le temps de valider ses inquiétudes et demandez-lui de revenir vous voir pendant sa grossesse, en
-              n’oubliant pas de mentionner que les suivis sont très importants.
-            </>,
-            <>
-              À titre de clinicien ou de clinicienne,{" "}
-              <b>vous jouez un rôle clé dans le réseau de soutien de votre patiente</b>. Expliquez-lui bien votre rôle
-              pendant sa grossesse et votre intérêt à protéger sa santé et celle de son enfant de la meilleure manière
-              qui soit.
-            </>,
-            <>
-              <b>Évitez l’approche « présomptive » en matière de vaccination.</b> Préparez-vous à avoir plus d’une
-              conversation et prenez le temps de comprendre et de valider les inquiétudes de vos patients. Surtout dans
-              le cas de vos patientes enceintes, priorisez le développement de la relation que vous allez entretenir
-              avec ces patientes à long terme.
-            </>,
+            <ul>
+              <li className="ml-5  listClass">
+                Dans le cas des patientes enceintes,{" "}
+                <b>
+                  prenez soin de mentionner que la patiente est maître d’elle-même et qu’elle a le droit de prendre des
+                  décisions par rapport à son propre corps.
+                </b>{" "}
+                Prenez le temps de valider ses inquiétudes et demandez-lui de revenir vous voir pendant sa grossesse, en
+                n’oubliant pas de mentionner que les suivis sont très importants.
+              </li>
+              <li className="ml-5  listClass">
+                À titre de clinicien ou de clinicienne,{" "}
+                <b>vous jouez un rôle clé dans le réseau de soutien de votre patiente</b>. Expliquez-lui bien votre rôle
+                pendant sa grossesse et votre intérêt à protéger sa santé et celle de son enfant de la meilleure manière
+                qui soit.
+              </li>
+              <li className="ml-5  listClass">
+                <b>Évitez l’approche «&nbsp;présomptive&nbsp;» en matière de vaccination.</b> Préparez-vous à avoir plus
+                d’une conversation et prenez le temps de comprendre et de valider les inquiétudes de vos patients.
+                Surtout dans le cas de vos patientes enceintes, priorisez le développement de la relation que vous allez
+                entretenir avec ces patientes à long terme.
+              </li>
+            </ul>
           ],
         },
       },
@@ -4019,16 +4027,16 @@ export const contentPersonasBI = {
             <>&ldquo;We don&apos;t know what the long-term effects will be.&rdquo;</>,
           ],
           FR: [
-            <>« J’ai entendu dire que les effets secondaires de la deuxième dose sont vraiment graves. »</>,
+            <>«&nbsp;J’ai entendu dire que les effets secondaires de la deuxième dose sont vraiment graves.&nbsp;»</>,
             <>
-              « Mon (amie/un membre de ma famille) a eu une très mauvaise réaction au vaccin. J’ai peur d’avoir la même
-              chose. »
+              «&nbsp;Mon (amie/un membre de ma famille) a eu une très mauvaise réaction au vaccin. J’ai peur d’avoir la
+              même chose.&nbsp;»
             </>,
             <>
-              « J’ai entendu parler de caillots sanguins et de troubles cardiaques. Je pense que ces vaccins sont
-              dangereux. »
+              «&nbsp;J’ai entendu parler de caillots sanguins et de troubles cardiaques. Je pense que ces vaccins sont
+              dangereux.&nbsp;»
             </>,
-            <>« On ne sait pas quels seront les effets à long terme de ces vaccins. »</>,
+            <>«&nbsp;On ne sait pas quels seront les effets à long terme de ces vaccins.&nbsp;»</>,
           ],
         },
       },
@@ -4077,8 +4085,8 @@ export const contentPersonasBI = {
           FR: [
             <>
               Votre patient aura vraisemblablement besoin d’être rassuré et non pas seulement de vous entendre dire que
-              les effets secondaires graves de ces vaccins sont très rares. Dites-lui à nouveau que les « effets
-              secondaires » mineurs prouvent, en fait, que le vaccin et le système immunitaire du patient font leur
+              les effets secondaires graves de ces vaccins sont très rares. Dites-lui à nouveau que les «&nbsp;effets
+              secondaires&nbsp;» mineurs prouvent, en fait, que le vaccin et le système immunitaire du patient font leur
               travail, car ça peut faire une différence.
             </>,
           ],
@@ -4528,7 +4536,7 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "sideEffectsStory",
-                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                fullStoryLinkText: { EN: "Read the full story", FR: "Lire l'histoire complète" },
               },
               {
                 text: {
@@ -4590,11 +4598,11 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Maintenant, si vous me demandez : «{" "}
-                      <i>Comment pouvez-vous savoir s’il n’y aura pas de problèmes dans une dizaine d’années?</i> », je
-                      ne sais pas la réponse à cette question. Je ne peux pas vous le dire avec certitude, mais je peux
-                      vous expliquer comment le vaccin fonctionne, en commençant par vous dire que le bilan des vaccins
-                      est très positif. C’est certain que c’est bien mieux de se faire vacciner que d’être très malade à
-                      cause du virus contre lequel le vaccin est censé nous protéger.
+                      <i>Comment pouvez-vous savoir s’il n’y aura pas de problèmes dans une dizaine d’années?</i>
+                      &nbsp;», je ne sais pas la réponse à cette question. Je ne peux pas vous le dire avec certitude,
+                      mais je peux vous expliquer comment le vaccin fonctionne, en commençant par vous dire que le bilan
+                      des vaccins est très positif. C’est certain que c’est bien mieux de se faire vacciner que d’être
+                      très malade à cause du virus contre lequel le vaccin est censé nous protéger.
                     </>
                   ),
                 },
@@ -4769,8 +4777,9 @@ export const contentPersonasBI = {
                       douleurs à la poitrine depuis qu’il a été malade, au point de consulter un cardiologue. Le
                       cardiologue lui a dit que son cœur était en santé, et pourtant, il n’a pas pu recommencer à faire
                       du vélo pendant des semaines et des semaines. Alors, quand je l’ai vu souffrir comme ça, je me
-                      suis dit : « <i>Ouf, je ne veux pas prendre la chance d’être malade à ce point-là</i> ». Je
-                      préfère avoir les effets secondaires du vaccin que de courir le risque de tomber vraiment malade.
+                      suis dit : «&nbsp;<i>Ouf, je ne veux pas prendre la chance d’être malade à ce point-là</i>&nbsp;».
+                      Je préfère avoir les effets secondaires du vaccin que de courir le risque de tomber vraiment
+                      malade.
                     </>
                   ),
                 },
@@ -5058,25 +5067,25 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « Je n’ai pas confiance au gouvernement qui me dicte quoi faire quand je sais qu’il ne nous a pas amenés
-              sur la bonne route jusqu’à maintenant. »
+              «&nbsp;Je n’ai pas confiance au gouvernement qui me dicte quoi faire quand je sais qu’il ne nous a pas
+              amenés sur la bonne route jusqu’à maintenant.&nbsp;»
             </>,
             <>
-              « Je ne pense pas que les grandes entreprises pharmaceutiques aient nos meilleurs intérêts à cœur. Elles
-              pensent seulement à faire de l’argent. »
+              «&nbsp;Je ne pense pas que les grandes entreprises pharmaceutiques aient nos meilleurs intérêts à cœur.
+              Elles pensent seulement à faire de l’argent.&nbsp;»
             </>,
-            <>« Je ne me ferai pas injecter un vaccin conçu par Bill Gates pour contrôler la population. »</>,
+            <>«&nbsp;Je ne me ferai pas injecter un vaccin conçu par Bill Gates pour contrôler la population.&nbsp;»</>,
             <>
-              « Les médias traditionnels ne connaissent pas les faits entourant le virus. Ils sont en mode panique
-              alarmiste. »
+              «&nbsp;Les médias traditionnels ne connaissent pas les faits entourant le virus. Ils sont en mode panique
+              alarmiste.&nbsp;»
             </>,
-            <>« Comment est-ce que je peux savoir avec certitude que les vaccins n’ont pas de puces? »</>,
+            <>«&nbsp;Comment est-ce que je peux savoir avec certitude que les vaccins n’ont pas de puces?&nbsp;»</>,
             <>
-              « Le site Web du CDC publie toutes sortes de rapports au sujet d’effets secondaires horribles à cause du
-              vaccin. Pourquoi est-ce qu’ils n’en parlent pas? Pourquoi est-ce que je ferais confiance aux médecins et
-              non pas au CDC? »
+              «&nbsp;Le site Web du CDC publie toutes sortes de rapports au sujet d’effets secondaires horribles à cause
+              du vaccin. Pourquoi est-ce qu’ils n’en parlent pas? Pourquoi est-ce que je ferais confiance aux médecins
+              et non pas au CDC?&nbsp;»
             </>,
-            <>« Pourquoi on n’utilise pas Ivermectin pour aider à traiter la COVID? »</>,
+            <>«&nbsp;Pourquoi on n’utilise pas Ivermectin pour aider à traiter la COVID?&nbsp;»</>,
           ],
         },
       },
@@ -5590,7 +5599,8 @@ export const contentPersonasBI = {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        « N’utilisez pas Ivermectin pour la COVID-19 » <FiExternalLink className="inline" size={18} />
+                        «&nbsp;N’utilisez pas Ivermectin pour la COVID-19&nbsp;»{" "}
+                        <FiExternalLink className="inline" size={18} />
                       </a>
                       . Ce médicament n’est absolument pas approuvé pour traiter quoi que ce soit se rapportant à la
                       COVID. Mais en ce moment, ils font de la recherche, ils font des essais. Ils ne font pas fi des
@@ -5683,17 +5693,17 @@ export const contentPersonasBI = {
                       pas du tout supervisés. Toute mauvaise chose qui s’est produite, une semaine ou six semaines après
                       avoir reçu un vaccin, est publiée sur ces sites. Si on prend 100 000 personnes au hasard, qu’on ne
                       les vaccine pas et qu’on leur dit : «{" "}
-                      <i>Bon, c’est aujourd’hui qu’on va vous accorder de l’attention</i> », je vous garantis que 30 000
-                      d’entre eux, un ou deux jours plus tard, vont avoir le nez bouché, avoir mal à la tête, faire une
-                      fausse couche ou quelque chose du genre. Si on suit ces 100 000 personnes pendant un certain
-                      temps, c’est à peu près certain que quelque chose va se produire tout à fait par hasard. Ou si ce
-                      n’est pas par hasard, ça n’a certainement rien à voir avec la chose à laquelle on avait décidé de
-                      porter attention. Ce que ça veut dire, c’est qu’une grande partie de l’information publiée dans
-                      ces sites Web fait du bruit. La raison pour laquelle l’information est recueillie, c’est pour voir
-                      si ce bruit donne lieu à certaines tendances. Ils ne se demandent pas : « Est-ce que quelqu’un
-                      quelque part a eu ça après avoir été vacciné » mais plutôt : « Au cours d’une semaine donnée après
-                      avoir reçu le vaccin, est-ce que plus de personnes ont eu ça comparativement aux personnes qui ne
-                      se sont pas fait vacciner »?
+                      <i>Bon, c’est aujourd’hui qu’on va vous accorder de l’attention</i>&nbsp;», je vous garantis que
+                      30 000 d’entre eux, un ou deux jours plus tard, vont avoir le nez bouché, avoir mal à la tête,
+                      faire une fausse couche ou quelque chose du genre. Si on suit ces 100 000 personnes pendant un
+                      certain temps, c’est à peu près certain que quelque chose va se produire tout à fait par hasard.
+                      Ou si ce n’est pas par hasard, ça n’a certainement rien à voir avec la chose à laquelle on avait
+                      décidé de porter attention. Ce que ça veut dire, c’est qu’une grande partie de l’information
+                      publiée dans ces sites Web fait du bruit. La raison pour laquelle l’information est recueillie,
+                      c’est pour voir si ce bruit donne lieu à certaines tendances. Ils ne se demandent pas :
+                      «&nbsp;Est-ce que quelqu’un quelque part a eu ça après avoir été vacciné&nbsp;» mais plutôt :
+                      «&nbsp;Au cours d’une semaine donnée après avoir reçu le vaccin, est-ce que plus de personnes ont
+                      eu ça comparativement aux personnes qui ne se sont pas fait vacciner&nbsp;»?
                     </>
                   ),
                 },
@@ -5950,11 +5960,11 @@ export const contentPersonasBI = {
                         Bon, je vais créer quelque chose qui va faire en sorte que la peau de toute la population
                         devienne violette
                       </i>{" "}
-                      », et la seule façon d’y remédier, ce sera en se faisant vacciner. Parce que personne ne veut se
-                      faire voir en violet, ce serait trop visible. Aussi, je ferais en sorte que la maladie ne tue
-                      personne parce qu’il est impossible de vendre un vaccin à un mort. Alors je me dis que si c’était
-                      leur (les entreprises pharmaceutiques, les gouvernements, par exemple) vrai objectif, ils n’ont
-                      probablement pas inventé la bonne maladie.
+                      &nbsp;», et la seule façon d’y remédier, ce sera en se faisant vacciner. Parce que personne ne
+                      veut se faire voir en violet, ce serait trop visible. Aussi, je ferais en sorte que la maladie ne
+                      tue personne parce qu’il est impossible de vendre un vaccin à un mort. Alors je me dis que si
+                      c’était leur (les entreprises pharmaceutiques, les gouvernements, par exemple) vrai objectif, ils
+                      n’ont probablement pas inventé la bonne maladie.
                     </>
                   ),
                 },
@@ -5999,8 +6009,8 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Dites-moi, qu’est-ce qu’il faudrait que vous voyiez ou entendiez, ou quelle personne devrait
-                      s’exprimer à voix haute en faveur des vaccins pour que vous passiez de ce « non » catégorique à un
-                      « peut-être »?
+                      s’exprimer à voix haute en faveur des vaccins pour que vous passiez de ce «&nbsp;non&nbsp;»
+                      catégorique à un «&nbsp;peut-être&nbsp;»?
                     </>
                   ),
                 },
@@ -6172,20 +6182,21 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « Ces vaccins ne sont pas naturels. Je préfère attraper la COVID et développer mon système immunitaire de
-              manière naturelle. »
+              «&nbsp;Ces vaccins ne sont pas naturels. Je préfère attraper la COVID et développer mon système
+              immunitaire de manière naturelle.&nbsp;»
             </>,
-            <>« Les vaccins contiennent des toxines. Je ne veux pas mettre de toxines dans mon corps. »</>,
+            <>«&nbsp;Les vaccins contiennent des toxines. Je ne veux pas mettre de toxines dans mon corps.&nbsp;»</>,
             <>
-              « Je préfère me protéger avec des remèdes naturels (comme des vitamines, du zinc, de l’huile d’origan). »
-            </>,
-            <>
-              « J’ai entendu dire que certains (suppléments/probiotiques/remèdes) peuvent aider à prévenir ou à
-              minimiser les symptômes de la COVID. »
+              «&nbsp;Je préfère me protéger avec des remèdes naturels (comme des vitamines, du zinc, de l’huile
+              d’origan).&nbsp;»
             </>,
             <>
-              « J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas
-              pourquoi je me ferais vacciner. »
+              «&nbsp;J’ai entendu dire que certains (suppléments/probiotiques/remèdes) peuvent aider à prévenir ou à
+              minimiser les symptômes de la COVID.&nbsp;»
+            </>,
+            <>
+              «&nbsp;J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas
+              pourquoi je me ferais vacciner.&nbsp;»
             </>,
           ],
         },
@@ -6218,7 +6229,8 @@ export const contentPersonasBI = {
               l’encontre les uns des autres, et que ces deux types de médecine acceptent les vaccins.
             </>,
             <>
-              Essayez de mieux comprendre ce que le patient veut dire par « naturel » par opposition à « pas naturel ».
+              Essayez de mieux comprendre ce que le patient veut dire par «&nbsp;naturel&nbsp;» par opposition à
+              «&nbsp;pas naturel&nbsp;».
             </>,
           ],
         },
@@ -6256,9 +6268,9 @@ export const contentPersonasBI = {
             ),
             FR: (
               <>
-                Alors, quand vous dites « naturel », je veux m’assurer qu’on est sur la même longueur d’onde parce que
-                je sais qu’on a le même objectif au bout du compte. Tous les deux, on veut votre bien. Alors, aidez-moi
-                à comprendre ce que vous voulez dire par « naturel » en ce qui a trait au vaccin.
+                Alors, quand vous dites «&nbsp;naturel&nbsp;», je veux m’assurer qu’on est sur la même longueur d’onde
+                parce que je sais qu’on a le même objectif au bout du compte. Tous les deux, on veut votre bien. Alors,
+                aidez-moi à comprendre ce que vous voulez dire par «&nbsp;naturel&nbsp;» en ce qui a trait au vaccin.
               </>
             ),
           },
@@ -6339,9 +6351,9 @@ export const contentPersonasBI = {
                   ),
                   FR: (
                     <>
-                      Alors, quand vous dites « naturel », je veux m’assurer qu’on est sur la même longueur d’onde parce
-                      que tous les deux, on veut votre bien. Alors, aidez-moi à comprendre ce que vous voulez dire par «
-                      naturel » en ce qui a trait au vaccin.
+                      Alors, quand vous dites «&nbsp;naturel&nbsp;», je veux m’assurer qu’on est sur la même longueur
+                      d’onde parce que tous les deux, on veut votre bien. Alors, aidez-moi à comprendre ce que vous
+                      voulez dire par «&nbsp;naturel&nbsp;» en ce qui a trait au vaccin.
                     </>
                   ),
                 },
@@ -6353,7 +6365,11 @@ export const contentPersonasBI = {
               {
                 text: {
                   EN: <>Can you tell me more about what you mean by &lsquo;natural immunity&rsquo;? </>,
-                  FR: <>Pouvez-vous m’expliquer un peu plus ce que vous voulez dire par « immunité naturelle »?</>,
+                  FR: (
+                    <>
+                      Pouvez-vous m’expliquer un peu plus ce que vous voulez dire par «&nbsp;immunité naturelle&nbsp;»?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -6371,7 +6387,7 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Quelles sortes de médicaments ou de produits médicaux vous sentez-vous prêt à prendre pour «
-                      stimuler votre immunité »? Y a-t-il des ingrédients particuliers que vous hésitez à prendre?
+                      stimuler votre immunité&nbsp;»? Y a-t-il des ingrédients particuliers que vous hésitez à prendre?
                     </>
                   ),
                 },
@@ -6445,7 +6461,7 @@ export const contentPersonasBI = {
                       Je pense que quand on est confronté à une situation comme celle de la COVID et qu’on a vécu une
                       vie en très bonne santé et fait tout ce qu’on pouvait pour rester en santé, on commence à être
                       nerveux parce que c’est quelque chose de nouveau. On peut avoir l’impression que ces nouveaux
-                      médicaments peuvent déranger « notre normal », nos habitudes santé.
+                      médicaments peuvent déranger «&nbsp;notre normal&nbsp;», nos habitudes santé.
                     </>
                   ),
                 },
@@ -6602,7 +6618,7 @@ export const contentPersonasBI = {
                       enseignant. Votre système immunitaire est une des machines d’apprentissage les plus
                       impressionnantes de l’univers connu. Le vaccin ne fait que se tenir devant votre système
                       immunitaire hyper intelligent, puis il lui montre un morceau de virus et lui dit : «{" "}
-                      <i>Allô, voici le méchant. C’est à ça que tu dois t’attaquer.</i> » Et là, votre système
+                      <i>Allô, voici le méchant. C’est à ça que tu dois t’attaquer.</i>&nbsp;» Et là, votre système
                       immunitaire le prend d’assaut.
                     </>
                   ),
@@ -6631,8 +6647,8 @@ export const contentPersonasBI = {
                       comme si on donnait le gant d’un suspect à un chien policier pour qu’il le renifle. Votre système
                       immunitaire, c’est ce chien d’attaque. Le vaccin pénètre dans votre bras et il brandit le gant du
                       suspect devant le chien d’attaque. C’est comme si le vaccin lui disait : «{" "}
-                      <i>C’est ça que tu dois chercher.</i> » Et une fois que votre système immunitaire connaît l’odeur,
-                      il part en mission!
+                      <i>C’est ça que tu dois chercher.</i>&nbsp;» Et une fois que votre système immunitaire connaît
+                      l’odeur, il part en mission!
                     </>
                   ),
                 },
@@ -6999,16 +7015,21 @@ export const contentPersonasBI = {
             </>,
           ],
           FR: [
-            <>« Je ne vais pas laisser le gouvernement avoir son mot à dire sur ce qui entre dans mon corps. »</>,
             <>
-              « Ce virus a été politisé à l’extrême. Si vous voulez que je fasse confiance à la science, il va falloir
-              que vous enleviez le caractère politique de la chose. »
+              «&nbsp;Je ne vais pas laisser le gouvernement avoir son mot à dire sur ce qui entre dans mon corps.&nbsp;»
             </>,
             <>
-              « Le gouvernement se mêle de nos vies, et ce vaccin est un autre exemple d’exagération de la part du
-              gouvernement. »
+              «&nbsp;Ce virus a été politisé à l’extrême. Si vous voulez que je fasse confiance à la science, il va
+              falloir que vous enleviez le caractère politique de la chose.&nbsp;»
             </>,
-            <>« (Les entreprises/les gouvernements) ne devraient pas nous dire de nous faire vacciner ou non. »</>,
+            <>
+              «&nbsp;Le gouvernement se mêle de nos vies, et ce vaccin est un autre exemple d’exagération de la part du
+              gouvernement.&nbsp;»
+            </>,
+            <>
+              «&nbsp;(Les entreprises/les gouvernements) ne devraient pas nous dire de nous faire vacciner ou
+              non.&nbsp;»
+            </>,
           ],
         },
       },
@@ -7113,10 +7134,10 @@ export const contentPersonasBI = {
               <>
                 C’est fou ce qui se passe en ce moment : dès qu’on a pris une décision, l’information change. Et je peux
                 comprendre que pour les personnes qui n’ont pas étudié les vaccins et les maladies, c’est comme si les
-                gouvernements ne savaient plus où « donner de la tête » et ne savent pas ce qu’ils font. Mais il y a une
-                différence avec toutes ces consignes gouvernementales de haut niveau – les fermetures d’écoles,
-                d’entreprises et ainsi de suite. Il y a une différence entre ça et ce dont vous et moi on parle en ce
-                moment.
+                gouvernements ne savaient plus où «&nbsp;donner de la tête&nbsp;» et ne savent pas ce qu’ils font. Mais
+                il y a une différence avec toutes ces consignes gouvernementales de haut niveau – les fermetures
+                d’écoles, d’entreprises et ainsi de suite. Il y a une différence entre ça et ce dont vous et moi on
+                parle en ce moment.
               </>
             ),
           },
@@ -7174,12 +7195,12 @@ export const contentPersonasBI = {
                       toute la ligne, que toute cette histoire est une vraie imposture, qu’elle a été inventée de toutes
                       pièces et que c’est une question de contrôle par le gouvernement. Ou bien ça va dans l’autre sens,
                       que vous vous trompez et que tout le monde avait de bonnes intentions envers les autres. Tout est
-                      « kumbaya » et tout est beau. Je pense qu’il y a de la place entre ces deux positions cependant.
-                      Il y a une zone grise. Et je sais que si c’est blanc ou si c’est noir, vous allez vouloir gagner
-                      la partie. Mais je ne suis pas ici pour essayer de gagner. Je suis ici en tant que médecin, votre
-                      médecin. Je ne fais pas partie du gouvernement. Je suis ici pour vous parler de la zone grise
-                      située entre les deux positions. On pourrait discuter de l’imposture, bien sûr, mais aussi de
-                      l’efficacité. Est-ce qu’on peut en parler?
+                      «&nbsp;kumbaya&nbsp;» et tout est beau. Je pense qu’il y a de la place entre ces deux positions
+                      cependant. Il y a une zone grise. Et je sais que si c’est blanc ou si c’est noir, vous allez
+                      vouloir gagner la partie. Mais je ne suis pas ici pour essayer de gagner. Je suis ici en tant que
+                      médecin, votre médecin. Je ne fais pas partie du gouvernement. Je suis ici pour vous parler de la
+                      zone grise située entre les deux positions. On pourrait discuter de l’imposture, bien sûr, mais
+                      aussi de l’efficacité. Est-ce qu’on peut en parler?
                     </>
                   ),
                 },
@@ -7332,14 +7353,14 @@ export const contentPersonasBI = {
                     <>
                       C’est fou ce qui se passe en ce moment : dès qu’on a pris une décision, l’information change. Et
                       je peux comprendre que pour les personnes qui n’ont pas étudié les vaccins et les maladies, c’est
-                      comme si les gouvernements ne savaient plus où « donner de la tête » et ne savent pas ce qu’ils
-                      font. Mais il y a une différence avec toutes ces consignes gouvernementales de haut niveau – les
-                      fermetures d’écoles, d’entreprises et ainsi de suite. Il y a une différence entre ça et ce dont
-                      vous et moi on parle en ce moment. Est-ce qu’ils se trompent parfois dans leurs décisions de haut
-                      niveau? Probablement. Mais pour ce qui est des vaccins, je peux vous dire qu’ils sont entièrement
-                      sur la bonne voie. Mon rôle, c’est de travailler avec vous pour penser à ce qu’il y a de mieux à
-                      faire pour vous et votre santé. Et je peux vous dire que les vaccins vont dans votre meilleur
-                      intérêt et qu’ils sont très bons pour votre santé.
+                      comme si les gouvernements ne savaient plus où «&nbsp;donner de la tête&nbsp;» et ne savent pas ce
+                      qu’ils font. Mais il y a une différence avec toutes ces consignes gouvernementales de haut niveau
+                      – les fermetures d’écoles, d’entreprises et ainsi de suite. Il y a une différence entre ça et ce
+                      dont vous et moi on parle en ce moment. Est-ce qu’ils se trompent parfois dans leurs décisions de
+                      haut niveau? Probablement. Mais pour ce qui est des vaccins, je peux vous dire qu’ils sont
+                      entièrement sur la bonne voie. Mon rôle, c’est de travailler avec vous pour penser à ce qu’il y a
+                      de mieux à faire pour vous et votre santé. Et je peux vous dire que les vaccins vont dans votre
+                      meilleur intérêt et qu’ils sont très bons pour votre santé.
                     </>
                   ),
                 },
@@ -7385,16 +7406,16 @@ export const contentPersonasBI = {
                     <>
                       Voici ce qu’on a appris. Des centaines de millions de personnes se sont fait vacciner dans le
                       monde entier. Du point de vue du développement des vaccins, ça s’est fait effectivement assez vite
-                      du moment où ils sont passés de la question « <i>qu’est-ce que ce virus?</i> » au moment où ils se
-                      sont dit « <i>préparons un vaccin contre ce virus</i> ». Mais aucune étape n’a été brûlée. Je me
-                      suis penché là-dessus.
+                      du moment où ils sont passés de la question «&nbsp;<i>qu’est-ce que ce virus?</i>&nbsp;» au moment
+                      où ils se sont dit «&nbsp;<i>préparons un vaccin contre ce virus</i>&nbsp;». Mais aucune étape n’a
+                      été brûlée. Je me suis penché là-dessus.
                     </>
                   ),
                 },
                 featured: false,
                 image: "",
                 fullStoryID: "quickDevelopment",
-                fullStoryLinkText: { EN: "Read the full story", FR: "" },
+                fullStoryLinkText: { EN: "Read the full story", FR: "Lire l'histoire complète" },
               },
             ],
           },
@@ -7504,8 +7525,8 @@ export const contentPersonasBI = {
                       Alors, j’ai l’impression que si vous saviez que ce serait clairement le moyen de reprendre vos
                       (activités sociales), de permettre aux enfants de retourner à l’école et de reprendre le cours
                       normal de votre vie, que ce serait le temps. Ce serait le temps pour vous de dire «{" "}
-                      <i>Bon, je vois c’est quoi l’avantage du vaccin</i> ». Mais en attendant, vous vivez ni plus ni
-                      moins comme un ermite et ce n’est pas ce que vous voulez en ce moment.
+                      <i>Bon, je vois c’est quoi l’avantage du vaccin</i>&nbsp;». Mais en attendant, vous vivez ni plus
+                      ni moins comme un ermite et ce n’est pas ce que vous voulez en ce moment.
                     </>
                   ),
                 },
@@ -7626,12 +7647,15 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « Le vaccin va à l’encontre de mes croyances religieuses. Mon inquiétude est plutôt d’ordre religieux ».
+              «&nbsp;Le vaccin va à l’encontre de mes croyances religieuses. Mon inquiétude est plutôt d’ordre
+              religieux&nbsp;».
             </>,
-            <>« C’est Dieu qui va décider si je dois avoir la COVID et si je dois mourir de cette maladie. »</>,
             <>
-              « Mieux vaut se laver les mains, se tenir loin des autres et boire du jus d’orange en attendant que le
-              coronavirus, l’œuvre du diable, passe. »
+              «&nbsp;C’est Dieu qui va décider si je dois avoir la COVID et si je dois mourir de cette maladie.&nbsp;»
+            </>,
+            <>
+              «&nbsp;Mieux vaut se laver les mains, se tenir loin des autres et boire du jus d’orange en attendant que
+              le coronavirus, l’œuvre du diable, passe.&nbsp;»
             </>,
           ],
         },
@@ -8483,10 +8507,14 @@ export const contentPersonasBI = {
             <>&ldquo;I get really anxious in hospitals or clinics. I don&apos;t know if I can get vaccinated.&rdquo;</>,
           ],
           FR: [
-            <>« La dernière fois que je suis allée à (la clinique, l’hôpital, etc.), ça ne s’est pas bien passé. »</>,
-            <>« Les médecins et les infirmières ne m’ont pas bien traitée quand j’ai eu besoin d’eux. »</>,
             <>
-              « Je n’aime vraiment pas les hôpitaux ou les cliniques. Je ne sais pas si je pourrai me faire vacciner. »
+              «&nbsp;La dernière fois que je suis allée à (la clinique, l’hôpital, etc.), ça ne s’est pas bien
+              passé.&nbsp;»
+            </>,
+            <>«&nbsp;Les médecins et les infirmières ne m’ont pas bien traitée quand j’ai eu besoin d’eux.&nbsp;»</>,
+            <>
+              «&nbsp;Je n’aime vraiment pas les hôpitaux ou les cliniques. Je ne sais pas si je pourrai me faire
+              vacciner.&nbsp;»
             </>,
           ],
         },
@@ -9003,14 +9031,14 @@ export const contentPersonasBI = {
           ],
           FR: [
             <>
-              « Je ne peux pas m’imaginer comment nous, en tant que (minorités/Premières Nations) pouvons vite accepter
-              quelque chose qui a été développé si rapidement. Je ne peux pas juste me fier aux paroles du gouvernement,
-              qui dit que c’est sécuritaire. »
+              «&nbsp;Je ne peux pas m’imaginer comment nous, en tant que (minorités/Premières Nations) pouvons vite
+              accepter quelque chose qui a été développé si rapidement. Je ne peux pas juste me fier aux paroles du
+              gouvernement, qui dit que c’est sécuritaire.&nbsp;»
             </>,
-            <>« Je ne veux pas être le cobaye des Blancs. »</>,
+            <>«&nbsp;Je ne veux pas être le cobaye des Blancs.&nbsp;»</>,
             <>
-              « Comment est-ce que je peux savoir si les Blancs n’auront pas un certain vaccin et que (mon groupe
-              minoritaire) n’aura pas de vaccin différent? »
+              «&nbsp;Comment est-ce que je peux savoir si les Blancs n’auront pas un certain vaccin et que (mon groupe
+              minoritaire) n’aura pas de vaccin différent?&nbsp;»
             </>,
           ],
         },
@@ -9157,7 +9185,7 @@ export const contentPersonasBI = {
                   Eh bien, pour une fois qu’on peut recevoir un traitement en premier, on va être en tête de la ligne
                   cette fois-ci.
                 </i>{" "}
-                »
+                &nbsp;»
               </>
             ),
           },
@@ -9450,9 +9478,9 @@ export const contentPersonasBI = {
                       Moi, quand je me suis fait vacciner, ce n’était pas tellement pour moi, mais plutôt pour vous. Je
                       me suis fait vacciner afin d’être là pour vous. Je l’ai accepté afin de ne pas vous mettre en
                       danger. Et je pense que c’est peut-être un peu comme ça dans votre communauté. Peut-être que vous
-                      vous rangez du côté du « peut-être », mais quand vient le temps de protéger votre communauté, les
-                      aînés et leurs connaissances, quand c’est une question de les protéger, c’est pour eux que vous
-                      vous faites vacciner au bout du compte. Pour que vous puissiez être là pour eux.
+                      vous rangez du côté du «&nbsp;peut-être&nbsp;», mais quand vient le temps de protéger votre
+                      communauté, les aînés et leurs connaissances, quand c’est une question de les protéger, c’est pour
+                      eux que vous vous faites vacciner au bout du compte. Pour que vous puissiez être là pour eux.
                     </>
                   ),
                 },
@@ -9702,7 +9730,7 @@ export const contentPersonasBI = {
                         On a réussi à vaincre le virus. Maintenant, donnez-nous tout ce qui nous revient, toutes les
                         ressources qu’on était censés avoir{" "}
                       </i>{" "}
-                      ».
+                      &nbsp;».
                     </>
                   ),
                 },
@@ -10112,12 +10140,12 @@ export const contentPersonasBI = {
             </>,
           ],
           FR: [
-            <>« Je déteste vraiment les aiguilles. »</>,
-            <>« Le vaccin m’inquiète parce que la vue d’une aiguille me rend vraiment nerveuse. »</>,
-            <>« Je me suis déjà évanoui après avoir reçu un vaccin. »</>,
+            <>«&nbsp;Je déteste vraiment les aiguilles.&nbsp;»</>,
+            <>«&nbsp;Le vaccin m’inquiète parce que la vue d’une aiguille me rend vraiment nerveuse.&nbsp;»</>,
+            <>«&nbsp;Je me suis déjà évanoui après avoir reçu un vaccin.&nbsp;»</>,
             <>
-              « Le simple fait d’entendre des mots comme « injection » ou « prise de sang » me met l’estomac à l’envers.
-              »
+              «&nbsp;Le simple fait d’entendre des mots comme «&nbsp;injection&nbsp;» ou «&nbsp;prise de sang&nbsp;» me
+              met l’estomac à l’envers. &nbsp;»
             </>,
           ],
         },
@@ -10477,9 +10505,10 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Parce que vous n’êtes pas la seule personne à avoir peur des aiguilles, divers endroits se sont
-                      dotés de cliniques à « faible stimulus » ou « conviviales pour les sens ». Dans ces cliniques, des
-                      mesures spéciales sont prises pour réduire la douleur potentielle ou la détresse liée à la
-                      vaccination. Je pense qu’on devrait vous prendre un rendez-vous à ce genre de clinique.
+                      dotés de cliniques à «&nbsp;faible stimulus&nbsp;» ou «&nbsp;conviviales pour les sens&nbsp;».
+                      Dans ces cliniques, des mesures spéciales sont prises pour réduire la douleur potentielle ou la
+                      détresse liée à la vaccination. Je pense qu’on devrait vous prendre un rendez-vous à ce genre de
+                      clinique.
                     </>
                   ),
                 },
@@ -10532,9 +10561,9 @@ export const contentPersonasBI = {
                   ),
                   FR: (
                     <>
-                      Certaines personnes font une « syncope » à l’idée ou à la vue d’une aiguille. Ça veut dire qu’il y
-                      a une baisse de tension artérielle. Et si c’est ce qui se passe généralement dans votre cas, je
-                      peux vous donner quelques trucs et conseils que j’ai appris avec le temps.
+                      Certaines personnes font une «&nbsp;syncope&nbsp;» à l’idée ou à la vue d’une aiguille. Ça veut
+                      dire qu’il y a une baisse de tension artérielle. Et si c’est ce qui se passe généralement dans
+                      votre cas, je peux vous donner quelques trucs et conseils que j’ai appris avec le temps.
                     </>
                   ),
                 },
@@ -10847,20 +10876,23 @@ export const contentPersonasBI = {
             </>,
           ],
           FR: [
-            <>« Les gens exagèrent. C’est juste une mauvaise grippe. »</>,
-            <>« Je connais quelqu’un qui l’a attrapé et c’était pas si mal. »</>,
+            <>«&nbsp;Les gens exagèrent. C’est juste une mauvaise grippe.&nbsp;»</>,
+            <>«&nbsp;Je connais quelqu’un qui l’a attrapé et c’était pas si mal.&nbsp;»</>,
             <>
-              « J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas
-              pourquoi je me ferais vacciner. »
-            </>,
-            <>« Ça ne touche que les gens âgés. Je suis pas mal jeune. Ça ne devrait donc pas être un problème. »</>,
-            <>
-              « Le taux de survie à la COVID est de 99 pour cent. Cette maladie est moins mortelle que la grippe pour la
-              plupart des gens. »
+              «&nbsp;J’ai eu la varicelle à l’âge de huit ans, le zona à 38 ans et je suis encore en vie. Je ne vois pas
+              pourquoi je me ferais vacciner.&nbsp;»
             </>,
             <>
-              « La ligne d’arrivée ou les restrictions changent constamment. Je ne suis pas certaine que le vaccin va
-              faire une différence à ce stade-ci. »
+              «&nbsp;Ça ne touche que les gens âgés. Je suis pas mal jeune. Ça ne devrait donc pas être un
+              problème.&nbsp;»
+            </>,
+            <>
+              «&nbsp;Le taux de survie à la COVID est de 99 pour cent. Cette maladie est moins mortelle que la grippe
+              pour la plupart des gens.&nbsp;»
+            </>,
+            <>
+              «&nbsp;La ligne d’arrivée ou les restrictions changent constamment. Je ne suis pas certaine que le vaccin
+              va faire une différence à ce stade-ci.&nbsp;»
             </>,
           ],
         },
@@ -10915,8 +10947,8 @@ export const contentPersonasBI = {
             <>
               Dans le cas de patients qui n’ont pas eu la COVID ou dont les groupes sociaux ne l’ont pas eue, il peut
               être dur de comprendre la gravité de la maladie et ses ravages. Si vous prenez le temps d’expliquer votre
-              point de vue en tant que professionnel de la santé, ça pourrait jeter de la lumière sur les « effets
-              cachés » de la pandémie sur la communauté de votre patient.
+              point de vue en tant que professionnel de la santé, ça pourrait jeter de la lumière sur les «&nbsp;effets
+              cachés&nbsp;» de la pandémie sur la communauté de votre patient.
             </>,
           ],
         },
@@ -11111,8 +11143,8 @@ export const contentPersonasBI = {
                     <>
                       Donc, si je comprends bien, vous ne voyez pas d’avantages à vous faire vacciner. Vous avez déjà
                       laissé tomber tellement de choses et vous vous demandez : «{" "}
-                      <i>Pourquoi est-ce que je dois faire une chose de plus pour le monde?</i> », surtout quand vous
-                      avez l’impression que ça ne va pas vous aider personnellement?
+                      <i>Pourquoi est-ce que je dois faire une chose de plus pour le monde?</i>&nbsp;», surtout quand
+                      vous avez l’impression que ça ne va pas vous aider personnellement?
                     </>
                   ),
                 },
@@ -11323,8 +11355,8 @@ export const contentPersonasBI = {
                   ),
                   FR: (
                     <>
-                      D’après ce que j’ai vu dans les pays qui ont adopté cette approche, celle de l’« immunité
-                      collective », au début, quand tout a commencé, ils se disaient que si on laisse les gens
+                      D’après ce que j’ai vu dans les pays qui ont adopté cette approche, celle de l’«&nbsp;immunité
+                      collective&nbsp;», au début, quand tout a commencé, ils se disaient que si on laisse les gens
                       l’attraper, la population finirait par être suffisamment immunisée pour s’en sortir et la maladie
                       suivrait son cours. Mais avec le temps, ils se sont rendu compte que ce n’était pas une bonne
                       façon de procéder. Ce qu’ils (les politiciens, etc.) ne savaient pas, c’est que la COVID peut
@@ -11717,8 +11749,8 @@ export const contentPersonasBI = {
               le type ou la source de son hésitation vaccinale.
             </>,
             <>
-              Prenez votre temps et ne visez pas de recevoir un « oui » pendant n’importe quelle de vos conversations.
-              Votre objectif, c’est de vous faire l’allié de votre patient.
+              Prenez votre temps et ne visez pas de recevoir un «&nbsp;oui&nbsp;» pendant n’importe quelle de vos
+              conversations. Votre objectif, c’est de vous faire l’allié de votre patient.
             </>,
           ],
         },
@@ -11876,9 +11908,9 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Permettez-moi de bien comprendre ce que vous me dites. Est-ce que vous êtes du genre à dire : «{" "}
-                      <i>Non, jamais, au grand jamais »?</i> Ou êtes-vous plutôt indécis et vous préférez attendre de
-                      voir ce qui va se passer? Ni plus ni moins, êtes-vous du genre à dire « <i>peut-être</i> » ou «{" "}
-                      <i>plus tard</i> »?
+                      <i>Non, jamais, au grand jamais&nbsp;»?</i> Ou êtes-vous plutôt indécis et vous préférez attendre
+                      de voir ce qui va se passer? Ni plus ni moins, êtes-vous du genre à dire «&nbsp;<i>peut-être</i>
+                      &nbsp;» ou «&nbsp;<i>plus tard</i>&nbsp;»?
                     </>
                   ),
                 },
@@ -12201,7 +12233,7 @@ export const contentPersonasBI = {
                       Ça fait un bon bout de temps que vous me connaissez. Vous ne savez peut-être pas à quel point je
                       suis mordu des sciences, mais avez-vous quelques instants pour qu’on en parle? Voulez-vous que je
                       vous indique comment on en est arrivés là si rapidement? Parce qu’en fait, du point de vue
-                      scientifique, c’est une histoire « cool ».
+                      scientifique, c’est une histoire «&nbsp;cool&nbsp;».
                     </>
                   ),
                 },
@@ -12399,7 +12431,7 @@ export const contentPersonasBI = {
                       vaccinés, ils disent qu’ils auraient bien aimé avoir le vaccin. Mais vous ne voyez pas de
                       personnes vaccinées qui disent qu’elles auraient préféré ne pas être vaccinées. Je ne veux pas que
                       vous fassiez partie des personnes hospitalisées qui disent : «{" "}
-                      <i>J’aurais bien dû me faire vacciner quand c’était le temps</i> ».
+                      <i>J’aurais bien dû me faire vacciner quand c’était le temps</i>&nbsp;».
                     </>
                   ),
                 },
@@ -12427,16 +12459,17 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       Je vois un grand parallèle entre les panneaux de vitesse des zones scolaires et la vaccination.
-                      Vous pouvez dire : « Eh bien, je peux aller à 100 kilomètres à l’heure dans une zone scolaire
+                      Vous pouvez dire : «&nbsp;Eh bien, je peux aller à 100 kilomètres à l’heure dans une zone scolaire
                       parce que je ne me ferai probablement pas pincer et que je suis une personne libre. Les petits
-                      enfants qui sont là, il faut qu’ils prennent leurs responsabilités »! Vous pouvez vous dire ça,
-                      mais il n’en reste pas moins que vous pouvez vous faire arrêter par la police; vous pouvez tomber
-                      malade. En réalité, on vit dans une société où les gens ont dû abandonner certaines de leurs
-                      libertés pour en faire partie. Il y a des limites de vitesse dans les zones scolaires parce qu’on
-                      veut protéger les enfants, notre prochaine génération, parce qu’ils ne savent pas tout encore.
-                      Avec la COVID, on se fait tous vacciner pour que les enfants restent en sécurité. On se trouve à
-                      créer une sorte de « zone scolaire » en réduisant la quantité de virus se trouvant dans la
-                      communauté parce que les enfants ne peuvent toujours pas se faire vacciner pour l’instant.
+                      enfants qui sont là, il faut qu’ils prennent leurs responsabilités&nbsp;»! Vous pouvez vous dire
+                      ça, mais il n’en reste pas moins que vous pouvez vous faire arrêter par la police; vous pouvez
+                      tomber malade. En réalité, on vit dans une société où les gens ont dû abandonner certaines de
+                      leurs libertés pour en faire partie. Il y a des limites de vitesse dans les zones scolaires parce
+                      qu’on veut protéger les enfants, notre prochaine génération, parce qu’ils ne savent pas tout
+                      encore. Avec la COVID, on se fait tous vacciner pour que les enfants restent en sécurité. On se
+                      trouve à créer une sorte de «&nbsp;zone scolaire&nbsp;» en réduisant la quantité de virus se
+                      trouvant dans la communauté parce que les enfants ne peuvent toujours pas se faire vacciner pour
+                      l’instant.
                     </>
                   ),
                 },
@@ -13224,9 +13257,21 @@ export const contentPersonasBI = {
             </div>,
           ],
           FR: [
-          <div>En matière d’exemption, <strong>soyez honnête quant à ce que vous êtes prêt à offrir à vos patients</strong>.  Ne leur donnez pas de faux espoirs quand une exemption n’est pas justifiée.</div>, 
-          <div>Essayez <strong>de ne pas laisser place aux négociations</strong>. Ne lancez pas de débat pour exposer les faits. Axez la conversation sur votre responsabilité à l’égard de la santé de votre patient et sur vos normes professionnelles.</div>, 
-          <div>Les patients qui demandent des exemptions ont probablement d’autres sources d’hésitations ou d’autres craintes. <strong>Ces conversations sont de bonnes occasions d’en parler</strong>.</div>],
+            <div>
+              En matière d’exemption,{" "}
+              <strong>soyez honnête quant à ce que vous êtes prêt à offrir à vos patients</strong>. Ne leur donnez pas
+              de faux espoirs quand une exemption n’est pas justifiée.
+            </div>,
+            <div>
+              Essayez <strong>de ne pas laisser place aux négociations</strong>. Ne lancez pas de débat pour exposer les
+              faits. Axez la conversation sur votre responsabilité à l’égard de la santé de votre patient et sur vos
+              normes professionnelles.
+            </div>,
+            <div>
+              Les patients qui demandent des exemptions ont probablement d’autres sources d’hésitations ou d’autres
+              craintes. <strong>Ces conversations sont de bonnes occasions d’en parler</strong>.
+            </div>,
+          ],
         },
       },
       // MedicalExemptions
@@ -13260,17 +13305,19 @@ export const contentPersonasBI = {
             <>
               <ul className="pl-5 list-disc">
                 <li className="">
-                  <strong>noncez clairement les critères régissant les exemptions médicales</strong>, puis commencez à parler d’autres sources possibles d’hésitations de la part du patient.
+                  <strong>noncez clairement les critères régissant les exemptions médicales</strong>, puis commencez à
+                  parler d’autres sources possibles d’hésitations de la part du patient.
                 </li>
                 <li className="">
-                  <strong>Affirmez les craintes de la patiente et dites-lui que vous la comprenez</strong>, surtout si elle a mal réagi aux autres doses du vaccin.
+                  <strong>Affirmez les craintes de la patiente et dites-lui que vous la comprenez</strong>, surtout si
+                  elle a mal réagi aux autres doses du vaccin.
                 </li>
                 <li className="">
-                Comme pour toutes les conversations entourant les hésitations,{" "}
+                  Comme pour toutes les conversations entourant les hésitations,{" "}
                   <strong>la confiance est de mise</strong>.
                 </li>
                 <li className="">
-                Si vous devez refuser une demande d’exemption,{" "}
+                  Si vous devez refuser une demande d’exemption,{" "}
                   <strong>passez vite à autre chose et discutez de ce que vous pouvez faire pour votre patient</strong>.
                 </li>
               </ul>
@@ -13292,7 +13339,12 @@ export const contentPersonasBI = {
                 the back of your mind in terms of vaccination?
               </>
             ),
-            FR: <>À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une exemption, qu’est-ce qui vous tracasse vraiment en matière de vaccination?</>,
+            FR: (
+              <>
+                À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une exemption,
+                qu’est-ce qui vous tracasse vraiment en matière de vaccination?
+              </>
+            ),
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
@@ -13304,7 +13356,13 @@ export const contentPersonasBI = {
                 sense to me. That sounds like a very natural and human thing, and very understandable.
               </>
             ),
-            FR: <>Je peux comprendre qu’une autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus de temps pour y penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux. C’est une chose naturelle et très humaine. Je comprends tout à fait.</>,
+            FR: (
+              <>
+                Je peux comprendre qu’une autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus
+                de temps pour y penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux.
+                C’est une chose naturelle et très humaine. Je comprends tout à fait.
+              </>
+            ),
           },
           image: "doctorWhiteManGoatee.svg",
         },
@@ -13317,7 +13375,12 @@ export const contentPersonasBI = {
                 apply to your situation?
               </>
             ),
-            FR: <>Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour qu’on puisse voir s’ils s’appliquent à votre situation?</>,
+            FR: (
+              <>
+                Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour qu’on
+                puisse voir s’ils s’appliquent à votre situation?
+              </>
+            ),
           },
           image: "doctorWhiteManYoung.svg",
         },
@@ -13331,7 +13394,14 @@ export const contentPersonasBI = {
                 something I’m willing to do.
               </>
             ),
-            FR: <>Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour l’autre. J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les principes et les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est pas correct à mon sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque chose que je peux faire.</>,
+            FR: (
+              <>
+                Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour l’autre.
+                J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les principes et
+                les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est pas correct à mon
+                sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque chose que je peux faire.
+              </>
+            ),
           },
           image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
@@ -13348,11 +13418,16 @@ export const contentPersonasBI = {
                 text: {
                   EN: (
                     <>
-                      Okay, so which vaccine component were you concerned that you might be allergic to? This
-                      allergy is news to me.
+                      Okay, so which vaccine component were you concerned that you might be allergic to? This allergy is
+                      news to me.
                     </>
                   ),
-                  FR: <>D’accord, donc à quelle composante du vaccin pensez-vous être allergique? Je n’étais pas au courant de cette allergie.</>,
+                  FR: (
+                    <>
+                      D’accord, donc à quelle composante du vaccin pensez-vous être allergique? Je n’étais pas au
+                      courant de cette allergie.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13363,14 +13438,20 @@ export const contentPersonasBI = {
                 text: {
                   EN: (
                     <>
-                      So, what I think I'm hearing is that you really don't want the vaccine and you'd like me to
-                      sign an exemption for you? Do you believe that there's a medical reason for that, or is there
-                      actually something else going on? I'd like to explore your worries a little bit further so that we
-                      can understand if there’s something that really would impact your ability to get the
-                      vaccine.
+                      So, what I think I'm hearing is that you really don't want the vaccine and you'd like me to sign
+                      an exemption for you? Do you believe that there's a medical reason for that, or is there actually
+                      something else going on? I'd like to explore your worries a little bit further so that we can
+                      understand if there’s something that really would impact your ability to get the vaccine.
                     </>
                   ),
-                  FR: <>Donc si je comprends bien, vous ne voulez vraiment pas vous faire vacciner et vous aimeriez que je vous donne une lettre d’exemption? Selon vous, y a-t-il une raison médicale pour justifier cette exemption? Ou est-ce qu’il y a quelque chose d’autre? J’aimerais parler de vos inquiétudes un peu plus pour qu’on sache s’il y a vraiment quelque chose qui vous empêcherait de vous faire vacciner.</>,
+                  FR: (
+                    <>
+                      Donc si je comprends bien, vous ne voulez vraiment pas vous faire vacciner et vous aimeriez que je
+                      vous donne une lettre d’exemption? Selon vous, y a-t-il une raison médicale pour justifier cette
+                      exemption? Ou est-ce qu’il y a quelque chose d’autre? J’aimerais parler de vos inquiétudes un peu
+                      plus pour qu’on sache s’il y a vraiment quelque chose qui vous empêcherait de vous faire vacciner.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13386,7 +13467,12 @@ export const contentPersonasBI = {
                       in the back of your mind in terms of vaccination?
                     </>
                   ),
-                  FR: <>À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une exemption, qu’est-ce qui vous tracasse vraiment en matière de vaccination?</>,
+                  FR: (
+                    <>
+                      À part les critères médicaux et les raisons pour lesquelles vous croyez avoir besoin d’une
+                      exemption, qu’est-ce qui vous tracasse vraiment en matière de vaccination?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
@@ -13402,7 +13488,13 @@ export const contentPersonasBI = {
                       concerns. I really do care about you and I want to understand where you're coming from.
                     </>
                   ),
-                  FR: <>Mentionnez-moi chacune de vos inquiétudes et après ça, je vais vous proposer d’en discuter une à la fois pour que je comprenne bien votre point de vue pour chacune des inquiétudes. Je me soucie vraiment de votre bien-être et je veux comprendre ce que vous voulez dire.</>,
+                  FR: (
+                    <>
+                      Mentionnez-moi chacune de vos inquiétudes et après ça, je vais vous proposer d’en discuter une à
+                      la fois pour que je comprenne bien votre point de vue pour chacune des inquiétudes. Je me soucie
+                      vraiment de votre bien-être et je veux comprendre ce que vous voulez dire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13429,7 +13521,13 @@ export const contentPersonasBI = {
                       or anxiety related to vaccination.&rdquo;
                     </>
                   ),
-                  FR: <>Je m’inquiète vraiment de vous et je me demande comment vous allez vraiment. J’aimerais en parler avec vous. Cela dit, je ne peux pas vous écrire une lettre d’exemption parce que vous ressentez du stress ou de l’anxiété en raison du vaccin.</>,
+                  FR: (
+                    <>
+                      Je m’inquiète vraiment de vous et je me demande comment vous allez vraiment. J’aimerais en parler
+                      avec vous. Cela dit, je ne peux pas vous écrire une lettre d’exemption parce que vous ressentez du
+                      stress ou de l’anxiété en raison du vaccin.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13446,7 +13544,14 @@ export const contentPersonasBI = {
                       deteriorate” and so there are very few things that fit in that category.&rdquo;
                     </>
                   ),
-                  FR: <>Je peux comprendre que vous ressentez une grande détresse mentale à cause de la vaccination. Cependant, la détresse mentale attribuable au vaccin ne vous donne tout de même pas droit à une exemption. Les exemptions existent pour les personnes qui peuvent dire : « Si je reçois ce vaccin, ma santé physique va se détériorer ». Peu de choses entrent dans cette catégorie.</>,
+                  FR: (
+                    <>
+                      Je peux comprendre que vous ressentez une grande détresse mentale à cause de la vaccination.
+                      Cependant, la détresse mentale attribuable au vaccin ne vous donne tout de même pas droit à une
+                      exemption. Les exemptions existent pour les personnes qui peuvent dire : «&nbsp;Si je reçois ce
+                      vaccin, ma santé physique va se détériorer&nbsp;». Peu de choses entrent dans cette catégorie.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13464,7 +13569,12 @@ export const contentPersonasBI = {
                       of fear now.&rdquo;
                     </>
                   ),
-                  FR: <>Ça doit être assez effrayant si vous pensez que le gouvernement essaie de contrôler les gens avec la vaccination ou si vous pensez que la science a tort. Parlons de vos peurs dès maintenant.</>,
+                  FR: (
+                    <>
+                      Ça doit être assez effrayant si vous pensez que le gouvernement essaie de contrôler les gens avec
+                      la vaccination ou si vous pensez que la science a tort. Parlons de vos peurs dès maintenant.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13481,7 +13591,14 @@ export const contentPersonasBI = {
                       very human thing, and very understandable.&rdquo;
                     </>
                   ),
-                  FR: <>[Si le patient a eu une mauvaise expérience avec les doses précédentes.] Je peux comprendre qu’une autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus de temps pour y penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux. C’est une chose naturelle et très humaine. Je comprends tout à fait.</>,
+                  FR: (
+                    <>
+                      [Si le patient a eu une mauvaise expérience avec les doses précédentes.] Je peux comprendre qu’une
+                      autre dose de vaccin puisse vous inquiéter. Je comprends que vous voulez plus de temps pour y
+                      penser, à savoir si c’est un bon vaccin pour vous ou non. Ça a bien du sens à mes yeux. C’est une
+                      chose naturelle et très humaine. Je comprends tout à fait.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13508,7 +13625,12 @@ export const contentPersonasBI = {
                       worried about?&rdquo;
                     </>
                   ),
-                  FR: <>Je me demande s’il n’y a pas d’autres aspects du vaccin qui vous tracassent, à part la question de l’allergie. Y a-t-il quelque chose de particulier qui vous inquiète?</>,
+                  FR: (
+                    <>
+                      Je me demande s’il n’y a pas d’autres aspects du vaccin qui vous tracassent, à part la question de
+                      l’allergie. Y a-t-il quelque chose de particulier qui vous inquiète?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13523,7 +13645,12 @@ export const contentPersonasBI = {
                       these apply to your situation?
                     </>
                   ),
-                  FR: <>Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour qu’on puisse voir s’ils s’appliquent à votre situation?</>,
+                  FR: (
+                    <>
+                      Est-ce que je peux passer en revue les critères généraux des exemptions médicales avec vous pour
+                      qu’on puisse voir s’ils s’appliquent à votre situation?
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13553,7 +13680,16 @@ export const contentPersonasBI = {
                       and my position on them.
                     </>
                   ),
-                  FR: <>Pour moi, c’est très difficile d’approuver quelque chose qui n’est pas vrai à 100 %. Ça ne cadre pas avec mes obligations professionnelles. Le collège des médecins a indiqué clairement à tous les médecins, moi y compris, que si on écrit quelque chose de faux, c’est une infraction. Je pourrais perdre mon permis d’exercice et je veux continuer à travailler pour vous et pour mes autres patients, vous savez. Je ne suis donc pas capable de faire ça. Je veux être très clair au sujet des exemptions médicales et de mon point de vue à ce sujet.</>,
+                  FR: (
+                    <>
+                      Pour moi, c’est très difficile d’approuver quelque chose qui n’est pas vrai à 100 %. Ça ne cadre
+                      pas avec mes obligations professionnelles. Le collège des médecins a indiqué clairement à tous les
+                      médecins, moi y compris, que si on écrit quelque chose de faux, c’est une infraction. Je pourrais
+                      perdre mon permis d’exercice et je veux continuer à travailler pour vous et pour mes autres
+                      patients, vous savez. Je ne suis donc pas capable de faire ça. Je veux être très clair au sujet
+                      des exemptions médicales et de mon point de vue à ce sujet.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorBlackWoman.svg",
@@ -13570,7 +13706,14 @@ export const contentPersonasBI = {
                       that.
                     </>
                   ),
-                  FR: <>Si vous jetez un coup d’œil à ce qui a été approuvé par Santé Canada, le gouvernement provincial et notre collège des médecins et des chirurgiens, vous verrez qu’une exemption doit s’accompagner de raisons valables. Ce n’est pas aussi simple que de me faire dire que vous avez besoin d’une exemption, et que je me conforme à votre demande.</>,
+                  FR: (
+                    <>
+                      Si vous jetez un coup d’œil à ce qui a été approuvé par Santé Canada, le gouvernement provincial
+                      et notre collège des médecins et des chirurgiens, vous verrez qu’une exemption doit s’accompagner
+                      de raisons valables. Ce n’est pas aussi simple que de me faire dire que vous avez besoin d’une
+                      exemption, et que je me conforme à votre demande.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13588,7 +13731,14 @@ export const contentPersonasBI = {
                       just want to give you some clarity there.
                     </>
                   ),
-                  FR: <>Quand j’approuve une exemption, j’accepte la responsabilité qui est liée à cette lettre d’exemption, au sens de la loi, et je pense que bien des patients ne comprennent pas ça. Les gens se disent : « Il ne faut que quelques secondes au médecin pour signer une lettre », mais ça va beaucoup plus loin que ça, et je tiens à ce que ce soit clair.</>,
+                  FR: (
+                    <>
+                      Quand j’approuve une exemption, j’accepte la responsabilité qui est liée à cette lettre
+                      d’exemption, au sens de la loi, et je pense que bien des patients ne comprennent pas ça. Les gens
+                      se disent : «&nbsp;Il ne faut que quelques secondes au médecin pour signer une lettre&nbsp;», mais
+                      ça va beaucoup plus loin que ça, et je tiens à ce que ce soit clair.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "doctorWhiteManYoung.svg",
@@ -13605,7 +13755,13 @@ export const contentPersonasBI = {
                       allergist.&rdquo;
                     </>
                   ),
-                  FR: <>Généralement, les personnes qui sont allergiques aux ingrédients du vaccin (comme le PEG) le sauraient déjà parce que ces ingrédients sont souvent utilisés dans d’autres produits utilisés au quotidien. Si vous croyez avoir une telle allergie, je vais vous recommander à un allergologue.</>,
+                  FR: (
+                    <>
+                      Généralement, les personnes qui sont allergiques aux ingrédients du vaccin (comme le PEG) le
+                      sauraient déjà parce que ces ingrédients sont souvent utilisés dans d’autres produits utilisés au
+                      quotidien. Si vous croyez avoir une telle allergie, je vais vous recommander à un allergologue.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13625,7 +13781,16 @@ export const contentPersonasBI = {
                       side, and a lot of the other sides of the issue.&rdquo;
                     </>
                   ),
-                  FR: <>J’ai vu des personnes comme vous, qui pensent que les vaccins vont à l’encontre de leurs droits, mais j’ai aussi vu des personnes qui sont fâchées de ne pas pouvoir travailler parce que leur état de santé les rend vulnérables, et j’ai vu des personnes déprimées parce qu’elles ne peuvent pas sortir de chez elles en raison des restrictions et de la COVID. Je vois beaucoup de professionnels de la santé fâchés parce qu’ils subissent un stress immense au travail. Donc, je comprends votre point de vue, mais je vois aussi les nombreux autres côtés de la question.</>,
+                  FR: (
+                    <>
+                      J’ai vu des personnes comme vous, qui pensent que les vaccins vont à l’encontre de leurs droits,
+                      mais j’ai aussi vu des personnes qui sont fâchées de ne pas pouvoir travailler parce que leur état
+                      de santé les rend vulnérables, et j’ai vu des personnes déprimées parce qu’elles ne peuvent pas
+                      sortir de chez elles en raison des restrictions et de la COVID. Je vois beaucoup de professionnels
+                      de la santé fâchés parce qu’ils subissent un stress immense au travail. Donc, je comprends votre
+                      point de vue, mais je vois aussi les nombreux autres côtés de la question.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13656,7 +13821,16 @@ export const contentPersonasBI = {
                       can.&rdquo;
                     </>
                   ),
-                  FR: <>Je sais que ma décision de ne pas vous donner ce que vous voulez ou ce dont vous pensez avoir besoin vous frustre.  Mais j’aimerais bien que vous pensiez aux soins de santé que je vous ai prodigués ces 20 dernières années, à ce qu’on a accompli ensemble. Êtes-vous content que j’aie bien pris soin de vous ces 20 dernières années? Au lieu de vous dire que votre médecin a changé – moi ou ma façon d’exercer la médecine – j’espère que vous allez voir que j’ai toujours pris soin de vous et que je vais toujours vous donner les meilleurs conseils de santé qui soient.</>,
+                  FR: (
+                    <>
+                      Je sais que ma décision de ne pas vous donner ce que vous voulez ou ce dont vous pensez avoir
+                      besoin vous frustre. Mais j’aimerais bien que vous pensiez aux soins de santé que je vous ai
+                      prodigués ces 20 dernières années, à ce qu’on a accompli ensemble. Êtes-vous content que j’aie
+                      bien pris soin de vous ces 20 dernières années? Au lieu de vous dire que votre médecin a changé –
+                      moi ou ma façon d’exercer la médecine – j’espère que vous allez voir que j’ai toujours pris soin
+                      de vous et que je vais toujours vous donner les meilleurs conseils de santé qui soient.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13673,7 +13847,15 @@ export const contentPersonasBI = {
                       my professional standards, that’s not something I’m willing to do.&rdquo;
                     </>
                   ),
-                  FR: <>Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour l’autre. J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les principes et les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est pas correct à mon sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque chose que je peux faire.</>,
+                  FR: (
+                    <>
+                      Je pense que notre relation est fondée sur la confiance et le respect que nous avons l’un pour
+                      l’autre. J’essaie toujours de faire en sorte d’avoir la conscience tranquille et de respecter les
+                      principes et les recommandations scientifiques. Donc pour moi, d’écrire quelque chose qui n’est
+                      pas correct à mon sens et qui contrevient à mes normes professionnelles, ce n’est pas quelque
+                      chose que je peux faire.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13691,7 +13873,15 @@ export const contentPersonasBI = {
                       why I agree with making medical exemptions only available for very specific reasons.&rdquo;
                     </>
                   ),
-                  FR: <>Je vois que vous croyez qu’un mandat vaccinal va à l’encontre de vos droits. Je vois les choses bien différemment, du point de vue du professionnel de la santé. J’ai vu des patients très malades, et des membres de famille très malades, et je crois que les vaccins aident à protéger ces personnes. Et c’est pour ça que j’estime que les exemptions médicales ne doivent être accordées que pour des raisons très précises.</>,
+                  FR: (
+                    <>
+                      Je vois que vous croyez qu’un mandat vaccinal va à l’encontre de vos droits. Je vois les choses
+                      bien différemment, du point de vue du professionnel de la santé. J’ai vu des patients très
+                      malades, et des membres de famille très malades, et je crois que les vaccins aident à protéger ces
+                      personnes. Et c’est pour ça que j’estime que les exemptions médicales ne doivent être accordées
+                      que pour des raisons très précises.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13710,7 +13900,16 @@ export const contentPersonasBI = {
                       of a medical exemption.&rdquo;
                     </>
                   ),
-                  FR: <>Que vous décidiez de vous faire vacciner ou non, je peux tout de même vous aider avec les aspects angoissants de votre isolement social. Je veux vous parler de façons de reprendre certains de vos liens sociaux pour vous aider à gérer votre angoisse. On peut commencer par trouver des stratégies pour reprendre certains des liens sociaux qui vont vous aider à gérer votre humeur malgré les restrictions actuelles. Je pense que c’est ce qu’il faut faire au bout du compte, au lieu d’une exemption médicale.</>,
+                  FR: (
+                    <>
+                      Que vous décidiez de vous faire vacciner ou non, je peux tout de même vous aider avec les aspects
+                      angoissants de votre isolement social. Je veux vous parler de façons de reprendre certains de vos
+                      liens sociaux pour vous aider à gérer votre angoisse. On peut commencer par trouver des stratégies
+                      pour reprendre certains des liens sociaux qui vont vous aider à gérer votre humeur malgré les
+                      restrictions actuelles. Je pense que c’est ce qu’il faut faire au bout du compte, au lieu d’une
+                      exemption médicale.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13730,7 +13929,16 @@ export const contentPersonasBI = {
                       vaccine.&rdquo;
                     </>
                   ),
-                  FR: <>Mais parlons un peu de votre santé mentale. On pourrait peut-être vous prendre un rendez-vous avec un spécialiste de la santé mentale comme source de soutien. Quelqu’un qui peut prendre le temps de vous parler, de vous aider à gérer cette angoisse et ce stress, et qui pourrait peut-être même vous aider à faire un plan en vue de la vaccination. Donc, il ne s’agit pas ici d’une exemption, mais plutôt d’une occasion de vous aider à être plus calme et à vous sentir mieux à l’idée de vous faire vacciner.</>,
+                  FR: (
+                    <>
+                      Mais parlons un peu de votre santé mentale. On pourrait peut-être vous prendre un rendez-vous avec
+                      un spécialiste de la santé mentale comme source de soutien. Quelqu’un qui peut prendre le temps de
+                      vous parler, de vous aider à gérer cette angoisse et ce stress, et qui pourrait peut-être même
+                      vous aider à faire un plan en vue de la vaccination. Donc, il ne s’agit pas ici d’une exemption,
+                      mais plutôt d’une occasion de vous aider à être plus calme et à vous sentir mieux à l’idée de vous
+                      faire vacciner.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13746,7 +13954,14 @@ export const contentPersonasBI = {
                       I will need to refer you out to an allergist to get that testing done.&rdquo;
                     </>
                   ),
-                  FR: <>Je peux vous donner une lettre d’exemption seulement si vous avez une vraie allergie. Et la seule façon de vraiment savoir si vous avez des allergies, c’est de vous faire subir un test d’allergie pour un des deux produits se trouvant dans les vaccins. Pour ce faire, je vais devoir vous recommander à un allergologue.</>,
+                  FR: (
+                    <>
+                      Je peux vous donner une lettre d’exemption seulement si vous avez une vraie allergie. Et la seule
+                      façon de vraiment savoir si vous avez des allergies, c’est de vous faire subir un test d’allergie
+                      pour un des deux produits se trouvant dans les vaccins. Pour ce faire, je vais devoir vous
+                      recommander à un allergologue.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13765,7 +13980,15 @@ export const contentPersonasBI = {
                       rigor? Because I need to understand this as we plan options for your future care.&rdquo;
                     </>
                   ),
-                  FR: <>Je sais que vos convictions religieuses sont profondes et que vous êtes diamétralement opposé à toute recherche qui entre en conflit avec votre foi. J’aime le fait que vous soyez une personne de conviction. À la lumière de tout ça, est-ce que je peux vous demander de faire des recherches sur tout ce dont nous discutons en matière de soins de santé, avec autant de rigueur? Parce qu’il faut que je comprenne ça pour qu’on puisse planifier les options de vos soins futurs.</>,
+                  FR: (
+                    <>
+                      Je sais que vos convictions religieuses sont profondes et que vous êtes diamétralement opposé à
+                      toute recherche qui entre en conflit avec votre foi. J’aime le fait que vous soyez une personne de
+                      conviction. À la lumière de tout ça, est-ce que je peux vous demander de faire des recherches sur
+                      tout ce dont nous discutons en matière de soins de santé, avec autant de rigueur? Parce qu’il faut
+                      que je comprenne ça pour qu’on puisse planifier les options de vos soins futurs.
+                    </>
+                  ),
                 },
                 featured: false,
                 image: "",
@@ -13784,7 +14007,15 @@ export const contentPersonasBI = {
           EN: <>College of Physicians and Surgeons of Alberta</>,
           FR: <>College of Physicians and Surgeons of Alberta</>,
         },
-        linkText: { EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>, FR: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions (College of Physicians and Surgeons of Alberta)</> },
+        linkText: {
+          EN: <>Guidance for physicians: Requests for COVID-19 vaccination exemptions</>,
+          FR: (
+            <>
+              Guidance for physicians: Requests for COVID-19 vaccination exemptions (College of Physicians and Surgeons
+              of Alberta)
+            </>
+          ),
+        },
         link: "https://cpsa.ca/wp-content/uploads/2021/09/Guidance-for-Physicians-COVID19-Vaccine-Exemption.pdf",
         description: {
           EN: (
@@ -13793,7 +14024,12 @@ export const contentPersonasBI = {
               interactions, and setting up exemption expectations with patients
             </>
           ),
-          FR: <>Guide sur le jugement professionnel en matière d’exemptions, la gestion des interactions difficiles et l’établissement des attentes des patients quant aux exemptions</>,
+          FR: (
+            <>
+              Guide sur le jugement professionnel en matière d’exemptions, la gestion des interactions difficiles et
+              l’établissement des attentes des patients quant aux exemptions
+            </>
+          ),
         },
       },
       {
@@ -13811,7 +14047,12 @@ export const contentPersonasBI = {
               provide exemptions
             </>
           ),
-          FR: <>FAQ destinée aux patients concernant l’admissibilité aux exemptions, et le rôle des médecins devant faire preuve de discrétion professionnelle en matière d’exemptions</>,
+          FR: (
+            <>
+              FAQ destinée aux patients concernant l’admissibilité aux exemptions, et le rôle des médecins devant faire
+              preuve de discrétion professionnelle en matière d’exemptions
+            </>
+          ),
         },
       },
       {
@@ -13820,11 +14061,24 @@ export const contentPersonasBI = {
 
           FR: <>College of Physicians and Surgeons BC</>,
         },
-        linkText: { EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>, FR: <>How to verify a legitimate COVID-19 vaccine exemption or deferral – (College of Physicians and Surgeons BC)</> },
+        linkText: {
+          EN: <>How to verify a legitimate COVID-19 vaccine exemption or deferral</>,
+          FR: (
+            <>
+              How to verify a legitimate COVID-19 vaccine exemption or deferral – (College of Physicians and Surgeons
+              BC)
+            </>
+          ),
+        },
         link: "https://www.cpsbc.ca/news/how-verify-legitimate-covid-19-vaccine-exemption-or-deferral",
         description: {
           EN: <>Includes link to exemption and deferral form, with lists of valid exemption conditions</>,
-          FR: <>Document contenant un lien menant au formulaire d’exemption et de sursis de même qu’une liste de conditions d’exemption</>,
+          FR: (
+            <>
+              Document contenant un lien menant au formulaire d’exemption et de sursis de même qu’une liste de
+              conditions d’exemption
+            </>
+          ),
         },
       },
       {
@@ -13833,7 +14087,10 @@ export const contentPersonasBI = {
 
           FR: <>Ontario Ministry of Health</>,
         },
-        linkText: { EN: <>Medical Exemptions to COVID-19 Vaccination</>, FR: <>Exemptions médicales à l’immunisation contre la COVID-19 : Ministère de la Santé de l’Ontario</> },
+        linkText: {
+          EN: <>Medical Exemptions to COVID-19 Vaccination</>,
+          FR: <>Exemptions médicales à l’immunisation contre la COVID-19 : Ministère de la Santé de l’Ontario</>,
+        },
         link: "https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/medical_exemptions_to_vaccination.pdf",
         description: {
           EN: <>Offers guidance to medical staff on when a medical exemption is warranted</>,

@@ -9,17 +9,20 @@ const EaaseHoverPopupEN = props => {
       <AnchorLink to="/about/#eaaseSteps" title="EAASE steps" className={eaaseTextClass} />
 
       <div className={`hiddenTillHover  p-6 mxs:p-8 baseFont bg-white rounded-2xl ${eaaseBoxClass} shadowGray  z-50`}>
-        <div className="pb-3 font-bold">‘EAASE Steps’ (TEMP FRENCH)</div>
+        <div className="pb-3 font-bold">Étapes EAASE</div>
         <div className="pb-3">
-          Using the principles of Motivational Interviewing, our team developed the ‘EAASE’ steps to help guide
-          conversations with vaccine hesitant patients: Engage, Affirm, Ask then Share, and Evoke. We call them steps,
-          but you don’t need to follow them as a sequence. You can begin and end on any step. The EAASE approach
-          improves conversations by focusing on the trust relationship between you and your patient.
+          S’appuyant sur les principes de l’entrevue motivationnelle, notre équipe a conçu les étapes
+          «&nbsp;EAASE&nbsp;» afin d’aider à orienter les conversations avec les patients qui hésitent à se faire
+          vacciner : entamer, affirmer, demander la permission puis faire part d’information (ask then share) et
+          évoquer. Même si nous les appelons «&nbsp;étapes&nbsp;», vous n’êtes pas obligé d’en respecter l’ordre. Vous
+          pouvez commencer et terminer par n’importe quelle étape. L’approche EAASE permet d’améliorer les conversations
+          en établissant un climat de confiance entre vous et votre patient.
         </div>
         <div className="w-full  flex flex-col mxs:flex-row  items-center">
           <div>
-            Rather than focusing on getting your patient to say ‘yes’ to vaccination, the first aim of an EAASE
-            conversation is to build an alliance and set a foundation for vaccine confidence.
+            Au lieu de miser sur l’obtention d’un «&nbsp;oui&nbsp;» à la vaccination par votre patient, l’objectif
+            premier d’une conversation EAASE consiste à établir une alliance et à favoriser la confiance en la
+            vaccination.
           </div>
           <StaticImage
             src="../../assets/other/EAASE Icon.svg"

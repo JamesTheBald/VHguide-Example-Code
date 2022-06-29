@@ -24,7 +24,7 @@ const AboutWhatIsThisFR = props => {
           coins du Canada. Vous trouverez ce qui suit dans le guide&nbsp;:
         </div>
 
-        <ul className="listClass relative md:static">
+        <ul className="ml-6 sm:ml-12  listClass relative md:static">
           <li>
             <Link to="/pearls" className="orangeUnderline">
               des conseils de clinicien à clinicien

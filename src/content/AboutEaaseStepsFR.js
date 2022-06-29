@@ -31,7 +31,7 @@ const AboutEaaseStepsFR = props => {
           à favoriser la confiance en la vaccination.
         </div>
         <br />
-        <ul className="listClass">
+        <ul className="ml-6 sm:ml-12  listClass">
           <li>
             <b>Entamez</b> la conversation avec des questions ouvertes –{" "}
             <a
@@ -49,7 +49,7 @@ const AboutEaaseStepsFR = props => {
           <li>
             <b>Affirmez</b> et écoutez d’un air pensif – Affirmez la façon de voir les choses de votre patient, et
             positionnez-vous en tant qu’allié. Vous pouvez faire ce qui suit pour y parvenir&nbsp;:
-            <ul className="pt-3 listClass">
+            <ul className="pt-3 ml-6 sm:ml-12  listClass">
               <li>
                 mettez l’accent sur l’autonomie de votre patient — peu importe la décision qu’il prendra, il sera une
                 bonne personne;
@@ -77,7 +77,7 @@ const AboutEaaseStepsFR = props => {
           </li>
           <li>
             <b>Évoquez</b> divers scénarios puis évaluez les options –
-            <ul className="pt-3 listClass">
+            <ul className="pt-3 ml-6 sm:ml-12  listClass">
               <li>
                 Incitez les patients à imaginer divers résultats ou scénarios en fonction de leur choix consistant soit
                 à se faire vacciner, soit à ne pas se faire vacciner.

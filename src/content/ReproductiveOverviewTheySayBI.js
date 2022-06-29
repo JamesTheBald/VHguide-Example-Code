@@ -22,7 +22,10 @@ const ReproductiveOverviewTheySayBI = () => {
   ];
 
   const theySayListItems2 = [
-    { EN: "I already had COVID - do I still need the vaccine [or booster] while pregnant?", FR: "J’ai déjà eu la COVID. Est-ce que j’ai quand même besoin du vaccin [ou d’une dose de rappel] pendant ma grossesse?" },
+    {
+      EN: "I already had COVID - do I still need the vaccine [or booster] while pregnant?",
+      FR: "J’ai déjà eu la COVID. Est-ce que j’ai quand même besoin du vaccin [ou d’une dose de rappel] pendant ma grossesse?",
+    },
     {
       EN: "There is no vaccine for babies, so why would I get it when I’m pregnant? Why would I get a vaccine that is not good for babies?",
       FR: "Il n’y a pas de vaccin pour les bébés. Pourquoi donc devrais-je me faire vacciner pendant ma grossesse? Pourquoi devrais-je accepter un vaccin qui n’est pas bon pour les bébés?",
@@ -45,33 +48,44 @@ const ReproductiveOverviewTheySayBI = () => {
     },
   ];
 
+  const DoubleQuotes = () => {
+    return <i className={`mr-2  ri-double-quotes-l leading-none text-gray-500`} />;
+  };
+
   return (
     <>
-      <h3 className="listTitleClass">{lang === "EN" ? "People with this hesitancy type say:" : "Ce que disent les personnes ayant ce type d’hésitation"}</h3>
+      <h3 className="listTitleClass">
+        {lang === "EN"
+          ? "People with this hesitancy type say"
+          : "Ce que disent les personnes ayant ce type d’hésitation"}
+      </h3>
 
-      <ul className="ml-5  listClass2">
+      <div className="mt-3">
         {theySayListItems1.map((currItem, index) => {
           return (
-            <li className="pb-3" key={index}>
-              {currItem[lang]}
-            </li>
+            <div className="pb-3 mxs:pb-4  flex" key={index}>
+              <DoubleQuotes />
+              <div>{currItem[lang]}</div>
+            </div>
           );
         })}
-      </ul>
+      </div>
       {showFullTheySay && (
-        <ul className="ml-5  listClass2">
+        <div className="">
           {theySayListItems2.map((currItem, index) => {
             return (
-              <li className="pb-3" key={index}>
-                {currItem[lang]}
-              </li>
+              <div className="pb-3 mxs:pb-4  flex" key={index}>
+                <DoubleQuotes />
+                <div>{currItem[lang]}</div>
+              </div>
             );
           })}
-        </ul>
+        </div>
       )}
 
+      {/* Read more / Read less link */}
       <div
-        className="ml-6 sm:ml-10 mb-8  orangeUnderline cursor-pointer"
+        className="ml-6 mb-8  orangeUnderline cursor-pointer"
         onClick={() => setShowFullTheySay(curr => !curr)}
         onKeyPress={() => setShowFullTheySay(curr => !curr)}
         tabIndex={0}
