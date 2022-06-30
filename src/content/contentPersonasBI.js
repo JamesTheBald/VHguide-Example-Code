@@ -36,7 +36,7 @@ export const contentPersonasBI = {
   //  ..doctorWhiteManYoung.svg           21
   //  ..doctorWhiteWomanBrownHairGlasses.svg  24
   //  ..doctorWhiteWomanDarkBrownHair.svg 25
-  // TO-DO: balance the number of these, ensure their locations are random
+  // (Try to make sure the distribution of these is balanced, both in number and location)
 
   // OLD NOTES:
   // Anything with square brackets is an 'array', holding multiple elements (all unlabeled peers).
@@ -1828,7 +1828,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>CanVax - How do the mRNA vaccines work?</>,
-
           FR: <>CanVax - Comment fonctionnent les vaccins à base d’ARNm contre la COVID-19?</>,
         },
         linkText: { EN: <>Educational video from CanVax</>, FR: <>Vidéo éducative de CanVax</> },
@@ -1842,7 +1841,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>University of Waterloo - mRNA vaccine myths factsheet</>,
-
           FR: <>Université de Waterloo - fiche sur les mythes entourant les vaccins à ARNm</>,
         },
         linkText: {
@@ -1869,7 +1867,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>The Long Road to the mRNA vaccines</>,
-
           FR: <>Le long chemin vers les vaccins à ARNm</>,
         },
         linkText: { EN: <>CIHR Website and Timeline</>, FR: <>Site Web des IRSC et chronologie</> },
@@ -1882,7 +1879,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Understanding the mRNA vaccines</>,
-
           FR: <>Understanding the mRNA vaccines</>,
         },
         linkText: { EN: <>US CDC website and infographics</>, FR: <>Site Web et infographie du CDC américain</> },
@@ -1906,7 +1902,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>How the COVID vaccine can save your life (comic)</>,
-
           FR: <>How the COVID vaccine can save your life (comic)</>,
         },
         linkText: {
@@ -2631,7 +2626,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Crohn&apos;s and Colitis Canada: COVID-19 Vaccines and IBD</>,
-
           FR: <>Crohn et Colite Canada : Les vaccins contre la COVID-19 et les MII</>,
         },
         linkText: {
@@ -2665,7 +2659,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
-
           FR: <>Cancer Care Alberta: COVID-19 and Cancer Treatment</>,
         },
         linkText: {
@@ -2692,7 +2685,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>I&apos;ve heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
-
           FR: <>I've heard about people having allergic reactions to the vaccine. What are they allergic to?</>,
         },
         linkText: {
@@ -2719,7 +2711,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
-
           FR: <>COVID-19 Vaccines for People with Underlying Medical Conditions</>,
         },
         linkText: { EN: <>US CDC website and factsheet</>, FR: <>Site Web et fiche d’information du CDC américain</> },
@@ -2877,7 +2868,7 @@ export const contentPersonasBI = {
                 Surtout dans le cas de vos patientes enceintes, priorisez le développement de la relation que vous allez
                 entretenir avec ces patientes à long terme.
               </li>
-            </ul>
+            </ul>,
           ],
         },
       },
@@ -3851,7 +3842,6 @@ export const contentPersonasBI = {
         // Preliminary Findings of ...
         title: {
           EN: <>mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
-
           FR: <>Preliminary Findings of mRNA Covid-19 Vaccine Safety in Pregnant Persons</>,
         },
         linkText: {
@@ -4881,7 +4871,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>How to explain side effects without scaring patients</>,
-
           FR: <>How to explain side effects without scaring patients</>,
         },
         linkText: { EN: <>General advice to clinicians</>, FR: <>Conseils généraux à l’intention des cliniciens</> },
@@ -4900,7 +4889,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Five Ways to Communicate Risk So That Patients Understand</>,
-
           FR: <>Five Ways to Communicate Risk So That Patients Understand</>,
         },
         linkText: { EN: <>AAFP Article</>, FR: <>Article de l’AAFP</> },
@@ -4924,7 +4912,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
-
           FR: <>Are there long-term side effects caused by mRNA COVID-19 vaccines? How do we know?</>,
         },
         linkText: { EN: <>FAQ page from ImmunizeBC</>, FR: <>Page des FAQ d’ImmunizeBC</> },
@@ -4945,7 +4932,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
-
           FR: <>Alberta Health: Myocarditis and/or Pericarditis following COVID-19 Vaccines</>,
         },
         linkText: {
@@ -4973,7 +4959,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
-
           FR: <>Alberta Health: COVID-19 Vaccine - Care After Immunization</>,
         },
         linkText: {
@@ -4989,7 +4974,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Mixing Vaccines Provides Strong Protection: NYTimes Article</>,
-
           FR: <>Mixing Vaccines Provides Strong Protection: Article du NYTimes</>,
         },
         linkText: {
@@ -5017,7 +5001,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>MayoClinic - COVID-19: Long-term effects</>,
-
           FR: <>MayoClinic - COVID-19: Long-term effects</>,
         },
         linkText: {
@@ -6067,7 +6050,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>How to take on COVID conspiracy theories</>,
-
           FR: <>How to take on COVID conspiracy theories</>,
         },
         linkText: { EN: <>Financial Times news article</>, FR: <>Article de nouvelles du Financial Times</> },
@@ -6088,7 +6070,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Winning Hearts and Minds</>,
-
           FR: <>Winning Hearts and Minds</>,
         },
         linkText: { EN: <>Johns Hopkins University interview</>, FR: <>Entrevue de l’Université Johns Hopkins</> },
@@ -6112,7 +6093,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>To counter conspiracy theories, boost well-being</>,
-
           FR: <>To counter conspiracy theories, boost well-being</>,
         },
         linkText: { EN: <>Nature journal blog article</>, FR: <>Billet de blogue de la revue Nature</> },
@@ -6133,7 +6113,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Six rules of engagement</>,
-
           FR: <>Six rules of engagement</>,
         },
         linkText: {
@@ -6903,7 +6882,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (US)</>,
-
           FR: <>Association of Accredited Naturopathic Medical Colleges Statement on COVID Vaccination (États-Unis)</>,
         },
         linkText: { EN: <>Link to AANMC statement</>, FR: <>Lien à la déclaration de l’AANMC</> },
@@ -6922,7 +6900,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>The COVID Choice</>,
-
           FR: <>The COVID Choice</>,
         },
         linkText: { EN: <>NDs for Vaccines article</>, FR: <>Article publié dans NDs for Vaccines</> },
@@ -6946,7 +6923,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Holistic Vaccine Support</>,
-
           FR: <>Holistic Vaccine Support</>,
         },
         linkText: { EN: <>Blog article from an ND</>, FR: <>Billet de blogue d’une naturopathe</> },
@@ -6970,7 +6946,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
-
           FR: <>Opinion Article: I believe in natural health, but I also got my COVID-19 vaccine</>,
         },
         linkText: { EN: <>Op-Ed in The Globe and Mail</>, FR: <>Article d’opinion publié dans le Globe and Mail</> },
@@ -8408,7 +8383,6 @@ export const contentPersonasBI = {
               vaccines
             </>
           ),
-
           FR: (
             <>
               Congrégation pour la doctrine de la foi – Vatican : Note du Saint-Siège sur la moralité de l’utilisation
@@ -8443,7 +8417,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
-
           FR: <>Berkley Forum: Religion, Bioethics, and COVID-19 Vaccination</>,
         },
         linkText: {
@@ -8470,7 +8443,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Imam&apos;s Roundtable: COVID-19 Vaccines in the Muslim Community</>,
-
           FR: <>Imam's Roundtable: COVID-19 Vaccines in the Muslim Community</>,
         },
         linkText: { EN: <>YouTube video - virtual discussion</>, FR: <>Vidéo de YouTube – discussion virtuelle</> },
@@ -8913,7 +8885,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
-
           FR: <>International Society for Traumatic Stress Studies: What is medical trauma?</>,
         },
         linkText: {
@@ -8935,7 +8906,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Top tips to deal with challenging situations: doctor–patient interactions</>,
-
           FR: <>Top tips to deal with challenging situations: doctor-patient interactions</>,
         },
         linkText: {
@@ -8962,7 +8932,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
-
           FR: <>To Overcome Vaccine Hesitancy, We Need a Better Patient Experience</>,
         },
         linkText: { EN: <>Harvard Business Review Editorial</>, FR: <>Éditorial de revue d’affaires de Harvard</> },
@@ -8986,7 +8955,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Anxiety Canada: A Tool for Dealing with Anxiety Around Vaccination</>,
-
           FR: <>Anxiété Canada : A Tool for Dealing with Anxiety Around Vaccination</>,
         },
         linkText: { EN: <>The CARD Tool for Patients</>, FR: <>Outil CARD à l’intention des patients</> },
@@ -9771,7 +9739,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
-
           FR: <>BC Centres for Disease Control: Indigenous Community Resources</>,
         },
         linkText: { EN: <>BC CDC Resources Page</>, FR: <>Page de ressources de BC CDC</> },
@@ -9796,7 +9763,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
-
           FR: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
         },
         linkText: {
@@ -9830,12 +9796,11 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Women&apos;s College Hospital - Maad&apos;ookiing Mshkiki: Sharing Medicine</>,
-
           FR: <>Women's College Hospital - Maad'ookiing Mshkiki: Sharing Medicine</>,
         },
         linkText: {
           EN: <>Resources for Indigenous, Métis, and Inuit Communities Page</>,
-          FR: <>age de ressources à l’intention des communautés autochtones, métisses et inuites</>,
+          FR: <>Page de ressources à l’intention des communautés autochtones, métisses et inuites</>,
         },
         link: "https://www.womenscollegehospital.ca/research,-education-and-innovation/maadookiing-mshkiki%E2%80%94sharing-medicine",
         description: {
@@ -9863,7 +9828,6 @@ export const contentPersonasBI = {
               changed my mind.
             </>
           ),
-
           FR: (
             <>NBCNews Editorial: I'm a Black doctor who didn't trust the Covid vaccine. Here's what changed my mind.</>
           ),
@@ -9890,7 +9854,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
-
           FR: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
         },
         linkText: { EN: <>Resource list from the AMA</>, FR: <>Liste de ressources de l’AMA</> },
@@ -9914,7 +9877,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
-
           FR: <>Forum économique mondial : How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
         },
         linkText: { EN: <>WEF Article</>, FR: <>Article du FEM</> },
@@ -9942,7 +9904,6 @@ export const contentPersonasBI = {
               Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis communities
             </>
           ),
-
           FR: (
             <>
               Indigenous Primary Health Care Council: COVID-19 Resources for First Nations, Inuit, and Métis communities
@@ -9975,7 +9936,6 @@ export const contentPersonasBI = {
               Implementation (Report)
             </>
           ),
-
           FR: (
             <>
               Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
@@ -10002,122 +9962,6 @@ export const contentPersonasBI = {
         },
       },
     ],
-
-    // resources: [
-
-    //   {
-    //     title: { EN: <>BC Centres for Disease Control: Indigenous Community Resources</>,
-    //     image: "",
-    //     linkText: { EN:<>BC CDC Resources Page</>,
-    //     link: "https://www.bccdc.ca/health-info/diseases-conditions/covid-19/indigenous-community-resources",
-    //     description: {EN: (
-    //       <>
-    //         BC Centres for Disease Control Indigenous Community Resources offers a wide array of resource materials for providers working with Indigenous communities regarding vaccination.
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: <>Morning Star Lodge: Protecting Our Home Fires COVID-19 Resources</>,
-    //     image: "",
-    //     linkText: { EN:<>Morning Star Lodge COVID-19 Pandemic Resources for Indigenous Communities</>,
-    //     link: "https://www.indigenoushealthlab.com/protecting-our-home-fires",
-    //     description: {EN: (
-    //       <>
-    //         Morning Star Lodge, an Indigenous community-based health research organization, has a wealth of resources available for building vaccine confidence in Indigenous communities. This includes YouTube videos, fact sheets, and more.
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: (
-    //       <>
-    //         NBCNews Editorial: I&apos;m a Black doctor who didn&apos;t trust the Covid vaccine. Here&apos;s what
-    //         changed my mind.
-    //       </>
-    //     ),
-    //     image: "",
-    //     linkText: { EN:<>NBCNews Article</>,
-    //     link: "https://www.nbcnews.com/think/opinion/i-m-black-doctor-who-didn-t-trust-covid-vaccine-ncna1255085",
-    //     description: {EN: (
-    //       <>
-    //         An editorial looking at a doctor&apos;s personal experience changing her perspective and choice to get
-    //         vaccinated. Considerations for the conversations and how to approach doubt and uncertainty. (January 2021)
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: <>AMA: Impact of COVID-19 on minoritized and marginalized communities</>,
-    //     image: "",
-    //     linkText: { EN:<>Resource list from the AMA</>,
-    //     link: "https://www.ama-assn.org/delivering-care/health-equity/impact-covid-19-minoritized-and-marginalized-communities",
-    //     description: {EN: (
-    //       <>
-    //         Collected resource list from the American Medical Association looking at the disproprotionate impacts of
-    //         COVID-19 on marginalized communities. (Updated, October 2020)
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: <>World Economic Forum: How a history of medical racism may fuel mistrust in COVID-19 vaccines</>,
-    //     image: "",
-    //     linkText: { EN:<>WEF Article</>,
-    //     link: "https://www.weforum.org/agenda/2020/12/how-a-history-of-medical-racism-may-fuel-mistrust-in-covid-19-vaccines/",
-    //     description: {EN: (
-    //       <>
-    //         An article looking at a history of medical racism and how it may impact vaccine confidence, from the World
-    //         Economic Forum. (December 2020)
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: <>Indigenous Primary Health Care Council: COVID-19 Vaccine – Common Beliefs Explored</>,
-    //     image: "",
-    //     linkText: { EN:<>Appendix (PDF) here</>,
-    //     link: "https://",
-    //     description: {EN: (
-    //       <>
-    //         Patient-facing FAQ and concerns list about COVID-19 vaccines, tailored to common Indigenous patient
-    //         concerns. From IPHCC. (February 2021)
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-
-    //   {
-    //     title: { EN: (
-    //       <>
-    //         Indigenous Primary Health Care Council: Engaging Indigenous Communities With COVID-19 Vaccine
-    //         Implementation (Report)
-    //       </>
-    //     ),
-    //     image: "",
-    //     linkText: { EN: <>Online report here</>,
-    //     link: "https://www.iphcc.ca/publications/resources/COVID19/Engaging-Indigenous-Communities-with-COVID-19/",
-    //     description: {EN: (
-    //       <>
-    //         A report looking at providing guidance on communication/engagement strategies and culturally safe
-    //         practices/policies for vaccine implementation for Indigenous people in Ontario. (2021)
-    //       </>
-    //     ),
-    //   FR: <></>,
-    // },
-    //   },
-    // ],
   },
 
   NeedlePhobia: {
@@ -10150,6 +9994,7 @@ export const contentPersonasBI = {
           ],
         },
       },
+      // NeedlePhobia
 
       thingsToConsider: {
         image: "doctorWhiteWomanDarkBrownHair.svg",
@@ -10181,6 +10026,7 @@ export const contentPersonasBI = {
           ],
         },
       },
+      // NeedlePhobia
 
       takeHome: {
         image: "Notepad_small.svg",
@@ -10218,7 +10064,7 @@ export const contentPersonasBI = {
         },
       },
     },
-    // (NeedlePhobia)
+    // NeedlePhobia
 
     advice: {
       tags: ["overview", "needle", "injection", "shots", "pain", "fear", "faint"],
@@ -10260,6 +10106,7 @@ export const contentPersonasBI = {
           },
           image: "doctorWhiteManBlackHair.svg",
         },
+        // NeedlePhobia
         ask: {
           text: {
             EN: (
@@ -10291,7 +10138,7 @@ export const contentPersonasBI = {
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
       },
-      // (NeedlePhobia)
+      // NeedlePhobia
 
       engage: {
         content: [
@@ -10319,6 +10166,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10339,6 +10187,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10364,7 +10213,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (NeedlePhobia)
+      // NeedlePhobia
 
       affirm: {
         content: [
@@ -10387,9 +10236,10 @@ export const contentPersonasBI = {
                   ),
                 },
                 featured: true,
-                image: "", // Add image path
+                image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10414,7 +10264,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (NeedlePhobia)
+      // NeedlePhobia
 
       ask: {
         content: [
@@ -10444,6 +10294,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteManYoung.svg",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10458,8 +10309,8 @@ export const contentPersonasBI = {
                 featured: false,
                 image: "",
                 fullStoryID: "",
-              }, // To add more quotes to this section, copy one of the quote blocks above, paste it here, and change the content.
-              // Be sure to copy everything from curly brace { to curly brace }, and to separate the quote blocks with a comma.
+              },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10485,7 +10336,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (NeedlePhobia)
+      // NeedlePhobia
 
       share: {
         content: [
@@ -10516,6 +10367,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10549,6 +10401,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10575,7 +10428,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (NeedlePhobia)
+      // NeedlePhobia
 
       evoke: {
         content: [
@@ -10602,6 +10455,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10624,6 +10478,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10644,6 +10499,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10666,6 +10522,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10690,6 +10547,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // NeedlePhobia
 
               {
                 text: {
@@ -10720,7 +10578,7 @@ export const contentPersonasBI = {
         ],
       },
     },
-    // (NeedlePhobia)
+    // NeedlePhobia
 
     resources: [
       {
@@ -10747,8 +10605,7 @@ export const contentPersonasBI = {
             </>
           ),
         },
-        // Open question: Should we add tags to resources, so individual resources are findable in a search?
-        // Or close enough to get them to the resources page?
+        // NeedlePhobia
       },
       {
         title: {
@@ -10777,6 +10634,7 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // NeedlePhobia
 
       {
         title: {
@@ -10802,6 +10660,7 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // NeedlePhobia
 
       {
         title: {
@@ -10822,11 +10681,11 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // NeedlePhobia
 
       {
         title: {
           EN: <>ImmunizeBC: Managing Needle Fears</>,
-
           FR: <>ImmunizeBC: Managing Needle Fears</>,
         },
         linkText: {
@@ -10850,7 +10709,7 @@ export const contentPersonasBI = {
         },
       },
 
-      // To add more resource linsk to this section, copy one of the resource link blocks above, paste it here, and change the content.
+      // To add more resource links to this section, copy one of the resource link blocks above, paste it here, and change the content.
       // Be sure to copy everything from curly brace { to curly brace }, and to separate the resource link blocks with a comma.
     ],
   },
@@ -10897,7 +10756,7 @@ export const contentPersonasBI = {
           ],
         },
       },
-
+      // Unconcerned
       thingsToConsider: {
         image: "doctorMuslimWomanYellowHeadCover.svg",
         content: {
@@ -10931,7 +10790,7 @@ export const contentPersonasBI = {
           ],
         },
       },
-
+      // Unconcerned
       takeHome: {
         image: "Notepad_small.svg",
         content: {
@@ -10954,7 +10813,7 @@ export const contentPersonasBI = {
         },
       },
     },
-    // (Unconcerned)
+    // Unconcerned
     advice: {
       eaase: {
         engage: {
@@ -10986,6 +10845,7 @@ export const contentPersonasBI = {
           },
           image: "doctorWhiteManBlackHair.svg",
         },
+        // Unconcerned
         ask: {
           text: {
             EN: (
@@ -11026,7 +10886,7 @@ export const contentPersonasBI = {
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
       },
-      // (Unconcerned)
+      // Unconcerned
       engage: {
         content: [
           {
@@ -11054,7 +10914,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-
+      // Unconcerned
       affirm: {
         content: [
           {
@@ -11083,7 +10943,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11105,7 +10965,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11128,7 +10988,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11156,7 +11016,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (Unconcerned)
+      // Unconcerned
       ask: {
         content: [
           {
@@ -11183,6 +11043,7 @@ export const contentPersonasBI = {
                 image: "doctorBlackManBeard.svg",
                 fullStoryID: "",
               },
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11207,7 +11068,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (Unconcerned)
+      // Unconcerned
       share: {
         content: [
           {
@@ -11244,7 +11105,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (Unconcerned)
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11270,7 +11131,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11303,7 +11164,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (Unconcerned)
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11338,7 +11199,7 @@ export const contentPersonasBI = {
                 image: "doctorMuslimWomanYellowHeadCover.svg",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11374,7 +11235,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (Unconcerned)
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11410,7 +11271,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-      // (Unconcerned)
+      // Unconcerned
       evoke: {
         content: [
           {
@@ -11446,7 +11307,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11473,7 +11334,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteManGoatee.svg",
                 fullStoryID: "",
               },
-              // (Unconcerned)
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11499,7 +11360,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Unconcerned
               {
                 text: {
                   EN: (
@@ -11527,13 +11388,12 @@ export const contentPersonasBI = {
         ],
       },
     },
-    // (Unconcerned)
+    // Unconcerned
 
     resources: [
       {
         title: {
           EN: <>Understanding herd immunity</>,
-
           FR: <>Understanding herd immunity</>,
         },
         linkText: {
@@ -11556,11 +11416,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Unconcerned
       {
         title: {
           EN: <>Similarities and Differences Between COVID and the Flu</>,
-
           FR: <>Similarities and Differences Between COVID and the Flu</>,
         },
         linkText: {
@@ -11583,11 +11442,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Unconcerned
       {
         title: {
           EN: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
-
           FR: <>Forbes Op-Ed: If Herd Immunity Is Your Plan to Beat COVID, You Need A Plan B.</>,
         },
         linkText: {
@@ -11643,6 +11501,7 @@ export const contentPersonasBI = {
                 </li>
               </ul>
             </>,
+            // Undifferentiated
             <>
               <a
                 className="px-4 pt-1.5 pb-1  smFont orangeLink underline"
@@ -11695,7 +11554,7 @@ export const contentPersonasBI = {
           ],
         },
       },
-      // (Undifferentiated)
+      // Undifferentiated
       thingsToConsider: {
         image: "doctorMuslimWomanYellowHeadCover.svg",
         content: {
@@ -11726,6 +11585,7 @@ export const contentPersonasBI = {
               become your patients&apos; ally.
             </>,
           ],
+          // Undifferentiated
           FR: [
             <>
               Le fait d’offrir de l’information générique sur les vaccins n’est peut-être pas aussi efficace que
@@ -11755,6 +11615,7 @@ export const contentPersonasBI = {
           ],
         },
       },
+      // Undifferentiated
       takeHome: {
         image: "Notepad_small.svg",
         content: {
@@ -11779,7 +11640,7 @@ export const contentPersonasBI = {
         },
       },
     },
-    // (undifferentiated)
+    // Undifferentiated
 
     advice: {
       eaase: {
@@ -11800,7 +11661,7 @@ export const contentPersonasBI = {
           },
           image: "doctorMuslimWomanYellowHeadCover.svg",
         },
-
+        // Undifferentiated
         affirm: {
           text: {
             EN: (
@@ -11822,7 +11683,7 @@ export const contentPersonasBI = {
           },
           image: "doctorWhiteManBlackHair.svg",
         },
-
+        // Undifferentiated
         ask: {
           text: {
             EN: (
@@ -11850,25 +11711,25 @@ export const contentPersonasBI = {
                 If you look around the world at the countries that have managed to get these vaccines into people&apos;s
                 arms: they&apos;re getting back to normal life. They&apos;re able to
                 &#91;worship/&#8203;socialize/&#8203;visit/be&#93; together. They&apos;re able to do those things. I
-                know that not being able to &#91;worship/socialize/visit&#93; with the rest of your community has been
-                really hard on you this last year, but we can do something about that.
+                know that not being able to &#91;worship/&#8203;socialize/&#8203;visit&#93; with the rest of your
+                community has been really hard on you this last year, but we can do something about that.
               </>
             ),
             FR: (
               <>
                 Si on se met à regarder ce qui se passe dans le monde, les pays qui ont réussi à faire vacciner les
                 gens, ce sont eux qui retournent à la normale en ce moment. Ils sont capables (d’aller dans leurs lieux
-                de culte/ __ de faire des sorties/ __ de se visiter, de vivre). Ils sont capables de faire des choses du
-                genre. Je sais que le fait de ne pas avoir pu (aller à votre lieu de culte/faire des sorties/visiter les
-                gens), avec les membres de votre communauté, ça a été très dur pour vous l’année dernière, mais on peut
-                faire quelque chose pour remédier à la situation.
+                de culte/&#8203;de faire des sorties/&#8203;de se visiter, de vivre). Ils sont capables de faire des
+                choses du genre. Je sais que le fait de ne pas avoir pu (aller à votre lieu de culte/&#8203;faire des
+                sorties/&#8203;visiter les gens), avec les membres de votre communauté, ça a été très dur pour vous
+                l’année dernière, mais on peut faire quelque chose pour remédier à la situation.
               </>
             ),
           },
           image: "doctorBlackWoman.svg",
         },
       },
-      // (undifferentiated)
+      // Undifferentiated
 
       engage: {
         content: [
@@ -11894,7 +11755,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -11918,7 +11779,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -11938,9 +11799,7 @@ export const contentPersonasBI = {
                 image: "doctorBlackWoman.svg",
                 fullStoryID: "",
               },
-
-              // (undifferentiated)
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -11962,7 +11821,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (undifferentiated)
+              // Undifferentiated
 
               {
                 text: {
@@ -11987,7 +11846,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-
+      // Undifferentiated
       affirm: {
         content: [
           {
@@ -12017,7 +11876,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12042,7 +11901,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12062,7 +11921,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12087,7 +11946,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
               },
-              // (undifferentiated)
+              // Undifferentiated
 
               {
                 text: {
@@ -12117,7 +11976,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12141,7 +12000,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12163,8 +12022,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
               },
-              // (undifferentiated)
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12192,7 +12050,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-
+      // Undifferentiated
       ask: {
         content: [
           {
@@ -12219,6 +12077,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12241,7 +12100,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteManGoatee.svg",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12263,8 +12122,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (undifferentiated)
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12291,7 +12149,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-
+      // Undifferentiated
       share: {
         content: [
           {
@@ -12329,7 +12187,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12353,7 +12211,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanDarkBrownHair.svg",
                 fullStoryID: "",
               },
-              // (undifferentiated)
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12379,7 +12237,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12408,7 +12266,7 @@ export const contentPersonasBI = {
           },
         ],
       },
-
+      // Undifferentiated
       evoke: {
         content: [
           {
@@ -12439,7 +12297,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12477,7 +12335,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12494,7 +12352,7 @@ export const contentPersonasBI = {
                     <>
                       Si on se met à regarder ce qui se passe dans le monde, les pays qui ont réussi à faire vacciner
                       les gens, ce sont eux qui retournent à la normale en ce moment. Les gens sont capables (d’aller
-                      dans les lieux de culte/de sortir, de visiter, de vivre). Ils sont capables de faire des choses du
+                      dans les lieux de culte, de sortir, de visiter, de vivre). Ils sont capables de faire des choses du
                       genre. Je sais que le fait de ne pas avoir pu (aller à votre lieu de culte/faire des
                       sorties/visiter les gens), avec les membres de votre communauté, ça a été très dur pour vous
                       l’année dernière, mais on peut faire quelque chose pour remédier à la situation.
@@ -12505,7 +12363,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteManBlackHair.svg",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12527,7 +12385,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (undifferentiated)
+              // Undifferentiated
 
               {
                 text: {
@@ -12554,7 +12412,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12579,7 +12437,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12600,7 +12458,7 @@ export const contentPersonasBI = {
                 image: "doctorBlackWoman.svg",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12624,7 +12482,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12649,8 +12507,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-              // (undifferentiated)
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12675,7 +12532,7 @@ export const contentPersonasBI = {
                 image: "doctorWhiteWomanBrownHairGlasses.svg",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12700,7 +12557,7 @@ export const contentPersonasBI = {
                 image: "",
                 fullStoryID: "",
               },
-
+              // Undifferentiated
               {
                 text: {
                   EN: (
@@ -12738,7 +12595,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
-
           FR: <>Alberta Medical Association: Be A Vaccine Positive Clinic Toolkit</>,
         },
         linkText: {
@@ -12763,11 +12619,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>Centre for Effective Practice: ProTCT Framework</>,
-
           FR: <>Centre for Effective Practice: ProTCT Framework</>,
         },
         linkText: {
@@ -12787,11 +12642,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
-
           FR: <>Centre for Effective Practice (CEP): Ensuring Patient Confidence in Vaccines</>,
         },
         linkText: {
@@ -12811,11 +12665,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>CEP: COVID-19 Resource Centre</>,
-
           FR: <>CEP: COVID-19 Resource Centre</>,
         },
         linkText: {
@@ -12828,11 +12681,10 @@ export const contentPersonasBI = {
           FR: <>Base de données sur divers sujets se rapportant à la COVID-19, y compris les vaccins.</>,
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>19-to-Zero COVID-19 Resources</>,
-
           FR: <>19-to-Zero COVID-19 Resources</>,
         },
         linkText: { EN: <>COVID-19 resource repository</>, FR: <>Dépôt de ressources sur la COVID-19</> },
@@ -12846,11 +12698,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>19-to-Zero YouTube Channel</>,
-
           FR: <>Poste YouTube de 19-to-Zero</>,
         },
         linkText: { EN: <>COVID-19 video resources</>, FR: <>Vidéos sur la COVID-19</> },
@@ -12864,7 +12715,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>CANVax Resources on COVID-19 Immunization</>,
-
           FR: <>Ressources de CANVax sur l’immunisation de la COVID-19</>,
         },
         linkText: {
@@ -12881,11 +12731,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>US CDC: Vaccines for COVID-19 Information</>,
-
           FR: <>US CDC: Vaccines for COVID-19 Information</>,
         },
         linkText: {
@@ -12905,11 +12754,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Undifferentiated
       {
         title: {
           EN: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
-
           FR: <>ImmunizeBC: COVID-19 Vaccine Basics</>,
         },
         linkText: {
@@ -12930,7 +12778,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>Indigenous Primary Health Care Council: COVID-19 information</>,
-
           FR: <>Indigenous Primary Health Care Council: COVID-19 information</>,
         },
         linkText: {
@@ -12982,6 +12829,7 @@ export const contentPersonasBI = {
               <div>Consider consulting your College&apos;s standards of practice related to vaccinating minors.</div>
             </div>
           ),
+          // Pediatrics
           FR: (
             <div key={123}>
               {/* Need a key here because the thingsToConsider.content.map may be run upon first load  */}
@@ -13007,7 +12855,6 @@ export const contentPersonasBI = {
         },
       },
       // ACTUAL content for Pediatrics
-
       takeHome: {
         image: "Notepad_small.svg",
         content: {
@@ -13082,6 +12929,7 @@ export const contentPersonasBI = {
           },
         ],
       },
+      // Dummy content for Pediatrics
       ask: {
         content: [
           {
@@ -13132,11 +12980,10 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Pediatrics
       {
         title: {
           EN: <>COVID-19 Vaccine Information Sheet: For children (age 5-11)</>,
-
           FR: <>Fiche d’information sur la vaccination contre la COVID-19 : Pour les enfants (âgés de 5 à 11 ans) </>,
         },
         linkText: {
@@ -13162,7 +13009,7 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Pediatrics
       {
         title: {
           EN: <>COVID Vaccine: What parents need to know</>,
@@ -13193,7 +13040,7 @@ export const contentPersonasBI = {
           ),
         },
       },
-
+      // Pediatrics
       {
         title: {
           EN: <>Children and the COVID-19 Vaccine</>,
@@ -13237,7 +13084,7 @@ export const contentPersonasBI = {
         },
       },
 
-      // MedicalExemptions:
+      // MedicalExemptions
       thingsToConsider: {
         image: "doctorMuslimWomanYellowHeadCover.svg",
         content: {
@@ -13301,6 +13148,7 @@ export const contentPersonasBI = {
               </ul>
             </>,
           ],
+          // MedicalExemptions
           FR: [
             <>
               <ul className="pl-5 list-disc">
@@ -13348,6 +13196,7 @@ export const contentPersonasBI = {
           },
           image: "doctorWhiteWomanDarkBrownHair.svg",
         },
+        // MedicalExemptions
         affirm: {
           text: {
             EN: (
@@ -13434,6 +13283,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Allergy", FR: "Allergie" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13479,6 +13329,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "", FR: "" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13534,6 +13385,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Mental Health", FR: "Santé mentale" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13581,6 +13433,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Politics", FR: "Politique" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13637,6 +13490,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Allergy", FR: "Allergie" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13696,6 +13550,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "", FR: "" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13745,6 +13600,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "", FR: "" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13837,6 +13693,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Do me a favour", FR: "Rendez-moi service" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13888,6 +13745,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Politics", FR: "Politique" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -13945,6 +13803,7 @@ export const contentPersonasBI = {
                 fullStoryID: "",
                 label: { EN: "Mental Health", FR: "Santé mentale" },
               },
+              // MedicalExemptions
               {
                 text: {
                   EN: (
@@ -14032,10 +13891,10 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // MedicalExemptions
       {
         title: {
           EN: <>CPSA - Vaccine Exemptions FAQ</>,
-
           FR: <>CPSA - Vaccine Exemptions FAQ</>,
         },
         linkText: { EN: <>Exemption Requests: Patient FAQs</>, FR: <>Exemption Requests: Patient FAQs (CPSA)</> },
@@ -14055,10 +13914,10 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // MedicalExemptions
       {
         title: {
           EN: <>College of Physicians and Surgeons BC</>,
-
           FR: <>College of Physicians and Surgeons BC</>,
         },
         linkText: {
@@ -14081,10 +13940,10 @@ export const contentPersonasBI = {
           ),
         },
       },
+      // MedicalExemptions
       {
         title: {
           EN: <>Ontario Ministry of Health</>,
-
           FR: <>Ontario Ministry of Health</>,
         },
         linkText: {
@@ -14100,7 +13959,6 @@ export const contentPersonasBI = {
       {
         title: {
           EN: <>National Advisory Committee on Immunization (NACI)</>,
-
           FR: <>Comité consultatif national de l'immunisation (CCNI)</>,
         },
         linkText: { EN: <>Recommendations on COVID-19</>, FR: <>Les recommandations du CCNI</> },
@@ -14359,7 +14217,6 @@ export const contentPersonasBI = {
               </div>
             </>
           ),
-
           FR: <></>,
         },
         linkText: { EN: <></>, FR: <></> },

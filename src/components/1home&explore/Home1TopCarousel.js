@@ -56,7 +56,7 @@ const Home1TopCarousel = () => {
             gap: 40,
             speed: slideSpeed, // slide-across time in ms
             waitForTransition: true, // default=true
-            autoplay: false, // default=true
+            autoplay: true, // default=true
             interval: 15000,
             rewind: true, // default=false
             rewindSpeed: 2000,
