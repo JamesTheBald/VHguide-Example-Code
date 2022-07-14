@@ -347,7 +347,7 @@ export const pearlsContentBI = [
       },
       // Affirming You're An Ally
       {
-        subheading: { EN: "Desensitize, then motivate", FR: "Désensibilisation et motivation" },
+        subheading: { EN: "Desensitize, then motivate", FR: "Désensibilisez et motivez" },
         quotes: [
           {
             text: {

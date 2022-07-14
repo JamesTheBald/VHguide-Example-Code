@@ -34,7 +34,12 @@ const QuoteBoxes = props => {
           : { padding: "34px 32px 30px 56px" };
       style.marginLeft = w < 510 ? 25 : w < 720 ? 32 : 36;
     } else if (quote.featured) {
-      style = w < 510 ? { padding: "34px 30px 36px 44px" } : { padding: "40px 36px 36px 56px" };
+      style =
+        w < 510
+          ? { padding: "34px 30px 36px 44px" }
+          : w < 720
+          ? { padding: "40px 36px 36px 56px" }
+          : { padding: "40px 36px 36px 64px" };
     } else {
       // Plain quote
       style = w < 510 ? { padding: "30px 24px 24px 44px" } : { padding: "36px 30px 30px 56px" };
@@ -94,7 +99,7 @@ const QuoteBoxes = props => {
                   {label && <div className="h-2" />}
                   <div name="inner text box w decorations" className="relative">
                     {!quote.image && (
-                      <div className="absolute -left-7 mxs:-left-8 sm:-left-10 -top-1 sm:-top-2  text-20 sm:text-30">
+                      <div className="absolute -left-7 mxs:-left-8 sm:-left-10 -top-1 sm:-top-2">
                         <BigDoubleQuotes featured={quote.featured} />
                       </div>
                     )}

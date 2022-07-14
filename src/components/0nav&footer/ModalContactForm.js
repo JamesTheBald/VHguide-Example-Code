@@ -11,8 +11,7 @@ const ModalContactForm = () => {
   const formSource =
     lang === "EN"
       ? "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true"
-      : "https://docs.google.com/forms/d/e/1FAIpQLSf1KdgDar7gVV87kwWldiAjjyNWWRMw5xdDdk4hD1EJkA5Y1Q/viewform?usp=sf_link";
-
+      : "https://docs.google.com/forms/d/e/1FAIpQLSc9MLJbnkLGrSNUh-HiJMJhyMydDdcn1QFf7MDOyKznEuLwww/viewform?embedded=true";
   const widthModal = winWidth < 720 ? 340 : 510;
   const heightModal = winWidth < 720 ? 900 : 840;
 

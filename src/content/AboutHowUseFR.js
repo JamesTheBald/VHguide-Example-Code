@@ -21,9 +21,9 @@ const AboutHowUseFR = props => {
           utiliser avec les patients.
         </div>
         <div className="pb-3 relative">
-          Le guide s’articule autour d’exemples de présentations typiques d’hésitation vaccinale. Ces{" "}
+          Le guide s’articule autour d’exemples de présentations typiques d’hésitation vaccinale. Chaque {" "}
           <TypesPopupFR sizeAndPosnClass="left-0 sm:left-16  -top-40  w-full sm:w-3/4 md:w-120" /> d’hésitation
-          vaccinale figurent dans une{" "}
+          vaccinale figure dans une{" "}
           <Link
             to="/explore"
             className="orangeUnderline"

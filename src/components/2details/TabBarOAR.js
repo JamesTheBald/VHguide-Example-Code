@@ -45,7 +45,7 @@ const TabBarOAR = () => {
     { key: "overview", EN: "Overview", FR: "Aperçu" },
     { key: "advice", EN: "Advice", FR: "Conseils" },
     { key: "resources", EN: "Resources", FR: "Ressources" },
-    { key: "pearls", EN: "Clinical Pearls", FR: "Perles Cliniques" },
+    { key: "pearls", EN: "Clinical Pearls", FR: "Perles cliniques" },
   ];
 
   return (

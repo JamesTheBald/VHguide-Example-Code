@@ -10,7 +10,7 @@ const eaaseStepNamesBI = {
   name: {
     engage: { EN: "Engage", FR: "Entamez" },
     affirm: { EN: "Affirm", FR: "Affirmez" },
-    ask: { EN: w < 600 ? <>Ask/&#8203;Share</> : "Ask & Share", FR: <>Demandez/&#8203;Faites Part</> },
+    ask: { EN: w < 600 ? <>Ask/&#8203;Share</> : "Ask & Share", FR: <>Demandez/&#8203;Faites part</> },
     evoke: { EN: "Evoke", FR: "Evoquez" },
   },
 

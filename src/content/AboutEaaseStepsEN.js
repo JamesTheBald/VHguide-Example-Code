@@ -53,9 +53,9 @@ const AboutEaaseStepsEN = props => {
                 they make.
               </li>
               <li>
-                <span>Offering to work together,{" "}</span>
+                <span>Offering to work together, </span>
                 {/* <Link to="/about/media" className="orangeUnderline"> */}
-                  as equals
+                as equals
                 {/* </Link> */}
                 <span>, to understand available vaccine information.</span>
               </li>
@@ -96,7 +96,7 @@ const AboutEaaseStepsEN = props => {
           <div className="m-3 mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
             <StaticImage
               className="pt-4"
-              src={"../assets/screenshots/About the Guide EAASE Example Image.png"}
+              src="../assets/screenshots/Undiff Hes Type Advice - EN - Short.png"
               alt="Screenshot of Undifferentiated Hesitancy overview page"
               loading="eager"
               quality={90}

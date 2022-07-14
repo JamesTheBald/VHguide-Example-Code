@@ -45,9 +45,9 @@ const AdviceEaaseIconAndText = props => {
   const TextBlock = () => {
     return (
       <div className="baseFont text-blue-black">
-        <span>&quot;</span>
+        {lang === "EN" ? <span>&quot;</span> : <span>«&nbsp;</span>}
         {advice.eaase[tab].text[lang]}
-        <span>&quot;</span>
+        {lang === "EN" ? <span>&quot;</span> : <span>&nbsp;»</span>}
       </div>
     );
   };

@@ -1,6 +1,5 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-// import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import DisplayGatsbyDynImage from "../4general/DisplayGatsbyDynImage";
 import CollabLogosBI from "./CollabLogosBI";
@@ -17,7 +16,6 @@ const AboutCreditsBI = () => {
   return (
     <>
       <h1 className="aboutEtcTopGap pb-5 sm:pb-8  titleFont titleBig  text-blue-main  z-30">
-        {/* {lang === "EN" ? <></> : <></>} */}
         {lang === "EN" ? <>Credits and Collaborators</> : <>Mentions et collaborateurs</>}
       </h1>
 
@@ -56,7 +54,6 @@ const AboutCreditsBI = () => {
               </div>
 
               <div className="mt-5 mxs:mt-6 lg:mt-7 smThenBaseFont">{currBio.info[lang]}</div>
-              {/* <div className="mt-5 mxs:mt-6 lg:mt-7 smThenBaseFont">{currBio.info[lang]}</div> */}
             </div>
           );
         })}

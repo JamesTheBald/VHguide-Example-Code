@@ -13,7 +13,7 @@ const PediatricsOverviewTheySayBI = () => {
   const theySayListItems = [
     { EN: "Long-term effects / Long-term data", FR: "Effets ou données à long terme" },
     { EN: "Developmental/puberty concerns", FR: "Problèmes en matière de développement ou de puberté" },
-    { EN: "Risks of COVID vs risks of vaccine to children", FR: "La COVID présente peu de risques pour les enfants." },
+    { EN: "Risks of COVID vs risks of vaccine to children", FR: "La COVID présente peu de risques pour les enfants" },
     {
       EN: "Rushed approval/authorization of vaccine for children",
       FR: "Approbation rapide des vaccins pour les enfants",

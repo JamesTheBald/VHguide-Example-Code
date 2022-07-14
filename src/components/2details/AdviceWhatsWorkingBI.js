@@ -30,7 +30,7 @@ const AdviceWhatsWorkingBI = () => {
     <>
       <h3 className="titleFont titleMediumPlus">Ce qui porte fruits pour d’autres cliniciens</h3>
       <div className="mt-6 baseFont text-blue-black  relative">
-        <span>Abordez la conversation en empruntant les étapese</span>
+        <span>Abordez la conversation en empruntant les</span>
         <EaaseHoverPopupFR
           eaaseTextClass="ml-1.5 orangeUnderline"
           eaaseBoxClass="absolute  sm:left-1/4 xl:left-100  top-12  w-full mxs:w-100 sm:w-110 md:w-120 lg:w-140  shadow-gray"

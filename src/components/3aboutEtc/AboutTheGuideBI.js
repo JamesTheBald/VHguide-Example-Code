@@ -13,14 +13,13 @@ import { useMyContext } from "../../context/Context";
 const MotivInterviewBI = () => {
   const { lang } = useMyContext();
 
+  const linkURL =
+    lang === "EN"
+      ? "https://www.canada.ca/content/dam/phac-aspc/documents/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2020-46/issue-4-april-2-2020/ccdrv46i04a06-eng.pdf"
+      : "https://www.canada.ca/content/dam/phac-aspc/documents/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2020-46/issue-4-april-2-2020/ccdrv46i04a06f-fra.pdf";
+
   return (
-    <a
-      className="ml-1.5 orangeUnderline"
-      href="https://www.canada.ca/content/dam/phac-aspc/documents/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2020-46/issue-4-april-2-2020/ccdrv46i04a06-eng.pdf"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      {/* {lang === "EN" ? <></> : <></>} */}
+    <a className="ml-1.5 orangeUnderline" href={linkURL} rel="noopener noreferrer" target="_blank">
       {lang === "EN" ? <>Motivational Interviewing</> : <>l’entrevue motivationnelle</>}{" "}
       <FiExternalLink className="inline" size={18} />
     </a>

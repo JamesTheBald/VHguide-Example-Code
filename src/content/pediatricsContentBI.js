@@ -487,7 +487,7 @@ export const pediatricsContentBI = [
               FR: (
                 <>
                   Je pense qu’il faut se poser cette question : est-ce que la COVID-19 est une maladie importante chez
-                  les enfants? Je pense que la réponse est un « oui » catégorique! On sait que les risques de
+                  les enfants? Je pense que la réponse est un «&nbsp;oui&nbsp;» catégorique! On sait que les risques de
                   répercussions graves sur les enfants sont plus faibles que pour les adultes. Je ne veux donc pas
                   exagérer la situation. Mais dans bien des endroits, il y a des enfants qui ont de graves cas de
                   COVID-19 et qui en meurent. Alors effectivement, les risques sont moins grands chez les enfants, mais
@@ -514,8 +514,8 @@ export const pediatricsContentBI = [
                 <>
                   Malheureusement, ici en Amérique du Nord, on vient juste de traverser une autre vague importante de
                   cette maladie. En raison de cette vague, les chances que vos enfants aient été exposés à la COVID ont
-                  beaucoup augmenté. Quant à moi, je pense qu’en ce moment, il ne faut pas se demander « si » un enfant
-                  non vacciné va attraper la COVID, mais plutôt « à quel moment » il va l’attraper. Pour moi, ça veut
+                  beaucoup augmenté. Quant à moi, je pense qu’en ce moment, il ne faut pas se demander «&nbsp;si&nbsp;» un enfant
+                  non vacciné va attraper la COVID, mais plutôt «&nbsp;à quel moment&nbsp;» il va l’attraper. Pour moi, ça veut
                   dire que la barre est plus haute. S’il est très probable que les enfants attrapent la COVID, mais très
                   peu probable qu’ils aient d’importants effets secondaires en raison des vaccins, alors on devrait
                   vraiment faire vacciner les enfants.
@@ -682,7 +682,7 @@ export const pediatricsContentBI = [
                   Il me fait plaisir de partager une ressource avec vous qui compare le nombre d’enfants qui sont morts
                   de la COVID-19 au nombre d’enfants qui sont morts d’autres maladies pour lesquelles il existe des
                   vaccins. Il y a un vaccin contre la rougeole, n’est-ce pas? Vous vous souvenez, quand [vos enfants]
-                  ont eu 18 mois, ils se sont fait vacciner contre la rougeole, les oreillons, la rubéole et la
+                  ont eu 18&nbsp;mois, ils se sont fait vacciner contre la rougeole, les oreillons, la rubéole et la
                   varicelle, n’est-ce pas? Quand on jette un coup d’œil aux chiffres des mauvaises choses qui découlent
                   de la COVID-19 et qu’on les compare à d’autres maladies pour lesquelles nos enfants sont vaccinés, les
                   résultats de la COVID-19 sont les pires.
@@ -839,8 +839,8 @@ export const pediatricsContentBI = [
               ),
               FR: (
                 <>
-                  Vous devez vous demander : « Quels sont les risques pour mon enfant, des deux côtés de la médaille. Je
-                  le fais vacciner ou non »? Le risque que les enfants non vaccinés aient de mauvaises séquelles de la
+                  Vous devez vous demander : «&nbsp;Quels sont les risques pour mon enfant, des deux côtés de la médaille. Je
+                  le fais vacciner ou non&nbsp;»? Le risque que les enfants non vaccinés aient de mauvaises séquelles de la
                   COVID est généralement moins grand. Mais à mesure que la COVID devient endémique dans les écoles et
                   que le virus subit des mutations, il y aura certainement des risques de complications.
                 </>
@@ -973,7 +973,7 @@ export const pediatricsContentBI = [
                 <>
                   Je pense qu’en général, quand on essaie de prendre ces décisions avec les enfants, on se demande : «
                   Est-ce qu’on en sait assez? Est-ce qu’on en sait assez sur le vaccin et sur la manière dont le vaccin
-                  fonctionne chez les enfants de cinq à onze ans »? Alors, vous savez quoi? Je pense qu’on en sait
+                  fonctionne chez les enfants de cinq à onze ans&nbsp;»? Alors, vous savez quoi? Je pense qu’on en sait
                   assez. On sait que le vaccin a été testé chez 3 000 enfants qui ont été suivis pendant 12 semaines. En
                   six semaines, tous les effets secondaires susceptibles de surgir dans les études de vaccins ont le
                   temps de se manifester. Les effets secondaires que nous avons vus chez les enfants de ce groupe d’âge

@@ -78,7 +78,7 @@ const DetailsLayout = props => {
               {/* Confirm that French translation is correct. */}
             </button>
             <div className="mt-5 mb-2  text-16 mxs:text-18 tracking-0.4 text-blue-pale">
-              {lang === "EN" ? "Hesitancy Type:" : "Type d’hésitation:"}
+              {lang === "EN" ? "Hesitancy Type:" : "Type d’hésitation"}
               {/* Confirm that French translation is correct. */}
             </div>
           </>

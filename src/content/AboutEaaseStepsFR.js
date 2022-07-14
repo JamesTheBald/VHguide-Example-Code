@@ -17,18 +17,20 @@ const AboutEaaseStepsFR = props => {
           <span>S’appuyant sur les principes de</span>
           <MotivInterviewBI />
           <span>
-            , notre équipe a conçu les étapes <span className="whitespace-nowrap">«&nbsp;EAASE&nbsp;»</span> afin d’aider à
-            orienter les conversations avec les patients qui hésitent à se faire vacciner&nbsp;: <b>e</b>ntamer, <b>a</b>
+            , notre équipe a conçu les étapes <span className="whitespace-nowrap">«&nbsp;EAASE&nbsp;»</span> afin
+            d’aider à orienter les conversations avec les patients qui hésitent à se faire vacciner&nbsp;: <b>e</b>
+            ntamer, <b>a</b>
             ffirmer, demander la permission puis faire part d’information (<b>a</b>sk then <b>s</b>hare) et <b>é</b>
-            voquer. Même si nous les appelons «&nbsp;étapes&nbsp;», vous n’êtes pas obligé d’en respecter l’ordre. Vous pouvez
-            commencer et terminer par n’importe quelle étape.
+            voquer. Même si nous les appelons «&nbsp;étapes&nbsp;», vous n’êtes pas obligé d’en respecter l’ordre. Vous
+            pouvez commencer et terminer par n’importe quelle étape.
           </span>
         </div>
         <div className="pt-3">
           L’approche EAASE permet d’améliorer les conversations en établissant un climat de confiance entre vous et
-          votre patient. Au lieu de miser sur l’obtention d’un <span className="whitespace-nowrap">«&nbsp;oui&nbsp;»</span> à la
-          vaccination par votre patient, l’objectif premier d’une conversation EAASE consiste à établir une alliance et
-          à favoriser la confiance en la vaccination.
+          votre patient. Au lieu de miser sur l’obtention d’un{" "}
+          <span className="whitespace-nowrap">«&nbsp;oui&nbsp;»</span> à la vaccination par votre patient, l’objectif
+          premier d’une conversation EAASE consiste à établir une alliance et à favoriser la confiance en la
+          vaccination.
         </div>
         <br />
         <ul className="ml-6 sm:ml-12  listClass">
@@ -97,11 +99,8 @@ const AboutEaaseStepsFR = props => {
           <div className="m-3 mx-auto sm:float-right md:float-none  w-11/12 mxs:w-10/12 sm:w-2/3 md:w-5/6 lg:w-3/4 xl:w-full">
             <StaticImage
               className="pt-4"
-              src={"../assets/screenshots/About the Guide EAASE Example Image.png"}
-
-              // REPLACE THIS WITH A SCREENSHOT OF THE FRENCH PAGE. THEN REMOVE THE ENGLISH ALT TEXT BELOW
-              
-              alt="Example advice page / Exemple de page de conseils"
+              src="../assets/screenshots/Undiff Hes Type Advice - FR.png"
+              alt="Capture d'écran de la page de présentation du type d'hésitation indifférenciée"
               loading="eager"
               quality={90}
               layout="constrained"
@@ -117,8 +116,9 @@ const AboutEaaseStepsFR = props => {
           </div>
           <br />
           <div>
-            Sachez que les conversations EAASE sont parfois des conversations difficiles. N’oubliez pas&nbsp;: l’objectif
-            consiste à aider votre patient à prendre une décision et non pas à le convaincre de se faire vacciner.
+            Sachez que les conversations EAASE sont parfois des conversations difficiles. N’oubliez pas&nbsp;:
+            l’objectif consiste à aider votre patient à prendre une décision et non pas à le convaincre de se faire
+            vacciner.
           </div>
         </div>
       </div>

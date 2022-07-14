@@ -116,8 +116,8 @@ const landingSlidesContentBI = [
   {
     ...orange,
     mainTitle: {
-      EN: "Traduction Français",
-      FR: "Traduction Français",
+      EN: "Version française",
+      FR: "Version française",
     },
     mainImageFileName: "Landing Slide - French Translation.svg",
     exclaimText: "",
@@ -359,7 +359,7 @@ const landingSlidesContentBI = [
       ),
       FR: (
         <span>
-          La section des « perles cliniques » présente des conseils directs, de clinicien à clinicien, montrant comment
+          La section des «&nbsp;perles cliniques&nbsp;» présente des conseils directs, de clinicien à clinicien, montrant comment
           aborder
         </span>
       ),

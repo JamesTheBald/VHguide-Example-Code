@@ -161,7 +161,7 @@ export const medExemptOverviewTheySayContentBI = [
           je peux avoir une exemption pour reporter le vaccin à plus tard?
         </>,
         <>J’allaite mon bébé et je ne veux pas transmettre le vaccin ou les composantes du vaccin à mon bébé.</>,
-        <>C’est « mon corps, mon choix » pour ce qui est de mon bébé, alors pourquoi pas avec les vaccins?</>,
+        <>C’est «&nbsp;mon corps, mon choix&nbsp;» pour ce qui est de mon bébé, alors pourquoi pas avec les vaccins?</>,
       ],
     },
   },

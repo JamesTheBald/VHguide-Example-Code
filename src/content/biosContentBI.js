@@ -31,7 +31,7 @@ const biosContentBI = [
   {
     name: "Raad Fadaak",
     letters: { EN: "PhD", FR: "Ph. D." },
-    title: { EN: "Project and Content Lead", FR: "Chefs de projet et de contenu" },
+    title: { EN: "Project and Content Lead", FR: "Chef de projet et de contenu" },
     image: "Portrait - Raad - 500px.jpg",
     info: {
       EN: (
@@ -54,7 +54,7 @@ const biosContentBI = [
   {
     name: "Nicole Pinto",
     letters: { EN: "MPH", FR: "M. PH." },
-    title: { EN: "Project and Content Lead", FR: "Chefs de projet et de contenu" },
+    title: { EN: "Project and Content Lead", FR: "Chef de projet et de contenu" },
     image: "Portrait - Nicole - 500px.jpg",
     info: {
       EN: (

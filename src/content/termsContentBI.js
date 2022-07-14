@@ -68,9 +68,7 @@ const PrivacyPolicyEN = () => {
         Users may voluntarily submit Personal Information when prompted in Google Forms. This information is stored on
         secured servers behind a firewall and will not be shared with any additional third parties. <br />
       </div>
-      <div className="subSubHeadingFont pb-3 pt-10 dontBreak">
-        Withdrawal of consent and/or personal information
-      </div>
+      <div className="subSubHeadingFont pb-3 pt-10 dontBreak">Withdrawal of consent and/or personal information</div>
       <div>
         If you do not want us to retain your Personal Information after submission, please{" "}
         <button className="orangeLink" onClick={() => setShowContactForm(true)}>
@@ -119,7 +117,6 @@ const PrivacyPolicyFR = () => {
         Le Guide sur l’hésitation vaccinale relève de notre équipe de l’école de politique publique de l’Université de
         Calgary (http://www.vhguide.ca) («&nbsp;site&nbsp;»). Cette page contient nos politiques en matière de collecte,
         d’utilisation et de divulgation des renseignements personnels que nous obtenons auprès des utilisateurs du site.
-        Nous nous servons des renseignements personnels seulement pour fournir le site et l’améliorer.
       </div>
       <div className="pt-4">
         Nous nous servons des renseignements personnels seulement pour fournir le site et l’améliorer. En utilisant le
@@ -175,7 +172,7 @@ const PrivacyPolicyFR = () => {
       </div>
       <div>
         Notre site Web est hébergé sur la plateforme Netlify. Netlify fournit la plateforme en ligne qui nous permet de
-        mettre le guide à votre disposition. Aucun renseignement personnel ne sera stocké sur les serveurs de Netlify..{" "}
+        mettre le guide à votre disposition. Aucun renseignement personnel ne sera stocké sur les serveurs de Netlify.{" "}
         <br />
       </div>
       <div className="pt-4">
@@ -211,9 +208,9 @@ const PrivacyPolicyFR = () => {
         modifications en question entreront en vigueur immédiatement après avoir été publiées sur cette page.
       </div>
       <div className="pt-4">
-        Nous nous réservons le droit de mettre à jour ou de modifier notre politique de confidentialité en tout
-        temps.Vous devriez donc vérifier notre politique de confidentialité périodiquement.Si vous continuez d’utiliser
-        ce service après la publication de modifications à la politique de confidentialité figurant sur cette page, cela
+        Nous nous réservons le droit de mettre à jour ou de modifier notre politique de confidentialité en tout temps.
+        Vous devriez donc vérifier notre politique de confidentialité périodiquement. Si vous continuez d’utiliser ce
+        service après la publication de modifications à la politique de confidentialité figurant sur cette page, cela
         signifie que vous acceptez les modifications et que vous vous conformez à la politique de confidentialité
         modifiée.
       </div>

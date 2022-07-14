@@ -56,10 +56,10 @@ const AboutWhatIsThisFR = props => {
             <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoneSelected(true)}>
               feuille de route
             </Link>
-            <span>pour déterminer, différencier et aborder les </span>
+            <span>pour déterminer, différencier et aborder chaque </span>
             <TypesPopupFR sizeAndPosnClass="top-20 md:top-1/4 left-0 md:left-1/4  w-full sm:w-3/4 md:w-120" />
             {/* left-0 sm:left-16  top-10 */}
-            <span> courants d’hésitation vaccinale.</span>
+            <span> courant d’hésitation vaccinale.</span>
           </li>
         </ul>
         <div className="pb-3">
@@ -68,7 +68,7 @@ const AboutWhatIsThisFR = props => {
         </div>
         <div className="pb-3">
           <span>
-            Les conseils, les principes généraux et les scénarios présentés dans le guide sont fondés sur les techniques
+            Les conseils, les principes généraux et les scénarios présentés dans le guide sont fondés sur les techniques de 
           </span>
           <MotivInterviewBI />
           <span>. L’entrevue motivationnelle encourage tant le clinicien que le patient à</span>

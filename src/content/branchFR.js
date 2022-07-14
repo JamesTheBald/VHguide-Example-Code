@@ -225,9 +225,9 @@ export const branchFR = [
   },
 
   {
-    branchName: "Hésitations vaccinales pédiatrique",
-    branchNameShort: "Hésitations vaccinales pédiatrique",
-    branchNameShortest: "Hésitations vaccinales pédiatrique",
+    branchName: "Hésitations vaccinales pédiatriques",
+    branchNameShort: "Hésitations vaccinales pédiatriques",
+    branchNameShortest: "Hésitations vaccinales pédiatriques",
     linkToDetails: true,
     topic: [
       {
@@ -237,9 +237,9 @@ export const branchFR = [
         linkToDetails: false,
         subtopic: [
           {
-            subtopicName: "Hésitations vaccinales pédiatrique",
-            subtopicNameShort: "Hésitations vaccinales pédiatrique",
-            subtopicNameAsTitle: "Hésitations vaccinales pédiatrique",
+            subtopicName: "Hésitations vaccinales pédiatriques",
+            subtopicNameShort: "Hésitations vaccinales pédiatriques",
+            subtopicNameAsTitle: "Hésitations vaccinales pédiatriques",
             contentID: "Pediatrics",
           },
         ],
