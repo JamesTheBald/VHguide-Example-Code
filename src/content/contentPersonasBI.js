@@ -1835,7 +1835,10 @@ export const contentPersonasBI = {
           FR: <>CanVax - Comment fonctionnent les vaccins à base d’ARNm contre la COVID-19?</>,
         },
         linkText: { EN: <>Educational video from CanVax</>, FR: <>Vidéo éducative de CanVax</> },
-        link: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
+        link: {
+          EN: "https://canvax.ca/how-do-covid-19-mrna-vaccines-work",
+          FR: "https://canvax.ca/fr/comment-fonctionnent-les-vaccins-base-darnm-contre-la-covid-19",
+        },
         description: {
           EN: <>30 second YouTube video from CanVax about how the mRNA vaccines work. (2021)</>,
           FR: <>Vidéo de 30&nbsp;secondes de CanVax sur YouTube sur le fonctionnement des vaccins à ARNm. (2021)</>,
@@ -2712,7 +2715,7 @@ export const contentPersonasBI = {
           ),
           FR: (
             <>
-              La docteur Zainab Abdurrahman explique les allergènes qui seraient susceptibles de causer de rares
+              La docteure Zainab Abdurrahman explique les allergènes qui seraient susceptibles de causer de rares
               réactions allergiques chez certaines personnes qui se font vacciner contre la COVID-19. (mars 2021)
             </>
           ),
@@ -3543,7 +3546,7 @@ export const contentPersonasBI = {
                   FR: (
                     <>
                       En étant enceinte, vous courez un risque accru d’être gravement malade [en raison d’une infection
-                      à la COVID]. Par conséquent, votre risque d’hospitalisation est d’environ 10 à 15 pour cent, un
+                      à la COVID]. Par conséquent, votre risque d’hospitalisation est d’environ 10 à 15&nbsp;pour cent, un
                       risque beaucoup plus élevé de séjour aux soins intensifs. Si vous tombiez très malade au point
                       d’être hospitalisée, vous courez un risque beaucoup plus grand d’accouchement avant terme, ce qui
                       veut dire que votre enfant naîtrait plus tôt que prévu. Vous devriez rester à l’hôpital plus
