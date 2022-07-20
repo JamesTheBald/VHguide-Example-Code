@@ -11,15 +11,15 @@ const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  const log = true;
-  const log2 = false;
+  const log = true; // for important debugging output
+  const log2 = false; // for more complete debugging output
 
-  // STATE FOR FORMATTING
+  // STATE VARIABLES FOR FORMATTING
   const nomScreenWidth = 720; // Key parameter - much formatting is based on this width
   const fsmBrkPt = 880; // This must match the fsm: ("fairly small") breakpoint width in tailwind.config.js
   const [winWidth, setWinWidth] = useState(nomScreenWidth);
   const [winHeight, setWinHeight] = useState((nomScreenWidth * 9) / 16);
-  WindowSizeListener(winWidth, setWinWidth, setWinHeight);
+  WindowSizeListener(winWidth, setWinWidth, setWinHeight); // for automatic content resizing upon window size change
 
   let marginOuter = 50;
   if (typeof window !== `undefined` && winWidth > 100)

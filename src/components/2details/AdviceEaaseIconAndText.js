@@ -14,12 +14,12 @@ const AdviceEaaseIconAndText = props => {
   const pplIcons = queryData.current.pplIcons.edges;
   log2 && console.log("AdviceEaaseIconAndText.js pplIcons=", pplIcons);
 
-  const adviceTabNames = {
-    engage: "engage",
-    affirm: "affirm",
-    ask: "ask and share",
-    evoke: "evoke",
-  };
+  // const adviceTabNames = {
+  //   engage: "engage",
+  //   affirm: "affirm",
+  //   ask: "ask and share",
+  //   evoke: "evoke",
+  // };
 
   const changeAdviceTab = tab => navigate("/details/advice/" + tab);
 
