@@ -38,7 +38,7 @@ const NavFooterLayout = ({ children }) => {
           {children}
         </div>
         <Footer />
-        {lang === "EN" && <SurveySlideIn />}
+        {/* {lang === "EN" && <SurveySlideIn />} */}
       </div>
     </div>
   );
