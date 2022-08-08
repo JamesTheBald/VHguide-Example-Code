@@ -7,10 +7,20 @@ import { VscClose } from "react-icons/vsc";
 import { useMyContext } from "../../context/Context";
 import NavBarItemsAndDropDowns from "./NavBarItemsAndDropDowns";
 import useOnClickOutside from "../../functions/useOnClickOutside";
+import storeLocn from "../../functions/storeLocn";
 
 const NavBar = () => {
-  const { winWidth, fsmBrkPt, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, lang, log, log2 } =
-    useMyContext();
+  const {
+    winWidth,
+    fsmBrkPt,
+    setLocn,
+    setNoPillSelected,
+    setShowContactForm,
+    setFixedBackdrop,
+    lang,
+    log,
+    log2,
+  } = useMyContext();
 
   0 && console.log(log, log2);
   const dropDownRef = useRef();
@@ -25,11 +35,13 @@ const NavBar = () => {
     // For navbar links
     event.stopPropagation();
     log && console.log("NavBar.js onClickGo() runs. Navigating to destn, closing dropdown & contact form");
+    setNoPillSelected(true);
     if (destn === "/explore") {
       setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
-      setNoneSelected(true);
+      storeLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
     } else if (destn === "/details/overview") {
       setLocn({ branch: 4, topic: 0, subtopic: 0, showSubtopic: false });
+      storeLocn({ branch: 4, topic: 0, subtopic: 0, showSubtopic: false });
     }
     navigate(destn);
     setShowDropDown(false);

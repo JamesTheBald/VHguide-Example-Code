@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import HesTypesDropDown from "./HesTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";
@@ -19,7 +20,7 @@ const NavBarItemsAndDropDowns = props => {
     fsmBrkPt,
     branch,
     setLocn,
-    setNoneSelected,
+    setNoPillSelected,
     setShowContactForm,
     setFixedBackdrop,
     lang,
@@ -34,7 +35,8 @@ const NavBarItemsAndDropDowns = props => {
     log && console.log("NavBar.js onClickToBranch() branchNum=", branchNum);
 
     setLocn({ branch: branchNum, topic: 0, subtopic: 0, showSubtopic: false });
-    setNoneSelected(branchNum === 0 ? false : true);
+    storeLocn({ branch: branchNum, topic: 0, subtopic: 0, showSubtopic: false });
+    setNoPillSelected(branchNum === 0 ? false : true);
 
     if (branch[branchNum].linkToDetails) {
       navigate("/details/overview");

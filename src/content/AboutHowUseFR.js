@@ -3,10 +3,11 @@ import { Link } from "gatsby";
 
 import TypesPopupFR from "./TypesPopupFR";
 import { useMyContext } from "../context/Context";
+import storeLocn from "../functions/storeLocn";
 
 const AboutHowUseFR = props => {
   const { textColumnsStyle } = props;
-  const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
+  const { setLocn, setNoPillSelected, setShowContactForm } = useMyContext();
 
   return (
     <article>
@@ -29,7 +30,8 @@ const AboutHowUseFR = props => {
             className="orangeUnderline"
             onClick={() => {
               setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
-              setNoneSelected(true);
+              storeLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
+              setNoPillSelected(true);
             }}
           >
             feuille de route

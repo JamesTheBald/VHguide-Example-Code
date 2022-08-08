@@ -12,7 +12,7 @@ const Home3WhoWeAre = () => {
   const homepagePics = queryData.current.homepagePics.edges;
   0 && console.log(log, log2);
   log2 && console.log("Home3WhoWeAre.js homepagePics=", homepagePics);
-  log && console.log("Home3WhoWeAre.js biosContentBI=", biosContentBI);
+  log2 && console.log("Home3WhoWeAre.js biosContentBI=", biosContentBI);
 
   return (
     <>

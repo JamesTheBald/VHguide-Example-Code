@@ -4,6 +4,7 @@ import { navigate } from "gatsby";
 // Note: the above .svg filename cannot contain spaces, as it is used as a React component name, internally
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
 
 const Subtopics = props => {
   const {
@@ -22,10 +23,12 @@ const Subtopics = props => {
 
   const onClickSubtopic = subtopicNum => {
     setLocn(currLocn => {
-      const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: subtopicNum };
+      const newLocn = { ...currLocn, branch: branchNum, topic: topicNum, subtopic: subtopicNum };
+      storeLocn(newLocn);
       log && console.log("Subtopics.js onClickSubtopic setting locn=", branchNum, topicNum, subtopicNum);
       return newLocn;
     });
+
     navigate("/details/overview");
   };
 

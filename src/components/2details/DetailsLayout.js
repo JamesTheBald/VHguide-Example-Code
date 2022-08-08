@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { navigate } from "gatsby";
 import { animateScroll as scroll } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
+import getStoredLocn from "../../functions/getStoredLocn";
+import equalLocnObj from "../../functions/equalLocnObj";
+
 import Layout from "../0nav&footer/NavFooterLayout";
 import TabBarOAR from "../../components/2details/TabBarOAR";
 
@@ -53,6 +57,7 @@ const DetailsLayout = props => {
         topic: topNum,
         subtopic: subtopNum,
       };
+      storeLocn(newLocn);
       log && console.log("DetailsLayout.js onClickRelated() Setting locn object.");
       return newLocn;
     });
@@ -62,6 +67,15 @@ const DetailsLayout = props => {
   if (typeof window !== `undefined`) {
     scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
   }
+
+  // Check if there's a stored value for locn (i.e. to preserve state after a refresh)
+  useEffect(() => {
+    const storedLocn = getStoredLocn();
+    if (!equalLocnObj(locn, storedLocn)) {
+      log && console.log("DetailsLayout.js storedLocn!==locn, so setting locn =", storedLocn);
+      setLocn(storedLocn);
+    }
+  }, [locn, setLocn, log]);
 
   const yPosnPanel = 24;
   const tabHeight = 50;

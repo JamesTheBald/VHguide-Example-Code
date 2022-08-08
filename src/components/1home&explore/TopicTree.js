@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import Subtopics from "./Subtopics";
+import storeLocn from "../../functions/storeLocn";
 import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
@@ -12,16 +13,16 @@ const TopicTree = props => {
 
   log2 && console.log("");
   log2 && console.log("TopicTree.js runs. branch=", branch);
-  log2 && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
+  log && console.log("TopicTree.js runs. branchNum=", branchNum);
+  log && console.log("TopicTree.js runs. typeof branchNum=", typeof branchNum);
   const w = winWidth;
 
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
-      setLocn(currLocn => {
-        const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false };
-        log && console.log("TopicTree.js onClickTopic() setting locn=", newLocn);
-        return newLocn;
-      });
+      // for topics that do not have any subtopics, go straight to their details page
+      setLocn({ branch: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false });
+      storeLocn({ branch: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false });
+      log && console.log("TopicTree.js onClickTopic linkToDetails=true topicNum=", topicNum);
       navigate("/details/overview");
     } else {
       setLocn(currLocn => {
@@ -43,21 +44,14 @@ const TopicTree = props => {
   const pillToBorderMarginLeft = w < 1366 ? 8 + 18 * (widthAdjRatio - 0.33) : 36;
   const indentTopicLeft = w < 1920 ? 12 + 12 * (widthAdjRatio - 0.33) : 40;
   const indentSubtopicLeft = w < 1920 ? 8 + 10 * (widthAdjRatio - 0.33) : 32;
-  log && console.log("TopicTree.js indentTopicLeft=", indentTopicLeft);
-  log && console.log("TopicTree.js indentSubtopicLeft=", indentSubtopicLeft);
 
-  // const pillToBorderMarginLeft = 8 + 14 * (widthAdjRatio - 0.3125);
   const pillToBorderMarginRight = w < 410 ? 6 : w < 510 ? 8 : pillToBorderMarginLeft - 8;
   const outsideMargin = w < 510 ? 0 : w < 720 ? 8 : pillToBorderMarginLeft + 2;
-  // const outsideMargin = w < 510 ? 10 : 32;
   const borderRadius = w < 510 ? "0px 0px 9px 9px" : w < 720 ? "0px 0px 12px 12px" : "0px 0px 47px 47px";
   const bottomPadding = w < 510 ? 40 : 58;
   const topicStepHt = w < 510 ? 30 : w < 800 ? 36 : 45;
   const leftGapToLine = w < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
   const widTopicNameShortBrkPt = lang === "EN" ? 800 : 1920;
-
-  log2 && console.log("TopicTree.js innerMarginLeft=", pillToBorderMarginLeft);
-  log2 && console.log("TopicTree.js innerMarginRight=", pillToBorderMarginRight);
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;
@@ -77,6 +71,7 @@ const TopicTree = props => {
         >
           {topics.map((currTopic, topicNum) => {
             const showSubtopics = locn.topic === topicNum && locn.showSubtopic ? true : false;
+            log && console.log("TopicTree.js topicNum=", topicNum, ", showSubtopics=", showSubtopics);
 
             return (
               <div key={topicNum}>
@@ -127,7 +122,8 @@ const TopicTree = props => {
                   )}
                 </button>
 
-                {showSubtopics && (
+                {/* {showSubtopics && ( */}
+                {locn.topic === topicNum && locn.showSubtopic && (
                   <Subtopics
                     branchNum={branchNum}
                     topicNum={topicNum}

@@ -48,7 +48,7 @@ const TermsPanels = props => {
 
         <div className="mt-8 sm:mt-10  panelBaseClass  relative z-10">
           {termsContent.map((currPanel, panelNum) => {
-            log && console.log("TermsPanels.js panelNum#", panelNum, "is", currPanel);
+            log2 && console.log("TermsPanels.js panelNum#", panelNum, "is", currPanel);
             return (
               <div key={panelNum} className="mb-6">
                 <Collapsible

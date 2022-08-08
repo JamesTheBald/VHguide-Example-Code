@@ -10,7 +10,7 @@ import LanguageSwitcher from "./LanguageSwitcher.js";
 import ModalContactForm from "./ModalContactForm";
 
 const Footer = () => {
-  const { fixedBackdrop, winWidth, setShowContactForm, setFixedBackdrop, lang, log, log2 } = useMyContext();
+  const { fixedBackdrop, winWidth, setShowContactForm, setFixedBackdrop, locn, lang, log, log2 } = useMyContext();
 
   false && console.log(log, log2);
   const w = winWidth;
@@ -77,6 +77,12 @@ const Footer = () => {
                 onClick={() => {
                   scroll.scrollToTop();
                   setShowContactForm(false);
+
+                  log && console.log("Footer.js saving to sessionStorage: locn=", locn);
+                  sessionStorage.setItem("locn", JSON.stringify(locn));
+
+                  log && console.log("Footer.js saving to sessionStorage: lang=", lang);
+                  sessionStorage.setItem("lang", lang);
                 }}
               >
                 {navbarLabels.terms[lang]}

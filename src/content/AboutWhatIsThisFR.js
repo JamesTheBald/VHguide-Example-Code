@@ -4,11 +4,12 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import TypesPopupFR from "./TypesPopupFR";
 import { useMyContext } from "../context/Context";
+import storeLocn from "../functions/storeLocn";
 
 const AboutWhatIsThisFR = props => {
   const { MotivInterviewBI, textColumnsStyle } = props;
 
-  const { setLocn, setNoneSelected, log } = useMyContext();
+  const { setLocn, setNoPillSelected, log } = useMyContext();
   false && console.log(log);
 
   return (
@@ -45,6 +46,7 @@ const AboutWhatIsThisFR = props => {
               className="orangeUnderline"
               onClick={() => {
                 setLocn({ branch: 1, topic: 0, subtopic: 0, showSubtopic: false });
+                storeLocn({ branch: 1, topic: 0, subtopic: 0, showSubtopic: false });
               }}
             >
               l’hésitation vaccinale indifférenciée
@@ -53,7 +55,7 @@ const AboutWhatIsThisFR = props => {
           </li>
           <li className="relative md:static">
             <span>une</span>
-            <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoneSelected(true)}>
+            <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoPillSelected(true)}>
               feuille de route
             </Link>
             <span>pour déterminer, différencier et aborder chaque </span>

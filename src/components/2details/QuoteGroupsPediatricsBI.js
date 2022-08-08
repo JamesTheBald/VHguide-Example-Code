@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Collapsible from "react-collapsible";
+import Scroll from "react-scroll";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -18,11 +19,13 @@ const QuoteGroupsPediatricsBI = props => {
   const columnStyle = { columnCount: columnNum, columnGap: w < 1600 ? 50 : 60, breakInside: "avoid" };
 
   0 && console.log(log, log2);
-  log2 && console.log("QuoteGroupsPediatricsBI.js panelContent=", panelContent);
+  log && console.log("QuoteGroupsPediatricsBI.js panelContent=", panelContent);
   log2 && console.log("QuoteGroupsPediatricsBI.js pedQuoteGroupInitOpen.current=", pedQuoteGroupInitOpen.current);
 
   const numPanels = panelContent.length + 1;
   const [openGroupNums, setOpenGroupNums] = useState(pedQuoteGroupInitOpen.current);
+
+  const scroll = Scroll.animateScroll;
 
   const TriggerComponent = (currGroup, groupNum) => {
     if (!currGroup.subheading[lang]) return <></>;
@@ -34,9 +37,10 @@ const QuoteGroupsPediatricsBI = props => {
             setOpenGroupNums(currOpenGroupNums => {
               let newOpenGroupNums = Array(numPanels).fill(false);
               newOpenGroupNums[groupNum] = !currOpenGroupNums[groupNum];
-              log2 && console.log("QuoteGroupsPediatricsBI.js onClick newOpenGroupNums=", newOpenGroupNums);
+              log && console.log("QuoteGroupsPediatricsBI.js onClick newOpenGroupNums=", newOpenGroupNums);
               return newOpenGroupNums;
             });
+            scroll.scrollToTop({ smooth: true, duration: 300 });
           }}
         >
           <div className="text-left subHeadingFont">{currGroup.subheading[lang]}</div>
@@ -50,7 +54,6 @@ const QuoteGroupsPediatricsBI = props => {
   };
 
   return panelContent.map((currGroup, groupNum) => {
-    log2 && console.log("QuoteGroupsPediatricsBI.js panelContent.map -> currGroup=", currGroup);
     return (
       <Collapsible
         key={groupNum}
@@ -59,6 +62,8 @@ const QuoteGroupsPediatricsBI = props => {
         triggerOpenedClassName="CustomTriggerCSS--open"
         open={openGroupNums[groupNum]}
         transitionTime={w < 510 ? 200 : 300}
+        transitionCloseTime={200}
+        // transitionTime={0}
       >
         <div className="flex flex-col">
           <div className="subSubHeadingFont mb-6 md:mb-8">
@@ -67,7 +72,6 @@ const QuoteGroupsPediatricsBI = props => {
           <div className="mb-2 mxs:mb-3 sm:mb-12" style={columnStyle}>
             <QuoteBoxes quoteArray={currGroup.cliniciansHearing} setFullStoryID={setFullStoryID} />
           </div>
-          {/* Add French translations in above and below */}
           <div className="subSubHeadingFont mt-2 mb-6 md:mb-8">
             {lang === "EN" ? "What Clinicians are Saying" : "Ce que disent les cliniciens"}
           </div>

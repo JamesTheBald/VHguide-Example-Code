@@ -3,10 +3,11 @@ import { Link } from "gatsby";
 
 import TypesPopupEN from "./TypesPopupEN";
 import { useMyContext } from "../context/Context";
+import storeLocn from "../functions/storeLocn";
 
 const AboutHowUseEN = props => {
   const { textColumnsStyle } = props;
-  const { setLocn, setNoneSelected, setShowContactForm } = useMyContext();
+  const { setLocn, setNoPillSelected, setShowContactForm } = useMyContext();
 
   return (
     <article>
@@ -28,7 +29,8 @@ const AboutHowUseEN = props => {
             className="orangeUnderline"
             onClick={() => {
               setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
-              setNoneSelected(true);
+              storeLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
+              setNoPillSelected(true);
             }}
           >
             flowsheet

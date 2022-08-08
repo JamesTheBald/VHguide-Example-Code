@@ -13,8 +13,8 @@ const TabBarOAR = () => {
   // Get tab name from URL
   const tabMatchDetails = useMatch("/details/:selected");
   const tabMatchAdvice = useMatch("/details/advice/:selected");
-  log && console.log("TabBarOAR.js tabMatchDetails=", tabMatchDetails);
-  log && console.log("TabBarOAR.js tabMatchAdvice=", tabMatchAdvice);
+  log2 && console.log("TabBarOAR.js tabMatchDetails=", tabMatchDetails);
+  log2 && console.log("TabBarOAR.js tabMatchAdvice=", tabMatchAdvice);
   let tabFromURL = "overview";
   if (tabMatchDetails) {
     tabFromURL = tabMatchDetails.selected;
@@ -52,7 +52,7 @@ const TabBarOAR = () => {
     <div className="flex flex-row relative">
       {oarTabNames.map((currTabNames, index) => {
         const isSelected = currTabNames.key === tabFromURL;
-        log && console.log("TabBarOAR.js index=", index, "currTabName=", currTabNames[lang], ", selected=", isSelected);
+        log2 && console.log("TabBarOAR.js index=", index, "currTabName=", currTabNames[lang], ", selected=", isSelected);
 
         return (
           <div key={index}>

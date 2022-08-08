@@ -9,7 +9,8 @@ import { navbarLabels } from "../../content/navbarLabels";
 
 const HesTypesDropDown = props => {
   const { subMenuLinkClass, onClickGo, onClickToBranch, chevVertPosn } = props;
-  const { locn, contentID, winWidth, fsmBrkPt, branch, lang, log } = useMyContext();
+  const { locn, contentID, winWidth, fsmBrkPt, branch, lang, log, log2 } = useMyContext();
+  0 && console.log(log, log2);
 
   const path = typeof window !== "undefined" ? window.location.pathname : "";
   const [showHesDropDown, setShowHesDropDown] = useState(
@@ -17,12 +18,12 @@ const HesTypesDropDown = props => {
   );
 
   const onClickExplore = event => {
-    log && console.log("HesTypesDropDown.js onClickExplore runs");
+    log2 && console.log("HesTypesDropDown.js onClickExplore runs");
     event.stopPropagation();
     if (winWidth < 1366) {
       setShowHesDropDown(() => {
         const newShowDropDown = !showHesDropDown;
-        log && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
+        log2 && console.log("HesTypesDropDown.js setting showHesDropDown=", newShowDropDown);
         return newShowDropDown;
       });
     } else {
@@ -43,8 +44,8 @@ const HesTypesDropDown = props => {
   };
 
   const selected = isNavItemSelected("/explore", locn);
-  log && console.log("HesTypesDropDown.js selected=", selected);
-  log && console.log("HesTypesDropDown.js navbarLabels.hesType[lang]=", navbarLabels.hesType[lang]);
+  log2 && console.log("HesTypesDropDown.js selected=", selected);
+  log2 && console.log("HesTypesDropDown.js navbarLabels.hesType[lang]=", navbarLabels.hesType[lang]);
 
   return (
     // Title & chevron on navbar

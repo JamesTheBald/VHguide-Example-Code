@@ -19,12 +19,12 @@ const DetailsOverviewBI = props => {
   const takeHome = overview?.takeHome;
   const pplIcons = queryData.current.pplIcons.edges;
 
-  log && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
-  log && console.log("DetailsOverview.js locn.branch=", locn.branch);
-  log && console.log("DetailsOverview.js theySay=", theySay);
-  log && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
-  log && console.log("DetailsOverview.js takeHome=", takeHome);
-  log && console.log("DetailsOverview.js pplIcons=", pplIcons);
+  log2 && console.log("DetailsOverview.js runs. contentID=", contentID, " & overview=", overview);
+  log && console.log("DetailsOverview.js runs. locn.branch=", locn.branch);
+  log2 && console.log("DetailsOverview.js theySay=", theySay);
+  log2 && console.log("DetailsOverview.js thingsToConsider=", thingsToConsider);
+  log2 && console.log("DetailsOverview.js takeHome=", takeHome);
+  log2 && console.log("DetailsOverview.js pplIcons=", pplIcons);
 
   const blockClass = "flex flex-col w-full  baseFont text-blue-black";
   const imageClass = "w-12 mxs:w-15 sm:w-20";

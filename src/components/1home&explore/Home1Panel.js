@@ -34,10 +34,10 @@ const Home1Panel = props => {
     backgndImageFileName,
   } = content;
 
-  log && console.log("Home1CarouselPanel.js Incoming winWidth=", w, " & winHeight=", winHeight);
-  log2 && console.log("Home1CarouselPanel.js homepagePics=", homepagePics);
-  log2 && console.log("Home1CarouselPanel.js content=", content);
-  log2 && console.log("Home1CarouselPanel.js backgndImageFileName=", backgndImageFileName);
+  log2 && console.log("Home1Panel.js Incoming winWidth=", w, " & winHeight=", winHeight);
+  log2 && console.log("Home1Panel.js homepagePics=", homepagePics);
+  log2 && console.log("Home1Panel.js content=", content);
+  log2 && console.log("Home1Panel.js backgndImageFileName=", backgndImageFileName);
 
   let titleWidthFrac = w < 510 ? 0.85 : w < 720 ? 0.82 : 0.78;
   if (w > 1024) titleWidthFrac = w < 1200 ? 0.72 : w < 1366 ? 0.65 : 0.43;
@@ -45,15 +45,15 @@ const Home1Panel = props => {
 
   const newContentWidth = w - 2 * marginOuter;
   if (titleWidth > newContentWidth) titleWidth = newContentWidth;
-  log2 && console.log("Home1CarouselPanel.js useEffect titleWidth=", titleWidth);
+  log2 && console.log("Home1Panel.js useEffect titleWidth=", titleWidth);
 
   // Set 2D transform parameters for wavy line
   const [xFm, setXFm] = useState({ xTr: 0, yTr: 0, xSx: 0, ySc: 0 });
   useEffect(() => {
     const xfm = wavyLineTransforms(w);
-    log && console.log("Home1CarouselPanel.js Wavy Line transform object, xfm=", xfm);
+    log2 && console.log("Home1Panel.js Wavy Line transform object, xfm=", xfm);
     setXFm(xfm);
-  }, [w, log]);
+  }, [w, log2]);
 
   const isOnReprodPanel = mainImageFileName.match(/pregnancy/i) ? true : false; // Can't use mainTitle cos it can have JSX
   const isOnFrenchPanel = mainImageFileName.match(/french/i) ? true : false; // Can't use mainTitle cos it can have JSX

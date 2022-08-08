@@ -9,7 +9,7 @@ const PediatricsPanelsBI = () => {
   const { locn, lang, log, log2 } = useMyContext();
 
   false && log && log2 && console.log();
-  log && console.log("PediatricsPanels.js pediatricsContent=", pediatricsContentBI);
+  log2 && console.log("PediatricsPanels.js pediatricsContentBI=", pediatricsContentBI);
 
   if (locn.branch !== 3) navigate("/details/overview");
 

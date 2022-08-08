@@ -11,10 +11,11 @@ const LanguageSwitcher = () => {
   const innerBoxHeight = winWidth < fsmBrkPt ? 18 : 22;
 
   const selectLang = () => {
-    setLang(lang === "EN" ? "FR" : "EN");
-    setBranch(lang === "EN" ? branchFR : branchEN);
-
-    log && console.log("LanguageSwitcher.js InnerBox() onClick lang=", lang);
+    const newLang = lang === "EN" ? "FR" : "EN"; // toggle language value
+    setLang(newLang);
+    setBranch(newLang === "EN" ? branchEN : branchFR);
+    log && console.log("LanguageSwitcher.js saving to sessionStorage: newLang=", newLang);
+    sessionStorage.setItem("lang", newLang);
   };
 
   const InnerBox = props => {
@@ -32,13 +33,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <button
-      className="p-2"
-      onClick={() => selectLang()}
-      onKeyPress={() => selectLang()}
-      tabIndex={0}
-      role="button"
-    >
+    <button className="p-2" onClick={() => selectLang()} onKeyPress={() => selectLang()} tabIndex={0}>
       <div
         className="border border-yellow-darkish flex justify-center items-center"
         style={

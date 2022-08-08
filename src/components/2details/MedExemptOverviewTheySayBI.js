@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
 import DivLine from "../4general/DivLine";
 import { medExemptOverviewTheySayContentBI } from "../../content/medExemptOverviewTheySayContentBI";
 
@@ -20,12 +21,14 @@ const MedExemptOverviewTheySayBI = () => {
 
   const goToReprodConcerns = event => {
     event.stopPropagation(); // stops 'bubbling', ie. stops the click event from also acting on parent elements
-    setLocn({
+    const newLocn = {
       branch: 0,
       topic: 0,
       subtopic: 3,
       showSubtopic: true,
-    });
+    }
+    setLocn(newLocn);
+    storeLocn(newLocn);
     navigate("/details/overview");
   };
 

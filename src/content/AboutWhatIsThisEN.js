@@ -4,11 +4,12 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import TypesPopupEN from "./TypesPopupEN";
 import { useMyContext } from "../context/Context";
+import storeLocn from "../functions/storeLocn";
 
 const AboutWhatIsThisEN = props => {
   const { MotivInterviewBI, textColumnsStyle } = props;
 
-  const { setLocn, setNoneSelected, log } = useMyContext();
+  const { setLocn, setNoPillSelected, log } = useMyContext();
   false && console.log(log);
 
   return (
@@ -42,6 +43,7 @@ const AboutWhatIsThisEN = props => {
               className="orangeUnderline"
               onClick={() => {
                 setLocn({ branch: 1, topic: 0, subtopic: 0, showSubtopic: false });
+                storeLocn({ branch: 1, topic: 0, subtopic: 0, showSubtopic: false });
               }}
             >
               undifferentiated vaccine hesitancy
@@ -50,7 +52,7 @@ const AboutWhatIsThisEN = props => {
           </li>
           <li className="relative md:static">
             <span>A</span>
-            <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoneSelected(true)}>
+            <Link to="/explore" className="p-1.5 orangeUnderline" onClick={() => setNoPillSelected(true)}>
               flowsheet
             </Link>
             <span>for identifying, differentiating, and addressing common </span>
