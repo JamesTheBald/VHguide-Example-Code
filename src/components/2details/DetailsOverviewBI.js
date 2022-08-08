@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import React, { useEffect } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
 import { contentPersonasBI } from "../../content/contentPersonasBI";
@@ -30,6 +30,15 @@ const DetailsOverviewBI = props => {
   const imageClass = "w-12 mxs:w-15 sm:w-20";
 
   const linkDestn = locn.branch === 3 ? "/details/advice/pediatrics" : "/details/advice/eaase";
+
+  // This is the default path (at "/details"); erroneous URLs are routed here. Also need to change the erroneous URL to "/details"
+  useEffect(() => {
+    const path = typeof window !== "undefined" ? window.location.pathname : "";
+    if (path !== "/details/overview") {
+      navigate("/details/overview");
+      log && console.log("DetailsOverviewBI.js path=", path, " is bad so navigating to /details/overview");
+    }
+  }, [log]);
 
   return (
     <div

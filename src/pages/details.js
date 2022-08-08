@@ -30,7 +30,7 @@ const Details = props => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  const otherLegitAdviceTabPaths = ["/advice/engage", "/advice/affirm", "/advice/ask", "/advice/evoke"];
+  const otherLegitAdviceTabPaths = ["/advice/engage", "/advice/affirm", "/advice/ask", "/advice/evoke", "advice/pediatrics" ];
 
   const EaaseIntro = ({ advice }) => {
     return (
@@ -57,14 +57,14 @@ const Details = props => {
         {/* Note: for the following routing to work you need the prefix option set up for
             gatsby-plugin-create-client-paths in gatsby-config.js */}
         <Router basepath="/details">
-          <DetailsOverviewBI default contentID={contentID} />
+          <DetailsOverviewBI default path="/overview" contentID={contentID} />
           <DetailsResources path="/resources" contentID={contentID} />
           <DetailsPearls path="/pearls" />
           <AdviceFullStory path="/advice/fullstory" />
           <PediatricsPanelsBI path="/advice/pediatrics" />
           <EaaseIntro path="/advice/eaase" advice={advice} />
           {otherLegitAdviceTabPaths.map((page, idx) => (
-            // For Details-Advice-Engage, Affirm, Ask, Evoke
+            // For Details-Advice-Engage, Affirm, Ask, Evoke, Pediatrics
             <EaasePages key={idx} path={page} />
           ))}
         </Router>

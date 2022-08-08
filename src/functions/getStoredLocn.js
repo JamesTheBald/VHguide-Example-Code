@@ -2,7 +2,7 @@ import isJSONstring from "./isJSONstring";
 import testLocnObj from "./testLocnObj";
 
 const getStoredLocn = () => {
-  const log = true;
+  const log1 = false;
 
   let storedLocn = "";
   if (typeof sessionStorage !== `undefined`) {
@@ -12,16 +12,16 @@ const getStoredLocn = () => {
 
     if (rawLocn && isJSONstring(rawLocn)) {
       storedLocn = JSON.parse(rawLocn); // converts stringified object back to object
-      log && console.log("getStoredLocn.js parsed storedLocn=", storedLocn);
+      log1 && console.log("getStoredLocn.js parsed storedLocn=", storedLocn);
 
       if (testLocnObj(storedLocn)) {
-        log && console.log("getStoredLocn.js parsed storedLocn passed testLocnObj test");
+        log1 && console.log("getStoredLocn.js parsed storedLocn passed testLocnObj test");
       } else {
         storedLocn = "";
-        log && console.log("getStoredLocn.js parsed storedLocn failed testLocnObj test");
+        log1 && console.log("getStoredLocn.js parsed storedLocn failed testLocnObj test");
       }
     } else {
-      log && console.log("getStoredLocn.js Bad rawLocn =", rawLocn);
+      log1 && console.log("getStoredLocn.js Bad rawLocn =", rawLocn);
     }
   }
   return storedLocn;

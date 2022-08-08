@@ -14,7 +14,7 @@ export const useMyContext = () => useContext(myContext);
 const MyProvider = ({ children }) => {
   // This context function is invoked by most components... so a lot!
 
-  const log = true; // for important debugging output
+  const log = false; // for important debugging output
   const log2 = false; // for more complete debugging output
 
   // STATE VARIABLES FOR FORMATTING

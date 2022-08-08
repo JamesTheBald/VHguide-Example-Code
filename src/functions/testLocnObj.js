@@ -1,5 +1,5 @@
 const testLocnObj = inp => {
-  const log1 = true;
+  const log1 = false;
   log1 && console.log("testLocnObj.js runs. input object=", inp);
 
   if (!inp) {

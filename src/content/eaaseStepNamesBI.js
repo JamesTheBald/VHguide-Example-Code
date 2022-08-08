@@ -1,9 +1,11 @@
 import React from "react";
 
+const log1 = false;
 let w = 720;
+
 if (typeof window !== `undefined`) {
   w = window.innerWidth;
-  console.log("adviceTabNavBarText.js w=", w);
+  log1 && console.log("eaaseStepNamesBI.js w=", w);
 }
 
 const eaaseStepNamesBI = {

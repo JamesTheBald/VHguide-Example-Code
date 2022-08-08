@@ -1,17 +1,17 @@
 import React from "react";
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 
 import { pediatricsContentBI } from "../../content/pediatricsContentBI";
 import { useMyContext } from "../../context/Context";
 import QuoteGroupsPediatricsBI from "../2details/QuoteGroupsPediatricsBI";
 
 const PediatricsPanelsBI = () => {
-  const { locn, lang, log, log2 } = useMyContext();
+  const { lang, log, log2 } = useMyContext();
 
   false && log && log2 && console.log();
   log2 && console.log("PediatricsPanels.js pediatricsContentBI=", pediatricsContentBI);
 
-  if (locn.branch !== 3) navigate("/details/overview");
+  // if (locn.branch !== 3) navigate("/details/overview");
 
   return (
     <div className="flex flex-col">
