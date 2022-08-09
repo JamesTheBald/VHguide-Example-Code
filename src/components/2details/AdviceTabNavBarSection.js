@@ -2,7 +2,7 @@ import React from "react";
 import { navigate } from "gatsby";
 import { useMatch } from "@reach/router";
 
-import { animateScroll as scroll } from "react-scroll";
+// import { animateScroll } from "react-scroll";
 import { useMyContext } from "../../context/Context";
 import eaaseStepNamesBI from "../../content/eaaseStepNamesBI";
 
@@ -16,9 +16,8 @@ const AdviceTabNavBarSection = props => {
 
   const changeTab = tabName => {
     navigate("/details/advice/" + tabName);
-
     if (typeof window !== `undefined`) {
-      scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+      // animateScroll.scrollToTop({ duration: 300 }); // scroll animation time in ms
     }
   };
 

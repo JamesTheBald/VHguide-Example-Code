@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import Scroll from "react-scroll";
+import { animateScroll } from "react-scroll";
 import { RiCopyrightLine } from "react-icons/ri";
 
 import { useMyContext } from "../../context/Context";
@@ -25,8 +25,6 @@ const Footer = () => {
 
   log2 && console.log("Footer.js pathname=", pathname);
   log2 && console.log("Footer.js onIndexPage=", onIndexPage);
-
-  const scroll = Scroll.animateScroll;
 
   return (
     <div className="relative">
@@ -75,7 +73,7 @@ const Footer = () => {
                 to="/terms"
                 className="underline cursor-pointer  mr-8 qsm:mr-10 fsm:mr-12"
                 onClick={() => {
-                  scroll.scrollToTop();
+                  animateScroll.scrollToTop();
                   setShowContactForm(false);
 
                   log && console.log("Footer.js saving to sessionStorage: locn=", locn);

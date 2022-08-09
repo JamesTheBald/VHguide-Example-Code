@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import ReactModal from "react-modal";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 import { IoClose } from "react-icons/io5";
 
 import { useMyContext } from "../context/Context";
@@ -11,7 +11,7 @@ const ContestTermsEN = props => {
   const { setFixedBackdrop, log } = useMyContext();
 
   if (typeof window !== `undefined`) {
-    scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+    animateScroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
   }
 
   const closeModal = () => {

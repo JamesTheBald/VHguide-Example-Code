@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import React, { useEffect } from "react";
 import { Link, navigate } from "gatsby";
 
 import { useMyContext } from "../../context/Context";

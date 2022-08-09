@@ -22,7 +22,7 @@ const EaaseHoverPopupEN = props => {
             conversation is to build an alliance and set a foundation for vaccine confidence.
           </div>
           <StaticImage
-            src="../../assets/other/EAASE Icon.svg"
+            src="../assets/other/EAASE Icon.svg"
             alt="EAASE cycle"
             className="order-1 mxs:order-2  pt-0.5 mt-4 mxs:mt-0 mxs:ml-2 sm:ml-4  w-40 mxs:w-36 sm:w-40  flex-shrink-0"
           />

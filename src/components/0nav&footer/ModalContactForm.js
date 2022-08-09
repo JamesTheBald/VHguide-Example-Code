@@ -1,6 +1,6 @@
 import React from "react";
 import ReactModal from "react-modal";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 import { VscClose } from "react-icons/vsc";
 
 import { useMyContext } from "../../context/Context";
@@ -16,7 +16,7 @@ const ModalContactForm = () => {
   const heightModal = winWidth < 720 ? 900 : 840;
 
   if (typeof window !== `undefined`) {
-    scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+    animateScroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
   }
 
   const closeModal = () => {

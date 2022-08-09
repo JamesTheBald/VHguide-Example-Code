@@ -1,5 +1,5 @@
 import React from "react";
-import { animateScroll } from "react-scroll";
+// import { animateScroll } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
 import AdviceEaaseIconAndText from "./AdviceEaaseIconAndText";
@@ -14,7 +14,7 @@ const AdviceEaase = props => {
   log && console.log("AdviceEaase.js eaaseTitlesAndButtonsBI=", eaaseTitlesAndButtonsBI);
 
   if (typeof window !== `undefined`) {
-    animateScroll.scrollToTop({ duration: 0 }); // time in ms
+    // animateScroll.scrollToTop({ duration: 300 }); // time in ms
   }
 
   const blockContainer = "mxs:pr-2 sm:pr-9 md:pr-15   flex flex-col";

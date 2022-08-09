@@ -1,7 +1,7 @@
 // Function to store locn to sessionStorage
 import testLocnObj from "./testLocnObj";
 
-const log = true;
+const log = false;
 
 const storeLocn = locn1 => {
   if (testLocnObj(locn1)) {

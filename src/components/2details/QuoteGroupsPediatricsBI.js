@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Collapsible from "react-collapsible";
-import Scroll from "react-scroll";
+// import { animateScroll } from "react-scroll";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -25,8 +25,6 @@ const QuoteGroupsPediatricsBI = props => {
   const numPanels = panelContent.length + 1;
   const [openGroupNums, setOpenGroupNums] = useState(pedQuoteGroupInitOpen.current);
 
-  const scroll = Scroll.animateScroll;
-
   const TriggerComponent = (currGroup, groupNum) => {
     if (!currGroup.subheading[lang]) return <></>;
     return (
@@ -40,7 +38,7 @@ const QuoteGroupsPediatricsBI = props => {
               log && console.log("QuoteGroupsPediatricsBI.js onClick newOpenGroupNums=", newOpenGroupNums);
               return newOpenGroupNums;
             });
-            scroll.scrollToTop({ smooth: true, duration: 300 });
+            // animateScroll.scrollToTop({ smooth: true, duration: 300 });
           }}
         >
           <div className="text-left subHeadingFont">{currGroup.subheading[lang]}</div>

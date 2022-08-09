@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { navigate } from "gatsby";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
 import storeLocn from "../../functions/storeLocn";
@@ -64,16 +64,17 @@ const DetailsLayout = props => {
     navigate("/details/overview");
   };
 
-  if (typeof window !== `undefined`) {
-    scroll.scrollToTop({ duration: 0 }); // scroll animation time in ms
-  }
-
-  // Check if there's a stored value for locn (i.e. to preserve state after a refresh)
+  // Check if there's a stored value for locn, different to locn state var. (This is to preserve locn after a refresh)
   useEffect(() => {
     const storedLocn = getStoredLocn();
     if (!equalLocnObj(locn, storedLocn)) {
       log && console.log("DetailsLayout.js storedLocn!==locn, so setting locn =", storedLocn);
       setLocn(storedLocn);
+
+      // Also, after rendering, scroll to top
+      if (typeof window !== `undefined`) {
+        animateScroll.scrollToTop({ duration: 300 }); // scroll animation time in ms
+      }
     }
   }, [locn, setLocn, log]);
 
