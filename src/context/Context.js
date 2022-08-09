@@ -12,7 +12,7 @@ const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyProvider = ({ children }) => {
-  // This context function is invoked by most components... so a lot!
+  // This context function is invoked by most components... i.e. often!
 
   const log = false; // for important debugging output
   const log2 = false; // for more complete debugging output

@@ -7747,7 +7747,7 @@ export const contentPersonasBI = {
               </>
             ),
           },
-          image: "doctorWhiteWomanDarkBrownHair",
+          image: "doctorWhiteWomanBrownHairGlasses.svg",
         },
         ask: {
           text: {
