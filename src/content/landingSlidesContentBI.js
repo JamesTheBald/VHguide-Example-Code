@@ -201,52 +201,52 @@ const landingSlidesContentBI = [
     buttonFuncFlag: "",
   },
 
-  {
-    ...orange,
-    mainTitle: {
-      EN: "Are your patients requesting vaccine exemptions?",
-      FR: "Est-ce que vos patients demandent une exemption vaccinale?",
-    },
-    mainImageFileName: "Landing Slide - Medical Exemptions.svg",
-    exclaimText: "",
-    introPart1: {
-      EN: (
-        <span>
-          The Vaccine Hesitancy Guide has advice to help clinicians speak with patients seeking medical exemptions to
-          COVID-19 vaccination.
-        </span>
-      ),
-      FR: (
-        <span>
-          Le Guide sur l’hésitation vaccinale présente des conseils pour aider les cliniciens à s’entretenir avec les
-          patients
-        </span>
-      ),
-    },
-    introPart2: {
-      EN: (
-        <span className="pl-1">
-          It includes content on how to express your professional obligations and identify the underlying concerns
-          behind your patient’s request for an exemption.
-        </span>
-      ),
-      FR: (
-        <span className="pl-1">
-          désirant obtenir une exemption médicale pour le vaccin contre la COVID-19. Le guide comprend du contenu vous
-          aidant à exprimer vos obligations professionnelles et à déterminer les inquiétudes se dissimulant derrière la
-          demande d’exemption de votre patient.
-        </span>
-      ),
-    },
-    introPart3: {
-      EN: <></>,
-      FR: <></>,
-    },
-    buttonText: { EN: "Browse Medical Exemption Advice", FR: "Conseils pour exemptions médicales" },
-    buttonDestn: "/details/overview",
-    newLocn: { branch: 4, topic: 0, subtopic: 0, showSubtopic: false },
-    buttonFuncFlag: "",
-  },
+  // {
+  //   ...orange,
+  //   mainTitle: {
+  //     EN: "Are your patients requesting vaccine exemptions?",
+  //     FR: "Est-ce que vos patients demandent une exemption vaccinale?",
+  //   },
+  //   mainImageFileName: "Landing Slide - Medical Exemptions.svg",
+  //   exclaimText: "",
+  //   introPart1: {
+  //     EN: (
+  //       <span>
+  //         The Vaccine Hesitancy Guide has advice to help clinicians speak with patients seeking medical exemptions to
+  //         COVID-19 vaccination.
+  //       </span>
+  //     ),
+  //     FR: (
+  //       <span>
+  //         Le Guide sur l’hésitation vaccinale présente des conseils pour aider les cliniciens à s’entretenir avec les
+  //         patients
+  //       </span>
+  //     ),
+  //   },
+  //   introPart2: {
+  //     EN: (
+  //       <span className="pl-1">
+  //         It includes content on how to express your professional obligations and identify the underlying concerns
+  //         behind your patient’s request for an exemption.
+  //       </span>
+  //     ),
+  //     FR: (
+  //       <span className="pl-1">
+  //         désirant obtenir une exemption médicale pour le vaccin contre la COVID-19. Le guide comprend du contenu vous
+  //         aidant à exprimer vos obligations professionnelles et à déterminer les inquiétudes se dissimulant derrière la
+  //         demande d’exemption de votre patient.
+  //       </span>
+  //     ),
+  //   },
+  //   introPart3: {
+  //     EN: <></>,
+  //     FR: <></>,
+  //   },
+  //   buttonText: { EN: "Browse Medical Exemption Advice", FR: "Conseils pour exemptions médicales" },
+  //   buttonDestn: "/details/overview",
+  //   newLocn: { branch: 4, topic: 0, subtopic: 0, showSubtopic: false },
+  //   buttonFuncFlag: "",
+  // },
 
   {
     ...mainBlue,

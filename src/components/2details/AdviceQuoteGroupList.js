@@ -20,11 +20,9 @@ const AdviceQuoteGroupList = props => {
 
   const firstAskAdviceQuote = advice?.ask?.content[0]?.quotes[0]?.text[lang];
   const firstAskAdviceStringLength = firstAskAdviceQuote && reactElementToJSXString(firstAskAdviceQuote).length;
-  const askAdviceExists = false;
   // const askAdviceExists = firstAskAdviceStringLength > 14;
   log2 && console.log("AdviceQuoteGroupList.js runs. askAdvice=", firstAskAdviceQuote);
   log2 && console.log("AdviceQuoteGroupList.js runs. JSX string length of askAdvice=", firstAskAdviceStringLength);
-  log2 && console.log("AdviceQuoteGroupList.js runs. askAdviceExists=", askAdviceExists);
 
   const path = typeof window !== "undefined" ? window.location.pathname : "";
   const onReprodAdviceAsk =
@@ -39,25 +37,26 @@ const AdviceQuoteGroupList = props => {
 
   return (
     <>
-      <div className="h-12 axs:h-14 mxs:h-16" />
+      <div className="h-13 axs:h-16 mxs:h-18" />
 
       {
-        // Always show EAASE step heading on narrower screens and for Ask & Share
+        // 'Ask for permission to share info' subheading - on narrower screens and for Ask & Share
         (winWidth < 720 || tabSelected === "ask") && (
-          <EaaseStepTitle tabSelected={tabSelected} askAdviceExists={askAdviceExists} />
+          <>
+            <EaaseStepTitle tabSelected={tabSelected} />
+            <div className="h-3 mxs:h-4" />
+          </>
         )
       }
-
       <QuoteGroups panelContent={contentArray} initOpen={true} />
 
+      {/*  'then Share information' subheading & quote boxes */}
       {tabSelected === "ask" && (
-        <div className="mt-6">
-          {askAdviceExists && <div style={{ height: 30 }} />}
-          {askAdviceExists && <div className="mb-9  w-full  border-gray-medium border-solid border-b-3" />}
+        <div className="mt-7">
           <span className="plusFont">{otherWord1}</span>
           <span className="ml-1.5 emphFont">{keyword}</span>
           <span className="ml-1.5 plusFont">{otherWord2}</span>
-          <div className="h-6 axs:h-7 mxs:h-9" />
+          <div className="h-3 sm:h-4" />
           <QuoteGroups panelContent={advice.share.content} initOpen={!onReprodAdviceAsk} />
         </div>
       )}

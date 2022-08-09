@@ -48,7 +48,7 @@ const Footer = () => {
       {/* Footer */}
       <div className={`z-40 qsm:z-50 ${fixedBackdrop ? "fixed w-full bottom-0" : "relative"} overflow-y-hidden`}>
         <footer
-          className="mt-6  pl-8 axs:pl-10 md:pl-12 lg:pl-14  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish text-10 mxs:text-12 text-blue-black"
+          className="mt-6  pl-8 axs:pl-10 md:pl-12 lg:pl-14  w-full flex justify-between items-center  bg-gray-light border-t border-solid border-gray-lightish  text-12 text-blue-black"
           style={w < 510 ? { height: 80 } : w < 900 ? { height: 90 } : { height: 75 }}
           aria-hidden="true"
         >
@@ -58,7 +58,7 @@ const Footer = () => {
               style={w < 900 ? { flexDirection: "column" } : { flexDirection: "row-reverse", alignItems: "center" }}
             >
               {/* <div className="flex flex-wrap flex-row-reverse justify-end  items-center  gap-y-1.5 mxs:gap-y-1  bg-red-100"> */}
-              <div className="mr-12 flex">
+              {/* <div className="mr-12 flex">
                 <a
                   className={`underline cursor-pointer`}
                   href="https://survey.ucalgary.ca/jfe/form/SV_6GbMwSo0jnPE1WS"
@@ -67,7 +67,7 @@ const Footer = () => {
                 >
                   {navbarLabels.thoughts[lang]}
                 </a>
-              </div>
+              </div> */}
 
               <Link
                 to="/terms"

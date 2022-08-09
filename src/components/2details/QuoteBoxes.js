@@ -64,11 +64,12 @@ const QuoteBoxes = props => {
             {/* Need breakInside: "avoid" or dontBreak Tailwind class for each containing box down from the parent with the columns.
             See: https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */}
             {reactElementToJSXString(quote.text[lang]).length > 20 && (
-              <div className="pt-5 flex flex-col justify-start dontBreak  relative" key={idx}>
+              <div className="py-6 flex flex-col justify-start dontBreak  relative" key={idx}>
                 {/* Outer box to prevent column breaking inside */}
 
+                {/* Labels for quote boxes, where present in the content file  */}
                 {label && (
-                  <div className="absolute top-0 px-6 pt-1.5 pb-1  baseFont text-blue-black font-semibold  bg-gray-neutral  rounded-full z-50">
+                  <div className="absolute top-2 px-6 pt-1.5 pb-1  baseFont text-blue-black font-semibold  bg-gray-neutral  rounded-full z-40">
                     {label}
                   </div>
                 )}
@@ -120,6 +121,10 @@ const QuoteBoxes = props => {
                     </Link>
                   )}
                 </div>
+
+                {/* {label && <div className="h-0.5" />} */}
+                {/* <div className="h-0.5" /> */}
+                
               </div>
             )}
           </div>

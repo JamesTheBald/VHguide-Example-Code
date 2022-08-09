@@ -9,7 +9,7 @@ import "../../styles/collapsible.css";
 import "remixicon/fonts/remixicon.css";
 
 import Seo from "./Seo";
-import SurveySlideIn from "./SurveySlideIn";
+// import SurveySlideIn from "./SurveySlideIn";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { useMyContext } from "../../context/Context";

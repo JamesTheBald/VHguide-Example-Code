@@ -1,4 +1,5 @@
 import { navigate } from "gatsby";
+import { animateScroll } from "react-scroll";
 
 const changeOARTab = (desiredTabNames, onPediatrics) => {
   // console.log("changeOARTab.js runs. desiredTabNames=", desiredTabNames);
@@ -15,6 +16,8 @@ const changeOARTab = (desiredTabNames, onPediatrics) => {
   }
 
   navigate(`/details/${desiredTabNames.key}`);
+  animateScroll.scrollToTop({ duration: 0 }); // time in ms
+
 };
 
 export default changeOARTab;
