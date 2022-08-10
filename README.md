@@ -5,6 +5,7 @@
   </a>
 </p>
 <h1 align="center">
+  Note: This is an incomplete copy of the codebase. It is only for code demo purposes. It will not run!
   Gatsby & TailwindCSS starter
 </h1>
 
