@@ -4,20 +4,22 @@ import { navigate } from "gatsby";
 import { useMyContext } from "../../context/Context";
 
 const AdviceEaaseIconAndText = props => {
-  const { advice, tab } = props;
-  const { winWidth, queryData, log2 } = useMyContext();
+  const { advice, titleNButtonBI } = props;
+  const { winWidth, queryData, lang, log, log2 } = useMyContext();
 
+  0 && console.log(log, log2);
+  const tab = titleNButtonBI.tab;
   log2 && console.log("AdviceEaaseIconAndText.js advice.eaase[tab].image=", advice?.eaase[tab].image);
 
   const pplIcons = queryData.current.pplIcons.edges;
   log2 && console.log("AdviceEaaseIconAndText.js pplIcons=", pplIcons);
 
-  const adviceTabNames = {
-    engage: "engage",
-    affirm: "affirm",
-    ask: "ask and share",
-    evoke: "evoke",
-  };
+  // const adviceTabNames = {
+  //   engage: "engage",
+  //   affirm: "affirm",
+  //   ask: "ask and share",
+  //   evoke: "evoke",
+  // };
 
   const changeAdviceTab = tab => navigate("/details/advice/" + tab);
 
@@ -43,9 +45,9 @@ const AdviceEaaseIconAndText = props => {
   const TextBlock = () => {
     return (
       <div className="baseFont text-blue-black">
-        <span>&quot;</span>
-        {advice.eaase[tab].text}
-        <span>&quot;</span>
+        {lang === "EN" ? <span>&quot;</span> : <span>«&nbsp;</span>}
+        {advice.eaase[tab].text[lang]}
+        {lang === "EN" ? <span>&quot;</span> : <span>&nbsp;»</span>}
       </div>
     );
   };
@@ -57,7 +59,7 @@ const AdviceEaaseIconAndText = props => {
         onClick={() => changeAdviceTab(tab)}
         onKeyPress={() => changeAdviceTab(tab)}
       >
-        More ways to {adviceTabNames[tab]}
+        {titleNButtonBI.buttonText[lang]}
       </button>
     );
   };

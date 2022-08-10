@@ -18,7 +18,14 @@ const Terms = () => {
     }
   }, [setWinWidth, setWinHeight]);
 
-  return <TermsPanels pageTitle="Terms &amp; Notices" />;
+  return (
+    <TermsPanels
+      pageTitle={{
+        EN: "Terms & Notices",
+        FR: "Modalités et avis",
+      }}
+    />
+  );
 };
 
 Terms.Layout = Layout;

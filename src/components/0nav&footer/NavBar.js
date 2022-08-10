@@ -7,9 +7,20 @@ import { VscClose } from "react-icons/vsc";
 import { useMyContext } from "../../context/Context";
 import NavBarItemsAndDropDowns from "./NavBarItemsAndDropDowns";
 import useOnClickOutside from "../../functions/useOnClickOutside";
+import storeLocn from "../../functions/storeLocn";
 
 const NavBar = () => {
-  const { winWidth, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } = useMyContext();
+  const {
+    winWidth,
+    fsmBrkPt,
+    setLocn,
+    setNoPillSelected,
+    setShowContactForm,
+    setFixedBackdrop,
+    lang,
+    log,
+    log2,
+  } = useMyContext();
 
   0 && console.log(log, log2);
   const dropDownRef = useRef();
@@ -24,11 +35,13 @@ const NavBar = () => {
     // For navbar links
     event.stopPropagation();
     log && console.log("NavBar.js onClickGo() runs. Navigating to destn, closing dropdown & contact form");
+    setNoPillSelected(true);
     if (destn === "/explore") {
       setLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
-      setNoneSelected(true);
+      storeLocn({ branch: 0, topic: 0, subtopic: 0, showSubtopic: false });
     } else if (destn === "/details/overview") {
       setLocn({ branch: 4, topic: 0, subtopic: 0, showSubtopic: false });
+      storeLocn({ branch: 4, topic: 0, subtopic: 0, showSubtopic: false });
     }
     navigate(destn);
     setShowDropDown(false);
@@ -41,22 +54,27 @@ const NavBar = () => {
     setShowDropDown(wantOpen);
   };
 
-  const HamburgerIcon = className => {
+  const HamburgerIcon = ({ rtPosn }) => {
+    log2 && console.log("NavBar.js HamburgerIcon() rtPosn=", rtPosn);
     return (
       <button
         name="Hamburger icon"
-        className={`w-24  flex justify-center items-center cursor-pointer ${className}`}
+        className="absolute top-3 fsm:top-5  cursor-pointer"
+        style={{ right: rtPosn }}
         onClick={event => onClickHamburger(event, true)}
       >
-        <IoIosMenu size={winWidth < 720 ? 40 : 44} />
+        <IoIosMenu size={winWidth < fsmBrkPt ? 40 : 44} />
       </button>
     );
   };
 
-  const CloseButton = () => {
+  const CloseButton = ({ rtPosn }) => {
+    log2 && console.log("NavBar.js CloseButton() rtPosn=", rtPosn);
     return (
       <button
-        className="lg:hidden p-2 absolute -top-14 sm:-top-16 right-6"
+        className="p-2  absolute -top-14 fsm:-top-16  cursor-pointer"
+        // className="lg:hidden p-2 absolute -top-14 fsm:-top-16  cursor-pointer"
+        style={{ right: rtPosn }}
         onClick={event => onClickHamburger(event, false)}
       >
         <VscClose size={30} />
@@ -64,56 +82,58 @@ const NavBar = () => {
     );
   };
 
-  const navBarHeight = winWidth < 720 ? 65 : 80;
+  const navBarHeight = winWidth < fsmBrkPt ? 65 : 80;
 
   return (
     <>
-      <div // Main Navbar container
+      <div // Main Navbar Container, with Logo
         ref={dropDownRef}
-        className={`fixed w-full  flex ${showDropDown && "flex-col  border-gray-light"} sm:flex-row justify-between 
+        className={`fixed w-screen  flex ${showDropDown && "flex-col  border-gray-light"} fsm:flex-row justify-between 
                     ${!showDropDown && "items-center  border-gray-light"}
                     border-solid border-b border-gray-light  bgUnselec
-                    smFont text-gray-light  z-50`}
+                    fsmFont text-gray-light  z-50`}
         style={{ height: navBarHeight + 1 }}
       >
         <button // VH Guide logo
-          className="ml-2 mxs:ml-5 sm:ml-6 md:ml-7 lg:ml-8  w-56 mxs:w-56 sm:w-80 lg:w-85  cursor-pointer"
+          className="ml-5 fsm:ml-6 md:ml-7 lg:ml-8  w-56 mxs:w-56 fsm:w-80 lg:w-85  cursor-pointer"
           style={{ height: navBarHeight }}
           onClick={evnt => onClickGo(evnt, "/")}
         >
-          <StaticImage src="../../assets/homeAndExplore/Logo for Website.svg" alt="VH Guide logo" />
+          {lang === "EN" ? (
+            <StaticImage src="../../assets/navbar/Logo for Website EN.svg" alt="VH Guide logo" />
+          ) : (
+            <StaticImage
+              src="../../assets/navbar/Logo for Website FR.svg"
+              alt="logo du guide sur l'hésitation vaccinale"
+            />
+          )}
         </button>
 
-        {/* WIDE screens => normal navbar, either on 1 line or split into 2 (stacked) */}
+        {/* Normal NavBar Menu (WIDER screens), either on 1 line (WIDE) or split into 2 (stacked, MEDIUM WIDTH) */}
         {showDropDown || winWidth >= 1366 ? (
           <div
-            className="hidden sm:flex justify-center absolute lg:static  lg:mr-6 pt-1  w-full lg:w-auto  items-center
-                       sm:border-b lg:border-0 border-gray-light  bgUnselec  z-40"
+            className="hidden fsm:flex justify-center absolute lg:static  lg:mr-6 pt-1  w-full lg:w-auto  items-center
+                       fsm:border-b lg:border-0 border-gray-light  bgUnselec  z-40"
             style={{ top: navBarHeight + 1, height: navBarHeight }}
           >
             <NavBarItemsAndDropDowns onClickGo={onClickGo} setShowDropDown={setShowDropDown} />
-            <CloseButton />
+            <CloseButton rtPosn={38} />
           </div>
         ) : (
-          <div className="hidden sm:inline absolute top-4 right-0">
-            <HamburgerIcon />
-          </div>
+          <HamburgerIcon rtPosn={38} />
         )}
 
-        {/* NARROW screens - Dropdown Menu + Close Button or Hamburger */}
-        <div className="sm:hidden relative">
-          {showDropDown ? (
+        {/* Drop-Down Menu for NARROWER screens */}
+        <div className="fsm:hidden relative  mr-2">
+          {showDropDown && (
             <div
-              name="Dropdown menu container"
-              className="pt-4 pb-7  absolute left-0  w-full  flex flex-col items-start
+              className="pb-7  absolute left-0  w-full  flex flex-col items-start
                          border-b border-gray-light  bgUnselec  rounded-b-3xl"
               style={{ top: 1 }}
             >
               <NavBarItemsAndDropDowns onClickGo={onClickGo} setShowDropDown={setShowDropDown} />
-              <CloseButton />
+              <CloseButton rtPosn={25} />
             </div>
-          ) : (
-            <HamburgerIcon />
           )}
         </div>
       </div>
@@ -121,7 +141,9 @@ const NavBar = () => {
       <div
         name="spacer, because navbar is fixed"
         style={
-          showDropDown && winWidth >= 720 && winWidth < 1366 ? { height: navBarHeight * 2 } : { height: navBarHeight }
+          showDropDown && winWidth >= fsmBrkPt && winWidth < 1366
+            ? { height: navBarHeight * 2 }
+            : { height: navBarHeight }
         }
       />
     </>

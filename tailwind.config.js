@@ -18,6 +18,7 @@ module.exports = {
       mxs: "510px", // 'medium extra small'
       qsm: "610px", // 'quite small'
       sm: "720px",
+      fsm: "880px", // 'fairly small'. This must match the constant fsmBrkPt in Context.js
       md: "1024px",
       lg: "1366px",
       mxl: "1640px",
@@ -62,8 +63,6 @@ module.exports = {
       medium: "500",
       semibold: "600",
       bold: "700",
-      // 800: "800",
-      // 900: "900",
     },
 
     fontFamily: {
@@ -190,10 +189,11 @@ module.exports = {
         },
 
         yellow: {
+          light: "#E3B256",
           medium: "#DB981D",
           darkish: "#B1770C",
           dark: "#AC740C",
-          darker: "hsl(39, 86%, 31%)",
+          darker: "hsl(39, 86%, 31%)", // = #93630b
         },
 
         lilac: {
@@ -236,21 +236,30 @@ module.exports = {
         100: "25rem",
         110: "27.5rem",
         120: "30rem", //480px
+        125: "31.25rem",
+        130: "32.5rem",
+        135: "33.75rem",
         140: "35rem",
+        145: "36.25rem",
         150: "37.5rem",
+        155: "38.75rem",
         160: "40rem",
+        165: "41.25rem",
         170: "42.5rem",
         175: "43.75rem", //700px
         180: "45rem", //720px
+        185: "46.25", 
         190: "47.5rem", //720px
         195: "48.75rem", //720px
         200: "50rem", //800px
         210: "52.5rem", //840px
         220: "55rem", //880px
         225: "56.25rem", //900px
+        230: "57.5rem",
         240: "60rem", //960px
         250: "62.5rem",
         260: "65rem",
+        270: "67.5rem",
         280: "70rem",
         300: "75rem",
         320: "80rem",

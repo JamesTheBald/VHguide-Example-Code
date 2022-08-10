@@ -9595,6 +9595,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"detect-browser@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "detect-browser@npm:5.3.0"
+  checksum: dd6e08d55da1d9e0f22510ac79872078ae03d9dfa13c5e66c96baedc1c86567345a88f96949161f6be8f3e0fafa93bf179bdb1cd311b14f5f163112fcc70ab49
+  languageName: node
+  linkType: hard
+
 "detect-libc@npm:^1.0.2, detect-libc@npm:^1.0.3":
   version: 1.0.3
   resolution: "detect-libc@npm:1.0.3"
@@ -12989,7 +12996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob-parent@npm:^6.0.0, glob-parent@npm:^6.0.1":
+"glob-parent@npm:^6.0.1, glob-parent@npm:^6.0.2":
   version: 6.0.2
   resolution: "glob-parent@npm:6.0.2"
   dependencies:
@@ -26460,6 +26467,7 @@ __metadata:
     "@splidejs/react-splide": ^0.6.20
     "@tailwindcss/aspect-ratio": ^0.2.1
     autoprefixer: ^10.3.3
+    detect-browser: ^5.3.0
     gatsby: ^3.14.0
     gatsby-link: ^3.14.0
     gatsby-plugin-anchor-links: ^1.2.1
@@ -26476,7 +26484,7 @@ __metadata:
     gatsby-plugin-sharp: ^3.14.0
     gatsby-source-filesystem: ^3.14.0
     gatsby-transformer-sharp: ^3.14.0
-    glob-parent: ^6.0.0
+    glob-parent: ^6.0.2
     netlify-cli: ^6.9.17
     postcss: ^8.3.6
     prettier: ^2.3.1

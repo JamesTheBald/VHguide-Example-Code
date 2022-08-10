@@ -4,15 +4,29 @@ import { StaticImage } from "gatsby-plugin-image";
 import { animateScroll } from "react-scroll";
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
 import isNavItemSelected from "../../functions/isNavItemSelected";
 import HesTypesDropDown from "./HesTypesDropDown.js";
 import AboutDropDown from "./AboutDropDown.js";
+import { navbarLabels } from "../../content/navbarLabels";
 import NavItem from "./NavItem.js";
+import LanguageSwitcher from "./LanguageSwitcher.js";
 
 const NavBarItemsAndDropDowns = props => {
   const { onClickGo, setShowDropDown } = props;
-  const { locn, winWidth, branch, setLocn, setNoneSelected, setShowContactForm, setFixedBackdrop, log, log2 } =
-    useMyContext();
+  const {
+    locn,
+    winWidth,
+    fsmBrkPt,
+    branch,
+    setLocn,
+    setNoPillSelected,
+    setShowContactForm,
+    setFixedBackdrop,
+    lang,
+    log,
+    log2,
+  } = useMyContext();
 
   const w = winWidth;
 
@@ -21,7 +35,8 @@ const NavBarItemsAndDropDowns = props => {
     log && console.log("NavBar.js onClickToBranch() branchNum=", branchNum);
 
     setLocn({ branch: branchNum, topic: 0, subtopic: 0, showSubtopic: false });
-    setNoneSelected(branchNum === 0 ? false : true);
+    storeLocn({ branch: branchNum, topic: 0, subtopic: 0, showSubtopic: false });
+    setNoPillSelected(branchNum === 0 ? false : true);
 
     if (branch[branchNum].linkToDetails) {
       navigate("/details/overview");
@@ -41,58 +56,67 @@ const NavBarItemsAndDropDowns = props => {
     w >= 1024 && typeof window !== "undefined" && window.location.pathname === "/explore" ? true : false;
   log2 && console.log("NavBar.js padNavBarOnExplorePage=", padNavBarOnExplorePage);
 
-  const mainLinkClass = "sm:mr-3  w-full sm:w-auto";
+  const mainLinkClass = "fsm:mr-3  w-full fsm:w-auto";
   const subMenuLinkClass = "pt-2.5 pb-2  border-gray-light  text-14 tracking-0.4 cursor-pointer";
+  const stackedSpacing = "pl-7 pt-3 pb-2 my-2 fsm:pl-0 fsm:py-0";
+  const chevVertPosn = w < 880 ? 4 : 1;
 
   return (
     <>
       <button
         className={`${mainLinkClass}
-                  ${isNavItemSelected("/", locn) && w < 720 ? "subMenuYBorders bgSelec" : ""}`}
+                  ${isNavItemSelected("/", locn) && w < fsmBrkPt ? "border-b border-gray-light bgSelec" : ""}`}
         onClick={event => onClickGo(event, "/")}
       >
-        <NavItem classNom="pl-7 pt-2 pb-2 sm:pl-0 sm:py-0" destn="/">
+        <NavItem classNom={`${stackedSpacing}`} destn="/">
           <StaticImage
             src="../../assets/navbar/homeIcon.svg"
             alt="Home icon"
             style={{ width: 23 }}
             loading="eager"
-            className="relative sm:-top-0.5"
+            className="relative fsm:-top-0.5"
           />
         </NavItem>
       </button>
 
       <div className={mainLinkClass}>
-        <HesTypesDropDown subMenuLinkClass={subMenuLinkClass} onClickToBranch={onClickToBranch} onClickGo={onClickGo} />
+        <HesTypesDropDown
+          subMenuLinkClass={subMenuLinkClass}
+          onClickToBranch={onClickToBranch}
+          onClickGo={onClickGo}
+          chevVertPosn={chevVertPosn}
+        />
       </div>
 
-      <button className={`${mainLinkClass} sm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
+      <button className={`${mainLinkClass} fsm:mr-5`} onClick={event => onClickGo(event, "/details/overview")}>
         <NavItem
-          classNom={`pl-7 pt-3 pb-2 sm:pl-0 sm:py-0  ${
-            w < 720 && isNavItemSelected("/details/overview", locn) && w < 720 && "subMenuYBorders bgSelec"
+          classNom={`${stackedSpacing}  ${
+            w < fsmBrkPt && isNavItemSelected("/details/overview", locn) && "subMenuYBorders bgSelec"
           }`}
           destn="/details/overview"
         >
-          Medical Exemptions
+          {navbarLabels.medExempt[lang]}
         </NavItem>
       </button>
 
       <button className={mainLinkClass} onClick={event => onClickGo(event, "/pearls")}>
         <NavItem
-          classNom={`pl-7 pt-3 pb-2 sm:pl-0 sm:py-0  ${
-            w < 720 && isNavItemSelected("/pearls", locn) && w < 720 && "subMenuYBorders bgSelec"
+          classNom={`${stackedSpacing}  ${
+            w < fsmBrkPt && isNavItemSelected("/pearls", locn) && "subMenuYBorders bgSelec"
           }`}
           destn="/pearls"
         >
-          Clinical Pearls
+          {navbarLabels.pearls[lang]}
         </NavItem>
       </button>
 
       <div className={mainLinkClass}>
-        <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} />
+        <AboutDropDown subMenuLinkClass={subMenuLinkClass} onClickGo={onClickGo} chevVertPosn={chevVertPosn} />
       </div>
 
-      {padNavBarOnExplorePage && <div className="h-4" style={{ width: 15 + "px" }} />}
+      <div className={`${stackedSpacing} pt-4 relative -left-2 fsm:ml-3 fsm:mr-5`}>
+        <LanguageSwitcher />
+      </div>
     </>
   );
 };

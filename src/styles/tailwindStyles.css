@@ -13,7 +13,7 @@
   } 
   
   .stdMargins {
-    @apply px-6 mxs:px-10 sm:px-12 md:px-16 lg:px-20 mxl:px-24 xl:px-28
+    @apply px-4 axs:px-6 mxs:px-10 sm:px-12 md:px-16 lg:px-20 mxl:px-24 xl:px-28
   }
 
   .panelMargins {
@@ -42,7 +42,11 @@
   }
 
   .smFont {
-    @apply font-sans  text-14 sm:text-16  sm:tracking-0.3
+    @apply font-sans  text-14 sm:text-16  tracking-0.2 sm:tracking-0.3
+  }
+/* fsmFont is just small font (above) but with size-change breakpoint defined by fsm: instead of sm:  */
+  .fsmFont {
+    @apply font-sans  text-14 fsm:text-16  tracking-0.2 fsm:tracking-0.3
   }
 
   .vsmFont {
@@ -58,11 +62,11 @@
   }
 
   .verySubHeadingFont {
-    @apply font-sans font-semibold  text-15 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
+    @apply font-sans font-semibold  text-15 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .subSubHeadingFont {
-    @apply font-sans font-semibold  text-16 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
+    @apply font-sans mxs:font-semibold  text-16 mxs:text-18 md:text-20  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5  text-blue-main
   }
 
   .subHeadingFont {
@@ -95,16 +99,16 @@
 
 
   .titleLanding {
-    @apply text-30 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65
+    @apply text-22 mxs:text-35 sm:text-45 md:text-50 lg:text-60 xl:text-65
            tracking-0.6 mxs:tracking-0.8 sm:tracking-1 md:tracking-1.1 lg:tracking-1.2 xl:tracking-1.4
   }
 
   .listClass {
-    @apply ml-6 sm:ml-12 list-disc list-outside
+    @apply list-disc list-outside
   }
 
   .listClass2 {
-    @apply ml-6 sm:ml-10 mt-2  baseFont text-blue-black  list-disc
+    @apply mt-2  baseFont text-blue-black  list-disc
   }
   
   .listClassPopup {
@@ -135,17 +139,16 @@
     @apply bg-yellow-darkish text-gray-light hover:bg-opacity-0 hover:text-yellow-darkish  border border-solid border-yellow-darkish rounded-full
   }
 
-
   .aboutEtcTopGap {
     @apply mt-9 mxs:mt-12 sm:mt-16 lg:mt-18
   }
 
-  .oarTabClassBase {
+  .oarTabBase {
     @apply font-serif font-semibold  text-16 mxs:text-20 sm:text-25  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
   }
 
-  .oarTabClassPedi {
-    @apply font-serif font-semibold  text-14 mxs:text-16 sm:text-20 md:text-24  tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5
+  .oarTabPedi {
+    @apply font-serif font-semibold  text-14 mxs:text-16 sm:text-20 md:text-24  tracking-0.2 mxs:tracking-0.4 sm:tracking-0.5
   }
 
   .quoteBoxFeatured {
@@ -178,8 +181,9 @@
   }
 
   .chevPosn {
-    @apply relative sm:-left-0.5 bottom-1 sm:bottom-0
+    @apply relative fsm:-left-0.5
   } 
-
+  /* @apply relative fsm:-left-0.5 bottom-1 fsm:bottom-0.5 */
+  /* Set vertical position via inline style, for more precise control */
 
 }

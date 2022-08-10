@@ -1,26 +1,28 @@
 import React from "react";
 import ReactModal from "react-modal";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 import { VscClose } from "react-icons/vsc";
 
 import { useMyContext } from "../../context/Context";
 
 const ModalContactForm = () => {
-  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth } = useMyContext();
+  const { showContactForm, setShowContactForm, setFixedBackdrop, winWidth, lang } = useMyContext();
 
   const formSource =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true";
+    lang === "EN"
+      ? "https://docs.google.com/forms/d/e/1FAIpQLSfTnkQFzRpPT4c7lnndoZeIrsn1JnMxP9zc1G6MrZZf_QoWpQ/viewform?embedded=true"
+      : "https://docs.google.com/forms/d/e/1FAIpQLSc9MLJbnkLGrSNUh-HiJMJhyMydDdcn1QFf7MDOyKznEuLwww/viewform?embedded=true";
   const widthModal = winWidth < 720 ? 340 : 510;
   const heightModal = winWidth < 720 ? 900 : 840;
 
   if (typeof window !== `undefined`) {
-    scroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
+    animateScroll.scrollToTop({ duration: 600 }); // scroll animation time in ms
   }
 
   const closeModal = () => {
     setShowContactForm(false);
     setFixedBackdrop(false);
-  }
+  };
 
   return (
     <ReactModal
@@ -50,6 +52,6 @@ const ModalContactForm = () => {
       </iframe>
     </ReactModal>
   );
-}
+};
 
 export default ModalContactForm;

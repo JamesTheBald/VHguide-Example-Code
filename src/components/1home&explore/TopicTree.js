@@ -4,23 +4,25 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
 import Subtopics from "./Subtopics";
+import storeLocn from "../../functions/storeLocn";
 import { useMyContext } from "../../context/Context";
 
 const TopicTree = props => {
   const { branchNum } = props;
-  const { winWidth, locn, setLocn, branch, widthAdjRatio, log, log2 } = useMyContext();
+  const { winWidth, locn, setLocn, branch, widthAdjRatio, lang, log, log2 } = useMyContext();
 
   log2 && console.log("");
   log2 && console.log("TopicTree.js runs. branch=", branch);
-  log2 && console.log("TopicTree.js widthAdjRatio=", widthAdjRatio);
+  log && console.log("TopicTree.js runs. branchNum=", branchNum);
+  log && console.log("TopicTree.js runs. typeof branchNum=", typeof branchNum);
+  const w = winWidth;
 
   const onClickTopic = (currTopic, topicNum) => {
     if (currTopic.linkToDetails === true) {
-      setLocn(currLocn => {
-        const newLocn = { ...currLocn, branchNum: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false };
-        log && console.log("TopicTree.js onClickTopic() setting locn=", newLocn);
-        return newLocn;
-      });
+      // for topics that do not have any subtopics, go straight to their details page
+      setLocn({ branch: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false });
+      storeLocn({ branch: branchNum, topic: topicNum, subtopic: 0, showSubtopic: false });
+      log && console.log("TopicTree.js onClickTopic linkToDetails=true topicNum=", topicNum);
       navigate("/details/overview");
     } else {
       setLocn(currLocn => {
@@ -39,16 +41,17 @@ const TopicTree = props => {
     }
   };
 
-  const outsideMargin = winWidth < 510 ? 10 : 32;
-  const borderRadius = winWidth < 510 ? "0px 0px 30px 30px" : "0px 0px 47px 47px";
-  const innerMarginLeft = 15 + 20 * (widthAdjRatio - 0.3125);
-  const innerMarginRight = innerMarginLeft - 8;
-  const bottomPadding = winWidth < 510 ? 40 : 58;
-  const topicStepHt = winWidth < 510 ? 30 : winWidth < 800 ? 36 : 45;
-  const leftGapToLine = winWidth < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
+  const pillToBorderMarginLeft = w < 1366 ? 8 + 18 * (widthAdjRatio - 0.33) : 36;
+  const indentTopicLeft = w < 1920 ? 12 + 12 * (widthAdjRatio - 0.33) : 40;
+  const indentSubtopicLeft = w < 1920 ? 8 + 10 * (widthAdjRatio - 0.33) : 32;
 
-  log2 && console.log("TopicTree.js innerMarginLeft=", innerMarginLeft);
-  log2 && console.log("TopicTree.js innerMarginRight=", innerMarginRight);
+  const pillToBorderMarginRight = w < 410 ? 6 : w < 510 ? 8 : pillToBorderMarginLeft - 8;
+  const outsideMargin = w < 510 ? 0 : w < 720 ? 8 : pillToBorderMarginLeft + 2;
+  const borderRadius = w < 510 ? "0px 0px 9px 9px" : w < 720 ? "0px 0px 12px 12px" : "0px 0px 47px 47px";
+  const bottomPadding = w < 510 ? 40 : 58;
+  const topicStepHt = w < 510 ? 30 : w < 800 ? 36 : 45;
+  const leftGapToLine = w < 510 ? 13 * widthAdjRatio : (14 * (widthAdjRatio + 2)) / 3;
+  const widTopicNameShortBrkPt = lang === "EN" ? 800 : 1920;
 
   if (branch?.[branchNum]?.topic?.[0]?.topicName) {
     const topics = branch[branchNum].topic;
@@ -57,7 +60,7 @@ const TopicTree = props => {
       <>
         <div
           name="Rounded Outer Border"
-          className="mb-3  flex flex-col  border-3 border-solid border-t-0 border-blue-main relative -top-1"
+          className="mb-3  flex flex-col  border-2 mxs:border-3 border-solid border-t-0 border-blue-main relative -top-1"
           style={{
             marginLeft: outsideMargin,
             marginRight: outsideMargin,
@@ -68,6 +71,7 @@ const TopicTree = props => {
         >
           {topics.map((currTopic, topicNum) => {
             const showSubtopics = locn.topic === topicNum && locn.showSubtopic ? true : false;
+            log && console.log("TopicTree.js topicNum=", topicNum, ", showSubtopics=", showSubtopics);
 
             return (
               <div key={topicNum}>
@@ -77,14 +81,16 @@ const TopicTree = props => {
                               hoverRevealTrigger cursor-pointer`}
                   style={{
                     color: "#263EC5",
-                    paddingLeft: innerMarginLeft,
+                    paddingLeft: indentTopicLeft,
                     paddingTop: topicStepHt,
                   }}
                   onClick={() => onClickTopic(currTopic, topicNum)}
                   onKeyPress={() => onClickTopic(currTopic, topicNum)}
                 >
-                  <h3 className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.4 sm:tracking-0.5`}>
-                    {winWidth < 900 ? currTopic.topicNameShort : currTopic.topicName}
+                  <h3
+                    className={`flex-shrink-0 text-16 mxs:text-20  tracking-0.2 axs:tracking-0.3 mxs:tracking-0.4 sm:tracking-0.5`}
+                  >
+                    {w < widTopicNameShortBrkPt ? currTopic.topicNameShort : currTopic.topicName}
                   </h3>
 
                   <div
@@ -94,20 +100,20 @@ const TopicTree = props => {
                   />
 
                   {showSubtopics ? (
-                    <div className="flex-shrink-0" style={{ marginRight: innerMarginRight }}>
+                    <div className="flex-shrink-0" style={{ marginRight: pillToBorderMarginRight }}>
                       <IoIosArrowDown className="hidden mxs:inline" size="28" />
                       <IoIosArrowDown className="mxs:hidden" size="20" />
                     </div>
                   ) : (
                     <>
-                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: innerMarginRight - 4 }}>
+                      <div className="mxs:hidden flex-shrink-0 absolute" style={{ right: pillToBorderMarginRight - 4 }}>
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
                         <IoIosArrowForward className="mxs:hidden" size="20" />
                       </div>
 
                       <div
                         className="hiddenTillHover hidden mxs:inline flex-shrink-0"
-                        style={{ marginRight: innerMarginRight }}
+                        style={{ marginRight: pillToBorderMarginRight }}
                       >
                         <IoIosArrowForward className="hidden mxs:inline" size="28" />
                         <IoIosArrowForward className="mxs:hidden" size="20" />
@@ -116,13 +122,16 @@ const TopicTree = props => {
                   )}
                 </button>
 
-                {showSubtopics && (
+                {/* {showSubtopics && ( */}
+                {locn.topic === topicNum && locn.showSubtopic && (
                   <Subtopics
                     branchNum={branchNum}
                     topicNum={topicNum}
                     subtopics={currTopic.subtopic}
-                    innerMarginLeft={innerMarginLeft}
-                    innerMarginRight={innerMarginRight}
+                    widTopicNameShortBrkPt={widTopicNameShortBrkPt}
+                    indentSubtopicLeft={indentSubtopicLeft}
+                    innerMarginLeft={pillToBorderMarginLeft}
+                    innerMarginRight={pillToBorderMarginRight}
                   />
                 )}
               </div>

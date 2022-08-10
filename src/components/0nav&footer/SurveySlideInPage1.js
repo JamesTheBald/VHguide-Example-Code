@@ -1,11 +1,14 @@
 import React from "react";
 
-import ContestTerms from "../../content/ContestTerms";
+import ContestTermsEN from "../../content/ContestTermsEN";
+import ContestTermsFR from "../../content/ContestTermsFR";
 import { useMyContext } from "../../context/Context";
 
 const SurveySlideInPage1 = props => {
   const { showContestTerms, setShowContestTerms, setShowSlideIn, buttonLight, buttonDark } = props;
-  const { setFixedBackdrop, log } = useMyContext();
+  const { setFixedBackdrop, lang, log } = useMyContext();
+
+  const ContestTermsSEL = lang === "EN" ? ContestTermsEN : ContestTermsFR;
 
   const toggleContestTerms = () => {
     setShowContestTerms(currShowTerms => {
@@ -50,7 +53,7 @@ const SurveySlideInPage1 = props => {
           </button>
         </div>
         {showContestTerms && (
-          <ContestTerms showContestTerms={showContestTerms} setShowContestTerms={setShowContestTerms} />
+          <ContestTermsSEL showContestTerms={showContestTerms} setShowContestTerms={setShowContestTerms} />
         )}
       </div>
     </>

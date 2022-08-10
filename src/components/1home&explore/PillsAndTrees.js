@@ -2,38 +2,46 @@ import React from "react";
 import { navigate } from "gatsby";
 
 import { useMyContext } from "../../context/Context";
+import storeLocn from "../../functions/storeLocn";
 import Pill from "./Pill";
 import TopicTree from "./TopicTree";
 
 const PillsAndTrees = () => {
-  const { winWidth, branch, locn, setLocn, noneSelected, setNoneSelected, log, log2 } = useMyContext();
+  const { winWidth, branch, locn, setLocn, noPillSelected, setNoPillSelected, lang, log, log2 } = useMyContext();
 
   0 && console.log(log, log2);
-  log2 && console.log("PillsAndTrees.js noneSelected=", noneSelected);
+  log && console.log("PillsAndTrees.js runs. noPillSelected=", noPillSelected, ", locn=", locn);
 
-  const sideBySideWidth = 1320;
-  const allStretchWidth = 1600;
+  const sideBySideWidth = lang === "EN" ? 1366 : 1366; // would be 1320 for ENglish, but this is close enough to French, better to keep same
+  const allStretchWidth = 1800;
 
-  const onClickExplore = clickedBranchNum => {
-    setNoneSelected(branch[clickedBranchNum].linkToDetails ? true : false);
-    setLocn(currLocn => {
+  const onClickPill = clickedBranchNum => {
+    setNoPillSelected(branch[clickedBranchNum].linkToDetails);
+    // setNoPillSelected(curr => !curr);
+    // above: once a pill is opened, at least one pill will always be open, until the user navigates back to this page
+
+    setLocn(() => {
       const newLocn = {
-        ...currLocn,
         branch: clickedBranchNum,
         topic: 0,
         subtopic: 0,
         showSubtopic: false,
       };
-      log && console.log("PillsAndTrees.js onClickExplore setting locn.branch to", clickedBranchNum);
+      log && console.log("PillsAndTrees.js onClickPill setting locn.branch to", clickedBranchNum);
+
+      if (branch[clickedBranchNum].linkToDetails) {
+        storeLocn(newLocn);
+        navigate("/details/overview");
+      }
       return newLocn;
     });
-    if (branch[clickedBranchNum].linkToDetails) navigate("/details/overview");
   };
 
   const PillAndTopicTree = ({ branchNum }) => {
     const selected = locn.branch === branchNum ? true : false;
-    log2 && console.log("PillsAndTrees.js PillAndTopicTree() locn.branch=", locn.branch);
-    log2 && console.log("PillsAndTrees.js PillAndTopicTree() branchNum=", branchNum, "& selected=", selected);
+    log && console.log("PillsAndTrees.js PillAndTopicTree() branchNum=", branchNum, ", selected=", selected);
+    // log && console.log("PillsAndTrees.js PillAndTopicTree() noPillSelected=", noPillSelected);
+
     return (
       <div
         name="pill container"
@@ -41,7 +49,7 @@ const PillsAndTrees = () => {
         ${
           winWidth < sideBySideWidth
             ? "w-full max-w-220" // stacked
-            : noneSelected // side-by-side from here down
+            : noPillSelected // side-by-side from here down
             ? "w-1/2" // none selected
             : selected
             ? winWidth < allStretchWidth // selected pills
@@ -51,9 +59,10 @@ const PillsAndTrees = () => {
         }
         `}
       >
-        <Pill branchNum={branchNum} onClickExplore={onClickExplore} noneSelected={noneSelected} />
+        <Pill branchNum={branchNum} onClickPill={onClickPill} noPillSelected={noPillSelected} />
 
-        {locn.branch === branchNum && !noneSelected && !branch[branchNum].linkToDetails && (
+        {locn.branch === branchNum && !noPillSelected && !branch[branchNum].linkToDetails && (
+          // Expand topic tree if branch is selected, and there's no noPillSelected or linkToDetails flags set
           <TopicTree branchNum={branchNum} />
         )}
       </div>
@@ -71,7 +80,7 @@ const PillsAndTrees = () => {
           <PillAndTopicTree branchNum={3} />
         </div>
       ) : // Wider screens (pills in columns)
-      noneSelected ? (
+      noPillSelected ? (
         <div className="flex flex-col  w-full">
           <div className="flex flex-row gap-14 xl:gap-20">
             <PillAndTopicTree branchNum={0} />

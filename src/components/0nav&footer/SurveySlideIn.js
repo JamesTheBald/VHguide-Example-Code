@@ -40,6 +40,7 @@ const SurveySlideIn = () => {
   const buttonLight = buttonBase + " text-blue-dark bg-gray-light";
   const buttonDark = buttonBase + " text-gray-light bg-blue-black";
 
+  // SurveySlideInPage0 solicits a star-rating (out of 5) from the user. But how to save it...?
   // const ActiveStar = ({ starNum }) => {
   //   log && console.log("SurveySlideIn.js tempStars=", tempStars, " and finalStars=", finalStars);
 

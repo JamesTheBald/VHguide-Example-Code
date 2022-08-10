@@ -5,7 +5,7 @@ import Layout from "../components/0nav&footer/NavFooterLayout";
 import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
 
 const Explore = () => {
-  const { setWinWidth, setWinHeight, log } = useMyContext();
+  const { setWinWidth, setWinHeight, lang, log } = useMyContext();
 
   log && console.log("");
   log && console.log("Explore.js runs.");
@@ -24,7 +24,7 @@ const Explore = () => {
         className="mb-5 sm:mb-8 md:mb-12 xl:mb-14  titleFont text-28 mxs:text-40 sm:text-50
                        tracking-0.6 mxs:tracking-0.8 sm:tracking-1 text-blue-main"
       >
-        Hesitancy Types
+        {lang === "EN" ? <div>Hesitancy Types</div> : <div>Types d’hésitation</div>}
       </h1>
 
       <PillsAndTrees />
