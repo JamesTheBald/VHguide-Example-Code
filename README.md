@@ -6,7 +6,9 @@
 </p>
 <h1 align="center">
   Note: This is an incomplete copy of the codebase. It is only for code demo purposes. It will not run!
-  Gatsby & TailwindCSS starter
+</h1>
+<h1>
+    Gatsby & TailwindCSS starter
 </h1>
 
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=kosvrouvas_gatsby-tailwindcss-starter&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=kosvrouvas_gatsby-tailwindcss-starter) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=kosvrouvas_gatsby-tailwindcss-starter&metric=security_rating)](https://sonarcloud.io/dashboard?id=kosvrouvas_gatsby-tailwindcss-starter) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=kosvrouvas_gatsby-tailwindcss-starter&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=kosvrouvas_gatsby-tailwindcss-starter)
