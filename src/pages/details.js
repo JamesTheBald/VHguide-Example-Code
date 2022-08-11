@@ -8,7 +8,7 @@ import AdviceQuoteGroupList from "../components/2details/AdviceQuoteGroupList";
 import AdviceEaase from "../components/2details/AdviceEaase";
 import AdviceFullStory from "../components/2details/AdviceFullStory";
 import AdviceWhatsWorkingBI from "../components/2details/AdviceWhatsWorkingBI";
-import Layout from "../components/0nav&footer/NavFooterLayout";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
 import DetailsLayout from "../components/2details/DetailsLayout";
 import DetailsOverviewBI from "../components/2details/DetailsOverviewBI";
 import DetailsResources from "../components/2details/DetailsResources";

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
-import Layout from "../components/0nav&footer/NavFooterLayout";
-import PillsAndTrees from "../components/1home&explore/PillsAndTrees";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
+import PillsAndTrees from "../components/1homeAndExplore/PillsAndTrees";
 
 const Explore = () => {
   const { setWinWidth, setWinHeight, lang, log } = useMyContext();

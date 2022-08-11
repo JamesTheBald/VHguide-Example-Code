@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
-import Layout from "../components/0nav&footer/NavFooterLayout";
-import Home1TopCarousel from "../components/1home&explore/Home1TopCarousel";
-import Home3WhoWeAre from "../components/1home&explore/Home3WhoWeAre";
-import Home4TestimonialsEtc from "../components/1home&explore/Home4TestimonialsEtc";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
+import Home1TopCarousel from "../components/1homeAndExplore/Home1TopCarousel";
+import Home3WhoWeAre from "../components/1homeAndExplore/Home3WhoWeAre";
+import Home4TestimonialsEtc from "../components/1homeAndExplore/Home4TestimonialsEtc";
 
 const Home = props => {
   const { data } = props;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { useMyContext } from "../context/Context";
-import Layout from "../components/0nav&footer/NavFooterLayout";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
 import TermsPanels from "../components/3aboutEtc/TermsPanels";
 
 const Terms = () => {

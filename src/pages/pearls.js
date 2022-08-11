@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 
 import { useMyContext } from "../context/Context";
-import Layout from "../components/0nav&footer/NavFooterLayout";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
 import PearlsPanelsBI from "../components/3aboutEtc/PearlsPanelsBI";
 
 const Pearls = props => {

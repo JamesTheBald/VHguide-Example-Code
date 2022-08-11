@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { navigate } from "gatsby";
 
 import { useMyContext } from "../context/Context";
-import Layout from "../components/0nav&footer/NavFooterLayout";
+import Layout from "../components/0navAndFooter/NavFooterLayout";
 
 const NotFoundPage = () => {
   const { winWidth } = useMyContext();

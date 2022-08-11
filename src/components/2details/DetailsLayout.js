@@ -7,7 +7,7 @@ import storeLocn from "../../functions/storeLocn";
 import getStoredLocn from "../../functions/getStoredLocn";
 import equalLocnObj from "../../functions/equalLocnObj";
 
-import Layout from "../0nav&footer/NavFooterLayout";
+import Layout from "../0navAndFooter/NavFooterLayout";
 import TabBarOAR from "../../components/2details/TabBarOAR";
 
 const DetailsLayout = props => {
