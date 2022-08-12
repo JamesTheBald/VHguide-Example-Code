@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Note: This is an incomplete copy of the codebase. It is only for exemplary purposes and, per client wishes, cannot be installed and run.
+  Note: This is an incomplete copy of the codebase. It is only for exemplary purposes and, per client wishes, will not run if installed.
 </h1>
 <h1>
   (Key files have been removed, including from the project's commit history. As such they cannot be restored.)
